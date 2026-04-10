@@ -39,7 +39,9 @@ export default function ResearchPage() {
                     <p className="text-xs text-asylum-muted mb-1">{tech.description}</p>
                   )}
                   <div className="text-xs text-asylum-muted/60 space-y-0.5">
-                    {tech.preLine && <div>Requires: #{tech.preLine}</div>}
+                    {tech.preLine && Array.isArray(tech.preLine) && tech.preLine.length > 0 && (
+                      <div>Requires: {tech.preLine.map((p: any) => typeof p === 'object' ? p.pos : p).filter(Boolean).join(', ')}</div>
+                    )}
                     {tech.maxValue && <div>Max Value: {tech.maxValue}</div>}
                   </div>
                 </div>
