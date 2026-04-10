@@ -1,6 +1,15 @@
 import Link from 'next/link'
 import { getHeroList, heroDisplayName, heroImagePath, getItems, getBuildings, getFormulas, getMonsters, getResearch } from '@/lib/gamedata'
 import GameImage from '@/components/GameImage'
+import { readFileSync } from 'fs'
+import { join } from 'path'
+
+function getVersion(): string {
+  try {
+    const raw = readFileSync(join(process.cwd(), 'data', 'wiki', '_summary.json'), 'utf-8')
+    return JSON.parse(raw).version || 'unknown'
+  } catch { return 'unknown' }
+}
 
 const SECTIONS = [
   { href: '/heroes',    label: 'Heroes',    icon: '⚔️', desc: 'All playable heroes with stats, skills & upgrade paths' },
@@ -14,6 +23,7 @@ const SECTIONS = [
 
 export default function HomePage() {
   const heroes = getHeroList()
+  const version = getVersion()
   const stats = [
     { label: 'Heroes', value: heroes.length },
     { label: 'Items', value: Object.keys(getItems()).length },
@@ -28,7 +38,7 @@ export default function HomePage() {
       <div className="text-center mb-12">
         <h1 className="font-display text-6xl text-asylum-accent tracking-widest mb-3">LAST ASYLUM</h1>
         <p className="text-lg text-asylum-muted max-w-xl mx-auto">
-          Complete game database — every hero, item, building, formula, and mechanic, extracted from game data v1.0.375
+          Complete game database — every hero, item, building, formula, and mechanic, extracted from game data v{version}
         </p>
       </div>
 

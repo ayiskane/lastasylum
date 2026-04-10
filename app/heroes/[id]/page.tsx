@@ -37,8 +37,8 @@ export default function HeroPage({ params }: { params: { id: string } }) {
               <span className={`text-sm font-semibold ${accent.split(' ')[1]}`}>{hero.qualityName}</span>
               <span className="text-sm text-asylum-muted">•</span>
               <span className="text-sm text-asylum-text">{hero.armyName}</span>
-              {hero.campName !== 'Unknown' && hero.campType > 0 && (
-                <><span className="text-sm text-asylum-muted">•</span><span className="text-sm text-asylum-text">{hero.campName} Camp</span></>
+              {hero.campName && hero.campName !== 'None' && hero.campType > 0 && (
+                <><span className="text-sm text-asylum-muted">•</span><span className="text-sm text-asylum-text">{hero.campName}</span></>
               )}
             </div>
             {hero.characterDes && <div className="text-sm text-asylum-muted mt-1 italic">{hero.characterDes}</div>}

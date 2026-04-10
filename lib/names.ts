@@ -1,7 +1,7 @@
 /**
- * Derives human-readable display names from game IDs.
- * Since the localization bundle isn't available, we extract names
- * from selectIcon paths, item IDs, and other contextual data.
+ * Display name helpers for game entities.
+ * Names come from the locale file (_locale_en.json) when available,
+ * with fallbacks for entities not covered by locale data.
  */
 
 // Hero names from selectIcon: "Pic_Hero_MaxSteele_List_Q" → "Max Steele"
@@ -40,11 +40,34 @@ export function buildingName(id: string): string {
   return BUILDING_NAMES[id] || `Building #${id}`
 }
 
-// Soldier type names
+// Camp/class type names (from HeroCamp locale)
+const CAMP_NAMES: Record<number, string> = {
+  0: 'None',
+  1: 'Ranger',
+  2: 'Warlock',
+  3: 'Warrior',
+}
+
+// Army type names
+const ARMY_TYPE_NAMES: Record<number, string> = {
+  0: 'Universal',
+  1: 'Infantry',
+  2: 'Vehicle',
+  3: 'Aircraft',
+}
+
+export function campName(type: number): string {
+  return CAMP_NAMES[type] || `Class ${type}`
+}
+
+export function armyTypeName(type: number): string {
+  return ARMY_TYPE_NAMES[type] || `Army ${type}`
+}
+
+// Soldier type names (from SoldierType locale)
 const SOLDIER_TYPES: Record<number, string> = {
-  1: 'Rifleman', 2: 'Sniper', 3: 'Grenadier',
-  4: 'Humvee', 5: 'Tank', 6: 'Rocket Launcher',
-  7: 'Attack Helicopter', 8: 'Fighter Jet', 9: 'Bomber',
+  1: 'Frontline',
+  5: 'Support',
 }
 
 export function soldierName(type: number, level: number): string {

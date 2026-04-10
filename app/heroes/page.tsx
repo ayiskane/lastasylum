@@ -12,11 +12,11 @@ export default function HeroesPage() {
 
   const qualityOrder = [6, 5, 4, 0]
   const qualityLabels: Record<number, string> = {
-    6: 'Legendary (Red)', 5: 'Epic (Orange)', 4: 'Rare (Purple)', 0: 'Common',
+    6: 'UR+', 5: 'UR', 4: 'SR', 0: 'R',
   }
   const qualityAccent: Record<number, string> = {
     6: 'text-red-400 border-red-500/30', 5: 'text-orange-400 border-orange-500/30',
-    4: 'text-purple-400 border-purple-500/30', 0: 'text-gray-400 border-gray-500/30',
+    4: 'text-purple-400 border-purple-500/30', 0: 'text-green-400 border-green-500/30',
   }
 
   return (

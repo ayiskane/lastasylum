@@ -203,24 +203,27 @@ export function getParameters(): Record<string, any> {
   return loadJson('parameters.json')
 }
 
-// ── Utility: quality color ───────────────────────────────────────────
+// ── Utility: quality/rarity ──────────────────────────────────────────
+// Game rarity: 0=R, 4=SR, 5=UR
+
+export function qualityName(q: number): string {
+  return { 0: 'R', 1: 'R', 2: 'R', 3: 'SR', 4: 'SR', 5: 'UR', 6: 'UR' }[q] || 'R'
+}
 
 export function qualityColor(q: number): string {
   return {
-    1: 'text-asylum-quality-white',
-    2: 'text-asylum-quality-green',
-    3: 'text-asylum-quality-blue',
-    4: 'text-asylum-quality-purple',
-    5: 'text-asylum-quality-orange',
-    6: 'text-asylum-quality-red',
+    0: 'text-asylum-quality-green',    // R
+    4: 'text-asylum-quality-purple',   // SR
+    5: 'text-asylum-quality-orange',   // UR
+    6: 'text-asylum-quality-red',      // UR+
   }[q] || 'text-asylum-muted'
 }
 
 export function qualityBg(q: number): string {
   return {
-    4: 'bg-purple-500/10 border-purple-500/30',
-    5: 'bg-orange-500/10 border-orange-500/30',
-    6: 'bg-red-500/10 border-red-500/30',
+    4: 'bg-purple-500/10 border-purple-500/30',    // SR
+    5: 'bg-orange-500/10 border-orange-500/30',    // UR
+    6: 'bg-red-500/10 border-red-500/30',          // UR+
   }[q] || 'bg-asylum-surface border-asylum-border'
 }
 

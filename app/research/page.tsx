@@ -1,7 +1,17 @@
 import { getResearch } from '@/lib/gamedata'
+import { readFileSync } from 'fs'
+import { join } from 'path'
+
+function getResearchTypes(): Record<string, any> {
+  try {
+    const raw = readFileSync(join(process.cwd(), 'data', 'wiki', 'research_types.json'), 'utf-8')
+    return JSON.parse(raw)
+  } catch { return {} }
+}
 
 export default function ResearchPage() {
   const research = getResearch()
+  const researchTypes = getResearchTypes()
   const list = Object.values(research) as any[]
 
   const byType: Record<number, any[]> = {}
@@ -9,8 +19,10 @@ export default function ResearchPage() {
     ;(byType[r.techType] ??= []).push(r)
   }
 
-  const TECH_TYPE_NAMES: Record<number, string> = {
-    1: 'Development', 2: 'Military', 3: 'Defense', 4: 'Advanced Military', 5: 'Special', 6: 'Strategic',
+  // Build type name lookup from localized research_types.json
+  const typeNames: Record<number, string> = {}
+  for (const rt of Object.values(researchTypes) as any[]) {
+    typeNames[rt.id ?? rt.techType] = rt.displayName || rt.name || ''
   }
 
   return (
@@ -23,7 +35,7 @@ export default function ResearchPage() {
         return (
           <section key={type} className="mb-8">
             <h2 className="font-display text-lg text-asylum-accent tracking-wide mb-3">
-              {TECH_TYPE_NAMES[type] || `Tech Tree ${type}`} ({techs.length} nodes)
+              {typeNames[type] || `Tech Tree ${type}`} ({techs.length} nodes)
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
               {techs.sort((a: any, b: any) => (a.pos || 0) - (b.pos || 0)).map((tech: any) => (
