@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --bg: #0a0c10;
+  --surface: #12151c;
+  --border: #1e2330;
+  --accent: #c9a84c;
+}
+
+body {
+  background: var(--bg);
+  color: #e2e0d8;
+}
+
+/* Quality rarity borders */
+.quality-4 { border-color: #c084fc; }
+.quality-5 { border-color: #fb923c; }
+.quality-6 { border-color: #f87171; }
+
+.quality-glow-4 { box-shadow: 0 0 20px rgba(192, 132, 252, 0.15); }
+.quality-glow-5 { box-shadow: 0 0 20px rgba(251, 146, 60, 0.15); }
+.quality-glow-6 { box-shadow: 0 0 20px rgba(248, 113, 113, 0.15); }
+
+/* Stat bars */
+.stat-bar {
+  background: linear-gradient(90deg, var(--accent), #8b7434);
+  border-radius: 2px;
+  height: 4px;
+}
+
+/* Card hover */
+.hero-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.hero-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
