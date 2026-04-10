@@ -207,13 +207,13 @@ export function getParameters(): Record<string, any> {
 // Game rarity: 0=R, 4=SR, 5=UR
 
 export function qualityName(q: number): string {
-  return { 0: 'R', 1: 'R', 2: 'R', 3: 'SR', 4: 'SR', 5: 'UR', 6: 'UR' }[q] || 'R'
+  return { 0: 'SR', 1: 'SR', 2: 'SR', 3: 'SR', 4: 'SSR', 5: 'UR', 6: 'UR' }[q] || 'SR'
 }
 
 export function qualityColor(q: number): string {
   return {
-    0: 'text-asylum-quality-green',    // R
-    4: 'text-asylum-quality-purple',   // SR
+    0: 'text-asylum-quality-blue',     // SR
+    4: 'text-asylum-quality-purple',   // SSR
     5: 'text-asylum-quality-orange',   // UR
     6: 'text-asylum-quality-red',      // UR+
   }[q] || 'text-asylum-muted'

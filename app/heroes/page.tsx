@@ -12,11 +12,11 @@ export default function HeroesPage() {
 
   const qualityOrder = [6, 5, 4, 0]
   const qualityLabels: Record<number, string> = {
-    6: 'UR+', 5: 'UR', 4: 'SR', 0: 'R',
+    6: 'UR+', 5: 'UR', 4: 'SSR', 0: 'SR',
   }
   const qualityAccent: Record<number, string> = {
     6: 'text-red-400 border-red-500/30', 5: 'text-orange-400 border-orange-500/30',
-    4: 'text-purple-400 border-purple-500/30', 0: 'text-green-400 border-green-500/30',
+    4: 'text-purple-400 border-purple-500/30', 0: 'text-blue-400 border-blue-500/30',
   }
 
   return (
