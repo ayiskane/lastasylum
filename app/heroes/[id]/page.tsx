@@ -23,10 +23,7 @@ function extractTypeLabel(typeDesc: string): string {
 }
 
 interface SkillGroup {
-  slot: number
-  name: string
-  typeLabel: string
-  icon: string
+  slot: number; name: string; typeLabel: string; icon: string
   description: string
   levels: { star: number; unlockStar: number; power: string; param1: string; description: string }[]
 }
@@ -65,158 +62,155 @@ export default function HeroPage({ params }: { params: { id: string } }) {
   const hero = getHeroes()[params.id]
   if (!hero) return notFound()
 
-  const qc: Record<number, string> = {
-    0: 'border-blue-500/50 text-blue-400',
-    4: 'border-purple-500/50 text-purple-400',
-    5: 'border-orange-500/50 text-orange-400',
-    6: 'border-red-500/50 text-red-400',
+  const accentMap: Record<number, string> = {
+    0: 'border-blue-500/50', 4: 'border-purple-500/50', 5: 'border-orange-500/50', 6: 'border-red-500/50',
   }
-  const accent = qc[hero.quality] || 'border-asylum-border text-asylum-muted'
+  const accentTextMap: Record<number, string> = {
+    0: 'text-blue-400', 4: 'text-purple-400', 5: 'text-orange-400', 6: 'text-red-400',
+  }
+  const accentBorder = accentMap[hero.quality] || 'border-asylum-border'
+  const accentText = accentTextMap[hero.quality] || 'text-asylum-muted'
   const name = heroDisplayName(hero)
   const skillGroups = groupSkills(hero.skills || [])
-
-  // Prepare serializable skill data for client component
-  const skillData = skillGroups.map(g => ({
-    ...g,
-    iconSrc: g.icon ? `/images/skills/${g.icon}.png` : '',
-  }))
+  const skillData = skillGroups.map(g => ({ ...g, iconSrc: g.icon ? `/images/skills/${g.icon}.png` : '' }))
 
   return (
     <div>
       <Link href="/heroes" className="text-sm text-asylum-muted hover:text-asylum-accent mb-4 inline-block">← Back to Heroes</Link>
 
-      {/* Hero Header */}
-      <div className={`bg-asylum-surface border rounded-xl p-6 mb-6 ${accent.split(' ')[0]}`}>
-        <div className="flex items-start gap-6">
-          <div className={`w-28 h-28 rounded-xl border-2 overflow-hidden shrink-0 ${accent}`}>
-            <GameImage src={heroImagePath(hero, 'portrait')} alt={name} className="w-full h-full" />
-          </div>
-          <div className="flex-1">
-            <h1 className="font-display text-4xl tracking-wider text-asylum-text">{name}</h1>
-            <div className="flex gap-3 mt-2 flex-wrap">
-              <span className={`text-sm font-semibold ${accent.split(' ')[1]}`}>{hero.qualityName}</span>
-              <span className="text-sm text-asylum-muted">•</span>
-              <span className="text-sm text-asylum-text">{hero.armyName}</span>
-              {hero.campName && hero.campName !== 'None' && hero.campType > 0 && (
-                <><span className="text-sm text-asylum-muted">•</span><span className="text-sm text-asylum-text">{hero.campName}</span></>
-              )}
-            </div>
-            {hero.characterDes && <div className="text-sm text-asylum-muted mt-1 italic">{hero.characterDes}</div>}
-            {hero.maxAbility > 0 && (
-              <div className="mt-3 text-asylum-accent font-display text-xl">⚡ Max Power: {hero.maxAbility.toLocaleString()}</div>
-            )}
-          </div>
+      {/* Top section: card image left, info+stats right */}
+      <div className="flex gap-5 mb-6 items-stretch max-md:flex-col">
+        {/* Card image */}
+        <div className={`w-56 max-md:w-full max-md:h-72 shrink-0 rounded-xl border-2 ${accentBorder} overflow-hidden bg-asylum-surface`}>
+          <GameImage src={heroImagePath(hero, 'thumbnail')} alt={name} className="w-full h-full object-cover" />
         </div>
-        {hero.heroStory && <p className="mt-4 text-sm text-asylum-muted leading-relaxed border-t border-asylum-border/50 pt-4">{hero.heroStory}</p>}
-        {hero.descRecruitPreview && <p className="mt-2 text-sm text-asylum-text/80 italic">{hero.descRecruitPreview}</p>}
-      </div>
 
-      {/* Thumbnail row */}
-      <div className="flex gap-4 mb-6 overflow-x-auto pb-2">
-        {(['thumbnail', 'portrait', 'bust', 'honor'] as const).map(type => {
-          const src = heroImagePath(hero, type)
-          if (!src) return null
-          const labels = { thumbnail: 'Card', portrait: 'Portrait', bust: 'Bust', honor: 'Honor' }
-          return (
-            <div key={type} className="shrink-0 text-center">
-              <div className="w-20 h-24 rounded-lg border border-asylum-border overflow-hidden bg-asylum-surface">
-                <GameImage src={src} alt={`${name} ${labels[type]}`} className="w-full h-full" />
-              </div>
-              <div className="text-xs text-asylum-muted mt-1">{labels[type]}</div>
-            </div>
-          )
-        })}
-      </div>
-
-      {/* Interactive Skill Panel */}
-      <HeroSkillPanel skills={skillData} />
-
-      <div className="grid md:grid-cols-2 gap-6 mt-6">
-        {/* Stats */}
-        <section className="bg-asylum-surface border border-asylum-border rounded-xl p-5">
-          <h2 className="font-display text-lg text-asylum-accent tracking-wide mb-4">STATS</h2>
-          <div className="space-y-2 text-sm">
-            {hero.maxAbility > 0 && <StatRow label="Max Power" value={hero.maxAbility.toLocaleString()} highlight />}
-            <StatRow label="Attack Speed" value={`${hero.attackCd}ms`} />
-            <StatRow label="Attack Range" value={String(hero.attackRadius)} />
-            {hero.rpgAttackRadius > 0 && <StatRow label="RPG Attack Range" value={String(hero.rpgAttackRadius)} />}
-            <StatRow label="Max Honor Level" value={String(hero.maxHonorLevel)} />
-            <StatRow label="Star Rating" value={String(hero.heroStarRating)} />
-            <StatRow label="Skill Count" value={String(hero.skill_count)} />
-            {hero.buildingLevel > 0 && <StatRow label="Unlock" value={`Building Lv.${hero.buildingLevel}`} />}
-          </div>
-        </section>
-
-        {/* Level Scaling */}
-        <section className="bg-asylum-surface border border-asylum-border rounded-xl p-5">
-          <h2 className="font-display text-lg text-asylum-accent tracking-wide mb-4">LEVEL SCALING</h2>
-          {hero.levelRatio?.length > 0 ? (
-            <div className="space-y-2 text-sm">
-              {hero.levelRatio.map((r: any, i: number) => (
-                <div key={`lr-${i}`} className="flex justify-between">
-                  <span className="text-asylum-muted">{benefitTypeName(r.Type)}</span>
-                  <span className="text-asylum-text font-mono">{(r.Value * 100).toFixed(1)}%/lv</span>
-                </div>
-              ))}
-            </div>
-          ) : <p className="text-asylum-muted text-sm">No level scaling data</p>}
-          {hero.starRatio?.length > 0 && (
-            <>
-              <h3 className="font-display text-sm text-asylum-accent tracking-wide mt-5 mb-3">STAR SCALING</h3>
-              <div className="space-y-2 text-sm">
-                {hero.starRatio.map((r: any, i: number) => (
-                  <div key={`sr-${i}`} className="flex justify-between">
-                    <span className="text-asylum-muted">{benefitTypeName(r.Type)}</span>
-                    <span className="text-asylum-text font-mono">{(r.Value * 100).toFixed(1)}%/★</span>
-                  </div>
-                ))}
-              </div>
-            </>
-          )}
-        </section>
-
-        {/* Fragments */}
-        {(hero.medalId || hero.fragmentItemId) && (
-          <section className="bg-asylum-surface border border-asylum-border rounded-xl p-5 md:col-span-2">
-            <h2 className="font-display text-lg text-asylum-accent tracking-wide mb-4">FRAGMENTS</h2>
-            <div className="grid md:grid-cols-2 gap-3 text-sm">
+        {/* Right column */}
+        <div className="flex-1 flex flex-col gap-4 min-w-0">
+          {/* Hero info card */}
+          <div className="bg-asylum-surface border border-asylum-border rounded-xl p-5">
+            {/* Name row with fragment icons */}
+            <div className="flex items-center gap-3 flex-wrap mb-2">
+              <h1 className="font-display text-3xl tracking-wider text-asylum-text">{name}</h1>
               {hero.medalId && (
-                <div className="flex justify-between bg-asylum-bg rounded-lg p-3">
-                  <span className="text-asylum-muted">Medal</span>
-                  <span className="text-asylum-text font-mono">{hero.medalId} ×{hero.medalAmount}</span>
+                <div className="flex items-center gap-1.5 bg-asylum-bg border border-asylum-border rounded-lg px-2.5 py-1" title={`${hero.medalId.replace('item_Material_fragment_', '')} Shard ×${hero.medalAmount}`}>
+                  <span className="text-sm">🧩</span>
+                  <span className="text-xs text-asylum-muted font-mono">×{hero.medalAmount}</span>
                 </div>
               )}
               {hero.fragmentItemId && (
-                <div className="flex justify-between bg-asylum-bg rounded-lg p-3">
-                  <span className="text-asylum-muted">Universal Fragment</span>
-                  <span className="text-asylum-text font-mono">{hero.fragmentItemId} ×{hero.fragmentItemCount}</span>
+                <div className="flex items-center gap-1.5 bg-asylum-bg border border-asylum-border rounded-lg px-2.5 py-1" title={`Universal Fragment ×${hero.fragmentItemCount}`}>
+                  <span className="text-sm">💎</span>
+                  <span className="text-xs text-asylum-muted font-mono">×{hero.fragmentItemCount}</span>
                 </div>
               )}
             </div>
-          </section>
-        )}
 
-        {/* Honor Milestones */}
-        {hero.honorLevelUnlockEffect?.length > 0 && (
-          <section className="bg-asylum-surface border border-asylum-border rounded-xl p-5 md:col-span-2">
-            <h2 className="font-display text-lg text-asylum-accent tracking-wide mb-4">HONOR MILESTONES</h2>
-            <div className="flex flex-wrap gap-2">
-              {hero.honorLevelUnlockEffect.map((lvl: number, i: number) => (
-                <div key={`hon-${i}`} className="bg-asylum-bg border border-asylum-border rounded px-3 py-1.5 text-sm">
-                  <span className="text-asylum-accent font-mono">Lv.{lvl}</span>
-                </div>
-              ))}
+            {/* Tags */}
+            <div className="flex gap-2 flex-wrap mb-3">
+              <span className={`text-xs font-semibold px-3 py-1 rounded-full border ${accentText} ${accentBorder} bg-asylum-bg`}>{hero.qualityName}</span>
+              <span className="text-xs px-3 py-1 rounded-full bg-asylum-bg border border-asylum-border text-asylum-muted">{hero.armyName}</span>
+              {hero.campName && hero.campName !== 'None' && hero.campType > 0 && (
+                <span className="text-xs px-3 py-1 rounded-full bg-asylum-bg border border-asylum-border text-asylum-muted">{hero.campName}</span>
+              )}
             </div>
-          </section>
-        )}
+
+            {/* Flavor + power */}
+            {hero.descRecruitPreview && (
+              <p className="text-sm text-asylum-muted italic mb-3">{hero.descRecruitPreview}</p>
+            )}
+            {hero.maxAbility > 0 && (
+              <div className="flex items-baseline gap-2">
+                <span className="text-xs text-asylum-muted uppercase tracking-wider">Max power</span>
+                <span className="font-display text-2xl text-asylum-accent">{hero.maxAbility.toLocaleString()}</span>
+              </div>
+            )}
+            {hero.heroStory && (
+              <p className="text-xs text-asylum-muted/60 mt-3 pt-3 border-t border-asylum-border/50 leading-relaxed">{hero.heroStory}</p>
+            )}
+          </div>
+
+          {/* Stats card: combat + scaling side by side */}
+          <div className="bg-asylum-surface border border-asylum-border rounded-xl p-5 flex-1">
+            <div className="grid grid-cols-2 gap-x-6 max-md:grid-cols-1 max-md:gap-y-4">
+              {/* Combat column */}
+              <div>
+                <div className="text-[10px] font-semibold text-asylum-accent uppercase tracking-widest mb-2 pb-2 border-b border-asylum-border">
+                  Combat
+                </div>
+                <div className="space-y-0.5">
+                  {hero.maxAbility > 0 && <StatRow label="Max power" value={hero.maxAbility.toLocaleString()} highlight />}
+                  <StatRow label="Attack speed" value={`${hero.attackCd}ms`} />
+                  <StatRow label="Max honor level" value={String(hero.maxHonorLevel)} />
+                  <StatRow label="Star cap" value={String(hero.heroStarRating)} />
+                  <StatRow label="Skills" value={String(hero.skill_count)} />
+                  {hero.buildingLevel > 0 && <StatRow label="Unlock" value={`Bldg Lv.${hero.buildingLevel}`} />}
+                </div>
+
+                {/* Honor milestones inline */}
+                {hero.honorLevelUnlockEffect?.length > 0 && (
+                  <div className="mt-3 pt-3 border-t border-asylum-border/50">
+                    <div className="text-[10px] font-semibold text-asylum-muted uppercase tracking-wider mb-2">Honor milestones</div>
+                    <div className="flex flex-wrap gap-1">
+                      {hero.honorLevelUnlockEffect.map((lvl: number, i: number) => (
+                        <span key={`hon-${i}`} className="text-[10px] font-mono text-asylum-accent bg-asylum-bg border border-asylum-border rounded px-1.5 py-0.5">
+                          {lvl}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Scaling column */}
+              <div>
+                <div className="text-[10px] font-semibold text-asylum-accent uppercase tracking-widest mb-2 pb-2 border-b border-asylum-border">
+                  Scaling / Level
+                </div>
+                {hero.levelRatio?.length > 0 ? (
+                  <div className="space-y-0.5">
+                    {hero.levelRatio.map((r: any, i: number) => (
+                      <StatRow key={`lr-${i}`} label={benefitTypeName(r.Type)} value={`${(r.Value * 100).toFixed(1)}%`} />
+                    ))}
+                  </div>
+                ) : <p className="text-xs text-asylum-muted">No level scaling data</p>}
+
+                {hero.starRatio?.length > 0 && (
+                  <div className="mt-3 pt-3 border-t border-asylum-border/50">
+                    <div className="text-[10px] font-semibold text-asylum-muted uppercase tracking-wider mb-2">Per star</div>
+                    <div className="space-y-0.5">
+                      {hero.starRatio.map((r: any, i: number) => (
+                        <StatRow key={`sr-${i}`} label={benefitTypeName(r.Type)} value={`${(r.Value * 100).toFixed(1)}%/★`} />
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {hero.levelBenefit?.length > 0 && (
+                  <div className="mt-3 pt-3 border-t border-asylum-border/50">
+                    <div className="text-[10px] font-semibold text-asylum-muted uppercase tracking-wider mb-2">Bonus</div>
+                    <div className="space-y-0.5">
+                      {hero.levelBenefit.map((r: any, i: number) => (
+                        <StatRow key={`lb-${i}`} label={benefitTypeName(r.Type)} value={`+${(r.Value * 100).toFixed(2)}%`} />
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      {/* Skills */}
+      <HeroSkillPanel skills={skillData} />
     </div>
   )
 }
 
 function StatRow({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
   return (
-    <div className="flex justify-between py-1 border-b border-asylum-border/50 last:border-0">
+    <div className="flex justify-between py-1 text-xs">
       <span className="text-asylum-muted">{label}</span>
       <span className={highlight ? 'text-asylum-accent font-mono font-bold' : 'text-asylum-text font-mono'}>{value}</span>
     </div>
