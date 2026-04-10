@@ -1,31 +1,91 @@
-import { getHeroes, getHeroList, getSkills, heroDisplayName, heroImagePath, skillImagePath, benefitTypeName } from '@/lib/gamedata'
+import { getHeroes, getHeroList, heroDisplayName, heroImagePath, skillImagePath, benefitTypeName } from '@/lib/gamedata'
 import GameImage from '@/components/GameImage'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import HeroSkillPanel from '@/components/HeroSkillPanel'
 
 export async function generateStaticParams() {
   return getHeroList().map(h => ({ id: h.id }))
 }
 
 function stripTags(s: string): string {
-  return s.replace(/\[c\]\[[^\]]*\]/g, '').replace(/\[-\]\[\/c\]/g, '').replace(/\{(\d+)\}/g, 'X')
+  return s.replace(/\[c\]\[[^\]]*\]/g, '').replace(/\[-\]\[\/c\]/g, '').replace(/\[\/c\]/g, '').replace(/\{(\d+)\}/g, 'X')
+}
+
+const SLOT_LABELS: Record<number, string> = {
+  0: 'Auto Atk', 1: 'Auto Atk', 2: 'Ultimate', 3: 'Skill', 4: 'Passive', 5: 'Support',
+  6: 'Passive 2', 7: 'Passive 3', 8: 'Passive 4',
+}
+const SLOT_ORDER = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+
+function extractTypeLabel(typeDesc: string): string {
+  return stripTags(typeDesc).trim() || 'Skill'
+}
+
+interface SkillGroup {
+  slot: number
+  name: string
+  typeLabel: string
+  icon: string
+  description: string
+  levels: { star: number; unlockStar: number; power: string; param1: string; description: string }[]
+}
+
+function groupSkills(skills: any[]): SkillGroup[] {
+  const bySlot: Record<number, any[]> = {}
+  for (const sk of skills) {
+    const slot = sk.skillSlot ?? 0
+    ;(bySlot[slot] ??= []).push(sk)
+  }
+  const groups: SkillGroup[] = []
+  for (const slot of SLOT_ORDER) {
+    const entries = bySlot[slot]
+    if (!entries?.length) continue
+    const sorted = [...entries].sort((a, b) => (a.skillStar || 0) - (b.skillStar || 0))
+    const first = sorted[0]
+    groups.push({
+      slot,
+      name: first.displayName || SLOT_LABELS[slot] || `Slot ${slot}`,
+      typeLabel: first.typeDesc ? extractTypeLabel(first.typeDesc) : SLOT_LABELS[slot] || 'Skill',
+      icon: first.icon || '',
+      description: first.description ? stripTags(first.description) : '',
+      levels: sorted.map(sk => ({
+        star: sk.skillStar || 0,
+        unlockStar: sk.unlockStar || 0,
+        power: sk.power || '',
+        param1: sk.param1 || '',
+        description: sk.description ? stripTags(sk.description) : '',
+      })),
+    })
+  }
+  return groups
 }
 
 export default function HeroPage({ params }: { params: { id: string } }) {
   const hero = getHeroes()[params.id]
   if (!hero) return notFound()
-  const skills = getSkills()
 
   const qc: Record<number, string> = {
-    4: 'border-purple-500/50 text-purple-400', 5: 'border-orange-500/50 text-orange-400', 6: 'border-red-500/50 text-red-400',
+    0: 'border-blue-500/50 text-blue-400',
+    4: 'border-purple-500/50 text-purple-400',
+    5: 'border-orange-500/50 text-orange-400',
+    6: 'border-red-500/50 text-red-400',
   }
   const accent = qc[hero.quality] || 'border-asylum-border text-asylum-muted'
   const name = heroDisplayName(hero)
+  const skillGroups = groupSkills(hero.skills || [])
+
+  // Prepare serializable skill data for client component
+  const skillData = skillGroups.map(g => ({
+    ...g,
+    iconSrc: g.icon ? `/images/skills/${g.icon}.png` : '',
+  }))
 
   return (
     <div>
       <Link href="/heroes" className="text-sm text-asylum-muted hover:text-asylum-accent mb-4 inline-block">← Back to Heroes</Link>
 
+      {/* Hero Header */}
       <div className={`bg-asylum-surface border rounded-xl p-6 mb-6 ${accent.split(' ')[0]}`}>
         <div className="flex items-start gap-6">
           <div className={`w-28 h-28 rounded-xl border-2 overflow-hidden shrink-0 ${accent}`}>
@@ -51,7 +111,7 @@ export default function HeroPage({ params }: { params: { id: string } }) {
         {hero.descRecruitPreview && <p className="mt-2 text-sm text-asylum-text/80 italic">{hero.descRecruitPreview}</p>}
       </div>
 
-      {/* Thumbnail / Bust / Honor preview row */}
+      {/* Thumbnail row */}
       <div className="flex gap-4 mb-6 overflow-x-auto pb-2">
         {(['thumbnail', 'portrait', 'bust', 'honor'] as const).map(type => {
           const src = heroImagePath(hero, type)
@@ -68,10 +128,15 @@ export default function HeroPage({ params }: { params: { id: string } }) {
         })}
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      {/* Interactive Skill Panel */}
+      <HeroSkillPanel skills={skillData} />
+
+      <div className="grid md:grid-cols-2 gap-6 mt-6">
+        {/* Stats */}
         <section className="bg-asylum-surface border border-asylum-border rounded-xl p-5">
           <h2 className="font-display text-lg text-asylum-accent tracking-wide mb-4">STATS</h2>
           <div className="space-y-2 text-sm">
+            {hero.maxAbility > 0 && <StatRow label="Max Power" value={hero.maxAbility.toLocaleString()} highlight />}
             <StatRow label="Attack Speed" value={`${hero.attackCd}ms`} />
             <StatRow label="Attack Range" value={String(hero.attackRadius)} />
             {hero.rpgAttackRadius > 0 && <StatRow label="RPG Attack Range" value={String(hero.rpgAttackRadius)} />}
@@ -82,11 +147,12 @@ export default function HeroPage({ params }: { params: { id: string } }) {
           </div>
         </section>
 
+        {/* Level Scaling */}
         <section className="bg-asylum-surface border border-asylum-border rounded-xl p-5">
           <h2 className="font-display text-lg text-asylum-accent tracking-wide mb-4">LEVEL SCALING</h2>
           {hero.levelRatio?.length > 0 ? (
             <div className="space-y-2 text-sm">
-              {hero.levelRatio.map((r, i) => (
+              {hero.levelRatio.map((r: any, i: number) => (
                 <div key={`lr-${i}`} className="flex justify-between">
                   <span className="text-asylum-muted">{benefitTypeName(r.Type)}</span>
                   <span className="text-asylum-text font-mono">{(r.Value * 100).toFixed(1)}%/lv</span>
@@ -98,7 +164,7 @@ export default function HeroPage({ params }: { params: { id: string } }) {
             <>
               <h3 className="font-display text-sm text-asylum-accent tracking-wide mt-5 mb-3">STAR SCALING</h3>
               <div className="space-y-2 text-sm">
-                {hero.starRatio.map((r, i) => (
+                {hero.starRatio.map((r: any, i: number) => (
                   <div key={`sr-${i}`} className="flex justify-between">
                     <span className="text-asylum-muted">{benefitTypeName(r.Type)}</span>
                     <span className="text-asylum-text font-mono">{(r.Value * 100).toFixed(1)}%/★</span>
@@ -109,38 +175,7 @@ export default function HeroPage({ params }: { params: { id: string } }) {
           )}
         </section>
 
-        <section className="bg-asylum-surface border border-asylum-border rounded-xl p-5 md:col-span-2">
-          <h2 className="font-display text-lg text-asylum-accent tracking-wide mb-4">SKILLS ({hero.skills.length})</h2>
-          {hero.skills.length > 0 ? (
-            <div className="grid md:grid-cols-2 gap-3">
-              {hero.skills.map((sk, i) => {
-                const skillData = skills[String(sk.skillId)]
-                return (
-                  <div key={sk.id || `sk-${i}`} className="bg-asylum-bg border border-asylum-border rounded-lg p-4">
-                    <div className="flex items-start gap-3">
-                      <div className="w-10 h-10 rounded bg-asylum-accent/10 border border-asylum-accent/20 overflow-hidden shrink-0">
-                        <GameImage src={skillImagePath(sk.icon)} alt={sk.displayName || 'Skill'} fallback="⚡" className="w-full h-full" />
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2 flex-wrap">
-                          <span className="text-sm font-semibold text-asylum-text">{sk.displayName || `Skill #${sk.skillId}`}</span>
-                          {sk.typeDesc && <span className="text-xs text-blue-400">{stripTags(sk.typeDesc)}</span>}
-                        </div>
-                        {sk.description && <p className="text-xs text-asylum-muted mt-1">{stripTags(sk.description)}</p>}
-                        <div className="text-xs text-asylum-muted/60 mt-1">
-                          {sk.unlockLevel > 0 && <span className="mr-3">Unlock: Lv.{sk.unlockLevel}</span>}
-                          {sk.unlockStar > 0 && <span className="mr-3">Unlock: {sk.unlockStar}★</span>}
-                          {skillData?.initCd > 0 && <span>CD: {skillData.initCd}ms</span>}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
-          ) : <p className="text-asylum-muted text-sm">No skill data for this hero variant</p>}
-        </section>
-
+        {/* Fragments */}
         {(hero.medalId || hero.fragmentItemId) && (
           <section className="bg-asylum-surface border border-asylum-border rounded-xl p-5 md:col-span-2">
             <h2 className="font-display text-lg text-asylum-accent tracking-wide mb-4">FRAGMENTS</h2>
@@ -161,11 +196,12 @@ export default function HeroPage({ params }: { params: { id: string } }) {
           </section>
         )}
 
+        {/* Honor Milestones */}
         {hero.honorLevelUnlockEffect?.length > 0 && (
           <section className="bg-asylum-surface border border-asylum-border rounded-xl p-5 md:col-span-2">
             <h2 className="font-display text-lg text-asylum-accent tracking-wide mb-4">HONOR MILESTONES</h2>
             <div className="flex flex-wrap gap-2">
-              {hero.honorLevelUnlockEffect.map((lvl, i) => (
+              {hero.honorLevelUnlockEffect.map((lvl: number, i: number) => (
                 <div key={`hon-${i}`} className="bg-asylum-bg border border-asylum-border rounded px-3 py-1.5 text-sm">
                   <span className="text-asylum-accent font-mono">Lv.{lvl}</span>
                 </div>
@@ -178,11 +214,11 @@ export default function HeroPage({ params }: { params: { id: string } }) {
   )
 }
 
-function StatRow({ label, value }: { label: string; value: string }) {
+function StatRow({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
   return (
     <div className="flex justify-between py-1 border-b border-asylum-border/50 last:border-0">
       <span className="text-asylum-muted">{label}</span>
-      <span className="text-asylum-text font-mono">{value}</span>
+      <span className={highlight ? 'text-asylum-accent font-mono font-bold' : 'text-asylum-text font-mono'}>{value}</span>
     </div>
   )
 }
