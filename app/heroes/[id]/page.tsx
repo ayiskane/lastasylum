@@ -1,4 +1,4 @@
-import { getHeroes, getHeroList, getItems, getHeroStars, heroDisplayName, heroImagePath, skillImagePath, benefitTypeName, itemImagePath } from '@/lib/gamedata'
+import { getHeroes, getHeroList, getItems, getHeroStars, getHonorWall, heroDisplayName, heroImagePath, skillImagePath, benefitTypeName, itemImagePath } from '@/lib/gamedata'
 import GameImage from '@/components/GameImage'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
@@ -81,6 +81,7 @@ export default function HeroPage({ params }: { params: { id: string } }) {
 
   const items = getItems()
   const heroStars = getHeroStars()
+  const honorWall = getHonorWall()
 
   const accentMap: Record<number, string> = {
     0: 'border-blue-500/50', 4: 'border-purple-500/50', 5: 'border-orange-500/50', 6: 'border-red-500/50',
@@ -98,15 +99,27 @@ export default function HeroPage({ params }: { params: { id: string } }) {
   const shardItem = hero.medalId ? items[hero.medalId] : null
   const fragItem = hero.fragmentItemId ? items[hero.fragmentItemId] : null
 
-  // Build honor milestone data with star bonuses
+  // Build honor milestone data
+  // honorLevelUnlockEffect contains honor LEVELS (50,100,...,600)
+  // hero_stars covers star progression (0-50) — star=50 matches honor level 50
+  // honor_wall covers honor levels 1-600 with per-level benefits
   const honorMilestones = (hero.honorLevelUnlockEffect || []).map((lvl: number) => {
-    // Find matching star entry
-    const starEntry = Object.values(heroStars).find((s: any) => s.star === lvl)
+    // For level 50, check hero_stars (star progression data)
+    const starEntry = lvl <= 50
+      ? Object.values(heroStars).find((s: any) => s.star === lvl)
+      : null
+
+    // For all levels, check honor_wall (honor level benefits)
+    const honorEntry = honorWall[String(lvl)]
+
+    // Prefer hero_stars attrs (more detailed), fallback to honor_wall
+    const attrs = (starEntry as any)?.attr || (honorEntry?.levelBenefit) || []
+
     return {
       level: lvl,
       wholeStar: (starEntry as any)?.wholeStar || 0,
       cost: (starEntry as any)?.cost || 0,
-      attrs: ((starEntry as any)?.attr || []) as { Type: number; Value: number; Source: number }[],
+      attrs: attrs as { Type: number; Value: number; Source: number }[],
     }
   })
 
@@ -114,15 +127,17 @@ export default function HeroPage({ params }: { params: { id: string } }) {
     <div>
       <Link href="/heroes" className="text-sm text-asylum-muted hover:text-asylum-accent mb-4 inline-block">← Back to Heroes</Link>
 
-      {/* Top section: card image left (fixed to native 162×276), info+stats right */}
-      <div className="flex gap-5 mb-6 items-stretch max-md:flex-col">
-        {/* Card image — native size 162×276, display at 2x for retina */}
-        <div className={`w-[162px] min-h-[276px] max-md:w-full max-md:max-w-[220px] max-md:mx-auto shrink-0 rounded-xl border-2 ${accentBorder} overflow-hidden bg-asylum-surface`}>
-          <GameImage
-            src={heroImagePath(hero, 'thumbnail')}
-            alt={name}
-            className="w-full h-full object-cover"
-          />
+      {/* Top section: card image left, info+stats right */}
+      <div className="flex gap-5 mb-6 max-md:flex-col">
+        {/* Card image — native 162×276, maintain aspect ratio */}
+        <div className={`w-[162px] max-md:w-full max-md:max-w-[162px] max-md:mx-auto shrink-0 rounded-xl border-2 ${accentBorder} overflow-hidden bg-asylum-surface`}>
+          <div className="aspect-[162/276]">
+            <GameImage
+              src={heroImagePath(hero, 'thumbnail')}
+              alt={name}
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
 
         {/* Right column */}

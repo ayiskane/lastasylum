@@ -179,6 +179,10 @@ export function getHeroStars(): Record<string, any> {
   return loadJson('hero_stars.json')
 }
 
+export function getHonorWall(): Record<string, any> {
+  return loadJson('honor_wall.json')
+}
+
 export function getActivities(): Record<string, any> {
   return loadJson('activities.json')
 }

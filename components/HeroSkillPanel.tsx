@@ -205,7 +205,11 @@ export default function HeroSkillPanel({ skills }: { skills: SkillGroupData[] })
                             <span className="text-asylum-muted">Unlock at <span className="text-asylum-text font-semibold">{lv.unlockStar}★</span></span>
                           )}
                           {lv.power && (
-                            <span className="text-asylum-muted">Power: <span className="text-asylum-text font-mono">{lv.power.replace(/n1/g, String(skillLevel))}</span></span>
+                            <span className="text-asylum-muted">Power: <span className="text-asylum-text font-mono">{
+                              lv.power.includes('n1')
+                                ? (() => { const v = evalParam(lv.power, skillLevel); return v !== null ? Math.round(v).toLocaleString() : lv.power })()
+                                : lv.power
+                            }</span></span>
                           )}
                           {lvParam1Val !== null && (
                             <span className="text-asylum-muted">Effect: <span className="text-asylum-accent font-mono font-semibold">{formatValue(lvParam1Val)}</span></span>
