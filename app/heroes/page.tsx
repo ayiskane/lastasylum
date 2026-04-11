@@ -18,25 +18,25 @@ const QUALITY_CARD: Record<number, { border: string; bg: string; text: string }>
   6: { border: 'border-red-500/50', bg: 'bg-gradient-to-b from-[#a02020] to-[#501010]', text: 'text-red-400' },
 }
 
-// SVG badge icons for army type (top-left blue shield)
-const ARMY_ICON: Record<number, string> = {
-  1: '🛡️', // Infantry
-  2: '🚗', // Vehicle
-  3: '✈️', // Aircraft
-}
-
-// SVG badge icons for camp/role (bottom-left)
+// Game icons: camp/class (pic_sjboss_zy*)
 const CAMP_ICON: Record<number, string> = {
-  1: '🏹', // Ranger
-  2: '🔮', // Warlock
-  3: '⚔️', // Warrior
+  1: '/images/icons/pic_sjboss_zy2.png', // Ranger (blue)
+  2: '/images/icons/pic_sjboss_zy3.png', // Warlock (green)
+  3: '/images/icons/pic_sjboss_zy1.png', // Warrior (red)
 }
 
-const ARMY_COLORS: Record<number, string> = {
-  1: 'bg-blue-600', 2: 'bg-emerald-600', 3: 'bg-sky-600',
+// Game icons: army type (ico_yx_dw*)
+const ARMY_ICON: Record<number, string> = {
+  1: '/images/icons/ico_yx_dw1.png', // Infantry (shield)
+  3: '/images/icons/ico_yx_dw2.png', // Aircraft (wing)
 }
-const CAMP_COLORS: Record<number, string> = {
-  1: 'bg-red-600', 2: 'bg-purple-600', 3: 'bg-orange-600',
+
+// Rarity label images (font_pz_*)
+const RARITY_LABEL: Record<number, string> = {
+  2: '/images/icons/font_pz_2.png', // R
+  3: '/images/icons/font_pz_3.png', // SR
+  4: '/images/icons/font_pz_4.png', // SSR
+  5: '/images/icons/font_pz_5.png', // UR
 }
 
 export default function HeroesPage() {
@@ -57,7 +57,6 @@ export default function HeroesPage() {
     )
   }
 
-  // Unique army/camp types for filters
   const armyTypes = [...new Set(heroes.map(h => h.armyType))].filter(t => t > 0).sort()
   const campTypes = [...new Set(heroes.map(h => h.campType))].filter(t => t > 0).sort()
   const armyNames: Record<number, string> = {}
@@ -67,20 +66,16 @@ export default function HeroesPage() {
     if (h.campType > 0) campNames[h.campType] = h.campName
   })
 
-  // Filter
   const filtered = heroes.filter(h =>
     (filterArmy === null || h.armyType === filterArmy) &&
     (filterCamp === null || h.campType === filterCamp)
   )
 
-  // Group by quality
   const byQuality: Record<number, HeroEntry[]> = {}
   for (const h of filtered) {
     ;(byQuality[h.quality] ??= []).push(h)
   }
-
   const qualityOrder = [6, 5, 4, 3, 2, 0]
-  const qualityLabels: Record<number, string> = { 6: 'UR+', 5: 'UR', 4: 'SSR', 3: 'SR', 2: 'R', 0: 'SR' }
 
   return (
     <div>
@@ -92,23 +87,16 @@ export default function HeroesPage() {
         {/* Army type filter */}
         <div className="flex items-center gap-1.5">
           <span className="text-[10px] text-asylum-hint uppercase tracking-wider mr-1">Class</span>
-          <button
-            onClick={() => setFilterArmy(null)}
+          <button onClick={() => setFilterArmy(null)}
             className={`text-[11px] px-2.5 py-1 rounded-lg transition-colors ${
-              filterArmy === null
-                ? 'bg-asylum-accent/15 text-asylum-accent border border-asylum-accent/30'
-                : 'bg-asylum-surface border border-asylum-border text-asylum-muted hover:text-asylum-text'
-            }`}
-          >All</button>
+              filterArmy === null ? 'bg-asylum-accent/15 text-asylum-accent border border-asylum-accent/30'
+                : 'bg-asylum-surface border border-asylum-border text-asylum-muted hover:text-asylum-text'}`}>All</button>
           {armyTypes.map(t => (
             <button key={t} onClick={() => setFilterArmy(filterArmy === t ? null : t)}
               className={`text-[11px] px-2.5 py-1 rounded-lg transition-colors flex items-center gap-1 ${
-                filterArmy === t
-                  ? 'bg-asylum-accent/15 text-asylum-accent border border-asylum-accent/30'
-                  : 'bg-asylum-surface border border-asylum-border text-asylum-muted hover:text-asylum-text'
-              }`}
-            >
-              <span className="text-xs">{ARMY_ICON[t] || '?'}</span>
+                filterArmy === t ? 'bg-asylum-accent/15 text-asylum-accent border border-asylum-accent/30'
+                  : 'bg-asylum-surface border border-asylum-border text-asylum-muted hover:text-asylum-text'}`}>
+              {ARMY_ICON[t] && <img src={ARMY_ICON[t]} alt="" className="w-4 h-4" />}
               {armyNames[t]}
             </button>
           ))}
@@ -117,30 +105,22 @@ export default function HeroesPage() {
         {/* Camp/role filter */}
         <div className="flex items-center gap-1.5">
           <span className="text-[10px] text-asylum-hint uppercase tracking-wider mr-1">Role</span>
-          <button
-            onClick={() => setFilterCamp(null)}
+          <button onClick={() => setFilterCamp(null)}
             className={`text-[11px] px-2.5 py-1 rounded-lg transition-colors ${
-              filterCamp === null
-                ? 'bg-asylum-accent/15 text-asylum-accent border border-asylum-accent/30'
-                : 'bg-asylum-surface border border-asylum-border text-asylum-muted hover:text-asylum-text'
-            }`}
-          >All</button>
+              filterCamp === null ? 'bg-asylum-accent/15 text-asylum-accent border border-asylum-accent/30'
+                : 'bg-asylum-surface border border-asylum-border text-asylum-muted hover:text-asylum-text'}`}>All</button>
           {campTypes.map(t => (
             <button key={t} onClick={() => setFilterCamp(filterCamp === t ? null : t)}
               className={`text-[11px] px-2.5 py-1 rounded-lg transition-colors flex items-center gap-1 ${
-                filterCamp === t
-                  ? 'bg-asylum-accent/15 text-asylum-accent border border-asylum-accent/30'
-                  : 'bg-asylum-surface border border-asylum-border text-asylum-muted hover:text-asylum-text'
-              }`}
-            >
-              <span className="text-xs">{CAMP_ICON[t] || '?'}</span>
+                filterCamp === t ? 'bg-asylum-accent/15 text-asylum-accent border border-asylum-accent/30'
+                  : 'bg-asylum-surface border border-asylum-border text-asylum-muted hover:text-asylum-text'}`}>
+              {CAMP_ICON[t] && <img src={CAMP_ICON[t]} alt="" className="w-4 h-4" />}
               {campNames[t]}
             </button>
           ))}
         </div>
       </div>
 
-      {/* Filtered count */}
       {(filterArmy !== null || filterCamp !== null) && (
         <p className="text-xs text-asylum-muted mb-4">
           Showing {filtered.length} of {heroes.length} heroes
@@ -149,16 +129,16 @@ export default function HeroesPage() {
         </p>
       )}
 
-      {/* Hero grid grouped by quality */}
       {qualityOrder.map(q => {
         const list = byQuality[q]
         if (!list?.length) return null
         const style = QUALITY_CARD[q] || QUALITY_CARD[4]
+        const rarityImg = RARITY_LABEL[q]
         return (
           <section key={q} className="mb-8">
-            <h2 className={`font-display text-lg tracking-wide mb-3 ${style.text}`}>
-              {qualityLabels[q] || `Quality ${q}`}
-              <span className="text-sm text-asylum-muted font-normal ml-2">({list.length})</span>
+            <h2 className={`font-display text-lg tracking-wide mb-3 flex items-center gap-2 ${style.text}`}>
+              {rarityImg ? <img src={rarityImg} alt={list[0]?.qualityName} className="h-6" /> : (list[0]?.qualityName || `Quality ${q}`)}
+              <span className="text-sm text-asylum-muted font-normal">({list.length})</span>
             </h2>
             <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3">
               {list.map(hero => (
@@ -176,7 +156,6 @@ function HeroCard({ hero, style }: { hero: HeroEntry; style: { border: string; b
   return (
     <Link href={`/heroes/${hero.id}`}
       className="group flex flex-col items-center gap-1.5 transition-transform hover:scale-105">
-      {/* Card with badges */}
       <div className={`w-[72px] h-[72px] rounded-xl border-2 ${style.border} ${style.bg} p-0.5 overflow-hidden relative transition-all group-hover:border-opacity-100`}>
         <div className="w-full h-full rounded-[10px] overflow-hidden">
           <GameImage
@@ -186,20 +165,19 @@ function HeroCard({ hero, style }: { hero: HeroEntry; style: { border: string; b
             className="w-full h-full object-cover"
           />
         </div>
-        {/* Army type badge — top left */}
-        {hero.armyType > 0 && (
-          <div className={`absolute top-0.5 left-0.5 w-[18px] h-[18px] rounded-md ${ARMY_COLORS[hero.armyType] || 'bg-gray-600'} flex items-center justify-center shadow-sm`}>
-            <span className="text-[9px] leading-none">{ARMY_ICON[hero.armyType] || '?'}</span>
+        {/* Army type badge — top right */}
+        {hero.armyType > 0 && ARMY_ICON[hero.armyType] && (
+          <div className="absolute -top-0.5 -right-0.5 w-[20px] h-[20px]">
+            <img src={ARMY_ICON[hero.armyType]} alt="" className="w-full h-full" />
           </div>
         )}
         {/* Camp/role badge — bottom left */}
-        {hero.campType > 0 && (
-          <div className={`absolute bottom-0.5 left-0.5 w-[18px] h-[18px] rounded-md ${CAMP_COLORS[hero.campType] || 'bg-gray-600'} flex items-center justify-center shadow-sm`}>
-            <span className="text-[9px] leading-none">{CAMP_ICON[hero.campType] || '?'}</span>
+        {hero.campType > 0 && CAMP_ICON[hero.campType] && (
+          <div className="absolute -bottom-0.5 -left-0.5 w-[22px] h-[22px]">
+            <img src={CAMP_ICON[hero.campType]} alt="" className="w-full h-full" />
           </div>
         )}
       </div>
-      {/* Name */}
       <span className="text-[11px] font-semibold text-asylum-text text-center leading-tight group-hover:text-asylum-accent transition-colors truncate max-w-[80px]">
         {hero.name}
       </span>

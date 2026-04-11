@@ -1,76 +1,76 @@
 {
-  "4": {
-    "modelResourcePath": "Scenes/CityScene/MonopolyModels/boss_29/boss_29_prefab.prefab",
-    "battleId": 1004,
-    "modelPosition": "30.32,-26.27,0",
-    "id": 4,
-    "battleHero": "40002_1|10006_4|"
-  },
   "5": {
-    "BattleEf": "0,1.5,0",
+    "modelResourcePath": "Effects/City/Momopoly_npc_boss/boss1.prefab",
     "battleId": 1005,
-    "modelPosition": "21.03,-42.59,-30",
     "needWin": 1,
     "modelRotation": "1.6,-55.35223,6.2429,-1.734161",
-    "modelResourcePath": "Effects/City/Momopoly_npc_boss/boss1.prefab",
+    "BattleEf": "0,1.5,0",
+    "modelPosition": "21.03,-42.59,-30",
     "id": 5
   },
   "6": {
-    "BattleEf": "0,0.5,0",
+    "modelResourcePath": "Effects/City/Momopoly_npc_boss/boss2.prefab",
     "battleId": 1006,
-    "modelPosition": "15.98,-41.44,-30",
     "needWin": 1,
     "modelRotation": "1.2,-26.78403,63.41307,-27.2356",
-    "modelResourcePath": "Effects/City/Momopoly_npc_boss/boss2.prefab",
+    "BattleEf": "0,0.5,0",
+    "modelPosition": "15.98,-41.44,-30",
     "id": 6
   },
-  "7": {
-    "BattleEf": "0,0.8,0",
-    "battleId": 1007,
-    "modelPosition": "25.81,-41.74,21.53",
-    "needWin": 1,
-    "modelRotation": "1.3,-46.87643,-26.82089,14.69966",
-    "modelResourcePath": "Effects/City/Momopoly_npc_boss/boss3.prefab",
-    "id": 7
+  "3": {
+    "battleId": 1003,
+    "battleHero": "40002_1|10006_4|",
+    "monsterNumber": 8,
+    "disCond": [
+      {
+        "param2": "4",
+        "param1": "1001",
+        "id": 20103
+      }
+    ],
+    "id": 3
+  },
+  "4": {
+    "modelResourcePath": "Scenes/CityScene/MonopolyModels/boss_29/boss_29_prefab.prefab",
+    "battleId": 1004,
+    "battleHero": "40002_1|10006_4|",
+    "modelPosition": "30.32,-26.27,0",
+    "id": 4
   },
   "1": {
-    "monsterNumber": 8,
     "disCond": [
       {
+        "param2": "2",
         "param1": "1001",
-        "id": 20103,
-        "param2": "2"
+        "id": 20103
       }
     ],
+    "battleHero": "10006_4|",
     "dialogId": "101",
-    "modelPosition": "39,-17,0",
-    "battleHero": "10006_4|"
+    "monsterNumber": 8,
+    "modelPosition": "39,-17,0"
   },
   "2": {
-    "monsterNumber": 8,
     "battleId": 1002,
+    "battleHero": "40002_1|10006_4|",
     "modelPosition": "30,-15,0",
-    "id": 2,
-    "disCond": [
-      {
-        "param1": "1001",
-        "id": 20103,
-        "param2": "3"
-      }
-    ],
-    "battleHero": "40002_1|10006_4|"
-  },
-  "3": {
     "monsterNumber": 8,
-    "battleId": 1003,
-    "id": 3,
     "disCond": [
       {
+        "param2": "3",
         "param1": "1001",
-        "id": 20103,
-        "param2": "4"
+        "id": 20103
       }
     ],
-    "battleHero": "40002_1|10006_4|"
+    "id": 2
+  },
+  "7": {
+    "modelResourcePath": "Effects/City/Momopoly_npc_boss/boss3.prefab",
+    "battleId": 1007,
+    "needWin": 1,
+    "modelRotation": "1.3,-46.87643,-26.82089,14.69966",
+    "BattleEf": "0,0.8,0",
+    "modelPosition": "25.81,-41.74,21.53",
+    "id": 7
   }
 }

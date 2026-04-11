@@ -22,8 +22,24 @@ function extractTypeLabel(typeDesc: string): string {
   return stripTags(typeDesc).trim() || 'Skill'
 }
 
-const CAMP_ICONS: Record<number, string> = {
-  1: '🏹', 2: '🔮', 3: '⚔️',
+// Camp/class icons from game
+const CAMP_ICON_SRC: Record<number, string> = {
+  1: '/images/icons/pic_sjboss_zy2.png', // Ranger
+  2: '/images/icons/pic_sjboss_zy3.png', // Warlock
+  3: '/images/icons/pic_sjboss_zy1.png', // Warrior
+}
+
+// Army type icons from game
+const ARMY_ICON_SRC: Record<number, string> = {
+  1: '/images/icons/ico_yx_dw1.png', // Infantry
+  3: '/images/icons/ico_yx_dw2.png', // Aircraft
+}
+
+// Rarity label images
+const RARITY_LABEL: Record<number, string> = {
+  3: '/images/icons/font_pz_3.png', // SR
+  4: '/images/icons/font_pz_4.png', // SSR
+  5: '/images/icons/font_pz_5.png', // UR
 }
 
 // Card frame styles matching in-game hero cards
@@ -136,15 +152,21 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
             </div>
 
             {/* Tags */}
-            <div className="flex gap-1.5 flex-wrap mb-2">
-              <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-asylum-accent/12 text-asylum-accent">
-                {hero.qualityName}
-              </span>
-              <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-asylum-surface text-asylum-muted border border-asylum-border">
+            <div className="flex gap-1.5 flex-wrap items-center mb-2">
+              {RARITY_LABEL[hero.quality] ? (
+                <img src={RARITY_LABEL[hero.quality]} alt={hero.qualityName} className="h-5" />
+              ) : (
+                <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-asylum-accent/12 text-asylum-accent">
+                  {hero.qualityName}
+                </span>
+              )}
+              <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-asylum-surface text-asylum-muted border border-asylum-border flex items-center gap-1">
+                {ARMY_ICON_SRC[hero.armyType] && <img src={ARMY_ICON_SRC[hero.armyType]} alt="" className="w-3.5 h-3.5" />}
                 {hero.armyName}
               </span>
-              <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-asylum-surface text-asylum-muted border border-asylum-border">
-                {CAMP_ICONS[hero.campType] || ''} {hero.campName}
+              <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-asylum-surface text-asylum-muted border border-asylum-border flex items-center gap-1">
+                {CAMP_ICON_SRC[hero.campType] && <img src={CAMP_ICON_SRC[hero.campType]} alt="" className="w-3.5 h-3.5" />}
+                {hero.campName}
               </span>
             </div>
 
