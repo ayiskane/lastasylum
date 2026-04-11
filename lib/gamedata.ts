@@ -262,9 +262,10 @@ export function benefitTypeName(type: number): string {
 
 export function heroImagePath(hero: Hero, type: 'portrait' | 'thumbnail' | 'bust' | 'honor' = 'portrait'): string {
   const field = { portrait: 'heroIcon', thumbnail: 'image', bust: 'heroPic', honor: 'honorImage' }[type]
+  const dir = type === 'bust' ? 'busts' : 'heroes'
   const ref = (hero as any)[field] || ''
   if (!ref) return ''
-  return `/images/heroes/${ref}.png`
+  return `/images/${dir}/${ref}.png`
 }
 
 export function itemImagePath(icon: string): string {

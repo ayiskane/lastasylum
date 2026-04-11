@@ -1,60 +1,4 @@
 {
-  "8": {
-    "eggClaimLimitId": 2,
-    "id": 8,
-    "target": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 999
-      }
-    ],
-    "reward": [
-      {
-        "count": 8000,
-        "type": 11
-      }
-    ],
-    "randomMin": 168,
-    "eggType": 1,
-    "randomMax": 1088
-  },
-  "9": {
-    "eggClaimLimitId": 3,
-    "issueBanner": "img_lt_jd_banner_01",
-    "randomMax": 1088,
-    "id": 9,
-    "reward": [
-      {
-        "count": 8000,
-        "type": 11
-      }
-    ],
-    "referenceID": 8,
-    "randomMin": 168,
-    "eggType": 2,
-    "itemID": "item_itemegg_newyear"
-  },
-  "2": {
-    "target": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 12
-      }
-    ],
-    "id": 2
-  },
-  "3": {
-    "target": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 16
-      }
-    ],
-    "id": 3
-  },
   "1": {
     "target": [
       {
@@ -64,55 +8,27 @@
       }
     ]
   },
-  "6": {
-    "randomMax": 30,
-    "id": 6,
+  "3": {
+    "id": 3,
     "target": [
       {
         "id": 20103,
         "param1": 1001,
-        "param2": 27
+        "param2": 16
       }
-    ],
-    "reward": [
-      {
-        "count": 500,
-        "type": 11
-      }
-    ],
-    "randomMin": 10
+    ]
   },
-  "7": {
-    "randomMax": 75,
-    "id": 7,
+  "2": {
+    "id": 2,
     "target": [
       {
         "id": 20103,
         "param1": 1001,
-        "param2": 30
+        "param2": 12
       }
-    ],
-    "reward": [
-      {
-        "count": 1000,
-        "type": 11
-      }
-    ],
-    "randomMin": 25
-  },
-  "4": {
-    "randomMax": 30,
-    "id": 4,
-    "reward": [
-      {
-        "count": 500,
-        "type": 11
-      }
-    ],
-    "randomMin": 10
+    ]
   },
   "5": {
-    "randomMax": 30,
     "id": 5,
     "target": [
       {
@@ -121,12 +37,96 @@
         "param2": 24
       }
     ],
+    "randomMax": 30,
     "reward": [
       {
-        "count": 500,
-        "type": 11
+        "type": 11,
+        "count": 500
       }
     ],
     "randomMin": 10
+  },
+  "4": {
+    "id": 4,
+    "randomMax": 30,
+    "reward": [
+      {
+        "type": 11,
+        "count": 500
+      }
+    ],
+    "randomMin": 10
+  },
+  "7": {
+    "id": 7,
+    "target": [
+      {
+        "id": 20103,
+        "param1": 1001,
+        "param2": 30
+      }
+    ],
+    "randomMax": 75,
+    "reward": [
+      {
+        "type": 11,
+        "count": 1000
+      }
+    ],
+    "randomMin": 25
+  },
+  "6": {
+    "id": 6,
+    "target": [
+      {
+        "id": 20103,
+        "param1": 1001,
+        "param2": 27
+      }
+    ],
+    "randomMax": 30,
+    "reward": [
+      {
+        "type": 11,
+        "count": 500
+      }
+    ],
+    "randomMin": 10
+  },
+  "9": {
+    "id": 9,
+    "eggType": 2,
+    "itemID": "item_itemegg_newyear",
+    "randomMax": 1088,
+    "reward": [
+      {
+        "type": 11,
+        "count": 8000
+      }
+    ],
+    "eggClaimLimitId": 3,
+    "referenceID": 8,
+    "randomMin": 168,
+    "issueBanner": "img_lt_jd_banner_01"
+  },
+  "8": {
+    "id": 8,
+    "eggType": 1,
+    "target": [
+      {
+        "id": 20103,
+        "param1": 1001,
+        "param2": 999
+      }
+    ],
+    "randomMin": 168,
+    "randomMax": 1088,
+    "reward": [
+      {
+        "type": 11,
+        "count": 8000
+      }
+    ],
+    "eggClaimLimitId": 2
   }
 }

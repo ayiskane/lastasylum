@@ -22,99 +22,50 @@ function extractTypeLabel(typeDesc: string): string {
   return stripTags(typeDesc).trim() || 'Skill'
 }
 
-// SVG class icons
 const CAMP_ICONS: Record<number, string> = {
-  1: '🏹', // Ranger
-  2: '🔮', // Warlock
-  3: '⚔️', // Warrior
+  1: '🏹', 2: '🔮', 3: '⚔️',
 }
 
-interface SkillGroup {
-  slot: number; name: string; typeLabel: string; icon: string
-  description: string
-  levels: { star: number; unlockStar: number; power: string; param1: string; description: string }[]
+const QUALITY_BORDERS: Record<number, string> = {
+  3: 'border-blue-500/40',
+  4: 'border-purple-500/40',
+  5: 'border-amber-500/40',
 }
 
-function groupSkills(skills: any[]): SkillGroup[] {
-  const bySlot: Record<number, any[]> = {}
-  for (const sk of skills) {
-    const slot = sk.skillSlot ?? 0
-    ;(bySlot[slot] ??= []).push(sk)
-  }
-  const groups: SkillGroup[] = []
-  for (const slot of SLOT_ORDER) {
-    const entries = bySlot[slot]
-    if (!entries?.length) continue
-    const sorted = [...entries].sort((a, b) => (a.skillStar || 0) - (b.skillStar || 0))
-    const first = sorted[0]
-    groups.push({
-      slot,
-      name: first.displayName || SLOT_LABELS[slot] || `Slot ${slot}`,
-      typeLabel: first.typeDesc ? extractTypeLabel(first.typeDesc) : SLOT_LABELS[slot] || 'Skill',
-      icon: first.icon || '',
-      description: first.description ? stripTags(first.description) : '',
-      levels: sorted.map(sk => {
-        // Collect all param fields
-        const params: Record<string, string> = {}
-        for (const key of Object.keys(sk)) {
-          if (key.startsWith('param') && sk[key]) {
-            params[key] = String(sk[key])
-          }
-        }
-        return {
-          star: sk.skillStar || 0,
-          unlockStar: sk.unlockStar || 0,
-          power: sk.power || '',
-          param1: sk.param1 || '',
-          params,
-          description: sk.description ? stripTags(sk.description) : '',
-        }
-      }),
-    })
-  }
-  return groups
+const ARMY_NAMES: Record<number, string> = {
+  1: 'Infantry', 2: 'Vehicle', 3: 'Aircraft',
 }
 
-export default function HeroPage({ params }: { params: { id: string } }) {
-  const hero = getHeroes()[params.id]
+export default function HeroDetailPage({ params }: { params: { id: string } }) {
+  const heroes = getHeroes()
+  const hero = heroes[params.id]
   if (!hero) return notFound()
 
   const items = getItems()
   const heroStars = getHeroStars()
   const honorWall = getHonorWall()
-
-  const accentMap: Record<number, string> = {
-    0: 'border-blue-500/50', 4: 'border-purple-500/50', 5: 'border-orange-500/50', 6: 'border-red-500/50',
-  }
-  const accentTextMap: Record<number, string> = {
-    0: 'text-blue-400', 4: 'text-purple-400', 5: 'text-orange-400', 6: 'text-red-400',
-  }
-  const accentBorder = accentMap[hero.quality] || 'border-asylum-border'
-  const accentText = accentTextMap[hero.quality] || 'text-asylum-muted'
   const name = heroDisplayName(hero)
-  const skillGroups = groupSkills(hero.skills || [])
-  const skillData = skillGroups.map(g => ({ ...g, iconSrc: g.icon ? `/images/skills/${g.icon}.png` : '' }))
+  const accentBorder = QUALITY_BORDERS[hero.quality] || 'border-asylum-accent/40'
 
-  // Get shard/fragment item data for icons
-  const shardItem = hero.medalId ? items[hero.medalId] : null
-  const fragItem = hero.fragmentItemId ? items[hero.fragmentItemId] : null
+  // Shard items
+  const shardItem = hero.chipID ? items[hero.chipID] : null
+  const omniShardItem = hero.quality >= 5
+    ? items['item_Material_universalFragment_5']
+    : hero.quality >= 4
+    ? items['item_Material_universalFragment_4']
+    : null
 
-  // Build honor milestone data
-  // honorLevelUnlockEffect contains honor LEVELS (50,100,...,600)
-  // hero_stars covers star progression (0-50) — star=50 matches honor level 50
-  // honor_wall covers honor levels 1-600 with per-level benefits
+  // Scaling ratios
+  const levelRatios = (hero.levelRatio || []) as { Type: number; Value: number }[]
+  const starRatios = (hero.starRatio || []) as { Type: number; Value: number }[]
+
+  // Build honor milestones
   const honorMilestones = (hero.honorLevelUnlockEffect || []).map((lvl: number) => {
-    // For level 50, check hero_stars (star progression data)
     const starEntry = lvl <= 50
       ? Object.values(heroStars).find((s: any) => s.star === lvl)
       : null
-
-    // For all levels, check honor_wall (honor level benefits)
     const honorEntry = honorWall[String(lvl)]
-
-    // Prefer hero_stars attrs (more detailed), fallback to honor_wall
     const attrs = (starEntry as any)?.attr || (honorEntry?.levelBenefit) || []
-
     return {
       level: lvl,
       wholeStar: (starEntry as any)?.wholeStar || 0,
@@ -123,164 +74,212 @@ export default function HeroPage({ params }: { params: { id: string } }) {
     }
   })
 
+  // Build skill data for the panel
+  const skillsBySlot: Record<number, any[]> = {}
+  for (const sk of hero.skills || []) {
+    const slot = sk.skillSlot ?? sk.skillType ?? 0
+    ;(skillsBySlot[slot] ??= []).push(sk)
+  }
+  const skillSlots = SLOT_ORDER.filter(s => skillsBySlot[s]?.length)
+
+  const skillData = skillSlots.map(slot => {
+    const levels = skillsBySlot[slot]
+    const first = levels[0]
+    return {
+      slot,
+      name: first.displayName || `Skill ${slot}`,
+      description: first.description ? stripTags(first.description) : '',
+      typeLabel: first.typeDesc ? extractTypeLabel(first.typeDesc) : (SLOT_LABELS[slot] || 'Skill'),
+      icon: first.skillIcon || '',
+      levels: levels.map((lv: any) => ({
+        star: lv.star || 0,
+        unlockStar: lv.starCondition || 0,
+        power: lv.power || '',
+        param1: lv.param1 || '',
+        params: lv.params || { param1: lv.param1 },
+      })),
+    }
+  })
+
+  // Best image: try bust (750×1050), then honor (216×300), then card (162×276)
+  const bustPath = heroImagePath(hero, 'bust')
+  const honorPath = heroImagePath(hero, 'honor')
+  const cardPath = heroImagePath(hero, 'thumbnail')
+
   return (
-    <div>
-      <Link href="/heroes" className="text-sm text-asylum-muted hover:text-asylum-accent mb-4 inline-block">← Back to Heroes</Link>
-
-      {/* Top section: card image left, info+stats right */}
-      <div className="flex gap-5 mb-6 max-md:flex-col">
-        {/* Card image — native 162×276, maintain aspect ratio */}
-        <div className={`w-[162px] max-md:w-full max-md:max-w-[162px] max-md:mx-auto shrink-0 rounded-xl border-2 ${accentBorder} overflow-hidden bg-asylum-surface`}>
-          <div className="aspect-[162/276]">
-            <GameImage
-              src={heroImagePath(hero, 'thumbnail')}
-              alt={name}
-              className="w-full h-full object-cover"
-            />
+    <div className="flex max-w-[960px] mx-auto min-h-screen max-lg:flex-col">
+      {/* ─── Sticky sidebar ─── */}
+      <aside className="w-[220px] max-lg:w-full shrink-0 lg:sticky lg:top-0 lg:h-screen bg-asylum-surface border-r border-asylum-border overflow-y-auto">
+        <div className="p-4 max-lg:flex max-lg:gap-4 max-lg:items-start">
+          {/* Hero image — tries bust → honor → card */}
+          <div className={`max-lg:w-[120px] max-lg:shrink-0 rounded-xl border-2 ${accentBorder} overflow-hidden bg-asylum-bg mb-3 max-lg:mb-0`}>
+            <div className="aspect-[216/300]">
+              <GameImage
+                src={bustPath || honorPath || cardPath}
+                alt={name}
+                fallback={honorPath || cardPath}
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
-        </div>
 
-        {/* Right column */}
-        <div className="flex-1 flex flex-col gap-4 min-w-0">
-          {/* Hero info card */}
-          <div className="bg-asylum-surface border border-asylum-border rounded-xl p-5">
-            {/* Name row with shard icons */}
-            <div className="flex items-center gap-3 flex-wrap mb-2">
-              <h1 className="font-display text-3xl tracking-wider text-asylum-text">{name}</h1>
+          <div className="max-lg:flex-1">
+            {/* Name + power */}
+            <h1 className="text-lg font-bold tracking-wide mb-0.5">{name}</h1>
+            <div className="text-base font-semibold text-asylum-accent font-mono mb-2">
+              {hero.maxAbility?.toLocaleString()}
+            </div>
+
+            {/* Tags */}
+            <div className="flex gap-1.5 flex-wrap mb-2">
+              <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-asylum-accent/12 text-asylum-accent">
+                {hero.qualityName}
+              </span>
+              <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-asylum-surface text-asylum-muted border border-asylum-border">
+                {hero.armyName}
+              </span>
+              <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-asylum-surface text-asylum-muted border border-asylum-border">
+                {CAMP_ICONS[hero.campType] || ''} {hero.campName}
+              </span>
+            </div>
+
+            {/* Shards */}
+            <div className="flex gap-1.5 mb-3">
               {shardItem && (
-                <div className="flex items-center gap-1.5 bg-asylum-bg border border-asylum-border rounded-lg px-2 py-1" title={`${shardItem.displayName || 'Hero Shard'} ×${hero.medalAmount}`}>
-                  <div className="w-5 h-5 rounded overflow-hidden">
-                    <GameImage src={itemImagePath(shardItem.icon)} alt="Shard" fallback="🧩" className="w-full h-full" />
-                  </div>
-                  <span className="text-xs text-asylum-muted font-mono">×{hero.medalAmount}</span>
+                <div className="flex items-center gap-1 bg-asylum-bg border border-asylum-border rounded px-1.5 py-0.5">
+                  <GameImage src={itemImagePath(shardItem.icon)} alt="Shard" className="w-3 h-3" />
+                  <span className="text-[10px] text-asylum-muted">×{hero.chipCount || 10}</span>
                 </div>
               )}
-              {fragItem && (
-                <div className="flex items-center gap-1.5 bg-asylum-bg border border-asylum-border rounded-lg px-2 py-1" title={`${fragItem.displayName || 'Omni Shard'} ×${hero.fragmentItemCount}`}>
-                  <div className="w-5 h-5 rounded overflow-hidden">
-                    <GameImage src={itemImagePath(fragItem.icon)} alt="Fragment" fallback="💎" className="w-full h-full" />
-                  </div>
-                  <span className="text-xs text-asylum-muted font-mono">×{hero.fragmentItemCount}</span>
+              {omniShardItem && (
+                <div className="flex items-center gap-1 bg-asylum-bg border border-asylum-border rounded px-1.5 py-0.5">
+                  <GameImage src={itemImagePath(omniShardItem.icon)} alt="Omni" className="w-3 h-3" />
+                  <span className="text-[10px] text-asylum-muted">×1</span>
                 </div>
               )}
             </div>
 
-            {/* Tags with class icon */}
-            <div className="flex gap-2 flex-wrap mb-3">
-              <span className={`text-xs font-semibold px-3 py-1 rounded-full border ${accentText} ${accentBorder} bg-asylum-bg`}>{hero.qualityName}</span>
-              <span className="text-xs px-3 py-1 rounded-full bg-asylum-bg border border-asylum-border text-asylum-muted">{hero.armyName}</span>
-              {hero.campName && hero.campName !== 'None' && hero.campType > 0 && (
-                <span className="text-xs px-3 py-1 rounded-full bg-asylum-bg border border-asylum-border text-asylum-muted flex items-center gap-1">
-                  <span className="text-sm leading-none">{CAMP_ICONS[hero.campType] || ''}</span>
-                  {hero.campName}
-                </span>
-              )}
+            {/* Quick stats */}
+            <div className="border-t border-asylum-border pt-2 space-y-0.5">
+              {[
+                ['Atk speed', `${hero.attackCd}ms`],
+                ['Max honor', String(hero.maxHonorLevel)],
+                ['Star cap', String(hero.heroStarRating)],
+                ['Skills', String(skillSlots.length)],
+                ['Unlock', hero.unlockLevel ? `Bldg Lv.${hero.unlockLevel}` : '—'],
+              ].map(([l, v]) => (
+                <div key={l} className="flex justify-between text-[11px]">
+                  <span className="text-asylum-hint">{l}</span>
+                  <span className="font-mono text-[10px] text-asylum-muted">{v}</span>
+                </div>
+              ))}
             </div>
 
-            {hero.descRecruitPreview && (
-              <p className="text-sm text-asylum-muted italic mb-3">{hero.descRecruitPreview}</p>
-            )}
-            {hero.maxAbility > 0 && (
-              <div className="flex items-baseline gap-2">
-                <span className="text-xs text-asylum-muted uppercase tracking-wider">Max power</span>
-                <span className="font-display text-2xl text-asylum-accent">{hero.maxAbility.toLocaleString()}</span>
-              </div>
-            )}
-            {hero.heroStory && (
-              <p className="text-xs text-asylum-muted/60 mt-3 pt-3 border-t border-asylum-border/50 leading-relaxed">{hero.heroStory}</p>
-            )}
-          </div>
-
-          {/* Stats card: combat + scaling side by side */}
-          <div className="bg-asylum-surface border border-asylum-border rounded-xl p-5 flex-1">
-            <div className="grid grid-cols-2 gap-x-6 max-md:grid-cols-1 max-md:gap-y-4">
-              {/* Combat column */}
-              <div>
-                <div className="text-[10px] font-semibold text-asylum-accent uppercase tracking-widest mb-2 pb-2 border-b border-asylum-border">Combat</div>
-                <div className="space-y-0.5">
-                  {hero.maxAbility > 0 && <StatRow label="Max power" value={hero.maxAbility.toLocaleString()} highlight />}
-                  <StatRow label="Attack speed" value={`${hero.attackCd}ms`} />
-                  <StatRow label="Max honor level" value={String(hero.maxHonorLevel)} />
-                  <StatRow label="Star cap" value={String(hero.heroStarRating)} />
-                  <StatRow label="Skills" value={String(hero.skill_count)} />
-                  {hero.buildingLevel > 0 && <StatRow label="Unlock" value={`Bldg Lv.${hero.buildingLevel}`} />}
-                </div>
-
-                {/* Honor milestones with bonuses */}
-                {honorMilestones.length > 0 && (
-                  <div className="mt-3 pt-3 border-t border-asylum-border/50">
-                    <div className="text-[10px] font-semibold text-asylum-muted uppercase tracking-wider mb-2">Honor milestones</div>
-                    <div className="space-y-1">
-                      {honorMilestones.map((m, i) => (
-                        <div key={`hon-${i}`} className="flex items-start gap-2 text-[11px]">
-                          <span className="text-asylum-accent font-mono font-semibold w-8 shrink-0">{m.level}</span>
-                          <span className="text-asylum-muted">
-                            {m.wholeStar > 0 && <span>{m.wholeStar}★</span>}
-                            {m.cost > 0 && <span className="ml-1">({m.cost} shards)</span>}
-                            {m.attrs.length > 0 && (
-                              <span className="ml-1 text-asylum-text/70">
-                                {m.attrs.slice(0, 2).map((a, j) => (
-                                  <span key={j}>{j > 0 ? ', ' : ''}{benefitTypeName(a.Type)} +{Math.round(a.Value).toLocaleString()}</span>
-                                ))}
-                              </span>
-                            )}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              {/* Scaling column */}
-              <div>
-                <div className="text-[10px] font-semibold text-asylum-accent uppercase tracking-widest mb-2 pb-2 border-b border-asylum-border">Scaling / Level</div>
-                {hero.levelRatio?.length > 0 ? (
-                  <div className="space-y-0.5">
-                    {hero.levelRatio.map((r: any, i: number) => (
-                      <StatRow key={`lr-${i}`} label={benefitTypeName(r.Type)} value={`${(r.Value * 100).toFixed(1)}%`} />
-                    ))}
-                  </div>
-                ) : <p className="text-xs text-asylum-muted">No level scaling data</p>}
-
-                {hero.starRatio?.length > 0 && (
-                  <div className="mt-3 pt-3 border-t border-asylum-border/50">
-                    <div className="text-[10px] font-semibold text-asylum-muted uppercase tracking-wider mb-2">Per star</div>
-                    <div className="space-y-0.5">
-                      {hero.starRatio.map((r: any, i: number) => (
-                        <StatRow key={`sr-${i}`} label={benefitTypeName(r.Type)} value={`${(r.Value * 100).toFixed(1)}%/★`} />
-                      ))}
-                    </div>
-                  </div>
-                )}
-
-                {hero.levelBenefit?.length > 0 && (
-                  <div className="mt-3 pt-3 border-t border-asylum-border/50">
-                    <div className="text-[10px] font-semibold text-asylum-muted uppercase tracking-wider mb-2">Bonus</div>
-                    <div className="space-y-0.5">
-                      {hero.levelBenefit.map((r: any, i: number) => (
-                        <StatRow key={`lb-${i}`} label={benefitTypeName(r.Type)} value={`+${(r.Value * 100).toFixed(2)}%`} />
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
+            {/* TOC */}
+            <div className="border-t border-asylum-border mt-3 pt-2 space-y-0.5 max-lg:hidden">
+              {['Scaling', 'Honor milestones', 'Skills'].map(s => (
+                <a key={s} href={`#${s.toLowerCase().replace(/ /g, '-')}`}
+                  className="block text-[10px] text-asylum-hint hover:text-asylum-accent transition-colors">
+                  {s}
+                </a>
+              ))}
             </div>
           </div>
         </div>
-      </div>
+      </aside>
 
-      {/* Skills */}
-      <HeroSkillPanel skills={skillData} />
-    </div>
-  )
-}
+      {/* ─── Main content ─── */}
+      <main className="flex-1 min-w-0 p-6 max-lg:p-4">
+        <Link href="/heroes" className="text-xs text-asylum-muted hover:text-asylum-accent mb-4 inline-block">
+          ← Back to Heroes
+        </Link>
 
-function StatRow({ label, value, highlight }: { label: string; value: string; highlight?: boolean }) {
-  return (
-    <div className="flex justify-between py-1 text-xs">
-      <span className="text-asylum-muted">{label}</span>
-      <span className={highlight ? 'text-asylum-accent font-mono font-bold' : 'text-asylum-text font-mono'}>{value}</span>
+        {hero.descRecruitPreview && (
+          <p className="text-sm text-asylum-muted italic mb-2">{hero.descRecruitPreview}</p>
+        )}
+
+        {/* ─── Scaling ─── */}
+        <h2 id="scaling" className="text-xs font-semibold text-asylum-accent uppercase tracking-[2px] mt-6 mb-3 pb-1.5 border-b border-asylum-accent/15">
+          Scaling
+        </h2>
+        <table className="w-full text-xs mb-4">
+          <thead>
+            <tr className="border-b border-asylum-border">
+              <th className="text-left text-[9px] text-asylum-hint uppercase tracking-wider py-1.5 px-2 font-semibold">Stat</th>
+              <th className="text-left text-[9px] text-asylum-hint uppercase tracking-wider py-1.5 px-2 font-semibold">Per level</th>
+              <th className="text-left text-[9px] text-asylum-hint uppercase tracking-wider py-1.5 px-2 font-semibold">Per star</th>
+            </tr>
+          </thead>
+          <tbody>
+            {levelRatios.map((lr, i) => {
+              const sr = starRatios[i]
+              const statName = benefitTypeName(lr.Type)
+              return (
+                <tr key={i} className="border-b border-white/[0.03] hover:bg-asylum-surface">
+                  <td className="py-1.5 px-2 text-asylum-muted">{statName}</td>
+                  <td className="py-1.5 px-2 font-mono text-[11px]">{typeof lr.Value === 'number' ? `${(lr.Value * 100).toFixed(1)}%` : String(lr.Value)}</td>
+                  <td className="py-1.5 px-2 font-mono text-[11px]">{sr ? `${(Number(sr.Value) * 100).toFixed(1)}%/★` : '—'}</td>
+                </tr>
+              )
+            })}
+            {(hero.levelBenefit || []).map((b: any, i: number) => (
+              <tr key={`b${i}`} className="border-b border-white/[0.03] hover:bg-asylum-surface">
+                <td className="py-1.5 px-2 text-asylum-muted">{benefitTypeName(b.Type)}</td>
+                <td className="py-1.5 px-2 font-mono text-[11px]" colSpan={2}>
+                  +{typeof b.Value === 'number' && b.Value < 1 ? `${(b.Value * 100).toFixed(2)}%` : b.Value}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+
+        {/* ─── Honor milestones ─── */}
+        <h2 id="honor-milestones" className="text-xs font-semibold text-asylum-accent uppercase tracking-[2px] mt-6 mb-3 pb-1.5 border-b border-asylum-accent/15">
+          Honor milestones
+        </h2>
+        {honorMilestones.length > 0 && (
+          <div className="overflow-x-auto mb-4">
+            <table className="w-full text-xs">
+              <thead>
+                <tr className="border-b border-asylum-border">
+                  <th className="text-left text-[9px] text-asylum-hint uppercase tracking-wider py-1.5 px-2 font-semibold">Level</th>
+                  <th className="text-left text-[9px] text-asylum-hint uppercase tracking-wider py-1.5 px-2 font-semibold">Stars</th>
+                  <th className="text-left text-[9px] text-asylum-hint uppercase tracking-wider py-1.5 px-2 font-semibold">Cost</th>
+                  {honorMilestones[0]?.attrs.map((_: any, i: number) => (
+                    <th key={i} className="text-left text-[9px] text-asylum-hint uppercase tracking-wider py-1.5 px-2 font-semibold">
+                      {honorMilestones[0].attrs[i] ? benefitTypeName(honorMilestones[0].attrs[i].Type) : `Stat ${i + 1}`}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {honorMilestones.map((m, i) => (
+                  <tr key={i} className="border-b border-white/[0.03] hover:bg-asylum-surface">
+                    <td className="py-1.5 px-2 text-asylum-accent font-semibold font-mono">{m.level}</td>
+                    <td className="py-1.5 px-2 text-asylum-muted">
+                      {m.wholeStar > 0 ? `${m.wholeStar}★` : '—'}
+                    </td>
+                    <td className="py-1.5 px-2 text-asylum-muted text-[10px]">
+                      {m.cost > 0 ? `${m.cost} shards` : '—'}
+                    </td>
+                    {m.attrs.map((a: any, j: number) => (
+                      <td key={j} className="py-1.5 px-2 font-mono text-[11px]">
+                        +{typeof a.Value === 'number' ? Math.round(a.Value).toLocaleString() : a.Value}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        )}
+
+        {/* ─── Skills ─── */}
+        <h2 id="skills" className="text-xs font-semibold text-asylum-accent uppercase tracking-[2px] mt-6 mb-3 pb-1.5 border-b border-asylum-accent/15">
+          Skills
+        </h2>
+        <HeroSkillPanel skills={skillData} />
+      </main>
     </div>
   )
 }

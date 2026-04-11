@@ -1,60 +1,60 @@
 {
-  "2": {
-    "initialPool": 200,
-    "guaranteedDisplayPool": 202,
-    "switchId": "HeroRecruit_Once_2",
-    "exhibitPool": 201,
-    "recruitAnimation": "Prefab/Timeline/ChoukaTimeLine.prefab",
-    "newHeroId": [
-      50002
-    ],
-    "id": 2
-  },
-  "3": {
-    "initialPool": 300,
-    "guaranteedDisplayPool": 302,
-    "switchId": "HeroRecruit_Once_3",
-    "exhibitPool": 301,
-    "recruitAnimation": "Prefab/Timeline/ChoukaTimeLine.prefab",
-    "newHeroId": [
-      50004,
-      50006
-    ],
-    "id": 3
+  "1": {
+    "tabIcon": "pic_jg_zhaomu_hero",
+    "fresherURTips": "recruit_guaranteed_function_tips",
+    "switchId": "HeroRecruit_Once_1"
   },
   "9": {
-    "guaranteedDisplayPool": 902,
-    "tagImage": "pic_jg_zhaomu_xingcunzhe",
+    "id": 9,
     "cost": [
       {
-        "count": -1,
         "id": "item_UseUp_workerRecruitCoin",
-        "type": 99
+        "type": 99,
+        "count": -1
       }
     ],
-    "type": 4,
-    "initialPool": 901,
-    "id": 9,
-    "unlock100Draw": -1,
+    "tabIcon": "pic_jg_zhaomu_xingcunzhe",
     "prefab": "UI_Panel/Pub/PubWorkerPoolSub.prefab",
+    "rewardType": 2,
     "drawCount": [
       1,
       10
     ],
-    "pic": "pic_jg_zm_xcz",
     "displaySpineId": 0,
-    "rewardType": 2,
-    "gotoDailyCount": 0,
-    "exhibitPool": 901,
+    "unlock100Draw": -1,
+    "type": 4,
     "giftGroupId": {},
-    "giftId": 900901035,
+    "tagImage": "pic_jg_zhaomu_xingcunzhe",
+    "pic": "pic_jg_zm_xcz",
     "unlockId": 214,
-    "tabIcon": "pic_jg_zhaomu_xingcunzhe",
-    "tagSelectIcon": "pic_jg_zhaomudi3"
+    "giftId": 900901035,
+    "tagSelectIcon": "pic_jg_zhaomudi3",
+    "exhibitPool": 901,
+    "initialPool": 901,
+    "guaranteedDisplayPool": 902,
+    "gotoDailyCount": 0
   },
-  "1": {
-    "switchId": "HeroRecruit_Once_1",
-    "fresherURTips": "recruit_guaranteed_function_tips",
-    "tabIcon": "pic_jg_zhaomu_hero"
+  "3": {
+    "guaranteedDisplayPool": 302,
+    "switchId": "HeroRecruit_Once_3",
+    "recruitAnimation": "Prefab/Timeline/ChoukaTimeLine.prefab",
+    "exhibitPool": 301,
+    "newHeroId": [
+      50004,
+      50006
+    ],
+    "initialPool": 300,
+    "id": 3
+  },
+  "2": {
+    "guaranteedDisplayPool": 202,
+    "switchId": "HeroRecruit_Once_2",
+    "recruitAnimation": "Prefab/Timeline/ChoukaTimeLine.prefab",
+    "exhibitPool": 201,
+    "newHeroId": [
+      50002
+    ],
+    "initialPool": 200,
+    "id": 2
   }
 }
