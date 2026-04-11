@@ -31,21 +31,19 @@ const ARMY_NAMES: Record<number, string> = {
 }
 
 // Rarity label images
+// Rarity label images — mapped to actual quality values from game data
 const RARITY_LABEL: Record<number, string> = {
-  2: '/images/icons/font_pz_2.png',
-  3: '/images/icons/font_pz_3.png',
-  4: '/images/icons/font_pz_4.png',
-  5: '/images/icons/font_pz_5.png',
+  0: '/images/icons/font_pz_3.png', // SR (quality 0 in data)
+  4: '/images/icons/font_pz_4.png', // SSR
+  5: '/images/icons/font_pz_5.png', // UR
 }
 
 // Quality frame backgrounds (from Zombie_CommonForK3_RGB)
 const QUALITY_FRAME: Record<number, string> = {
-  1: '/images/items/Icon_item_white.png',
-  2: '/images/items/Icon_item_green.png',
-  3: '/images/items/Icon_item_blue.png',
-  4: '/images/items/Icon_item_purple.png',
-  5: '/images/items/Icon_item_yellow.png',
-  6: '/images/items/Icon_item_red.png',
+  0: '/images/items/Icon_item_blue.png',   // SR
+  4: '/images/items/Icon_item_purple.png',  // SSR
+  5: '/images/items/Icon_item_yellow.png',  // UR
+  6: '/images/items/Icon_item_red.png',     // UR+
 }
 
 export default function HeroesPage() {
@@ -178,15 +176,15 @@ function HeroCard({ hero }: { hero: HeroEntry }) {
         {/* Army type badge — top right */}
         {ARMY_ICON[hero.armyType] && (
           <img src={ARMY_ICON[hero.armyType]} alt={ARMY_NAMES[hero.armyType]}
-            className="absolute top-0 right-0 w-[28px] h-[28px] drop-shadow-lg" />
+            className="absolute top-0 right-0 h-[26px] w-auto drop-shadow-lg" />
         )}
         {/* Camp/role badge — bottom left */}
         {CAMP_ICON[hero.campType] && (
           <img src={CAMP_ICON[hero.campType]} alt={CAMP_NAMES[hero.campType]}
-            className="absolute bottom-0 left-0 w-[30px] h-[30px] drop-shadow-lg" />
+            className="absolute bottom-0 left-0 h-[28px] w-auto drop-shadow-lg" />
         )}
       </div>
-      <span className="text-[11px] font-semibold text-asylum-text text-center leading-tight group-hover:text-asylum-accent transition-colors truncate max-w-[88px]">
+      <span className="text-[11px] font-semibold text-asylum-text text-center leading-tight group-hover:text-asylum-accent transition-colors truncate max-w-[88px]" style={{ fontFamily: "'Rajdhani', sans-serif" }}>
         {hero.name}
       </span>
     </Link>

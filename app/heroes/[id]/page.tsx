@@ -44,7 +44,7 @@ const ARMY_LABEL: Record<number, string> = {
 
 // Rarity label images
 const RARITY_LABEL: Record<number, string> = {
-  3: '/images/icons/font_pz_3.png', // SR
+  0: '/images/icons/font_pz_3.png', // SR (quality 0 in data)
   4: '/images/icons/font_pz_4.png', // SSR
   5: '/images/icons/font_pz_5.png', // UR
 }
@@ -153,9 +153,10 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
 
           <div className="max-lg:flex-1">
             {/* Name + power */}
-            <h1 className="text-lg font-bold tracking-wide mb-0.5">{name}</h1>
-            <div className="text-base font-semibold text-asylum-accent font-mono mb-2">
-              {hero.maxAbility?.toLocaleString()}
+            <h1 className="text-xl font-bold tracking-wide mb-0.5" style={{ fontFamily: "'Rajdhani', sans-serif" }}>{name}</h1>
+            <div className="text-base font-semibold text-asylum-accent flex items-center gap-1 mb-2">
+              <img src="/images/icons/ico_zhanli_60.png" alt="Might" className="w-5 h-5" />
+              <span className="font-mono">{hero.maxAbility?.toLocaleString()}</span>
             </div>
 
             {/* Tags */}

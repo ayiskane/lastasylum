@@ -22,6 +22,11 @@ const NAV_ITEMS = [
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+      </head>
       <body className="font-body min-h-screen">
         <header className="sticky top-0 z-50 bg-asylum-bg/90 backdrop-blur-md border-b border-asylum-border">
           <div className="max-w-7xl mx-auto px-4 h-14 flex items-center gap-6">

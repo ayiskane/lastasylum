@@ -1,115 +1,19 @@
 {
-  "5": {
-    "unlockCondition": [
-      {
-        "level": 6,
-        "roomupgrade": 2011002
-      }
-    ],
-    "id": 5
-  },
-  "4": {
-    "unlockSpend": [
-      {
-        "type": 1043,
-        "count": 800
-      },
-      {
-        "type": 2,
-        "count": 800
-      }
-    ],
-    "id": 4
-  },
-  "3": {
-    "id": 3,
-    "additionRewards": [
-      {
-        "count": 1,
-        "id": "16040101",
-        "type": 1100003
-      }
-    ],
-    "unlockCondition": [
-      {
-        "level": 4,
-        "roomupgrade": 2010602
-      }
-    ],
-    "unlockSpend": [
-      {
-        "type": 1043,
-        "count": 500
-      },
-      {
-        "type": 2,
-        "count": 500
-      }
-    ]
-  },
-  "2": {
-    "id": 2,
-    "unlockCondition": [
-      {
-        "level": 2,
-        "roomupgrade": 2010302
-      }
-    ],
-    "unlockSpend": [
-      {
-        "type": 2,
-        "count": 100
-      }
-    ]
-  },
-  "1": {
-    "unlockCondition": {},
-    "unlockReward": 0,
-    "unlockSpend": {}
-  },
-  "8": {
-    "id": 8,
-    "unlockCondition": [
-      {
-        "level": 9,
-        "roomupgrade": 2012002
-      }
-    ],
-    "unlockSpend": [
-      {
-        "type": 1043,
-        "count": 5000
-      },
-      {
-        "type": 2,
-        "count": 3000
-      }
-    ]
-  },
-  "7": {
-    "id": 7,
-    "unlockCondition": [
-      {
-        "level": 8,
-        "roomupgrade": 2011602
-      }
-    ],
-    "unlockSpend": [
-      {
-        "type": 1043,
-        "count": 3000
-      },
-      {
-        "type": 2,
-        "count": 3000
-      }
-    ]
-  },
   "6": {
+    "unlockSpend": [
+      {
+        "count": 1500,
+        "type": 1043
+      },
+      {
+        "count": 1500,
+        "type": 2
+      }
+    ],
     "unlockCondition": [
       {
-        "level": 7,
-        "roomupgrade": 2011302
+        "roomupgrade": 2011302,
+        "level": 7
       }
     ],
     "id": 6,
@@ -117,20 +21,116 @@
       {},
       {},
       {
-        "prefab": "Role/NPC_F/hugong_02/hugong_02.prefab",
         "npcType": 13,
+        "prefab": "Role/NPC_F/hugong_02/hugong_02.prefab",
         "roomType": 64
       }
+    ]
+  },
+  "5": {
+    "unlockCondition": [
+      {
+        "roomupgrade": 2011002,
+        "level": 6
+      }
     ],
+    "id": 5
+  },
+  "8": {
     "unlockSpend": [
       {
-        "type": 1043,
-        "count": 1500
+        "count": 5000,
+        "type": 1043
       },
       {
-        "type": 2,
-        "count": 1500
+        "count": 3000,
+        "type": 2
       }
-    ]
+    ],
+    "unlockCondition": [
+      {
+        "roomupgrade": 2012002,
+        "level": 9
+      }
+    ],
+    "id": 8
+  },
+  "7": {
+    "unlockSpend": [
+      {
+        "count": 3000,
+        "type": 1043
+      },
+      {
+        "count": 3000,
+        "type": 2
+      }
+    ],
+    "unlockCondition": [
+      {
+        "roomupgrade": 2011602,
+        "level": 8
+      }
+    ],
+    "id": 7
+  },
+  "2": {
+    "unlockSpend": [
+      {
+        "count": 100,
+        "type": 2
+      }
+    ],
+    "unlockCondition": [
+      {
+        "roomupgrade": 2010302,
+        "level": 2
+      }
+    ],
+    "id": 2
+  },
+  "1": {
+    "unlockReward": 0,
+    "unlockSpend": {},
+    "unlockCondition": {}
+  },
+  "4": {
+    "unlockSpend": [
+      {
+        "count": 800,
+        "type": 1043
+      },
+      {
+        "count": 800,
+        "type": 2
+      }
+    ],
+    "id": 4
+  },
+  "3": {
+    "unlockSpend": [
+      {
+        "count": 500,
+        "type": 1043
+      },
+      {
+        "count": 500,
+        "type": 2
+      }
+    ],
+    "unlockCondition": [
+      {
+        "roomupgrade": 2010602,
+        "level": 4
+      }
+    ],
+    "additionRewards": [
+      {
+        "count": 1,
+        "type": 1100003,
+        "id": "16040101"
+      }
+    ],
+    "id": 3
   }
 }
