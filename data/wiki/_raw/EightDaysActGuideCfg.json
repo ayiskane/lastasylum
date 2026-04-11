@@ -1,24 +1,40 @@
 {
   "5": {
     "icon": "pic_qthd_icon4",
-    "id": 5,
     "target": [
       {
         "param2": 1,
-        "id": 100004,
-        "param1": 12
+        "param1": 12,
+        "id": 100004
       }
-    ]
+    ],
+    "id": 5
+  },
+  "4": {
+    "id": 4,
+    "gotoId": "sevendays_tutorial_event"
+  },
+  "3": {
+    "target": [
+      {
+        "param2": 1,
+        "param1": 1,
+        "id": 200901
+      }
+    ],
+    "icon": "pic_qthd_icon3",
+    "id": 3,
+    "gotoId": "sevendays_tutorial_main"
   },
   "2": {
-    "icon": "pic_qthd_icon2",
-    "id": 2,
     "target": [
       {
         "param1": 1000424,
         "id": 200069
       }
     ],
+    "icon": "pic_qthd_icon2",
+    "id": 2,
     "gotoId": "sevendays_tutorial_radar"
   },
   "1": {
@@ -30,21 +46,5 @@
       }
     ],
     "gotoId": "sevendays_tutorial_stage"
-  },
-  "4": {
-    "id": 4,
-    "gotoId": "sevendays_tutorial_event"
-  },
-  "3": {
-    "icon": "pic_qthd_icon3",
-    "id": 3,
-    "target": [
-      {
-        "param2": 1,
-        "id": 200901,
-        "param1": 1
-      }
-    ],
-    "gotoId": "sevendays_tutorial_main"
   }
 }

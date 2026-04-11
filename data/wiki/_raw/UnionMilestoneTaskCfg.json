@@ -1,87 +1,17 @@
 {
   "1": {
-    "gotoId": "",
-    "endHour": 72,
     "startHour": 0,
     "milestoneTask": [
       {
         "id": "1001",
         "param1": "100"
       }
-    ]
-  },
-  "5": {
-    "id": 5,
-    "icon": "lmlcb_5",
-    "startHour": 48
-  },
-  "4": {
-    "leaderRewards": [
-      {
-        "count": 5,
-        "type": 99,
-        "id": "item_Resource_allianceCoin_500"
-      },
-      {
-        "count": 200,
-        "type": 11
-      },
-      {
-        "count": 10000,
-        "type": 3
-      }
     ],
-    "memberRewards": [
-      {
-        "count": 3,
-        "type": 99,
-        "id": "item_Resource_allianceCoin_500"
-      },
-      {
-        "count": 200,
-        "type": 11
-      },
-      {
-        "count": 10000,
-        "type": 3
-      }
-    ],
-    "id": 4,
-    "startHour": 48,
-    "icon": "lmlcb_4",
-    "milestoneTask": [
-      {
-        "id": "1004",
-        "param1": "2000"
-      }
-    ]
-  },
-  "11": {
-    "gotoId": "alliance_milestone_city",
-    "id": 11,
-    "startHour": 168,
-    "icon": "lmlcb_11",
-    "milestoneTask": [
-      {
-        "id": "1011",
-        "param1": "1"
-      }
-    ]
-  },
-  "10": {
-    "gotoId": "alliance_milestone_gift",
-    "id": 10,
-    "startHour": 144,
-    "icon": "lmlcb_10",
-    "milestoneTask": [
-      {
-        "id": "1010",
-        "param1": "2"
-      }
-    ]
+    "endHour": 72,
+    "gotoId": ""
   },
   "2": {
-    "gotoId": "alliance_milestone_help",
+    "id": 2,
     "milestoneTask": [
       {
         "id": "1002",
@@ -89,61 +19,76 @@
       }
     ],
     "icon": "lmlcb_2",
-    "id": 2
+    "gotoId": "alliance_milestone_help"
   },
-  "3": {
-    "gotoId": "",
-    "endHour": 216,
-    "memberRewards": [
-      {
-        "count": 1,
-        "type": 99,
-        "id": "item_Resource_allianceCoin_2500"
-      },
-      {
-        "count": 5,
-        "type": 99,
-        "id": "item_UseUp_recruitCoin"
-      },
-      {
-        "count": 200,
-        "type": 99,
-        "id": "item_optionalBox_Resource"
-      },
-      {
-        "count": 300,
-        "type": 11
-      }
-    ],
-    "id": 3,
+  "11": {
     "milestoneTask": [
       {
-        "id": "1003",
-        "param1": "150000000"
+        "id": "1011",
+        "param1": "1"
       }
     ],
-    "icon": "lmlcb_3",
+    "icon": "lmlcb_11",
+    "id": 11,
+    "startHour": 168,
+    "gotoId": "alliance_milestone_city"
+  },
+  "10": {
+    "milestoneTask": [
+      {
+        "id": "1010",
+        "param1": "2"
+      }
+    ],
+    "icon": "lmlcb_10",
+    "id": 10,
+    "startHour": 144,
+    "gotoId": "alliance_milestone_gift"
+  },
+  "7": {
+    "startHour": 72,
+    "milestoneTask": [
+      {
+        "id": "1007",
+        "param1": "400"
+      }
+    ],
+    "icon": "lmlcb_7",
+    "memberRewards": [
+      {
+        "type": 99,
+        "id": "item_Resource_allianceCoin_500",
+        "count": 3
+      },
+      {
+        "type": 99,
+        "id": "item_Resource_strength001_50",
+        "count": 1
+      },
+      {
+        "type": 11,
+        "count": 200
+      }
+    ],
     "leaderRewards": [
       {
-        "count": 3,
         "type": 99,
-        "id": "item_Resource_allianceCoin_2500"
+        "id": "item_Resource_allianceCoin_500",
+        "count": 5
       },
       {
-        "count": 10,
         "type": 99,
-        "id": "item_UseUp_recruitCoin"
+        "id": "item_Resource_strength001_50",
+        "count": 1
       },
       {
-        "count": 200,
-        "type": 99,
-        "id": "item_optionalBox_Resource"
-      },
-      {
-        "count": 500,
-        "type": 11
+        "type": 11,
+        "count": 200
       }
-    ]
+    ],
+    "id": 7,
+    "endHour": 72,
+    "gotoId": "alliance_milestone_rally"
   },
   "8": {
     "milestoneTask": [
@@ -152,32 +97,13 @@
         "param1": "3"
       }
     ],
-    "endHour": 48,
-    "id": 8,
     "icon": "lmlcb_8",
-    "startHour": 96
+    "startHour": 96,
+    "endHour": 48,
+    "id": 8
   },
   "9": {
-    "gotoId": "alliance_milestone_recruit",
-    "endHour": 48,
-    "memberRewards": [
-      {
-        "count": 3,
-        "type": 99,
-        "id": "item_Resource_allianceCoin_500"
-      },
-      {
-        "count": 2,
-        "type": 99,
-        "id": "item_UseUp_recruitCoin"
-      },
-      {
-        "count": 200,
-        "type": 11
-      }
-    ],
     "startHour": 120,
-    "id": 9,
     "milestoneTask": [
       {
         "id": "1009",
@@ -185,43 +111,144 @@
       }
     ],
     "icon": "lmlcb_9",
-    "leaderRewards": [
-      {
-        "count": 5,
-        "type": 99,
-        "id": "item_Resource_allianceCoin_500"
-      },
-      {
-        "count": 2,
-        "type": 99,
-        "id": "item_UseUp_recruitCoin"
-      },
-      {
-        "count": 200,
-        "type": 11
-      }
-    ]
-  },
-  "6": {
-    "gotoId": "alliance_milestone_radar",
-    "endHour": 48,
     "memberRewards": [
       {
-        "count": 3,
         "type": 99,
-        "id": "item_Resource_allianceCoin_500"
+        "id": "item_Resource_allianceCoin_500",
+        "count": 3
       },
       {
-        "count": 200,
-        "type": 11
+        "type": 99,
+        "id": "item_UseUp_recruitCoin",
+        "count": 2
       },
       {
-        "count": 10000,
-        "type": 3
+        "type": 11,
+        "count": 200
       }
     ],
+    "leaderRewards": [
+      {
+        "type": 99,
+        "id": "item_Resource_allianceCoin_500",
+        "count": 5
+      },
+      {
+        "type": 99,
+        "id": "item_UseUp_recruitCoin",
+        "count": 2
+      },
+      {
+        "type": 11,
+        "count": 200
+      }
+    ],
+    "id": 9,
+    "endHour": 48,
+    "gotoId": "alliance_milestone_recruit"
+  },
+  "3": {
+    "milestoneTask": [
+      {
+        "id": "1003",
+        "param1": "150000000"
+      }
+    ],
+    "icon": "lmlcb_3",
+    "memberRewards": [
+      {
+        "type": 99,
+        "id": "item_Resource_allianceCoin_2500",
+        "count": 1
+      },
+      {
+        "type": 99,
+        "id": "item_UseUp_recruitCoin",
+        "count": 5
+      },
+      {
+        "type": 99,
+        "id": "item_optionalBox_Resource",
+        "count": 200
+      },
+      {
+        "type": 11,
+        "count": 300
+      }
+    ],
+    "leaderRewards": [
+      {
+        "type": 99,
+        "id": "item_Resource_allianceCoin_2500",
+        "count": 3
+      },
+      {
+        "type": 99,
+        "id": "item_UseUp_recruitCoin",
+        "count": 10
+      },
+      {
+        "type": 99,
+        "id": "item_optionalBox_Resource",
+        "count": 200
+      },
+      {
+        "type": 11,
+        "count": 500
+      }
+    ],
+    "id": 3,
+    "endHour": 216,
+    "gotoId": ""
+  },
+  "4": {
+    "milestoneTask": [
+      {
+        "id": "1004",
+        "param1": "2000"
+      }
+    ],
+    "icon": "lmlcb_4",
+    "memberRewards": [
+      {
+        "type": 99,
+        "id": "item_Resource_allianceCoin_500",
+        "count": 3
+      },
+      {
+        "type": 11,
+        "count": 200
+      },
+      {
+        "type": 3,
+        "count": 10000
+      }
+    ],
+    "leaderRewards": [
+      {
+        "type": 99,
+        "id": "item_Resource_allianceCoin_500",
+        "count": 5
+      },
+      {
+        "type": 11,
+        "count": 200
+      },
+      {
+        "type": 3,
+        "count": 10000
+      }
+    ],
+    "startHour": 48,
+    "id": 4
+  },
+  "5": {
+    "startHour": 48,
+    "icon": "lmlcb_5",
+    "id": 5
+  },
+  "6": {
     "startHour": 72,
-    "id": 6,
     "milestoneTask": [
       {
         "id": "1006",
@@ -229,65 +256,38 @@
       }
     ],
     "icon": "lmlcb_6",
-    "leaderRewards": [
-      {
-        "count": 5,
-        "type": 99,
-        "id": "item_Resource_allianceCoin_500"
-      },
-      {
-        "count": 200,
-        "type": 11
-      },
-      {
-        "count": 10000,
-        "type": 3
-      }
-    ]
-  },
-  "7": {
-    "gotoId": "alliance_milestone_rally",
-    "endHour": 72,
     "memberRewards": [
       {
-        "count": 3,
         "type": 99,
-        "id": "item_Resource_allianceCoin_500"
+        "id": "item_Resource_allianceCoin_500",
+        "count": 3
       },
       {
-        "count": 1,
-        "type": 99,
-        "id": "item_Resource_strength001_50"
+        "type": 11,
+        "count": 200
       },
       {
-        "count": 200,
-        "type": 11
+        "type": 3,
+        "count": 10000
       }
     ],
-    "startHour": 72,
-    "id": 7,
-    "milestoneTask": [
-      {
-        "id": "1007",
-        "param1": "400"
-      }
-    ],
-    "icon": "lmlcb_7",
     "leaderRewards": [
       {
-        "count": 5,
         "type": 99,
-        "id": "item_Resource_allianceCoin_500"
+        "id": "item_Resource_allianceCoin_500",
+        "count": 5
       },
       {
-        "count": 1,
-        "type": 99,
-        "id": "item_Resource_strength001_50"
+        "type": 11,
+        "count": 200
       },
       {
-        "count": 200,
-        "type": 11
+        "type": 3,
+        "count": 10000
       }
-    ]
+    ],
+    "id": 6,
+    "endHour": 48,
+    "gotoId": "alliance_milestone_radar"
   }
 }

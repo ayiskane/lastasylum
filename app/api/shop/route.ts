@@ -41,19 +41,26 @@ export async function GET() {
       const itype = item.type
       const iid = item.id || ''
       const count = item.count || 0
-      if (itype === 11) return { name: 'Diamonds', icon: 'icon_zuanshi', count, category: 'currency' }
-      if (itype === 21) return { name: 'Banknotes', icon: 'icon_chaopiao', count, category: 'currency' }
-      if (itype === 12) return { name: 'VIP EXP', icon: 'icon_vip', count, category: 'currency' }
+      if (itype === 11) return { name: 'Diamonds', icon: 'icon_zuanshi', count, category: 'currency', rarity: 'blue' }
+      if (itype === 21) return { name: 'Banknotes', icon: 'icon_chaopiao', count, category: 'currency', rarity: 'orange' }
+      if (itype === 12) return { name: 'VIP EXP', icon: 'icon_vip', count, category: 'currency', rarity: 'purple' }
       if (itype === 99 && iid) {
         const itemData = allItems[iid] || {}
+        const q = itemData.quality
+        const g = itemData.itemGrade
+        let rarity = 'gray'
+        if (q === null || q === undefined) {
+          rarity = g === 4 ? 'purple' : g === 3 ? 'blue' : 'orange'
+        } else if (q === 6) rarity = 'red'
+        else if (q === 4) rarity = 'purple'
+        else if (q === 3) rarity = 'blue'
+        else if (q === 2) rarity = 'green'
         return {
           name: itemData.displayName || iid.replace(/^item_/, '').replace(/_/g, ' '),
-          icon: itemData.icon || '',
-          count,
-          category: itemData.type || 'item',
+          icon: itemData.icon || '', count, category: itemData.type || 'item', rarity,
         }
       }
-      return { name: `Unknown`, icon: '', count, category: 'other' }
+      return { name: 'Unknown', icon: '', count, category: 'other', rarity: 'gray' }
     })
   }
 

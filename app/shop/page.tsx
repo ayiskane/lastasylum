@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import GameImage from '@/components/GameImage'
 
 interface PackItem {
-  name: string; icon: string; count: number; category: string
+  name: string; icon: string; count: number; category: string; rarity: string
 }
 interface Pack {
   id: string; name: string; text: string; giftType: string
@@ -150,28 +150,68 @@ function PackCard({ pack }: { pack: Pack }) {
         )}
       </div>
 
-      {/* Item grid with icons */}
+      {/* Item grid with icons and rarity backgrounds */}
       <div className="p-3">
         <div className="grid grid-cols-4 gap-2">
           {pack.items.slice(0, 8).map((item, i) => (
-            <div key={i} className="flex flex-col items-center text-center">
-              <div className="w-10 h-10 rounded-lg border border-asylum-border/50 bg-asylum-bg overflow-hidden mb-1">
-                <GameImage
-                  src={item.icon ? `/images/items/${item.icon}.png` : ''}
-                  alt={item.name}
-                  fallback="📦"
-                  className="w-full h-full"
-                />
-              </div>
-              <span className="text-[10px] font-mono text-asylum-accent leading-tight">
-                {item.count >= 1000 ? `${(item.count / 1000).toFixed(item.count % 1000 === 0 ? 0 : 1)}K` : item.count.toLocaleString()}
-              </span>
-            </div>
+            <ItemIcon key={i} item={item} />
           ))}
         </div>
         {pack.items.length > 8 && (
           <div className="text-[10px] text-asylum-muted text-center mt-2">+{pack.items.length - 8} more items</div>
         )}
+      </div>
+    </div>
+  )
+}
+
+const RARITY_FRAME: Record<string, string> = {
+  gray: 'Icon_item_white',
+  green: 'Icon_item_green',
+  blue: 'Icon_item_blue',
+  purple: 'Icon_item_purple',
+  orange: 'Icon_item_yellow',
+  red: 'Icon_item_red',
+}
+
+const RARITY_TEXT: Record<string, string> = {
+  gray: 'text-gray-400',
+  green: 'text-emerald-400',
+  blue: 'text-blue-400',
+  purple: 'text-purple-400',
+  orange: 'text-amber-400',
+  red: 'text-red-400',
+}
+
+function ItemIcon({ item }: { item: PackItem }) {
+  const frame = RARITY_FRAME[item.rarity] || RARITY_FRAME.gray
+  const textColor = RARITY_TEXT[item.rarity] || RARITY_TEXT.gray
+
+  return (
+    <div className="flex flex-col items-center text-center group relative">
+      <div className="w-11 h-11 relative mb-1">
+        {/* Quality frame background from game assets */}
+        <img
+          src={`/images/items/${frame}.png`}
+          alt=""
+          className="absolute inset-0 w-full h-full"
+        />
+        {/* Item icon on top */}
+        <div className="absolute inset-1 overflow-hidden">
+          <GameImage
+            src={item.icon ? `/images/items/${item.icon}.png` : ''}
+            alt={item.name}
+            fallback="📦"
+            className="w-full h-full"
+          />
+        </div>
+      </div>
+      <span className={`text-[10px] font-mono font-semibold leading-tight ${textColor}`}>
+        {item.count >= 1000 ? `${(item.count / 1000).toFixed(item.count % 1000 === 0 ? 0 : 1)}K` : item.count.toLocaleString()}
+      </span>
+      {/* Tooltip on hover */}
+      <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-2 py-1 bg-asylum-bg border border-asylum-border rounded text-[10px] text-asylum-text whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity z-10">
+        {item.name}
       </div>
     </div>
   )
