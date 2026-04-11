@@ -33,17 +33,17 @@ export async function GET() {
   const allItems = getItems()
 
   if (!gifts || !Object.keys(gifts).length) {
-    return NextResponse.json({ tabs: [], uncategorized: [] })
+    return NextResponse.json({ tabs: [], eventPacks: {} })
   }
 
-  // Resolve item names
   function resolveItems(packItems: any[]): any[] {
     return (packItems || []).map(item => {
       const itype = item.type
       const iid = item.id || ''
       const count = item.count || 0
-      if (itype === 11) return { name: 'Diamonds', icon: '💎', count, category: 'currency' }
-      if (itype === 21) return { name: 'Banknotes', icon: '🎫', count, category: 'currency' }
+      if (itype === 11) return { name: 'Diamonds', icon: 'icon_zuanshi', count, category: 'currency' }
+      if (itype === 21) return { name: 'Banknotes', icon: 'icon_chaopiao', count, category: 'currency' }
+      if (itype === 12) return { name: 'VIP EXP', icon: 'icon_vip', count, category: 'currency' }
       if (itype === 99 && iid) {
         const itemData = allItems[iid] || {}
         return {
@@ -53,11 +53,10 @@ export async function GET() {
           category: itemData.type || 'item',
         }
       }
-      return { name: `Type ${itype}`, icon: '', count, category: 'other' }
+      return { name: `Unknown`, icon: '', count, category: 'other' }
     })
   }
 
-  // Group by shop tab
   const tabGroups: Record<number, any[]> = {}
   const uncategorized: any[] = []
 
@@ -71,17 +70,10 @@ export async function GET() {
     const rebate = gift.rebateRatio
 
     const pack = {
-      id: gid,
-      name,
-      text: gift.text || '',
-      giftType: gift.giftType || '',
-      price,
-      priceId,
-      rebate: rebate > 0 ? rebate : null,
-      icon: gift.giftIcon || '',
-      items,
-      purchaseLimit: gift.purchaseLimit || null,
-      sort: gift.giftSort || 0,
+      id: gid, name, text: gift.text || '', giftType: gift.giftType || '',
+      price, priceId, rebate: rebate > 0 ? rebate : null,
+      icon: gift.giftIcon || '', items,
+      purchaseLimit: gift.purchaseLimit || null, sort: gift.giftSort || 0,
     }
 
     const shopLabel = gift.shopLabel
@@ -96,19 +88,14 @@ export async function GET() {
     }
   }
 
-  // Build tab data sorted
   const tabs = Object.entries(SHOP_TABS)
     .map(([tabId, meta]) => ({
-      id: Number(tabId),
-      name: meta.name,
-      slogan: meta.slogan,
-      sort: meta.sort,
+      id: Number(tabId), name: meta.name, slogan: meta.slogan, sort: meta.sort,
       packs: (tabGroups[Number(tabId)] || []).sort((a: any, b: any) => (b.sort || 0) - (a.sort || 0)),
     }))
     .filter(t => t.packs.length > 0)
     .sort((a, b) => a.sort - b.sort)
 
-  // Group uncategorized by giftType
   const eventPacks: Record<string, any[]> = {}
   for (const pack of uncategorized) {
     const gt = pack.giftType || 'other'
