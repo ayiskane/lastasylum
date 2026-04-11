@@ -1,88 +1,35 @@
 {
-  "2005": {
-    "goTo": "Activity",
-    "sort": 5,
-    "id": 2005,
-    "pic": "icon_item_headframe_general",
-    "benefit": [
-      {
-        "Source": 101,
-        "Type": 10006,
-        "Value": 0.05
-      }
-    ],
-    "unlockItem": [
-      {
-        "id": "item_headframe_general_7d",
-        "type": 99,
-        "count": 1
-      }
-    ]
-  },
-  "90001": {
-    "unlockType": 1,
-    "picAtlas": "PLAYER_HEAD_ICON",
-    "id": 90001,
-    "timeType": 0,
-    "type": 1,
-    "sort": 999,
-    "pic": "pic_lz_touxiang01",
-    "initWear": 1,
-    "Gender": 1,
-    "head": "pic_lz_touxiang01"
-  },
-  "2001": {
-    "unlockType": 1,
-    "picAtlas": "",
-    "sort": 999,
-    "initWear": 1,
-    "pic": "pic_touxiangkuang0",
-    "timeType": 0
-  },
-  "2006": {
-    "goTo": "Activity",
-    "sort": 6,
-    "id": 2006,
-    "pic": "icon_item_headframe_lieutenantGeneral",
-    "benefit": [
-      {
-        "Source": 101,
-        "Type": 10006,
-        "Value": 0.04
-      }
-    ],
-    "unlockItem": [
-      {
-        "id": "item_headframe_lieutenantGeneral_7d",
-        "type": 99,
-        "count": 1
-      }
-    ]
-  },
   "92018": {
+    "timeType": 0,
     "unlockType": 1,
-    "picAtlas": "MONSTER_HEAD_ICON",
     "type": 5,
-    "id": 92018,
+    "picAtlas": "MONSTER_HEAD_ICON",
     "pic": "xiaoguai_13",
     "head": "pic_lz_touxiang02",
-    "timeType": 0
+    "id": 92018
   },
-  "90002": {
+  "90001": {
+    "timeType": 0,
+    "sort": 999,
+    "initWear": 1,
+    "Gender": 1,
     "unlockType": 1,
-    "picAtlas": "PLAYER_HEAD_ICON",
     "type": 1,
-    "head": "pic_lz_touxiang02",
-    "id": 90002,
-    "pic": "pic_lz_touxiang02",
-    "Gender": 2,
-    "timeType": 0
+    "picAtlas": "PLAYER_HEAD_ICON",
+    "pic": "pic_lz_touxiang01",
+    "head": "pic_lz_touxiang01",
+    "id": 90001
   },
   "2007": {
-    "goTo": "Activity",
     "sort": 7,
+    "unlockItem": [
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_headframe_majorGeneral_7d"
+      }
+    ],
     "id": 2007,
-    "pic": "icon_item_headframe_majorGeneral",
     "benefit": [
       {
         "Source": 101,
@@ -90,51 +37,58 @@
         "Value": 0.03
       }
     ],
-    "unlockItem": [
-      {
-        "id": "item_headframe_majorGeneral_7d",
-        "type": 99,
-        "count": 1
-      }
-    ]
+    "pic": "icon_item_headframe_majorGeneral",
+    "goTo": "Activity"
   },
-  "2010": {
+  "2005": {
+    "sort": 5,
     "unlockItem": [
       {
-        "id": "item_headframe_monthCard_30d",
         "type": 99,
-        "count": 1
+        "count": 1,
+        "id": "item_headframe_general_7d"
       }
     ],
-    "picAtlas": "",
-    "sort": 996,
-    "id": 2010,
-    "pic": "pic_touxiangkuang1"
-  },
-  "2009": {
-    "goTo": "Activity",
-    "sort": 9,
-    "id": 2009,
-    "pic": "icon_item_headframe_lieutenantColonel",
+    "id": 2005,
     "benefit": [
       {
         "Source": 101,
         "Type": 10006,
-        "Value": 0.02
+        "Value": 0.05
       }
     ],
+    "pic": "icon_item_headframe_general",
+    "goTo": "Activity"
+  },
+  "2006": {
+    "sort": 6,
     "unlockItem": [
       {
-        "id": "item_headframe_lieutenantColonel_7d",
         "type": 99,
-        "count": 1
+        "count": 1,
+        "id": "item_headframe_lieutenantGeneral_7d"
       }
-    ]
+    ],
+    "id": 2006,
+    "benefit": [
+      {
+        "Source": 101,
+        "Type": 10006,
+        "Value": 0.04
+      }
+    ],
+    "pic": "icon_item_headframe_lieutenantGeneral",
+    "goTo": "Activity"
   },
   "2008": {
-    "goTo": "Activity",
     "sort": 8,
-    "id": 2008,
+    "unlockItem": [
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_headframe_colonel_7d"
+      }
+    ],
     "benefit": [
       {
         "Source": 101,
@@ -142,12 +96,58 @@
         "Value": 0.025
       }
     ],
+    "id": 2008,
+    "goTo": "Activity"
+  },
+  "2010": {
+    "sort": 996,
     "unlockItem": [
       {
-        "id": "item_headframe_colonel_7d",
         "type": 99,
-        "count": 1
+        "count": 1,
+        "id": "item_headframe_monthCard_30d"
       }
-    ]
+    ],
+    "picAtlas": "",
+    "pic": "pic_touxiangkuang1",
+    "id": 2010
+  },
+  "2009": {
+    "sort": 9,
+    "unlockItem": [
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_headframe_lieutenantColonel_7d"
+      }
+    ],
+    "id": 2009,
+    "benefit": [
+      {
+        "Source": 101,
+        "Type": 10006,
+        "Value": 0.02
+      }
+    ],
+    "pic": "icon_item_headframe_lieutenantColonel",
+    "goTo": "Activity"
+  },
+  "90002": {
+    "timeType": 0,
+    "type": 1,
+    "unlockType": 1,
+    "picAtlas": "PLAYER_HEAD_ICON",
+    "pic": "pic_lz_touxiang02",
+    "head": "pic_lz_touxiang02",
+    "Gender": 2,
+    "id": 90002
+  },
+  "2001": {
+    "timeType": 0,
+    "sort": 999,
+    "unlockType": 1,
+    "initWear": 1,
+    "pic": "pic_touxiangkuang0",
+    "picAtlas": ""
   }
 }
