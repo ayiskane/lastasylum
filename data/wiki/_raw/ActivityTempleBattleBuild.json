@@ -1,55 +1,79 @@
 {
-  "2": {
-    "modelConfigId": 40002,
-    "id": 2,
-    "animatorPath": "Tower/tower_rightdown_animator.overrideController",
-    "coordinate": [
-      509,
-      491
-    ]
-  },
   "3": {
-    "modelConfigId": 40003,
-    "id": 3,
-    "animatorPath": "Tower/tower_leftup_animator.controller",
     "coordinate": [
       491,
       509
-    ]
+    ],
+    "modelConfigId": 40003,
+    "animatorPath": "Tower/tower_leftup_animator.controller",
+    "id": 3
+  },
+  "2": {
+    "coordinate": [
+      509,
+      491
+    ],
+    "modelConfigId": 40002,
+    "animatorPath": "Tower/tower_rightdown_animator.overrideController",
+    "id": 2
+  },
+  "5": {
+    "coordinate": [
+      509,
+      509
+    ],
+    "modelConfigId": 40005,
+    "animatorPath": "Tower/tower_rightup_animator.overrideController",
+    "id": 5
+  },
+  "4": {
+    "coordinate": [
+      491,
+      491
+    ],
+    "modelConfigId": 40004,
+    "animatorPath": "Tower/tower_leftdown_animator.overrideController",
+    "id": 4
   },
   "1": {
-    "type": 1,
-    "cityBlockId": 9999,
-    "area": 87,
     "reward": [
       {
-        "type": 11,
-        "count": 3000
+        "count": 3000,
+        "type": 11
       },
       {
+        "count": 50,
         "type": 99,
-        "id": "item_UseUp_recruitCoin",
-        "count": 50
+        "id": "item_UseUp_recruitCoin"
       },
       {
+        "count": 180,
         "type": 99,
-        "id": "item_food_50k",
-        "count": 180
+        "id": "item_food_50k"
       },
       {
+        "count": 180,
         "type": 99,
-        "id": "item_wood_50k",
-        "count": 180
+        "id": "item_wood_50k"
       },
       {
+        "count": 180,
         "type": 99,
-        "id": "item_steel_30k",
-        "count": 180
+        "id": "item_steel_30k"
       },
       {
+        "count": 300,
         "type": 99,
-        "id": "item_optionalBox_Resource",
-        "count": 300
+        "id": "item_optionalBox_Resource"
+      }
+    ],
+    "cityBlockId": 9999,
+    "type": 1,
+    "benefit": [
+      {
+        "Value": 0.1,
+        "Source": 905,
+        "Type": 10101
       }
     ],
     "AdjacentCities": [
@@ -57,30 +81,6 @@
       6002,
       6003
     ],
-    "benefit": [
-      {
-        "Type": 10101,
-        "Source": 905,
-        "Value": 0.1
-      }
-    ]
-  },
-  "4": {
-    "modelConfigId": 40004,
-    "id": 4,
-    "animatorPath": "Tower/tower_leftdown_animator.overrideController",
-    "coordinate": [
-      491,
-      491
-    ]
-  },
-  "5": {
-    "modelConfigId": 40005,
-    "id": 5,
-    "animatorPath": "Tower/tower_rightup_animator.overrideController",
-    "coordinate": [
-      509,
-      509
-    ]
+    "area": 87
   }
 }
