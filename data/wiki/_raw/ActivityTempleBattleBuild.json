@@ -1,86 +1,86 @@
 {
   "1": {
+    "area": 87,
+    "cityBlockId": 9999,
     "benefit": [
       {
-        "Source": 905,
+        "Value": 0.1,
         "Type": 10101,
-        "Value": 0.1
+        "Source": 905
       }
     ],
-    "cityBlockId": 9999,
-    "area": 87,
+    "AdjacentCities": [
+      6001,
+      6002,
+      6003
+    ],
+    "type": 1,
     "reward": [
       {
         "count": 3000,
         "type": 11
       },
       {
-        "type": 99,
         "count": 50,
+        "type": 99,
         "id": "item_UseUp_recruitCoin"
       },
       {
-        "type": 99,
         "count": 180,
+        "type": 99,
         "id": "item_food_50k"
       },
       {
-        "type": 99,
         "count": 180,
+        "type": 99,
         "id": "item_wood_50k"
       },
       {
-        "type": 99,
         "count": 180,
+        "type": 99,
         "id": "item_steel_30k"
       },
       {
-        "type": 99,
         "count": 300,
+        "type": 99,
         "id": "item_optionalBox_Resource"
       }
-    ],
-    "type": 1,
-    "AdjacentCities": [
-      6001,
-      6002,
-      6003
     ]
   },
-  "2": {
+  "5": {
+    "id": 5,
     "coordinate": [
       509,
-      491
-    ],
-    "id": 2,
-    "modelConfigId": 40002,
-    "animatorPath": "Tower/tower_rightdown_animator.overrideController"
-  },
-  "3": {
-    "coordinate": [
-      491,
       509
     ],
-    "id": 3,
-    "modelConfigId": 40003,
-    "animatorPath": "Tower/tower_leftup_animator.controller"
+    "modelConfigId": 40005,
+    "animatorPath": "Tower/tower_rightup_animator.overrideController"
   },
   "4": {
+    "id": 4,
     "coordinate": [
       491,
       491
     ],
-    "id": 4,
     "modelConfigId": 40004,
     "animatorPath": "Tower/tower_leftdown_animator.overrideController"
   },
-  "5": {
+  "3": {
+    "id": 3,
     "coordinate": [
-      509,
+      491,
       509
     ],
-    "id": 5,
-    "modelConfigId": 40005,
-    "animatorPath": "Tower/tower_rightup_animator.overrideController"
+    "modelConfigId": 40003,
+    "animatorPath": "Tower/tower_leftup_animator.controller"
+  },
+  "2": {
+    "id": 2,
+    "coordinate": [
+      509,
+      491
+    ],
+    "modelConfigId": 40002,
+    "animatorPath": "Tower/tower_rightdown_animator.overrideController"
   }
 }
