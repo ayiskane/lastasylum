@@ -1,60 +1,60 @@
 {
-  "3": {
-    "switchId": "HeroRecruit_Once_3",
+  "1": {
+    "tabIcon": "pic_jg_zhaomu_hero",
+    "switchId": "HeroRecruit_Once_1",
+    "fresherURTips": "recruit_guaranteed_function_tips"
+  },
+  "2": {
+    "exhibitPool": 201,
     "recruitAnimation": "Prefab/Timeline/ChoukaTimeLine.prefab",
-    "id": 3,
+    "guaranteedDisplayPool": 202,
+    "initialPool": 200,
+    "id": 2,
+    "switchId": "HeroRecruit_Once_2",
+    "newHeroId": [
+      50002
+    ]
+  },
+  "3": {
+    "exhibitPool": 301,
+    "recruitAnimation": "Prefab/Timeline/ChoukaTimeLine.prefab",
+    "guaranteedDisplayPool": 302,
     "initialPool": 300,
+    "id": 3,
+    "switchId": "HeroRecruit_Once_3",
     "newHeroId": [
       50004,
       50006
-    ],
-    "guaranteedDisplayPool": 302,
-    "exhibitPool": 301
-  },
-  "2": {
-    "switchId": "HeroRecruit_Once_2",
-    "recruitAnimation": "Prefab/Timeline/ChoukaTimeLine.prefab",
-    "id": 2,
-    "initialPool": 200,
-    "newHeroId": [
-      50002
-    ],
-    "guaranteedDisplayPool": 202,
-    "exhibitPool": 201
-  },
-  "1": {
-    "tabIcon": "pic_jg_zhaomu_hero",
-    "fresherURTips": "recruit_guaranteed_function_tips",
-    "switchId": "HeroRecruit_Once_1"
+    ]
   },
   "9": {
-    "prefab": "UI_Panel/Pub/PubWorkerPoolSub.prefab",
-    "tagImage": "pic_jg_zhaomu_xingcunzhe",
-    "pic": "pic_jg_zm_xcz",
-    "rewardType": 2,
-    "cost": [
-      {
-        "count": -1,
-        "type": 99,
-        "id": "item_UseUp_workerRecruitCoin"
-      }
-    ],
-    "giftId": 900901035,
-    "displaySpineId": 0,
-    "giftGroupId": {},
-    "gotoDailyCount": 0,
-    "tagSelectIcon": "pic_jg_zhaomudi3",
-    "unlockId": 214,
-    "unlock100Draw": -1,
-    "type": 4,
     "tabIcon": "pic_jg_zhaomu_xingcunzhe",
+    "type": 4,
+    "unlockId": 214,
     "id": 9,
-    "initialPool": 901,
-    "guaranteedDisplayPool": 902,
+    "pic": "pic_jg_zm_xcz",
+    "exhibitPool": 901,
+    "giftId": 900901035,
+    "rewardType": 2,
+    "giftGroupId": {},
     "drawCount": [
       1,
       10
     ],
-    "exhibitPool": 901
+    "displaySpineId": 0,
+    "guaranteedDisplayPool": 902,
+    "prefab": "UI_Panel/Pub/PubWorkerPoolSub.prefab",
+    "tagImage": "pic_jg_zhaomu_xingcunzhe",
+    "unlock100Draw": -1,
+    "initialPool": 901,
+    "tagSelectIcon": "pic_jg_zhaomudi3",
+    "cost": [
+      {
+        "id": "item_UseUp_workerRecruitCoin",
+        "type": 99,
+        "count": -1
+      }
+    ],
+    "gotoDailyCount": 0
   }
 }

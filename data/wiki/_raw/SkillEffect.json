@@ -1,4024 +1,4024 @@
 {
-  "9053071": {
-    "effectTiming": 7,
-    "persistTime": 0,
-    "id": 9053071,
-    "target": 101,
-    "skillId": 905307,
-    "effectType": 102,
-    "extend": "90532"
+  "30100301": {
+    "skillId": 3010030,
+    "effectValuePctExpr": "0.6*(1+0.025*n1)",
+    "id": 30100301,
+    "stateId": 30105,
+    "persistTime": 3000
   },
-  "9033044": {
-    "effectType": 7,
+  "9033021": {
+    "skillId": 903302,
+    "effectTiming": 16,
+    "id": 9033021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "20110221": {
+    "stateId": 1002,
+    "triggerCd": 1000,
+    "effectValuePctExpr": "0.15",
     "attackType": 1,
-    "targetExtend": "750_350",
-    "targetSide": 0,
-    "persistTime": 0,
-    "actionIndex": 4,
-    "target": 5,
-    "targetParam": 99,
-    "id": 9033044,
-    "effectValuePctExpr": "2"
-  },
-  "20080231": {
-    "stateId": 20081,
-    "target": 14,
-    "persistTime": 7000,
-    "effectValueExpr": "0.12*(1+0.04*n1)+0.09",
-    "targetExtend": "2",
-    "targetParam": 2,
-    "id": 20080231,
-    "skillId": 2008023
-  },
-  "20050401": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)",
-    "stateId": 20051,
-    "maxCount": 1,
-    "id": 20050401,
-    "skillId": 2005040
-  },
-  "20020421": {
-    "stateId": 20022,
-    "effectTiming": 1,
-    "target": 14,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
-    "targetExtend": "3",
-    "targetParam": 3,
-    "id": 20020421,
-    "skillId": 2002042
-  },
-  "30020421": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
-    "stateId": 30022,
-    "maxCount": 1,
-    "id": 30020421,
-    "skillId": 3002042
-  },
-  "9123032": {
-    "targetSide": 0,
-    "persistTime": 3000,
-    "id": 9123032,
+    "id": 20110221,
+    "skillId": 2011022,
     "target": 18,
-    "targetParam": 0,
-    "stateId": 1001,
-    "skillId": 912303
-  },
-  "20020221": {
     "persistTime": 7000,
-    "effectValueExpr": "0.08",
-    "stateId": 20021,
-    "id": 20020221,
-    "skillId": 2002022
+    "targetSide": 0,
+    "targetParam": 0
   },
-  "20080431": {
-    "target": 4,
+  "9100161": {
+    "skillId": 910016,
+    "persistTime": 99999999,
+    "effectType": 10,
     "effectTiming": 7,
-    "persistTime": 0,
-    "effectValuePctExpr": "2*(1+0.05*n1)*2.2",
-    "effectType": 3,
-    "maxCount": 1,
-    "id": 20080431,
-    "skillId": 2008043
+    "extend": "999009_5_0.3_0.3_1_2783_700_450",
+    "id": 9100161,
+    "conditionValue": "50",
+    "condition": 3
   },
-  "30080431": {
-    "effectTiming": 1,
-    "persistTime": 7000,
+  "20020231": {
+    "skillId": 2002023,
+    "effectValueExpr": "0.08",
+    "id": 20020231,
+    "stateId": 20021,
+    "persistTime": 7000
+  },
+  "20100301": {
+    "skillId": 2010030,
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 20100301,
+    "stateId": 1001,
+    "persistTime": 1000
+  },
+  "30080401": {
     "stateId": 30082,
     "targetExtend": "1",
-    "maxCount": 1,
-    "skillId": 3008043,
-    "effectValuePctExpr": "0.05*(1+0.05*n1)*1.5",
+    "effectValuePctExpr": "0.05*(1+0.05*n1)",
+    "id": 30080401,
+    "skillId": 3008040,
     "target": 13,
+    "effectTiming": 1,
     "targetParam": 99,
-    "id": 30080431,
+    "persistTime": 5000,
+    "maxCount": 1,
     "extend": "30082_0.5"
   },
-  "20090401": {
-    "stateId": 20131,
-    "effectTiming": 1,
-    "target": 14,
-    "effectValueExpr": "0.12*(1+0.025*n1)",
-    "targetExtend": "1",
-    "targetParam": 2,
-    "id": 20090401,
-    "skillId": 2009040
-  },
-  "20040201": {
-    "effectType": 10,
-    "persistTime": 10000,
-    "id": 20040201,
-    "skillId": 2004020,
-    "extend": "999001_1_1+0.05*n1_0.15_1"
-  },
-  "20100311": {
-    "targetSide": 0,
-    "persistTime": 1000,
-    "id": 20100311,
-    "target": 18,
-    "targetParam": 0,
-    "stateId": 1001,
-    "skillId": 2010031
-  },
-  "30100311": {
-    "persistTime": 3000,
-    "effectValuePctExpr": "0.6*(1+0.025*n1)+0.12",
-    "stateId": 30105,
-    "id": 30100311,
-    "skillId": 3010031
-  },
-  "9033023": {
-    "effectType": 7,
-    "attackType": 1,
-    "targetExtend": "750_350",
-    "persistTime": 0,
-    "targetSide": 0,
-    "target": 5,
-    "actionIndex": 2,
-    "effectValuePctExpr": "10",
-    "targetParam": 99,
-    "id": 9033023,
-    "skillId": 903302
-  },
-  "9100311": {
-    "effectTiming": 7,
-    "persistTime": 99999999,
-    "id": 9100311,
-    "skillId": 910031,
-    "effectType": 10,
-    "extend": "999007_3_0.2_0.2_1_2783_700_450"
-  },
-  "9153042": {
-    "effectTiming": 1,
-    "persistTime": 0,
-    "maxCount": 1,
-    "condition": 3,
-    "conditionValue": "0.5",
-    "actionIndex": 2,
-    "skillId": 915304,
-    "id": 9153042,
-    "effectType": 10,
-    "extend": "991502_3_0_0_1"
-  },
-  "30040201": {
-    "effectTiming": 16,
-    "persistTime": 0,
-    "effectValueExpr": "0.08*(1+0.025*n1)",
-    "skillId": 3004020,
-    "id": 30040201,
-    "effectType": 2,
-    "attrType": 5
-  },
-  "30090401": {
-    "effectTiming": 1,
-    "effectValuePctExpr": "0.08*(1+0.025*n1)",
-    "stateId": 30093,
-    "maxCount": 1,
-    "id": 30090401,
-    "skillId": 3009040
-  },
-  "9153071": {
-    "effectTiming": 101,
-    "id": 9153071,
-    "target": 101,
-    "stateId": 3003,
-    "skillId": 915307
-  },
-  "41000041": {
-    "stateId": 400001,
-    "targetSide": 0,
-    "persistTime": 5000,
-    "effectValueExpr": "0.15",
-    "target": 18,
-    "targetParam": 0,
-    "id": 41000041,
-    "skillId": 4100004
-  },
-  "30090431": {
-    "effectTiming": 1,
-    "effectValuePctExpr": "0.08*(1+0.025*n1)+0.08",
-    "stateId": 30093,
-    "maxCount": 1,
-    "id": 30090431,
-    "skillId": 3009043
-  },
-  "9063091": {
-    "effectTiming": 7,
-    "persistTime": 0,
-    "id": 9063091,
-    "target": 101,
-    "skillId": 906309,
-    "effectType": 102,
-    "extend": "3003"
-  },
-  "9063071": {
-    "effectTiming": 7,
-    "persistTime": 0,
-    "id": 9063071,
-    "target": 101,
-    "skillId": 906307,
-    "effectType": 102,
-    "extend": "3001"
-  },
-  "30120331": {
-    "stateId": 30122,
-    "persistTime": 4000,
-    "effectValueExpr": "0.09*(1+0.025*n1)+0.12",
-    "target": 19,
-    "targetParam": 3,
-    "id": 30120331,
-    "skillId": 3012033
-  },
-  "20110231": {
-    "attackType": 1,
-    "stateId": 1002,
-    "triggerCd": 1000,
-    "targetSide": 0,
-    "id": 20110231,
-    "effectValuePctExpr": "0.15",
-    "target": 18,
-    "targetParam": 0,
-    "persistTime": 7000,
-    "skillId": 2011023
-  },
-  "9033022": {
-    "effectType": 7,
-    "attackType": 1,
-    "targetExtend": "600",
-    "persistTime": 0,
-    "targetSide": 0,
+  "30010221": {
+    "skillId": 3001022,
+    "effectValueExpr": "0.1*(1+0.025*n1)+0.075",
     "target": 6,
-    "actionIndex": 1,
-    "effectValuePctExpr": "10",
     "targetParam": 99,
-    "id": 9033022,
-    "skillId": 903302
+    "targetExtend": "340",
+    "id": 30010221,
+    "stateId": 30011,
+    "persistTime": 5000
   },
-  "20120401": {
-    "effectTiming": 1,
-    "targetSide": 0,
-    "effectValueExpr": "0.1*(1+0.025*n1)",
-    "stateId": 20121,
-    "maxCount": 1,
-    "id": 20120401,
-    "skillId": 2012040
-  },
-  "9083022": {
-    "persistTime": 5000,
-    "stateId": 1004,
-    "triggerCd": 1000,
-    "targetSide": 0,
-    "effectValuePctExpr": "0.5",
-    "target": 18,
-    "targetParam": 0,
-    "id": 9083022,
-    "skillId": 908302
-  },
-  "9063051": {
-    "effectTiming": 101,
-    "id": 9063051,
-    "target": 101,
-    "stateId": 3002,
-    "skillId": 906305
-  },
-  "30020431": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
-    "stateId": 30022,
-    "maxCount": 1,
-    "id": 30020431,
-    "skillId": 3002043
-  },
-  "20020431": {
-    "stateId": 20022,
-    "effectTiming": 1,
-    "target": 14,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
-    "targetExtend": "3",
-    "targetParam": 3,
-    "id": 20020431,
-    "skillId": 2002043
-  },
-  "20090431": {
-    "stateId": 20131,
-    "effectTiming": 1,
-    "target": 14,
-    "effectValueExpr": "0.12*(1+0.025*n1)+0.09",
-    "targetExtend": "1",
-    "targetParam": 2,
-    "id": 20090431,
-    "skillId": 2009043
-  },
-  "9053051": {
-    "effectTiming": 101,
-    "effectValuePctExpr": "0.2",
-    "target": 101,
-    "stateId": 90533,
-    "id": 9053051,
-    "skillId": 905305
-  },
-  "30120401": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.15*(1+0.025*n1)",
-    "stateId": 30123,
-    "maxCount": 1,
-    "id": 30120401,
-    "skillId": 3012040
-  },
-  "9063022": {
-    "targetSide": 0,
-    "persistTime": 2000,
-    "id": 9063022,
-    "target": 18,
-    "targetParam": 0,
-    "stateId": 1001,
-    "skillId": 906302
-  },
-  "40000041": {
-    "stateId": 400001,
-    "targetSide": 0,
-    "persistTime": 5000,
-    "effectValueExpr": "0.25",
-    "target": 18,
-    "targetParam": 0,
-    "id": 40000041,
-    "skillId": 4000004
-  },
-  "40000062": {
-    "effectTiming": 3,
+  "20080401": {
+    "skillId": 2008040,
+    "target": 4,
+    "effectType": 3,
+    "effectTiming": 7,
     "persistTime": 0,
-    "targetSide": 0,
-    "id": 40000062,
-    "effectValueExpr": "0.2",
-    "skillId": 4000006,
-    "targetParam": 0,
-    "effectType": 2,
-    "attrType": 22
+    "id": 20080401,
+    "maxCount": 1,
+    "effectValuePctExpr": "2*(1+0.05*n1)"
   },
-  "30090211": {
-    "triggerRateExpr": "0.35",
-    "targetSide": 0,
-    "persistTime": 5000,
-    "id": 30090211,
-    "target": 18,
-    "targetParam": 0,
-    "stateId": 1001,
-    "skillId": 3009021
+  "9100261": {
+    "skillId": 910026,
+    "triggerCd": 9999999,
+    "effectType": 10,
+    "effectTiming": 1,
+    "id": 9100261,
+    "persistTime": 99999999,
+    "extend": "999006_3_0.2_0.2_1_2783_700_450"
   },
-  "9042041": {
+  "30130321": {
+    "skillId": 3013032,
+    "effectType": 3,
+    "effectValuePctExpr": "0.6*(1+0.05*n1)*2",
+    "id": 30130321,
+    "target": 4,
+    "persistTime": 0
+  },
+  "30110411": {
+    "skillId": 3011041,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
+    "effectTiming": 1,
+    "id": 30110411,
+    "maxCount": 1,
+    "stateId": 30111
+  },
+  "9023021": {
+    "skillId": 902302,
     "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9042041,
+    "id": 9023021,
     "stateId": 2001,
-    "skillId": 904204
-  },
-  "9033041": {
-    "effectType": 7,
-    "attackType": 1,
-    "targetExtend": "750_60",
-    "targetSide": 0,
-    "persistTime": 0,
-    "actionIndex": 1,
-    "target": 11,
-    "targetParam": 99,
-    "id": 9033041,
-    "effectValuePctExpr": "2"
-  },
-  "20120431": {
-    "effectTiming": 1,
-    "targetSide": 0,
-    "effectValueExpr": "0.1*(1+0.025*n1)+0.1",
-    "stateId": 20121,
-    "maxCount": 1,
-    "id": 20120431,
-    "skillId": 2012043
+    "persistTime": 3500
   },
   "30050321": {
-    "attackType": 2,
     "stateId": 30052,
     "triggerCd": 1000,
-    "targetSide": 0,
-    "id": 30050321,
     "effectValuePctExpr": "1*(1+0.05*n1)",
-    "target": 18,
-    "targetParam": 0,
-    "persistTime": 4000,
-    "skillId": 3005032
-  },
-  "9082041": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9082041,
-    "stateId": 2001,
-    "skillId": 908204
-  },
-  "30110401": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)",
-    "stateId": 30111,
-    "maxCount": 1,
-    "id": 30110401,
-    "skillId": 3011040
-  },
-  "20110401": {
-    "effectTiming": 3,
-    "persistTime": 0,
-    "target": 2,
-    "id": 20110401,
-    "condition": 1,
-    "targetSide": 0,
-    "conditionValue": "7",
-    "effectValueExpr": "-0.15*(1+0.025*n1)",
-    "skillId": 2011040,
-    "targetParam": 99,
-    "effectType": 2,
-    "attrType": 15
-  },
-  "9100141": {
-    "condition": 3,
-    "effectTiming": 7,
-    "conditionValue": "50",
-    "id": 9100141,
-    "skillId": 910014,
-    "persistTime": 99999999,
-    "effectType": 10,
-    "extend": "999009_3_0.3_0.3_1_2783_700_450"
-  },
-  "30120232": {
-    "stateId": 30121,
-    "persistTime": 5000,
-    "effectValueExpr": "0.15*(1+0.025*n1)",
-    "target": 2,
-    "targetParam": 99,
-    "id": 30120232,
-    "skillId": 3012023
-  },
-  "30140201": {
-    "triggerRateExpr": "0.7",
-    "id": 30140201,
-    "target": 15,
-    "targetParam": 3,
-    "stateId": 2001,
-    "skillId": 3014020
-  },
-  "30140401": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)",
-    "stateId": 30143,
-    "maxCount": 1,
-    "id": 30140401,
-    "skillId": 3014040
-  },
-  "30070431": {
-    "effectTiming": 1,
-    "stateId": 30074,
-    "targetExtend": "3",
-    "maxCount": 1,
-    "effectValuePctExpr": "0.06*(1+0.025*n1)+0.06",
-    "target": 16,
-    "targetParam": 99,
-    "id": 30070431,
-    "skillId": 3007043
-  },
-  "30150211": {
-    "effectTiming": 3,
-    "persistTime": 0,
-    "target": 18,
-    "id": 30150211,
-    "condition": 1,
-    "targetSide": 0,
-    "conditionValue": "4",
-    "effectValueExpr": "-0.2*(1+0.025*n1)",
-    "skillId": 3015021,
-    "targetParam": 0,
-    "effectType": 2,
-    "attrType": 15
-  },
-  "20070431": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
-    "stateId": 20072,
-    "id": 20070431,
-    "skillId": 2007043
-  },
-  "30130221": {
-    "stateId": 30132,
-    "persistTime": 7000,
-    "effectValuePctExpr": "0.25*(1+0.025*n1)+0.05",
-    "target": 15,
-    "targetParam": 2,
-    "id": 30130221,
-    "skillId": 3013022
-  },
-  "9132041": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9132041,
-    "stateId": 2001,
-    "skillId": 913204
-  },
-  "20050231": {
-    "targetSide": 0,
-    "persistTime": 1500,
-    "id": 20050231,
-    "target": 18,
-    "targetParam": 0,
-    "stateId": 1001,
-    "skillId": 2005023
-  },
-  "9033042": {
-    "effectType": 7,
-    "attackType": 1,
-    "targetExtend": "750_60",
-    "targetSide": 0,
-    "persistTime": 0,
-    "actionIndex": 2,
-    "target": 11,
-    "targetParam": 99,
-    "id": 9033042,
-    "effectValuePctExpr": "2"
-  },
-  "20060401": {
-    "effectTiming": 1,
-    "effectValuePctExpr": "0.08*(1+0.025*n1)",
-    "stateId": 20061,
-    "maxCount": 1,
-    "id": 20060401,
-    "skillId": 2006040
-  },
-  "30060401": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)",
-    "stateId": 30062,
-    "maxCount": 1,
-    "id": 30060401,
-    "skillId": 3006040
-  },
-  "20030431": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
-    "stateId": 20032,
-    "id": 20030431,
-    "skillId": 2003043
-  },
-  "30030431": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08+0.003*n1+0.15",
-    "stateId": 30033,
-    "maxCount": 1,
-    "id": 30030431,
-    "skillId": 3003043
-  },
-  "9153022": {
-    "targetSide": 0,
-    "persistTime": 3000,
-    "id": 9153022,
-    "target": 18,
-    "targetParam": 0,
-    "stateId": 1001,
-    "skillId": 915302
-  },
-  "30050231": {
-    "effectTiming": 15,
     "attackType": 2,
-    "stateId": 30051,
-    "triggerCd": 1000,
-    "targetSide": 0,
-    "id": 30050231,
-    "effectValuePctExpr": "1*(1+0.05*n1)",
+    "id": 30050321,
+    "skillId": 3005032,
     "target": 18,
-    "targetParam": 0,
-    "persistTime": 5000,
-    "skillId": 3005023
-  },
-  "9052041": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9052041,
-    "stateId": 2001,
-    "skillId": 905204
-  },
-  "20040231": {
-    "effectType": 10,
-    "persistTime": 10000,
-    "id": 20040231,
-    "skillId": 2004023,
-    "extend": "999001_1_1+0.05*n1+2_0.15_1"
-  },
-  "30040231": {
-    "effectTiming": 16,
-    "persistTime": 0,
-    "effectValueExpr": "0.08*(1+0.025*n1)",
-    "skillId": 3004023,
-    "id": 30040231,
-    "effectType": 2,
-    "attrType": 5
-  },
-  "30090321": {
-    "stateId": 30092,
-    "targetSide": 0,
-    "persistTime": 3000,
-    "effectValueExpr": "-0.08*(1+0.025*n1)",
-    "target": 18,
-    "targetParam": 0,
-    "id": 30090321,
-    "skillId": 3009032
-  },
-  "9133032": {
-    "targetSide": 0,
-    "persistTime": 1500,
-    "id": 9133032,
-    "target": 18,
-    "targetParam": 0,
-    "stateId": 1001,
-    "skillId": 913303
-  },
-  "30080201": {
-    "skillId": 3008020,
-    "target": 2,
-    "persistTime": 5000,
-    "effectValuePctExpr": "1.2*(1+0.05*n1)",
-    "stateId": 30081,
-    "targetParam": 99,
-    "id": 30080201,
-    "extend": "30081_0.5"
-  },
-  "30120402": {
-    "effectTiming": 1,
-    "id": 30120402,
-    "stateId": 30124,
-    "maxCount": 1,
-    "skillId": 3012040,
-    "extend": "2000"
-  },
-  "30140231": {
-    "id": 30140231,
-    "target": 15,
-    "targetParam": 3,
-    "stateId": 2001,
-    "skillId": 3014023
-  },
-  "20080201": {
-    "stateId": 20081,
-    "target": 14,
-    "persistTime": 5000,
-    "effectValueExpr": "0.12*(1+0.04*n1)",
-    "targetExtend": "2",
-    "targetParam": 2,
-    "id": 20080201,
-    "skillId": 2008020
-  },
-  "9062041": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9062041,
-    "stateId": 2001,
-    "skillId": 906204
-  },
-  "30150321": {
-    "effectType": 3,
-    "persistTime": 0,
-    "effectValuePctExpr": "0.5*(1+0.05*n1)*2.4",
-    "target": 4,
-    "targetParam": 2,
-    "id": 30150321,
-    "skillId": 3015032
-  },
-  "30140311": {
-    "stateId": 30142,
     "persistTime": 4000,
-    "effectValueExpr": "0.12*(1+0.025*n1)+0.06",
-    "target": 15,
-    "targetParam": 2,
-    "id": 30140311,
-    "skillId": 3014031
-  },
-  "30010401": {
-    "effectTiming": 1,
-    "stateId": 30013,
-    "targetExtend": "1",
-    "maxCount": 1,
-    "effectValueExpr": "0.03*(1+0.025*n1)",
-    "target": 13,
-    "targetParam": 99,
-    "id": 30010401,
-    "skillId": 3001040
-  },
-  "30080221": {
-    "skillId": 3008022,
-    "target": 2,
-    "persistTime": 5000,
-    "effectValuePctExpr": "1.2*(1+0.05*n1)*1.6",
-    "stateId": 30081,
-    "targetParam": 99,
-    "id": 30080221,
-    "extend": "30081_0.5"
-  },
-  "20010401": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.06*(1+0.025*n1)",
-    "stateId": 20011,
-    "id": 20010401,
-    "skillId": 2001040
-  },
-  "9100101": {
-    "condition": 3,
-    "effectTiming": 7,
-    "conditionValue": "50",
-    "id": 9100101,
-    "skillId": 910010,
-    "persistTime": 99999999,
-    "effectType": 10,
-    "extend": "999007_3_0.3_0.3_1_2783_700_450"
-  },
-  "30110301": {
     "targetSide": 0,
-    "effectType": 11,
-    "persistTime": 3000,
-    "id": 30110301,
-    "target": 18,
-    "targetParam": 0,
-    "skillId": 3011030,
-    "extend": "999002_1_1_1_1"
-  },
-  "20110301": {
-    "attackType": 1,
-    "stateId": 1002,
-    "triggerCd": 1000,
-    "targetSide": 0,
-    "id": 20110301,
-    "effectValuePctExpr": "0.3",
-    "target": 18,
-    "targetParam": 0,
-    "persistTime": 3000,
-    "skillId": 2011030
-  },
-  "30140233": {
-    "stateId": 30144,
-    "targetSide": 0,
-    "persistTime": 5000,
-    "effectValueExpr": "-0.15",
-    "target": 18,
-    "targetParam": 0,
-    "id": 30140233,
-    "skillId": 3014023
-  },
-  "30070321": {
-    "persistTime": 4000,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
-    "target": 4,
-    "stateId": 30073,
-    "id": 30070321,
-    "skillId": 3007032
-  },
-  "20080211": {
-    "stateId": 20081,
-    "target": 14,
-    "persistTime": 5000,
-    "effectValueExpr": "0.12*(1+0.04*n1)+0.04",
-    "targetExtend": "2",
-    "targetParam": 2,
-    "id": 20080211,
-    "skillId": 2008021
-  },
-  "30080211": {
-    "skillId": 3008021,
-    "target": 2,
-    "persistTime": 5000,
-    "effectValuePctExpr": "1.2*(1+0.05*n1)*1.3",
-    "stateId": 30081,
-    "targetParam": 99,
-    "id": 30080211,
-    "extend": "30081_0.5"
-  },
-  "30140221": {
-    "id": 30140221,
-    "target": 15,
-    "targetParam": 3,
-    "stateId": 2001,
-    "skillId": 3014022
-  },
-  "9053041": {
-    "effectTiming": 101,
-    "effectValuePctExpr": "0.2",
-    "target": 101,
-    "stateId": 90532,
-    "id": 9053041,
-    "skillId": 905304
-  },
-  "9100061": {
-    "effectTiming": 7,
-    "persistTime": 99999999,
-    "id": 9100061,
-    "skillId": 910006,
-    "effectType": 10,
-    "extend": "999009_3_0.3_0.3_1_2783_700_450"
-  },
-  "9092021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9092021,
-    "stateId": 2001,
-    "skillId": 909202
-  },
-  "30060332": {
-    "attackType": 1,
-    "stateId": 30061,
-    "triggerCd": 1000,
-    "targetSide": 0,
-    "id": 30060332,
-    "effectValuePctExpr": "4",
-    "target": 18,
-    "targetParam": 0,
-    "persistTime": 3000,
-    "skillId": 3006033
-  },
-  "9153061": {
-    "effectTiming": 101,
-    "id": 9153061,
-    "target": 101,
-    "stateId": 3002,
-    "skillId": 915306
-  },
-  "30150111": {
-    "effectType": 3,
-    "persistTime": 0,
-    "effectValuePctExpr": "0.5*(1+0.05*n1)",
-    "target": 4,
-    "id": 30150111,
-    "skillId": 3015011
+    "targetParam": 0
   },
   "9100121": {
-    "condition": 3,
-    "effectTiming": 7,
-    "conditionValue": "50",
-    "id": 9100121,
     "skillId": 910012,
     "persistTime": 99999999,
     "effectType": 10,
-    "extend": "999007_5_0.3_0.3_1_2783_700_450"
+    "effectTiming": 7,
+    "extend": "999007_5_0.3_0.3_1_2783_700_450",
+    "id": 9100121,
+    "conditionValue": "50",
+    "condition": 3
   },
-  "30120321": {
-    "stateId": 30122,
-    "persistTime": 4000,
-    "effectValueExpr": "0.09*(1+0.025*n1)+0.12",
-    "target": 19,
-    "targetParam": 2,
-    "id": 30120321,
-    "skillId": 3012032
+  "30070321": {
+    "skillId": 3007032,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
+    "target": 4,
+    "id": 30070321,
+    "stateId": 30073,
+    "persistTime": 4000
   },
   "9133021": {
+    "skillId": 913302,
     "effectTiming": 16,
-    "persistTime": 3500,
     "id": 9133021,
     "stateId": 2001,
-    "skillId": 913302
+    "persistTime": 3500
   },
-  "9153041": {
-    "effectTiming": 1,
-    "persistTime": 0,
-    "maxCount": 1,
-    "condition": 3,
-    "conditionValue": "0.5",
-    "actionIndex": 1,
-    "skillId": 915304,
-    "id": 9153041,
-    "effectType": 10,
-    "extend": "991501_3_0_0_1"
-  },
-  "9153031": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9153031,
-    "stateId": 2001,
-    "skillId": 915303
-  },
-  "20030221": {
-    "stateId": 20033,
-    "targetSide": 0,
-    "persistTime": 5000,
-    "effectValuePctExpr": "-0.06",
-    "target": 18,
-    "targetParam": 0,
-    "id": 20030221,
-    "skillId": 2003022
-  },
-  "30030221": {
-    "stateId": 30031,
-    "targetSide": 0,
-    "persistTime": 5000,
-    "effectValueExpr": "-0.05-0.002*n1-0.06",
-    "target": 18,
-    "targetParam": 0,
-    "id": 30030221,
-    "skillId": 3003022
-  },
-  "30100401": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)",
-    "stateId": 30104,
-    "maxCount": 1,
-    "id": 30100401,
-    "skillId": 3010040
-  },
-  "30140212": {
-    "stateId": 30141,
-    "target": 13,
-    "persistTime": 5000,
-    "effectValueExpr": "0.15",
-    "targetExtend": "1",
-    "targetParam": 99,
-    "id": 30140212,
-    "skillId": 3014021
-  },
-  "9123021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9123021,
-    "stateId": 2001,
-    "skillId": 912302
-  },
-  "20070221": {
-    "stateId": 20071,
-    "target": 6,
-    "persistTime": 5000,
-    "effectValueExpr": "0.15*(1+0.025*n1)+0.03",
-    "targetExtend": "340",
-    "targetParam": 99,
-    "id": 20070221,
-    "skillId": 2007022
-  },
-  "30070221": {
-    "stateId": 30071,
-    "targetSide": 0,
-    "persistTime": 5000,
-    "effectValuePctExpr": "0.15*(1+0.025*n1)+0.045",
-    "target": 18,
-    "targetParam": 0,
-    "id": 30070221,
-    "skillId": 3007022
-  },
-  "30020311": {
-    "persistTime": 3000,
-    "effectValuePctExpr": "0.12",
-    "stateId": 30021,
-    "id": 30020311,
-    "skillId": 3002031
-  },
-  "30030311": {
-    "stateId": 30032,
-    "targetSide": 0,
-    "persistTime": 3000,
-    "effectValuePctExpr": "-0.15*(1+0.025*n1)-0.045",
-    "target": 18,
-    "targetParam": 0,
-    "id": 30030311,
-    "skillId": 3003031
-  },
-  "30060431": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
-    "stateId": 30062,
-    "maxCount": 1,
-    "id": 30060431,
-    "skillId": 3006043
-  },
-  "20060431": {
-    "effectTiming": 1,
-    "effectValuePctExpr": "0.08*(1+0.025*n1)+0.08",
-    "stateId": 20061,
-    "maxCount": 1,
-    "id": 20060431,
-    "skillId": 2006043
-  },
-  "20030311": {
-    "persistTime": 3000,
-    "effectValueExpr": "0.15*(1+0.025*n1)+0.03",
-    "stateId": 20031,
-    "id": 20030311,
-    "skillId": 2003031
-  },
-  "9152042": {
-    "targetSide": 0,
-    "persistTime": 2000,
-    "id": 9152042,
-    "target": 18,
-    "targetParam": 0,
-    "stateId": 1001,
-    "skillId": 915204
-  },
-  "9152041": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9152041,
-    "stateId": 2001,
-    "skillId": 915204
-  },
-  "9012041": {
-    "effectTiming": 16,
-    "persistTime": 2000,
-    "id": 9012041,
-    "stateId": 2001,
-    "skillId": 901204
-  },
-  "20020211": {
-    "persistTime": 7000,
-    "effectValueExpr": "0.08",
-    "stateId": 20021,
-    "id": 20020211,
-    "skillId": 2002021
-  },
-  "9122041": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9122041,
-    "stateId": 2001,
-    "skillId": 912204
-  },
-  "9043022": {
-    "persistTime": 5000,
-    "stateId": 1002,
-    "triggerCd": 1000,
-    "targetSide": 0,
-    "effectValuePctExpr": "1",
-    "target": 18,
-    "targetParam": 0,
-    "id": 9043022,
-    "skillId": 904302
-  },
-  "9152021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9152021,
-    "stateId": 2001,
-    "skillId": 915202
-  },
-  "9033045": {
-    "effectType": 7,
-    "attackType": 1,
-    "targetExtend": "750_350",
-    "targetSide": 0,
-    "persistTime": 0,
-    "actionIndex": 5,
-    "target": 5,
-    "targetParam": 99,
-    "id": 9033045,
-    "effectValuePctExpr": "2"
-  },
-  "9100251": {
-    "effectTiming": 7,
-    "persistTime": 99999999,
-    "id": 9100251,
-    "skillId": 910025,
-    "effectType": 10,
-    "extend": "999010_1_1.5_2_1_2783_700_10"
-  },
-  "301103311": {
-    "effectTiming": 3,
-    "persistTime": 1000,
-    "stateId": 30161,
-    "targetSide": 0,
-    "effectValueExpr": "-0.2",
-    "target": 18,
-    "targetParam": 0,
-    "id": 301103311,
-    "skillId": 30110331
-  },
-  "9143021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9143021,
-    "stateId": 2001,
-    "skillId": 914302
-  },
-  "9072041": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9072041,
-    "stateId": 2001,
-    "skillId": 907204
-  },
-  "9142041": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9142041,
-    "stateId": 2001,
-    "skillId": 914204
-  },
-  "9100221": {
-    "condition": 3,
-    "effectTiming": 7,
-    "conditionValue": "30",
-    "id": 9100221,
-    "skillId": 910022,
-    "persistTime": 99999999,
-    "effectType": 10,
-    "extend": "999007_4_0.25_0.1_1_2783_700_450"
-  },
-  "30100231": {
-    "stateId": 30102,
-    "persistTime": 5000,
-    "effectValueExpr": "0.05*(1+0.025*n1)+0.1",
-    "target": 2,
-    "targetParam": 99,
-    "id": 30100231,
-    "skillId": 3010023
-  },
-  "9133031": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9133031,
-    "stateId": 2001,
-    "skillId": 913303
-  },
-  "9033021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9033021,
-    "stateId": 2001,
-    "skillId": 903302
-  },
-  "9133022": {
-    "targetSide": 0,
-    "persistTime": 3000,
-    "id": 9133022,
-    "target": 18,
-    "targetParam": 0,
-    "stateId": 1001,
-    "skillId": 913302
-  },
-  "20040411": {
-    "effectTiming": 4,
-    "persistTime": 5000,
-    "stateId": 20041,
-    "maxCount": 1,
-    "condition": 3,
-    "conditionValue": "0.3",
-    "effectValuePctExpr": "0.2*(1+0.025*n1)+0.04",
-    "id": 20040411,
-    "skillId": 2004041
-  },
-  "30040411": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
-    "stateId": 30041,
-    "maxCount": 1,
-    "id": 30040411,
-    "skillId": 3004041
-  },
-  "9053022": {
-    "targetSide": 0,
-    "persistTime": 3000,
-    "id": 9053022,
-    "target": 18,
-    "targetParam": 0,
-    "stateId": 1001,
-    "skillId": 905302
-  },
-  "20040211": {
-    "effectType": 10,
-    "persistTime": 10000,
-    "id": 20040211,
-    "skillId": 2004021,
-    "extend": "999001_1_1+0.05*n1+0.4_0.15_1"
-  },
-  "20080421": {
-    "target": 4,
-    "effectTiming": 7,
-    "persistTime": 0,
-    "effectValuePctExpr": "2*(1+0.05*n1)*1.6",
-    "effectType": 3,
-    "maxCount": 1,
-    "id": 20080421,
-    "skillId": 2008042
-  },
-  "9132021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9132021,
-    "stateId": 2001,
-    "skillId": 913202
-  },
-  "20080221": {
-    "stateId": 20081,
-    "target": 14,
-    "persistTime": 7000,
-    "effectValueExpr": "0.12*(1+0.04*n1)+0.04",
-    "targetExtend": "2",
-    "targetParam": 2,
-    "id": 20080221,
-    "skillId": 2008022
-  },
-  "9023021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9023021,
-    "stateId": 2001,
-    "skillId": 902302
-  },
-  "9153091": {
-    "effectTiming": 7,
-    "persistTime": 0,
-    "id": 9153091,
-    "target": 101,
-    "skillId": 915309,
-    "effectType": 102,
-    "extend": "3002"
-  },
-  "30120431": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.15*(1+0.025*n1)",
-    "stateId": 30123,
-    "maxCount": 1,
-    "id": 30120431,
-    "skillId": 3012043
-  },
-  "20110421": {
-    "effectTiming": 3,
-    "persistTime": 0,
-    "target": 2,
-    "id": 20110421,
-    "condition": 1,
-    "targetSide": 0,
-    "conditionValue": "7",
-    "effectValueExpr": "-0.15*(1+0.025*n1)-0.075",
-    "skillId": 2011042,
-    "targetParam": 99,
-    "effectType": 2,
-    "attrType": 15
-  },
-  "30150301": {
-    "effectType": 3,
-    "persistTime": 0,
-    "effectValuePctExpr": "0.5*(1+0.05*n1)",
-    "target": 4,
-    "targetParam": 2,
-    "id": 30150301,
-    "skillId": 3015030
-  },
-  "20120221": {
-    "targetSide": 0,
-    "persistTime": 7000,
-    "effectValuePctExpr": "0.075",
-    "stateId": 20122,
-    "id": 20120221,
-    "skillId": 2012022
-  },
-  "30120221": {
-    "effectType": 3,
-    "persistTime": 0,
-    "effectValuePctExpr": "1.5",
-    "id": 30120221,
-    "skillId": 3012022
-  },
-  "30140222": {
-    "stateId": 30141,
-    "target": 13,
-    "persistTime": 5000,
-    "effectValueExpr": "0.15",
-    "targetExtend": "1",
-    "targetParam": 99,
-    "id": 30140222,
-    "skillId": 3014022
-  },
-  "20100321": {
-    "targetSide": 0,
-    "persistTime": 1000,
-    "id": 20100321,
-    "target": 18,
-    "targetParam": 0,
-    "stateId": 1001,
-    "skillId": 2010032
-  },
-  "9113023": {
-    "effectType": 10,
-    "actionIndex": 1,
-    "skillId": 911302,
-    "id": 9113023,
-    "extend": "990401_1_0_0.08_1"
-  },
-  "9113021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9113021,
-    "stateId": 2001,
-    "skillId": 911302
-  },
-  "9073032": {
-    "targetSide": 0,
-    "persistTime": 3000,
-    "id": 9073032,
-    "target": 18,
-    "targetParam": 99,
-    "stateId": 1003,
-    "skillId": 907303
-  },
-  "9113022": {
-    "attackTypeLimit": 0,
+  "9043031": {
+    "skillId": 904303,
+    "effectValueExpr": "0.01",
     "effectType": 101,
-    "persistTime": 0,
-    "effectValueExpr": "0.03",
     "target": 101,
-    "id": 9113022,
-    "skillId": 911302
-  },
-  "9072021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9072021,
-    "stateId": 2001,
-    "skillId": 907202
-  },
-  "30130321": {
-    "effectType": 3,
+    "id": 9043031,
     "persistTime": 0,
-    "effectValuePctExpr": "0.6*(1+0.05*n1)*2",
-    "target": 4,
-    "id": 30130321,
-    "skillId": 3013032
+    "attackTypeLimit": 0
   },
-  "20030211": {
-    "stateId": 20033,
-    "targetSide": 0,
-    "persistTime": 5000,
-    "effectValuePctExpr": "-0.06",
-    "target": 18,
-    "targetParam": 0,
-    "id": 20030211,
-    "skillId": 2003021
-  },
-  "30010301": {
-    "persistTime": 3000,
-    "effectValuePctExpr": "0.05*(1+0.05*n1)",
-    "stateId": 30012,
-    "skillId": 3001030,
-    "id": 30010301,
-    "extend": "30012_0.5"
-  },
-  "9112021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9112021,
-    "stateId": 2001,
-    "skillId": 911202
-  },
-  "30030211": {
-    "stateId": 30031,
-    "targetSide": 0,
-    "persistTime": 5000,
-    "effectValueExpr": "-0.05-0.002*n1-0.03",
-    "target": 18,
-    "targetParam": 0,
-    "id": 30030211,
-    "skillId": 3003021
-  },
-  "30150432": {
+  "30010411": {
+    "stateId": 30013,
+    "effectValueExpr": "0.03*(1+0.025*n1)+0.006",
+    "id": 30010411,
+    "skillId": 3001041,
+    "target": 13,
     "effectTiming": 1,
-    "stateId": 30151,
-    "targetExtend": "2",
-    "maxCount": 1,
-    "effectValuePctExpr": "0.03",
-    "target": 16,
     "targetParam": 99,
-    "id": 30150432,
-    "skillId": 3015043
+    "maxCount": 1,
+    "targetExtend": "1"
   },
-  "30040401": {
+  "20010411": {
+    "skillId": 2001041,
+    "effectValueExpr": "0.06*(1+0.025*n1)+0.012",
     "effectTiming": 1,
+    "id": 20010411,
+    "stateId": 20011
+  },
+  "40000041": {
+    "skillId": 4000004,
+    "effectValueExpr": "0.25",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 40000041,
+    "stateId": 400001,
+    "persistTime": 5000
+  },
+  "30070301": {
+    "skillId": 3007030,
     "effectValueExpr": "0.08*(1+0.025*n1)",
-    "stateId": 30041,
-    "maxCount": 1,
-    "id": 30040401,
-    "skillId": 3004040
+    "target": 4,
+    "id": 30070301,
+    "stateId": 30073,
+    "persistTime": 4000
   },
-  "20110431": {
-    "effectTiming": 3,
-    "persistTime": 0,
-    "target": 2,
-    "id": 20110431,
-    "condition": 1,
-    "targetSide": 0,
-    "conditionValue": "7",
-    "effectValueExpr": "-0.15*(1+0.025*n1)-0.15",
-    "skillId": 2011043,
-    "targetParam": 99,
+  "9032021": {
+    "skillId": 903202,
+    "effectTiming": 16,
+    "id": 9032021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "9093031": {
+    "skillId": 909303,
+    "effectTiming": 16,
+    "id": 9093031,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "20110411": {
+    "effectValueExpr": "-0.15*(1+0.025*n1)-0.03",
     "effectType": 2,
-    "attrType": 15
-  },
-  "30110431": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
-    "stateId": 30111,
-    "maxCount": 1,
-    "id": 30110431,
-    "skillId": 3011043
-  },
-  "30070222": {
-    "stateId": 30072,
+    "id": 20110411,
+    "attrType": 15,
+    "conditionValue": "7",
+    "skillId": 2011041,
+    "target": 2,
+    "effectTiming": 3,
     "targetSide": 0,
-    "persistTime": 7000,
-    "effectValueExpr": "0.045",
-    "target": 18,
-    "targetParam": 0,
-    "id": 30070222,
-    "skillId": 3007022
+    "persistTime": 0,
+    "targetParam": 99,
+    "condition": 1
+  },
+  "9062041": {
+    "skillId": 906204,
+    "effectTiming": 16,
+    "id": 9062041,
+    "stateId": 2001,
+    "persistTime": 3500
   },
   "30100221": {
-    "stateId": 30102,
-    "persistTime": 5000,
+    "skillId": 3010022,
     "effectValueExpr": "0.05*(1+0.025*n1)+0.05",
     "target": 2,
     "targetParam": 99,
     "id": 30100221,
-    "skillId": 3010022
-  },
-  "20040401": {
-    "effectTiming": 4,
-    "persistTime": 5000,
-    "stateId": 20041,
-    "maxCount": 1,
-    "condition": 3,
-    "conditionValue": "0.3",
-    "effectValuePctExpr": "0.2*(1+0.025*n1)",
-    "id": 20040401,
-    "skillId": 2004040
-  },
-  "9103021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9103021,
-    "stateId": 2001,
-    "skillId": 910302
-  },
-  "30070212": {
-    "stateId": 30072,
-    "targetSide": 0,
-    "persistTime": 7000,
-    "effectValueExpr": "0.045",
-    "target": 18,
-    "targetParam": 0,
-    "id": 30070212,
-    "skillId": 3007021
-  },
-  "9102041": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9102041,
-    "stateId": 2001,
-    "skillId": 910204
-  },
-  "30030411": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08+0.003*n1+0.05",
-    "stateId": 30033,
-    "maxCount": 1,
-    "id": 30030411,
-    "skillId": 3003041
-  },
-  "20030411": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
-    "stateId": 20032,
-    "id": 20030411,
-    "skillId": 2003041
-  },
-  "30140411": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
-    "stateId": 30143,
-    "maxCount": 1,
-    "id": 30140411,
-    "skillId": 3014041
-  },
-  "9100331": {
-    "effectTiming": 7,
-    "persistTime": 99999999,
-    "id": 9100331,
-    "skillId": 910033,
-    "effectType": 10,
-    "extend": "999007_3_0.2_0.2_1_2783_700_450"
-  },
-  "9100321": {
-    "effectTiming": 7,
-    "persistTime": 99999999,
-    "id": 9100321,
-    "skillId": 910032,
-    "effectType": 10,
-    "extend": "999007_3_0.2_0.2_1_2783_700_450"
-  },
-  "30020321": {
-    "persistTime": 3000,
-    "effectValuePctExpr": "0.12",
-    "stateId": 30021,
-    "id": 30020321,
-    "skillId": 3002032
-  },
-  "30010331": {
-    "persistTime": 3000,
-    "effectValuePctExpr": "0.05*(1+0.05*n1)*2",
-    "stateId": 30012,
-    "skillId": 3001033,
-    "id": 30010331,
-    "extend": "30012_0.5"
-  },
-  "20070231": {
-    "stateId": 20071,
-    "target": 6,
-    "persistTime": 5000,
-    "effectValueExpr": "0.15*(1+0.025*n1)+0.09",
-    "targetExtend": "340",
-    "targetParam": 99,
-    "id": 20070231,
-    "skillId": 2007023
-  },
-  "9100301": {
-    "effectTiming": 7,
-    "persistTime": 99999999,
-    "id": 9100301,
-    "skillId": 910030,
-    "effectType": 10,
-    "extend": "999007_2_0.2_0.2_1_2783_700_450"
-  },
-  "20030321": {
-    "persistTime": 3000,
-    "effectValueExpr": "0.15*(1+0.025*n1)+0.075",
-    "stateId": 20031,
-    "id": 20030321,
-    "skillId": 2003032
-  },
-  "9100291": {
-    "effectTiming": 7,
-    "persistTime": 99999999,
-    "id": 9100291,
-    "skillId": 910029,
-    "effectType": 10,
-    "extend": "999007_2_0.2_0.2_1_1750_-400_450"
-  },
-  "9100281": {
-    "effectTiming": 7,
-    "persistTime": 99999999,
-    "id": 9100281,
-    "skillId": 910028,
-    "effectType": 10,
-    "extend": "999007_2_0.2_0.2_1_1822_1700_80"
-  },
-  "9013021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9013021,
-    "stateId": 2001,
-    "skillId": 901302
-  },
-  "20070411": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
-    "stateId": 20072,
-    "id": 20070411,
-    "skillId": 2007041
-  },
-  "30050221": {
-    "effectTiming": 15,
-    "attackType": 2,
-    "stateId": 30051,
-    "triggerCd": 1000,
-    "targetSide": 0,
-    "id": 30050221,
-    "effectValuePctExpr": "1*(1+0.05*n1)",
-    "target": 18,
-    "targetParam": 0,
-    "persistTime": 5000,
-    "skillId": 3005022
-  },
-  "9100271": {
-    "effectTiming": 1,
-    "persistTime": 99999999,
-    "id": 9100271,
-    "effectType": 10,
-    "skillId": 910027,
-    "triggerCd": 9999999,
-    "extend": "999007_3_0.2_0.2_1_2783_700_450"
-  },
-  "9073022": {
-    "targetSide": 0,
-    "persistTime": 3000,
-    "id": 9073022,
-    "target": 18,
-    "targetParam": 0,
-    "stateId": 1003,
-    "skillId": 907302
-  },
-  "20050221": {
-    "targetSide": 0,
-    "persistTime": 1500,
-    "id": 20050221,
-    "target": 18,
-    "targetParam": 0,
-    "stateId": 1001,
-    "skillId": 2005022
-  },
-  "9100261": {
-    "effectTiming": 1,
-    "persistTime": 99999999,
-    "id": 9100261,
-    "effectType": 10,
-    "skillId": 910026,
-    "triggerCd": 9999999,
-    "extend": "999006_3_0.2_0.2_1_2783_700_450"
-  },
-  "30140301": {
-    "stateId": 30142,
-    "persistTime": 3000,
-    "effectValueExpr": "0.12*(1+0.025*n1)",
-    "target": 15,
-    "targetParam": 2,
-    "id": 30140301,
-    "skillId": 3014030
-  },
-  "9143032": {
-    "attackType": 1,
-    "stateId": 1002,
-    "triggerCd": 1000,
-    "targetSide": 0,
-    "id": 9143032,
-    "effectValuePctExpr": "1",
-    "target": 18,
-    "targetParam": 0,
-    "persistTime": 5000,
-    "skillId": 914303
-  },
-  "30010221": {
-    "stateId": 30011,
-    "target": 6,
-    "persistTime": 5000,
-    "effectValueExpr": "0.1*(1+0.025*n1)+0.075",
-    "targetExtend": "340",
-    "targetParam": 99,
-    "id": 30010221,
-    "skillId": 3001022
-  },
-  "40000022": {
-    "effectTiming": 3,
-    "persistTime": 0,
-    "targetSide": 0,
-    "id": 40000022,
-    "effectValueExpr": "0.2",
-    "skillId": 4000002,
-    "targetParam": 0,
-    "effectType": 2,
-    "attrType": 22
-  },
-  "20100301": {
-    "targetSide": 0,
-    "persistTime": 1000,
-    "id": 20100301,
-    "target": 18,
-    "targetParam": 0,
-    "stateId": 1001,
-    "skillId": 2010030
-  },
-  "9100241": {
-    "condition": 3,
-    "effectTiming": 7,
-    "conditionValue": "30",
-    "id": 9100241,
-    "skillId": 910024,
-    "persistTime": 99999999,
-    "effectType": 10,
-    "extend": "999009_4_0.25_0.1_1_2783_700_450"
-  },
-  "9100231": {
-    "condition": 3,
-    "effectTiming": 7,
-    "conditionValue": "30",
-    "id": 9100231,
-    "skillId": 910023,
-    "persistTime": 99999999,
-    "effectType": 10,
-    "extend": "999008_4_0.25_0.1_1_2783_700_450"
-  },
-  "30100431": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
-    "stateId": 30104,
-    "maxCount": 1,
-    "id": 30100431,
-    "skillId": 3010043
-  },
-  "20100431": {
-    "effectTiming": 4,
-    "persistTime": 7000,
-    "stateId": 20101,
-    "maxCount": 1,
-    "condition": 3,
-    "conditionValue": "0.4",
-    "effectValuePctExpr": "0.03*(1+0.05*n1)*1.8",
-    "skillId": 2010043,
-    "id": 20100431,
-    "extend": "20101_0.5"
-  },
-  "9142021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9142021,
-    "stateId": 2001,
-    "skillId": 914202
-  },
-  "30140211": {
-    "triggerRateExpr": "0.7",
-    "id": 30140211,
-    "target": 15,
-    "targetParam": 3,
-    "stateId": 2001,
-    "skillId": 3014021
-  },
-  "20120211": {
-    "targetSide": 0,
-    "persistTime": 7000,
-    "effectValuePctExpr": "0.075",
-    "stateId": 20122,
-    "id": 20120211,
-    "skillId": 2012021
-  },
-  "30120211": {
-    "effectType": 3,
-    "persistTime": 0,
-    "effectValuePctExpr": "1.5",
-    "id": 30120211,
-    "skillId": 3012021
-  },
-  "30130301": {
-    "effectType": 3,
-    "persistTime": 0,
-    "effectValuePctExpr": "0.6*(1+0.05*n1)",
-    "target": 4,
-    "id": 30130301,
-    "skillId": 3013030
-  },
-  "30110331": {
-    "targetSide": 0,
-    "effectType": 11,
-    "persistTime": 3000,
-    "id": 30110331,
-    "target": 18,
-    "targetParam": 0,
-    "skillId": 3011033,
-    "extend": "999005_1_1_1_1"
-  },
-  "20110331": {
-    "attackType": 1,
-    "stateId": 1002,
-    "triggerCd": 1000,
-    "targetSide": 0,
-    "id": 20110331,
-    "effectValuePctExpr": "0.3",
-    "target": 18,
-    "targetParam": 0,
-    "persistTime": 3000,
-    "skillId": 2011033
-  },
-  "9100211": {
-    "condition": 3,
-    "effectTiming": 7,
-    "conditionValue": "30",
-    "id": 9100211,
-    "skillId": 910021,
-    "persistTime": 99999999,
-    "effectType": 10,
-    "extend": "999006_4_0.25_0.1_1_2783_700_450"
-  },
-  "30040421": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
-    "stateId": 30041,
-    "maxCount": 1,
-    "id": 30040421,
-    "skillId": 3004042
-  },
-  "20040421": {
-    "effectTiming": 4,
-    "persistTime": 6000,
-    "stateId": 20041,
-    "maxCount": 1,
-    "condition": 3,
-    "conditionValue": "0.3",
-    "effectValuePctExpr": "0.2*(1+0.025*n1)+0.06",
-    "id": 20040421,
-    "skillId": 2004042
+    "stateId": 30102,
+    "persistTime": 5000
   },
   "20080321": {
-    "stateId": 20082,
-    "targetSide": 0,
-    "persistTime": 3000,
+    "skillId": 2008032,
     "effectValueExpr": "-0.08",
     "target": 18,
+    "targetSide": 0,
     "targetParam": 0,
     "id": 20080321,
-    "skillId": 2008032
-  },
-  "30150311": {
-    "effectType": 3,
-    "persistTime": 0,
-    "effectValuePctExpr": "0.5*(1+0.05*n1)*1.7",
-    "target": 4,
-    "targetParam": 2,
-    "id": 30150311,
-    "skillId": 3015031
-  },
-  "301103211": {
-    "effectTiming": 3,
-    "persistTime": 1000,
-    "stateId": 30161,
-    "targetSide": 0,
-    "effectValueExpr": "-0.2",
-    "target": 18,
-    "targetParam": 0,
-    "id": 301103211,
-    "skillId": 30110321
+    "stateId": 20082,
+    "persistTime": 3000
   },
   "30080321": {
-    "effectType": 3,
-    "persistTime": 0,
-    "effectValuePctExpr": "0.4*(1+0.05*n1)*2.5",
     "skillId": 3008032,
+    "effectType": 3,
+    "effectValuePctExpr": "0.4*(1+0.05*n1)*2.5",
     "id": 30080321,
-    "attrType": 3
+    "attrType": 3,
+    "persistTime": 0
   },
-  "9100191": {
-    "condition": 3,
-    "effectTiming": 7,
-    "conditionValue": "60",
-    "id": 9100191,
-    "skillId": 910019,
-    "persistTime": 99999999,
-    "effectType": 10,
-    "extend": "999008_4_0.25_0.1_1_2783_700_450"
-  },
-  "20030401": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)",
-    "stateId": 20032,
-    "id": 20030401,
-    "skillId": 2003040
-  },
-  "30030401": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08+0.003*n1",
-    "stateId": 30033,
-    "maxCount": 1,
-    "id": 30030401,
-    "skillId": 3003040
-  },
-  "30040221": {
+  "9022021": {
+    "skillId": 902202,
     "effectTiming": 16,
-    "persistTime": 0,
-    "effectValueExpr": "0.08*(1+0.025*n1)",
-    "skillId": 3004022,
-    "id": 30040221,
-    "effectType": 2,
-    "attrType": 5
+    "id": 9022021,
+    "stateId": 2001,
+    "persistTime": 3500
   },
-  "9063081": {
-    "effectTiming": 7,
-    "persistTime": 0,
-    "id": 9063081,
-    "target": 101,
-    "skillId": 906308,
+  "9053081": {
+    "skillId": 905308,
     "effectType": 102,
-    "extend": "3002"
-  },
-  "9100171": {
-    "condition": 3,
     "effectTiming": 7,
-    "conditionValue": "60",
-    "id": 9100171,
-    "skillId": 910017,
-    "persistTime": 99999999,
-    "effectType": 10,
-    "extend": "999006_4_0.25_0.1_1_2783_700_450"
+    "target": 101,
+    "id": 9053081,
+    "persistTime": 0,
+    "extend": "90533"
   },
-  "30070301": {
-    "persistTime": 4000,
-    "effectValueExpr": "0.08*(1+0.025*n1)",
+  "30130311": {
+    "skillId": 3013031,
+    "effectType": 3,
+    "effectValuePctExpr": "0.6*(1+0.05*n1)*1.4",
+    "id": 30130311,
     "target": 4,
-    "stateId": 30073,
-    "id": 30070301,
-    "skillId": 3007030
+    "persistTime": 0
   },
-  "9100161": {
-    "condition": 3,
-    "effectTiming": 7,
-    "conditionValue": "50",
-    "id": 9100161,
-    "skillId": 910016,
-    "persistTime": 99999999,
-    "effectType": 10,
-    "extend": "999009_5_0.3_0.3_1_2783_700_450"
-  },
-  "20060411": {
-    "effectTiming": 1,
-    "effectValuePctExpr": "0.08*(1+0.025*n1)+0.016",
-    "stateId": 20061,
-    "maxCount": 1,
-    "id": 20060411,
-    "skillId": 2006041
-  },
-  "30120422": {
-    "effectTiming": 1,
-    "id": 30120422,
-    "stateId": 30124,
-    "maxCount": 1,
-    "skillId": 3012042,
-    "extend": "4000"
-  },
-  "30050311": {
-    "attackType": 2,
-    "stateId": 30052,
-    "triggerCd": 1000,
-    "targetSide": 0,
-    "id": 30050311,
-    "effectValuePctExpr": "1*(1+0.05*n1)",
-    "target": 18,
-    "targetParam": 0,
-    "persistTime": 4000,
-    "skillId": 3005031
-  },
-  "30060411": {
-    "effectTiming": 1,
+  "20020411": {
+    "skillId": 2002041,
     "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
-    "stateId": 30062,
+    "target": 14,
+    "effectTiming": 1,
+    "targetParam": 3,
+    "id": 20020411,
+    "targetExtend": "3",
+    "stateId": 20022
+  },
+  "30020411": {
+    "skillId": 3002041,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
+    "effectTiming": 1,
+    "id": 30020411,
     "maxCount": 1,
-    "id": 30060411,
-    "skillId": 3006041
+    "stateId": 30022
+  },
+  "30070212": {
+    "skillId": 3007021,
+    "effectValueExpr": "0.045",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 30070212,
+    "stateId": 30072,
+    "persistTime": 7000
   },
   "9100131": {
-    "condition": 3,
-    "effectTiming": 7,
-    "conditionValue": "50",
-    "id": 9100131,
     "skillId": 910013,
     "persistTime": 99999999,
     "effectType": 10,
-    "extend": "999008_3_0.3_0.3_1_2783_700_450"
-  },
-  "20110411": {
-    "effectTiming": 3,
-    "persistTime": 0,
-    "target": 2,
-    "id": 20110411,
-    "condition": 1,
-    "targetSide": 0,
-    "conditionValue": "7",
-    "effectValueExpr": "-0.15*(1+0.025*n1)-0.03",
-    "skillId": 2011041,
-    "targetParam": 99,
-    "effectType": 2,
-    "attrType": 15
-  },
-  "30110411": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
-    "stateId": 30111,
-    "maxCount": 1,
-    "id": 30110411,
-    "skillId": 3011041
-  },
-  "41000022": {
-    "effectTiming": 3,
-    "persistTime": 0,
-    "targetSide": 0,
-    "id": 41000022,
-    "effectValueExpr": "0.2",
-    "skillId": 4100002,
-    "targetParam": 0,
-    "effectType": 2,
-    "attrType": 22
-  },
-  "30100331": {
-    "persistTime": 4000,
-    "effectValuePctExpr": "0.6*(1+0.025*n1)+0.42",
-    "stateId": 30105,
-    "id": 30100331,
-    "skillId": 3010033
-  },
-  "9043031": {
-    "attackTypeLimit": 0,
-    "effectType": 101,
-    "persistTime": 0,
-    "effectValueExpr": "0.01",
-    "target": 101,
-    "id": 9043031,
-    "skillId": 904303
-  },
-  "30090411": {
-    "effectTiming": 1,
-    "effectValuePctExpr": "0.08*(1+0.025*n1)+0.016",
-    "stateId": 30093,
-    "maxCount": 1,
-    "id": 30090411,
-    "skillId": 3009041
-  },
-  "20100331": {
-    "targetSide": 0,
-    "persistTime": 1000,
-    "id": 20100331,
-    "target": 18,
-    "targetParam": 0,
-    "stateId": 1001,
-    "skillId": 2010033
-  },
-  "20010411": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.06*(1+0.025*n1)+0.012",
-    "stateId": 20011,
-    "id": 20010411,
-    "skillId": 2001041
-  },
-  "30010311": {
-    "persistTime": 3000,
-    "effectValuePctExpr": "0.05*(1+0.05*n1)*1.2",
-    "stateId": 30012,
-    "skillId": 3001031,
-    "id": 30010311,
-    "extend": "30012_0.5"
-  },
-  "9153043": {
-    "effectTiming": 1,
-    "persistTime": 0,
-    "maxCount": 1,
-    "condition": 3,
-    "conditionValue": "0.5",
-    "actionIndex": 3,
-    "skillId": 915304,
-    "id": 9153043,
-    "effectType": 10,
-    "extend": "991503_3_0_0_1"
-  },
-  "30010411": {
-    "effectTiming": 1,
-    "stateId": 30013,
-    "targetExtend": "1",
-    "maxCount": 1,
-    "effectValueExpr": "0.03*(1+0.025*n1)+0.006",
-    "target": 13,
-    "targetParam": 99,
-    "id": 30010411,
-    "skillId": 3001041
-  },
-  "9100111": {
-    "condition": 3,
     "effectTiming": 7,
+    "extend": "999008_3_0.3_0.3_1_2783_700_450",
+    "id": 9100131,
     "conditionValue": "50",
-    "id": 9100111,
-    "skillId": 910011,
-    "persistTime": 99999999,
-    "effectType": 10,
-    "extend": "999006_5_0.3_0.3_1_2783_700_450"
+    "condition": 3
   },
-  "30150401": {
+  "9152042": {
+    "skillId": 915204,
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 9152042,
+    "stateId": 1001,
+    "persistTime": 2000
+  },
+  "9123021": {
+    "skillId": 912302,
+    "effectTiming": 16,
+    "id": 9123021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "30120412": {
+    "skillId": 3012041,
     "effectTiming": 1,
-    "stateId": 30152,
-    "targetExtend": "2",
+    "stateId": 30124,
+    "id": 30120412,
     "maxCount": 1,
-    "effectValueExpr": "0.06*(1+0.025*n1)",
-    "target": 16,
-    "targetParam": 99,
-    "id": 30150401,
-    "skillId": 3015040
+    "extend": "3000"
   },
-  "20110211": {
-    "attackType": 1,
+  "30120231": {
+    "skillId": 3012023,
+    "effectType": 3,
+    "effectValuePctExpr": "1.5",
+    "id": 30120231,
+    "persistTime": 0
+  },
+  "20120231": {
+    "skillId": 2012023,
+    "effectValuePctExpr": "0.075",
+    "targetSide": 0,
+    "id": 20120231,
+    "stateId": 20122,
+    "persistTime": 7000
+  },
+  "9153042": {
+    "effectType": 10,
+    "id": 9153042,
+    "conditionValue": "0.5",
+    "actionIndex": 2,
+    "skillId": 915304,
+    "effectTiming": 1,
+    "extend": "991502_3_0_0_1",
+    "persistTime": 0,
+    "maxCount": 1,
+    "condition": 3
+  },
+  "30040421": {
+    "skillId": 3004042,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
+    "effectTiming": 1,
+    "id": 30040421,
+    "maxCount": 1,
+    "stateId": 30041
+  },
+  "20040421": {
+    "stateId": 20041,
+    "effectValuePctExpr": "0.2*(1+0.025*n1)+0.06",
+    "id": 20040421,
+    "conditionValue": "0.3",
+    "skillId": 2004042,
+    "effectTiming": 4,
+    "persistTime": 6000,
+    "maxCount": 1,
+    "condition": 3
+  },
+  "20110311": {
     "stateId": 1002,
     "triggerCd": 1000,
-    "targetSide": 0,
-    "id": 20110211,
-    "effectValuePctExpr": "0.15",
+    "effectValuePctExpr": "0.3",
+    "attackType": 1,
+    "id": 20110311,
+    "skillId": 2011031,
     "target": 18,
+    "persistTime": 3000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "9043021": {
+    "skillId": 904302,
+    "effectTiming": 16,
+    "id": 9043021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "30150101": {
+    "skillId": 3015010,
+    "effectType": 3,
+    "effectValuePctExpr": "0.5*(1+0.05*n1)",
+    "id": 30150101,
+    "target": 4,
+    "persistTime": 0
+  },
+  "30010331": {
+    "skillId": 3001033,
+    "effectValuePctExpr": "0.05*(1+0.05*n1)*2",
+    "stateId": 30012,
+    "id": 30010331,
+    "persistTime": 3000,
+    "extend": "30012_0.5"
+  },
+  "20090411": {
+    "skillId": 2009041,
+    "effectValueExpr": "0.12*(1+0.025*n1)+0.03",
+    "target": 14,
+    "effectTiming": 1,
+    "targetParam": 2,
+    "id": 20090411,
+    "targetExtend": "1",
+    "stateId": 20131
+  },
+  "30090411": {
+    "skillId": 3009041,
+    "effectTiming": 1,
+    "stateId": 30093,
+    "id": 30090411,
+    "maxCount": 1,
+    "effectValuePctExpr": "0.08*(1+0.025*n1)+0.016"
+  },
+  "9100041": {
+    "skillId": 910004,
+    "effectType": 10,
+    "effectTiming": 7,
+    "id": 9100041,
+    "persistTime": 99999999,
+    "extend": "999007_5_0.3_0.3_1_2783_700_450"
+  },
+  "9113021": {
+    "skillId": 911302,
+    "effectTiming": 16,
+    "id": 9113021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "9052021": {
+    "skillId": 905202,
+    "effectTiming": 16,
+    "id": 9052021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "9033044": {
+    "targetExtend": "750_350",
+    "effectType": 7,
+    "effectValuePctExpr": "2",
+    "attackType": 1,
+    "id": 9033044,
+    "actionIndex": 4,
+    "target": 5,
+    "persistTime": 0,
+    "targetSide": 0,
+    "targetParam": 99
+  },
+  "30100331": {
+    "skillId": 3010033,
+    "effectValuePctExpr": "0.6*(1+0.025*n1)+0.42",
+    "id": 30100331,
+    "stateId": 30105,
+    "persistTime": 4000
+  },
+  "20030321": {
+    "skillId": 2003032,
+    "effectValueExpr": "0.15*(1+0.025*n1)+0.075",
+    "id": 20030321,
+    "stateId": 20031,
+    "persistTime": 3000
+  },
+  "20100331": {
+    "skillId": 2010033,
+    "target": 18,
+    "targetSide": 0,
     "targetParam": 0,
-    "persistTime": 7000,
-    "skillId": 2011021
+    "id": 20100331,
+    "stateId": 1001,
+    "persistTime": 1000
+  },
+  "9063041": {
+    "skillId": 906304,
+    "target": 101,
+    "effectTiming": 101,
+    "id": 9063041,
+    "stateId": 3001
+  },
+  "301103011": {
+    "stateId": 30161,
+    "effectValueExpr": "-0.2",
+    "id": 301103011,
+    "skillId": 30110301,
+    "target": 18,
+    "effectTiming": 3,
+    "persistTime": 1000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "30010231": {
+    "skillId": 3001023,
+    "effectValueExpr": "0.1*(1+0.025*n1)+0.15",
+    "target": 6,
+    "targetParam": 99,
+    "targetExtend": "340",
+    "id": 30010231,
+    "stateId": 30011,
+    "persistTime": 5000
+  },
+  "30020311": {
+    "skillId": 3002031,
+    "effectValuePctExpr": "0.12",
+    "id": 30020311,
+    "stateId": 30021,
+    "persistTime": 3000
+  },
+  "9112021": {
+    "skillId": 911202,
+    "effectTiming": 16,
+    "id": 9112021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "30090321": {
+    "skillId": 3009032,
+    "effectValueExpr": "-0.08*(1+0.025*n1)",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 30090321,
+    "stateId": 30092,
+    "persistTime": 3000
+  },
+  "9143021": {
+    "skillId": 914302,
+    "effectTiming": 16,
+    "id": 9143021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "30100411": {
+    "skillId": 3010041,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
+    "effectTiming": 1,
+    "id": 30100411,
+    "maxCount": 1,
+    "stateId": 30104
+  },
+  "20100411": {
+    "stateId": 20101,
+    "effectValuePctExpr": "0.03*(1+0.05*n1)*1.25",
+    "id": 20100411,
+    "conditionValue": "0.4",
+    "skillId": 2010041,
+    "effectTiming": 4,
+    "extend": "20101_0.5",
+    "persistTime": 5000,
+    "maxCount": 1,
+    "condition": 3
+  },
+  "9063071": {
+    "skillId": 906307,
+    "effectType": 102,
+    "effectTiming": 7,
+    "target": 101,
+    "id": 9063071,
+    "persistTime": 0,
+    "extend": "3001"
+  },
+  "9100171": {
+    "skillId": 910017,
+    "persistTime": 99999999,
+    "effectType": 10,
+    "effectTiming": 7,
+    "extend": "999006_4_0.25_0.1_1_2783_700_450",
+    "id": 9100171,
+    "conditionValue": "60",
+    "condition": 3
   },
   "9100091": {
-    "condition": 3,
-    "effectTiming": 7,
-    "conditionValue": "50",
-    "id": 9100091,
     "skillId": 910009,
     "persistTime": 99999999,
     "effectType": 10,
-    "extend": "999006_3_0.3_0.3_1_2783_700_450"
+    "effectTiming": 7,
+    "extend": "999006_3_0.3_0.3_1_2783_700_450",
+    "id": 9100091,
+    "conditionValue": "50",
+    "condition": 3
   },
-  "9043024": {
-    "effectType": 10,
-    "actionIndex": 1,
-    "skillId": 904302,
-    "id": 9043024,
-    "extend": "990401_1_0_0.05_1"
+  "30030311": {
+    "skillId": 3003031,
+    "targetSide": 0,
+    "target": 18,
+    "effectValuePctExpr": "-0.15*(1+0.025*n1)-0.045",
+    "targetParam": 0,
+    "id": 30030311,
+    "stateId": 30032,
+    "persistTime": 3000
   },
-  "30050211": {
-    "effectTiming": 15,
-    "attackType": 2,
+  "30010311": {
+    "skillId": 3001031,
+    "effectValuePctExpr": "0.05*(1+0.05*n1)*1.2",
+    "stateId": 30012,
+    "id": 30010311,
+    "persistTime": 3000,
+    "extend": "30012_0.5"
+  },
+  "20030311": {
+    "skillId": 2003031,
+    "effectValueExpr": "0.15*(1+0.025*n1)+0.03",
+    "id": 20030311,
+    "stateId": 20031,
+    "persistTime": 3000
+  },
+  "20020211": {
+    "skillId": 2002021,
+    "effectValueExpr": "0.08",
+    "id": 20020211,
+    "stateId": 20021,
+    "persistTime": 7000
+  },
+  "30120402": {
+    "skillId": 3012040,
+    "effectTiming": 1,
+    "stateId": 30124,
+    "id": 30120402,
+    "maxCount": 1,
+    "extend": "2000"
+  },
+  "30020431": {
+    "skillId": 3002043,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
+    "effectTiming": 1,
+    "id": 30020431,
+    "maxCount": 1,
+    "stateId": 30022
+  },
+  "20020431": {
+    "skillId": 2002043,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
+    "target": 14,
+    "effectTiming": 1,
+    "targetParam": 3,
+    "id": 20020431,
+    "targetExtend": "3",
+    "stateId": 20022
+  },
+  "9053051": {
+    "skillId": 905305,
+    "target": 101,
+    "effectTiming": 101,
+    "id": 9053051,
+    "stateId": 90533,
+    "effectValuePctExpr": "0.2"
+  },
+  "30050221": {
     "stateId": 30051,
     "triggerCd": 1000,
-    "targetSide": 0,
-    "id": 30050211,
     "effectValuePctExpr": "1*(1+0.05*n1)",
+    "attackType": 2,
+    "id": 30050221,
+    "skillId": 3005022,
     "target": 18,
-    "targetParam": 0,
+    "effectTiming": 15,
     "persistTime": 5000,
-    "skillId": 3005021
-  },
-  "9100071": {
-    "effectTiming": 7,
-    "persistTime": 99999999,
-    "id": 9100071,
-    "skillId": 910007,
-    "effectType": 10,
-    "extend": "999008_5_0.3_0.3_1_2783_700_450"
-  },
-  "30030231": {
-    "stateId": 30031,
     "targetSide": 0,
-    "persistTime": 5000,
-    "effectValueExpr": "-0.05-0.002*n1-0.09",
-    "target": 18,
-    "targetParam": 0,
-    "id": 30030231,
-    "skillId": 3003023
+    "targetParam": 0
   },
-  "20030231": {
-    "stateId": 20033,
+  "41000021": {
+    "skillId": 4100002,
+    "effectValueExpr": "0.12",
+    "target": 18,
     "targetSide": 0,
-    "persistTime": 5000,
-    "effectValuePctExpr": "-0.06",
-    "target": 18,
     "targetParam": 0,
-    "id": 20030231,
-    "skillId": 2003023
-  },
-  "30100411": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
-    "stateId": 30104,
-    "maxCount": 1,
-    "id": 30100411,
-    "skillId": 3010041
-  },
-  "30040211": {
-    "effectTiming": 16,
-    "persistTime": 0,
-    "effectValueExpr": "0.08*(1+0.025*n1)",
-    "skillId": 3004021,
-    "id": 30040211,
-    "effectType": 2,
-    "attrType": 5
-  },
-  "20100421": {
-    "effectTiming": 4,
-    "persistTime": 7000,
-    "stateId": 20101,
-    "maxCount": 1,
-    "condition": 3,
-    "conditionValue": "0.4",
-    "effectValuePctExpr": "0.03*(1+0.05*n1)*1.25",
-    "skillId": 2010042,
-    "id": 20100421,
-    "extend": "20101_0.5"
-  },
-  "20100401": {
-    "effectTiming": 4,
-    "persistTime": 5000,
-    "stateId": 20101,
-    "maxCount": 1,
-    "condition": 3,
-    "conditionValue": "0.4",
-    "effectValuePctExpr": "0.03*(1+0.05*n1)",
-    "skillId": 2010040,
-    "id": 20100401,
-    "extend": "20101_0.5"
-  },
-  "20090411": {
-    "stateId": 20131,
-    "effectTiming": 1,
-    "target": 14,
-    "effectValueExpr": "0.12*(1+0.025*n1)+0.03",
-    "targetExtend": "1",
-    "targetParam": 2,
-    "id": 20090411,
-    "skillId": 2009041
-  },
-  "9082021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9082021,
-    "stateId": 2001,
-    "skillId": 908202
-  },
-  "40000031": {
+    "id": 41000021,
     "stateId": 400001,
-    "targetSide": 0,
-    "persistTime": 5000,
-    "effectValueExpr": "0.2",
+    "persistTime": 5000
+  },
+  "30030411": {
+    "skillId": 3003041,
+    "effectValueExpr": "0.08+0.003*n1+0.05",
+    "effectTiming": 1,
+    "id": 30030411,
+    "maxCount": 1,
+    "stateId": 30033
+  },
+  "20030411": {
+    "skillId": 2003041,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
+    "effectTiming": 1,
+    "id": 20030411,
+    "stateId": 20032
+  },
+  "20050221": {
+    "skillId": 2005022,
     "target": 18,
+    "targetSide": 0,
     "targetParam": 0,
-    "id": 40000031,
-    "skillId": 4000003
+    "id": 20050221,
+    "stateId": 1001,
+    "persistTime": 1500
   },
   "30050232": {
     "effectType": 7,
-    "attackType": 2,
-    "target": 18,
-    "persistTime": 0,
-    "attackTypeLimit": 0,
-    "targetSide": 0,
-    "conditionValue": "4",
     "effectValuePctExpr": "9",
-    "condition": 1,
-    "targetParam": 0,
+    "attackType": 2,
     "id": 30050232,
-    "skillId": 3005023
-  },
-  "9100051": {
-    "effectTiming": 7,
-    "persistTime": 99999999,
-    "id": 9100051,
-    "skillId": 910005,
-    "effectType": 10,
-    "extend": "999008_3_0.3_0.3_1_2783_700_450"
-  },
-  "9032021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9032021,
-    "stateId": 2001,
-    "skillId": 903202
-  },
-  "9100041": {
-    "effectTiming": 7,
-    "persistTime": 99999999,
-    "id": 9100041,
-    "skillId": 910004,
-    "effectType": 10,
-    "extend": "999007_5_0.3_0.3_1_2783_700_450"
-  },
-  "9100031": {
-    "effectTiming": 7,
-    "persistTime": 99999999,
-    "id": 9100031,
-    "skillId": 910003,
-    "effectType": 10,
-    "extend": "999006_5_0.3_0.3_1_2783_700_450"
-  },
-  "20070201": {
-    "stateId": 20071,
-    "target": 6,
-    "persistTime": 4000,
-    "effectValueExpr": "0.15*(1+0.025*n1)",
-    "targetExtend": "340",
-    "targetParam": 99,
-    "id": 20070201,
-    "skillId": 2007020
-  },
-  "30070201": {
-    "stateId": 30071,
-    "targetSide": 0,
-    "persistTime": 5000,
-    "effectValuePctExpr": "0.15*(1+0.025*n1)",
+    "conditionValue": "4",
+    "skillId": 3005023,
     "target": 18,
+    "targetSide": 0,
     "targetParam": 0,
-    "id": 30070201,
-    "skillId": 3007020
+    "persistTime": 0,
+    "condition": 1,
+    "attackTypeLimit": 0
   },
-  "9082042": {
-    "skillId": 908204,
+  "20040221": {
+    "skillId": 2004022,
     "effectType": 10,
-    "id": 9082042,
-    "extend": "990101_2_0.8_0.2_1"
+    "extend": "999001_1_1+0.05*n1+1_0.15_1",
+    "id": 20040221,
+    "persistTime": 10000
   },
-  "9053081": {
+  "30040221": {
+    "skillId": 3004022,
+    "effectValueExpr": "0.08*(1+0.025*n1)",
+    "effectType": 2,
+    "effectTiming": 16,
+    "id": 30040221,
+    "attrType": 5,
+    "persistTime": 0
+  },
+  "20030211": {
+    "skillId": 2003021,
+    "targetSide": 0,
+    "target": 18,
+    "effectValuePctExpr": "-0.06",
+    "targetParam": 0,
+    "id": 20030211,
+    "stateId": 20033,
+    "persistTime": 5000
+  },
+  "30030211": {
+    "skillId": 3003021,
+    "effectValueExpr": "-0.05-0.002*n1-0.03",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 30030211,
+    "stateId": 30031,
+    "persistTime": 5000
+  },
+  "40000062": {
+    "effectValueExpr": "0.2",
+    "effectType": 2,
+    "id": 40000062,
+    "attrType": 22,
+    "skillId": 4000006,
+    "effectTiming": 3,
+    "persistTime": 0,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "9100021": {
+    "skillId": 910002,
+    "effectType": 10,
+    "effectTiming": 7,
+    "id": 9100021,
+    "persistTime": 99999999,
+    "extend": "999007_3_0.3_0.3_1_2783_700_450"
+  },
+  "41000041": {
+    "skillId": 4100004,
+    "effectValueExpr": "0.15",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 41000041,
+    "stateId": 400001,
+    "persistTime": 5000
+  },
+  "9142042": {
+    "skillId": 914204,
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 9142042,
+    "stateId": 1003,
+    "persistTime": 3000
+  },
+  "20010401": {
+    "skillId": 2001040,
+    "effectValueExpr": "0.06*(1+0.025*n1)",
+    "effectTiming": 1,
+    "id": 20010401,
+    "stateId": 20011
+  },
+  "30010401": {
+    "stateId": 30013,
+    "effectValueExpr": "0.03*(1+0.025*n1)",
+    "id": 30010401,
+    "skillId": 3001040,
+    "target": 13,
+    "effectTiming": 1,
+    "targetParam": 99,
+    "maxCount": 1,
+    "targetExtend": "1"
+  },
+  "30100311": {
+    "skillId": 3010031,
+    "effectValuePctExpr": "0.6*(1+0.025*n1)+0.12",
+    "id": 30100311,
+    "stateId": 30105,
+    "persistTime": 3000
+  },
+  "20100311": {
+    "skillId": 2010031,
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 20100311,
+    "stateId": 1001,
+    "persistTime": 1000
+  },
+  "9063032": {
+    "effectType": 10,
+    "id": 9063032,
+    "conditionValue": "0.5",
+    "actionIndex": 2,
+    "skillId": 906303,
+    "effectTiming": 1,
+    "extend": "990602_3_0_0.03_1",
+    "persistTime": 0,
+    "maxCount": 1,
+    "condition": 3
+  },
+  "41000042": {
+    "effectValueExpr": "0.2",
+    "effectType": 2,
+    "id": 41000042,
+    "attrType": 22,
+    "skillId": 4100004,
+    "effectTiming": 3,
+    "persistTime": 0,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "9100191": {
+    "skillId": 910019,
+    "persistTime": 99999999,
+    "effectType": 10,
+    "effectTiming": 7,
+    "extend": "999008_4_0.25_0.1_1_2783_700_450",
+    "id": 9100191,
+    "conditionValue": "60",
+    "condition": 3
+  },
+  "9153051": {
+    "skillId": 915305,
+    "target": 101,
+    "effectTiming": 101,
+    "id": 9153051,
+    "stateId": 3001
+  },
+  "20080221": {
+    "skillId": 2008022,
+    "effectValueExpr": "0.12*(1+0.04*n1)+0.04",
+    "target": 14,
+    "targetParam": 2,
+    "targetExtend": "2",
+    "id": 20080221,
+    "stateId": 20081,
+    "persistTime": 7000
+  },
+  "30080221": {
+    "skillId": 3008022,
+    "targetParam": 99,
+    "target": 2,
+    "effectValuePctExpr": "1.2*(1+0.05*n1)*1.6",
+    "stateId": 30081,
+    "id": 30080221,
+    "persistTime": 5000,
+    "extend": "30081_0.5"
+  },
+  "9153091": {
+    "skillId": 915309,
+    "effectType": 102,
+    "effectTiming": 7,
+    "target": 101,
+    "id": 9153091,
+    "persistTime": 0,
+    "extend": "3002"
+  },
+  "9153081": {
+    "skillId": 915308,
+    "effectType": 102,
+    "effectTiming": 7,
+    "target": 101,
+    "id": 9153081,
+    "persistTime": 0,
+    "extend": "3001"
+  },
+  "30080411": {
+    "stateId": 30082,
+    "targetExtend": "1",
+    "effectValuePctExpr": "0.05*(1+0.05*n1)",
+    "id": 30080411,
+    "skillId": 3008041,
+    "target": 13,
+    "effectTiming": 1,
+    "targetParam": 99,
+    "persistTime": 7000,
+    "maxCount": 1,
+    "extend": "30082_0.5"
+  },
+  "20080411": {
+    "skillId": 2008041,
+    "target": 4,
+    "effectType": 3,
     "effectTiming": 7,
     "persistTime": 0,
-    "id": 9053081,
-    "target": 101,
-    "skillId": 905308,
-    "effectType": 102,
-    "extend": "90533"
-  },
-  "9093031": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9093031,
-    "stateId": 2001,
-    "skillId": 909303
-  },
-  "30070232": {
-    "stateId": 30072,
-    "targetSide": 0,
-    "persistTime": 7000,
-    "effectValueExpr": "0.045",
-    "target": 18,
-    "targetParam": 0,
-    "id": 30070232,
-    "skillId": 3007023
-  },
-  "30140421": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
-    "stateId": 30143,
+    "id": 20080411,
     "maxCount": 1,
-    "id": 30140421,
-    "skillId": 3014042
+    "effectValuePctExpr": "2*(1+0.05*n1)*1.25"
+  },
+  "30120421": {
+    "skillId": 3012042,
+    "effectValueExpr": "0.15*(1+0.025*n1)",
+    "effectTiming": 1,
+    "id": 30120421,
+    "maxCount": 1,
+    "stateId": 30123
   },
   "30140321": {
-    "stateId": 30142,
-    "persistTime": 4000,
+    "skillId": 3014032,
     "effectValueExpr": "0.12*(1+0.025*n1)+0.06",
     "target": 15,
     "targetParam": 3,
     "id": 30140321,
-    "skillId": 3014032
-  },
-  "9153081": {
-    "effectTiming": 7,
-    "persistTime": 0,
-    "id": 9153081,
-    "target": 101,
-    "skillId": 915308,
-    "effectType": 102,
-    "extend": "3001"
-  },
-  "9083032": {
-    "effectTiming": 1,
-    "persistTime": 1000,
-    "stateId": 4001,
-    "condition": 3,
-    "targetSide": 0,
-    "conditionValue": "0.5",
-    "id": 9083032,
-    "targetParam": 99,
-    "target": 2,
-    "skillId": 908303
-  },
-  "30090201": {
-    "triggerRateExpr": "0.35",
-    "targetSide": 0,
-    "persistTime": 5000,
-    "id": 30090201,
-    "target": 18,
-    "targetParam": 0,
-    "stateId": 1001,
-    "skillId": 3009020
-  },
-  "9063032": {
-    "effectTiming": 1,
-    "persistTime": 0,
-    "maxCount": 1,
-    "condition": 3,
-    "conditionValue": "0.5",
-    "actionIndex": 2,
-    "skillId": 906303,
-    "id": 9063032,
-    "effectType": 10,
-    "extend": "990602_3_0_0.03_1"
-  },
-  "30120231": {
-    "effectType": 3,
-    "persistTime": 0,
-    "effectValuePctExpr": "1.5",
-    "id": 30120231,
-    "skillId": 3012023
-  },
-  "20120231": {
-    "targetSide": 0,
-    "persistTime": 7000,
-    "effectValuePctExpr": "0.075",
-    "stateId": 20122,
-    "id": 20120231,
-    "skillId": 2012023
-  },
-  "20030331": {
-    "persistTime": 3000,
-    "effectValueExpr": "0.15*(1+0.025*n1)+0.15",
-    "stateId": 20031,
-    "id": 20030331,
-    "skillId": 2003033
-  },
-  "20020411": {
-    "stateId": 20022,
-    "effectTiming": 1,
-    "target": 14,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
-    "targetExtend": "3",
-    "targetParam": 3,
-    "id": 20020411,
-    "skillId": 2002041
-  },
-  "20060421": {
-    "effectTiming": 1,
-    "effectValuePctExpr": "0.08*(1+0.025*n1)+0.04",
-    "stateId": 20061,
-    "maxCount": 1,
-    "id": 20060421,
-    "skillId": 2006042
-  },
-  "9083021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9083021,
-    "stateId": 2001,
-    "skillId": 908302
-  },
-  "9100021": {
-    "effectTiming": 7,
-    "persistTime": 99999999,
-    "id": 9100021,
-    "skillId": 910002,
-    "effectType": 10,
-    "extend": "999007_3_0.3_0.3_1_2783_700_450"
-  },
-  "9123031": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9123031,
-    "stateId": 2001,
-    "skillId": 912303
-  },
-  "9142042": {
-    "targetSide": 0,
-    "persistTime": 3000,
-    "id": 9142042,
-    "target": 18,
-    "targetParam": 0,
-    "stateId": 1003,
-    "skillId": 914204
-  },
-  "41000052": {
-    "effectTiming": 3,
-    "persistTime": 0,
-    "targetSide": 0,
-    "id": 41000052,
-    "effectValueExpr": "0.2",
-    "skillId": 4100005,
-    "targetParam": 0,
-    "effectType": 2,
-    "attrType": 22
-  },
-  "9112041": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9112041,
-    "stateId": 2001,
-    "skillId": 911204
-  },
-  "30080331": {
-    "effectType": 3,
-    "persistTime": 0,
-    "effectValuePctExpr": "0.4*(1+0.05*n1)*4",
-    "skillId": 3008033,
-    "id": 30080331,
-    "attrType": 3
-  },
-  "301103011": {
-    "effectTiming": 3,
-    "persistTime": 1000,
-    "stateId": 30161,
-    "targetSide": 0,
-    "effectValueExpr": "-0.2",
-    "target": 18,
-    "targetParam": 0,
-    "id": 301103011,
-    "skillId": 30110301
-  },
-  "9100181": {
-    "condition": 3,
-    "effectTiming": 7,
-    "conditionValue": "60",
-    "id": 9100181,
-    "skillId": 910018,
-    "persistTime": 99999999,
-    "effectType": 10,
-    "extend": "999007_4_0.25_0.1_1_2783_700_450"
-  },
-  "9063061": {
-    "effectTiming": 101,
-    "id": 9063061,
-    "target": 101,
-    "stateId": 3003,
-    "skillId": 906306
-  },
-  "30150221": {
-    "effectTiming": 3,
-    "persistTime": 0,
-    "target": 18,
-    "id": 30150221,
-    "condition": 1,
-    "targetSide": 0,
-    "conditionValue": "4",
-    "effectValueExpr": "-0.2*(1+0.025*n1)",
-    "skillId": 3015022,
-    "targetParam": 0,
-    "effectType": 2,
-    "attrType": 15
-  },
-  "9100081": {
-    "effectTiming": 7,
-    "persistTime": 99999999,
-    "id": 9100081,
-    "skillId": 910008,
-    "effectType": 10,
-    "extend": "999009_5_0.3_0.3_1_2783_700_450"
-  },
-  "9083031": {
-    "effectTiming": 1,
-    "persistTime": 0,
-    "attackTypeLimit": 0,
-    "conditionValue": "0.5",
-    "id": 9083031,
-    "skillId": 908303,
-    "condition": 3,
-    "effectType": 10,
-    "extend": "990801_3_0_0_1"
-  },
-  "20080331": {
-    "stateId": 20082,
-    "targetSide": 0,
-    "persistTime": 3000,
-    "effectValueExpr": "-0.08",
-    "target": 18,
-    "targetParam": 0,
-    "id": 20080331,
-    "skillId": 2008033
-  },
-  "9063031": {
-    "effectTiming": 1,
-    "persistTime": 0,
-    "maxCount": 1,
-    "condition": 3,
-    "conditionValue": "0.5",
-    "actionIndex": 1,
-    "skillId": 906303,
-    "id": 9063031,
-    "effectType": 10,
-    "extend": "990601_3_0_0.03_1"
-  },
-  "30130411": {
-    "effectTiming": 1,
-    "stateId": 30133,
-    "targetExtend": "1",
-    "maxCount": 1,
-    "effectValuePctExpr": "0.06*(1+0.025*n1)+0.012",
-    "target": 16,
-    "targetParam": 99,
-    "id": 30130411,
-    "skillId": 3013041
-  },
-  "30130211": {
-    "stateId": 30132,
-    "persistTime": 5000,
-    "effectValuePctExpr": "0.25*(1+0.025*n1)+0.05",
-    "target": 15,
-    "targetParam": 2,
-    "id": 30130211,
-    "skillId": 3013021
-  },
-  "40000051": {
-    "stateId": 400001,
-    "targetSide": 0,
-    "persistTime": 5000,
-    "effectValueExpr": "0.25",
-    "target": 18,
-    "targetParam": 0,
-    "id": 40000051,
-    "skillId": 4000005
-  },
-  "20050421": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
-    "stateId": 20051,
-    "maxCount": 1,
-    "id": 20050421,
-    "skillId": 2005042
-  },
-  "30050421": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
-    "stateId": 30053,
-    "maxCount": 1,
-    "id": 30050421,
-    "skillId": 3005042
-  },
-  "9063021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9063021,
-    "stateId": 2001,
-    "skillId": 906302
-  },
-  "9062021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9062021,
-    "stateId": 2001,
-    "skillId": 906202
-  },
-  "9100011": {
-    "effectTiming": 7,
-    "persistTime": 99999999,
-    "id": 9100011,
-    "skillId": 910001,
-    "effectType": 10,
-    "extend": "999006_3_0.3_0.3_1_2783_700_450"
-  },
-  "9053061": {
-    "effectTiming": 7,
-    "persistTime": 0,
-    "id": 9053061,
-    "target": 101,
-    "skillId": 905306,
-    "effectType": 102,
-    "extend": "90531"
-  },
-  "9123022": {
-    "targetSide": 0,
-    "persistTime": 5000,
-    "id": 9123022,
-    "target": 18,
-    "targetParam": 0,
-    "stateId": 5001,
-    "skillId": 912302
-  },
-  "9053031": {
-    "effectTiming": 101,
-    "effectValuePctExpr": "0.2",
-    "target": 101,
-    "stateId": 90531,
-    "id": 9053031,
-    "skillId": 905303
-  },
-  "9053021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9053021,
-    "stateId": 2001,
-    "skillId": 905302
-  },
-  "9093021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9093021,
-    "stateId": 2001,
-    "skillId": 909302
-  },
-  "9063033": {
-    "effectTiming": 1,
-    "persistTime": 0,
-    "maxCount": 1,
-    "condition": 3,
-    "conditionValue": "0.5",
-    "actionIndex": 3,
-    "skillId": 906303,
-    "id": 9063033,
-    "effectType": 10,
-    "extend": "990603_3_0_0.03_1"
-  },
-  "30010211": {
-    "stateId": 30011,
-    "target": 6,
-    "persistTime": 5000,
-    "effectValueExpr": "0.1*(1+0.025*n1)+0.03",
-    "targetExtend": "340",
-    "targetParam": 99,
-    "id": 30010211,
-    "skillId": 3001021
-  },
-  "9042021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9042021,
-    "stateId": 2001,
-    "skillId": 904202
-  },
-  "9013031": {
-    "condition": 3,
-    "effectTiming": 4,
-    "conditionValue": "0.5",
-    "effectValuePctExpr": "0.2",
-    "stateId": 90131,
-    "maxCount": 1,
-    "id": 9013031,
-    "skillId": 901303
-  },
-  "30070401": {
-    "effectTiming": 1,
-    "stateId": 30074,
-    "targetExtend": "3",
-    "maxCount": 1,
-    "effectValuePctExpr": "0.06*(1+0.025*n1)",
-    "target": 16,
-    "targetParam": 99,
-    "id": 30070401,
-    "skillId": 3007040
-  },
-  "20070401": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)",
-    "stateId": 20072,
-    "id": 20070401,
-    "skillId": 2007040
-  },
-  "9033031": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9033031,
-    "stateId": 2001,
-    "skillId": 903303
-  },
-  "9032041": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9032041,
-    "stateId": 2001,
-    "skillId": 903204
-  },
-  "9023041": {
-    "attackTypeLimit": 0,
-    "effectTiming": 7,
-    "persistTime": 0,
-    "id": 9023041,
-    "skillId": 902304,
-    "effectType": 10,
-    "extend": "990102_1_1_1_1"
-  },
-  "30090301": {
-    "stateId": 30092,
-    "targetSide": 0,
-    "persistTime": 3000,
-    "effectValueExpr": "-0.08*(1+0.025*n1)",
-    "target": 18,
-    "targetParam": 0,
-    "id": 30090301,
-    "skillId": 3009030
-  },
-  "9023022": {
-    "skillId": 902302,
-    "effectType": 10,
-    "id": 9023022,
-    "extend": "990101_2_0.8_0.06_0"
-  },
-  "9022041": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9022041,
-    "stateId": 2001,
-    "skillId": 902204
-  },
-  "9022021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9022021,
-    "stateId": 2001,
-    "skillId": 902202
-  },
-  "9033043": {
-    "effectType": 7,
-    "attackType": 1,
-    "targetExtend": "750_350",
-    "targetSide": 0,
-    "persistTime": 0,
-    "actionIndex": 3,
-    "target": 5,
-    "targetParam": 99,
-    "id": 9033043,
-    "effectValuePctExpr": "2"
-  },
-  "9153101": {
-    "effectTiming": 7,
-    "persistTime": 0,
-    "id": 9153101,
-    "target": 101,
-    "skillId": 915310,
-    "effectType": 102,
-    "extend": "3003"
-  },
-  "41000062": {
-    "effectTiming": 3,
-    "persistTime": 0,
-    "targetSide": 0,
-    "id": 41000062,
-    "effectValueExpr": "0.2",
-    "skillId": 4100006,
-    "targetParam": 0,
-    "effectType": 2,
-    "attrType": 22
-  },
-  "41000061": {
-    "stateId": 400001,
-    "targetSide": 0,
-    "persistTime": 7000,
-    "effectValueExpr": "0.15",
-    "target": 18,
-    "targetParam": 0,
-    "id": 41000061,
-    "skillId": 4100006
-  },
-  "41000051": {
-    "stateId": 400001,
-    "targetSide": 0,
-    "persistTime": 5000,
-    "effectValueExpr": "0.15",
-    "target": 18,
-    "targetParam": 0,
-    "id": 41000051,
-    "skillId": 4100005
-  },
-  "30010231": {
-    "stateId": 30011,
-    "target": 6,
-    "persistTime": 5000,
-    "effectValueExpr": "0.1*(1+0.025*n1)+0.15",
-    "targetExtend": "340",
-    "targetParam": 99,
-    "id": 30010231,
-    "skillId": 3001023
-  },
-  "41000042": {
-    "effectTiming": 3,
-    "persistTime": 0,
-    "targetSide": 0,
-    "id": 41000042,
-    "effectValueExpr": "0.2",
-    "skillId": 4100004,
-    "targetParam": 0,
-    "effectType": 2,
-    "attrType": 22
-  },
-  "30150101": {
-    "effectType": 3,
-    "persistTime": 0,
-    "effectValuePctExpr": "0.5*(1+0.05*n1)",
-    "target": 4,
-    "id": 30150101,
-    "skillId": 3015010
-  },
-  "30090331": {
-    "stateId": 30092,
-    "targetSide": 0,
-    "persistTime": 3000,
-    "effectValueExpr": "-0.08*(1+0.025*n1)",
-    "target": 18,
-    "targetParam": 0,
-    "id": 30090331,
-    "skillId": 3009033
-  },
-  "30090311": {
-    "stateId": 30092,
-    "targetSide": 0,
-    "persistTime": 3000,
-    "effectValueExpr": "-0.08*(1+0.025*n1)",
-    "target": 18,
-    "targetParam": 0,
-    "id": 30090311,
-    "skillId": 3009031
-  },
-  "9102021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9102021,
-    "stateId": 2001,
-    "skillId": 910202
-  },
-  "40000061": {
-    "stateId": 400001,
-    "targetSide": 0,
-    "persistTime": 7000,
-    "effectValueExpr": "0.25",
-    "target": 18,
-    "targetParam": 0,
-    "id": 40000061,
-    "skillId": 4000006
-  },
-  "20020231": {
-    "persistTime": 7000,
-    "effectValueExpr": "0.08",
-    "stateId": 20021,
-    "id": 20020231,
-    "skillId": 2002023
-  },
-  "30040431": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
-    "stateId": 30041,
-    "maxCount": 1,
-    "id": 30040431,
-    "skillId": 3004043
-  },
-  "20040431": {
-    "effectTiming": 4,
-    "persistTime": 6000,
-    "stateId": 20041,
-    "maxCount": 1,
-    "condition": 3,
-    "conditionValue": "0.3",
-    "effectValuePctExpr": "0.2*(1+0.025*n1)+0.056",
-    "id": 20040431,
-    "skillId": 2004043
-  },
-  "20030201": {
-    "stateId": 20033,
-    "targetSide": 0,
-    "persistTime": 5000,
-    "effectValuePctExpr": "-0.06",
-    "target": 18,
-    "targetParam": 0,
-    "id": 20030201,
-    "skillId": 2003020
-  },
-  "40000052": {
-    "effectTiming": 3,
-    "persistTime": 0,
-    "targetSide": 0,
-    "id": 40000052,
-    "effectValueExpr": "0.2",
-    "skillId": 4000005,
-    "targetParam": 0,
-    "effectType": 2,
-    "attrType": 22
-  },
-  "40000042": {
-    "effectTiming": 3,
-    "persistTime": 0,
-    "targetSide": 0,
-    "id": 40000042,
-    "effectValueExpr": "0.2",
-    "skillId": 4000004,
-    "targetParam": 0,
-    "effectType": 2,
-    "attrType": 22
-  },
-  "40000032": {
-    "effectTiming": 3,
-    "persistTime": 0,
-    "targetSide": 0,
-    "id": 40000032,
-    "effectValueExpr": "0.2",
-    "skillId": 4000003,
-    "targetParam": 0,
-    "effectType": 2,
-    "attrType": 22
-  },
-  "20050431": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
-    "stateId": 20051,
-    "maxCount": 1,
-    "id": 20050431,
-    "skillId": 2005043
-  },
-  "30050431": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
-    "stateId": 30053,
-    "maxCount": 1,
-    "id": 30050431,
-    "skillId": 3005043
-  },
-  "20080401": {
-    "target": 4,
-    "effectTiming": 7,
-    "persistTime": 0,
-    "effectValuePctExpr": "2*(1+0.05*n1)",
-    "effectType": 3,
-    "maxCount": 1,
-    "id": 20080401,
-    "skillId": 2008040
-  },
-  "30080401": {
-    "effectTiming": 1,
-    "persistTime": 5000,
-    "stateId": 30082,
-    "targetExtend": "1",
-    "maxCount": 1,
-    "skillId": 3008040,
-    "effectValuePctExpr": "0.05*(1+0.05*n1)",
-    "target": 13,
-    "targetParam": 99,
-    "id": 30080401,
-    "extend": "30082_0.5"
-  },
-  "20110221": {
-    "attackType": 1,
-    "stateId": 1002,
-    "triggerCd": 1000,
-    "targetSide": 0,
-    "id": 20110221,
-    "effectValuePctExpr": "0.15",
-    "target": 18,
-    "targetParam": 0,
-    "persistTime": 7000,
-    "skillId": 2011022
-  },
-  "40000012": {
-    "effectTiming": 3,
-    "persistTime": 0,
-    "targetSide": 0,
-    "id": 40000012,
-    "effectValueExpr": "0.2",
-    "skillId": 4000001,
-    "targetParam": 0,
-    "effectType": 2,
-    "attrType": 22
-  },
-  "30120432": {
-    "effectTiming": 1,
-    "id": 30120432,
-    "stateId": 30124,
-    "maxCount": 1,
-    "skillId": 3012043,
-    "extend": "5000"
-  },
-  "30130431": {
-    "effectTiming": 1,
-    "stateId": 30133,
-    "targetExtend": "1",
-    "maxCount": 1,
-    "effectValuePctExpr": "0.06*(1+0.025*n1)+0.06",
-    "target": 16,
-    "targetParam": 99,
-    "id": 30130431,
-    "skillId": 3013043
-  },
-  "30150411": {
-    "effectTiming": 1,
-    "stateId": 30152,
-    "targetExtend": "2",
-    "maxCount": 1,
-    "effectValueExpr": "0.06*(1+0.025*n1)+0.012",
-    "target": 16,
-    "targetParam": 99,
-    "id": 30150411,
-    "skillId": 3015041
-  },
-  "30030201": {
-    "stateId": 30031,
-    "targetSide": 0,
-    "persistTime": 5000,
-    "effectValueExpr": "-0.05-0.002*n1",
-    "target": 18,
-    "targetParam": 0,
-    "id": 30030201,
-    "skillId": 3003020
-  },
-  "9100201": {
-    "condition": 3,
-    "effectTiming": 7,
-    "conditionValue": "60",
-    "id": 9100201,
-    "skillId": 910020,
-    "persistTime": 99999999,
-    "effectType": 10,
-    "extend": "999009_4_0.25_0.1_1_2783_700_450"
-  },
-  "20120421": {
-    "effectTiming": 1,
-    "targetSide": 0,
-    "effectValueExpr": "0.1*(1+0.025*n1)+0.05",
-    "stateId": 20121,
-    "maxCount": 1,
-    "id": 20120421,
-    "skillId": 2012042
-  },
-  "30120421": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.15*(1+0.025*n1)",
-    "stateId": 30123,
-    "maxCount": 1,
-    "id": 30120421,
-    "skillId": 3012042
-  },
-  "9113031": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9113031,
-    "stateId": 2001,
-    "skillId": 911303
-  },
-  "30050411": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
-    "stateId": 30053,
-    "maxCount": 1,
-    "id": 30050411,
-    "skillId": 3005041
-  },
-  "20050411": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
-    "stateId": 20051,
-    "maxCount": 1,
-    "id": 20050411,
-    "skillId": 2005041
-  },
-  "30010321": {
-    "persistTime": 3000,
-    "effectValuePctExpr": "0.05*(1+0.05*n1)*1.5",
-    "stateId": 30012,
-    "skillId": 3001032,
-    "id": 30010321,
-    "extend": "30012_0.5"
-  },
-  "30150231": {
-    "effectTiming": 3,
-    "persistTime": 0,
-    "target": 18,
-    "id": 30150231,
-    "condition": 1,
-    "targetSide": 0,
-    "conditionValue": "4",
-    "effectValueExpr": "-0.2*(1+0.025*n1)-0.05",
-    "skillId": 3015023,
-    "targetParam": 0,
-    "effectType": 2,
-    "attrType": 15
-  },
-  "9063041": {
-    "effectTiming": 101,
-    "id": 9063041,
-    "target": 101,
-    "stateId": 3001,
-    "skillId": 906304
-  },
-  "30140431": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
-    "stateId": 30143,
-    "maxCount": 1,
-    "id": 30140431,
-    "skillId": 3014043
-  },
-  "30150201": {
-    "effectTiming": 3,
-    "persistTime": 0,
-    "target": 18,
-    "id": 30150201,
-    "condition": 1,
-    "targetSide": 0,
-    "conditionValue": "4",
-    "effectValueExpr": "-0.2*(1+0.025*n1)",
-    "skillId": 3015020,
-    "targetParam": 0,
-    "effectType": 2,
-    "attrType": 15
-  },
-  "30150131": {
-    "effectType": 3,
-    "persistTime": 0,
-    "effectValuePctExpr": "0.5*(1+0.05*n1)",
-    "target": 4,
-    "id": 30150131,
-    "skillId": 3015013
-  },
-  "30120222": {
-    "stateId": 30121,
-    "persistTime": 5000,
-    "effectValueExpr": "0.15*(1+0.025*n1)",
-    "target": 2,
-    "targetParam": 99,
-    "id": 30120222,
-    "skillId": 3012022
-  },
-  "9153051": {
-    "effectTiming": 101,
-    "id": 9153051,
-    "target": 101,
-    "stateId": 3001,
-    "skillId": 915305
-  },
-  "41000032": {
-    "effectTiming": 3,
-    "persistTime": 0,
-    "targetSide": 0,
-    "id": 41000032,
-    "effectValueExpr": "0.2",
-    "skillId": 4100003,
-    "targetParam": 0,
-    "effectType": 2,
-    "attrType": 22
-  },
-  "41000012": {
-    "effectTiming": 3,
-    "persistTime": 0,
-    "targetSide": 0,
-    "id": 41000012,
-    "effectValueExpr": "0.2",
-    "skillId": 4100001,
-    "targetParam": 0,
-    "effectType": 2,
-    "attrType": 22
-  },
-  "30140331": {
     "stateId": 30142,
-    "persistTime": 4000,
-    "effectValueExpr": "0.12*(1+0.025*n1)+0.12",
-    "target": 15,
-    "targetParam": 3,
-    "id": 30140331,
-    "skillId": 3014033
+    "persistTime": 4000
   },
-  "9092041": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9092041,
-    "stateId": 2001,
-    "skillId": 909204
-  },
-  "9012021": {
-    "stateId": 2001,
-    "effectTiming": 16,
-    "persistTime": 2000,
-    "skillId": 901202
-  },
-  "30140232": {
-    "stateId": 30141,
-    "target": 13,
-    "persistTime": 5000,
-    "effectValueExpr": "0.15",
-    "targetExtend": "1",
-    "targetParam": 99,
-    "id": 30140232,
-    "skillId": 3014023
-  },
-  "30150421": {
-    "effectTiming": 1,
-    "stateId": 30152,
-    "targetExtend": "2",
-    "maxCount": 1,
-    "effectValueExpr": "0.06*(1+0.025*n1)+0.03",
-    "target": 16,
-    "targetParam": 99,
-    "id": 30150421,
-    "skillId": 3015042
-  },
-  "30130421": {
-    "effectTiming": 1,
-    "stateId": 30133,
-    "targetExtend": "1",
-    "maxCount": 1,
-    "effectValuePctExpr": "0.06*(1+0.025*n1)+0.03",
-    "target": 16,
-    "targetParam": 99,
-    "id": 30130421,
-    "skillId": 3013042
-  },
-  "30130401": {
-    "effectTiming": 1,
-    "stateId": 30133,
-    "targetExtend": "1",
-    "maxCount": 1,
-    "effectValuePctExpr": "0.06*(1+0.025*n1)",
-    "target": 16,
-    "targetParam": 99,
-    "id": 30130401,
-    "skillId": 3013040
-  },
-  "30100301": {
-    "persistTime": 3000,
-    "effectValuePctExpr": "0.6*(1+0.025*n1)",
-    "stateId": 30105,
-    "id": 30100301,
-    "skillId": 3010030
-  },
-  "30050331": {
-    "attackType": 2,
-    "stateId": 30052,
-    "triggerCd": 1000,
-    "targetSide": 0,
-    "id": 30050331,
-    "effectValuePctExpr": "1*(1+0.05*n1)",
-    "target": 18,
-    "targetParam": 0,
-    "persistTime": 4000,
-    "skillId": 3005033
-  },
-  "20090421": {
-    "stateId": 20131,
-    "effectTiming": 1,
-    "target": 14,
-    "effectValueExpr": "0.12*(1+0.025*n1)+0.06",
-    "targetExtend": "1",
-    "targetParam": 2,
-    "id": 20090421,
-    "skillId": 2009042
-  },
-  "30130311": {
-    "effectType": 3,
-    "persistTime": 0,
-    "effectValuePctExpr": "0.6*(1+0.05*n1)*1.4",
-    "target": 4,
-    "id": 30130311,
-    "skillId": 3013031
-  },
-  "30020411": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
-    "stateId": 30022,
-    "maxCount": 1,
-    "id": 30020411,
-    "skillId": 3002041
-  },
-  "30130201": {
-    "stateId": 30132,
-    "persistTime": 5000,
-    "effectValuePctExpr": "0.25*(1+0.025*n1)",
-    "target": 15,
-    "targetParam": 2,
-    "id": 30130201,
-    "skillId": 3013020
-  },
-  "30020331": {
-    "persistTime": 3000,
-    "effectValuePctExpr": "0.12",
-    "stateId": 30021,
-    "id": 30020331,
-    "skillId": 3002033
-  },
-  "30150431": {
-    "effectTiming": 1,
-    "stateId": 30152,
-    "targetExtend": "2",
-    "maxCount": 1,
-    "effectValueExpr": "0.06*(1+0.025*n1)+0.03",
-    "target": 16,
-    "targetParam": 99,
-    "id": 30150431,
-    "skillId": 3015043
-  },
-  "9122021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9122021,
-    "stateId": 2001,
-    "skillId": 912202
-  },
-  "9100151": {
-    "condition": 3,
-    "effectTiming": 7,
-    "conditionValue": "50",
-    "id": 9100151,
-    "skillId": 910015,
-    "persistTime": 99999999,
+  "9100031": {
+    "skillId": 910003,
     "effectType": 10,
-    "extend": "999008_5_0.3_0.3_1_2783_700_450"
-  },
-  "30120201": {
-    "effectType": 3,
-    "persistTime": 0,
-    "effectValuePctExpr": "1.5",
-    "id": 30120201,
-    "skillId": 3012020
-  },
-  "30120411": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.15*(1+0.025*n1)",
-    "stateId": 30123,
-    "maxCount": 1,
-    "id": 30120411,
-    "skillId": 3012041
-  },
-  "20120411": {
-    "effectTiming": 1,
-    "targetSide": 0,
-    "effectValueExpr": "0.1*(1+0.025*n1)+0.02",
-    "stateId": 20121,
-    "maxCount": 1,
-    "id": 20120411,
-    "skillId": 2012041
-  },
-  "30120412": {
-    "effectTiming": 1,
-    "id": 30120412,
-    "stateId": 30124,
-    "maxCount": 1,
-    "skillId": 3012041,
-    "extend": "3000"
-  },
-  "30120311": {
-    "stateId": 30122,
-    "persistTime": 4000,
-    "effectValueExpr": "0.09*(1+0.025*n1)+0.048",
-    "target": 19,
-    "targetParam": 2,
-    "id": 30120311,
-    "skillId": 3012031
-  },
-  "30090421": {
-    "effectTiming": 1,
-    "effectValuePctExpr": "0.08*(1+0.025*n1)+0.04",
-    "stateId": 30093,
-    "maxCount": 1,
-    "id": 30090421,
-    "skillId": 3009042
-  },
-  "30120301": {
-    "stateId": 30122,
-    "persistTime": 4000,
-    "effectValueExpr": "0.09*(1+0.025*n1)",
-    "target": 19,
-    "targetParam": 2,
-    "id": 30120301,
-    "skillId": 3012030
-  },
-  "30150121": {
-    "effectType": 3,
-    "persistTime": 0,
-    "effectValuePctExpr": "0.5*(1+0.05*n1)",
-    "target": 4,
-    "id": 30150121,
-    "skillId": 3015012
-  },
-  "30120213": {
-    "persistTime": 5000,
-    "effectValueExpr": "0.15*(1+0.025*n1)",
-    "target": 9,
-    "stateId": 30121,
-    "id": 30120213,
-    "skillId": 3012021
-  },
-  "9103031": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9103031,
-    "stateId": 2001,
-    "skillId": 910303
-  },
-  "30120202": {
-    "persistTime": 5000,
-    "effectValueExpr": "0.15*(1+0.025*n1)",
-    "stateId": 30121,
-    "id": 30120202,
-    "skillId": 3012020
-  },
-  "30100211": {
-    "stateId": 30102,
-    "persistTime": 5000,
-    "effectValueExpr": "0.05*(1+0.025*n1)+0.02",
-    "target": 2,
-    "targetParam": 99,
-    "id": 30100211,
-    "skillId": 3010021
-  },
-  "30110421": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
-    "stateId": 30111,
-    "maxCount": 1,
-    "id": 30110421,
-    "skillId": 3011042
-  },
-  "9143031": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9143031,
-    "stateId": 2001,
-    "skillId": 914303
-  },
-  "30110321": {
-    "targetSide": 0,
-    "effectType": 11,
-    "persistTime": 3000,
-    "id": 30110321,
-    "target": 18,
-    "targetParam": 0,
-    "skillId": 3011032,
-    "extend": "999004_1_1_1_1"
-  },
-  "301103111": {
-    "effectTiming": 3,
-    "persistTime": 1000,
-    "stateId": 30161,
-    "targetSide": 0,
-    "effectValueExpr": "-0.2",
-    "target": 18,
-    "targetParam": 0,
-    "id": 301103111,
-    "skillId": 30110311
-  },
-  "30070311": {
-    "persistTime": 4000,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
-    "target": 4,
-    "stateId": 30073,
-    "id": 30070311,
-    "skillId": 3007031
-  },
-  "20100411": {
-    "effectTiming": 4,
-    "persistTime": 5000,
-    "stateId": 20101,
-    "maxCount": 1,
-    "condition": 3,
-    "conditionValue": "0.4",
-    "effectValuePctExpr": "0.03*(1+0.05*n1)*1.25",
-    "skillId": 2010041,
-    "id": 20100411,
-    "extend": "20101_0.5"
-  },
-  "30080421": {
-    "effectTiming": 1,
-    "persistTime": 7000,
-    "stateId": 30082,
-    "targetExtend": "1",
-    "maxCount": 1,
-    "skillId": 3008042,
-    "effectValuePctExpr": "0.05*(1+0.05*n1)*1.2",
-    "target": 13,
-    "targetParam": 99,
-    "id": 30080421,
-    "extend": "30082_0.5"
-  },
-  "30100421": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.024",
-    "stateId": 30104,
-    "maxCount": 1,
-    "id": 30100421,
-    "skillId": 3010042
-  },
-  "20010431": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.06*(1+0.025*n1)+0.06",
-    "stateId": 20011,
-    "id": 20010431,
-    "skillId": 2001043
-  },
-  "30010431": {
-    "effectTiming": 1,
-    "stateId": 30013,
-    "targetExtend": "1",
-    "maxCount": 1,
-    "effectValueExpr": "0.03*(1+0.025*n1)+0.03",
-    "target": 13,
-    "targetParam": 99,
-    "id": 30010431,
-    "skillId": 3001043
-  },
-  "30010201": {
-    "stateId": 30011,
-    "target": 6,
-    "persistTime": 5000,
-    "effectValueExpr": "0.1*(1+0.025*n1)",
-    "targetExtend": "340",
-    "targetParam": 99,
-    "id": 30010201,
-    "skillId": 3001020
-  },
-  "20030301": {
-    "persistTime": 3000,
-    "effectValueExpr": "0.15*(1+0.025*n1)",
-    "stateId": 20031,
-    "id": 20030301,
-    "skillId": 2003030
-  },
-  "30080411": {
-    "effectTiming": 1,
-    "persistTime": 7000,
-    "stateId": 30082,
-    "targetExtend": "1",
-    "maxCount": 1,
-    "skillId": 3008041,
-    "effectValuePctExpr": "0.05*(1+0.05*n1)",
-    "target": 13,
-    "targetParam": 99,
-    "id": 30080411,
-    "extend": "30082_0.5"
-  },
-  "20080411": {
-    "target": 4,
     "effectTiming": 7,
-    "persistTime": 0,
-    "effectValuePctExpr": "2*(1+0.05*n1)*1.25",
-    "effectType": 3,
-    "maxCount": 1,
-    "id": 20080411,
-    "skillId": 2008041
-  },
-  "30030301": {
-    "stateId": 30032,
-    "targetSide": 0,
-    "persistTime": 3000,
-    "effectValuePctExpr": "-0.15*(1+0.025*n1)",
-    "target": 18,
-    "targetParam": 0,
-    "id": 30030301,
-    "skillId": 3003030
-  },
-  "9153021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9153021,
-    "stateId": 2001,
-    "skillId": 915302
-  },
-  "20110201": {
-    "attackType": 1,
-    "stateId": 1002,
-    "triggerCd": 1000,
-    "targetSide": 0,
-    "id": 20110201,
-    "effectValuePctExpr": "0.15",
-    "target": 18,
-    "targetParam": 0,
-    "persistTime": 7000,
-    "skillId": 2011020
-  },
-  "30100321": {
-    "persistTime": 4000,
-    "effectValuePctExpr": "0.6*(1+0.025*n1)+0.12",
-    "stateId": 30105,
-    "id": 30100321,
-    "skillId": 3010032
-  },
-  "30130331": {
-    "effectType": 3,
-    "persistTime": 0,
-    "effectValuePctExpr": "0.6*(1+0.05*n1)*3",
-    "target": 4,
-    "id": 30130331,
-    "skillId": 3013033
-  },
-  "30100201": {
-    "stateId": 30102,
-    "persistTime": 5000,
-    "effectValueExpr": "0.05*(1+0.025*n1)",
-    "target": 2,
-    "targetParam": 99,
-    "id": 30100201,
-    "skillId": 3010020
+    "id": 9100031,
+    "persistTime": 99999999,
+    "extend": "999006_5_0.3_0.3_1_2783_700_450"
   },
   "30070331": {
-    "stateId": 30073,
-    "persistTime": 4000,
+    "skillId": 3007033,
     "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
     "target": 4,
     "targetParam": 2,
     "id": 30070331,
-    "skillId": 3007033
+    "stateId": 30073,
+    "persistTime": 4000
   },
-  "41000031": {
+  "41000051": {
+    "skillId": 4100005,
+    "effectValueExpr": "0.15",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 41000051,
     "stateId": 400001,
-    "targetSide": 0,
-    "persistTime": 5000,
-    "effectValueExpr": "0.12",
-    "target": 18,
-    "targetParam": 0,
-    "id": 41000031,
-    "skillId": 4100003
+    "persistTime": 5000
   },
-  "41000021": {
+  "40000051": {
+    "skillId": 4000005,
+    "effectValueExpr": "0.25",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 40000051,
     "stateId": 400001,
-    "targetSide": 0,
-    "persistTime": 5000,
-    "effectValueExpr": "0.12",
-    "target": 18,
-    "targetParam": 0,
-    "id": 41000021,
-    "skillId": 4100002
+    "persistTime": 5000
   },
-  "30090231": {
-    "triggerRateExpr": "0.35",
-    "targetSide": 0,
-    "persistTime": 5000,
-    "id": 30090231,
+  "9153031": {
+    "skillId": 915303,
+    "effectTiming": 16,
+    "id": 9153031,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "9100271": {
+    "skillId": 910027,
+    "triggerCd": 9999999,
+    "effectType": 10,
+    "effectTiming": 1,
+    "id": 9100271,
+    "persistTime": 99999999,
+    "extend": "999007_3_0.2_0.2_1_2783_700_450"
+  },
+  "20050421": {
+    "skillId": 2005042,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
+    "effectTiming": 1,
+    "id": 20050421,
+    "maxCount": 1,
+    "stateId": 20051
+  },
+  "30050421": {
+    "skillId": 3005042,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
+    "effectTiming": 1,
+    "id": 30050421,
+    "maxCount": 1,
+    "stateId": 30053
+  },
+  "30120431": {
+    "skillId": 3012043,
+    "effectValueExpr": "0.15*(1+0.025*n1)",
+    "effectTiming": 1,
+    "id": 30120431,
+    "maxCount": 1,
+    "stateId": 30123
+  },
+  "9153022": {
+    "skillId": 915302,
     "target": 18,
+    "targetSide": 0,
     "targetParam": 0,
+    "id": 9153022,
     "stateId": 1001,
-    "skillId": 3009023
+    "persistTime": 3000
   },
-  "30090221": {
-    "triggerRateExpr": "0.35",
-    "targetSide": 0,
-    "persistTime": 5000,
-    "id": 30090221,
-    "target": 18,
-    "targetParam": 0,
-    "stateId": 1001,
-    "skillId": 3009022
+  "30020401": {
+    "skillId": 3002040,
+    "effectValueExpr": "0.08*(1+0.025*n1)",
+    "effectTiming": 1,
+    "id": 30020401,
+    "maxCount": 1,
+    "stateId": 30022
   },
-  "30070211": {
-    "stateId": 30071,
-    "targetSide": 0,
-    "persistTime": 5000,
-    "effectValuePctExpr": "0.15*(1+0.025*n1)",
-    "target": 18,
-    "targetParam": 0,
-    "id": 30070211,
-    "skillId": 3007021
+  "20020401": {
+    "skillId": 2002040,
+    "effectValueExpr": "0.08*(1+0.025*n1)",
+    "target": 14,
+    "effectTiming": 1,
+    "targetParam": 3,
+    "id": 20020401,
+    "targetExtend": "3",
+    "stateId": 20022
   },
-  "20070211": {
-    "stateId": 20071,
-    "target": 6,
-    "persistTime": 4000,
-    "effectValueExpr": "0.15*(1+0.025*n1)+0.03",
-    "targetExtend": "340",
+  "9153021": {
+    "skillId": 915302,
+    "effectTiming": 16,
+    "id": 9153021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "9152041": {
+    "skillId": 915204,
+    "effectTiming": 16,
+    "id": 9152041,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "9152021": {
+    "skillId": 915202,
+    "effectTiming": 16,
+    "id": 9152021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "30150401": {
+    "stateId": 30152,
+    "effectValueExpr": "0.06*(1+0.025*n1)",
+    "id": 30150401,
+    "skillId": 3015040,
+    "target": 16,
+    "effectTiming": 1,
     "targetParam": 99,
-    "id": 20070211,
-    "skillId": 2007021
+    "maxCount": 1,
+    "targetExtend": "2"
   },
-  "30110311": {
+  "30120213": {
+    "skillId": 3012021,
+    "effectValueExpr": "0.15*(1+0.025*n1)",
+    "target": 9,
+    "id": 30120213,
+    "stateId": 30121,
+    "persistTime": 5000
+  },
+  "30110421": {
+    "skillId": 3011042,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
+    "effectTiming": 1,
+    "id": 30110421,
+    "maxCount": 1,
+    "stateId": 30111
+  },
+  "20110421": {
+    "effectValueExpr": "-0.15*(1+0.025*n1)-0.075",
+    "effectType": 2,
+    "id": 20110421,
+    "attrType": 15,
+    "conditionValue": "7",
+    "skillId": 2011042,
+    "target": 2,
+    "effectTiming": 3,
     "targetSide": 0,
-    "effectType": 11,
-    "persistTime": 3000,
-    "id": 30110311,
-    "target": 18,
-    "targetParam": 0,
-    "skillId": 3011031,
-    "extend": "999003_1_1_1_1"
+    "persistTime": 0,
+    "targetParam": 99,
+    "condition": 1
   },
-  "20110311": {
-    "attackType": 1,
+  "30130231": {
+    "skillId": 3013023,
+    "target": 15,
+    "effectValuePctExpr": "0.25*(1+0.025*n1)+0.05",
+    "targetParam": 3,
+    "id": 30130231,
+    "stateId": 30132,
+    "persistTime": 7000
+  },
+  "40000042": {
+    "effectValueExpr": "0.2",
+    "effectType": 2,
+    "id": 40000042,
+    "attrType": 22,
+    "skillId": 4000004,
+    "effectTiming": 3,
+    "persistTime": 0,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "9143032": {
     "stateId": 1002,
     "triggerCd": 1000,
-    "targetSide": 0,
-    "id": 20110311,
-    "effectValuePctExpr": "0.3",
+    "effectValuePctExpr": "1",
+    "attackType": 1,
+    "id": 9143032,
+    "skillId": 914303,
     "target": 18,
+    "persistTime": 5000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "30050401": {
+    "skillId": 3005040,
+    "effectValueExpr": "0.08*(1+0.025*n1)",
+    "effectTiming": 1,
+    "id": 30050401,
+    "maxCount": 1,
+    "stateId": 30053
+  },
+  "9143031": {
+    "skillId": 914303,
+    "effectTiming": 16,
+    "id": 9143031,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "9100291": {
+    "skillId": 910029,
+    "effectType": 10,
+    "effectTiming": 7,
+    "id": 9100291,
+    "persistTime": 99999999,
+    "extend": "999007_2_0.2_0.2_1_1750_-400_450"
+  },
+  "20050401": {
+    "skillId": 2005040,
+    "effectValueExpr": "0.08*(1+0.025*n1)",
+    "effectTiming": 1,
+    "id": 20050401,
+    "maxCount": 1,
+    "stateId": 20051
+  },
+  "20080421": {
+    "skillId": 2008042,
+    "target": 4,
+    "effectType": 3,
+    "effectTiming": 7,
+    "persistTime": 0,
+    "id": 20080421,
+    "maxCount": 1,
+    "effectValuePctExpr": "2*(1+0.05*n1)*1.6"
+  },
+  "9142021": {
+    "skillId": 914202,
+    "effectTiming": 16,
+    "id": 9142021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "9133032": {
+    "skillId": 913303,
+    "target": 18,
+    "targetSide": 0,
     "targetParam": 0,
+    "id": 9133032,
+    "stateId": 1001,
+    "persistTime": 1500
+  },
+  "9063033": {
+    "effectType": 10,
+    "id": 9063033,
+    "conditionValue": "0.5",
+    "actionIndex": 3,
+    "skillId": 906303,
+    "effectTiming": 1,
+    "extend": "990603_3_0_0.03_1",
+    "persistTime": 0,
+    "maxCount": 1,
+    "condition": 3
+  },
+  "30140233": {
+    "skillId": 3014023,
+    "effectValueExpr": "-0.15",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 30140233,
+    "stateId": 30144,
+    "persistTime": 5000
+  },
+  "9072041": {
+    "skillId": 907204,
+    "effectTiming": 16,
+    "id": 9072041,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "9133031": {
+    "skillId": 913303,
+    "effectTiming": 16,
+    "id": 9133031,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "9133022": {
+    "skillId": 913302,
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 9133022,
+    "stateId": 1001,
+    "persistTime": 3000
+  },
+  "20050431": {
+    "skillId": 2005043,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
+    "effectTiming": 1,
+    "id": 20050431,
+    "maxCount": 1,
+    "stateId": 20051
+  },
+  "30050331": {
+    "stateId": 30052,
+    "triggerCd": 1000,
+    "effectValuePctExpr": "1*(1+0.05*n1)",
+    "attackType": 2,
+    "id": 30050331,
+    "skillId": 3005033,
+    "target": 18,
+    "persistTime": 4000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "9100061": {
+    "skillId": 910006,
+    "effectType": 10,
+    "effectTiming": 7,
+    "id": 9100061,
+    "persistTime": 99999999,
+    "extend": "999009_3_0.3_0.3_1_2783_700_450"
+  },
+  "9132041": {
+    "skillId": 913204,
+    "effectTiming": 16,
+    "id": 9132041,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "30140201": {
+    "skillId": 3014020,
+    "target": 15,
+    "targetParam": 3,
+    "id": 30140201,
+    "triggerRateExpr": "0.7",
+    "stateId": 2001
+  },
+  "9132021": {
+    "skillId": 913202,
+    "effectTiming": 16,
+    "id": 9132021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "30070221": {
+    "skillId": 3007022,
+    "targetSide": 0,
+    "target": 18,
+    "effectValuePctExpr": "0.15*(1+0.025*n1)+0.045",
+    "targetParam": 0,
+    "id": 30070221,
+    "stateId": 30071,
+    "persistTime": 5000
+  },
+  "20070221": {
+    "skillId": 2007022,
+    "effectValueExpr": "0.15*(1+0.025*n1)+0.03",
+    "target": 6,
+    "targetParam": 99,
+    "targetExtend": "340",
+    "id": 20070221,
+    "stateId": 20071,
+    "persistTime": 5000
+  },
+  "9123032": {
+    "skillId": 912303,
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 9123032,
+    "stateId": 1001,
+    "persistTime": 3000
+  },
+  "9123031": {
+    "skillId": 912303,
+    "effectTiming": 16,
+    "id": 9123031,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "9012041": {
+    "skillId": 901204,
+    "effectTiming": 16,
+    "id": 9012041,
+    "stateId": 2001,
+    "persistTime": 2000
+  },
+  "9033045": {
+    "targetExtend": "750_350",
+    "effectType": 7,
+    "effectValuePctExpr": "2",
+    "attackType": 1,
+    "id": 9033045,
+    "actionIndex": 5,
+    "target": 5,
+    "persistTime": 0,
+    "targetSide": 0,
+    "targetParam": 99
+  },
+  "30090421": {
+    "skillId": 3009042,
+    "effectTiming": 1,
+    "stateId": 30093,
+    "id": 30090421,
+    "maxCount": 1,
+    "effectValuePctExpr": "0.08*(1+0.025*n1)+0.04"
+  },
+  "30050311": {
+    "stateId": 30052,
+    "triggerCd": 1000,
+    "effectValuePctExpr": "1*(1+0.05*n1)",
+    "attackType": 2,
+    "id": 30050311,
+    "skillId": 3005031,
+    "target": 18,
+    "persistTime": 4000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "9122041": {
+    "skillId": 912204,
+    "effectTiming": 16,
+    "id": 9122041,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "20090421": {
+    "skillId": 2009042,
+    "effectValueExpr": "0.12*(1+0.025*n1)+0.06",
+    "target": 14,
+    "effectTiming": 1,
+    "targetParam": 2,
+    "id": 20090421,
+    "targetExtend": "1",
+    "stateId": 20131
+  },
+  "9122021": {
+    "skillId": 912202,
+    "effectTiming": 16,
+    "id": 9122021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "9042041": {
+    "skillId": 904204,
+    "effectTiming": 16,
+    "id": 9042041,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "30150221": {
+    "effectValueExpr": "-0.2*(1+0.025*n1)",
+    "effectType": 2,
+    "id": 30150221,
+    "attrType": 15,
+    "conditionValue": "4",
+    "skillId": 3015022,
+    "target": 18,
+    "effectTiming": 3,
+    "targetSide": 0,
+    "persistTime": 0,
+    "targetParam": 0,
+    "condition": 1
+  },
+  "30060401": {
+    "skillId": 3006040,
+    "effectValueExpr": "0.08*(1+0.025*n1)",
+    "effectTiming": 1,
+    "id": 30060401,
+    "maxCount": 1,
+    "stateId": 30062
+  },
+  "30090431": {
+    "skillId": 3009043,
+    "effectTiming": 1,
+    "stateId": 30093,
+    "id": 30090431,
+    "maxCount": 1,
+    "effectValuePctExpr": "0.08*(1+0.025*n1)+0.08"
+  },
+  "30130411": {
+    "stateId": 30133,
+    "targetExtend": "1",
+    "effectValuePctExpr": "0.06*(1+0.025*n1)+0.012",
+    "id": 30130411,
+    "skillId": 3013041,
+    "target": 16,
+    "effectTiming": 1,
+    "maxCount": 1,
+    "targetParam": 99
+  },
+  "20060421": {
+    "skillId": 2006042,
+    "effectTiming": 1,
+    "stateId": 20061,
+    "id": 20060421,
+    "maxCount": 1,
+    "effectValuePctExpr": "0.08*(1+0.025*n1)+0.04"
+  },
+  "30010211": {
+    "skillId": 3001021,
+    "effectValueExpr": "0.1*(1+0.025*n1)+0.03",
+    "target": 6,
+    "targetParam": 99,
+    "targetExtend": "340",
+    "id": 30010211,
+    "stateId": 30011,
+    "persistTime": 5000
+  },
+  "9072021": {
+    "skillId": 907202,
+    "effectTiming": 16,
+    "id": 9072021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "30120232": {
+    "skillId": 3012023,
+    "effectValueExpr": "0.15*(1+0.025*n1)",
+    "target": 2,
+    "targetParam": 99,
+    "id": 30120232,
+    "stateId": 30121,
+    "persistTime": 5000
+  },
+  "30030301": {
+    "skillId": 3003030,
+    "targetSide": 0,
+    "target": 18,
+    "effectValuePctExpr": "-0.15*(1+0.025*n1)",
+    "targetParam": 0,
+    "id": 30030301,
+    "stateId": 30032,
+    "persistTime": 3000
+  },
+  "20030301": {
+    "skillId": 2003030,
+    "effectValueExpr": "0.15*(1+0.025*n1)",
+    "id": 20030301,
+    "stateId": 20031,
+    "persistTime": 3000
+  },
+  "30010301": {
+    "skillId": 3001030,
+    "effectValuePctExpr": "0.05*(1+0.05*n1)",
+    "stateId": 30012,
+    "id": 30010301,
     "persistTime": 3000,
-    "skillId": 2011031
+    "extend": "30012_0.5"
+  },
+  "41000052": {
+    "effectValueExpr": "0.2",
+    "effectType": 2,
+    "id": 41000052,
+    "attrType": 22,
+    "skillId": 4100005,
+    "effectTiming": 3,
+    "persistTime": 0,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "9100321": {
+    "skillId": 910032,
+    "effectType": 10,
+    "effectTiming": 7,
+    "id": 9100321,
+    "persistTime": 99999999,
+    "extend": "999007_3_0.2_0.2_1_2783_700_450"
+  },
+  "30110401": {
+    "skillId": 3011040,
+    "effectValueExpr": "0.08*(1+0.025*n1)",
+    "effectTiming": 1,
+    "id": 30110401,
+    "maxCount": 1,
+    "stateId": 30111
+  },
+  "9103021": {
+    "skillId": 910302,
+    "effectTiming": 16,
+    "id": 9103021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "9102041": {
+    "skillId": 910204,
+    "effectTiming": 16,
+    "id": 9102041,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "9102021": {
+    "skillId": 910202,
+    "effectTiming": 16,
+    "id": 9102021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "20100321": {
+    "skillId": 2010032,
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 20100321,
+    "stateId": 1001,
+    "persistTime": 1000
+  },
+  "20060401": {
+    "skillId": 2006040,
+    "effectTiming": 1,
+    "stateId": 20061,
+    "id": 20060401,
+    "maxCount": 1,
+    "effectValuePctExpr": "0.08*(1+0.025*n1)"
+  },
+  "30120202": {
+    "skillId": 3012020,
+    "effectValueExpr": "0.15*(1+0.025*n1)",
+    "id": 30120202,
+    "stateId": 30121,
+    "persistTime": 5000
+  },
+  "30010201": {
+    "skillId": 3001020,
+    "effectValueExpr": "0.1*(1+0.025*n1)",
+    "target": 6,
+    "targetParam": 99,
+    "targetExtend": "340",
+    "id": 30010201,
+    "stateId": 30011,
+    "persistTime": 5000
+  },
+  "9100151": {
+    "skillId": 910015,
+    "persistTime": 99999999,
+    "effectType": 10,
+    "effectTiming": 7,
+    "extend": "999008_5_0.3_0.3_1_2783_700_450",
+    "id": 9100151,
+    "conditionValue": "50",
+    "condition": 3
+  },
+  "9100331": {
+    "skillId": 910033,
+    "effectType": 10,
+    "effectTiming": 7,
+    "id": 9100331,
+    "persistTime": 99999999,
+    "extend": "999007_3_0.2_0.2_1_2783_700_450"
+  },
+  "20070421": {
+    "skillId": 2007042,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
+    "effectTiming": 1,
+    "id": 20070421,
+    "stateId": 20072
+  },
+  "30070421": {
+    "stateId": 30074,
+    "targetExtend": "3",
+    "effectValuePctExpr": "0.06*(1+0.025*n1)+0.03",
+    "id": 30070421,
+    "skillId": 3007042,
+    "target": 16,
+    "effectTiming": 1,
+    "maxCount": 1,
+    "targetParam": 99
+  },
+  "9112041": {
+    "skillId": 911204,
+    "effectTiming": 16,
+    "id": 9112041,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "20120211": {
+    "skillId": 2012021,
+    "effectValuePctExpr": "0.075",
+    "targetSide": 0,
+    "id": 20120211,
+    "stateId": 20122,
+    "persistTime": 7000
+  },
+  "30110431": {
+    "skillId": 3011043,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
+    "effectTiming": 1,
+    "id": 30110431,
+    "maxCount": 1,
+    "stateId": 30111
+  },
+  "20110431": {
+    "effectValueExpr": "-0.15*(1+0.025*n1)-0.15",
+    "effectType": 2,
+    "id": 20110431,
+    "attrType": 15,
+    "conditionValue": "7",
+    "skillId": 2011043,
+    "target": 2,
+    "effectTiming": 3,
+    "targetSide": 0,
+    "persistTime": 0,
+    "targetParam": 99,
+    "condition": 1
+  },
+  "30120211": {
+    "skillId": 3012021,
+    "effectType": 3,
+    "effectValuePctExpr": "1.5",
+    "id": 30120211,
+    "persistTime": 0
+  },
+  "9142041": {
+    "skillId": 914204,
+    "effectTiming": 16,
+    "id": 9142041,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "30150432": {
+    "stateId": 30151,
+    "targetExtend": "2",
+    "effectValuePctExpr": "0.03",
+    "id": 30150432,
+    "skillId": 3015043,
+    "target": 16,
+    "effectTiming": 1,
+    "maxCount": 1,
+    "targetParam": 99
+  },
+  "9100301": {
+    "skillId": 910030,
+    "effectType": 10,
+    "effectTiming": 7,
+    "id": 9100301,
+    "persistTime": 99999999,
+    "extend": "999007_2_0.2_0.2_1_2783_700_450"
+  },
+  "20030331": {
+    "skillId": 2003033,
+    "effectValueExpr": "0.15*(1+0.025*n1)+0.15",
+    "id": 20030331,
+    "stateId": 20031,
+    "persistTime": 3000
+  },
+  "9053061": {
+    "skillId": 905306,
+    "effectType": 102,
+    "effectTiming": 7,
+    "target": 101,
+    "id": 9053061,
+    "persistTime": 0,
+    "extend": "90531"
+  },
+  "30130331": {
+    "skillId": 3013033,
+    "effectType": 3,
+    "effectValuePctExpr": "0.6*(1+0.05*n1)*3",
+    "id": 30130331,
+    "target": 4,
+    "persistTime": 0
+  },
+  "30010421": {
+    "stateId": 30013,
+    "effectValueExpr": "0.03*(1+0.025*n1)+0.015",
+    "id": 30010421,
+    "skillId": 3001042,
+    "target": 13,
+    "effectTiming": 1,
+    "targetParam": 99,
+    "maxCount": 1,
+    "targetExtend": "1"
+  },
+  "9100251": {
+    "skillId": 910025,
+    "effectType": 10,
+    "effectTiming": 7,
+    "id": 9100251,
+    "persistTime": 99999999,
+    "extend": "999010_1_1.5_2_1_2783_700_10"
+  },
+  "9100241": {
+    "skillId": 910024,
+    "persistTime": 99999999,
+    "effectType": 10,
+    "effectTiming": 7,
+    "extend": "999009_4_0.25_0.1_1_2783_700_450",
+    "id": 9100241,
+    "conditionValue": "30",
+    "condition": 3
+  },
+  "20010421": {
+    "skillId": 2001042,
+    "effectValueExpr": "0.06*(1+0.025*n1)+0.03",
+    "effectTiming": 1,
+    "id": 20010421,
+    "stateId": 20011
+  },
+  "30010321": {
+    "skillId": 3001032,
+    "effectValuePctExpr": "0.05*(1+0.05*n1)*1.5",
+    "stateId": 30012,
+    "id": 30010321,
+    "persistTime": 3000,
+    "extend": "30012_0.5"
+  },
+  "9100231": {
+    "skillId": 910023,
+    "persistTime": 99999999,
+    "effectType": 10,
+    "effectTiming": 7,
+    "extend": "999008_4_0.25_0.1_1_2783_700_450",
+    "id": 9100231,
+    "conditionValue": "30",
+    "condition": 3
+  },
+  "9100221": {
+    "skillId": 910022,
+    "persistTime": 99999999,
+    "effectType": 10,
+    "effectTiming": 7,
+    "extend": "999007_4_0.25_0.1_1_2783_700_450",
+    "id": 9100221,
+    "conditionValue": "30",
+    "condition": 3
+  },
+  "30150211": {
+    "effectValueExpr": "-0.2*(1+0.025*n1)",
+    "effectType": 2,
+    "id": 30150211,
+    "attrType": 15,
+    "conditionValue": "4",
+    "skillId": 3015021,
+    "target": 18,
+    "effectTiming": 3,
+    "targetSide": 0,
+    "persistTime": 0,
+    "targetParam": 0,
+    "condition": 1
+  },
+  "9100211": {
+    "skillId": 910021,
+    "persistTime": 99999999,
+    "effectType": 10,
+    "effectTiming": 7,
+    "extend": "999006_4_0.25_0.1_1_2783_700_450",
+    "id": 9100211,
+    "conditionValue": "30",
+    "condition": 3
+  },
+  "9100201": {
+    "skillId": 910020,
+    "persistTime": 99999999,
+    "effectType": 10,
+    "effectTiming": 7,
+    "extend": "999009_4_0.25_0.1_1_2783_700_450",
+    "id": 9100201,
+    "conditionValue": "60",
+    "condition": 3
+  },
+  "30030431": {
+    "skillId": 3003043,
+    "effectValueExpr": "0.08+0.003*n1+0.15",
+    "effectTiming": 1,
+    "id": 30030431,
+    "maxCount": 1,
+    "stateId": 30033
+  },
+  "9153101": {
+    "skillId": 915310,
+    "effectType": 102,
+    "effectTiming": 7,
+    "target": 101,
+    "id": 9153101,
+    "persistTime": 0,
+    "extend": "3003"
+  },
+  "9012021": {
+    "skillId": 901202,
+    "persistTime": 2000,
+    "stateId": 2001,
+    "effectTiming": 16
+  },
+  "20030431": {
+    "skillId": 2003043,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
+    "effectTiming": 1,
+    "id": 20030431,
+    "stateId": 20032
+  },
+  "20090401": {
+    "skillId": 2009040,
+    "effectValueExpr": "0.12*(1+0.025*n1)",
+    "target": 14,
+    "effectTiming": 1,
+    "targetParam": 2,
+    "id": 20090401,
+    "targetExtend": "1",
+    "stateId": 20131
+  },
+  "30090201": {
+    "skillId": 3009020,
+    "stateId": 1001,
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 30090201,
+    "triggerRateExpr": "0.35",
+    "persistTime": 5000
+  },
+  "9100181": {
+    "skillId": 910018,
+    "persistTime": 99999999,
+    "effectType": 10,
+    "effectTiming": 7,
+    "extend": "999007_4_0.25_0.1_1_2783_700_450",
+    "id": 9100181,
+    "conditionValue": "60",
+    "condition": 3
+  },
+  "30090401": {
+    "skillId": 3009040,
+    "effectTiming": 1,
+    "stateId": 30093,
+    "id": 30090401,
+    "maxCount": 1,
+    "effectValuePctExpr": "0.08*(1+0.025*n1)"
+  },
+  "301103211": {
+    "stateId": 30161,
+    "effectValueExpr": "-0.2",
+    "id": 301103211,
+    "skillId": 30110321,
+    "target": 18,
+    "effectTiming": 3,
+    "persistTime": 1000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "30090221": {
+    "skillId": 3009022,
+    "stateId": 1001,
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 30090221,
+    "triggerRateExpr": "0.35",
+    "persistTime": 5000
+  },
+  "9100101": {
+    "skillId": 910010,
+    "persistTime": 99999999,
+    "effectType": 10,
+    "effectTiming": 7,
+    "extend": "999007_3_0.3_0.3_1_2783_700_450",
+    "id": 9100101,
+    "conditionValue": "50",
+    "condition": 3
+  },
+  "9100081": {
+    "skillId": 910008,
+    "effectType": 10,
+    "effectTiming": 7,
+    "id": 9100081,
+    "persistTime": 99999999,
+    "extend": "999009_5_0.3_0.3_1_2783_700_450"
+  },
+  "301103111": {
+    "stateId": 30161,
+    "effectValueExpr": "-0.2",
+    "id": 301103111,
+    "skillId": 30110311,
+    "target": 18,
+    "effectTiming": 3,
+    "persistTime": 1000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "9100071": {
+    "skillId": 910007,
+    "effectType": 10,
+    "effectTiming": 7,
+    "id": 9100071,
+    "persistTime": 99999999,
+    "extend": "999008_5_0.3_0.3_1_2783_700_450"
+  },
+  "20070431": {
+    "skillId": 2007043,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
+    "effectTiming": 1,
+    "id": 20070431,
+    "stateId": 20072
+  },
+  "30070431": {
+    "stateId": 30074,
+    "targetExtend": "3",
+    "effectValuePctExpr": "0.06*(1+0.025*n1)+0.06",
+    "id": 30070431,
+    "skillId": 3007043,
+    "target": 16,
+    "effectTiming": 1,
+    "maxCount": 1,
+    "targetParam": 99
+  },
+  "30090231": {
+    "skillId": 3009023,
+    "stateId": 1001,
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 30090231,
+    "triggerRateExpr": "0.35",
+    "persistTime": 5000
+  },
+  "30050231": {
+    "stateId": 30051,
+    "triggerCd": 1000,
+    "effectValuePctExpr": "1*(1+0.05*n1)",
+    "attackType": 2,
+    "id": 30050231,
+    "skillId": 3005023,
+    "target": 18,
+    "effectTiming": 15,
+    "persistTime": 5000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "20050231": {
+    "skillId": 2005023,
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 20050231,
+    "stateId": 1001,
+    "persistTime": 1500
+  },
+  "30020331": {
+    "skillId": 3002033,
+    "effectValuePctExpr": "0.12",
+    "id": 30020331,
+    "stateId": 30021,
+    "persistTime": 3000
+  },
+  "30100421": {
+    "skillId": 3010042,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.024",
+    "effectTiming": 1,
+    "id": 30100421,
+    "maxCount": 1,
+    "stateId": 30104
+  },
+  "9153061": {
+    "skillId": 915306,
+    "target": 101,
+    "effectTiming": 101,
+    "id": 9153061,
+    "stateId": 3002
+  },
+  "9100011": {
+    "skillId": 910001,
+    "effectType": 10,
+    "effectTiming": 7,
+    "id": 9100011,
+    "persistTime": 99999999,
+    "extend": "999006_3_0.3_0.3_1_2783_700_450"
+  },
+  "20100421": {
+    "stateId": 20101,
+    "effectValuePctExpr": "0.03*(1+0.05*n1)*1.25",
+    "id": 20100421,
+    "conditionValue": "0.4",
+    "skillId": 2010042,
+    "effectTiming": 4,
+    "extend": "20101_0.5",
+    "persistTime": 7000,
+    "maxCount": 1,
+    "condition": 3
+  },
+  "30120401": {
+    "skillId": 3012040,
+    "effectValueExpr": "0.15*(1+0.025*n1)",
+    "effectTiming": 1,
+    "id": 30120401,
+    "maxCount": 1,
+    "stateId": 30123
+  },
+  "30100211": {
+    "skillId": 3010021,
+    "effectValueExpr": "0.05*(1+0.025*n1)+0.02",
+    "target": 2,
+    "targetParam": 99,
+    "id": 30100211,
+    "stateId": 30102,
+    "persistTime": 5000
+  },
+  "9092041": {
+    "skillId": 909204,
+    "effectTiming": 16,
+    "id": 9092041,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "9113031": {
+    "skillId": 911303,
+    "effectTiming": 16,
+    "id": 9113031,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "30150201": {
+    "effectValueExpr": "-0.2*(1+0.025*n1)",
+    "effectType": 2,
+    "id": 30150201,
+    "attrType": 15,
+    "conditionValue": "4",
+    "skillId": 3015020,
+    "target": 18,
+    "effectTiming": 3,
+    "targetSide": 0,
+    "persistTime": 0,
+    "targetParam": 0,
+    "condition": 1
+  },
+  "30080311": {
+    "skillId": 3008031,
+    "effectType": 3,
+    "effectValuePctExpr": "0.4*(1+0.05*n1)*1.6",
+    "id": 30080311,
+    "attrType": 3,
+    "persistTime": 0
+  },
+  "9083032": {
+    "stateId": 4001,
+    "id": 9083032,
+    "conditionValue": "0.5",
+    "skillId": 908303,
+    "target": 2,
+    "effectTiming": 1,
+    "targetSide": 0,
+    "persistTime": 1000,
+    "targetParam": 99,
+    "condition": 3
+  },
+  "9083031": {
+    "effectType": 10,
+    "id": 9083031,
+    "conditionValue": "0.5",
+    "skillId": 908303,
+    "effectTiming": 1,
+    "extend": "990801_3_0_0_1",
+    "persistTime": 0,
+    "condition": 3,
+    "attackTypeLimit": 0
+  },
+  "30150121": {
+    "skillId": 3015012,
+    "effectType": 3,
+    "effectValuePctExpr": "0.5*(1+0.05*n1)",
+    "id": 30150121,
+    "target": 4,
+    "persistTime": 0
+  },
+  "40000061": {
+    "skillId": 4000006,
+    "effectValueExpr": "0.25",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 40000061,
+    "stateId": 400001,
+    "persistTime": 7000
+  },
+  "20040211": {
+    "skillId": 2004021,
+    "effectType": 10,
+    "extend": "999001_1_1+0.05*n1+0.4_0.15_1",
+    "id": 20040211,
+    "persistTime": 10000
+  },
+  "30040211": {
+    "skillId": 3004021,
+    "effectValueExpr": "0.08*(1+0.025*n1)",
+    "effectType": 2,
+    "effectTiming": 16,
+    "id": 30040211,
+    "attrType": 5,
+    "persistTime": 0
+  },
+  "20120421": {
+    "skillId": 2012042,
+    "effectValueExpr": "0.1*(1+0.025*n1)+0.05",
+    "effectTiming": 1,
+    "targetSide": 0,
+    "id": 20120421,
+    "maxCount": 1,
+    "stateId": 20121
+  },
+  "30050201": {
+    "stateId": 30051,
+    "triggerCd": 1000,
+    "effectValuePctExpr": "1*(1+0.05*n1)",
+    "attackType": 2,
+    "id": 30050201,
+    "skillId": 3005020,
+    "target": 18,
+    "effectTiming": 15,
+    "persistTime": 5000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "30040231": {
+    "skillId": 3004023,
+    "effectValueExpr": "0.08*(1+0.025*n1)",
+    "effectType": 2,
+    "effectTiming": 16,
+    "id": 30040231,
+    "attrType": 5,
+    "persistTime": 0
+  },
+  "9082042": {
+    "skillId": 908204,
+    "id": 9082042,
+    "effectType": 10,
+    "extend": "990101_2_0.8_0.2_1"
+  },
+  "9082041": {
+    "skillId": 908204,
+    "effectTiming": 16,
+    "id": 9082041,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "20040231": {
+    "skillId": 2004023,
+    "effectType": 10,
+    "extend": "999001_1_1+0.05*n1+2_0.15_1",
+    "id": 20040231,
+    "persistTime": 10000
+  },
+  "30140211": {
+    "skillId": 3014021,
+    "target": 15,
+    "targetParam": 3,
+    "id": 30140211,
+    "triggerRateExpr": "0.7",
+    "stateId": 2001
+  },
+  "9082021": {
+    "skillId": 908202,
+    "effectTiming": 16,
+    "id": 9082021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "30060431": {
+    "skillId": 3006043,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
+    "effectTiming": 1,
+    "id": 30060431,
+    "maxCount": 1,
+    "stateId": 30062
+  },
+  "20060431": {
+    "skillId": 2006043,
+    "effectTiming": 1,
+    "stateId": 20061,
+    "id": 20060431,
+    "maxCount": 1,
+    "effectValuePctExpr": "0.08*(1+0.025*n1)+0.08"
+  },
+  "9073032": {
+    "skillId": 907303,
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 99,
+    "id": 9073032,
+    "stateId": 1003,
+    "persistTime": 3000
+  },
+  "20120401": {
+    "skillId": 2012040,
+    "effectValueExpr": "0.1*(1+0.025*n1)",
+    "effectTiming": 1,
+    "targetSide": 0,
+    "id": 20120401,
+    "maxCount": 1,
+    "stateId": 20121
+  },
+  "20080331": {
+    "skillId": 2008033,
+    "effectValueExpr": "-0.08",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 20080331,
+    "stateId": 20082,
+    "persistTime": 3000
+  },
+  "30080331": {
+    "skillId": 3008033,
+    "effectType": 3,
+    "effectValuePctExpr": "0.4*(1+0.05*n1)*4",
+    "id": 30080331,
+    "attrType": 3,
+    "persistTime": 0
+  },
+  "20080231": {
+    "skillId": 2008023,
+    "effectValueExpr": "0.12*(1+0.04*n1)+0.09",
+    "target": 14,
+    "targetParam": 2,
+    "targetExtend": "2",
+    "id": 20080231,
+    "stateId": 20081,
+    "persistTime": 7000
   },
   "30080231": {
     "skillId": 3008023,
+    "targetParam": 99,
     "target": 2,
-    "persistTime": 5000,
     "effectValuePctExpr": "1.2*(1+0.05*n1)*1.9",
     "stateId": 30081,
-    "targetParam": 99,
     "id": 30080231,
+    "persistTime": 5000,
     "extend": "30081_0.5"
   },
-  "30080301": {
+  "30150311": {
+    "skillId": 3015031,
     "effectType": 3,
+    "effectValuePctExpr": "0.5*(1+0.05*n1)*1.7",
+    "targetParam": 2,
+    "id": 30150311,
+    "target": 4,
+    "persistTime": 0
+  },
+  "9073021": {
+    "skillId": 907302,
+    "effectTiming": 16,
+    "id": 9073021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "9063091": {
+    "skillId": 906309,
+    "effectType": 102,
+    "effectTiming": 7,
+    "target": 101,
+    "id": 9063091,
     "persistTime": 0,
-    "effectValuePctExpr": "0.4*(1+0.05*n1)",
-    "skillId": 3008030,
-    "id": 30080301,
-    "attrType": 3
+    "extend": "3003"
   },
-  "30080311": {
-    "effectType": 3,
+  "9063081": {
+    "skillId": 906308,
+    "effectType": 102,
+    "effectTiming": 7,
+    "target": 101,
+    "id": 9063081,
     "persistTime": 0,
-    "effectValuePctExpr": "0.4*(1+0.05*n1)*1.6",
-    "skillId": 3008031,
-    "id": 30080311,
-    "attrType": 3
+    "extend": "3002"
   },
-  "20080311": {
-    "stateId": 20082,
-    "targetSide": 0,
-    "persistTime": 3000,
-    "effectValueExpr": "-0.08",
-    "target": 18,
-    "targetParam": 0,
-    "id": 20080311,
-    "skillId": 2008031
+  "9032041": {
+    "skillId": 903204,
+    "effectTiming": 16,
+    "id": 9032041,
+    "stateId": 2001,
+    "persistTime": 3500
   },
-  "20110321": {
-    "attackType": 1,
-    "stateId": 1002,
-    "triggerCd": 1000,
-    "targetSide": 0,
-    "id": 20110321,
-    "effectValuePctExpr": "0.3",
-    "target": 18,
-    "targetParam": 0,
-    "persistTime": 3000,
-    "skillId": 2011032
-  },
-  "30020401": {
-    "effectTiming": 1,
+  "20070401": {
+    "skillId": 2007040,
     "effectValueExpr": "0.08*(1+0.025*n1)",
-    "stateId": 30022,
-    "maxCount": 1,
-    "id": 30020401,
-    "skillId": 3002040
-  },
-  "30030421": {
     "effectTiming": 1,
-    "effectValueExpr": "0.08+0.003*n1+0.1",
-    "stateId": 30033,
-    "maxCount": 1,
-    "id": 30030421,
-    "skillId": 3003042
+    "id": 20070401,
+    "stateId": 20072
   },
-  "20030421": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
-    "stateId": 20032,
-    "id": 20030421,
-    "skillId": 2003042
-  },
-  "30130231": {
-    "stateId": 30132,
-    "persistTime": 7000,
-    "effectValuePctExpr": "0.25*(1+0.025*n1)+0.05",
-    "target": 15,
-    "targetParam": 3,
-    "id": 30130231,
-    "skillId": 3013023
-  },
-  "30070411": {
-    "effectTiming": 1,
+  "30070401": {
     "stateId": 30074,
     "targetExtend": "3",
-    "maxCount": 1,
-    "effectValuePctExpr": "0.06*(1+0.025*n1)+0.012",
+    "effectValuePctExpr": "0.06*(1+0.025*n1)",
+    "id": 30070401,
+    "skillId": 3007040,
     "target": 16,
-    "targetParam": 99,
-    "id": 30070411,
-    "skillId": 3007041
+    "effectTiming": 1,
+    "maxCount": 1,
+    "targetParam": 99
   },
-  "9052021": {
+  "30080431": {
+    "stateId": 30082,
+    "targetExtend": "1",
+    "effectValuePctExpr": "0.05*(1+0.05*n1)*1.5",
+    "id": 30080431,
+    "skillId": 3008043,
+    "target": 13,
+    "effectTiming": 1,
+    "targetParam": 99,
+    "persistTime": 7000,
+    "maxCount": 1,
+    "extend": "30082_0.5"
+  },
+  "9063051": {
+    "skillId": 906305,
+    "target": 101,
+    "effectTiming": 101,
+    "id": 9063051,
+    "stateId": 3002
+  },
+  "9063061": {
+    "skillId": 906306,
+    "target": 101,
+    "effectTiming": 101,
+    "id": 9063061,
+    "stateId": 3003
+  },
+  "9033042": {
+    "targetExtend": "750_60",
+    "effectType": 7,
+    "effectValuePctExpr": "2",
+    "attackType": 1,
+    "id": 9033042,
+    "actionIndex": 2,
+    "target": 11,
+    "persistTime": 0,
+    "targetSide": 0,
+    "targetParam": 99
+  },
+  "9063022": {
+    "skillId": 906302,
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 9063022,
+    "stateId": 1001,
+    "persistTime": 2000
+  },
+  "20060411": {
+    "skillId": 2006041,
+    "effectTiming": 1,
+    "stateId": 20061,
+    "id": 20060411,
+    "maxCount": 1,
+    "effectValuePctExpr": "0.08*(1+0.025*n1)+0.016"
+  },
+  "20110401": {
+    "effectValueExpr": "-0.15*(1+0.025*n1)",
+    "effectType": 2,
+    "id": 20110401,
+    "attrType": 15,
+    "conditionValue": "7",
+    "skillId": 2011040,
+    "target": 2,
+    "effectTiming": 3,
+    "targetSide": 0,
+    "persistTime": 0,
+    "targetParam": 99,
+    "condition": 1
+  },
+  "9063021": {
+    "skillId": 906302,
     "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9052021,
+    "id": 9063021,
     "stateId": 2001,
-    "skillId": 905202
+    "persistTime": 3500
+  },
+  "30060411": {
+    "skillId": 3006041,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
+    "effectTiming": 1,
+    "id": 30060411,
+    "maxCount": 1,
+    "stateId": 30062
+  },
+  "20030401": {
+    "skillId": 2003040,
+    "effectValueExpr": "0.08*(1+0.025*n1)",
+    "effectTiming": 1,
+    "id": 20030401,
+    "stateId": 20032
+  },
+  "30030401": {
+    "skillId": 3003040,
+    "effectValueExpr": "0.08+0.003*n1",
+    "effectTiming": 1,
+    "id": 30030401,
+    "maxCount": 1,
+    "stateId": 30033
+  },
+  "9062021": {
+    "skillId": 906202,
+    "effectTiming": 16,
+    "id": 9062021,
+    "stateId": 2001,
+    "persistTime": 3500
   },
   "30070231": {
-    "stateId": 30071,
+    "skillId": 3007023,
     "targetSide": 0,
-    "persistTime": 10000,
-    "effectValuePctExpr": "0.15*(1+0.025*n1)+0.045",
     "target": 18,
+    "effectValuePctExpr": "0.15*(1+0.025*n1)+0.045",
     "targetParam": 0,
     "id": 30070231,
-    "skillId": 3007023
+    "stateId": 30071,
+    "persistTime": 10000
   },
-  "30010421": {
-    "effectTiming": 1,
-    "stateId": 30013,
+  "40000022": {
+    "effectValueExpr": "0.2",
+    "effectType": 2,
+    "id": 40000022,
+    "attrType": 22,
+    "skillId": 4000002,
+    "effectTiming": 3,
+    "persistTime": 0,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "30130431": {
+    "stateId": 30133,
     "targetExtend": "1",
+    "effectValuePctExpr": "0.06*(1+0.025*n1)+0.06",
+    "id": 30130431,
+    "skillId": 3013043,
+    "target": 16,
+    "effectTiming": 1,
     "maxCount": 1,
-    "effectValueExpr": "0.03*(1+0.025*n1)+0.015",
+    "targetParam": 99
+  },
+  "30150431": {
+    "stateId": 30152,
+    "effectValueExpr": "0.06*(1+0.025*n1)+0.03",
+    "id": 30150431,
+    "skillId": 3015043,
+    "target": 16,
+    "effectTiming": 1,
+    "targetParam": 99,
+    "maxCount": 1,
+    "targetExtend": "2"
+  },
+  "9053071": {
+    "skillId": 905307,
+    "effectType": 102,
+    "effectTiming": 7,
+    "target": 101,
+    "id": 9053071,
+    "persistTime": 0,
+    "extend": "90532"
+  },
+  "9053041": {
+    "skillId": 905304,
+    "target": 101,
+    "effectTiming": 101,
+    "id": 9053041,
+    "stateId": 90532,
+    "effectValuePctExpr": "0.2"
+  },
+  "30110331": {
+    "skillId": 3011033,
+    "targetSide": 0,
+    "effectType": 11,
+    "extend": "999005_1_1_1_1",
+    "targetParam": 0,
+    "id": 30110331,
+    "target": 18,
+    "persistTime": 3000
+  },
+  "9053022": {
+    "skillId": 905302,
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 9053022,
+    "stateId": 1001,
+    "persistTime": 3000
+  },
+  "9053021": {
+    "skillId": 905302,
+    "effectTiming": 16,
+    "id": 9053021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "20110321": {
+    "stateId": 1002,
+    "triggerCd": 1000,
+    "effectValuePctExpr": "0.3",
+    "attackType": 1,
+    "id": 20110321,
+    "skillId": 2011032,
+    "target": 18,
+    "persistTime": 3000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "9052041": {
+    "skillId": 905204,
+    "effectTiming": 16,
+    "id": 9052041,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "41000032": {
+    "effectValueExpr": "0.2",
+    "effectType": 2,
+    "id": 41000032,
+    "attrType": 22,
+    "skillId": 4100003,
+    "effectTiming": 3,
+    "persistTime": 0,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "20080201": {
+    "skillId": 2008020,
+    "effectValueExpr": "0.12*(1+0.04*n1)",
+    "target": 14,
+    "targetParam": 2,
+    "targetExtend": "2",
+    "id": 20080201,
+    "stateId": 20081,
+    "persistTime": 5000
+  },
+  "30130401": {
+    "stateId": 30133,
+    "targetExtend": "1",
+    "effectValuePctExpr": "0.06*(1+0.025*n1)",
+    "id": 30130401,
+    "skillId": 3013040,
+    "target": 16,
+    "effectTiming": 1,
+    "maxCount": 1,
+    "targetParam": 99
+  },
+  "30110301": {
+    "skillId": 3011030,
+    "targetSide": 0,
+    "effectType": 11,
+    "extend": "999002_1_1_1_1",
+    "targetParam": 0,
+    "id": 30110301,
+    "target": 18,
+    "persistTime": 3000
+  },
+  "30150301": {
+    "skillId": 3015030,
+    "effectType": 3,
+    "effectValuePctExpr": "0.5*(1+0.05*n1)",
+    "targetParam": 2,
+    "id": 30150301,
+    "target": 4,
+    "persistTime": 0
+  },
+  "30090211": {
+    "skillId": 3009021,
+    "stateId": 1001,
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 30090211,
+    "triggerRateExpr": "0.35",
+    "persistTime": 5000
+  },
+  "40000052": {
+    "effectValueExpr": "0.2",
+    "effectType": 2,
+    "id": 40000052,
+    "attrType": 22,
+    "skillId": 4000005,
+    "effectTiming": 3,
+    "persistTime": 0,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "9123022": {
+    "skillId": 912302,
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 9123022,
+    "stateId": 5001,
+    "persistTime": 5000
+  },
+  "20110301": {
+    "stateId": 1002,
+    "triggerCd": 1000,
+    "effectValuePctExpr": "0.3",
+    "attackType": 1,
+    "id": 20110301,
+    "skillId": 2011030,
+    "target": 18,
+    "persistTime": 3000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "9033043": {
+    "targetExtend": "750_350",
+    "effectType": 7,
+    "effectValuePctExpr": "2",
+    "attackType": 1,
+    "id": 9033043,
+    "actionIndex": 3,
+    "target": 5,
+    "persistTime": 0,
+    "targetSide": 0,
+    "targetParam": 99
+  },
+  "20120221": {
+    "skillId": 2012022,
+    "effectValuePctExpr": "0.075",
+    "targetSide": 0,
+    "id": 20120221,
+    "stateId": 20122,
+    "persistTime": 7000
+  },
+  "20120411": {
+    "skillId": 2012041,
+    "effectValueExpr": "0.1*(1+0.025*n1)+0.02",
+    "effectTiming": 1,
+    "targetSide": 0,
+    "id": 20120411,
+    "maxCount": 1,
+    "stateId": 20121
+  },
+  "30120411": {
+    "skillId": 3012041,
+    "effectValueExpr": "0.15*(1+0.025*n1)",
+    "effectTiming": 1,
+    "id": 30120411,
+    "maxCount": 1,
+    "stateId": 30123
+  },
+  "30070222": {
+    "skillId": 3007022,
+    "effectValueExpr": "0.045",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 30070222,
+    "stateId": 30072,
+    "persistTime": 7000
+  },
+  "9023041": {
+    "skillId": 902304,
+    "effectType": 10,
+    "effectTiming": 7,
+    "persistTime": 0,
+    "id": 9023041,
+    "extend": "990102_1_1_1_1",
+    "attackTypeLimit": 0
+  },
+  "30120422": {
+    "skillId": 3012042,
+    "effectTiming": 1,
+    "stateId": 30124,
+    "id": 30120422,
+    "maxCount": 1,
+    "extend": "4000"
+  },
+  "30040431": {
+    "skillId": 3004043,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
+    "effectTiming": 1,
+    "id": 30040431,
+    "maxCount": 1,
+    "stateId": 30041
+  },
+  "20040431": {
+    "stateId": 20041,
+    "effectValuePctExpr": "0.2*(1+0.025*n1)+0.056",
+    "id": 20040431,
+    "conditionValue": "0.3",
+    "skillId": 2004043,
+    "effectTiming": 4,
+    "persistTime": 6000,
+    "maxCount": 1,
+    "condition": 3
+  },
+  "9043024": {
+    "actionIndex": 1,
+    "effectType": 10,
+    "extend": "990401_1_0_0.05_1",
+    "id": 9043024,
+    "skillId": 904302
+  },
+  "20100401": {
+    "stateId": 20101,
+    "effectValuePctExpr": "0.03*(1+0.05*n1)",
+    "id": 20100401,
+    "conditionValue": "0.4",
+    "skillId": 2010040,
+    "effectTiming": 4,
+    "extend": "20101_0.5",
+    "persistTime": 5000,
+    "maxCount": 1,
+    "condition": 3
+  },
+  "30100401": {
+    "skillId": 3010040,
+    "effectValueExpr": "0.08*(1+0.025*n1)",
+    "effectTiming": 1,
+    "id": 30100401,
+    "maxCount": 1,
+    "stateId": 30104
+  },
+  "9033022": {
+    "targetExtend": "600",
+    "effectType": 7,
+    "effectValuePctExpr": "10",
+    "attackType": 1,
+    "id": 9033022,
+    "actionIndex": 1,
+    "target": 6,
+    "targetSide": 0,
+    "persistTime": 0,
+    "targetParam": 99,
+    "skillId": 903302
+  },
+  "9033031": {
+    "skillId": 903303,
+    "effectTiming": 16,
+    "id": 9033031,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "41000022": {
+    "effectValueExpr": "0.2",
+    "effectType": 2,
+    "id": 41000022,
+    "attrType": 22,
+    "skillId": 4100002,
+    "effectTiming": 3,
+    "persistTime": 0,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "30090301": {
+    "skillId": 3009030,
+    "effectValueExpr": "-0.08*(1+0.025*n1)",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 30090301,
+    "stateId": 30092,
+    "persistTime": 3000
+  },
+  "30100201": {
+    "skillId": 3010020,
+    "effectValueExpr": "0.05*(1+0.025*n1)",
+    "target": 2,
+    "targetParam": 99,
+    "id": 30100201,
+    "stateId": 30102,
+    "persistTime": 5000
+  },
+  "9022041": {
+    "skillId": 902204,
+    "effectTiming": 16,
+    "id": 9022041,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "9013031": {
+    "skillId": 901303,
+    "stateId": 90131,
+    "conditionValue": "0.5",
+    "effectTiming": 4,
+    "effectValuePctExpr": "0.2",
+    "id": 9013031,
+    "maxCount": 1,
+    "condition": 3
+  },
+  "30120301": {
+    "skillId": 3012030,
+    "effectValueExpr": "0.09*(1+0.025*n1)",
+    "target": 19,
+    "targetParam": 2,
+    "id": 30120301,
+    "stateId": 30122,
+    "persistTime": 4000
+  },
+  "9013021": {
+    "skillId": 901302,
+    "effectTiming": 16,
+    "id": 9013021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "41000062": {
+    "effectValueExpr": "0.2",
+    "effectType": 2,
+    "id": 41000062,
+    "attrType": 22,
+    "skillId": 4100006,
+    "effectTiming": 3,
+    "persistTime": 0,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "41000061": {
+    "skillId": 4100006,
+    "effectValueExpr": "0.15",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 41000061,
+    "stateId": 400001,
+    "persistTime": 7000
+  },
+  "9113022": {
+    "skillId": 911302,
+    "effectValueExpr": "0.03",
+    "effectType": 101,
+    "target": 101,
+    "id": 9113022,
+    "persistTime": 0,
+    "attackTypeLimit": 0
+  },
+  "30070311": {
+    "skillId": 3007031,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
+    "target": 4,
+    "id": 30070311,
+    "stateId": 30073,
+    "persistTime": 4000
+  },
+  "20030221": {
+    "skillId": 2003022,
+    "targetSide": 0,
+    "target": 18,
+    "effectValuePctExpr": "-0.06",
+    "targetParam": 0,
+    "id": 20030221,
+    "stateId": 20033,
+    "persistTime": 5000
+  },
+  "9033023": {
+    "targetExtend": "750_350",
+    "effectType": 7,
+    "effectValuePctExpr": "10",
+    "attackType": 1,
+    "id": 9033023,
+    "actionIndex": 2,
+    "target": 5,
+    "targetSide": 0,
+    "persistTime": 0,
+    "targetParam": 99,
+    "skillId": 903302
+  },
+  "30040401": {
+    "skillId": 3004040,
+    "effectValueExpr": "0.08*(1+0.025*n1)",
+    "effectTiming": 1,
+    "id": 30040401,
+    "maxCount": 1,
+    "stateId": 30041
+  },
+  "20040401": {
+    "stateId": 20041,
+    "effectValuePctExpr": "0.2*(1+0.025*n1)",
+    "id": 20040401,
+    "conditionValue": "0.3",
+    "skillId": 2004040,
+    "effectTiming": 4,
+    "persistTime": 5000,
+    "maxCount": 1,
+    "condition": 3
+  },
+  "9083021": {
+    "skillId": 908302,
+    "effectTiming": 16,
+    "id": 9083021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "41000012": {
+    "effectValueExpr": "0.2",
+    "effectType": 2,
+    "id": 41000012,
+    "attrType": 22,
+    "skillId": 4100001,
+    "effectTiming": 3,
+    "persistTime": 0,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "30150231": {
+    "effectValueExpr": "-0.2*(1+0.025*n1)-0.05",
+    "effectType": 2,
+    "id": 30150231,
+    "attrType": 15,
+    "conditionValue": "4",
+    "skillId": 3015023,
+    "target": 18,
+    "effectTiming": 3,
+    "targetSide": 0,
+    "persistTime": 0,
+    "targetParam": 0,
+    "condition": 1
+  },
+  "30130301": {
+    "skillId": 3013030,
+    "effectType": 3,
+    "effectValuePctExpr": "0.6*(1+0.05*n1)",
+    "id": 30130301,
+    "target": 4,
+    "persistTime": 0
+  },
+  "20110201": {
+    "stateId": 1002,
+    "triggerCd": 1000,
+    "effectValuePctExpr": "0.15",
+    "attackType": 1,
+    "id": 20110201,
+    "skillId": 2011020,
+    "target": 18,
+    "persistTime": 7000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "9153041": {
+    "effectType": 10,
+    "id": 9153041,
+    "conditionValue": "0.5",
+    "actionIndex": 1,
+    "skillId": 915304,
+    "effectTiming": 1,
+    "extend": "991501_3_0_0_1",
+    "persistTime": 0,
+    "maxCount": 1,
+    "condition": 3
+  },
+  "40000032": {
+    "effectValueExpr": "0.2",
+    "effectType": 2,
+    "id": 40000032,
+    "attrType": 22,
+    "skillId": 4000003,
+    "effectTiming": 3,
+    "persistTime": 0,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "40000031": {
+    "skillId": 4000003,
+    "effectValueExpr": "0.2",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 40000031,
+    "stateId": 400001,
+    "persistTime": 5000
+  },
+  "30030201": {
+    "skillId": 3003020,
+    "effectValueExpr": "-0.05-0.002*n1",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 30030201,
+    "stateId": 30031,
+    "persistTime": 5000
+  },
+  "20030201": {
+    "skillId": 2003020,
+    "targetSide": 0,
+    "target": 18,
+    "effectValuePctExpr": "-0.06",
+    "targetParam": 0,
+    "id": 20030201,
+    "stateId": 20033,
+    "persistTime": 5000
+  },
+  "30140212": {
+    "skillId": 3014021,
+    "effectValueExpr": "0.15",
     "target": 13,
     "targetParam": 99,
-    "id": 30010421,
-    "skillId": 3001042
+    "targetExtend": "1",
+    "id": 30140212,
+    "stateId": 30141,
+    "persistTime": 5000
   },
-  "20010421": {
-    "effectTiming": 1,
+  "40000012": {
+    "effectValueExpr": "0.2",
+    "effectType": 2,
+    "id": 40000012,
+    "attrType": 22,
+    "skillId": 4000001,
+    "effectTiming": 3,
+    "persistTime": 0,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "30150421": {
+    "stateId": 30152,
     "effectValueExpr": "0.06*(1+0.025*n1)+0.03",
-    "stateId": 20011,
-    "id": 20010421,
-    "skillId": 2001042
+    "id": 30150421,
+    "skillId": 3015042,
+    "target": 16,
+    "effectTiming": 1,
+    "targetParam": 99,
+    "maxCount": 1,
+    "targetExtend": "2"
   },
-  "30120212": {
-    "persistTime": 5000,
-    "effectValueExpr": "0.15*(1+0.025*n1)",
-    "stateId": 30121,
-    "id": 30120212,
-    "skillId": 3012021
+  "20080311": {
+    "skillId": 2008031,
+    "effectValueExpr": "-0.08",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 20080311,
+    "stateId": 20082,
+    "persistTime": 3000
+  },
+  "30150331": {
+    "skillId": 3015033,
+    "effectType": 3,
+    "effectValuePctExpr": "0.5*(1+0.05*n1)*3.1",
+    "targetParam": 2,
+    "id": 30150331,
+    "target": 4,
+    "persistTime": 0
+  },
+  "30140232": {
+    "skillId": 3014023,
+    "effectValueExpr": "0.15",
+    "target": 13,
+    "targetParam": 99,
+    "targetExtend": "1",
+    "id": 30140232,
+    "stateId": 30141,
+    "persistTime": 5000
+  },
+  "30150321": {
+    "skillId": 3015032,
+    "effectType": 3,
+    "effectValuePctExpr": "0.5*(1+0.05*n1)*2.4",
+    "targetParam": 2,
+    "id": 30150321,
+    "target": 4,
+    "persistTime": 0
+  },
+  "9042021": {
+    "skillId": 904202,
+    "effectTiming": 16,
+    "id": 9042021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "9092021": {
+    "skillId": 909202,
+    "effectTiming": 16,
+    "id": 9092021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "30150131": {
+    "skillId": 3015013,
+    "effectType": 3,
+    "effectValuePctExpr": "0.5*(1+0.05*n1)",
+    "id": 30150131,
+    "target": 4,
+    "persistTime": 0
+  },
+  "30150111": {
+    "skillId": 3015011,
+    "effectType": 3,
+    "effectValuePctExpr": "0.5*(1+0.05*n1)",
+    "id": 30150111,
+    "target": 4,
+    "persistTime": 0
+  },
+  "30140431": {
+    "skillId": 3014043,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
+    "effectTiming": 1,
+    "id": 30140431,
+    "maxCount": 1,
+    "stateId": 30143
+  },
+  "30140421": {
+    "skillId": 3014042,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
+    "effectTiming": 1,
+    "id": 30140421,
+    "maxCount": 1,
+    "stateId": 30143
+  },
+  "30140411": {
+    "skillId": 3014041,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
+    "effectTiming": 1,
+    "id": 30140411,
+    "maxCount": 1,
+    "stateId": 30143
+  },
+  "30140401": {
+    "skillId": 3014040,
+    "effectValueExpr": "0.08*(1+0.025*n1)",
+    "effectTiming": 1,
+    "id": 30140401,
+    "maxCount": 1,
+    "stateId": 30143
+  },
+  "30140331": {
+    "skillId": 3014033,
+    "effectValueExpr": "0.12*(1+0.025*n1)+0.12",
+    "target": 15,
+    "targetParam": 3,
+    "id": 30140331,
+    "stateId": 30142,
+    "persistTime": 4000
+  },
+  "30030331": {
+    "skillId": 3003033,
+    "targetSide": 0,
+    "target": 18,
+    "effectValuePctExpr": "-0.15*(1+0.025*n1)-0.24",
+    "targetParam": 0,
+    "id": 30030331,
+    "stateId": 30032,
+    "persistTime": 3000
+  },
+  "30140301": {
+    "skillId": 3014030,
+    "effectValueExpr": "0.12*(1+0.025*n1)",
+    "target": 15,
+    "targetParam": 2,
+    "id": 30140301,
+    "stateId": 30142,
+    "persistTime": 3000
+  },
+  "20120431": {
+    "skillId": 2012043,
+    "effectValueExpr": "0.1*(1+0.025*n1)+0.1",
+    "effectTiming": 1,
+    "targetSide": 0,
+    "id": 20120431,
+    "maxCount": 1,
+    "stateId": 20121
   },
   "30060421": {
-    "effectTiming": 1,
+    "skillId": 3006042,
     "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
-    "stateId": 30062,
-    "maxCount": 1,
-    "id": 30060421,
-    "skillId": 3006042
-  },
-  "30050401": {
     "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)",
-    "stateId": 30053,
+    "id": 30060421,
     "maxCount": 1,
-    "id": 30050401,
-    "skillId": 3005040
+    "stateId": 30062
   },
-  "30050301": {
-    "attackType": 2,
-    "stateId": 30052,
-    "triggerCd": 1000,
-    "targetSide": 0,
-    "id": 30050301,
-    "effectValuePctExpr": "1*(1+0.05*n1)",
+  "30140221": {
+    "skillId": 3014022,
+    "target": 15,
+    "id": 30140221,
+    "targetParam": 3,
+    "stateId": 2001
+  },
+  "20100431": {
+    "stateId": 20101,
+    "effectValuePctExpr": "0.03*(1+0.05*n1)*1.8",
+    "id": 20100431,
+    "conditionValue": "0.4",
+    "skillId": 2010043,
+    "effectTiming": 4,
+    "extend": "20101_0.5",
+    "persistTime": 7000,
+    "maxCount": 1,
+    "condition": 3
+  },
+  "40000021": {
+    "skillId": 4000002,
+    "effectValueExpr": "0.2",
     "target": 18,
+    "targetSide": 0,
     "targetParam": 0,
-    "persistTime": 2000,
-    "skillId": 3005030
+    "id": 40000021,
+    "stateId": 400001,
+    "persistTime": 5000
+  },
+  "30130421": {
+    "stateId": 30133,
+    "targetExtend": "1",
+    "effectValuePctExpr": "0.06*(1+0.025*n1)+0.03",
+    "id": 30130421,
+    "skillId": 3013042,
+    "target": 16,
+    "effectTiming": 1,
+    "maxCount": 1,
+    "targetParam": 99
+  },
+  "9043022": {
+    "stateId": 1002,
+    "triggerCd": 1000,
+    "effectValuePctExpr": "1",
+    "id": 9043022,
+    "skillId": 904302,
+    "target": 18,
+    "persistTime": 5000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "30130221": {
+    "skillId": 3013022,
+    "target": 15,
+    "effectValuePctExpr": "0.25*(1+0.025*n1)+0.05",
+    "targetParam": 2,
+    "id": 30130221,
+    "stateId": 30132,
+    "persistTime": 7000
+  },
+  "9100111": {
+    "skillId": 910011,
+    "persistTime": 99999999,
+    "effectType": 10,
+    "effectTiming": 7,
+    "extend": "999006_5_0.3_0.3_1_2783_700_450",
+    "id": 9100111,
+    "conditionValue": "50",
+    "condition": 3
+  },
+  "30130201": {
+    "skillId": 3013020,
+    "target": 15,
+    "effectValuePctExpr": "0.25*(1+0.025*n1)",
+    "targetParam": 2,
+    "id": 30130201,
+    "stateId": 30132,
+    "persistTime": 5000
+  },
+  "30120432": {
+    "skillId": 3012043,
+    "effectTiming": 1,
+    "stateId": 30124,
+    "id": 30120432,
+    "maxCount": 1,
+    "extend": "5000"
+  },
+  "20070411": {
+    "skillId": 2007041,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
+    "effectTiming": 1,
+    "id": 20070411,
+    "stateId": 20072
+  },
+  "9153071": {
+    "skillId": 915307,
+    "target": 101,
+    "effectTiming": 101,
+    "id": 9153071,
+    "stateId": 3003
+  },
+  "9093021": {
+    "skillId": 909302,
+    "effectTiming": 16,
+    "id": 9093021,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "30120331": {
+    "skillId": 3012033,
+    "effectValueExpr": "0.09*(1+0.025*n1)+0.12",
+    "target": 19,
+    "targetParam": 3,
+    "id": 30120331,
+    "stateId": 30122,
+    "persistTime": 4000
+  },
+  "30110311": {
+    "skillId": 3011031,
+    "targetSide": 0,
+    "effectType": 11,
+    "extend": "999003_1_1_1_1",
+    "targetParam": 0,
+    "id": 30110311,
+    "target": 18,
+    "persistTime": 3000
+  },
+  "30120321": {
+    "skillId": 3012032,
+    "effectValueExpr": "0.09*(1+0.025*n1)+0.12",
+    "target": 19,
+    "targetParam": 2,
+    "id": 30120321,
+    "stateId": 30122,
+    "persistTime": 4000
+  },
+  "30120311": {
+    "skillId": 3012031,
+    "effectValueExpr": "0.09*(1+0.025*n1)+0.048",
+    "target": 19,
+    "targetParam": 2,
+    "id": 30120311,
+    "stateId": 30122,
+    "persistTime": 4000
+  },
+  "9113023": {
+    "actionIndex": 1,
+    "effectType": 10,
+    "extend": "990401_1_0_0.08_1",
+    "id": 9113023,
+    "skillId": 911302
+  },
+  "9100311": {
+    "skillId": 910031,
+    "effectType": 10,
+    "effectTiming": 7,
+    "id": 9100311,
+    "persistTime": 99999999,
+    "extend": "999007_3_0.2_0.2_1_2783_700_450"
+  },
+  "30070411": {
+    "stateId": 30074,
+    "targetExtend": "3",
+    "effectValuePctExpr": "0.06*(1+0.025*n1)+0.012",
+    "id": 30070411,
+    "skillId": 3007041,
+    "target": 16,
+    "effectTiming": 1,
+    "maxCount": 1,
+    "targetParam": 99
+  },
+  "30120221": {
+    "skillId": 3012022,
+    "effectType": 3,
+    "effectValuePctExpr": "1.5",
+    "id": 30120221,
+    "persistTime": 0
+  },
+  "30120212": {
+    "skillId": 3012021,
+    "effectValueExpr": "0.15*(1+0.025*n1)",
+    "id": 30120212,
+    "stateId": 30121,
+    "persistTime": 5000
+  },
+  "30120201": {
+    "skillId": 3012020,
+    "effectType": 3,
+    "effectValuePctExpr": "1.5",
+    "id": 30120201,
+    "persistTime": 0
+  },
+  "30100231": {
+    "skillId": 3010023,
+    "effectValueExpr": "0.05*(1+0.025*n1)+0.1",
+    "target": 2,
+    "targetParam": 99,
+    "id": 30100231,
+    "stateId": 30102,
+    "persistTime": 5000
+  },
+  "20010431": {
+    "skillId": 2001043,
+    "effectValueExpr": "0.06*(1+0.025*n1)+0.06",
+    "effectTiming": 1,
+    "id": 20010431,
+    "stateId": 20011
+  },
+  "30010431": {
+    "stateId": 30013,
+    "effectValueExpr": "0.03*(1+0.025*n1)+0.03",
+    "id": 30010431,
+    "skillId": 3001043,
+    "target": 13,
+    "effectTiming": 1,
+    "targetParam": 99,
+    "maxCount": 1,
+    "targetExtend": "1"
   },
   "30050222": {
     "effectType": 7,
-    "attackType": 2,
-    "target": 18,
-    "persistTime": 0,
-    "attackTypeLimit": 0,
-    "targetSide": 0,
-    "conditionValue": "4",
     "effectValuePctExpr": "9",
-    "condition": 1,
-    "targetParam": 0,
-    "id": 30050222,
-    "skillId": 3005022
-  },
-  "9043021": {
-    "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9043021,
-    "stateId": 2001,
-    "skillId": 904302
-  },
-  "30030331": {
-    "stateId": 30032,
-    "targetSide": 0,
-    "persistTime": 3000,
-    "effectValuePctExpr": "-0.15*(1+0.025*n1)-0.24",
-    "target": 18,
-    "targetParam": 0,
-    "id": 30030331,
-    "skillId": 3003033
-  },
-  "30030321": {
-    "stateId": 30032,
-    "targetSide": 0,
-    "persistTime": 3000,
-    "effectValuePctExpr": "-0.15*(1+0.025*n1)-0.12",
-    "target": 18,
-    "targetParam": 0,
-    "id": 30030321,
-    "skillId": 3003032
-  },
-  "20020401": {
-    "stateId": 20022,
-    "effectTiming": 1,
-    "target": 14,
-    "effectValueExpr": "0.08*(1+0.025*n1)",
-    "targetExtend": "3",
-    "targetParam": 3,
-    "id": 20020401,
-    "skillId": 2002040
-  },
-  "30150331": {
-    "effectType": 3,
-    "persistTime": 0,
-    "effectValuePctExpr": "0.5*(1+0.05*n1)*3.1",
-    "target": 4,
-    "targetParam": 2,
-    "id": 30150331,
-    "skillId": 3015033
-  },
-  "20070421": {
-    "effectTiming": 1,
-    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
-    "stateId": 20072,
-    "id": 20070421,
-    "skillId": 2007042
-  },
-  "30070421": {
-    "effectTiming": 1,
-    "stateId": 30074,
-    "targetExtend": "3",
-    "maxCount": 1,
-    "effectValuePctExpr": "0.06*(1+0.025*n1)+0.03",
-    "target": 16,
-    "targetParam": 99,
-    "id": 30070421,
-    "skillId": 3007042
-  },
-  "30050201": {
-    "effectTiming": 15,
     "attackType": 2,
+    "id": 30050222,
+    "conditionValue": "4",
+    "skillId": 3005022,
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "persistTime": 0,
+    "condition": 1,
+    "attackTypeLimit": 0
+  },
+  "30120222": {
+    "skillId": 3012022,
+    "effectValueExpr": "0.15*(1+0.025*n1)",
+    "target": 2,
+    "targetParam": 99,
+    "id": 30120222,
+    "stateId": 30121,
+    "persistTime": 5000
+  },
+  "20110211": {
+    "stateId": 1002,
+    "triggerCd": 1000,
+    "effectValuePctExpr": "0.15",
+    "attackType": 1,
+    "id": 20110211,
+    "skillId": 2011021,
+    "target": 18,
+    "persistTime": 7000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "9103031": {
+    "skillId": 910303,
+    "effectTiming": 16,
+    "id": 9103031,
+    "stateId": 2001,
+    "persistTime": 3500
+  },
+  "30080421": {
+    "stateId": 30082,
+    "targetExtend": "1",
+    "effectValuePctExpr": "0.05*(1+0.05*n1)*1.2",
+    "id": 30080421,
+    "skillId": 3008042,
+    "target": 13,
+    "effectTiming": 1,
+    "targetParam": 99,
+    "persistTime": 7000,
+    "maxCount": 1,
+    "extend": "30082_0.5"
+  },
+  "9053031": {
+    "skillId": 905303,
+    "target": 101,
+    "effectTiming": 101,
+    "id": 9053031,
+    "stateId": 90531,
+    "effectValuePctExpr": "0.2"
+  },
+  "30070232": {
+    "skillId": 3007023,
+    "effectValueExpr": "0.045",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 30070232,
+    "stateId": 30072,
+    "persistTime": 7000
+  },
+  "9100141": {
+    "skillId": 910014,
+    "persistTime": 99999999,
+    "effectType": 10,
+    "effectTiming": 7,
+    "extend": "999009_3_0.3_0.3_1_2783_700_450",
+    "id": 9100141,
+    "conditionValue": "50",
+    "condition": 3
+  },
+  "30110321": {
+    "skillId": 3011032,
+    "targetSide": 0,
+    "effectType": 11,
+    "extend": "999004_1_1_1_1",
+    "targetParam": 0,
+    "id": 30110321,
+    "target": 18,
+    "persistTime": 3000
+  },
+  "30100431": {
+    "skillId": 3010043,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
+    "effectTiming": 1,
+    "id": 30100431,
+    "maxCount": 1,
+    "stateId": 30104
+  },
+  "30100321": {
+    "skillId": 3010032,
+    "effectValuePctExpr": "0.6*(1+0.025*n1)+0.12",
+    "id": 30100321,
+    "stateId": 30105,
+    "persistTime": 4000
+  },
+  "9023022": {
+    "skillId": 902302,
+    "id": 9023022,
+    "effectType": 10,
+    "extend": "990101_2_0.8_0.06_0"
+  },
+  "20020221": {
+    "skillId": 2002022,
+    "effectValueExpr": "0.08",
+    "id": 20020221,
+    "stateId": 20021,
+    "persistTime": 7000
+  },
+  "20070201": {
+    "skillId": 2007020,
+    "effectValueExpr": "0.15*(1+0.025*n1)",
+    "target": 6,
+    "targetParam": 99,
+    "targetExtend": "340",
+    "id": 20070201,
+    "stateId": 20071,
+    "persistTime": 4000
+  },
+  "30090331": {
+    "skillId": 3009033,
+    "effectValueExpr": "-0.08*(1+0.025*n1)",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 30090331,
+    "stateId": 30092,
+    "persistTime": 3000
+  },
+  "30050411": {
+    "skillId": 3005041,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
+    "effectTiming": 1,
+    "id": 30050411,
+    "maxCount": 1,
+    "stateId": 30053
+  },
+  "9063031": {
+    "effectType": 10,
+    "id": 9063031,
+    "conditionValue": "0.5",
+    "actionIndex": 1,
+    "skillId": 906303,
+    "effectTiming": 1,
+    "extend": "990601_3_0_0.03_1",
+    "persistTime": 0,
+    "maxCount": 1,
+    "condition": 3
+  },
+  "30130211": {
+    "skillId": 3013021,
+    "target": 15,
+    "effectValuePctExpr": "0.25*(1+0.025*n1)+0.05",
+    "targetParam": 2,
+    "id": 30130211,
+    "stateId": 30132,
+    "persistTime": 5000
+  },
+  "20050411": {
+    "skillId": 2005041,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
+    "effectTiming": 1,
+    "id": 20050411,
+    "maxCount": 1,
+    "stateId": 20051
+  },
+  "30090311": {
+    "skillId": 3009031,
+    "effectValueExpr": "-0.08*(1+0.025*n1)",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 30090311,
+    "stateId": 30092,
+    "persistTime": 3000
+  },
+  "301103311": {
+    "stateId": 30161,
+    "effectValueExpr": "-0.2",
+    "id": 301103311,
+    "skillId": 30110331,
+    "target": 18,
+    "effectTiming": 3,
+    "persistTime": 1000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "30020421": {
+    "skillId": 3002042,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
+    "effectTiming": 1,
+    "id": 30020421,
+    "maxCount": 1,
+    "stateId": 30022
+  },
+  "20020421": {
+    "skillId": 2002042,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
+    "target": 14,
+    "effectTiming": 1,
+    "targetParam": 3,
+    "id": 20020421,
+    "targetExtend": "3",
+    "stateId": 20022
+  },
+  "30080301": {
+    "skillId": 3008030,
+    "effectType": 3,
+    "effectValuePctExpr": "0.4*(1+0.05*n1)",
+    "id": 30080301,
+    "attrType": 3,
+    "persistTime": 0
+  },
+  "30150411": {
+    "stateId": 30152,
+    "effectValueExpr": "0.06*(1+0.025*n1)+0.012",
+    "id": 30150411,
+    "skillId": 3015041,
+    "target": 16,
+    "effectTiming": 1,
+    "targetParam": 99,
+    "maxCount": 1,
+    "targetExtend": "2"
+  },
+  "30080201": {
+    "skillId": 3008020,
+    "targetParam": 99,
+    "target": 2,
+    "effectValuePctExpr": "1.2*(1+0.05*n1)",
+    "stateId": 30081,
+    "id": 30080201,
+    "persistTime": 5000,
+    "extend": "30081_0.5"
+  },
+  "9153043": {
+    "effectType": 10,
+    "id": 9153043,
+    "conditionValue": "0.5",
+    "actionIndex": 3,
+    "skillId": 915304,
+    "effectTiming": 1,
+    "extend": "991503_3_0_0_1",
+    "persistTime": 0,
+    "maxCount": 1,
+    "condition": 3
+  },
+  "20030421": {
+    "skillId": 2003042,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.04",
+    "effectTiming": 1,
+    "id": 20030421,
+    "stateId": 20032
+  },
+  "30030421": {
+    "skillId": 3003042,
+    "effectValueExpr": "0.08+0.003*n1+0.1",
+    "effectTiming": 1,
+    "id": 30030421,
+    "maxCount": 1,
+    "stateId": 30033
+  },
+  "9033041": {
+    "targetExtend": "750_60",
+    "effectType": 7,
+    "effectValuePctExpr": "2",
+    "attackType": 1,
+    "id": 9033041,
+    "actionIndex": 1,
+    "target": 11,
+    "persistTime": 0,
+    "targetSide": 0,
+    "targetParam": 99
+  },
+  "20030231": {
+    "skillId": 2003023,
+    "targetSide": 0,
+    "target": 18,
+    "effectValuePctExpr": "-0.06",
+    "targetParam": 0,
+    "id": 20030231,
+    "stateId": 20033,
+    "persistTime": 5000
+  },
+  "30070201": {
+    "skillId": 3007020,
+    "targetSide": 0,
+    "target": 18,
+    "effectValuePctExpr": "0.15*(1+0.025*n1)",
+    "targetParam": 0,
+    "id": 30070201,
+    "stateId": 30071,
+    "persistTime": 5000
+  },
+  "30140222": {
+    "skillId": 3014022,
+    "effectValueExpr": "0.15",
+    "target": 13,
+    "targetParam": 99,
+    "targetExtend": "1",
+    "id": 30140222,
+    "stateId": 30141,
+    "persistTime": 5000
+  },
+  "30060332": {
+    "stateId": 30061,
+    "triggerCd": 1000,
+    "effectValuePctExpr": "4",
+    "attackType": 1,
+    "id": 30060332,
+    "skillId": 3006033,
+    "target": 18,
+    "persistTime": 3000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "30050431": {
+    "skillId": 3005043,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.08",
+    "effectTiming": 1,
+    "id": 30050431,
+    "maxCount": 1,
+    "stateId": 30053
+  },
+  "30050301": {
+    "stateId": 30052,
+    "triggerCd": 1000,
+    "effectValuePctExpr": "1*(1+0.05*n1)",
+    "attackType": 2,
+    "id": 30050301,
+    "skillId": 3005030,
+    "target": 18,
+    "persistTime": 2000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "30050211": {
     "stateId": 30051,
     "triggerCd": 1000,
-    "targetSide": 0,
-    "id": 30050201,
     "effectValuePctExpr": "1*(1+0.05*n1)",
+    "attackType": 2,
+    "id": 30050211,
+    "skillId": 3005021,
     "target": 18,
-    "targetParam": 0,
+    "effectTiming": 15,
     "persistTime": 5000,
-    "skillId": 3005020
-  },
-  "40000021": {
-    "stateId": 400001,
     "targetSide": 0,
-    "persistTime": 5000,
-    "effectValueExpr": "0.2",
+    "targetParam": 0
+  },
+  "41000031": {
+    "skillId": 4100003,
+    "effectValueExpr": "0.12",
     "target": 18,
+    "targetSide": 0,
     "targetParam": 0,
-    "id": 40000021,
-    "skillId": 4000002
+    "id": 41000031,
+    "stateId": 400001,
+    "persistTime": 5000
   },
-  "9073021": {
+  "20090431": {
+    "skillId": 2009043,
+    "effectValueExpr": "0.12*(1+0.025*n1)+0.09",
+    "target": 14,
+    "effectTiming": 1,
+    "targetParam": 2,
+    "id": 20090431,
+    "targetExtend": "1",
+    "stateId": 20131
+  },
+  "30040201": {
+    "skillId": 3004020,
+    "effectValueExpr": "0.08*(1+0.025*n1)",
+    "effectType": 2,
     "effectTiming": 16,
-    "persistTime": 3500,
-    "id": 9073021,
-    "stateId": 2001,
-    "skillId": 907302
+    "id": 30040201,
+    "attrType": 5,
+    "persistTime": 0
   },
-  "20040221": {
+  "30140311": {
+    "skillId": 3014031,
+    "effectValueExpr": "0.12*(1+0.025*n1)+0.06",
+    "target": 15,
+    "targetParam": 2,
+    "id": 30140311,
+    "stateId": 30142,
+    "persistTime": 4000
+  },
+  "30030321": {
+    "skillId": 3003032,
+    "targetSide": 0,
+    "target": 18,
+    "effectValuePctExpr": "-0.15*(1+0.025*n1)-0.12",
+    "targetParam": 0,
+    "id": 30030321,
+    "stateId": 30032,
+    "persistTime": 3000
+  },
+  "30030231": {
+    "skillId": 3003023,
+    "effectValueExpr": "-0.05-0.002*n1-0.09",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 30030231,
+    "stateId": 30031,
+    "persistTime": 5000
+  },
+  "20110331": {
+    "stateId": 1002,
+    "triggerCd": 1000,
+    "effectValuePctExpr": "0.3",
+    "attackType": 1,
+    "id": 20110331,
+    "skillId": 2011033,
+    "target": 18,
+    "persistTime": 3000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "9100051": {
+    "skillId": 910005,
     "effectType": 10,
-    "persistTime": 10000,
-    "id": 20040221,
-    "skillId": 2004022,
-    "extend": "999001_1_1+0.05*n1+1_0.15_1"
+    "effectTiming": 7,
+    "id": 9100051,
+    "persistTime": 99999999,
+    "extend": "999008_3_0.3_0.3_1_2783_700_450"
+  },
+  "30080211": {
+    "skillId": 3008021,
+    "targetParam": 99,
+    "target": 2,
+    "effectValuePctExpr": "1.2*(1+0.05*n1)*1.3",
+    "stateId": 30081,
+    "id": 30080211,
+    "persistTime": 5000,
+    "extend": "30081_0.5"
+  },
+  "30140231": {
+    "skillId": 3014023,
+    "target": 15,
+    "id": 30140231,
+    "targetParam": 3,
+    "stateId": 2001
+  },
+  "20040201": {
+    "skillId": 2004020,
+    "effectType": 10,
+    "extend": "999001_1_1+0.05*n1_0.15_1",
+    "id": 20040201,
+    "persistTime": 10000
+  },
+  "20080211": {
+    "skillId": 2008021,
+    "effectValueExpr": "0.12*(1+0.04*n1)+0.04",
+    "target": 14,
+    "targetParam": 2,
+    "targetExtend": "2",
+    "id": 20080211,
+    "stateId": 20081,
+    "persistTime": 5000
+  },
+  "9083022": {
+    "stateId": 1004,
+    "triggerCd": 1000,
+    "effectValuePctExpr": "0.5",
+    "id": 9083022,
+    "skillId": 908302,
+    "target": 18,
+    "persistTime": 5000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "9073022": {
+    "skillId": 907302,
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 9073022,
+    "stateId": 1003,
+    "persistTime": 3000
+  },
+  "9100281": {
+    "skillId": 910028,
+    "effectType": 10,
+    "effectTiming": 7,
+    "id": 9100281,
+    "persistTime": 99999999,
+    "extend": "999007_2_0.2_0.2_1_1822_1700_80"
+  },
+  "30030221": {
+    "skillId": 3003022,
+    "effectValueExpr": "-0.05-0.002*n1-0.06",
+    "target": 18,
+    "targetSide": 0,
+    "targetParam": 0,
+    "id": 30030221,
+    "stateId": 30031,
+    "persistTime": 5000
+  },
+  "20110231": {
+    "stateId": 1002,
+    "triggerCd": 1000,
+    "effectValuePctExpr": "0.15",
+    "attackType": 1,
+    "id": 20110231,
+    "skillId": 2011023,
+    "target": 18,
+    "persistTime": 7000,
+    "targetSide": 0,
+    "targetParam": 0
+  },
+  "30040411": {
+    "skillId": 3004041,
+    "effectValueExpr": "0.08*(1+0.025*n1)+0.016",
+    "effectTiming": 1,
+    "id": 30040411,
+    "maxCount": 1,
+    "stateId": 30041
+  },
+  "20040411": {
+    "stateId": 20041,
+    "effectValuePctExpr": "0.2*(1+0.025*n1)+0.04",
+    "id": 20040411,
+    "conditionValue": "0.3",
+    "skillId": 2004041,
+    "effectTiming": 4,
+    "persistTime": 5000,
+    "maxCount": 1,
+    "condition": 3
+  },
+  "20080431": {
+    "skillId": 2008043,
+    "target": 4,
+    "effectType": 3,
+    "effectTiming": 7,
+    "persistTime": 0,
+    "id": 20080431,
+    "maxCount": 1,
+    "effectValuePctExpr": "2*(1+0.05*n1)*2.2"
+  },
+  "30020321": {
+    "skillId": 3002032,
+    "effectValuePctExpr": "0.12",
+    "id": 30020321,
+    "stateId": 30021,
+    "persistTime": 3000
+  },
+  "20070231": {
+    "skillId": 2007023,
+    "effectValueExpr": "0.15*(1+0.025*n1)+0.09",
+    "target": 6,
+    "targetParam": 99,
+    "targetExtend": "340",
+    "id": 20070231,
+    "stateId": 20071,
+    "persistTime": 5000
+  },
+  "30070211": {
+    "skillId": 3007021,
+    "targetSide": 0,
+    "target": 18,
+    "effectValuePctExpr": "0.15*(1+0.025*n1)",
+    "targetParam": 0,
+    "id": 30070211,
+    "stateId": 30071,
+    "persistTime": 5000
+  },
+  "20070211": {
+    "skillId": 2007021,
+    "effectValueExpr": "0.15*(1+0.025*n1)+0.03",
+    "target": 6,
+    "targetParam": 99,
+    "targetExtend": "340",
+    "id": 20070211,
+    "stateId": 20071,
+    "persistTime": 4000
   }
 }
