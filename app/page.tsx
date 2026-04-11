@@ -13,6 +13,7 @@ function getVersion(): string {
 
 const SECTIONS = [
   { href: '/heroes',    label: 'Heroes',    icon: '⚔️', desc: 'All playable heroes with stats, skills & upgrade paths' },
+  { href: '/survivors', label: 'Survivors', icon: '👤', desc: 'All survivors sorted by rarity — assign to buildings for bonuses' },
   { href: '/items',     label: 'Items',     icon: '🎒', desc: 'Every item, fragment, material & equipment piece' },
   { href: '/buildings', label: 'Buildings', icon: '🏗️', desc: 'Building types, upgrade costs & production rates' },
   { href: '/troops',    label: 'Troops',    icon: '🔫', desc: 'Soldier types, tiers, and combat stats' },

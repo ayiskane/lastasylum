@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import GameImage from './GameImage'
 
 const SLOT_LABELS: Record<number, string> = {
@@ -10,6 +10,7 @@ const SLOT_LABELS: Record<number, string> = {
 
 interface SkillLevel {
   star: number; unlockStar: number; power: string; param1: string; description: string
+  params?: Record<string, string>
 }
 
 interface SkillGroupData {
@@ -17,8 +18,55 @@ interface SkillGroupData {
   description: string; levels: SkillLevel[]
 }
 
+function evalParam(expr: string, n1: number): number | null {
+  if (!expr) return null
+  try {
+    // Safe eval: only allow math operations and n1
+    const sanitized = expr.replace(/[^0-9n+\-*/.() ]/g, '')
+    const withVal = sanitized.replace(/n1/g, String(n1))
+    // eslint-disable-next-line no-eval
+    const result = Function('"use strict"; return (' + withVal + ')')()
+    return typeof result === 'number' && isFinite(result) ? result : null
+  } catch {
+    return null
+  }
+}
+
+function formatValue(val: number): string {
+  // If value > 10, it's likely a percentage (multiplied by 100 in the formula)
+  if (Math.abs(val) >= 10) {
+    return `${val.toFixed(1)}%`
+  }
+  return val.toFixed(2)
+}
+
+function insertParams(desc: string, params: Record<string, string>, n1: number): string {
+  let result = desc
+  // Replace {0}, {1}, {2} etc with computed values
+  for (let i = 0; i <= 5; i++) {
+    const paramKey = i === 0 ? 'param1' : `param${i + 1}`
+    const expr = params[paramKey]
+    if (expr) {
+      const val = evalParam(expr, n1)
+      if (val !== null) {
+        result = result.replace(`{${i}}`, formatValue(val))
+      }
+    }
+  }
+  // Also replace standalone X
+  const param1 = params['param1']
+  if (param1) {
+    const val = evalParam(param1, n1)
+    if (val !== null) {
+      result = result.replace(/\bX\b/, formatValue(val))
+    }
+  }
+  return result
+}
+
 export default function HeroSkillPanel({ skills }: { skills: SkillGroupData[] }) {
   const [selected, setSelected] = useState(0)
+  const [skillLevel, setSkillLevel] = useState(1)
 
   if (!skills.length) {
     return (
@@ -31,10 +79,33 @@ export default function HeroSkillPanel({ skills }: { skills: SkillGroupData[] })
 
   const active = skills[selected] || skills[0]
 
+  // Compute the description with current skill level
+  const activeParams = active.levels[0]?.params || { param1: active.levels[0]?.param1 || '' }
+  const computedDesc = useMemo(() => {
+    if (!active.description) return ''
+    return insertParams(active.description, activeParams, skillLevel)
+  }, [active.description, activeParams, skillLevel])
+
+  // Check if this skill has any computable params
+  const hasFormula = Object.values(activeParams).some(v => v && v.includes('n1'))
+
   return (
     <section className="bg-asylum-surface border border-asylum-border rounded-xl overflow-hidden">
-      <div className="p-5 pb-3">
+      <div className="p-5 pb-3 flex items-center justify-between flex-wrap gap-3">
         <h2 className="font-display text-lg text-asylum-accent tracking-wide">SKILLS</h2>
+        {/* Level slider */}
+        <div className="flex items-center gap-3">
+          <label className="text-xs text-asylum-muted uppercase tracking-wider">Skill Lv</label>
+          <input
+            type="range"
+            min={1}
+            max={50}
+            value={skillLevel}
+            onChange={e => setSkillLevel(Number(e.target.value))}
+            className="w-28 accent-asylum-accent"
+          />
+          <span className="text-sm font-mono text-asylum-accent font-semibold w-6 text-right">{skillLevel}</span>
+        </div>
       </div>
 
       <div className="flex max-md:flex-col">
@@ -79,35 +150,71 @@ export default function HeroSkillPanel({ skills }: { skills: SkillGroupData[] })
             </span>
           </div>
 
-          {active.description && (
-            <p className="text-sm text-asylum-muted leading-relaxed mb-4">{active.description}</p>
+          {/* Description with computed values */}
+          {(computedDesc || active.description) && (
+            <p className="text-sm text-asylum-muted leading-relaxed mb-4">{computedDesc || active.description}</p>
           )}
 
+          {/* Live computed param values */}
+          {hasFormula && (
+            <div className="bg-asylum-bg/60 border border-asylum-accent/20 rounded-lg px-4 py-3 mb-4">
+              <div className="text-[10px] uppercase tracking-wider text-asylum-accent font-semibold mb-2">
+                Values at skill level {skillLevel}
+              </div>
+              <div className="flex flex-wrap gap-x-6 gap-y-1">
+                {Object.entries(activeParams).map(([key, expr]) => {
+                  if (!expr || !expr.includes('n1')) return null
+                  const val = evalParam(expr, skillLevel)
+                  if (val === null) return null
+                  const label = key === 'param1' ? 'DMG / Effect' : key.replace('param', 'Param ')
+                  return (
+                    <div key={key} className="text-xs">
+                      <span className="text-asylum-muted">{label}: </span>
+                      <span className="text-asylum-text font-mono font-semibold">{formatValue(val)}</span>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* Level breakdown */}
           {active.levels.length > 0 && (
             <div className="border-t border-asylum-border/30 pt-3">
               <div className="text-[10px] uppercase tracking-wider text-asylum-muted mb-2 font-semibold">
-                {active.levels.length > 1 ? 'Level upgrades' : 'Details'}
+                {active.levels.length > 1 ? 'Star upgrades' : 'Details'}
               </div>
               <div className="space-y-1.5">
-                {active.levels.map((lv, i) => (
-                  <div key={i} className="bg-asylum-bg/50 rounded-lg px-3 py-2.5 flex items-center gap-3 text-xs">
-                    <div className="shrink-0 w-16">
-                      {lv.star > 0 ? (
-                        <span className="text-asylum-accent">{'★'.repeat(Math.min(lv.star, 5))}</span>
-                      ) : (
-                        <span className="text-asylum-muted font-semibold bg-asylum-surface px-2 py-0.5 rounded text-[10px]">BASE</span>
-                      )}
+                {active.levels.map((lv, i) => {
+                  // Compute param values for this star level's formula
+                  const lvParams = lv.params || { param1: lv.param1 }
+                  const lvParam1Val = lvParams.param1 ? evalParam(lvParams.param1, skillLevel) : null
+
+                  return (
+                    <div key={i} className="bg-asylum-bg/50 rounded-lg px-3 py-2.5 flex items-start gap-3 text-xs">
+                      <div className="shrink-0 w-16 pt-0.5">
+                        {lv.star > 0 ? (
+                          <span className="text-asylum-accent">{'★'.repeat(Math.min(lv.star, 5))}</span>
+                        ) : (
+                          <span className="text-asylum-muted font-semibold bg-asylum-surface px-2 py-0.5 rounded text-[10px]">BASE</span>
+                        )}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex flex-wrap gap-x-4 gap-y-0.5">
+                          {lv.unlockStar > 0 && (
+                            <span className="text-asylum-muted">Unlock at <span className="text-asylum-text font-semibold">{lv.unlockStar}★</span></span>
+                          )}
+                          {lv.power && (
+                            <span className="text-asylum-muted">Power: <span className="text-asylum-text font-mono">{lv.power.replace(/n1/g, String(skillLevel))}</span></span>
+                          )}
+                          {lvParam1Val !== null && (
+                            <span className="text-asylum-muted">Effect: <span className="text-asylum-accent font-mono font-semibold">{formatValue(lvParam1Val)}</span></span>
+                          )}
+                        </div>
+                      </div>
                     </div>
-                    <div className="flex-1 flex flex-wrap gap-x-4 gap-y-0.5">
-                      {lv.unlockStar > 0 && (
-                        <span className="text-asylum-muted">Unlock at <span className="text-asylum-text font-semibold">{lv.unlockStar}★</span></span>
-                      )}
-                      {lv.power && (
-                        <span className="text-asylum-muted">Power: <span className="text-asylum-text font-mono">{lv.power}</span></span>
-                      )}
-                    </div>
-                  </div>
-                ))}
+                  )
+                })}
               </div>
             </div>
           )}

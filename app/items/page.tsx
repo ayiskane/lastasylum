@@ -79,8 +79,8 @@ export default function ItemsPage() {
       .catch(() => {})
   }, [])
 
-  // Only items with a display name (hide internal/code-only items)
-  const visibleItems = useMemo(() => allItems.filter(i => i.displayName), [allItems])
+  // Only items with a display name, excluding Workers (they have their own Survivors page)
+  const visibleItems = useMemo(() => allItems.filter(i => i.displayName && i.type !== 'Worker'), [allItems])
 
   // Derive available filter options from data
   const types = useMemo(() => {

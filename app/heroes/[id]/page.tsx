@@ -53,13 +53,23 @@ function groupSkills(skills: any[]): SkillGroup[] {
       typeLabel: first.typeDesc ? extractTypeLabel(first.typeDesc) : SLOT_LABELS[slot] || 'Skill',
       icon: first.icon || '',
       description: first.description ? stripTags(first.description) : '',
-      levels: sorted.map(sk => ({
-        star: sk.skillStar || 0,
-        unlockStar: sk.unlockStar || 0,
-        power: sk.power || '',
-        param1: sk.param1 || '',
-        description: sk.description ? stripTags(sk.description) : '',
-      })),
+      levels: sorted.map(sk => {
+        // Collect all param fields
+        const params: Record<string, string> = {}
+        for (const key of Object.keys(sk)) {
+          if (key.startsWith('param') && sk[key]) {
+            params[key] = String(sk[key])
+          }
+        }
+        return {
+          star: sk.skillStar || 0,
+          unlockStar: sk.unlockStar || 0,
+          power: sk.power || '',
+          param1: sk.param1 || '',
+          params,
+          description: sk.description ? stripTags(sk.description) : '',
+        }
+      }),
     })
   }
   return groups
