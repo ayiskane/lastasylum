@@ -48,7 +48,7 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
   const accentBorder = QUALITY_BORDERS[hero.quality] || 'border-asylum-accent/40'
 
   // Shard items
-  const shardItem = hero.chipID ? items[hero.chipID] : null
+  const shardItem = hero.fragmentItemId ? items[hero.fragmentItemId] : null
   const omniShardItem = hero.quality >= 5
     ? items['item_Material_universalFragment_5']
     : hero.quality >= 4
@@ -148,7 +148,7 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
               {shardItem && (
                 <div className="flex items-center gap-1 bg-asylum-bg border border-asylum-border rounded px-1.5 py-0.5">
                   <GameImage src={itemImagePath(shardItem.icon)} alt="Shard" className="w-3 h-3" />
-                  <span className="text-[10px] text-asylum-muted">×{hero.chipCount || 10}</span>
+                  <span className="text-[10px] text-asylum-muted">×{hero.fragmentItemCount || 10}</span>
                 </div>
               )}
               {omniShardItem && (
@@ -166,7 +166,7 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
                 ['Max honor', String(hero.maxHonorLevel)],
                 ['Star cap', String(hero.heroStarRating)],
                 ['Skills', String(skillSlots.length)],
-                ['Unlock', hero.unlockLevel ? `Bldg Lv.${hero.unlockLevel}` : '—'],
+                ['Unlock', hero.buildingLevel ? `Bldg Lv.${hero.buildingLevel}` : '—'],
               ].map(([l, v]) => (
                 <div key={l} className="flex justify-between text-[11px]">
                   <span className="text-asylum-hint">{l}</span>

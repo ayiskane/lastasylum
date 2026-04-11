@@ -1,67 +1,66 @@
 {
   "1": {
-    "duration": 28800000,
     "addition": [
       4010,
       5007,
       6008
     ],
     "triggerEvent": 4005,
-    "type": 1
+    "type": 1,
+    "duration": 28800000
   },
   "3": {
-    "id": 3,
+    "nextId": 4,
     "tasks": [
       22002001,
       22002002,
       22002003
     ],
+    "id": 3,
     "rewards": [
       {
+        "count": 5,
         "id": "item_drone_part",
-        "type": 99,
-        "count": 5
+        "type": 99
       },
       {
+        "count": 2,
         "id": "item_drone_data_10k",
-        "type": 99,
-        "count": 2
+        "type": 99
       },
       {
-        "type": 11,
-        "count": 30
+        "count": 30,
+        "type": 11
       }
-    ],
-    "nextId": 4
+    ]
   },
   "2": {
+    "nextId": 3,
     "id": 2,
-    "rewards": [
-      {
-        "id": "item_UseUp_recruitCoin",
-        "type": 99,
-        "count": 5
-      },
-      {
-        "id": "item_optionalBox_Resource",
-        "type": 99,
-        "count": 20
-      },
-      {
-        "type": 11,
-        "count": 30
-      }
-    ],
     "tasks": [
       22001001,
       22001002,
       22001003
     ],
     "triggerEvent": 7011,
-    "nextId": 3
+    "rewards": [
+      {
+        "count": 5,
+        "id": "item_UseUp_recruitCoin",
+        "type": 99
+      },
+      {
+        "count": 20,
+        "id": "item_optionalBox_Resource",
+        "type": 99
+      },
+      {
+        "count": 30,
+        "type": 11
+      }
+    ]
   },
   "5": {
-    "id": 5,
     "addition": [
       5,
       6,
@@ -71,51 +70,52 @@
       22004001,
       22004002,
       22004003
-    ]
+    ],
+    "id": 5
   },
   "4": {
-    "id": 4,
+    "nextId": 5,
     "tasks": [
       22003001,
       22003002,
       22003003
     ],
+    "id": 4,
     "rewards": [
       {
+        "count": 5,
         "id": "item_UseUp_recruitCoin",
-        "type": 99,
-        "count": 5
+        "type": 99
       },
       {
+        "count": 20,
         "id": "item_optionalBox_Resource",
-        "type": 99,
-        "count": 20
+        "type": 99
       },
       {
-        "type": 11,
-        "count": 30
+        "count": 30,
+        "type": 11
       }
-    ],
-    "nextId": 5
+    ]
   },
   "7": {
-    "id": 7,
+    "triggerEvent": 8013,
     "tasks": [
       23001001,
       23001002,
       23001003
     ],
-    "triggerEvent": 8013,
+    "id": 7,
     "type": 4
   },
   "6": {
-    "id": 6,
+    "triggerEvent": 8013,
     "tasks": [
       23000001,
       23000002,
       23000003
     ],
-    "triggerEvent": 8013,
+    "id": 6,
     "type": 3
   }
 }

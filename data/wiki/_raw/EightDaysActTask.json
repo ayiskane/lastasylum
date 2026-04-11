@@ -1,59 +1,75 @@
 {
-  "10024104": {
-    "id": 10024104,
-    "day": 2,
-    "functionId": "rookieQuest_radar",
+  "10054104": {
     "target": [
       {
-        "id": "200060",
-        "param1": "70",
+        "param1": "30",
+        "id": "10105",
         "includeHistory": "True"
       }
     ],
+    "functionId": "12000_03",
     "descParams": [
       {
-        "param1": 70
+        "param1": 30
       }
     ],
-    "showSort": 4,
+    "id": 10054104,
     "reward": [
       {
+        "type": 99,
         "count": 6,
-        "id": "item_food_30k",
-        "type": 99
+        "id": "item_food_30k"
       },
       {
+        "type": 99,
         "count": 1,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
+        "id": "item_UseUp_recruitCoin"
       },
       {
-        "count": 50000,
-        "type": 5
+        "type": 5,
+        "count": 50000
       }
     ],
-    "scheduleMaxValue": 70
+    "scheduleMaxValue": 30,
+    "day": 5,
+    "showSort": 4
+  },
+  "10014301": {
+    "target": [
+      {
+        "param1": "1010",
+        "id": 80029
+      }
+    ],
+    "functionId": "Monopoly_dangqian",
+    "descParams": [
+      {
+        "param1": 1
+      }
+    ],
+    "id": 10014301,
+    "reward": [
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_wood_10k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 5000
+      }
+    ],
+    "scheduleMaxValue": 0,
+    "scheduleShow": 0,
+    "showType": 3
   },
   "10054301": {
     "id": 10054301,
-    "day": 5,
-    "reward": [
-      {
-        "count": 2,
-        "id": "item_steel_6k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 5000,
-        "type": 5
-      }
-    ],
-    "showType": 3,
     "descParams": [
       {
         "param1": 100
@@ -61,561 +77,519 @@
     ],
     "target": [
       {
-        "id": "60305",
         "param1": "100",
+        "id": "60305",
         "includeHistory": "True"
       }
     ],
-    "scheduleMaxValue": 100
-  },
-  "10034205": {
-    "id": 10034205,
-    "functionId": "rookieQuest_camp",
-    "showType": 2,
-    "day": 3,
     "reward": [
       {
-        "count": 10,
-        "id": "item_wood_50k",
-        "type": 99
-      },
-      {
+        "type": 99,
         "count": 2,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
+        "id": "item_steel_6k"
       },
       {
-        "count": 100000,
-        "type": 5
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 17
-      }
-    ],
-    "target": [
-      {
-        "id": "20107",
-        "param2": "17",
-        "param1": "16"
-      }
-    ],
-    "showSort": 5,
-    "scheduleMaxValue": 17
-  },
-  "10044103": {
-    "id": 10044103,
-    "day": 4,
-    "functionId": "rookieQuest_tech",
-    "descParams": [
-      {
-        "param1": 15
-      }
-    ],
-    "showSort": 3,
-    "reward": [
-      {
-        "count": 4,
-        "id": "item_food_30k",
-        "type": 99
-      },
-      {
+        "type": 99,
         "count": 1,
-        "id": "item_SpeedUp_general_15m",
-        "type": 99
+        "id": "item_SpeedUp_general_5m"
       },
       {
-        "count": 25000,
-        "type": 5
+        "type": 5,
+        "count": 5000
       }
     ],
-    "scheduleMaxValue": 15
-  },
-  "10054102": {
-    "id": 10054102,
+    "scheduleMaxValue": 100,
     "day": 5,
-    "functionId": "12000_03",
-    "showSort": 2,
-    "target": [
-      {
-        "id": "10105",
-        "param1": "10",
-        "includeHistory": "True"
-      }
-    ],
-    "reward": [
-      {
-        "count": 6,
-        "id": "item_food_10k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 15000,
-        "type": 5
-      }
-    ]
+    "showType": 3
   },
-  "10024105": {
-    "id": 10024105,
-    "day": 2,
-    "functionId": "rookieQuest_radar",
-    "target": [
-      {
-        "id": "200060",
-        "param1": "110",
-        "includeHistory": "True"
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 110
-      }
-    ],
-    "showSort": 5,
-    "reward": [
-      {
-        "count": 10,
-        "id": "item_food_50k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 100000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 110
-  },
-  "10034301": {
-    "id": 10034301,
-    "day": 3,
-    "functionId": "rookieQuest_help",
-    "showType": 3,
-    "target": [
-      {
-        "id": "50101",
-        "param1": "10",
-        "includeHistory": "True"
-      }
-    ],
-    "reward": [
-      {
-        "count": 2,
-        "id": "item_steel_6k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 5000,
-        "type": 5
-      }
-    ]
-  },
-  "10014302": {
-    "id": 10014302,
-    "functionId": "Monopoly_dangqian",
-    "showType": 3,
-    "scheduleShow": 0,
-    "target": [
-      {
-        "id": 80029,
-        "param1": "2010"
-      }
-    ],
-    "reward": [
-      {
-        "count": 6,
-        "id": "item_wood_10k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 15000,
-        "type": 5
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 2
-      }
-    ],
-    "showSort": 2,
-    "scheduleMaxValue": 0
-  },
-  "10024302": {
-    "id": 10024302,
-    "functionId": "rookieQuest_hero",
-    "showType": 3,
-    "day": 2,
-    "reward": [
-      {
-        "count": 6,
-        "id": "item_food_10k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 15000,
-        "type": 5
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 5
-      },
-      {
-        "param1": 30
-      }
-    ],
-    "target": [
-      {
-        "id": "30102",
-        "param2": "30",
-        "param1": "5"
-      }
-    ],
-    "showSort": 2,
-    "scheduleMaxValue": 5
-  },
-  "10034203": {
-    "id": 10034203,
-    "day": 3,
-    "functionId": "rookieQuest_camp",
-    "showType": 2,
-    "showSort": 3,
-    "target": [
-      {
-        "id": "20107",
-        "param2": "10",
-        "param1": "16"
-      }
-    ]
-  },
-  "10044105": {
-    "id": 10044105,
-    "day": 4,
-    "functionId": "rookieQuest_tech",
-    "target": [
-      {
-        "id": "20204",
-        "param1": "60",
-        "includeHistory": "True"
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 60
-      }
-    ],
-    "showSort": 5,
-    "reward": [
-      {
-        "count": 10,
-        "id": "item_food_50k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 100000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 60
-  },
-  "10014101": {
-    "descParams": [
-      {
-        "param1": 1
-      }
-    ],
-    "target": [
-      {
-        "id": "70801",
-        "param1": "1"
-      }
-    ],
-    "reward": [
-      {
-        "count": 2,
-        "id": "item_food_10k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 5000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 1
-  },
-  "10014105": {
-    "id": 10014105,
-    "target": [
-      {
-        "id": "70801",
-        "param1": "5"
-      }
-    ],
-    "reward": [
-      {
-        "count": 10,
-        "id": "item_food_50k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 100000,
-        "type": 5
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 5
-      }
-    ],
-    "showSort": 5,
-    "scheduleMaxValue": 5
-  },
-  "10014204": {
-    "id": 10014204,
-    "target": [
-      {
-        "id": "20107",
-        "param2": "14",
-        "param1": "1"
-      }
-    ],
-    "functionId": "rookieQuest_headquarter",
-    "showType": 2,
-    "descParams": [
-      {
-        "param1": 14
-      }
-    ],
-    "showSort": 4,
-    "reward": [
-      {
-        "count": 2,
-        "id": "item_Material_universalFragment_4",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 50000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 14
-  },
-  "10054103": {
-    "id": 10054103,
-    "day": 5,
-    "functionId": "12000_03",
-    "target": [
-      {
-        "id": "10105",
-        "param1": "20",
-        "includeHistory": "True"
-      }
-    ],
+  "10044203": {
+    "functionId": "2_5036",
     "descParams": [
       {
         "param1": 20
       }
     ],
-    "showSort": 3,
     "reward": [
       {
-        "count": 4,
-        "id": "item_food_30k",
-        "type": 99
+        "type": 99,
+        "count": 2,
+        "id": "item_drone_part"
       },
       {
+        "type": 99,
         "count": 1,
-        "id": "item_SpeedUp_general_15m",
-        "type": 99
+        "id": "item_SpeedUp_general_15m"
       },
       {
-        "count": 25000,
-        "type": 5
+        "type": 5,
+        "count": 25000
       }
     ],
-    "scheduleMaxValue": 20
-  },
-  "10054202": {
-    "id": 10054202,
-    "day": 5,
-    "reward": [
+    "id": 10044203,
+    "target": [
       {
-        "count": 6,
-        "id": "item_wood_10k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 15000,
-        "type": 5
+        "param1": "15",
+        "id": "200401"
       }
     ],
     "showType": 2,
+    "scheduleMaxValue": 15,
+    "day": 4,
+    "showSort": 3
+  },
+  "10024205": {
+    "functionId": "sevendays_tutorial_arena",
     "descParams": [
       {
-        "param1": 200000
+        "param1": 20
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 10,
+        "id": "item_wood_50k"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 100000
+      }
+    ],
+    "id": 10024205,
+    "target": [
+      {
+        "param1": "20",
+        "id": "16009",
+        "includeHistory": "True"
+      }
+    ],
+    "showType": 2,
+    "scheduleMaxValue": 20,
+    "day": 2,
+    "showSort": 5
+  },
+  "10054201": {
+    "id": 10054201,
+    "descParams": [
+      {
+        "param1": 100000
       }
     ],
     "target": [
       {
-        "id": "30107",
-        "param1": "200000"
+        "param1": "100000",
+        "id": "30107"
       }
     ],
-    "showSort": 2,
-    "scheduleMaxValue": 200000
-  },
-  "10054304": {
-    "id": 10054304,
-    "day": 5,
     "reward": [
       {
-        "count": 6,
-        "id": "item_steel_18k",
-        "type": 99
+        "type": 99,
+        "count": 2,
+        "id": "item_wood_10k"
       },
       {
+        "type": 99,
         "count": 1,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
+        "id": "item_SpeedUp_general_5m"
       },
       {
-        "count": 50000,
-        "type": 5
+        "type": 5,
+        "count": 5000
+      }
+    ],
+    "scheduleMaxValue": 100000,
+    "day": 5,
+    "showType": 2
+  },
+  "10044304": {
+    "functionId": "rookieQuest_recruit",
+    "descParams": [
+      {
+        "param1": 100
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_wood_30k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 50000
+      }
+    ],
+    "id": 10044304,
+    "target": [
+      {
+        "param1": "100",
+        "id": "60702",
+        "includeHistory": "True"
       }
     ],
     "showType": 3,
+    "scheduleMaxValue": 100,
+    "day": 4,
+    "showSort": 4
+  },
+  "10014101": {
+    "reward": [
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_food_10k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 5000
+      }
+    ],
+    "target": [
+      {
+        "param1": "1",
+        "id": "70801"
+      }
+    ],
     "descParams": [
       {
-        "param1": 1000
+        "param1": 1
       }
     ],
-    "target": [
-      {
-        "id": "60305",
-        "param1": "1000",
-        "includeHistory": "True"
-      }
-    ],
-    "showSort": 4,
-    "scheduleMaxValue": 1000
+    "scheduleMaxValue": 1
   },
-  "10024203": {
-    "id": 10024203,
-    "day": 2,
-    "functionId": "sevendays_tutorial_arena",
-    "showType": 2,
-    "showSort": 3,
-    "target": [
+  "10014302": {
+    "functionId": "Monopoly_dangqian",
+    "descParams": [
       {
-        "id": "16009",
-        "param1": "10",
-        "includeHistory": "True"
-      }
-    ]
-  },
-  "10014103": {
-    "id": 10014103,
-    "target": [
-      {
-        "id": "70801",
-        "param1": "3"
+        "param1": 2
       }
     ],
     "reward": [
       {
-        "count": 4,
-        "id": "item_food_30k",
-        "type": 99
+        "type": 99,
+        "count": 6,
+        "id": "item_wood_10k"
       },
       {
+        "type": 99,
         "count": 2,
-        "id": "item_SpeedUp_general_15m",
-        "type": 99
+        "id": "item_SpeedUp_general_5m"
       },
       {
-        "count": 25000,
-        "type": 5
+        "type": 5,
+        "count": 15000
       }
     ],
+    "id": 10014302,
+    "target": [
+      {
+        "param1": "2010",
+        "id": 80029
+      }
+    ],
+    "showType": 3,
+    "scheduleMaxValue": 0,
+    "scheduleShow": 0,
+    "showSort": 2
+  },
+  "10014103": {
+    "id": 10014103,
     "descParams": [
       {
         "param1": 3
       }
     ],
-    "showSort": 3,
-    "scheduleMaxValue": 3
-  },
-  "10024305": {
-    "id": 10024305,
-    "functionId": "rookieQuest_hero",
-    "showType": 3,
-    "day": 2,
     "reward": [
       {
-        "count": 10,
-        "id": "item_food_50k",
-        "type": 99
+        "type": 99,
+        "count": 4,
+        "id": "item_food_30k"
       },
       {
+        "type": 99,
         "count": 2,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
+        "id": "item_SpeedUp_general_15m"
       },
       {
-        "count": 100000,
-        "type": 5
+        "type": 5,
+        "count": 25000
       }
     ],
+    "target": [
+      {
+        "param1": "3",
+        "id": "70801"
+      }
+    ],
+    "scheduleMaxValue": 3,
+    "showSort": 3
+  },
+  "10044101": {
+    "functionId": "rookieQuest_tech",
+    "descParams": [
+      {
+        "param1": 5
+      }
+    ],
+    "target": [
+      {
+        "param1": "5",
+        "id": "20204",
+        "includeHistory": "True"
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_food_10k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 5000
+      }
+    ],
+    "scheduleMaxValue": 5,
+    "day": 4,
+    "id": 10044101
+  },
+  "10024105": {
+    "target": [
+      {
+        "param1": "110",
+        "id": "200060",
+        "includeHistory": "True"
+      }
+    ],
+    "functionId": "rookieQuest_radar",
+    "descParams": [
+      {
+        "param1": 110
+      }
+    ],
+    "id": 10024105,
+    "reward": [
+      {
+        "type": 99,
+        "count": 10,
+        "id": "item_food_50k"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 100000
+      }
+    ],
+    "scheduleMaxValue": 110,
+    "day": 2,
+    "showSort": 5
+  },
+  "10054202": {
+    "target": [
+      {
+        "param1": "200000",
+        "id": "30107"
+      }
+    ],
+    "id": 10054202,
+    "descParams": [
+      {
+        "param1": 200000
+      }
+    ],
+    "showType": 2,
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_wood_10k"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 15000
+      }
+    ],
+    "scheduleMaxValue": 200000,
+    "day": 5,
+    "showSort": 2
+  },
+  "10024203": {
+    "functionId": "sevendays_tutorial_arena",
+    "target": [
+      {
+        "param1": "10",
+        "id": "16009",
+        "includeHistory": "True"
+      }
+    ],
+    "showType": 2,
+    "id": 10024203,
+    "day": 2,
+    "showSort": 3
+  },
+  "10034304": {
+    "functionId": "rookieQuest_help",
+    "descParams": [
+      {
+        "param1": 200
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_steel_18k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 50000
+      }
+    ],
+    "id": 10034304,
+    "target": [
+      {
+        "param1": "200",
+        "id": "50101",
+        "includeHistory": "True"
+      }
+    ],
+    "showType": 3,
+    "scheduleMaxValue": 200,
+    "day": 3,
+    "showSort": 4
+  },
+  "10014203": {
+    "functionId": "rookieQuest_headquarter",
+    "target": [
+      {
+        "param1": "1",
+        "id": "20107",
+        "param2": "10"
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_Material_universalFragment_4"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_15m"
+      },
+      {
+        "type": 5,
+        "count": 25000
+      }
+    ],
+    "showType": 2,
+    "id": 10014203,
+    "showSort": 3
+  },
+  "10054105": {
+    "target": [
+      {
+        "param1": "50",
+        "id": "10105",
+        "includeHistory": "True"
+      }
+    ],
+    "functionId": "12000_03",
+    "descParams": [
+      {
+        "param1": 50
+      }
+    ],
+    "id": 10054105,
+    "reward": [
+      {
+        "type": 99,
+        "count": 10,
+        "id": "item_food_50k"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 100000
+      }
+    ],
+    "scheduleMaxValue": 50,
+    "day": 5,
+    "showSort": 5
+  },
+  "10014104": {
+    "id": 10014104,
+    "descParams": [
+      {
+        "param1": 4
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_food_30k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 50000
+      }
+    ],
+    "target": [
+      {
+        "param1": "4",
+        "id": "70801"
+      }
+    ],
+    "scheduleMaxValue": 4,
+    "showSort": 4
+  },
+  "10024305": {
+    "functionId": "rookieQuest_hero",
     "descParams": [
       {
         "param1": 5
@@ -624,1363 +598,375 @@
         "param1": 80
       }
     ],
-    "target": [
-      {
-        "id": "30102",
-        "param2": "80",
-        "param1": "5"
-      }
-    ],
-    "showSort": 5,
-    "scheduleMaxValue": 5
-  },
-  "10054302": {
-    "id": 10054302,
-    "day": 5,
     "reward": [
       {
-        "count": 6,
-        "id": "item_steel_6k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 15000,
-        "type": 5
-      }
-    ],
-    "showType": 3,
-    "descParams": [
-      {
-        "param1": 200
-      }
-    ],
-    "target": [
-      {
-        "id": "60305",
-        "param1": "200",
-        "includeHistory": "True"
-      }
-    ],
-    "showSort": 2,
-    "scheduleMaxValue": 200
-  },
-  "10044205": {
-    "id": 10044205,
-    "functionId": "2_5036",
-    "showType": 2,
-    "day": 4,
-    "reward": [
-      {
-        "count": 5,
-        "id": "item_drone_part",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 100000,
-        "type": 5
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 30
-      }
-    ],
-    "target": [
-      {
-        "id": "200401",
-        "param1": "30"
-      }
-    ],
-    "showSort": 5,
-    "scheduleMaxValue": 30
-  },
-  "10044305": {
-    "id": 10044305,
-    "functionId": "rookieQuest_recruit",
-    "showType": 3,
-    "day": 4,
-    "reward": [
-      {
+        "type": 99,
         "count": 10,
-        "id": "item_wood_50k",
-        "type": 99
+        "id": "item_food_50k"
       },
       {
+        "type": 99,
         "count": 2,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
+        "id": "item_UseUp_recruitCoin"
       },
       {
-        "count": 100000,
-        "type": 5
+        "type": 5,
+        "count": 100000
       }
     ],
-    "descParams": [
-      {
-        "param1": 150
-      }
-    ],
+    "id": 10024305,
     "target": [
       {
-        "id": "60702",
-        "param1": "150",
-        "includeHistory": "True"
+        "param1": "5",
+        "id": "30102",
+        "param2": "80"
       }
     ],
-    "showSort": 5,
-    "scheduleMaxValue": 150
-  },
-  "10034201": {
-    "id": 10034201,
-    "day": 3,
-    "functionId": "rookieQuest_camp",
-    "showType": 2,
-    "descParams": [
-      {
-        "param1": 3
-      }
-    ],
-    "target": [
-      {
-        "id": "20107",
-        "param2": "3",
-        "param1": "16"
-      }
-    ],
-    "reward": [
-      {
-        "count": 2,
-        "id": "item_wood_10k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 5000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 3
+    "showType": 3,
+    "scheduleMaxValue": 5,
+    "day": 2,
+    "showSort": 5
   },
   "10014102": {
     "id": 10014102,
-    "target": [
-      {
-        "id": "70801",
-        "param1": "2"
-      }
-    ],
-    "reward": [
-      {
-        "count": 6,
-        "id": "item_food_10k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 15000,
-        "type": 5
-      }
-    ],
     "descParams": [
       {
         "param1": 2
       }
     ],
-    "showSort": 2,
-    "scheduleMaxValue": 2
-  },
-  "10024304": {
-    "id": 10024304,
-    "functionId": "rookieQuest_hero",
-    "showType": 3,
-    "day": 2,
     "reward": [
       {
+        "type": 99,
         "count": 6,
-        "id": "item_food_30k",
-        "type": 99
+        "id": "item_food_10k"
       },
       {
-        "count": 1,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 50000,
-        "type": 5
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 5
-      },
-      {
-        "param1": 50
-      }
-    ],
-    "target": [
-      {
-        "id": "30102",
-        "param2": "50",
-        "param1": "5"
-      }
-    ],
-    "showSort": 4,
-    "scheduleMaxValue": 5
-  },
-  "10034103": {
-    "id": 10034103,
-    "day": 3,
-    "functionId": "rookieQuest_train",
-    "descParams": [
-      {
-        "param1": 300
-      }
-    ],
-    "target": [
-      {
-        "id": "20305",
-        "param1": "300",
-        "includeHistory": "True"
-      }
-    ],
-    "showSort": 3,
-    "scheduleMaxValue": 300
-  },
-  "10044202": {
-    "id": 10044202,
-    "day": 4,
-    "functionId": "2_5036",
-    "showType": 2,
-    "descParams": [
-      {
-        "param1": 15
-      }
-    ],
-    "target": [
-      {
-        "id": "200401",
-        "param1": "10"
-      }
-    ],
-    "showSort": 2,
-    "reward": [
-      {
-        "count": 6,
-        "id": "item_optionalBox_Resource",
-        "type": 99
-      },
-      {
+        "type": 99,
         "count": 2,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
+        "id": "item_SpeedUp_general_5m"
       },
       {
-        "count": 15000,
-        "type": 5
-      }
-    ]
-  },
-  "10044204": {
-    "id": 10044204,
-    "functionId": "2_5036",
-    "showType": 2,
-    "day": 4,
-    "reward": [
-      {
-        "count": 3,
-        "id": "item_drone_part",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 50000,
-        "type": 5
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 25
+        "type": 5,
+        "count": 15000
       }
     ],
     "target": [
       {
-        "id": "200401",
-        "param1": "20"
+        "param1": "2",
+        "id": "70801"
       }
     ],
-    "showSort": 4,
-    "scheduleMaxValue": 20
+    "scheduleMaxValue": 2,
+    "showSort": 2
   },
-  "10014201": {
-    "id": 10014201,
-    "target": [
-      {
-        "id": "20107",
-        "param2": "3",
-        "param1": "1"
-      }
-    ],
-    "functionId": "rookieQuest_headquarter",
-    "showType": 2,
-    "descParams": [
-      {
-        "param1": 3
-      }
-    ],
-    "reward": [
-      {
-        "count": 2,
-        "id": "item_optionalBox_Resource",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 5000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 3
-  },
-  "10014301": {
-    "id": 10014301,
-    "target": [
-      {
-        "id": 80029,
-        "param1": "1010"
-      }
-    ],
-    "functionId": "Monopoly_dangqian",
-    "showType": 3,
-    "descParams": [
-      {
-        "param1": 1
-      }
-    ],
-    "scheduleShow": 0,
-    "reward": [
-      {
-        "count": 2,
-        "id": "item_wood_10k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 5000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 0
-  },
-  "10014304": {
-    "id": 10014304,
-    "functionId": "Monopoly_dangqian",
-    "showType": 3,
-    "scheduleShow": 0,
-    "target": [
-      {
-        "id": 80029,
-        "param1": "6003"
-      }
-    ],
-    "reward": [
-      {
-        "count": 6,
-        "id": "item_wood_30k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 50000,
-        "type": 5
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 4
-      }
-    ],
-    "showSort": 4,
-    "scheduleMaxValue": 0
-  },
-  "10024204": {
-    "id": 10024204,
-    "functionId": "sevendays_tutorial_arena",
-    "showType": 2,
-    "day": 2,
-    "reward": [
-      {
-        "count": 6,
-        "id": "item_wood_30k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 50000,
-        "type": 5
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 15
-      }
-    ],
-    "target": [
-      {
-        "id": "16009",
-        "param1": "15",
-        "includeHistory": "True"
-      }
-    ],
-    "showSort": 4,
-    "scheduleMaxValue": 15
-  },
-  "10014205": {
-    "id": 10014205,
-    "target": [
-      {
-        "id": "20107",
-        "param2": "17",
-        "param1": "1"
-      }
-    ],
-    "functionId": "rookieQuest_headquarter",
-    "showType": 2,
-    "descParams": [
-      {
-        "param1": 17
-      }
-    ],
-    "showSort": 5,
-    "reward": [
-      {
-        "count": 2,
-        "id": "item_Material_universalFragment_5",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 100000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 17
-  },
-  "10044104": {
-    "id": 10044104,
-    "day": 4,
-    "functionId": "rookieQuest_tech",
-    "target": [
-      {
-        "id": "20204",
-        "param1": "30",
-        "includeHistory": "True"
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 30
-      }
-    ],
-    "showSort": 4,
-    "reward": [
-      {
-        "count": 6,
-        "id": "item_food_30k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 50000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 30
-  },
-  "10024102": {
-    "id": 10024102,
-    "day": 2,
-    "functionId": "rookieQuest_radar",
-    "target": [
-      {
-        "id": "200060",
-        "param1": "20",
-        "includeHistory": "True"
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 20
-      }
-    ],
-    "showSort": 2,
-    "reward": [
-      {
-        "count": 6,
-        "id": "item_food_10k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 15000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 20
-  },
-  "10034101": {
-    "id": 10034101,
-    "day": 3,
-    "functionId": "rookieQuest_train",
-    "descParams": [
-      {
-        "param1": 50
-      }
-    ],
-    "target": [
-      {
-        "id": "20305",
-        "param1": "50",
-        "includeHistory": "True"
-      }
-    ],
-    "reward": [
-      {
-        "count": 2,
-        "id": "item_wood_10k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 5000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 50
-  },
-  "10014305": {
-    "id": 10014305,
-    "functionId": "Monopoly_dangqian",
-    "showType": 3,
-    "scheduleShow": 0,
-    "target": [
-      {
-        "id": 80029,
-        "param1": "8008"
-      }
-    ],
-    "reward": [
-      {
-        "count": 10,
-        "id": "item_wood_50k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 100000,
-        "type": 5
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 5
-      }
-    ],
-    "showSort": 5,
-    "scheduleMaxValue": 0
-  },
-  "10024103": {
-    "id": 10024103,
-    "day": 2,
-    "functionId": "rookieQuest_radar",
-    "target": [
-      {
-        "id": "200060",
-        "param1": "40",
-        "includeHistory": "True"
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 40
-      }
-    ],
-    "showSort": 3,
-    "reward": [
-      {
-        "count": 4,
-        "id": "item_food_30k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_SpeedUp_general_15m",
-        "type": 99
-      },
-      {
-        "count": 25000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 40
-  },
-  "10044301": {
-    "id": 10044301,
-    "day": 4,
+  "10044305": {
     "functionId": "rookieQuest_recruit",
-    "showType": 3,
-    "target": [
+    "descParams": [
       {
-        "id": "60702",
-        "param1": "10",
-        "includeHistory": "True"
+        "param1": 150
       }
     ],
     "reward": [
       {
+        "type": 99,
+        "count": 10,
+        "id": "item_wood_50k"
+      },
+      {
+        "type": 99,
         "count": 2,
-        "id": "item_wood_10k",
-        "type": 99
+        "id": "item_UseUp_recruitCoin"
       },
       {
-        "count": 1,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 5000,
-        "type": 5
-      }
-    ]
-  },
-  "10014303": {
-    "id": 10014303,
-    "target": [
-      {
-        "id": 80029,
-        "param1": "3010"
+        "type": 5,
+        "count": 100000
       }
     ],
-    "functionId": "Monopoly_dangqian",
+    "id": 10044305,
+    "target": [
+      {
+        "param1": "150",
+        "id": "60702",
+        "includeHistory": "True"
+      }
+    ],
     "showType": 3,
+    "scheduleMaxValue": 150,
+    "day": 4,
+    "showSort": 5
+  },
+  "10034201": {
+    "target": [
+      {
+        "param1": "16",
+        "id": "20107",
+        "param2": "3"
+      }
+    ],
+    "functionId": "rookieQuest_camp",
     "descParams": [
       {
         "param1": 3
       }
     ],
-    "showSort": 3,
-    "scheduleShow": 0,
-    "scheduleMaxValue": 0
-  },
-  "10014202": {
-    "id": 10014202,
-    "target": [
+    "id": 10034201,
+    "reward": [
       {
-        "id": "20107",
-        "param2": "6",
-        "param1": "1"
+        "type": 99,
+        "count": 2,
+        "id": "item_wood_10k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 5000
       }
     ],
-    "functionId": "rookieQuest_headquarter",
-    "showType": 2,
+    "scheduleMaxValue": 3,
+    "day": 3,
+    "showType": 2
+  },
+  "10024202": {
+    "functionId": "sevendays_tutorial_arena",
     "descParams": [
       {
         "param1": 6
       }
     ],
-    "showSort": 2,
     "reward": [
       {
+        "type": 99,
         "count": 6,
-        "id": "item_optionalBox_Resource",
-        "type": 99
+        "id": "item_wood_10k"
       },
       {
+        "type": 99,
         "count": 2,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
+        "id": "item_SpeedUp_general_5m"
       },
       {
-        "count": 15000,
-        "type": 5
+        "type": 5,
+        "count": 15000
       }
     ],
-    "scheduleMaxValue": 6
-  },
-  "10054201": {
-    "id": 10054201,
-    "day": 5,
-    "reward": [
+    "id": 10024202,
+    "target": [
       {
-        "count": 2,
-        "id": "item_wood_10k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 5000,
-        "type": 5
+        "param1": "6",
+        "id": "16009",
+        "includeHistory": "True"
       }
     ],
     "showType": 2,
-    "descParams": [
-      {
-        "param1": 100000
-      }
-    ],
+    "scheduleMaxValue": 6,
+    "day": 2,
+    "showSort": 2
+  },
+  "10014204": {
     "target": [
       {
-        "id": "30107",
-        "param1": "100000"
+        "param1": "1",
+        "id": "20107",
+        "param2": "14"
       }
     ],
-    "scheduleMaxValue": 100000
-  },
-  "10054303": {
-    "id": 10054303,
-    "day": 5,
-    "reward": [
-      {
-        "count": 4,
-        "id": "item_steel_18k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_SpeedUp_general_15m",
-        "type": 99
-      },
-      {
-        "count": 25000,
-        "type": 5
-      }
-    ],
-    "showType": 3,
-    "descParams": [
-      {
-        "param1": 500
-      }
-    ],
-    "target": [
-      {
-        "id": "60305",
-        "param1": "500",
-        "includeHistory": "True"
-      }
-    ],
-    "showSort": 3,
-    "scheduleMaxValue": 500
-  },
-  "10044302": {
-    "id": 10044302,
-    "functionId": "rookieQuest_recruit",
-    "showType": 3,
-    "day": 4,
-    "reward": [
-      {
-        "count": 6,
-        "id": "item_wood_10k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 15000,
-        "type": 5
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 20
-      }
-    ],
-    "target": [
-      {
-        "id": "60702",
-        "param1": "20",
-        "includeHistory": "True"
-      }
-    ],
-    "showSort": 2,
-    "scheduleMaxValue": 20
-  },
-  "10034104": {
-    "id": 10034104,
-    "day": 3,
-    "functionId": "rookieQuest_train",
-    "target": [
-      {
-        "id": "20305",
-        "param1": "600",
-        "includeHistory": "True"
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 600
-      }
-    ],
-    "showSort": 4,
-    "reward": [
-      {
-        "count": 6,
-        "id": "item_wood_30k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 50000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 600
-  },
-  "10014104": {
-    "id": 10014104,
-    "target": [
-      {
-        "id": "70801",
-        "param1": "4"
-      }
-    ],
-    "reward": [
-      {
-        "count": 6,
-        "id": "item_food_30k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 50000,
-        "type": 5
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 4
-      }
-    ],
-    "showSort": 4,
-    "scheduleMaxValue": 4
-  },
-  "10034204": {
-    "id": 10034204,
-    "functionId": "rookieQuest_camp",
-    "showType": 2,
-    "day": 3,
-    "reward": [
-      {
-        "count": 6,
-        "id": "item_wood_30k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 50000,
-        "type": 5
-      }
-    ],
+    "functionId": "rookieQuest_headquarter",
     "descParams": [
       {
         "param1": 14
       }
     ],
-    "target": [
-      {
-        "id": "20107",
-        "param2": "14",
-        "param1": "16"
-      }
-    ],
-    "showSort": 4,
-    "scheduleMaxValue": 14
-  },
-  "10024301": {
-    "id": 10024301,
-    "day": 2,
-    "functionId": "rookieQuest_hero",
-    "showType": 3,
-    "descParams": [
-      {
-        "param1": 1
-      },
-      {
-        "param1": 30
-      }
-    ],
-    "target": [
-      {
-        "id": "30102",
-        "param2": "30",
-        "param1": "1"
-      }
-    ],
+    "showType": 2,
     "reward": [
       {
+        "type": 99,
         "count": 2,
-        "id": "item_food_10k",
-        "type": 99
+        "id": "item_Material_universalFragment_4"
       },
       {
+        "type": 99,
         "count": 1,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
+        "id": "item_UseUp_recruitCoin"
       },
       {
-        "count": 5000,
-        "type": 5
+        "type": 5,
+        "count": 50000
       }
     ],
-    "scheduleMaxValue": 1
+    "id": 10014204,
+    "scheduleMaxValue": 14,
+    "showSort": 4
   },
-  "10034303": {
-    "id": 10034303,
+  "10034305": {
     "functionId": "rookieQuest_help",
-    "showType": 3,
-    "day": 3,
-    "reward": [
-      {
-        "count": 4,
-        "id": "item_steel_18k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_SpeedUp_general_15m",
-        "type": 99
-      },
-      {
-        "count": 25000,
-        "type": 5
-      }
-    ],
     "descParams": [
       {
-        "param1": 100
+        "param1": 300
       }
     ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 10,
+        "id": "item_steel_30k"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 100000
+      }
+    ],
+    "id": 10034305,
     "target": [
       {
+        "param1": "300",
         "id": "50101",
-        "param1": "100",
         "includeHistory": "True"
       }
     ],
-    "showSort": 3,
-    "scheduleMaxValue": 100
-  },
-  "10024101": {
-    "id": 10024101,
-    "day": 2,
-    "functionId": "rookieQuest_radar",
-    "target": [
-      {
-        "id": "200060",
-        "param1": "10",
-        "includeHistory": "True"
-      }
-    ],
-    "reward": [
-      {
-        "count": 2,
-        "id": "item_food_10k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 5000,
-        "type": 5
-      }
-    ]
-  },
-  "10044303": {
-    "id": 10044303,
-    "day": 4,
-    "functionId": "rookieQuest_recruit",
     "showType": 3,
-    "descParams": [
-      {
-        "param1": 50
-      }
-    ],
-    "target": [
-      {
-        "id": "60702",
-        "param1": "50",
-        "includeHistory": "True"
-      }
-    ],
-    "showSort": 3,
-    "scheduleMaxValue": 50
-  },
-  "10034304": {
-    "id": 10034304,
-    "functionId": "rookieQuest_help",
-    "showType": 3,
+    "scheduleMaxValue": 300,
     "day": 3,
-    "reward": [
-      {
-        "count": 6,
-        "id": "item_steel_18k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 50000,
-        "type": 5
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 200
-      }
-    ],
-    "target": [
-      {
-        "id": "50101",
-        "param1": "200",
-        "includeHistory": "True"
-      }
-    ],
-    "showSort": 4,
-    "scheduleMaxValue": 200
-  },
-  "10024303": {
-    "id": 10024303,
-    "functionId": "rookieQuest_hero",
-    "showType": 3,
-    "day": 2,
-    "reward": [
-      {
-        "count": 4,
-        "id": "item_food_30k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_SpeedUp_general_15m",
-        "type": 99
-      },
-      {
-        "count": 25000,
-        "type": 5
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 1
-      },
-      {
-        "param1": 50
-      }
-    ],
-    "target": [
-      {
-        "id": "30102",
-        "param2": "50",
-        "param1": "1"
-      }
-    ],
-    "showSort": 3,
-    "scheduleMaxValue": 1
-  },
-  "10044102": {
-    "id": 10044102,
-    "day": 4,
-    "functionId": "rookieQuest_tech",
-    "showSort": 2,
-    "reward": [
-      {
-        "count": 6,
-        "id": "item_food_10k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 15000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 15
-  },
-  "10044201": {
-    "id": 10044201,
-    "day": 4,
-    "functionId": "2_5036",
-    "showType": 2,
-    "target": [
-      {
-        "id": "200401",
-        "param1": "5"
-      }
-    ],
-    "reward": [
-      {
-        "count": 2,
-        "id": "item_optionalBox_Resource",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 5000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 5
-  },
-  "10024205": {
-    "id": 10024205,
-    "functionId": "sevendays_tutorial_arena",
-    "showType": 2,
-    "day": 2,
-    "reward": [
-      {
-        "count": 10,
-        "id": "item_wood_50k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 100000,
-        "type": 5
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 20
-      }
-    ],
-    "target": [
-      {
-        "id": "16009",
-        "param1": "20",
-        "includeHistory": "True"
-      }
-    ],
-    "showSort": 5,
-    "scheduleMaxValue": 20
-  },
-  "10054305": {
-    "id": 10054305,
-    "day": 5,
-    "reward": [
-      {
-        "count": 10,
-        "id": "item_steel_30k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 100000,
-        "type": 5
-      }
-    ],
-    "showType": 3,
-    "descParams": [
-      {
-        "param1": 3000
-      }
-    ],
-    "target": [
-      {
-        "id": "60305",
-        "param1": "3000",
-        "includeHistory": "True"
-      }
-    ],
-    "showSort": 5,
-    "scheduleMaxValue": 3000
-  },
-  "10054205": {
-    "id": 10054205,
-    "day": 5,
-    "reward": [
-      {
-        "count": 10,
-        "id": "item_wood_50k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 100000,
-        "type": 5
-      }
-    ],
-    "showType": 2,
-    "descParams": [
-      {
-        "param1": 2000000
-      }
-    ],
-    "target": [
-      {
-        "id": "30107",
-        "param1": "2000000"
-      }
-    ],
-    "showSort": 5,
-    "scheduleMaxValue": 2000000
+    "showSort": 5
   },
   "10054204": {
-    "id": 10054204,
-    "day": 5,
-    "reward": [
+    "target": [
       {
-        "count": 6,
-        "id": "item_wood_30k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 50000,
-        "type": 5
+        "param1": "1000000",
+        "id": "30107"
       }
     ],
-    "showType": 2,
+    "id": 10054204,
     "descParams": [
       {
         "param1": 1000000
       }
     ],
-    "target": [
-      {
-        "id": "30107",
-        "param1": "1000000"
-      }
-    ],
-    "showSort": 4,
-    "scheduleMaxValue": 1000000
-  },
-  "10034302": {
-    "id": 10034302,
-    "functionId": "rookieQuest_help",
-    "showType": 3,
-    "day": 3,
+    "showType": 2,
     "reward": [
       {
+        "type": 99,
         "count": 6,
-        "id": "item_steel_6k",
-        "type": 99
+        "id": "item_wood_30k"
       },
       {
-        "count": 2,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
+        "type": 99,
+        "count": 1,
+        "id": "item_UseUp_recruitCoin"
       },
       {
-        "count": 15000,
-        "type": 5
+        "type": 5,
+        "count": 50000
       }
     ],
+    "scheduleMaxValue": 1000000,
+    "day": 5,
+    "showSort": 4
+  },
+  "10024302": {
+    "functionId": "rookieQuest_hero",
+    "descParams": [
+      {
+        "param1": 5
+      },
+      {
+        "param1": 30
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_food_10k"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 15000
+      }
+    ],
+    "id": 10024302,
+    "target": [
+      {
+        "param1": "5",
+        "id": "30102",
+        "param2": "30"
+      }
+    ],
+    "showType": 3,
+    "scheduleMaxValue": 5,
+    "day": 2,
+    "showSort": 2
+  },
+  "10014304": {
+    "functionId": "Monopoly_dangqian",
+    "descParams": [
+      {
+        "param1": 4
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_wood_30k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 50000
+      }
+    ],
+    "id": 10014304,
+    "target": [
+      {
+        "param1": "6003",
+        "id": 80029
+      }
+    ],
+    "showType": 3,
+    "scheduleMaxValue": 0,
+    "scheduleShow": 0,
+    "showSort": 4
+  },
+  "10044303": {
+    "target": [
+      {
+        "param1": "50",
+        "id": "60702",
+        "includeHistory": "True"
+      }
+    ],
+    "functionId": "rookieQuest_recruit",
+    "descParams": [
+      {
+        "param1": 50
+      }
+    ],
+    "showType": 3,
+    "id": 10044303,
+    "scheduleMaxValue": 50,
+    "day": 4,
+    "showSort": 3
+  },
+  "10034101": {
+    "functionId": "rookieQuest_train",
     "descParams": [
       {
         "param1": 50
@@ -1988,18 +974,872 @@
     ],
     "target": [
       {
-        "id": "50101",
         "param1": "50",
+        "id": "20305",
         "includeHistory": "True"
       }
     ],
-    "showSort": 2,
-    "scheduleMaxValue": 50
+    "reward": [
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_wood_10k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 5000
+      }
+    ],
+    "scheduleMaxValue": 50,
+    "day": 3,
+    "id": 10034101
+  },
+  "10014303": {
+    "target": [
+      {
+        "param1": "3010",
+        "id": 80029
+      }
+    ],
+    "functionId": "Monopoly_dangqian",
+    "descParams": [
+      {
+        "param1": 3
+      }
+    ],
+    "showType": 3,
+    "id": 10014303,
+    "scheduleMaxValue": 0,
+    "scheduleShow": 0,
+    "showSort": 3
+  },
+  "10024102": {
+    "target": [
+      {
+        "param1": "20",
+        "id": "200060",
+        "includeHistory": "True"
+      }
+    ],
+    "functionId": "rookieQuest_radar",
+    "descParams": [
+      {
+        "param1": 20
+      }
+    ],
+    "id": 10024102,
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_food_10k"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 15000
+      }
+    ],
+    "scheduleMaxValue": 20,
+    "day": 2,
+    "showSort": 2
+  },
+  "10034102": {
+    "target": [
+      {
+        "param1": "100",
+        "id": "20305",
+        "includeHistory": "True"
+      }
+    ],
+    "functionId": "rookieQuest_train",
+    "descParams": [
+      {
+        "param1": 100
+      }
+    ],
+    "id": 10034102,
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_wood_10k"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 15000
+      }
+    ],
+    "scheduleMaxValue": 100,
+    "day": 3,
+    "showSort": 2
+  },
+  "10024104": {
+    "target": [
+      {
+        "param1": "70",
+        "id": "200060",
+        "includeHistory": "True"
+      }
+    ],
+    "functionId": "rookieQuest_radar",
+    "descParams": [
+      {
+        "param1": 70
+      }
+    ],
+    "id": 10024104,
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_food_30k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 50000
+      }
+    ],
+    "scheduleMaxValue": 70,
+    "day": 2,
+    "showSort": 4
+  },
+  "10054101": {
+    "functionId": "12000_03",
+    "descParams": [
+      {
+        "param1": 5
+      }
+    ],
+    "target": [
+      {
+        "param1": "5",
+        "id": "10105",
+        "includeHistory": "True"
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_food_10k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 5000
+      }
+    ],
+    "scheduleMaxValue": 5,
+    "day": 5,
+    "id": 10054101
+  },
+  "10044102": {
+    "functionId": "rookieQuest_tech",
+    "scheduleMaxValue": 15,
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_food_10k"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 15000
+      }
+    ],
+    "id": 10044102,
+    "day": 4,
+    "showSort": 2
+  },
+  "10024304": {
+    "functionId": "rookieQuest_hero",
+    "descParams": [
+      {
+        "param1": 5
+      },
+      {
+        "param1": 50
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_food_30k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 50000
+      }
+    ],
+    "id": 10024304,
+    "target": [
+      {
+        "param1": "5",
+        "id": "30102",
+        "param2": "50"
+      }
+    ],
+    "showType": 3,
+    "scheduleMaxValue": 5,
+    "day": 2,
+    "showSort": 4
+  },
+  "10014201": {
+    "functionId": "rookieQuest_headquarter",
+    "descParams": [
+      {
+        "param1": 3
+      }
+    ],
+    "target": [
+      {
+        "param1": "1",
+        "id": "20107",
+        "param2": "3"
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_optionalBox_Resource"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 5000
+      }
+    ],
+    "id": 10014201,
+    "scheduleMaxValue": 3,
+    "showType": 2
+  },
+  "10034105": {
+    "target": [
+      {
+        "param1": "1200",
+        "id": "20305",
+        "includeHistory": "True"
+      }
+    ],
+    "functionId": "rookieQuest_train",
+    "descParams": [
+      {
+        "param1": 1200
+      }
+    ],
+    "id": 10034105,
+    "reward": [
+      {
+        "type": 99,
+        "count": 10,
+        "id": "item_wood_50k"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 100000
+      }
+    ],
+    "scheduleMaxValue": 1200,
+    "day": 3,
+    "showSort": 5
+  },
+  "10014205": {
+    "target": [
+      {
+        "param1": "1",
+        "id": "20107",
+        "param2": "17"
+      }
+    ],
+    "functionId": "rookieQuest_headquarter",
+    "descParams": [
+      {
+        "param1": 17
+      }
+    ],
+    "showType": 2,
+    "reward": [
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_Material_universalFragment_5"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 100000
+      }
+    ],
+    "id": 10014205,
+    "scheduleMaxValue": 17,
+    "showSort": 5
+  },
+  "10024201": {
+    "target": [
+      {
+        "param1": "3",
+        "id": "16009",
+        "includeHistory": "True"
+      }
+    ],
+    "functionId": "sevendays_tutorial_arena",
+    "descParams": [
+      {
+        "param1": 3
+      }
+    ],
+    "id": 10024201,
+    "reward": [
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_wood_10k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 5000
+      }
+    ],
+    "scheduleMaxValue": 3,
+    "day": 2,
+    "showType": 2
+  },
+  "10014202": {
+    "target": [
+      {
+        "param1": "1",
+        "id": "20107",
+        "param2": "6"
+      }
+    ],
+    "functionId": "rookieQuest_headquarter",
+    "descParams": [
+      {
+        "param1": 6
+      }
+    ],
+    "showType": 2,
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_optionalBox_Resource"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 15000
+      }
+    ],
+    "id": 10014202,
+    "scheduleMaxValue": 6,
+    "showSort": 2
+  },
+  "10044201": {
+    "functionId": "2_5036",
+    "scheduleMaxValue": 5,
+    "target": [
+      {
+        "param1": "5",
+        "id": "200401"
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_optionalBox_Resource"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 5000
+      }
+    ],
+    "id": 10044201,
+    "day": 4,
+    "showType": 2
+  },
+  "10054305": {
+    "target": [
+      {
+        "param1": "3000",
+        "id": "60305",
+        "includeHistory": "True"
+      }
+    ],
+    "id": 10054305,
+    "descParams": [
+      {
+        "param1": 3000
+      }
+    ],
+    "showType": 3,
+    "reward": [
+      {
+        "type": 99,
+        "count": 10,
+        "id": "item_steel_30k"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 100000
+      }
+    ],
+    "scheduleMaxValue": 3000,
+    "day": 5,
+    "showSort": 5
+  },
+  "10034204": {
+    "functionId": "rookieQuest_camp",
+    "descParams": [
+      {
+        "param1": 14
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_wood_30k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 50000
+      }
+    ],
+    "id": 10034204,
+    "target": [
+      {
+        "param1": "16",
+        "id": "20107",
+        "param2": "14"
+      }
+    ],
+    "showType": 2,
+    "scheduleMaxValue": 14,
+    "day": 3,
+    "showSort": 4
+  },
+  "10034303": {
+    "functionId": "rookieQuest_help",
+    "descParams": [
+      {
+        "param1": 100
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 4,
+        "id": "item_steel_18k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_15m"
+      },
+      {
+        "type": 5,
+        "count": 25000
+      }
+    ],
+    "id": 10034303,
+    "target": [
+      {
+        "param1": "100",
+        "id": "50101",
+        "includeHistory": "True"
+      }
+    ],
+    "showType": 3,
+    "scheduleMaxValue": 100,
+    "day": 3,
+    "showSort": 3
+  },
+  "10044302": {
+    "functionId": "rookieQuest_recruit",
+    "descParams": [
+      {
+        "param1": 20
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_wood_10k"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 15000
+      }
+    ],
+    "id": 10044302,
+    "target": [
+      {
+        "param1": "20",
+        "id": "60702",
+        "includeHistory": "True"
+      }
+    ],
+    "showType": 3,
+    "scheduleMaxValue": 20,
+    "day": 4,
+    "showSort": 2
+  },
+  "10024303": {
+    "functionId": "rookieQuest_hero",
+    "descParams": [
+      {
+        "param1": 1
+      },
+      {
+        "param1": 50
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 4,
+        "id": "item_food_30k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_15m"
+      },
+      {
+        "type": 5,
+        "count": 25000
+      }
+    ],
+    "id": 10024303,
+    "target": [
+      {
+        "param1": "1",
+        "id": "30102",
+        "param2": "50"
+      }
+    ],
+    "showType": 3,
+    "scheduleMaxValue": 1,
+    "day": 2,
+    "showSort": 3
+  },
+  "10014105": {
+    "id": 10014105,
+    "descParams": [
+      {
+        "param1": 5
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 10,
+        "id": "item_food_50k"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 100000
+      }
+    ],
+    "target": [
+      {
+        "param1": "5",
+        "id": "70801"
+      }
+    ],
+    "scheduleMaxValue": 5,
+    "showSort": 5
+  },
+  "10054304": {
+    "target": [
+      {
+        "param1": "1000",
+        "id": "60305",
+        "includeHistory": "True"
+      }
+    ],
+    "id": 10054304,
+    "descParams": [
+      {
+        "param1": 1000
+      }
+    ],
+    "showType": 3,
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_steel_18k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 50000
+      }
+    ],
+    "scheduleMaxValue": 1000,
+    "day": 5,
+    "showSort": 4
+  },
+  "10044105": {
+    "target": [
+      {
+        "param1": "60",
+        "id": "20204",
+        "includeHistory": "True"
+      }
+    ],
+    "functionId": "rookieQuest_tech",
+    "descParams": [
+      {
+        "param1": 60
+      }
+    ],
+    "id": 10044105,
+    "reward": [
+      {
+        "type": 99,
+        "count": 10,
+        "id": "item_food_50k"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 100000
+      }
+    ],
+    "scheduleMaxValue": 60,
+    "day": 4,
+    "showSort": 5
+  },
+  "10024101": {
+    "functionId": "rookieQuest_radar",
+    "reward": [
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_food_10k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 5000
+      }
+    ],
+    "target": [
+      {
+        "param1": "10",
+        "id": "200060",
+        "includeHistory": "True"
+      }
+    ],
+    "day": 2,
+    "id": 10024101
+  },
+  "10054303": {
+    "target": [
+      {
+        "param1": "500",
+        "id": "60305",
+        "includeHistory": "True"
+      }
+    ],
+    "id": 10054303,
+    "descParams": [
+      {
+        "param1": 500
+      }
+    ],
+    "showType": 3,
+    "reward": [
+      {
+        "type": 99,
+        "count": 4,
+        "id": "item_steel_18k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_15m"
+      },
+      {
+        "type": 5,
+        "count": 25000
+      }
+    ],
+    "scheduleMaxValue": 500,
+    "day": 5,
+    "showSort": 3
+  },
+  "10054302": {
+    "target": [
+      {
+        "param1": "200",
+        "id": "60305",
+        "includeHistory": "True"
+      }
+    ],
+    "id": 10054302,
+    "descParams": [
+      {
+        "param1": 200
+      }
+    ],
+    "showType": 3,
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_steel_6k"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 15000
+      }
+    ],
+    "scheduleMaxValue": 200,
+    "day": 5,
+    "showSort": 2
+  },
+  "10054205": {
+    "target": [
+      {
+        "param1": "2000000",
+        "id": "30107"
+      }
+    ],
+    "id": 10054205,
+    "descParams": [
+      {
+        "param1": 2000000
+      }
+    ],
+    "showType": 2,
+    "reward": [
+      {
+        "type": 99,
+        "count": 10,
+        "id": "item_wood_50k"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 100000
+      }
+    ],
+    "scheduleMaxValue": 2000000,
+    "day": 5,
+    "showSort": 5
   },
   "10054203": {
     "id": 10054203,
-    "day": 5,
-    "showType": 2,
     "descParams": [
       {
         "param1": 500000
@@ -2007,243 +1847,187 @@
     ],
     "target": [
       {
-        "id": "30107",
-        "param1": "500000"
+        "param1": "500000",
+        "id": "30107"
       }
     ],
-    "showSort": 3,
-    "scheduleMaxValue": 500000
-  },
-  "10054105": {
-    "id": 10054105,
-    "day": 5,
-    "functionId": "12000_03",
-    "target": [
-      {
-        "id": "10105",
-        "param1": "50",
-        "includeHistory": "True"
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 50
-      }
-    ],
-    "showSort": 5,
-    "reward": [
-      {
-        "count": 10,
-        "id": "item_food_50k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 100000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 50
-  },
-  "10054104": {
-    "id": 10054104,
-    "day": 5,
-    "functionId": "12000_03",
-    "target": [
-      {
-        "id": "10105",
-        "param1": "30",
-        "includeHistory": "True"
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 30
-      }
-    ],
-    "showSort": 4,
-    "reward": [
-      {
-        "count": 6,
-        "id": "item_food_30k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 50000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 30
-  },
-  "10054101": {
-    "id": 10054101,
-    "day": 5,
-    "functionId": "12000_03",
-    "descParams": [
-      {
-        "param1": 5
-      }
-    ],
-    "target": [
-      {
-        "id": "10105",
-        "param1": "5",
-        "includeHistory": "True"
-      }
-    ],
-    "reward": [
-      {
-        "count": 2,
-        "id": "item_food_10k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 5000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 5
-  },
-  "10044304": {
-    "id": 10044304,
-    "functionId": "rookieQuest_recruit",
-    "showType": 3,
-    "day": 4,
-    "reward": [
-      {
-        "count": 6,
-        "id": "item_wood_30k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 50000,
-        "type": 5
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 100
-      }
-    ],
-    "target": [
-      {
-        "id": "60702",
-        "param1": "100",
-        "includeHistory": "True"
-      }
-    ],
-    "showSort": 4,
-    "scheduleMaxValue": 100
-  },
-  "10044203": {
-    "id": 10044203,
-    "functionId": "2_5036",
     "showType": 2,
-    "day": 4,
-    "reward": [
+    "scheduleMaxValue": 500000,
+    "day": 5,
+    "showSort": 3
+  },
+  "10024103": {
+    "target": [
       {
-        "count": 2,
-        "id": "item_drone_part",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_SpeedUp_general_15m",
-        "type": 99
-      },
-      {
-        "count": 25000,
-        "type": 5
+        "param1": "40",
+        "id": "200060",
+        "includeHistory": "True"
       }
     ],
+    "functionId": "rookieQuest_radar",
+    "descParams": [
+      {
+        "param1": 40
+      }
+    ],
+    "id": 10024103,
+    "reward": [
+      {
+        "type": 99,
+        "count": 4,
+        "id": "item_food_30k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_15m"
+      },
+      {
+        "type": 5,
+        "count": 25000
+      }
+    ],
+    "scheduleMaxValue": 40,
+    "day": 2,
+    "showSort": 3
+  },
+  "10034205": {
+    "functionId": "rookieQuest_camp",
+    "descParams": [
+      {
+        "param1": 17
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 10,
+        "id": "item_wood_50k"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 100000
+      }
+    ],
+    "id": 10034205,
+    "target": [
+      {
+        "param1": "16",
+        "id": "20107",
+        "param2": "17"
+      }
+    ],
+    "showType": 2,
+    "scheduleMaxValue": 17,
+    "day": 3,
+    "showSort": 5
+  },
+  "10034104": {
+    "target": [
+      {
+        "param1": "600",
+        "id": "20305",
+        "includeHistory": "True"
+      }
+    ],
+    "functionId": "rookieQuest_train",
+    "descParams": [
+      {
+        "param1": 600
+      }
+    ],
+    "id": 10034104,
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_wood_30k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 50000
+      }
+    ],
+    "scheduleMaxValue": 600,
+    "day": 3,
+    "showSort": 4
+  },
+  "10054103": {
+    "target": [
+      {
+        "param1": "20",
+        "id": "10105",
+        "includeHistory": "True"
+      }
+    ],
+    "functionId": "12000_03",
     "descParams": [
       {
         "param1": 20
       }
     ],
-    "target": [
+    "id": 10054103,
+    "reward": [
       {
-        "id": "200401",
-        "param1": "15"
+        "type": 99,
+        "count": 4,
+        "id": "item_food_30k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_15m"
+      },
+      {
+        "type": 5,
+        "count": 25000
       }
     ],
-    "showSort": 3,
-    "scheduleMaxValue": 15
+    "scheduleMaxValue": 20,
+    "day": 5,
+    "showSort": 3
   },
-  "10044101": {
-    "id": 10044101,
-    "day": 4,
-    "functionId": "rookieQuest_tech",
-    "descParams": [
-      {
-        "param1": 5
-      }
-    ],
+  "10054102": {
+    "functionId": "12000_03",
     "target": [
       {
-        "id": "20204",
-        "param1": "5",
+        "param1": "10",
+        "id": "10105",
         "includeHistory": "True"
       }
     ],
     "reward": [
       {
+        "type": 99,
+        "count": 6,
+        "id": "item_food_10k"
+      },
+      {
+        "type": 99,
         "count": 2,
-        "id": "item_food_10k",
-        "type": 99
+        "id": "item_SpeedUp_general_5m"
       },
       {
-        "count": 1,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 5000,
-        "type": 5
+        "type": 5,
+        "count": 15000
       }
     ],
-    "scheduleMaxValue": 5
+    "id": 10054102,
+    "day": 5,
+    "showSort": 2
   },
-  "10034305": {
-    "id": 10034305,
-    "functionId": "rookieQuest_help",
-    "showType": 3,
-    "day": 3,
-    "reward": [
-      {
-        "count": 10,
-        "id": "item_steel_30k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 100000,
-        "type": 5
-      }
-    ],
+  "10034103": {
+    "functionId": "rookieQuest_train",
     "descParams": [
       {
         "param1": 300
@@ -2251,218 +2035,434 @@
     ],
     "target": [
       {
-        "id": "50101",
         "param1": "300",
+        "id": "20305",
         "includeHistory": "True"
       }
     ],
-    "showSort": 5,
-    "scheduleMaxValue": 300
+    "id": 10034103,
+    "scheduleMaxValue": 300,
+    "day": 3,
+    "showSort": 3
+  },
+  "10044301": {
+    "functionId": "rookieQuest_recruit",
+    "target": [
+      {
+        "param1": "10",
+        "id": "60702",
+        "includeHistory": "True"
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_wood_10k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 5000
+      }
+    ],
+    "id": 10044301,
+    "day": 4,
+    "showType": 3
+  },
+  "10044205": {
+    "functionId": "2_5036",
+    "descParams": [
+      {
+        "param1": 30
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 5,
+        "id": "item_drone_part"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 100000
+      }
+    ],
+    "id": 10044205,
+    "target": [
+      {
+        "param1": "30",
+        "id": "200401"
+      }
+    ],
+    "showType": 2,
+    "scheduleMaxValue": 30,
+    "day": 4,
+    "showSort": 5
+  },
+  "10044204": {
+    "functionId": "2_5036",
+    "descParams": [
+      {
+        "param1": 25
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 3,
+        "id": "item_drone_part"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 50000
+      }
+    ],
+    "id": 10044204,
+    "target": [
+      {
+        "param1": "20",
+        "id": "200401"
+      }
+    ],
+    "showType": 2,
+    "scheduleMaxValue": 20,
+    "day": 4,
+    "showSort": 4
+  },
+  "10044202": {
+    "target": [
+      {
+        "param1": "10",
+        "id": "200401"
+      }
+    ],
+    "functionId": "2_5036",
+    "descParams": [
+      {
+        "param1": 15
+      }
+    ],
+    "showType": 2,
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_optionalBox_Resource"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 15000
+      }
+    ],
+    "id": 10044202,
+    "day": 4,
+    "showSort": 2
+  },
+  "10014305": {
+    "functionId": "Monopoly_dangqian",
+    "descParams": [
+      {
+        "param1": 5
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 10,
+        "id": "item_wood_50k"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 100000
+      }
+    ],
+    "id": 10014305,
+    "target": [
+      {
+        "param1": "8008",
+        "id": 80029
+      }
+    ],
+    "showType": 3,
+    "scheduleMaxValue": 0,
+    "scheduleShow": 0,
+    "showSort": 5
+  },
+  "10044104": {
+    "target": [
+      {
+        "param1": "30",
+        "id": "20204",
+        "includeHistory": "True"
+      }
+    ],
+    "functionId": "rookieQuest_tech",
+    "descParams": [
+      {
+        "param1": 30
+      }
+    ],
+    "id": 10044104,
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_food_30k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 50000
+      }
+    ],
+    "scheduleMaxValue": 30,
+    "day": 4,
+    "showSort": 4
+  },
+  "10024301": {
+    "target": [
+      {
+        "param1": "1",
+        "id": "30102",
+        "param2": "30"
+      }
+    ],
+    "functionId": "rookieQuest_hero",
+    "descParams": [
+      {
+        "param1": 1
+      },
+      {
+        "param1": 30
+      }
+    ],
+    "id": 10024301,
+    "reward": [
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_food_10k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 5000
+      }
+    ],
+    "scheduleMaxValue": 1,
+    "day": 2,
+    "showType": 3
+  },
+  "10044103": {
+    "functionId": "rookieQuest_tech",
+    "descParams": [
+      {
+        "param1": 15
+      }
+    ],
+    "id": 10044103,
+    "reward": [
+      {
+        "type": 99,
+        "count": 4,
+        "id": "item_food_30k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_15m"
+      },
+      {
+        "type": 5,
+        "count": 25000
+      }
+    ],
+    "scheduleMaxValue": 15,
+    "day": 4,
+    "showSort": 3
+  },
+  "10024204": {
+    "functionId": "sevendays_tutorial_arena",
+    "descParams": [
+      {
+        "param1": 15
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_wood_30k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_UseUp_recruitCoin"
+      },
+      {
+        "type": 5,
+        "count": 50000
+      }
+    ],
+    "id": 10024204,
+    "target": [
+      {
+        "param1": "15",
+        "id": "16009",
+        "includeHistory": "True"
+      }
+    ],
+    "showType": 2,
+    "scheduleMaxValue": 15,
+    "day": 2,
+    "showSort": 4
+  },
+  "10034301": {
+    "functionId": "rookieQuest_help",
+    "target": [
+      {
+        "param1": "10",
+        "id": "50101",
+        "includeHistory": "True"
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_steel_6k"
+      },
+      {
+        "type": 99,
+        "count": 1,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 5000
+      }
+    ],
+    "id": 10034301,
+    "day": 3,
+    "showType": 3
+  },
+  "10034302": {
+    "functionId": "rookieQuest_help",
+    "descParams": [
+      {
+        "param1": 50
+      }
+    ],
+    "reward": [
+      {
+        "type": 99,
+        "count": 6,
+        "id": "item_steel_6k"
+      },
+      {
+        "type": 99,
+        "count": 2,
+        "id": "item_SpeedUp_general_5m"
+      },
+      {
+        "type": 5,
+        "count": 15000
+      }
+    ],
+    "id": 10034302,
+    "target": [
+      {
+        "param1": "50",
+        "id": "50101",
+        "includeHistory": "True"
+      }
+    ],
+    "showType": 3,
+    "scheduleMaxValue": 50,
+    "day": 3,
+    "showSort": 2
+  },
+  "10034203": {
+    "functionId": "rookieQuest_camp",
+    "target": [
+      {
+        "param1": "16",
+        "id": "20107",
+        "param2": "10"
+      }
+    ],
+    "showType": 2,
+    "id": 10034203,
+    "day": 3,
+    "showSort": 3
   },
   "10034202": {
-    "id": 10034202,
     "functionId": "rookieQuest_camp",
-    "showType": 2,
-    "day": 3,
-    "reward": [
-      {
-        "count": 6,
-        "id": "item_wood_10k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 15000,
-        "type": 5
-      }
-    ],
     "descParams": [
       {
         "param1": 6
       }
     ],
-    "target": [
-      {
-        "id": "20107",
-        "param2": "6",
-        "param1": "16"
-      }
-    ],
-    "showSort": 2,
-    "scheduleMaxValue": 6
-  },
-  "10034105": {
-    "id": 10034105,
-    "day": 3,
-    "functionId": "rookieQuest_train",
-    "target": [
-      {
-        "id": "20305",
-        "param1": "1200",
-        "includeHistory": "True"
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 1200
-      }
-    ],
-    "showSort": 5,
     "reward": [
       {
-        "count": 10,
-        "id": "item_wood_50k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_UseUp_recruitCoin",
-        "type": 99
-      },
-      {
-        "count": 100000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 1200
-  },
-  "10034102": {
-    "id": 10034102,
-    "day": 3,
-    "functionId": "rookieQuest_train",
-    "target": [
-      {
-        "id": "20305",
-        "param1": "100",
-        "includeHistory": "True"
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 100
-      }
-    ],
-    "showSort": 2,
-    "reward": [
-      {
+        "type": 99,
         "count": 6,
-        "id": "item_wood_10k",
-        "type": 99
+        "id": "item_wood_10k"
       },
       {
+        "type": 99,
         "count": 2,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
+        "id": "item_SpeedUp_general_5m"
       },
       {
-        "count": 15000,
-        "type": 5
+        "type": 5,
+        "count": 15000
       }
     ],
-    "scheduleMaxValue": 100
-  },
-  "10024202": {
-    "id": 10024202,
-    "functionId": "sevendays_tutorial_arena",
-    "showType": 2,
-    "day": 2,
-    "reward": [
-      {
-        "count": 6,
-        "id": "item_wood_10k",
-        "type": 99
-      },
-      {
-        "count": 2,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 15000,
-        "type": 5
-      }
-    ],
-    "descParams": [
-      {
-        "param1": 6
-      }
-    ],
+    "id": 10034202,
     "target": [
       {
-        "id": "16009",
-        "param1": "6",
-        "includeHistory": "True"
-      }
-    ],
-    "showSort": 2,
-    "scheduleMaxValue": 6
-  },
-  "10024201": {
-    "id": 10024201,
-    "day": 2,
-    "functionId": "sevendays_tutorial_arena",
-    "showType": 2,
-    "descParams": [
-      {
-        "param1": 3
-      }
-    ],
-    "target": [
-      {
-        "id": "16009",
-        "param1": "3",
-        "includeHistory": "True"
-      }
-    ],
-    "reward": [
-      {
-        "count": 2,
-        "id": "item_wood_10k",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_SpeedUp_general_5m",
-        "type": 99
-      },
-      {
-        "count": 5000,
-        "type": 5
-      }
-    ],
-    "scheduleMaxValue": 3
-  },
-  "10014203": {
-    "id": 10014203,
-    "target": [
-      {
+        "param1": "16",
         "id": "20107",
-        "param2": "10",
-        "param1": "1"
+        "param2": "6"
       }
     ],
-    "functionId": "rookieQuest_headquarter",
     "showType": 2,
-    "showSort": 3,
-    "reward": [
-      {
-        "count": 1,
-        "id": "item_Material_universalFragment_4",
-        "type": 99
-      },
-      {
-        "count": 1,
-        "id": "item_SpeedUp_general_15m",
-        "type": 99
-      },
-      {
-        "count": 25000,
-        "type": 5
-      }
-    ]
+    "scheduleMaxValue": 6,
+    "day": 3,
+    "showSort": 2
   }
 }

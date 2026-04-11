@@ -1,9 +1,70 @@
 {
-  "1012": {
+  "1004": {
+    "pos": "1_2_3",
+    "id": "1004",
+    "icon": "icon_kuaisucaiji",
+    "displayName": "Gathering Speedup",
+    "description": "Increases Resource Gathering Speed for alliance members.",
+    "maxValue": "+40%"
+  },
+  "2008": {
+    "techType": 2,
+    "id": "2008",
+    "preLine": [
+      {
+        "pos": "1_4_2"
+      }
+    ],
     "row": 5,
-    "id": "1012",
-    "icon": "icon_dianlibaohu",
-    "order": 3,
+    "pos": "1_5_1",
+    "icon": "icon_jijieshengmingli",
+    "displayName": "Rally HP",
+    "description": "Increases Hero HP when joining a rally for alliance members.",
+    "maxValue": "+10%"
+  },
+  "1008": {
+    "id": "1008",
+    "preLine": [
+      {
+        "pos": "1_3_1"
+      },
+      {
+        "pos": "1_3_2"
+      },
+      {
+        "pos": "1_3_3"
+      }
+    ],
+    "row": 4,
+    "pos": "1_4_2",
+    "icon": "icon_keyanjiasu",
+    "displayName": "Research Speedup",
+    "description": "Increases Tech Research Speed for alliance members.",
+    "maxValue": "+25%"
+  },
+  "2011": {
+    "techType": 2,
+    "id": "2011",
+    "preLine": [
+      {
+        "pos": "1_5_1"
+      },
+      {
+        "pos": "1_5_2"
+      },
+      {
+        "pos": "1_5_3"
+      }
+    ],
+    "row": 6,
+    "pos": "1_6_2",
+    "icon": "icon_zishenhushi",
+    "displayName": "Heal Aid",
+    "description": "Reduces troop healing resource cost for alliance members.",
+    "maxValue": "-5%"
+  },
+  "1011": {
+    "id": "1011",
     "preLine": [
       {
         "pos": "2_4_2"
@@ -12,25 +73,39 @@
         "pos": "2_4_3"
       }
     ],
-    "pos": "1_5_3",
-    "displayName": "Herb Protection",
-    "description": "Increases Herb protection limit for alliance members.",
+    "row": 5,
+    "pos": "1_5_2",
+    "order": 2,
+    "icon": "icon_mucaibaohu",
+    "displayName": "Timber Protection",
+    "description": "Increases Timber protection limit for alliance members.",
     "maxValue": "+12.5%"
   },
-  "2005": {
-    "id": "2005",
-    "icon": "icon_chengshijingongsudu",
-    "techType": 2,
-    "order": 2,
+  "1003": {
     "pos": "1_2_2",
-    "displayName": "Garrison Speedup",
-    "description": "Increases Troop March Speed when attacking cities for alliance members.",
+    "id": "1003",
+    "order": 2,
+    "displayName": "Enhance Help",
+    "description": "Enhances Alliance Help effect, reducing time additionally with each help.",
+    "maxValue": "-300s"
+  },
+  "2012": {
+    "techType": 2,
+    "id": "2012",
+    "preLine": [
+      {
+        "pos": "1_6_2"
+      }
+    ],
+    "row": 7,
+    "pos": "1_7_1",
+    "icon": "icon_zhushoushengming",
+    "displayName": "Garrison HP",
+    "description": "Increases Hero HP when garrisoned for alliance members.",
     "maxValue": "+10%"
   },
   "1005": {
-    "row": 3,
     "id": "1005",
-    "icon": "icon_shiwuchangliang",
     "preLine": [
       {
         "pos": "1_2_1"
@@ -42,31 +117,57 @@
         "pos": "1_2_3"
       }
     ],
+    "row": 3,
     "pos": "1_3_1",
+    "icon": "icon_shiwuchangliang",
     "displayName": "Grain Output",
     "description": "Increases Grain Output for alliance members' cities.",
     "maxValue": "+25%"
   },
   "2010": {
-    "row": 5,
-    "id": "2010",
     "techType": 2,
-    "icon": "icon_jijiefangyuli",
-    "order": 3,
+    "id": "2010",
     "preLine": [
       {
         "pos": "1_4_2"
       }
     ],
+    "row": 5,
     "pos": "1_5_3",
+    "order": 3,
+    "icon": "icon_jijiefangyuli",
     "displayName": "Rally Defense",
     "description": "Increases Hero DEF when joining a rally for alliance members.",
     "maxValue": "+10%"
   },
+  "2005": {
+    "techType": 2,
+    "id": "2005",
+    "pos": "1_2_2",
+    "order": 2,
+    "icon": "icon_chengshijingongsudu",
+    "displayName": "Garrison Speedup",
+    "description": "Increases Troop March Speed when attacking cities for alliance members.",
+    "maxValue": "+10%"
+  },
+  "2013": {
+    "techType": 2,
+    "id": "2013",
+    "preLine": [
+      {
+        "pos": "1_6_2"
+      }
+    ],
+    "row": 7,
+    "pos": "1_7_2",
+    "order": 2,
+    "icon": "icon_zhushougongjili",
+    "displayName": "Garrison Attack",
+    "description": "Increases Hero ATK when garrisoned for alliance members.",
+    "maxValue": "+10%"
+  },
   "1010": {
-    "row": 5,
     "id": "1010",
-    "icon": "icon_liangshibaohu",
     "preLine": [
       {
         "pos": "2_4_2"
@@ -75,16 +176,74 @@
         "pos": "2_4_3"
       }
     ],
+    "row": 5,
     "pos": "1_5_1",
+    "icon": "icon_liangshibaohu",
     "displayName": "Grain Protection",
     "description": "Increases Grain protection limit for alliance members.",
     "maxValue": "+12.5%"
   },
-  "2015": {
-    "row": 8,
-    "id": "2015",
-    "icon": "icon_xiaochangkuojian",
+  "2001": {
     "techType": 2,
+    "id": "2001",
+    "preLine": {},
+    "row": 1,
+    "icon": "icon_buduifuzhong",
+    "displayName": "Troop Load",
+    "description": "Increases Troop Load for alliance members.",
+    "maxValue": "+10%"
+  },
+  "1001": {
+    "maxLevel": 1,
+    "preLine": {},
+    "row": 1,
+    "icon": "icon_zidongjijie",
+    "id": "1001",
+    "displayName": "Auto Rally",
+    "description": "Offline alliance members will automatically dispatch troops to join the rally.",
+    "maxValue": "Unlocked"
+  },
+  "1007": {
+    "id": "1007",
+    "preLine": [
+      {
+        "pos": "1_2_1"
+      },
+      {
+        "pos": "1_2_2"
+      },
+      {
+        "pos": "1_2_3"
+      }
+    ],
+    "row": 3,
+    "pos": "1_3_3",
+    "order": 3,
+    "icon": "icon_dianlichangliang",
+    "displayName": "Herb Output",
+    "description": "Increases Herb Output for alliance members' cities.",
+    "maxValue": "+25%"
+  },
+  "1015": {
+    "id": "1015",
+    "preLine": [
+      {
+        "pos": "1_6_1"
+      },
+      {
+        "pos": "1_6_3"
+      }
+    ],
+    "row": 7,
+    "pos": "1_7_2",
+    "icon": "icon_zishengongjiang",
+    "displayName": "Construction Cost",
+    "description": "Reduces construction resource cost for alliance members.",
+    "maxValue": "-5%"
+  },
+  "2015": {
+    "techType": 2,
+    "id": "2015",
     "preLine": [
       {
         "pos": "1_7_1"
@@ -96,64 +255,196 @@
         "pos": "1_7_3"
       }
     ],
+    "row": 8,
     "pos": "1_8_2",
+    "icon": "icon_xiaochangkuojian",
     "displayName": "Barracks Expansion",
     "description": "Increases barracks capacity for alliance members.",
     "maxValue": "+5%"
   },
-  "2008": {
-    "row": 5,
-    "id": "2008",
-    "icon": "icon_jijieshengmingli",
+  "2009": {
     "techType": 2,
+    "id": "2009",
     "preLine": [
       {
         "pos": "1_4_2"
       }
     ],
-    "pos": "1_5_1",
-    "displayName": "Rally HP",
-    "description": "Increases Hero HP when joining a rally for alliance members.",
+    "row": 5,
+    "pos": "1_5_2",
+    "order": 2,
+    "icon": "icon_jijiegongjili",
+    "displayName": "Rally Attack",
+    "description": "Increases Hero ATK when joining a rally for alliance members.",
     "maxValue": "+10%"
   },
-  "2014": {
-    "row": 7,
-    "id": "2014",
+  "2007": {
     "techType": 2,
-    "icon": "icon_zhushoufangyuli",
-    "order": 3,
+    "id": "2007",
     "preLine": [
       {
-        "pos": "1_6_2"
-      }
-    ],
-    "pos": "1_7_3",
-    "displayName": "Garrison Defense",
-    "description": "Increases Hero DEF when garrisoned for alliance members.",
-    "maxValue": "+10%"
-  },
-  "1015": {
-    "row": 7,
-    "id": "1015",
-    "icon": "icon_zishengongjiang",
-    "preLine": [
-      {
-        "pos": "1_6_1"
+        "pos": "1_3_1"
       },
       {
-        "pos": "1_6_3"
+        "pos": "1_3_3"
       }
     ],
-    "pos": "1_7_2",
-    "displayName": "Construction Cost",
-    "description": "Reduces construction resource cost for alliance members.",
+    "row": 4,
+    "pos": "1_4_2",
+    "icon": "icon_buduixingjun",
+    "displayName": "Troop March",
+    "description": "Increases Troop March Speed for alliance members.",
+    "maxValue": "+5%"
+  },
+  "2006": {
+    "techType": 2,
+    "id": "2006",
+    "preLine": [
+      {
+        "pos": "1_2_1"
+      },
+      {
+        "pos": "1_2_3"
+      }
+    ],
+    "row": 3,
+    "pos": "1_3_3",
+    "order": 3,
+    "icon": "icon_fufangjiasu",
+    "displayName": "Quick Garrison",
+    "description": "Increases Troop March Speed when garrisoning for alliance members.",
+    "maxValue": "+50%"
+  },
+  "1009": {
+    "id": "1009",
+    "preLine": [
+      {
+        "pos": "1_3_1"
+      },
+      {
+        "pos": "1_3_2"
+      },
+      {
+        "pos": "1_3_3"
+      }
+    ],
+    "row": 4,
+    "pos": "1_4_3",
+    "order": 2,
+    "icon": "icon_yanfazuli",
+    "displayName": "Research Upgrade",
+    "description": "Reduces Tech Research resource cost for alliance members.",
     "maxValue": "-5%"
   },
-  "1011": {
-    "row": 5,
-    "id": "1011",
-    "icon": "icon_mucaibaohu",
+  "1006": {
+    "id": "1006",
+    "preLine": [
+      {
+        "pos": "1_2_1"
+      },
+      {
+        "pos": "1_2_2"
+      },
+      {
+        "pos": "1_2_3"
+      }
+    ],
+    "row": 3,
+    "pos": "1_3_2",
     "order": 2,
+    "icon": "icon_mucaichangliang",
+    "displayName": "Timber Output",
+    "description": "Increases Timber Output for alliance members' cities.",
+    "maxValue": "+25%"
+  },
+  "1014": {
+    "id": "1014",
+    "preLine": [
+      {
+        "pos": "1_5_1"
+      },
+      {
+        "pos": "1_5_2"
+      },
+      {
+        "pos": "1_5_3"
+      }
+    ],
+    "row": 6,
+    "pos": "1_6_3",
+    "order": 2,
+    "icon": "icon_zishentiejiang",
+    "displayName": "Crafting Technique",
+    "description": "Reduces Gear crafting Herb cost for alliance members.",
+    "maxValue": "-10%"
+  },
+  "2004": {
+    "techType": 2,
+    "id": "2004",
+    "preLine": [
+      {
+        "pos": "1_2_1"
+      },
+      {
+        "pos": "1_2_3"
+      }
+    ],
+    "row": 3,
+    "pos": "1_3_1",
+    "icon": "icon_buduixingjunsudu",
+    "displayName": "March Aid",
+    "description": "Increases Troop March Speed when attacking other Doctors' towns for alliance members.",
+    "maxValue": "+10%"
+  },
+  "2003": {
+    "techType": 2,
+    "id": "2003",
+    "pos": "1_2_3",
+    "order": 2,
+    "icon": "icon_xunlianxiaohao",
+    "displayName": "Coordinated Training",
+    "description": "Reduces soldier training resource cost for alliance members.",
+    "maxValue": "-5%"
+  },
+  "1013": {
+    "id": "1013",
+    "preLine": [
+      {
+        "pos": "1_5_1"
+      },
+      {
+        "pos": "1_5_2"
+      },
+      {
+        "pos": "1_5_3"
+      }
+    ],
+    "row": 6,
+    "pos": "1_6_1",
+    "icon": "icon_kuaisuzhizao",
+    "displayName": "Crafting Speedup",
+    "description": "Increases Gear crafting speed for alliance members.",
+    "maxValue": "+20%"
+  },
+  "1002": {
+    "pos": "1_2_1",
+    "id": "1002",
+    "icon": "icon_kuaisujianzao",
+    "displayName": "Fast Build",
+    "description": "Increases Construction Speed for alliance members.",
+    "maxValue": "+25%"
+  },
+  "2002": {
+    "pos": "1_2_1",
+    "techType": 2,
+    "id": "2002",
+    "icon": "icon_shibingxunliansudu",
+    "displayName": "Fast Training",
+    "description": "Increases soldier training speed for alliance members.",
+    "maxValue": "+5%"
+  },
+  "1012": {
+    "id": "1012",
     "preLine": [
       {
         "pos": "2_4_2"
@@ -162,319 +453,28 @@
         "pos": "2_4_3"
       }
     ],
-    "pos": "1_5_2",
-    "displayName": "Timber Protection",
-    "description": "Increases Timber protection limit for alliance members.",
+    "row": 5,
+    "pos": "1_5_3",
+    "order": 3,
+    "icon": "icon_dianlibaohu",
+    "displayName": "Herb Protection",
+    "description": "Increases Herb protection limit for alliance members.",
     "maxValue": "+12.5%"
   },
-  "2011": {
-    "row": 6,
-    "id": "2011",
-    "icon": "icon_zishenhushi",
+  "2014": {
     "techType": 2,
-    "preLine": [
-      {
-        "pos": "1_5_1"
-      },
-      {
-        "pos": "1_5_2"
-      },
-      {
-        "pos": "1_5_3"
-      }
-    ],
-    "pos": "1_6_2",
-    "displayName": "Heal Aid",
-    "description": "Reduces troop healing resource cost for alliance members.",
-    "maxValue": "-5%"
-  },
-  "2012": {
-    "row": 7,
-    "id": "2012",
-    "icon": "icon_zhushoushengming",
-    "techType": 2,
+    "id": "2014",
     "preLine": [
       {
         "pos": "1_6_2"
       }
     ],
-    "pos": "1_7_1",
-    "displayName": "Garrison HP",
-    "description": "Increases Hero HP when garrisoned for alliance members.",
-    "maxValue": "+10%"
-  },
-  "1014": {
-    "row": 6,
-    "id": "1014",
-    "icon": "icon_zishentiejiang",
-    "order": 2,
-    "preLine": [
-      {
-        "pos": "1_5_1"
-      },
-      {
-        "pos": "1_5_2"
-      },
-      {
-        "pos": "1_5_3"
-      }
-    ],
-    "pos": "1_6_3",
-    "displayName": "Crafting Technique",
-    "description": "Reduces Gear crafting Herb cost for alliance members.",
-    "maxValue": "-10%"
-  },
-  "1007": {
-    "row": 3,
-    "id": "1007",
-    "icon": "icon_dianlichangliang",
-    "order": 3,
-    "preLine": [
-      {
-        "pos": "1_2_1"
-      },
-      {
-        "pos": "1_2_2"
-      },
-      {
-        "pos": "1_2_3"
-      }
-    ],
-    "pos": "1_3_3",
-    "displayName": "Herb Output",
-    "description": "Increases Herb Output for alliance members' cities.",
-    "maxValue": "+25%"
-  },
-  "1001": {
-    "icon": "icon_zidongjijie",
-    "maxLevel": 1,
-    "preLine": {},
-    "row": 1,
-    "id": "1001",
-    "displayName": "Auto Rally",
-    "description": "Offline alliance members will automatically dispatch troops to join the rally.",
-    "maxValue": "Unlocked"
-  },
-  "2006": {
-    "row": 3,
-    "id": "2006",
-    "techType": 2,
-    "icon": "icon_fufangjiasu",
-    "order": 3,
-    "preLine": [
-      {
-        "pos": "1_2_1"
-      },
-      {
-        "pos": "1_2_3"
-      }
-    ],
-    "pos": "1_3_3",
-    "displayName": "Quick Garrison",
-    "description": "Increases Troop March Speed when garrisoning for alliance members.",
-    "maxValue": "+50%"
-  },
-  "2004": {
-    "row": 3,
-    "id": "2004",
-    "icon": "icon_buduixingjunsudu",
-    "techType": 2,
-    "preLine": [
-      {
-        "pos": "1_2_1"
-      },
-      {
-        "pos": "1_2_3"
-      }
-    ],
-    "pos": "1_3_1",
-    "displayName": "March Aid",
-    "description": "Increases Troop March Speed when attacking other Doctors' towns for alliance members.",
-    "maxValue": "+10%"
-  },
-  "2003": {
-    "id": "2003",
-    "icon": "icon_xunlianxiaohao",
-    "techType": 2,
-    "order": 2,
-    "pos": "1_2_3",
-    "displayName": "Coordinated Training",
-    "description": "Reduces soldier training resource cost for alliance members.",
-    "maxValue": "-5%"
-  },
-  "1013": {
-    "row": 6,
-    "id": "1013",
-    "icon": "icon_kuaisuzhizao",
-    "preLine": [
-      {
-        "pos": "1_5_1"
-      },
-      {
-        "pos": "1_5_2"
-      },
-      {
-        "pos": "1_5_3"
-      }
-    ],
-    "pos": "1_6_1",
-    "displayName": "Crafting Speedup",
-    "description": "Increases Gear crafting speed for alliance members.",
-    "maxValue": "+20%"
-  },
-  "2013": {
     "row": 7,
-    "id": "2013",
-    "techType": 2,
-    "icon": "icon_zhushougongjili",
-    "order": 2,
-    "preLine": [
-      {
-        "pos": "1_6_2"
-      }
-    ],
-    "pos": "1_7_2",
-    "displayName": "Garrison Attack",
-    "description": "Increases Hero ATK when garrisoned for alliance members.",
+    "pos": "1_7_3",
+    "order": 3,
+    "icon": "icon_zhushoufangyuli",
+    "displayName": "Garrison Defense",
+    "description": "Increases Hero DEF when garrisoned for alliance members.",
     "maxValue": "+10%"
-  },
-  "2001": {
-    "row": 1,
-    "id": "2001",
-    "icon": "icon_buduifuzhong",
-    "preLine": {},
-    "techType": 2,
-    "displayName": "Troop Load",
-    "description": "Increases Troop Load for alliance members.",
-    "maxValue": "+10%"
-  },
-  "1008": {
-    "row": 4,
-    "id": "1008",
-    "icon": "icon_keyanjiasu",
-    "preLine": [
-      {
-        "pos": "1_3_1"
-      },
-      {
-        "pos": "1_3_2"
-      },
-      {
-        "pos": "1_3_3"
-      }
-    ],
-    "pos": "1_4_2",
-    "displayName": "Research Speedup",
-    "description": "Increases Tech Research Speed for alliance members.",
-    "maxValue": "+25%"
-  },
-  "2002": {
-    "icon": "icon_shibingxunliansudu",
-    "id": "2002",
-    "techType": 2,
-    "pos": "1_2_1",
-    "displayName": "Fast Training",
-    "description": "Increases soldier training speed for alliance members.",
-    "maxValue": "+5%"
-  },
-  "2009": {
-    "row": 5,
-    "id": "2009",
-    "techType": 2,
-    "icon": "icon_jijiegongjili",
-    "order": 2,
-    "preLine": [
-      {
-        "pos": "1_4_2"
-      }
-    ],
-    "pos": "1_5_2",
-    "displayName": "Rally Attack",
-    "description": "Increases Hero ATK when joining a rally for alliance members.",
-    "maxValue": "+10%"
-  },
-  "1004": {
-    "icon": "icon_kuaisucaiji",
-    "id": "1004",
-    "pos": "1_2_3",
-    "displayName": "Gathering Speedup",
-    "description": "Increases Resource Gathering Speed for alliance members.",
-    "maxValue": "+40%"
-  },
-  "1002": {
-    "icon": "icon_kuaisujianzao",
-    "id": "1002",
-    "pos": "1_2_1",
-    "displayName": "Fast Build",
-    "description": "Increases Construction Speed for alliance members.",
-    "maxValue": "+25%"
-  },
-  "1006": {
-    "row": 3,
-    "id": "1006",
-    "icon": "icon_mucaichangliang",
-    "order": 2,
-    "preLine": [
-      {
-        "pos": "1_2_1"
-      },
-      {
-        "pos": "1_2_2"
-      },
-      {
-        "pos": "1_2_3"
-      }
-    ],
-    "pos": "1_3_2",
-    "displayName": "Timber Output",
-    "description": "Increases Timber Output for alliance members' cities.",
-    "maxValue": "+25%"
-  },
-  "1003": {
-    "order": 2,
-    "id": "1003",
-    "pos": "1_2_2",
-    "displayName": "Enhance Help",
-    "description": "Enhances Alliance Help effect, reducing time additionally with each help.",
-    "maxValue": "-300s"
-  },
-  "1009": {
-    "row": 4,
-    "id": "1009",
-    "icon": "icon_yanfazuli",
-    "order": 2,
-    "preLine": [
-      {
-        "pos": "1_3_1"
-      },
-      {
-        "pos": "1_3_2"
-      },
-      {
-        "pos": "1_3_3"
-      }
-    ],
-    "pos": "1_4_3",
-    "displayName": "Research Upgrade",
-    "description": "Reduces Tech Research resource cost for alliance members.",
-    "maxValue": "-5%"
-  },
-  "2007": {
-    "row": 4,
-    "id": "2007",
-    "icon": "icon_buduixingjun",
-    "techType": 2,
-    "preLine": [
-      {
-        "pos": "1_3_1"
-      },
-      {
-        "pos": "1_3_3"
-      }
-    ],
-    "pos": "1_4_2",
-    "displayName": "Troop March",
-    "description": "Increases Troop March Speed for alliance members.",
-    "maxValue": "+5%"
   }
 }
