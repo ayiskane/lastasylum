@@ -36,19 +36,19 @@ const ARMY_NAMES: Record<number, string> = {
 }
 
 // Rarity config
-const RARITY: Record<number, { label: string; color: string; borderColor: string; bgGrad: string; frameBorder: string; accentLine: string }> = {
+const RARITY: Record<number, { label: string; color: string; accentBar: string; bgGrad: string; frameBorder: string; accentLine: string }> = {
   5: {
-    label: 'UR', color: 'text-[#d4943a]', borderColor: 'border-[#d4943a]',
+    label: 'UR', color: 'text-[#d4943a]', accentBar: 'bg-[#d4943a]',
     bgGrad: 'from-[#d4943a10] to-transparent', frameBorder: 'border-[#d4943a50]',
     accentLine: 'from-[#d4943a40] to-transparent',
   },
   4: {
-    label: 'SSR', color: 'text-[#9855d4]', borderColor: 'border-[#9855d4]',
+    label: 'SSR', color: 'text-[#9855d4]', accentBar: 'bg-[#9855d4]',
     bgGrad: 'from-[#9855d410] to-transparent', frameBorder: 'border-[#9855d450]',
     accentLine: 'from-[#9855d440] to-transparent',
   },
   0: {
-    label: 'SR', color: 'text-[#4a7ec2]', borderColor: 'border-[#4a7ec2]',
+    label: 'SR', color: 'text-[#4a7ec2]', accentBar: 'bg-[#4a7ec2]',
     bgGrad: 'from-[#4a7ec210] to-transparent', frameBorder: 'border-[#4a7ec250]',
     accentLine: 'from-[#4a7ec240] to-transparent',
   },
@@ -185,7 +185,7 @@ function HeroCard({ hero, rarity }: { hero: HeroEntry; rarity: typeof RARITY[num
     <Link href={`/heroes/${hero.id}`}
       className="group flex gap-3 p-3 rounded-xl border border-[#1a1c22] bg-[#0e1018] hover:bg-[#14161e] hover:border-[#2a2c34] transition-all relative overflow-hidden">
       {/* Rarity accent bar left edge */}
-      <div className={`absolute left-0 top-0 bottom-0 w-[3px] rounded-l-xl ${rarity.borderColor} bg-current opacity-60`} />
+      <div className={`absolute left-0 top-0 bottom-0 w-[3px] rounded-l-xl ${rarity.accentBar}`} />
 
       {/* Portrait */}
       <div className={`w-16 h-16 rounded-xl border-2 ${rarity.frameBorder} bg-gradient-to-br ${rarity.bgGrad} flex-shrink-0 overflow-hidden relative`}>

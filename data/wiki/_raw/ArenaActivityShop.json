@@ -1,53 +1,95 @@
 {
-  "20": {
-    "typeID": 904,
+  "2": {
+    "shopBannerPath": "UI_Sprite/Banner/Shop/grocer_vip_shop_banner.png",
     "coin": [
       {
-        "id": "item_activity_shop_invasion",
+        "type": 11
+      }
+    ],
+    "typeID": 201,
+    "id": 2,
+    "display": 1,
+    "shopRefreshType": 2,
+    "sort": 201,
+    "activitySortID": "Pic_Entrance_VipShop",
+    "type": 2
+  },
+  "1": {
+    "type": 1,
+    "shopBannerPath": "UI_Sprite/Banner/Shop/grocer_diamond_shop_banner.png",
+    "coin": [
+      {
+        "type": 11
+      }
+    ],
+    "activitySortID": "UI_Sprite/Banner/K3Banner/Banner_VIP.png",
+    "sort": 101,
+    "display": 1
+  },
+  "99": {
+    "iconFuncType": 1,
+    "shopRefreshType": 2,
+    "sort": 502,
+    "type": 99,
+    "coin": [
+      {
+        "type": 1043
+      }
+    ],
+    "typeID": 9901,
+    "id": 99,
+    "display": 1
+  },
+  "6": {
+    "shopBannerPath": "UI_Sprite/Banner/Shop/grocer_espedition_shop_banner.png",
+    "coin": [
+      {
+        "id": "item_activity_expedition",
         "type": 99
       }
     ],
-    "id": 20
+    "typeID": 501,
+    "id": 6,
+    "display": 1,
+    "iconFuncType": 1,
+    "shopRefreshType": 2,
+    "sort": 501,
+    "activitySortID": "UI_Sprite/Banner/K3Banner/Banner_VIP.png",
+    "type": 5
   },
   "19": {
     "id": 19,
     "typeID": 9031
   },
-  "15": {
-    "type": 7,
-    "activitySortID": "UI_Sprite/Banner/K3Banner/Banner_alliance.png",
-    "typeID": 701,
-    "shopBannerPath": "UI_Sprite/Banner/Shop/grocer_alliance_shop_banner.png",
-    "id": 15,
-    "shopRefreshType": 2,
-    "shopStyle": 2,
-    "sort": 250,
+  "18": {
     "coin": [
       {
-        "type": 9
+        "id": "item_activity_shop_market",
+        "type": 99
       }
     ],
-    "display": 1,
-    "iconFuncType": 1
+    "typeID": 902,
+    "id": 18
   },
   "5": {
-    "type": 3,
-    "activitySortID": "UI_Sprite/Banner/K3Banner/Banner_VIP.png",
-    "typeID": 303,
     "shopBannerPath": "UI_Sprite/Banner/Shop/grocer_honor_shop_banner.png",
-    "id": 5,
-    "shopRefreshType": 3,
-    "sort": 303,
     "coin": [
       {
         "id": "item_Activity_dualCommander",
         "type": 99
       }
     ],
+    "typeID": 303,
+    "id": 5,
     "display": 1,
-    "iconFuncType": 1
+    "iconFuncType": 1,
+    "shopRefreshType": 3,
+    "sort": 303,
+    "activitySortID": "UI_Sprite/Banner/K3Banner/Banner_VIP.png",
+    "type": 3
   },
   "17": {
+    "iconFuncType": 0,
     "exchangeType": 2,
     "coin": [
       {
@@ -55,97 +97,55 @@
       }
     ],
     "typeID": 901,
-    "id": 17,
-    "iconFuncType": 0
-  },
-  "18": {
-    "typeID": 902,
-    "coin": [
-      {
-        "id": "item_activity_shop_market",
-        "type": 99
-      }
-    ],
-    "id": 18
-  },
-  "2": {
-    "type": 2,
-    "activitySortID": "Pic_Entrance_VipShop",
-    "typeID": 201,
-    "shopBannerPath": "UI_Sprite/Banner/Shop/grocer_vip_shop_banner.png",
-    "shopRefreshType": 2,
-    "sort": 201,
-    "id": 2,
-    "display": 1,
-    "coin": [
-      {
-        "type": 11
-      }
-    ]
-  },
-  "1": {
-    "type": 1,
-    "activitySortID": "UI_Sprite/Banner/K3Banner/Banner_VIP.png",
-    "sort": 101,
-    "coin": [
-      {
-        "type": 11
-      }
-    ],
-    "display": 1,
-    "shopBannerPath": "UI_Sprite/Banner/Shop/grocer_diamond_shop_banner.png"
-  },
-  "6": {
-    "type": 5,
-    "activitySortID": "UI_Sprite/Banner/K3Banner/Banner_VIP.png",
-    "typeID": 501,
-    "shopBannerPath": "UI_Sprite/Banner/Shop/grocer_espedition_shop_banner.png",
-    "id": 6,
-    "shopRefreshType": 2,
-    "sort": 501,
-    "coin": [
-      {
-        "id": "item_activity_expedition",
-        "type": 99
-      }
-    ],
-    "display": 1,
-    "iconFuncType": 1
-  },
-  "99": {
-    "type": 99,
-    "id": 99,
-    "coin": [
-      {
-        "type": 1043
-      }
-    ],
-    "shopRefreshType": 2,
-    "sort": 502,
-    "typeID": 9901,
-    "display": 1,
-    "iconFuncType": 1
-  },
-  "23": {
-    "id": 23,
-    "typeID": 9034
+    "id": 17
   },
   "24": {
-    "typeID": 9035,
     "coin": [
       {
         "id": "easter_golden_ticket",
         "type": 99
       }
     ],
+    "typeID": 9035,
     "id": 24
   },
-  "21": {
-    "id": 21,
-    "typeID": 9032
+  "15": {
+    "shopBannerPath": "UI_Sprite/Banner/Shop/grocer_alliance_shop_banner.png",
+    "coin": [
+      {
+        "type": 9
+      }
+    ],
+    "typeID": 701,
+    "id": 15,
+    "display": 1,
+    "iconFuncType": 1,
+    "shopRefreshType": 2,
+    "sort": 250,
+    "activitySortID": "UI_Sprite/Banner/K3Banner/Banner_alliance.png",
+    "type": 7,
+    "shopStyle": 2
   },
   "22": {
     "id": 22,
     "typeID": 9033
+  },
+  "23": {
+    "id": 23,
+    "typeID": 9034
+  },
+  "20": {
+    "coin": [
+      {
+        "id": "item_activity_shop_invasion",
+        "type": 99
+      }
+    ],
+    "typeID": 904,
+    "id": 20
+  },
+  "21": {
+    "id": 21,
+    "typeID": 9032
   }
 }
