@@ -103,23 +103,23 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
     }
   })
 
-  // Best image: try bust (750×1050), then honor (216×300), then card (162×276)
-  const bustPath = heroImagePath(hero, 'bust')
+  // Best image: honor art (216×300) exists for all heroes, card (162×276) as backup
+  // Bust (750×1050) would be ideal but needs ripper extraction
   const honorPath = heroImagePath(hero, 'honor')
   const cardPath = heroImagePath(hero, 'thumbnail')
+  const heroImg = honorPath || cardPath
 
   return (
-    <div className="flex max-w-[960px] mx-auto min-h-screen max-lg:flex-col">
+    <div className="max-w-[960px] mx-auto min-h-screen lg:flex max-lg:block">
       {/* ─── Sticky sidebar ─── */}
-      <aside className="w-[220px] max-lg:w-full shrink-0 lg:sticky lg:top-0 lg:h-screen bg-asylum-surface border-r border-asylum-border overflow-y-auto">
+      <aside className="w-[220px] max-lg:w-full shrink-0 lg:sticky lg:top-0 lg:self-start lg:h-screen bg-asylum-surface border-r border-asylum-border lg:overflow-y-auto">
         <div className="p-4 max-lg:flex max-lg:gap-4 max-lg:items-start">
-          {/* Hero image — tries bust → honor → card */}
+          {/* Hero image */}
           <div className={`max-lg:w-[120px] max-lg:shrink-0 rounded-xl border-2 ${accentBorder} overflow-hidden bg-asylum-bg mb-3 max-lg:mb-0`}>
             <div className="aspect-[216/300]">
               <GameImage
-                src={bustPath || honorPath || cardPath}
+                src={heroImg}
                 alt={name}
-                fallback={honorPath || cardPath}
                 className="w-full h-full object-cover"
               />
             </div>

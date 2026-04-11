@@ -3,13 +3,13 @@
     "id": 3,
     "overParams": [
       {
+        "order": 1,
         "dialog": [
           10000101035,
           10000101036,
           10000101037,
           10000101038
-        ],
-        "order": 1
+        ]
       },
       {
         "guideId": 100020,
@@ -18,37 +18,37 @@
     ]
   },
   "2": {
-    "triggerType": 2,
     "id": 2,
     "overParams": [
       {
+        "order": 1,
         "dialog": [
           10000101034
-        ],
-        "order": 1
+        ]
       },
       {
         "guideId": 100019,
         "order": 2
       }
-    ]
+    ],
+    "triggerType": 2
   },
   "1": {
+    "actionRef": [
+      {
+        "id": 1,
+        "order": 1
+      }
+    ],
     "overParams": [
       {
+        "order": 1,
         "dialog": [
           10000101030,
           10000101031,
           10000101032,
           10000101033
-        ],
-        "order": 1
-      }
-    ],
-    "actionRef": [
-      {
-        "id": 1,
-        "order": 1
+        ]
       }
     ]
   },
