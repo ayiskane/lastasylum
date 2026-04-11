@@ -1,175 +1,175 @@
 {
-  "5012": {
-    "mainIcon": "Icon_UI_Main_SecondQueue",
-    "giftBaseID": 300000007,
-    "topIcon": "Icon_Welfare_SecondQueue",
-    "mainDisplayCondition": [
-      {
-        "id": 110004,
-        "param2": 1,
-        "param1": 300000021
-      }
-    ],
-    "id": 5012,
-    "mainIconDisplayPriority": 1000,
-    "subscriptIcon": "common_img_bannerCorner1",
-    "mainIconDisplayTime": 3600
+  "10060": {
+    "id": 10060,
+    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_monthCard.png",
+    "displaySort": 4000,
+    "giftBaseID": 300000011,
+    "welfareType": 53,
+    "bigPic": "UI_Sprite/Banner/K3Banner/Banner_shop_limit.png",
+    "topIcon": "Icon_Activity_GoldCard",
+    "welfareConfig": 6000,
+    "openFrequency": -1,
+    "mainIcon": "Icon_UI_Main_Month",
+    "haveMainIconDisplayIcon": 0
   },
   "10050": {
+    "id": 10050,
+    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_weekCard.png",
     "displaySort": 3000,
+    "welfareType": 52,
+    "giftBaseID": 300000012,
+    "welfareConfig": 5000,
     "topIcon": "Icon_Activity_SilverCard",
+    "bigPic": "UI_Sprite/Banner/K3Banner/Banner_shop_daily.png",
+    "openFrequency": -1,
     "mainDisplayCondition": [
       {
+        "param1": 300000021,
         "id": 110004,
-        "param2": 1,
-        "param1": 300000021
+        "param2": 1
       }
     ],
-    "id": 10050,
-    "welfareType": 52,
-    "mainIcon": "Icon_UI_Main_Week",
-    "welfareConfig": 5000,
-    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_weekCard.png",
-    "bigPic": "UI_Sprite/Banner/K3Banner/Banner_shop_daily.png",
+    "mainIconDisplayTime": 3600,
     "mainIconDisplayPriority": 999,
-    "openFrequency": -1,
-    "giftBaseID": 300000012,
-    "mainIconDisplayTime": 3600
-  },
-  "1020": {
-    "displaySort": 8000,
-    "id": 1020,
-    "heroId": 10007,
-    "openCondition": [
-      {
-        "id": 10003001,
-        "param2": 300000021,
-        "param1": 5
-      }
-    ],
-    "comprehensiveIconId": 1006,
-    "mainIcon": "icon_Hero_09",
-    "welfareType": 1,
-    "giftBaseID": 901500001,
-    "bigPic": "UI/Models/SpineAssets_F/RechargeSpine/Shouchong_Yase/Shouchong_Yase.prefab",
-    "haveMainIconDisplayIcon": false,
-    "spine": 3001,
-    "subscriptIcon": "common_img_bannerCorner1",
-    "welfareBanner": ""
+    "mainIcon": "Icon_UI_Main_Week"
   },
   "10040": {
-    "displaySort": 0,
     "id": 10040,
-    "welfareType": 51,
-    "openCondition": {},
-    "welfareConfig": 4000,
+    "welfareBanner": "",
+    "displaySort": 0,
     "bigPic": "",
-    "haveMainIconDisplayIcon": false,
+    "welfareType": 51,
+    "welfareConfig": 4000,
     "openFrequency": -1,
-    "welfareBanner": ""
-  },
-  "10060": {
-    "displaySort": 4000,
-    "topIcon": "Icon_Activity_GoldCard",
-    "id": 10060,
-    "welfareType": 53,
-    "mainIcon": "Icon_UI_Main_Month",
-    "welfareConfig": 6000,
-    "bigPic": "UI_Sprite/Banner/K3Banner/Banner_shop_limit.png",
-    "haveMainIconDisplayIcon": 0,
-    "openFrequency": -1,
-    "giftBaseID": 300000011,
-    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_monthCard.png"
-  },
-  "1010": {
-    "displaySort": 7000,
-    "topIcon": "Pic_Activity_Notice_FirstCharge",
-    "welfareType": 60,
-    "heroId": 30006,
-    "openCondition": [
-      {
-        "id": 20103,
-        "param2": 2,
-        "param1": 1001
-      }
-    ],
-    "comprehensiveIconId": 2001,
-    "mainIcon": "Icon_UI_Main_FirstPay",
-    "giftBaseID": 300000021,
-    "triggerBigPic": "Pic_UI_FirstCharge",
-    "bigPic": "UI/Models/SpineAssets_F/RechargeSpine/Shouchong_Marlena_Tag/Shouchong_Marlena_Tag.prefab",
-    "mainIconDisplayPriority": 1002,
-    "spine": 3001,
-    "subscriptIcon": "common_img_bannerCorner1",
-    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_firstPay.png"
-  },
-  "5011": {
-    "mainIcon": "Icon_UI_Main_SecondQueue",
-    "giftBaseID": 300000006,
-    "topIcon": "Icon_Welfare_SecondQueue",
-    "mainDisplayCondition": [
-      {
-        "id": 110004,
-        "param2": 1,
-        "param1": 300000021
-      }
-    ],
-    "id": 5011,
-    "mainIconDisplayPriority": 1000,
-    "subscriptIcon": "common_img_bannerCorner1",
-    "mainIconDisplayTime": 3600
+    "openCondition": {},
+    "haveMainIconDisplayIcon": false
   },
   "8010": {
-    "welfareType": 8,
-    "displaySort": 1,
+    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_reconnoitre.png",
     "id": 8010,
     "bigPic": "UI_Sprite/Banner/K3Banner/Banner_reconnoitre.png",
-    "haveMainIconDisplayIcon": 0,
+    "displaySort": 1,
+    "welfareType": 8,
     "openFrequency": -1,
     "openCondition": [
       {
+        "param1": 1001,
         "id": 20103,
-        "param2": 6,
-        "param1": 1001
+        "param2": 6
       }
     ],
-    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_reconnoitre.png"
+    "haveMainIconDisplayIcon": 0
+  },
+  "10070": {
+    "id": 10070,
+    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_shop_daily.png",
+    "displaySort": 5000,
+    "giftBaseID": 300000004,
+    "welfareType": 31,
+    "topIcon": "Icon_Welfare_Fund",
+    "bigPic": "UI_Sprite/Banner/K3Banner/Banner_shop_daily.png",
+    "mail": 8734,
+    "welfareConfig": 10070,
+    "showDiamond": 50000,
+    "openCondition": [
+      {
+        "param1": 1001,
+        "id": 20103,
+        "param2": 4
+      }
+    ],
+    "haveMainIconDisplayIcon": 0
   },
   "5010": {
+    "id": 5010,
+    "topIcon": "Icon_Welfare_SecondQueue",
+    "subscriptIcon": "common_img_bannerCorner1",
     "giftBaseID": 300000003,
+    "welfareType": 5,
+    "mainDisplayCondition": [
+      {
+        "param1": 300000021,
+        "id": 110004,
+        "param2": 1
+      }
+    ],
+    "mainIconDisplayTime": 3600,
+    "mainIconDisplayPriority": 1000,
+    "mainIcon": "Icon_UI_Main_SecondQueue"
+  },
+  "5011": {
+    "mainIconDisplayPriority": 1000,
+    "id": 5011,
+    "mainIcon": "Icon_UI_Main_SecondQueue",
     "topIcon": "Icon_Welfare_SecondQueue",
     "mainDisplayCondition": [
       {
+        "param1": 300000021,
         "id": 110004,
-        "param2": 1,
-        "param1": 300000021
+        "param2": 1
       }
     ],
-    "id": 5010,
-    "welfareType": 5,
-    "mainIcon": "Icon_UI_Main_SecondQueue",
-    "mainIconDisplayPriority": 1000,
+    "mainIconDisplayTime": 3600,
     "subscriptIcon": "common_img_bannerCorner1",
-    "mainIconDisplayTime": 3600
+    "giftBaseID": 300000006
   },
-  "10070": {
-    "displaySort": 5000,
-    "topIcon": "Icon_Welfare_Fund",
-    "id": 10070,
-    "welfareType": 31,
+  "5012": {
+    "mainIconDisplayPriority": 1000,
+    "id": 5012,
+    "mainIcon": "Icon_UI_Main_SecondQueue",
+    "topIcon": "Icon_Welfare_SecondQueue",
+    "mainDisplayCondition": [
+      {
+        "param1": 300000021,
+        "id": 110004,
+        "param2": 1
+      }
+    ],
+    "mainIconDisplayTime": 3600,
+    "subscriptIcon": "common_img_bannerCorner1",
+    "giftBaseID": 300000007
+  },
+  "1020": {
+    "comprehensiveIconId": 1006,
+    "welfareBanner": "",
+    "displaySort": 8000,
+    "spine": 3001,
+    "heroId": 10007,
+    "subscriptIcon": "common_img_bannerCorner1",
+    "giftBaseID": 901500001,
+    "bigPic": "UI/Models/SpineAssets_F/RechargeSpine/Shouchong_Yase/Shouchong_Yase.prefab",
     "openCondition": [
       {
-        "id": 20103,
-        "param2": 4,
-        "param1": 1001
+        "param1": 5,
+        "id": 10003001,
+        "param2": 300000021
       }
     ],
-    "showDiamond": 50000,
-    "welfareConfig": 10070,
-    "bigPic": "UI_Sprite/Banner/K3Banner/Banner_shop_daily.png",
-    "haveMainIconDisplayIcon": 0,
-    "giftBaseID": 300000004,
-    "mail": 8734,
-    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_shop_daily.png"
+    "welfareType": 1,
+    "mainIcon": "icon_Hero_09",
+    "id": 1020,
+    "haveMainIconDisplayIcon": false
+  },
+  "1010": {
+    "comprehensiveIconId": 2001,
+    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_firstPay.png",
+    "displaySort": 7000,
+    "spine": 3001,
+    "heroId": 30006,
+    "subscriptIcon": "common_img_bannerCorner1",
+    "giftBaseID": 300000021,
+    "topIcon": "Pic_Activity_Notice_FirstCharge",
+    "bigPic": "UI/Models/SpineAssets_F/RechargeSpine/Shouchong_Marlena_Tag/Shouchong_Marlena_Tag.prefab",
+    "mainIconDisplayPriority": 1002,
+    "welfareType": 60,
+    "openCondition": [
+      {
+        "param1": 1001,
+        "id": 20103,
+        "param2": 2
+      }
+    ],
+    "triggerBigPic": "Pic_UI_FirstCharge",
+    "mainIcon": "Icon_UI_Main_FirstPay"
   }
 }

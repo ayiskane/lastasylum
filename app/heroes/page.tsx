@@ -54,6 +54,14 @@ const RARITY: Record<number, { label: string; color: string; accentBar: string; 
   },
 }
 
+// Quality frame backgrounds (from Zombie_CommonForK3_RGB)
+const QUALITY_FRAME: Record<number, string> = {
+  0: '/images/items/Icon_item_blue.png',   // SR
+  4: '/images/items/Icon_item_purple.png',  // SSR
+  5: '/images/items/Icon_item_yellow.png',  // UR
+  6: '/images/items/Icon_item_red.png',     // UR+
+}
+
 // Rarity label images
 const RARITY_LABEL: Record<number, string> = {
   0: '/images/icons/font_pz_3.png',
@@ -187,9 +195,13 @@ function HeroCard({ hero, rarity }: { hero: HeroEntry; rarity: typeof RARITY[num
       {/* Rarity accent bar left edge */}
       <div className={`absolute left-0 top-0 bottom-0 w-[3px] rounded-l-xl ${rarity.accentBar}`} />
 
-      {/* Portrait */}
-      <div className={`w-16 h-16 rounded-xl border-2 ${rarity.frameBorder} bg-gradient-to-br ${rarity.bgGrad} flex-shrink-0 overflow-hidden relative`}>
-        <div className="absolute inset-[3px] rounded-lg overflow-hidden">
+      {/* Portrait with game quality frame */}
+      <div className="w-16 h-16 flex-shrink-0 relative">
+        {/* Game quality frame background */}
+        <img src={QUALITY_FRAME[hero.quality] || QUALITY_FRAME[4]} alt=""
+          className="absolute inset-0 w-full h-full rounded-xl" />
+        {/* Hero icon on top */}
+        <div className="absolute inset-[4px] rounded-lg overflow-hidden">
           <GameImage
             src={hero.heroIcon ? `/images/heroes/${hero.heroIcon}.png` : ''}
             alt={hero.name}
