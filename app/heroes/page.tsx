@@ -10,33 +10,28 @@ interface HeroEntry {
   maxAbility: number; heroIcon: string
 }
 
-const QUALITY_CARD: Record<number, { border: string; bg: string; text: string }> = {
-  2: { border: 'border-green-500/50', bg: 'bg-gradient-to-b from-[#1a4a2a] to-[#0f2818]', text: 'text-green-400' },
-  3: { border: 'border-[#4a7ec2]/50', bg: 'bg-gradient-to-b from-[#2a4a7a] to-[#162845]', text: 'text-blue-400' },
-  4: { border: 'border-[#9855d4]/50', bg: 'bg-gradient-to-b from-[#6b2fa0] to-[#351660]', text: 'text-purple-400' },
-  5: { border: 'border-[#d4943a]/50', bg: 'bg-gradient-to-b from-[#c88520] to-[#704010]', text: 'text-amber-400' },
-  6: { border: 'border-red-500/50', bg: 'bg-gradient-to-b from-[#a02020] to-[#501010]', text: 'text-red-400' },
-}
-
-// Game icons: camp/class (pic_sjboss_zy*)
+// Camp/class: 0=Warrior, 1=Ranger, 2=Warlock
 const CAMP_ICON: Record<number, string> = {
+  0: '/images/icons/pic_sjboss_zy1.png', // Warrior (red)
   1: '/images/icons/pic_sjboss_zy2.png', // Ranger (blue)
   2: '/images/icons/pic_sjboss_zy3.png', // Warlock (green)
-  3: '/images/icons/pic_sjboss_zy1.png', // Warrior (red)
+}
+const CAMP_NAMES: Record<number, string> = {
+  0: 'Warrior', 1: 'Ranger', 2: 'Warlock',
 }
 
-// Game icons: army type (ico_yx_dw*)
+// Army type
 const ARMY_ICON: Record<number, string> = {
-  1: '/images/icons/ico_yx_dw1.png', // Infantry (shield)
-  3: '/images/icons/ico_yx_dw2.png', // Aircraft (wing)
+  1: '/images/icons/ico_yx_dw1.png',
+  3: '/images/icons/ico_yx_dw2.png',
 }
 
-// Rarity label images (font_pz_*)
+// Rarity labels
 const RARITY_LABEL: Record<number, string> = {
-  2: '/images/icons/font_pz_2.png', // R
-  3: '/images/icons/font_pz_3.png', // SR
-  4: '/images/icons/font_pz_4.png', // SSR
-  5: '/images/icons/font_pz_5.png', // UR
+  2: '/images/icons/font_pz_2.png',
+  3: '/images/icons/font_pz_3.png',
+  4: '/images/icons/font_pz_4.png',
+  5: '/images/icons/font_pz_5.png',
 }
 
 export default function HeroesPage() {
@@ -58,12 +53,10 @@ export default function HeroesPage() {
   }
 
   const armyTypes = [...new Set(heroes.map(h => h.armyType))].filter(t => t > 0).sort()
-  const campTypes = [...new Set(heroes.map(h => h.campType))].filter(t => t > 0).sort()
+  const campTypes = [0, 1, 2] // All three roles: Warrior, Ranger, Warlock
   const armyNames: Record<number, string> = {}
-  const campNames: Record<number, string> = {}
   heroes.forEach(h => {
     if (h.armyType > 0) armyNames[h.armyType] = h.armyName
-    if (h.campType > 0) campNames[h.campType] = h.campName
   })
 
   const filtered = heroes.filter(h =>
@@ -84,7 +77,6 @@ export default function HeroesPage() {
 
       {/* Filters */}
       <div className="flex flex-wrap gap-4 mb-6">
-        {/* Army type filter */}
         <div className="flex items-center gap-1.5">
           <span className="text-[10px] text-asylum-hint uppercase tracking-wider mr-1">Class</span>
           <button onClick={() => setFilterArmy(null)}
@@ -96,13 +88,12 @@ export default function HeroesPage() {
               className={`text-[11px] px-2.5 py-1 rounded-lg transition-colors flex items-center gap-1 ${
                 filterArmy === t ? 'bg-asylum-accent/15 text-asylum-accent border border-asylum-accent/30'
                   : 'bg-asylum-surface border border-asylum-border text-asylum-muted hover:text-asylum-text'}`}>
-              {ARMY_ICON[t] && <img src={ARMY_ICON[t]} alt="" className="w-4 h-4" />}
+              {ARMY_ICON[t] && <img src={ARMY_ICON[t]} alt="" className="w-5 h-5" />}
               {armyNames[t]}
             </button>
           ))}
         </div>
 
-        {/* Camp/role filter */}
         <div className="flex items-center gap-1.5">
           <span className="text-[10px] text-asylum-hint uppercase tracking-wider mr-1">Role</span>
           <button onClick={() => setFilterCamp(null)}
@@ -114,8 +105,8 @@ export default function HeroesPage() {
               className={`text-[11px] px-2.5 py-1 rounded-lg transition-colors flex items-center gap-1 ${
                 filterCamp === t ? 'bg-asylum-accent/15 text-asylum-accent border border-asylum-accent/30'
                   : 'bg-asylum-surface border border-asylum-border text-asylum-muted hover:text-asylum-text'}`}>
-              {CAMP_ICON[t] && <img src={CAMP_ICON[t]} alt="" className="w-4 h-4" />}
-              {campNames[t]}
+              {CAMP_ICON[t] && <img src={CAMP_ICON[t]} alt="" className="w-5 h-5" />}
+              {CAMP_NAMES[t]}
             </button>
           ))}
         </div>
@@ -132,17 +123,18 @@ export default function HeroesPage() {
       {qualityOrder.map(q => {
         const list = byQuality[q]
         if (!list?.length) return null
-        const style = QUALITY_CARD[q] || QUALITY_CARD[4]
         const rarityImg = RARITY_LABEL[q]
         return (
           <section key={q} className="mb-8">
-            <h2 className={`font-display text-lg tracking-wide mb-3 flex items-center gap-2 ${style.text}`}>
-              {rarityImg ? <img src={rarityImg} alt={list[0]?.qualityName} className="h-6" /> : (list[0]?.qualityName || `Quality ${q}`)}
+            <h2 className="font-display text-lg tracking-wide mb-3 flex items-center gap-2">
+              {rarityImg ? <img src={rarityImg} alt={list[0]?.qualityName} className="h-6" /> : (
+                <span className="text-asylum-accent">{list[0]?.qualityName || `Quality ${q}`}</span>
+              )}
               <span className="text-sm text-asylum-muted font-normal">({list.length})</span>
             </h2>
-            <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-3">
+            <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10 gap-4">
               {list.map(hero => (
-                <HeroCard key={hero.id} hero={hero} style={style} />
+                <HeroCard key={hero.id} hero={hero} />
               ))}
             </div>
           </section>
@@ -152,12 +144,14 @@ export default function HeroesPage() {
   )
 }
 
-function HeroCard({ hero, style }: { hero: HeroEntry; style: { border: string; bg: string } }) {
+function HeroCard({ hero }: { hero: HeroEntry }) {
   return (
     <Link href={`/heroes/${hero.id}`}
       className="group flex flex-col items-center gap-1.5 transition-transform hover:scale-105">
-      <div className={`w-[72px] h-[72px] rounded-xl border-2 ${style.border} ${style.bg} p-0.5 overflow-hidden relative transition-all group-hover:border-opacity-100`}>
-        <div className="w-full h-full rounded-[10px] overflow-hidden">
+      {/* Outer wrapper with padding for badges to overflow into */}
+      <div className="relative w-[88px] h-[88px]">
+        {/* Hero icon — plain square with subtle border, no gradient bg */}
+        <div className="absolute inset-[8px] rounded-xl overflow-hidden bg-asylum-surface border border-asylum-border/60 group-hover:border-asylum-accent/50 transition-colors">
           <GameImage
             src={hero.heroIcon ? `/images/heroes/${hero.heroIcon}.png` : ''}
             alt={hero.name}
@@ -167,18 +161,16 @@ function HeroCard({ hero, style }: { hero: HeroEntry; style: { border: string; b
         </div>
         {/* Army type badge — top right */}
         {hero.armyType > 0 && ARMY_ICON[hero.armyType] && (
-          <div className="absolute -top-0.5 -right-0.5 w-[20px] h-[20px]">
-            <img src={ARMY_ICON[hero.armyType]} alt="" className="w-full h-full" />
-          </div>
+          <img src={ARMY_ICON[hero.armyType]} alt={hero.armyName}
+            className="absolute top-0 right-0 w-[28px] h-[28px] drop-shadow-lg" />
         )}
-        {/* Camp/role badge — bottom left */}
-        {hero.campType > 0 && CAMP_ICON[hero.campType] && (
-          <div className="absolute -bottom-0.5 -left-0.5 w-[22px] h-[22px]">
-            <img src={CAMP_ICON[hero.campType]} alt="" className="w-full h-full" />
-          </div>
+        {/* Camp/role badge — bottom left (all heroes have one now) */}
+        {CAMP_ICON[hero.campType] && (
+          <img src={CAMP_ICON[hero.campType]} alt={CAMP_NAMES[hero.campType]}
+            className="absolute bottom-0 left-0 w-[30px] h-[30px] drop-shadow-lg" />
         )}
       </div>
-      <span className="text-[11px] font-semibold text-asylum-text text-center leading-tight group-hover:text-asylum-accent transition-colors truncate max-w-[80px]">
+      <span className="text-[11px] font-semibold text-asylum-text text-center leading-tight group-hover:text-asylum-accent transition-colors truncate max-w-[88px]">
         {hero.name}
       </span>
     </Link>

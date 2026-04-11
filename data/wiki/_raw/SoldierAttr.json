@@ -1,1261 +1,1114 @@
 {
-  "9010": {
-    "attackStar": 20,
-    "defenseStar": 20,
-    "id": 9010,
+  "1005": {
+    "soldierBenefit": [
+      {
+        "Source": 801,
+        "Value": 2082,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 5,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 5,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 295,
+        "Type": 10096
+      }
+    ],
+    "ability": 412,
+    "load": 1200,
+    "defenseStar": 5,
+    "quality": 4,
+    "bubbleIcon": "Icon_UI_Bubble_SoldierT5",
+    "model": "AE_Soldier_Warrior_T5",
+    "type": 1,
+    "hpStar": 2082,
+    "soldierCostTime": 120,
+    "hospitalCostTime": 36,
+    "resourcePath": "51005",
+    "bigCard": "pic_bingzhong05",
+    "showModelPath": "shibing_05",
+    "recruit": [
+      {
+        "count": 1746,
+        "type": 1
+      },
+      {
+        "count": 1746,
+        "type": 2
+      }
+    ],
+    "level": 5,
+    "attackStar": 5,
+    "morale": 295,
+    "unLockCampLevel": 14,
+    "conquerHospitalCostTime": 6000,
+    "id": 1005,
+    "soldierOrder": 6,
+    "icon": "pic_bingzhong05",
+    "bust": "Pic_Soldier_T5",
+    "cure": [
+      {
+        "count": 523,
+        "type": 1
+      },
+      {
+        "count": 523,
+        "type": 2
+      }
+    ],
+    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas"
+  },
+  "1007": {
+    "soldierBenefit": [
+      {
+        "Source": 801,
+        "Value": 3960,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 9.5,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 9.5,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 370,
+        "Type": 10096
+      }
+    ],
+    "ability": 781,
+    "load": 1600,
+    "defenseStar": 9.5,
+    "bubbleIcon": "Icon_UI_Bubble_SoldierT7",
+    "model": "AE_Soldier_Archer_T8",
+    "type": 1,
+    "hpStar": 3960,
+    "soldierCostTime": 160,
+    "hospitalCostTime": 48,
+    "resourcePath": "52008",
+    "bigCard": "pic_bingzhong07",
+    "showModelPath": "shibing_07",
+    "recruit": [
+      {
+        "count": 3320,
+        "type": 1
+      },
+      {
+        "count": 3320,
+        "type": 2
+      }
+    ],
+    "level": 7,
+    "attackStar": 9.5,
+    "morale": 370,
+    "unLockCampLevel": 20,
+    "conquerHospitalCostTime": 7980,
+    "id": 1007,
+    "soldierOrder": 4,
+    "icon": "pic_bingzhong07",
+    "bust": "Pic_Soldier_T7",
+    "cure": [
+      {
+        "count": 996,
+        "type": 1
+      },
+      {
+        "count": 996,
+        "type": 2
+      }
+    ],
+    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas"
+  },
+  "1001": {
+    "soldierBenefit": [
+      {
+        "Source": 801,
+        "Value": 116,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 0.3,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 0.3,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 205,
+        "Type": 10096
+      }
+    ],
+    "ability": 25,
+    "load": 400,
+    "soldierCostTime": 40,
+    "quality": 1,
+    "bubbleIcon": "Icon_UI_Bubble_SoldierT1",
+    "hospitalCostTime": 12,
+    "bigCard": "pic_bingzhong01",
+    "showModelPath": "shibing_01",
+    "recruit": [
+      {
+        "count": 97,
+        "type": 1
+      },
+      {
+        "count": 97,
+        "type": 2
+      }
+    ],
+    "level": 1,
+    "model": "AE_Soldier_Archer_T1",
+    "type": 1,
+    "unLockCampLevel": 1,
+    "conquerHospitalCostTime": 600,
+    "resourcePath": "52001",
+    "soldierOrder": 10,
+    "icon": "pic_bingzhong01",
+    "bust": "Pic_Soldier_T1",
+    "cure": [
+      {
+        "count": 29,
+        "type": 1
+      },
+      {
+        "count": 29,
+        "type": 2
+      }
+    ],
+    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas"
+  },
+  "8010": {
+    "soldierBenefit": [
+      {
+        "Source": 801,
+        "Value": 8380,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 20,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 20,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 600,
+        "Type": 10096
+      }
+    ],
     "hpStar": 8380,
+    "morale": 600,
+    "defenseStar": 20,
     "condition": [
       {
         "param1": "11023",
-        "param2": "1",
-        "id": 20201
+        "id": 20201,
+        "param2": "1"
       }
     ],
-    "morale": 600,
+    "attackStar": 20,
+    "id": 8010
+  },
+  "8002": {
     "soldierBenefit": [
       {
-        "Value": 8380,
-        "Type": 10093,
-        "Source": 801
+        "Source": 801,
+        "Value": 174,
+        "Type": 10093
       },
       {
-        "Value": 20,
-        "Type": 10094,
-        "Source": 801
+        "Source": 801,
+        "Value": 0.5,
+        "Type": 10094
       },
       {
-        "Value": 20,
-        "Type": 10095,
-        "Source": 801
+        "Source": 801,
+        "Value": 0.5,
+        "Type": 10095
       },
       {
-        "Value": 600,
-        "Type": 10096,
-        "Source": 801
+        "Source": 801,
+        "Value": 224,
+        "Type": 10096
+      }
+    ],
+    "ability": 37,
+    "load": 600,
+    "defenseStar": 0.5,
+    "quality": 2,
+    "morale": 224,
+    "id": 8002,
+    "hospitalCostTime": 18,
+    "soldierCostTime": 60,
+    "bigCard": "pic_bz_sangsgi02",
+    "showModelPath": "shibing_02",
+    "resourcePath": "52002",
+    "level": 2,
+    "attackStar": 0.5,
+    "recruit": [
+      {
+        "count": 145,
+        "type": 1
+      },
+      {
+        "count": 145,
+        "type": 2
+      }
+    ],
+    "unLockCampLevel": 3,
+    "conquerHospitalCostTime": 2100,
+    "model": "AE_Soldier_Archer_T2",
+    "soldierOrder": 9,
+    "icon": "pic_bz_sangsgi02",
+    "bust": "Pic_Soldier_T2",
+    "hpStar": 174,
+    "cure": [
+      {
+        "count": 43,
+        "type": 1
+      },
+      {
+        "count": 43,
+        "type": 2
       }
     ]
   },
-  "8010": {
-    "attackStar": 20,
-    "defenseStar": 20,
-    "id": 8010,
+  "9002": {
+    "soldierBenefit": [
+      {
+        "Source": 801,
+        "Value": 174,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 0.5,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 0.5,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 224,
+        "Type": 10096
+      }
+    ],
+    "ability": 37,
+    "load": 600,
+    "defenseStar": 0.5,
+    "quality": 2,
+    "morale": 224,
+    "id": 9002,
+    "hospitalCostTime": 18,
+    "soldierCostTime": 60,
+    "bigCard": "pic_bz_sangsgi02",
+    "showModelPath": "shibing_02",
+    "resourcePath": "52002",
+    "level": 2,
+    "attackStar": 0.5,
+    "recruit": [
+      {
+        "count": 145,
+        "type": 1
+      },
+      {
+        "count": 145,
+        "type": 2
+      }
+    ],
+    "unLockCampLevel": 3,
+    "conquerHospitalCostTime": 2100,
+    "model": "AE_Soldier_Archer_T2",
+    "soldierOrder": 9,
+    "icon": "pic_bz_sangsgi02",
+    "bust": "Pic_Soldier_T2",
+    "hpStar": 174,
+    "cure": [
+      {
+        "count": 43,
+        "type": 1
+      },
+      {
+        "count": 43,
+        "type": 2
+      }
+    ]
+  },
+  "1008": {
+    "soldierBenefit": [
+      {
+        "Source": 801,
+        "Value": 5409,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 13,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 13,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 425,
+        "Type": 10096
+      }
+    ],
+    "ability": 1065,
+    "load": 1800,
+    "defenseStar": 13,
+    "bubbleIcon": "Icon_UI_Bubble_SoldierT8",
+    "model": "AE_Soldier_Warrior_T7",
+    "type": 1,
+    "hpStar": 5409,
+    "soldierCostTime": 180,
+    "hospitalCostTime": 54,
+    "resourcePath": "51007",
+    "bigCard": "pic_bingzhong08",
+    "showModelPath": "shibing_08",
+    "recruit": [
+      {
+        "count": 4535,
+        "type": 1
+      },
+      {
+        "count": 4535,
+        "type": 2
+      }
+    ],
+    "level": 8,
+    "attackStar": 13,
+    "morale": 425,
+    "unLockCampLevel": 24,
+    "conquerHospitalCostTime": 8970,
+    "id": 1008,
+    "soldierOrder": 3,
+    "icon": "pic_bingzhong08",
+    "bust": "Pic_Soldier_T8",
+    "cure": [
+      {
+        "count": 1360,
+        "type": 1
+      },
+      {
+        "count": 1360,
+        "type": 2
+      }
+    ],
+    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas"
+  },
+  "8007": {
+    "soldierBenefit": [
+      {
+        "Source": 801,
+        "Value": 3960,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 9.5,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 9.5,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 370,
+        "Type": 10096
+      }
+    ],
+    "ability": 781,
+    "load": 1600,
+    "defenseStar": 9.5,
+    "morale": 370,
+    "id": 8007,
+    "hospitalCostTime": 48,
+    "soldierCostTime": 160,
+    "bigCard": "pic_bz_sangsgi07",
+    "showModelPath": "shibing_07",
+    "resourcePath": "52008",
+    "level": 7,
+    "attackStar": 9.5,
+    "recruit": [
+      {
+        "count": 3320,
+        "type": 1
+      },
+      {
+        "count": 3320,
+        "type": 2
+      }
+    ],
+    "unLockCampLevel": 20,
+    "conquerHospitalCostTime": 7980,
+    "model": "AE_Soldier_Archer_T8",
+    "soldierOrder": 4,
+    "icon": "pic_bz_sangsgi07",
+    "bust": "Pic_Soldier_T7",
+    "hpStar": 3960,
+    "cure": [
+      {
+        "count": 996,
+        "type": 1
+      },
+      {
+        "count": 996,
+        "type": 2
+      }
+    ]
+  },
+  "9007": {
+    "soldierBenefit": [
+      {
+        "Source": 801,
+        "Value": 3960,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 9.5,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 9.5,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 370,
+        "Type": 10096
+      }
+    ],
+    "ability": 781,
+    "load": 1600,
+    "defenseStar": 9.5,
+    "morale": 370,
+    "id": 9007,
+    "hospitalCostTime": 48,
+    "soldierCostTime": 160,
+    "bigCard": "pic_bz_sangsgi07",
+    "showModelPath": "shibing_07",
+    "resourcePath": "52008",
+    "level": 7,
+    "attackStar": 9.5,
+    "recruit": [
+      {
+        "count": 3320,
+        "type": 1
+      },
+      {
+        "count": 3320,
+        "type": 2
+      }
+    ],
+    "unLockCampLevel": 20,
+    "conquerHospitalCostTime": 7980,
+    "model": "AE_Soldier_Archer_T8",
+    "soldierOrder": 4,
+    "icon": "pic_bz_sangsgi07",
+    "bust": "Pic_Soldier_T7",
+    "hpStar": 3960,
+    "cure": [
+      {
+        "count": 996,
+        "type": 1
+      },
+      {
+        "count": 996,
+        "type": 2
+      }
+    ]
+  },
+  "9010": {
+    "soldierBenefit": [
+      {
+        "Source": 801,
+        "Value": 8380,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 20,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 20,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 600,
+        "Type": 10096
+      }
+    ],
     "hpStar": 8380,
+    "morale": 600,
+    "defenseStar": 20,
     "condition": [
       {
         "param1": "11023",
-        "param2": "1",
-        "id": 20201
+        "id": 20201,
+        "param2": "1"
       }
     ],
-    "morale": 600,
+    "attackStar": 20,
+    "id": 9010
+  },
+  "1006": {
     "soldierBenefit": [
       {
-        "Value": 8380,
-        "Type": 10093,
-        "Source": 801
+        "Source": 801,
+        "Value": 2939,
+        "Type": 10093
       },
       {
-        "Value": 20,
-        "Type": 10094,
-        "Source": 801
+        "Source": 801,
+        "Value": 7,
+        "Type": 10094
       },
       {
-        "Value": 20,
-        "Type": 10095,
-        "Source": 801
+        "Source": 801,
+        "Value": 7,
+        "Type": 10095
       },
       {
-        "Value": 600,
-        "Type": 10096,
-        "Source": 801
+        "Source": 801,
+        "Value": 325,
+        "Type": 10096
+      }
+    ],
+    "ability": 579,
+    "load": 1400,
+    "defenseStar": 7,
+    "quality": 4,
+    "bubbleIcon": "Icon_UI_Bubble_SoldierT6",
+    "model": "AE_Soldier_Archer_T4",
+    "type": 1,
+    "hpStar": 2939,
+    "soldierCostTime": 140,
+    "hospitalCostTime": 42,
+    "resourcePath": "52004",
+    "bigCard": "pic_bingzhong06",
+    "showModelPath": "shibing_06",
+    "recruit": [
+      {
+        "count": 2464,
+        "type": 1
+      },
+      {
+        "count": 2464,
+        "type": 2
+      }
+    ],
+    "level": 6,
+    "attackStar": 7,
+    "morale": 325,
+    "unLockCampLevel": 17,
+    "conquerHospitalCostTime": 6990,
+    "id": 1006,
+    "soldierOrder": 5,
+    "icon": "pic_bingzhong06",
+    "bust": "Pic_Soldier_T6",
+    "cure": [
+      {
+        "count": 739,
+        "type": 1
+      },
+      {
+        "count": 739,
+        "type": 2
+      }
+    ],
+    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas"
+  },
+  "9009": {
+    "ability": 1350,
+    "load": 2000,
+    "defenseStar": 16.5,
+    "morale": 500,
+    "id": 9009,
+    "hospitalCostTime": 60,
+    "soldierCostTime": 200,
+    "bigCard": "pic_bz_sangsgi09",
+    "showModelPath": "shibing_09",
+    "resourcePath": "51009",
+    "level": 9,
+    "attackStar": 16.5,
+    "recruit": [
+      {
+        "count": 5770,
+        "type": 1
+      },
+      {
+        "count": 5770,
+        "type": 2
+      }
+    ],
+    "unLockCampLevel": 27,
+    "conquerHospitalCostTime": 9960,
+    "model": "AE_Soldier_Warrior_T9",
+    "soldierOrder": 2,
+    "icon": "pic_bz_sangsgi09",
+    "bust": "Pic_Soldier_T9",
+    "hpStar": 6881,
+    "cure": [
+      {
+        "count": 1731,
+        "type": 1
+      },
+      {
+        "count": 1731,
+        "type": 2
       }
     ]
   },
   "9008": {
-    "soldierCostTime": 180,
-    "cure": [
+    "soldierBenefit": [
       {
-        "count": 1360,
+        "Source": 801,
+        "Value": 5409,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 13,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 13,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 425,
+        "Type": 10096
+      }
+    ],
+    "ability": 1065,
+    "load": 1800,
+    "defenseStar": 13,
+    "morale": 425,
+    "id": 9008,
+    "hospitalCostTime": 54,
+    "soldierCostTime": 180,
+    "bigCard": "pic_bz_sangsgi08",
+    "showModelPath": "shibing_08",
+    "resourcePath": "51007",
+    "level": 8,
+    "attackStar": 13,
+    "recruit": [
+      {
+        "count": 4535,
         "type": 1
       },
       {
-        "count": 1360,
+        "count": 4535,
         "type": 2
       }
     ],
     "unLockCampLevel": 24,
-    "bust": "Pic_Soldier_T8",
-    "defenseStar": 13,
-    "icon": "pic_bz_sangsgi08",
-    "recruit": [
-      {
-        "count": 4535,
-        "type": 1
-      },
-      {
-        "count": 4535,
-        "type": 2
-      }
-    ],
-    "ability": 1065,
-    "level": 8,
-    "load": 1800,
-    "id": 9008,
-    "showModelPath": "shibing_08",
-    "soldierOrder": 3,
-    "bigCard": "pic_bz_sangsgi08",
-    "attackStar": 13,
-    "morale": 425,
-    "soldierBenefit": [
-      {
-        "Value": 5409,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 13,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 13,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 425,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "resourcePath": "51007",
-    "hpStar": 5409,
+    "conquerHospitalCostTime": 8970,
     "model": "AE_Soldier_Warrior_T7",
-    "hospitalCostTime": 54,
-    "conquerHospitalCostTime": 8970
-  },
-  "8006": {
-    "soldierCostTime": 140,
+    "soldierOrder": 3,
+    "icon": "pic_bz_sangsgi08",
+    "bust": "Pic_Soldier_T8",
+    "hpStar": 5409,
     "cure": [
       {
-        "count": 739,
+        "count": 1360,
         "type": 1
       },
       {
-        "count": 739,
+        "count": 1360,
         "type": 2
       }
-    ],
-    "unLockCampLevel": 17,
-    "bust": "Pic_Soldier_T6",
-    "defenseStar": 7,
-    "icon": "pic_bz_sangsgi06",
-    "recruit": [
-      {
-        "count": 2464,
-        "type": 1
-      },
-      {
-        "count": 2464,
-        "type": 2
-      }
-    ],
-    "ability": 579,
-    "level": 6,
-    "load": 1400,
-    "id": 8006,
-    "quality": 4,
-    "showModelPath": "shibing_06",
-    "soldierOrder": 5,
-    "bigCard": "pic_bz_sangsgi06",
-    "attackStar": 7,
-    "morale": 325,
-    "soldierBenefit": [
-      {
-        "Value": 2939,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 7,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 7,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 325,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "resourcePath": "52004",
-    "hpStar": 2939,
-    "model": "AE_Soldier_Archer_T4",
-    "hospitalCostTime": 42,
-    "conquerHospitalCostTime": 6990
-  },
-  "9007": {
-    "soldierCostTime": 160,
-    "cure": [
-      {
-        "count": 996,
-        "type": 1
-      },
-      {
-        "count": 996,
-        "type": 2
-      }
-    ],
-    "unLockCampLevel": 20,
-    "bust": "Pic_Soldier_T7",
-    "defenseStar": 9.5,
-    "icon": "pic_bz_sangsgi07",
-    "recruit": [
-      {
-        "count": 3320,
-        "type": 1
-      },
-      {
-        "count": 3320,
-        "type": 2
-      }
-    ],
-    "ability": 781,
-    "level": 7,
-    "load": 1600,
-    "id": 9007,
-    "showModelPath": "shibing_07",
-    "soldierOrder": 4,
-    "bigCard": "pic_bz_sangsgi07",
-    "attackStar": 9.5,
-    "morale": 370,
-    "soldierBenefit": [
-      {
-        "Value": 3960,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 9.5,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 9.5,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 370,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "resourcePath": "52008",
-    "hpStar": 3960,
-    "model": "AE_Soldier_Archer_T8",
-    "hospitalCostTime": 48,
-    "conquerHospitalCostTime": 7980
+    ]
   },
   "9006": {
-    "soldierCostTime": 140,
-    "cure": [
+    "soldierBenefit": [
       {
-        "count": 739,
+        "Source": 801,
+        "Value": 2939,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 7,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 7,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 325,
+        "Type": 10096
+      }
+    ],
+    "ability": 579,
+    "load": 1400,
+    "defenseStar": 7,
+    "quality": 4,
+    "morale": 325,
+    "id": 9006,
+    "hospitalCostTime": 42,
+    "soldierCostTime": 140,
+    "bigCard": "pic_bz_sangsgi06",
+    "showModelPath": "shibing_06",
+    "resourcePath": "52004",
+    "level": 6,
+    "attackStar": 7,
+    "recruit": [
+      {
+        "count": 2464,
         "type": 1
       },
       {
-        "count": 739,
+        "count": 2464,
         "type": 2
       }
     ],
     "unLockCampLevel": 17,
-    "bust": "Pic_Soldier_T6",
-    "defenseStar": 7,
-    "icon": "pic_bz_sangsgi06",
-    "recruit": [
-      {
-        "count": 2464,
-        "type": 1
-      },
-      {
-        "count": 2464,
-        "type": 2
-      }
-    ],
-    "ability": 579,
-    "level": 6,
-    "load": 1400,
-    "id": 9006,
-    "quality": 4,
-    "showModelPath": "shibing_06",
-    "soldierOrder": 5,
-    "bigCard": "pic_bz_sangsgi06",
-    "attackStar": 7,
-    "morale": 325,
-    "soldierBenefit": [
-      {
-        "Value": 2939,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 7,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 7,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 325,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "resourcePath": "52004",
-    "hpStar": 2939,
+    "conquerHospitalCostTime": 6990,
     "model": "AE_Soldier_Archer_T4",
-    "hospitalCostTime": 42,
-    "conquerHospitalCostTime": 6990
-  },
-  "1002": {
-    "soldierCostTime": 60,
+    "soldierOrder": 5,
+    "icon": "pic_bz_sangsgi06",
+    "bust": "Pic_Soldier_T6",
+    "hpStar": 2939,
     "cure": [
       {
-        "count": 43,
+        "count": 739,
         "type": 1
       },
       {
-        "count": 43,
+        "count": 739,
         "type": 2
       }
-    ],
-    "unLockCampLevel": 3,
-    "bust": "Pic_Soldier_T2",
-    "defenseStar": 0.5,
-    "type": 1,
-    "icon": "pic_bingzhong02",
-    "recruit": [
-      {
-        "count": 145,
-        "type": 1
-      },
-      {
-        "count": 145,
-        "type": 2
-      }
-    ],
-    "ability": 37,
-    "level": 2,
-    "soldierOrder": 9,
-    "load": 600,
-    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas",
-    "id": 1002,
-    "bubbleIcon": "Icon_UI_Bubble_SoldierT2",
-    "showModelPath": "shibing_02",
-    "soldierBenefit": [
-      {
-        "Value": 174,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 0.5,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 0.5,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 224,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "bigCard": "pic_bingzhong02",
-    "attackStar": 0.5,
-    "morale": 224,
-    "resourcePath": "52002",
-    "quality": 2,
-    "hpStar": 174,
-    "model": "AE_Soldier_Archer_T2",
-    "hospitalCostTime": 18,
-    "conquerHospitalCostTime": 2100
-  },
-  "1001": {
-    "soldierCostTime": 40,
-    "cure": [
-      {
-        "count": 29,
-        "type": 1
-      },
-      {
-        "count": 29,
-        "type": 2
-      }
-    ],
-    "unLockCampLevel": 1,
-    "bust": "Pic_Soldier_T1",
-    "icon": "pic_bingzhong01",
-    "recruit": [
-      {
-        "count": 97,
-        "type": 1
-      },
-      {
-        "count": 97,
-        "type": 2
-      }
-    ],
-    "ability": 25,
-    "level": 1,
-    "load": 400,
-    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas",
-    "bubbleIcon": "Icon_UI_Bubble_SoldierT1",
-    "showModelPath": "shibing_01",
-    "bigCard": "pic_bingzhong01",
-    "conquerHospitalCostTime": 600,
-    "type": 1,
-    "soldierOrder": 10,
-    "soldierBenefit": [
-      {
-        "Value": 116,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 0.3,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 0.3,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 205,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "resourcePath": "52001",
-    "model": "AE_Soldier_Archer_T1",
-    "quality": 1,
-    "hospitalCostTime": 12
-  },
-  "1008": {
-    "soldierCostTime": 180,
-    "cure": [
-      {
-        "count": 1360,
-        "type": 1
-      },
-      {
-        "count": 1360,
-        "type": 2
-      }
-    ],
-    "unLockCampLevel": 24,
-    "bust": "Pic_Soldier_T8",
-    "defenseStar": 13,
-    "icon": "pic_bingzhong08",
-    "recruit": [
-      {
-        "count": 4535,
-        "type": 1
-      },
-      {
-        "count": 4535,
-        "type": 2
-      }
-    ],
-    "ability": 1065,
-    "level": 8,
-    "type": 1,
-    "load": 1800,
-    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas",
-    "id": 1008,
-    "bubbleIcon": "Icon_UI_Bubble_SoldierT8",
-    "showModelPath": "shibing_08",
-    "soldierOrder": 3,
-    "bigCard": "pic_bingzhong08",
-    "attackStar": 13,
-    "morale": 425,
-    "soldierBenefit": [
-      {
-        "Value": 5409,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 13,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 13,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 425,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "resourcePath": "51007",
-    "hpStar": 5409,
-    "model": "AE_Soldier_Warrior_T7",
-    "hospitalCostTime": 54,
-    "conquerHospitalCostTime": 8970
-  },
-  "8003": {
-    "soldierCostTime": 80,
-    "cure": [
-      {
-        "count": 104,
-        "type": 1
-      },
-      {
-        "count": 104,
-        "type": 2
-      }
-    ],
-    "unLockCampLevel": 6,
-    "bust": "Pic_Soldier_T3",
-    "defenseStar": 1,
-    "icon": "pic_bz_sangsgi03",
-    "recruit": [
-      {
-        "count": 349,
-        "type": 1
-      },
-      {
-        "count": 349,
-        "type": 2
-      }
-    ],
-    "ability": 80,
-    "level": 3,
-    "load": 800,
-    "id": 8003,
-    "quality": 3,
-    "showModelPath": "shibing_03",
-    "soldierOrder": 8,
-    "bigCard": "pic_bz_sangsgi03",
-    "attackStar": 1,
-    "morale": 245,
-    "soldierBenefit": [
-      {
-        "Value": 417,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 1,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 1,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 245,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "resourcePath": "51003",
-    "hpStar": 417,
-    "model": "AE_Soldier_Warrior_T3",
-    "hospitalCostTime": 24,
-    "conquerHospitalCostTime": 3600
-  },
-  "9004": {
-    "soldierCostTime": 100,
-    "cure": [
-      {
-        "count": 270,
-        "type": 1
-      },
-      {
-        "count": 270,
-        "type": 2
-      }
-    ],
-    "unLockCampLevel": 10,
-    "bust": "Pic_Soldier_T4",
-    "defenseStar": 2.6,
-    "icon": "pic_bz_sangsgi04",
-    "recruit": [
-      {
-        "count": 903,
-        "type": 1
-      },
-      {
-        "count": 903,
-        "type": 2
-      }
-    ],
-    "ability": 210,
-    "level": 4,
-    "load": 1000,
-    "id": 9004,
-    "quality": 3,
-    "showModelPath": "shibing_04",
-    "soldierOrder": 7,
-    "bigCard": "pic_bz_sangsgi04",
-    "attackStar": 2.6,
-    "morale": 268,
-    "soldierBenefit": [
-      {
-        "Value": 1077,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 2.6,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 2.6,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 268,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "resourcePath": "52003",
-    "hpStar": 1077,
-    "model": "AE_Soldier_Archer_T3",
-    "hospitalCostTime": 30,
-    "conquerHospitalCostTime": 4800
-  },
-  "9003": {
-    "soldierCostTime": 80,
-    "cure": [
-      {
-        "count": 104,
-        "type": 1
-      },
-      {
-        "count": 104,
-        "type": 2
-      }
-    ],
-    "unLockCampLevel": 6,
-    "bust": "Pic_Soldier_T3",
-    "defenseStar": 1,
-    "icon": "pic_bz_sangsgi03",
-    "recruit": [
-      {
-        "count": 349,
-        "type": 1
-      },
-      {
-        "count": 349,
-        "type": 2
-      }
-    ],
-    "ability": 80,
-    "level": 3,
-    "load": 800,
-    "id": 9003,
-    "quality": 3,
-    "showModelPath": "shibing_03",
-    "soldierOrder": 8,
-    "bigCard": "pic_bz_sangsgi03",
-    "attackStar": 1,
-    "morale": 245,
-    "soldierBenefit": [
-      {
-        "Value": 417,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 1,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 1,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 245,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "resourcePath": "51003",
-    "hpStar": 417,
-    "model": "AE_Soldier_Warrior_T3",
-    "hospitalCostTime": 24,
-    "conquerHospitalCostTime": 3600
-  },
-  "9002": {
-    "soldierCostTime": 60,
-    "cure": [
-      {
-        "count": 43,
-        "type": 1
-      },
-      {
-        "count": 43,
-        "type": 2
-      }
-    ],
-    "unLockCampLevel": 3,
-    "bust": "Pic_Soldier_T2",
-    "defenseStar": 0.5,
-    "icon": "pic_bz_sangsgi02",
-    "recruit": [
-      {
-        "count": 145,
-        "type": 1
-      },
-      {
-        "count": 145,
-        "type": 2
-      }
-    ],
-    "ability": 37,
-    "level": 2,
-    "load": 600,
-    "id": 9002,
-    "quality": 2,
-    "showModelPath": "shibing_02",
-    "soldierOrder": 9,
-    "bigCard": "pic_bz_sangsgi02",
-    "attackStar": 0.5,
-    "morale": 224,
-    "soldierBenefit": [
-      {
-        "Value": 174,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 0.5,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 0.5,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 224,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "resourcePath": "52002",
-    "hpStar": 174,
-    "model": "AE_Soldier_Archer_T2",
-    "hospitalCostTime": 18,
-    "conquerHospitalCostTime": 2100
-  },
-  "8009": {
-    "soldierCostTime": 200,
-    "cure": [
-      {
-        "count": 1731,
-        "type": 1
-      },
-      {
-        "count": 1731,
-        "type": 2
-      }
-    ],
-    "unLockCampLevel": 27,
-    "bust": "Pic_Soldier_T9",
-    "defenseStar": 16.5,
-    "icon": "pic_bz_sangsgi09",
-    "recruit": [
-      {
-        "count": 5770,
-        "type": 1
-      },
-      {
-        "count": 5770,
-        "type": 2
-      }
-    ],
-    "ability": 1350,
-    "level": 9,
-    "load": 2000,
-    "id": 8009,
-    "showModelPath": "shibing_09",
-    "bigCard": "pic_bz_sangsgi09",
-    "attackStar": 16.5,
-    "morale": 500,
-    "soldierOrder": 2,
-    "resourcePath": "51009",
-    "hpStar": 6881,
-    "model": "AE_Soldier_Warrior_T9",
-    "hospitalCostTime": 60,
-    "conquerHospitalCostTime": 9960
-  },
-  "9009": {
-    "soldierCostTime": 200,
-    "cure": [
-      {
-        "count": 1731,
-        "type": 1
-      },
-      {
-        "count": 1731,
-        "type": 2
-      }
-    ],
-    "unLockCampLevel": 27,
-    "bust": "Pic_Soldier_T9",
-    "defenseStar": 16.5,
-    "icon": "pic_bz_sangsgi09",
-    "recruit": [
-      {
-        "count": 5770,
-        "type": 1
-      },
-      {
-        "count": 5770,
-        "type": 2
-      }
-    ],
-    "ability": 1350,
-    "level": 9,
-    "load": 2000,
-    "id": 9009,
-    "showModelPath": "shibing_09",
-    "bigCard": "pic_bz_sangsgi09",
-    "attackStar": 16.5,
-    "morale": 500,
-    "soldierOrder": 2,
-    "resourcePath": "51009",
-    "hpStar": 6881,
-    "model": "AE_Soldier_Warrior_T9",
-    "hospitalCostTime": 60,
-    "conquerHospitalCostTime": 9960
-  },
-  "9001": {
-    "soldierCostTime": 40,
-    "cure": [
-      {
-        "count": 29,
-        "type": 1
-      },
-      {
-        "count": 29,
-        "type": 2
-      }
-    ],
-    "unLockCampLevel": 1,
-    "bust": "Pic_Soldier_T1",
-    "icon": "pic_bz_sangsgi01",
-    "recruit": [
-      {
-        "count": 97,
-        "type": 1
-      },
-      {
-        "count": 97,
-        "type": 2
-      }
-    ],
-    "ability": 25,
-    "level": 1,
-    "load": 400,
-    "id": 9001,
-    "quality": 1,
-    "showModelPath": "shibing_01",
-    "bigCard": "pic_bz_sangsgi01",
-    "conquerHospitalCostTime": 600,
-    "soldierOrder": 10,
-    "soldierBenefit": [
-      {
-        "Value": 116,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 0.3,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 0.3,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 205,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "model": "AE_Soldier_Archer_T1",
-    "resourcePath": "52001",
-    "hospitalCostTime": 12
-  },
-  "1004": {
-    "soldierCostTime": 100,
-    "cure": [
-      {
-        "count": 270,
-        "type": 1
-      },
-      {
-        "count": 270,
-        "type": 2
-      }
-    ],
-    "unLockCampLevel": 10,
-    "bust": "Pic_Soldier_T4",
-    "defenseStar": 2.6,
-    "type": 1,
-    "icon": "pic_bingzhong04",
-    "recruit": [
-      {
-        "count": 903,
-        "type": 1
-      },
-      {
-        "count": 903,
-        "type": 2
-      }
-    ],
-    "ability": 210,
-    "level": 4,
-    "soldierOrder": 7,
-    "load": 1000,
-    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas",
-    "id": 1004,
-    "bubbleIcon": "Icon_UI_Bubble_SoldierT4",
-    "showModelPath": "shibing_04",
-    "soldierBenefit": [
-      {
-        "Value": 1077,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 2.6,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 2.6,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 268,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "bigCard": "pic_bingzhong04",
-    "attackStar": 2.6,
-    "morale": 268,
-    "resourcePath": "52003",
-    "quality": 3,
-    "hpStar": 1077,
-    "model": "AE_Soldier_Archer_T3",
-    "hospitalCostTime": 30,
-    "conquerHospitalCostTime": 4800
-  },
-  "8008": {
-    "soldierCostTime": 180,
-    "cure": [
-      {
-        "count": 1360,
-        "type": 1
-      },
-      {
-        "count": 1360,
-        "type": 2
-      }
-    ],
-    "unLockCampLevel": 24,
-    "bust": "Pic_Soldier_T8",
-    "defenseStar": 13,
-    "icon": "pic_bz_sangsgi08",
-    "recruit": [
-      {
-        "count": 4535,
-        "type": 1
-      },
-      {
-        "count": 4535,
-        "type": 2
-      }
-    ],
-    "ability": 1065,
-    "level": 8,
-    "load": 1800,
-    "id": 8008,
-    "showModelPath": "shibing_08",
-    "soldierOrder": 3,
-    "bigCard": "pic_bz_sangsgi08",
-    "attackStar": 13,
-    "morale": 425,
-    "soldierBenefit": [
-      {
-        "Value": 5409,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 13,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 13,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 425,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "resourcePath": "51007",
-    "hpStar": 5409,
-    "model": "AE_Soldier_Warrior_T7",
-    "hospitalCostTime": 54,
-    "conquerHospitalCostTime": 8970
-  },
-  "8004": {
-    "soldierCostTime": 100,
-    "cure": [
-      {
-        "count": 270,
-        "type": 1
-      },
-      {
-        "count": 270,
-        "type": 2
-      }
-    ],
-    "unLockCampLevel": 10,
-    "bust": "Pic_Soldier_T4",
-    "defenseStar": 2.6,
-    "icon": "pic_bz_sangsgi04",
-    "recruit": [
-      {
-        "count": 903,
-        "type": 1
-      },
-      {
-        "count": 903,
-        "type": 2
-      }
-    ],
-    "ability": 210,
-    "level": 4,
-    "load": 1000,
-    "id": 8004,
-    "quality": 3,
-    "showModelPath": "shibing_04",
-    "soldierOrder": 7,
-    "bigCard": "pic_bz_sangsgi04",
-    "attackStar": 2.6,
-    "morale": 268,
-    "soldierBenefit": [
-      {
-        "Value": 1077,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 2.6,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 2.6,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 268,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "resourcePath": "52003",
-    "hpStar": 1077,
-    "model": "AE_Soldier_Archer_T3",
-    "hospitalCostTime": 30,
-    "conquerHospitalCostTime": 4800
+    ]
   },
   "9005": {
-    "soldierCostTime": 120,
-    "cure": [
+    "soldierBenefit": [
       {
-        "count": 523,
+        "Source": 801,
+        "Value": 2082,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 5,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 5,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 295,
+        "Type": 10096
+      }
+    ],
+    "ability": 412,
+    "load": 1200,
+    "defenseStar": 5,
+    "quality": 4,
+    "morale": 295,
+    "id": 9005,
+    "hospitalCostTime": 36,
+    "soldierCostTime": 120,
+    "bigCard": "pic_bz_sangsgi05",
+    "showModelPath": "shibing_05",
+    "resourcePath": "51005",
+    "level": 5,
+    "attackStar": 5,
+    "recruit": [
+      {
+        "count": 1746,
         "type": 1
       },
       {
-        "count": 523,
+        "count": 1746,
         "type": 2
       }
     ],
     "unLockCampLevel": 14,
-    "bust": "Pic_Soldier_T5",
-    "defenseStar": 5,
-    "icon": "pic_bz_sangsgi05",
-    "recruit": [
-      {
-        "count": 1746,
-        "type": 1
-      },
-      {
-        "count": 1746,
-        "type": 2
-      }
-    ],
-    "ability": 412,
-    "level": 5,
-    "load": 1200,
-    "id": 9005,
-    "quality": 4,
-    "showModelPath": "shibing_05",
-    "soldierOrder": 6,
-    "bigCard": "pic_bz_sangsgi05",
-    "attackStar": 5,
-    "morale": 295,
-    "soldierBenefit": [
-      {
-        "Value": 2082,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 5,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 5,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 295,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "resourcePath": "51005",
-    "hpStar": 2082,
+    "conquerHospitalCostTime": 6000,
     "model": "AE_Soldier_Warrior_T5",
-    "hospitalCostTime": 36,
-    "conquerHospitalCostTime": 6000
-  },
-  "8007": {
-    "soldierCostTime": 160,
+    "soldierOrder": 6,
+    "icon": "pic_bz_sangsgi05",
+    "bust": "Pic_Soldier_T5",
+    "hpStar": 2082,
     "cure": [
       {
-        "count": 996,
+        "count": 523,
         "type": 1
       },
       {
-        "count": 996,
+        "count": 523,
         "type": 2
       }
-    ],
-    "unLockCampLevel": 20,
-    "bust": "Pic_Soldier_T7",
-    "defenseStar": 9.5,
-    "icon": "pic_bz_sangsgi07",
-    "recruit": [
-      {
-        "count": 3320,
-        "type": 1
-      },
-      {
-        "count": 3320,
-        "type": 2
-      }
-    ],
-    "ability": 781,
-    "level": 7,
-    "load": 1600,
-    "id": 8007,
-    "showModelPath": "shibing_07",
-    "soldierOrder": 4,
-    "bigCard": "pic_bz_sangsgi07",
-    "attackStar": 9.5,
-    "morale": 370,
+    ]
+  },
+  "8006": {
     "soldierBenefit": [
       {
-        "Value": 3960,
-        "Type": 10093,
-        "Source": 801
+        "Source": 801,
+        "Value": 2939,
+        "Type": 10093
       },
       {
-        "Value": 9.5,
-        "Type": 10094,
-        "Source": 801
+        "Source": 801,
+        "Value": 7,
+        "Type": 10094
       },
       {
-        "Value": 9.5,
-        "Type": 10095,
-        "Source": 801
+        "Source": 801,
+        "Value": 7,
+        "Type": 10095
       },
       {
-        "Value": 370,
-        "Type": 10096,
-        "Source": 801
+        "Source": 801,
+        "Value": 325,
+        "Type": 10096
       }
     ],
-    "resourcePath": "52008",
-    "hpStar": 3960,
-    "model": "AE_Soldier_Archer_T8",
-    "hospitalCostTime": 48,
-    "conquerHospitalCostTime": 7980
-  },
-  "1003": {
-    "soldierCostTime": 80,
-    "cure": [
+    "ability": 579,
+    "load": 1400,
+    "defenseStar": 7,
+    "quality": 4,
+    "morale": 325,
+    "id": 8006,
+    "hospitalCostTime": 42,
+    "soldierCostTime": 140,
+    "bigCard": "pic_bz_sangsgi06",
+    "showModelPath": "shibing_06",
+    "resourcePath": "52004",
+    "level": 6,
+    "attackStar": 7,
+    "recruit": [
       {
-        "count": 104,
+        "count": 2464,
         "type": 1
       },
       {
-        "count": 104,
+        "count": 2464,
+        "type": 2
+      }
+    ],
+    "unLockCampLevel": 17,
+    "conquerHospitalCostTime": 6990,
+    "model": "AE_Soldier_Archer_T4",
+    "soldierOrder": 5,
+    "icon": "pic_bz_sangsgi06",
+    "bust": "Pic_Soldier_T6",
+    "hpStar": 2939,
+    "cure": [
+      {
+        "count": 739,
+        "type": 1
+      },
+      {
+        "count": 739,
+        "type": 2
+      }
+    ]
+  },
+  "9003": {
+    "soldierBenefit": [
+      {
+        "Source": 801,
+        "Value": 417,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 1,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 1,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 245,
+        "Type": 10096
+      }
+    ],
+    "ability": 80,
+    "load": 800,
+    "defenseStar": 1,
+    "quality": 3,
+    "morale": 245,
+    "id": 9003,
+    "hospitalCostTime": 24,
+    "soldierCostTime": 80,
+    "bigCard": "pic_bz_sangsgi03",
+    "showModelPath": "shibing_03",
+    "resourcePath": "51003",
+    "level": 3,
+    "attackStar": 1,
+    "recruit": [
+      {
+        "count": 349,
+        "type": 1
+      },
+      {
+        "count": 349,
         "type": 2
       }
     ],
     "unLockCampLevel": 6,
+    "conquerHospitalCostTime": 3600,
+    "model": "AE_Soldier_Warrior_T3",
+    "soldierOrder": 8,
+    "icon": "pic_bz_sangsgi03",
     "bust": "Pic_Soldier_T3",
+    "hpStar": 417,
+    "cure": [
+      {
+        "count": 104,
+        "type": 1
+      },
+      {
+        "count": 104,
+        "type": 2
+      }
+    ]
+  },
+  "9001": {
+    "soldierBenefit": [
+      {
+        "Source": 801,
+        "Value": 116,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 0.3,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 0.3,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 205,
+        "Type": 10096
+      }
+    ],
+    "ability": 25,
+    "load": 400,
+    "soldierCostTime": 40,
+    "quality": 1,
+    "hospitalCostTime": 12,
+    "bigCard": "pic_bz_sangsgi01",
+    "showModelPath": "shibing_01",
+    "level": 1,
+    "model": "AE_Soldier_Archer_T1",
+    "recruit": [
+      {
+        "count": 97,
+        "type": 1
+      },
+      {
+        "count": 97,
+        "type": 2
+      }
+    ],
+    "unLockCampLevel": 1,
+    "conquerHospitalCostTime": 600,
+    "resourcePath": "52001",
+    "soldierOrder": 10,
+    "icon": "pic_bz_sangsgi01",
+    "bust": "Pic_Soldier_T1",
+    "id": 9001,
+    "cure": [
+      {
+        "count": 29,
+        "type": 1
+      },
+      {
+        "count": 29,
+        "type": 2
+      }
+    ]
+  },
+  "8003": {
+    "soldierBenefit": [
+      {
+        "Source": 801,
+        "Value": 417,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 1,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 1,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 245,
+        "Type": 10096
+      }
+    ],
+    "ability": 80,
+    "load": 800,
     "defenseStar": 1,
-    "type": 1,
-    "icon": "pic_bingzhong03",
+    "quality": 3,
+    "morale": 245,
+    "id": 8003,
+    "hospitalCostTime": 24,
+    "soldierCostTime": 80,
+    "bigCard": "pic_bz_sangsgi03",
+    "showModelPath": "shibing_03",
+    "resourcePath": "51003",
+    "level": 3,
+    "attackStar": 1,
     "recruit": [
       {
         "count": 349,
@@ -1266,48 +1119,254 @@
         "type": 2
       }
     ],
-    "ability": 80,
-    "level": 3,
+    "unLockCampLevel": 6,
+    "conquerHospitalCostTime": 3600,
+    "model": "AE_Soldier_Warrior_T3",
     "soldierOrder": 8,
-    "load": 800,
-    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas",
-    "id": 1003,
-    "bubbleIcon": "Icon_UI_Bubble_SoldierT3",
-    "showModelPath": "shibing_03",
+    "icon": "pic_bz_sangsgi03",
+    "bust": "Pic_Soldier_T3",
+    "hpStar": 417,
+    "cure": [
+      {
+        "count": 104,
+        "type": 1
+      },
+      {
+        "count": 104,
+        "type": 2
+      }
+    ]
+  },
+  "1004": {
     "soldierBenefit": [
       {
-        "Value": 417,
-        "Type": 10093,
-        "Source": 801
+        "Source": 801,
+        "Value": 1077,
+        "Type": 10093
       },
       {
-        "Value": 1,
-        "Type": 10094,
-        "Source": 801
+        "Source": 801,
+        "Value": 2.6,
+        "Type": 10094
       },
       {
-        "Value": 1,
-        "Type": 10095,
-        "Source": 801
+        "Source": 801,
+        "Value": 2.6,
+        "Type": 10095
       },
       {
-        "Value": 245,
-        "Type": 10096,
-        "Source": 801
+        "Source": 801,
+        "Value": 268,
+        "Type": 10096
       }
     ],
+    "ability": 210,
+    "load": 1000,
+    "defenseStar": 2.6,
+    "quality": 3,
+    "bubbleIcon": "Icon_UI_Bubble_SoldierT4",
+    "model": "AE_Soldier_Archer_T3",
+    "type": 1,
+    "hpStar": 1077,
+    "soldierCostTime": 100,
+    "hospitalCostTime": 30,
+    "resourcePath": "52003",
+    "bigCard": "pic_bingzhong04",
+    "showModelPath": "shibing_04",
+    "recruit": [
+      {
+        "count": 903,
+        "type": 1
+      },
+      {
+        "count": 903,
+        "type": 2
+      }
+    ],
+    "level": 4,
+    "attackStar": 2.6,
+    "morale": 268,
+    "unLockCampLevel": 10,
+    "conquerHospitalCostTime": 4800,
+    "id": 1004,
+    "soldierOrder": 7,
+    "icon": "pic_bingzhong04",
+    "bust": "Pic_Soldier_T4",
+    "cure": [
+      {
+        "count": 270,
+        "type": 1
+      },
+      {
+        "count": 270,
+        "type": 2
+      }
+    ],
+    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas"
+  },
+  "9004": {
+    "soldierBenefit": [
+      {
+        "Source": 801,
+        "Value": 1077,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 2.6,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 2.6,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 268,
+        "Type": 10096
+      }
+    ],
+    "ability": 210,
+    "load": 1000,
+    "defenseStar": 2.6,
+    "quality": 3,
+    "morale": 268,
+    "id": 9004,
+    "hospitalCostTime": 30,
+    "soldierCostTime": 100,
+    "bigCard": "pic_bz_sangsgi04",
+    "showModelPath": "shibing_04",
+    "resourcePath": "52003",
+    "level": 4,
+    "attackStar": 2.6,
+    "recruit": [
+      {
+        "count": 903,
+        "type": 1
+      },
+      {
+        "count": 903,
+        "type": 2
+      }
+    ],
+    "unLockCampLevel": 10,
+    "conquerHospitalCostTime": 4800,
+    "model": "AE_Soldier_Archer_T3",
+    "soldierOrder": 7,
+    "icon": "pic_bz_sangsgi04",
+    "bust": "Pic_Soldier_T4",
+    "hpStar": 1077,
+    "cure": [
+      {
+        "count": 270,
+        "type": 1
+      },
+      {
+        "count": 270,
+        "type": 2
+      }
+    ]
+  },
+  "1003": {
+    "soldierBenefit": [
+      {
+        "Source": 801,
+        "Value": 417,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 1,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 1,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 245,
+        "Type": 10096
+      }
+    ],
+    "ability": 80,
+    "load": 800,
+    "defenseStar": 1,
+    "quality": 3,
+    "bubbleIcon": "Icon_UI_Bubble_SoldierT3",
+    "model": "AE_Soldier_Warrior_T3",
+    "type": 1,
+    "hpStar": 417,
+    "soldierCostTime": 80,
+    "hospitalCostTime": 24,
+    "resourcePath": "51003",
     "bigCard": "pic_bingzhong03",
+    "showModelPath": "shibing_03",
+    "recruit": [
+      {
+        "count": 349,
+        "type": 1
+      },
+      {
+        "count": 349,
+        "type": 2
+      }
+    ],
+    "level": 3,
     "attackStar": 1,
     "morale": 245,
-    "resourcePath": "51003",
-    "quality": 3,
-    "hpStar": 417,
-    "model": "AE_Soldier_Warrior_T3",
-    "hospitalCostTime": 24,
-    "conquerHospitalCostTime": 3600
+    "unLockCampLevel": 6,
+    "conquerHospitalCostTime": 3600,
+    "id": 1003,
+    "soldierOrder": 8,
+    "icon": "pic_bingzhong03",
+    "bust": "Pic_Soldier_T3",
+    "cure": [
+      {
+        "count": 104,
+        "type": 1
+      },
+      {
+        "count": 104,
+        "type": 2
+      }
+    ],
+    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas"
   },
   "1009": {
+    "ability": 1350,
+    "load": 2000,
+    "defenseStar": 16.5,
+    "bubbleIcon": "Icon_UI_Bubble_SoldierT9",
+    "model": "AE_Soldier_Warrior_T9",
+    "type": 1,
+    "hpStar": 6881,
     "soldierCostTime": 200,
+    "hospitalCostTime": 60,
+    "resourcePath": "51009",
+    "bigCard": "pic_bingzhong09",
+    "showModelPath": "shibing_09",
+    "recruit": [
+      {
+        "count": 5770,
+        "type": 1
+      },
+      {
+        "count": 5770,
+        "type": 2
+      }
+    ],
+    "level": 9,
+    "attackStar": 16.5,
+    "morale": 500,
+    "unLockCampLevel": 27,
+    "conquerHospitalCostTime": 9960,
+    "id": 1009,
+    "soldierOrder": 2,
+    "icon": "pic_bingzhong09",
+    "bust": "Pic_Soldier_T9",
     "cure": [
       {
         "count": 1731,
@@ -1318,498 +1377,439 @@
         "type": 2
       }
     ],
-    "unLockCampLevel": 27,
-    "bust": "Pic_Soldier_T9",
-    "defenseStar": 16.5,
-    "icon": "pic_bingzhong09",
+    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas"
+  },
+  "8005": {
+    "soldierBenefit": [
+      {
+        "Source": 801,
+        "Value": 2082,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 5,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 5,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 295,
+        "Type": 10096
+      }
+    ],
+    "ability": 412,
+    "load": 1200,
+    "defenseStar": 5,
+    "quality": 4,
+    "morale": 295,
+    "id": 8005,
+    "hospitalCostTime": 36,
+    "soldierCostTime": 120,
+    "bigCard": "pic_bz_sangsgi05",
+    "showModelPath": "shibing_05",
+    "resourcePath": "51005",
+    "level": 5,
+    "attackStar": 5,
     "recruit": [
       {
-        "count": 5770,
+        "count": 1746,
         "type": 1
       },
       {
-        "count": 5770,
+        "count": 1746,
         "type": 2
       }
     ],
-    "ability": 1350,
-    "level": 9,
-    "load": 2000,
-    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas",
-    "id": 1009,
-    "bubbleIcon": "Icon_UI_Bubble_SoldierT9",
-    "showModelPath": "shibing_09",
-    "type": 1,
-    "bigCard": "pic_bingzhong09",
-    "attackStar": 16.5,
-    "morale": 500,
-    "soldierOrder": 2,
-    "resourcePath": "51009",
-    "hpStar": 6881,
-    "model": "AE_Soldier_Warrior_T9",
-    "hospitalCostTime": 60,
-    "conquerHospitalCostTime": 9960
+    "unLockCampLevel": 14,
+    "conquerHospitalCostTime": 6000,
+    "model": "AE_Soldier_Warrior_T5",
+    "soldierOrder": 6,
+    "icon": "pic_bz_sangsgi05",
+    "bust": "Pic_Soldier_T5",
+    "hpStar": 2082,
+    "cure": [
+      {
+        "count": 523,
+        "type": 1
+      },
+      {
+        "count": 523,
+        "type": 2
+      }
+    ]
   },
   "2010": {
     "soldierBenefit": [
       {
+        "Source": 801,
         "Value": 116,
-        "Type": 10093,
-        "Source": 801
+        "Type": 10093
       },
       {
+        "Source": 801,
         "Value": 0.3,
-        "Type": 10094,
-        "Source": 801
+        "Type": 10094
       },
       {
+        "Source": 801,
         "Value": 0.3,
-        "Type": 10095,
-        "Source": 801
+        "Type": 10095
       },
       {
+        "Source": 801,
         "Value": 9.375,
-        "Type": 10096,
-        "Source": 801
+        "Type": 10096
       }
     ],
     "condition": [
       {
         "param1": "11023",
-        "param2": "1",
-        "id": 20201
+        "id": 20201,
+        "param2": "1"
       }
     ],
-    "morale": 9.375,
-    "id": 2010
+    "id": 2010,
+    "morale": 9.375
   },
   "1010": {
-    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas",
-    "id": 1010,
-    "bubbleIcon": "Icon_UI_Bubble_SoldierT10",
-    "condition": [
+    "soldierBenefit": [
       {
-        "param1": "11023",
-        "param2": "1",
-        "id": 20201
+        "Source": 801,
+        "Value": 8380,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 20,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 20,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 600,
+        "Type": 10096
       }
     ],
     "bigCard": "pic_bingzhong10",
-    "attackStar": 20,
+    "type": 1,
     "defenseStar": 20,
-    "hpStar": 8380,
-    "icon": "pic_bingzhong10",
-    "soldierBenefit": [
-      {
-        "Value": 8380,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 20,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 20,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 600,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
+    "attackStar": 20,
     "morale": 600,
-    "type": 1
-  },
-  "1007": {
-    "soldierCostTime": 160,
-    "cure": [
+    "id": 1010,
+    "bubbleIcon": "Icon_UI_Bubble_SoldierT10",
+    "icon": "pic_bingzhong10",
+    "condition": [
       {
-        "count": 996,
-        "type": 1
-      },
-      {
-        "count": 996,
-        "type": 2
+        "param1": "11023",
+        "id": 20201,
+        "param2": "1"
       }
     ],
-    "unLockCampLevel": 20,
-    "bust": "Pic_Soldier_T7",
-    "defenseStar": 9.5,
-    "icon": "pic_bingzhong07",
-    "recruit": [
-      {
-        "count": 3320,
-        "type": 1
-      },
-      {
-        "count": 3320,
-        "type": 2
-      }
-    ],
-    "ability": 781,
-    "level": 7,
-    "type": 1,
-    "load": 1600,
-    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas",
-    "id": 1007,
-    "bubbleIcon": "Icon_UI_Bubble_SoldierT7",
-    "showModelPath": "shibing_07",
-    "soldierOrder": 4,
-    "bigCard": "pic_bingzhong07",
-    "attackStar": 9.5,
-    "morale": 370,
-    "soldierBenefit": [
-      {
-        "Value": 3960,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 9.5,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 9.5,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 370,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "resourcePath": "52008",
-    "hpStar": 3960,
-    "model": "AE_Soldier_Archer_T8",
-    "hospitalCostTime": 48,
-    "conquerHospitalCostTime": 7980
-  },
-  "8005": {
-    "soldierCostTime": 120,
-    "cure": [
-      {
-        "count": 523,
-        "type": 1
-      },
-      {
-        "count": 523,
-        "type": 2
-      }
-    ],
-    "unLockCampLevel": 14,
-    "bust": "Pic_Soldier_T5",
-    "defenseStar": 5,
-    "icon": "pic_bz_sangsgi05",
-    "recruit": [
-      {
-        "count": 1746,
-        "type": 1
-      },
-      {
-        "count": 1746,
-        "type": 2
-      }
-    ],
-    "ability": 412,
-    "level": 5,
-    "load": 1200,
-    "id": 8005,
-    "quality": 4,
-    "showModelPath": "shibing_05",
-    "soldierOrder": 6,
-    "bigCard": "pic_bz_sangsgi05",
-    "attackStar": 5,
-    "morale": 295,
-    "soldierBenefit": [
-      {
-        "Value": 2082,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 5,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 5,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 295,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "resourcePath": "51005",
-    "hpStar": 2082,
-    "model": "AE_Soldier_Warrior_T5",
-    "hospitalCostTime": 36,
-    "conquerHospitalCostTime": 6000
-  },
-  "1005": {
-    "soldierCostTime": 120,
-    "cure": [
-      {
-        "count": 523,
-        "type": 1
-      },
-      {
-        "count": 523,
-        "type": 2
-      }
-    ],
-    "unLockCampLevel": 14,
-    "bust": "Pic_Soldier_T5",
-    "defenseStar": 5,
-    "type": 1,
-    "icon": "pic_bingzhong05",
-    "recruit": [
-      {
-        "count": 1746,
-        "type": 1
-      },
-      {
-        "count": 1746,
-        "type": 2
-      }
-    ],
-    "ability": 412,
-    "level": 5,
-    "soldierOrder": 6,
-    "load": 1200,
-    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas",
-    "id": 1005,
-    "bubbleIcon": "Icon_UI_Bubble_SoldierT5",
-    "showModelPath": "shibing_05",
-    "soldierBenefit": [
-      {
-        "Value": 2082,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 5,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 5,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 295,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "bigCard": "pic_bingzhong05",
-    "attackStar": 5,
-    "morale": 295,
-    "resourcePath": "51005",
-    "quality": 4,
-    "hpStar": 2082,
-    "model": "AE_Soldier_Warrior_T5",
-    "hospitalCostTime": 36,
-    "conquerHospitalCostTime": 6000
+    "hpStar": 8380,
+    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas"
   },
   "8001": {
-    "soldierCostTime": 40,
-    "cure": [
+    "soldierBenefit": [
       {
-        "count": 29,
+        "Source": 801,
+        "Value": 116,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 0.3,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 0.3,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 205,
+        "Type": 10096
+      }
+    ],
+    "ability": 25,
+    "load": 400,
+    "soldierCostTime": 40,
+    "quality": 1,
+    "hospitalCostTime": 12,
+    "bigCard": "pic_bz_sangsgi01",
+    "showModelPath": "shibing_01",
+    "level": 1,
+    "model": "AE_Soldier_Archer_T1",
+    "recruit": [
+      {
+        "count": 97,
         "type": 1
       },
       {
-        "count": 29,
+        "count": 97,
         "type": 2
       }
     ],
     "unLockCampLevel": 1,
-    "bust": "Pic_Soldier_T1",
-    "icon": "pic_bz_sangsgi01",
-    "recruit": [
-      {
-        "count": 97,
-        "type": 1
-      },
-      {
-        "count": 97,
-        "type": 2
-      }
-    ],
-    "ability": 25,
-    "level": 1,
-    "load": 400,
-    "id": 8001,
-    "quality": 1,
-    "showModelPath": "shibing_01",
-    "bigCard": "pic_bz_sangsgi01",
     "conquerHospitalCostTime": 600,
-    "soldierOrder": 10,
-    "soldierBenefit": [
-      {
-        "Value": 116,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 0.3,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 0.3,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 205,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "model": "AE_Soldier_Archer_T1",
     "resourcePath": "52001",
-    "hospitalCostTime": 12
-  },
-  "8002": {
-    "soldierCostTime": 60,
+    "soldierOrder": 10,
+    "icon": "pic_bz_sangsgi01",
+    "bust": "Pic_Soldier_T1",
+    "id": 8001,
     "cure": [
       {
-        "count": 43,
+        "count": 29,
         "type": 1
       },
       {
-        "count": 43,
+        "count": 29,
+        "type": 2
+      }
+    ]
+  },
+  "8004": {
+    "soldierBenefit": [
+      {
+        "Source": 801,
+        "Value": 1077,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 2.6,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 2.6,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 268,
+        "Type": 10096
+      }
+    ],
+    "ability": 210,
+    "load": 1000,
+    "defenseStar": 2.6,
+    "quality": 3,
+    "morale": 268,
+    "id": 8004,
+    "hospitalCostTime": 30,
+    "soldierCostTime": 100,
+    "bigCard": "pic_bz_sangsgi04",
+    "showModelPath": "shibing_04",
+    "resourcePath": "52003",
+    "level": 4,
+    "attackStar": 2.6,
+    "recruit": [
+      {
+        "count": 903,
+        "type": 1
+      },
+      {
+        "count": 903,
         "type": 2
       }
     ],
-    "unLockCampLevel": 3,
-    "bust": "Pic_Soldier_T2",
-    "defenseStar": 0.5,
-    "icon": "pic_bz_sangsgi02",
-    "recruit": [
+    "unLockCampLevel": 10,
+    "conquerHospitalCostTime": 4800,
+    "model": "AE_Soldier_Archer_T3",
+    "soldierOrder": 7,
+    "icon": "pic_bz_sangsgi04",
+    "bust": "Pic_Soldier_T4",
+    "hpStar": 1077,
+    "cure": [
       {
-        "count": 145,
+        "count": 270,
         "type": 1
       },
       {
-        "count": 145,
+        "count": 270,
         "type": 2
+      }
+    ]
+  },
+  "1002": {
+    "soldierBenefit": [
+      {
+        "Source": 801,
+        "Value": 174,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 0.5,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 0.5,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 224,
+        "Type": 10096
       }
     ],
     "ability": 37,
-    "level": 2,
     "load": 600,
-    "id": 8002,
+    "defenseStar": 0.5,
     "quality": 2,
-    "showModelPath": "shibing_02",
-    "soldierOrder": 9,
-    "bigCard": "pic_bz_sangsgi02",
-    "attackStar": 0.5,
-    "morale": 224,
-    "soldierBenefit": [
-      {
-        "Value": 174,
-        "Type": 10093,
-        "Source": 801
-      },
-      {
-        "Value": 0.5,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 0.5,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 224,
-        "Type": 10096,
-        "Source": 801
-      }
-    ],
-    "resourcePath": "52002",
-    "hpStar": 174,
+    "bubbleIcon": "Icon_UI_Bubble_SoldierT2",
     "model": "AE_Soldier_Archer_T2",
-    "hospitalCostTime": 18,
-    "conquerHospitalCostTime": 2100
-  },
-  "1006": {
-    "soldierCostTime": 140,
-    "cure": [
-      {
-        "count": 739,
-        "type": 1
-      },
-      {
-        "count": 739,
-        "type": 2
-      }
-    ],
-    "unLockCampLevel": 17,
-    "bust": "Pic_Soldier_T6",
-    "defenseStar": 7,
     "type": 1,
-    "icon": "pic_bingzhong06",
+    "hpStar": 174,
+    "soldierCostTime": 60,
+    "hospitalCostTime": 18,
+    "resourcePath": "52002",
+    "bigCard": "pic_bingzhong02",
+    "showModelPath": "shibing_02",
     "recruit": [
       {
-        "count": 2464,
+        "count": 145,
         "type": 1
       },
       {
-        "count": 2464,
+        "count": 145,
         "type": 2
       }
     ],
-    "ability": 579,
-    "level": 6,
-    "soldierOrder": 5,
-    "load": 1400,
-    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas",
-    "id": 1006,
-    "bubbleIcon": "Icon_UI_Bubble_SoldierT6",
-    "showModelPath": "shibing_06",
-    "soldierBenefit": [
+    "level": 2,
+    "attackStar": 0.5,
+    "morale": 224,
+    "unLockCampLevel": 3,
+    "conquerHospitalCostTime": 2100,
+    "id": 1002,
+    "soldierOrder": 9,
+    "icon": "pic_bingzhong02",
+    "bust": "Pic_Soldier_T2",
+    "cure": [
       {
-        "Value": 2939,
-        "Type": 10093,
-        "Source": 801
+        "count": 43,
+        "type": 1
       },
       {
-        "Value": 7,
-        "Type": 10094,
-        "Source": 801
-      },
-      {
-        "Value": 7,
-        "Type": 10095,
-        "Source": 801
-      },
-      {
-        "Value": 325,
-        "Type": 10096,
-        "Source": 801
+        "count": 43,
+        "type": 2
       }
     ],
-    "bigCard": "pic_bingzhong06",
-    "attackStar": 7,
-    "morale": 325,
-    "resourcePath": "52004",
-    "quality": 4,
-    "hpStar": 2939,
-    "model": "AE_Soldier_Archer_T4",
-    "hospitalCostTime": 42,
-    "conquerHospitalCostTime": 6990
+    "bubbleAtlas": "SpriteAtlas/CityMap_Common.spriteatlas"
+  },
+  "8009": {
+    "ability": 1350,
+    "load": 2000,
+    "defenseStar": 16.5,
+    "morale": 500,
+    "id": 8009,
+    "hospitalCostTime": 60,
+    "soldierCostTime": 200,
+    "bigCard": "pic_bz_sangsgi09",
+    "showModelPath": "shibing_09",
+    "resourcePath": "51009",
+    "level": 9,
+    "attackStar": 16.5,
+    "recruit": [
+      {
+        "count": 5770,
+        "type": 1
+      },
+      {
+        "count": 5770,
+        "type": 2
+      }
+    ],
+    "unLockCampLevel": 27,
+    "conquerHospitalCostTime": 9960,
+    "model": "AE_Soldier_Warrior_T9",
+    "soldierOrder": 2,
+    "icon": "pic_bz_sangsgi09",
+    "bust": "Pic_Soldier_T9",
+    "hpStar": 6881,
+    "cure": [
+      {
+        "count": 1731,
+        "type": 1
+      },
+      {
+        "count": 1731,
+        "type": 2
+      }
+    ]
+  },
+  "8008": {
+    "soldierBenefit": [
+      {
+        "Source": 801,
+        "Value": 5409,
+        "Type": 10093
+      },
+      {
+        "Source": 801,
+        "Value": 13,
+        "Type": 10094
+      },
+      {
+        "Source": 801,
+        "Value": 13,
+        "Type": 10095
+      },
+      {
+        "Source": 801,
+        "Value": 425,
+        "Type": 10096
+      }
+    ],
+    "ability": 1065,
+    "load": 1800,
+    "defenseStar": 13,
+    "morale": 425,
+    "id": 8008,
+    "hospitalCostTime": 54,
+    "soldierCostTime": 180,
+    "bigCard": "pic_bz_sangsgi08",
+    "showModelPath": "shibing_08",
+    "resourcePath": "51007",
+    "level": 8,
+    "attackStar": 13,
+    "recruit": [
+      {
+        "count": 4535,
+        "type": 1
+      },
+      {
+        "count": 4535,
+        "type": 2
+      }
+    ],
+    "unLockCampLevel": 24,
+    "conquerHospitalCostTime": 8970,
+    "model": "AE_Soldier_Warrior_T7",
+    "soldierOrder": 3,
+    "icon": "pic_bz_sangsgi08",
+    "bust": "Pic_Soldier_T8",
+    "hpStar": 5409,
+    "cure": [
+      {
+        "count": 1360,
+        "type": 1
+      },
+      {
+        "count": 1360,
+        "type": 2
+      }
+    ]
   }
 }

@@ -22,11 +22,14 @@ function extractTypeLabel(typeDesc: string): string {
   return stripTags(typeDesc).trim() || 'Skill'
 }
 
-// Camp/class icons from game
+// Camp/class icons from game (0=Warrior, 1=Ranger, 2=Warlock)
 const CAMP_ICON_SRC: Record<number, string> = {
-  1: '/images/icons/pic_sjboss_zy2.png', // Ranger
-  2: '/images/icons/pic_sjboss_zy3.png', // Warlock
-  3: '/images/icons/pic_sjboss_zy1.png', // Warrior
+  0: '/images/icons/pic_sjboss_zy1.png', // Warrior (red)
+  1: '/images/icons/pic_sjboss_zy2.png', // Ranger (blue)
+  2: '/images/icons/pic_sjboss_zy3.png', // Warlock (green)
+}
+const CAMP_LABEL: Record<number, string> = {
+  0: 'Warrior', 1: 'Ranger', 2: 'Warlock',
 }
 
 // Army type icons from game
@@ -161,12 +164,12 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
                 </span>
               )}
               <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-asylum-surface text-asylum-muted border border-asylum-border flex items-center gap-1">
-                {ARMY_ICON_SRC[hero.armyType] && <img src={ARMY_ICON_SRC[hero.armyType]} alt="" className="w-3.5 h-3.5" />}
+                {ARMY_ICON_SRC[hero.armyType] && <img src={ARMY_ICON_SRC[hero.armyType]} alt="" className="w-4 h-4" />}
                 {hero.armyName}
               </span>
               <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-asylum-surface text-asylum-muted border border-asylum-border flex items-center gap-1">
-                {CAMP_ICON_SRC[hero.campType] && <img src={CAMP_ICON_SRC[hero.campType]} alt="" className="w-3.5 h-3.5" />}
-                {hero.campName}
+                {CAMP_ICON_SRC[hero.campType] && <img src={CAMP_ICON_SRC[hero.campType]} alt="" className="w-4 h-4" />}
+                {CAMP_LABEL[hero.campType] || hero.campName}
               </span>
             </div>
 
