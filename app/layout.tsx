@@ -11,6 +11,7 @@ const NAV_ITEMS = [
   { href: '/', label: 'Home' },
   { href: '/heroes', label: 'Heroes' },
   { href: '/survivors', label: 'Survivors' },
+  { href: '/shop', label: 'Shop' },
   { href: '/items', label: 'Items' },
   { href: '/buildings', label: 'Buildings' },
   { href: '/troops', label: 'Troops' },

@@ -1,68 +1,63 @@
 {
-  "5": {
-    "id": 5,
-    "icon": "FAQ/Icon_Build_BurstBattle_05.png",
-    "skillIcondes": "-0.5",
-    "skillIcon": "Icon_buff_burstbattle_move"
+  "7": {
+    "skillIcon": "Icon_buff_burstbattle_treat",
+    "icon": "FAQ/Icon_Build_BurstBattle_04.png",
+    "unionIntegralCannotPlunder": 18,
+    "miniIcon": "BurstBattle_img_iconHospital",
+    "unionIntegralCanPlunder": 12,
+    "id": 7
   },
   "6": {
+    "skillIcon": "Icon_buff_burstbattle_point",
     "icon": "FAQ/Icon_Build_BurstBattle_06.png",
-    "miniIcon": "BurstBattle_img_iconOilRefineries",
-    "id": 6,
     "skillIcondes": "0.1",
-    "skillIcon": "Icon_buff_burstbattle_point"
+    "miniIcon": "BurstBattle_img_iconOilRefineries",
+    "id": 6
   },
-  "3": {
-    "skillTarget": 2,
-    "icon": "FAQ/Icon_Build_BurstBattle_07.png",
-    "skillIcondes": "-0.15",
-    "miniIcon": "BurstBattle_img_iconInfoCentre",
-    "skillIcon": "Icon_buff_burstbattle_drop",
-    "id": 3,
-    "componentBenefit": [
-      {
-        "Value": -0.15,
-        "Type": 10005,
-        "Source": 201
-      },
-      {
-        "Value": -0.15,
-        "Type": 10006,
-        "Source": 201
-      },
-      {
-        "Value": -0.15,
-        "Type": 10007,
-        "Source": 201
-      }
-    ],
-    "shieldTime": 600000
+  "5": {
+    "skillIcondes": "-0.5",
+    "skillIcon": "Icon_buff_burstbattle_move",
+    "icon": "FAQ/Icon_Build_BurstBattle_05.png",
+    "id": 5
   },
   "4": {
     "unionIntegralCannotPlunder": 30,
+    "isSpecial": 0,
     "icon": "FAQ/Icon_Build_BurstBattle_03.png",
+    "skillTarget": 0,
     "skillIconAtlas": "",
     "miniIcon": "BurstBattle_img_iconOilWell",
     "unionIntegralCanPlunder": 20,
-    "id": 4,
-    "skillTarget": 0,
-    "isSpecial": 0
+    "id": 4
   },
-  "1": {
-    "isSpecial": 0,
-    "skillIconAtlas": "",
-    "miniIcon": "BurstBattle_img_iconNuclearMissielsilo",
-    "unionIntegralCannotPlunder": 48,
-    "unionIntegralCanPlunder": 32,
-    "skillTarget": 0,
-    "shieldTime": 600000
+  "3": {
+    "skillIcondes": "-0.15",
+    "skillIcon": "Icon_buff_burstbattle_drop",
+    "componentBenefit": [
+      {
+        "Value": -0.15,
+        "Type": 10005,
+        "Source": 201
+      },
+      {
+        "Value": -0.15,
+        "Type": 10006,
+        "Source": 201
+      },
+      {
+        "Value": -0.15,
+        "Type": 10007,
+        "Source": 201
+      }
+    ],
+    "skillTarget": 2,
+    "shieldTime": 600000,
+    "miniIcon": "BurstBattle_img_iconInfoCentre",
+    "icon": "FAQ/Icon_Build_BurstBattle_07.png",
+    "id": 3
   },
   "2": {
-    "icon": "FAQ/Icon_Build_BurstBattle_08.png",
-    "skillIcondes": "0.15",
-    "miniIcon": "BurstBattle_img_iconMercenaryFactory",
     "skillIcon": "Icon_buff_burstbattle_rise",
-    "id": 2,
     "componentBenefit": [
       {
         "Value": 0.15,
@@ -80,14 +75,19 @@
         "Source": 201
       }
     ],
-    "shieldTime": 600000
+    "skillIcondes": "0.15",
+    "shieldTime": 600000,
+    "miniIcon": "BurstBattle_img_iconMercenaryFactory",
+    "icon": "FAQ/Icon_Build_BurstBattle_08.png",
+    "id": 2
   },
-  "7": {
-    "icon": "FAQ/Icon_Build_BurstBattle_04.png",
-    "miniIcon": "BurstBattle_img_iconHospital",
-    "unionIntegralCannotPlunder": 18,
-    "id": 7,
-    "unionIntegralCanPlunder": 12,
-    "skillIcon": "Icon_buff_burstbattle_treat"
+  "1": {
+    "unionIntegralCannotPlunder": 48,
+    "isSpecial": 0,
+    "skillTarget": 0,
+    "skillIconAtlas": "",
+    "miniIcon": "BurstBattle_img_iconNuclearMissielsilo",
+    "unionIntegralCanPlunder": 32,
+    "shieldTime": 600000
   }
 }

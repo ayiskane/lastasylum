@@ -1,64 +1,86 @@
 {
-  "13": {
-    "sort": 15,
+  "9": {
     "displayCondition": [
       {
-        "param2": "19",
-        "id": 20107,
-        "param1": "7"
+        "param2": "13",
+        "param1": "7",
+        "id": 20107
       }
     ],
-    "pic": "Icon_Science_DefendAgainstSieges_A",
-    "id": "13",
-    "displayName": "Defensive Tactics"
-  },
-  "14": {
+    "pic": "Icon_Science_AllianceShowdown_A",
+    "recommend": false,
+    "sort": 10,
     "precondition": [
       {
-        "param2": "13",
-        "id": 20107,
-        "param1": "7"
+        "param2": "15",
+        "param1": "7",
+        "id": 20107
       }
     ],
-    "sort": 5,
-    "id": "14",
-    "pic": "Icon_Science_develop_A",
-    "recommend": false,
-    "displayName": "Full Development"
+    "id": "9",
+    "displayName": "Alliance Duel"
   },
   "15": {
+    "sort": 6,
+    "pic": "Icon_Science_resource_A",
+    "recommend": false,
     "precondition": [
       {
         "param2": "13",
-        "id": 20107,
-        "param1": "7"
+        "param1": "7",
+        "id": 20107
       }
     ],
-    "sort": 6,
     "id": "15",
-    "pic": "Icon_Science_resource_A",
-    "recommend": false,
     "displayName": "Prosperous Economy"
   },
-  "4": {
+  "14": {
+    "sort": 5,
+    "pic": "Icon_Science_develop_A",
+    "recommend": false,
     "precondition": [
       {
-        "param2": "7",
-        "id": 20107,
-        "param1": "7"
+        "param2": "13",
+        "param1": "7",
+        "id": 20107
       }
     ],
-    "sort": 4,
+    "id": "14",
+    "displayName": "Full Development"
+  },
+  "3": {
     "displayCondition": [
       {
-        "param2": "5",
-        "id": 20107,
-        "param1": "7"
+        "param2": "3",
+        "param1": "7",
+        "id": 20107
       }
     ],
-    "pic": "Icon_Science_soldier_A",
-    "id": "4",
-    "displayName": "Soldier"
+    "pic": "Icon_Science_hero_A",
+    "sort": 3,
+    "precondition": [
+      {
+        "param2": "5",
+        "param1": "7",
+        "id": 20107
+      }
+    ],
+    "id": "3",
+    "displayName": "Hero"
+  },
+  "2": {
+    "sort": 2,
+    "pic": "Icon_Science_resource_A",
+    "recommend": false,
+    "precondition": [
+      {
+        "param2": "1",
+        "param1": "7",
+        "id": 20107
+      }
+    ],
+    "id": "2",
+    "displayName": "Economy"
   },
   "1": {
     "recommend": false,
@@ -66,210 +88,188 @@
     "precondition": [
       {
         "param2": "1",
-        "id": 20107,
-        "param1": "7"
+        "param1": "7",
+        "id": 20107
       }
     ],
     "id": "1",
     "displayName": "Development"
   },
-  "11": {
-    "precondition": [
-      {
-        "param2": "17",
-        "id": 20107,
-        "param1": "7"
-      }
-    ],
-    "sort": 12,
+  "8": {
+    "troopIndex": 4,
     "displayCondition": [
       {
-        "param2": "17",
-        "id": 20107,
-        "param1": "7"
+        "param2": "6",
+        "param1": "7",
+        "id": 20107
       }
     ],
-    "pic": "Icon_Science_commando_A",
-    "id": "11",
-    "displayName": "Elite Troop"
-  },
-  "10": {
-    "sort": 11,
-    "precondition": [
-      {
-        "param2": "15",
-        "id": 20107,
-        "param1": "7"
-      }
-    ],
-    "recommend": false,
-    "displayCondition": [
-      {
-        "param2": "15",
-        "id": 20107,
-        "param1": "7"
-      }
-    ],
-    "pic": "Icon_Science_IntercityTrains_A",
-    "id": "10",
-    "displayName": "Caravan Transport"
-  },
-  "5": {
+    "sort": 9,
     "precondition": [
       {
         "param2": "8",
-        "id": 20107,
-        "param1": "7"
+        "param1": "7",
+        "id": 20107
       }
     ],
+    "id": "8",
+    "displayName": "Squad 4"
+  },
+  "7": {
+    "troopIndex": 3,
+    "displayCondition": [
+      {
+        "param2": "18",
+        "param1": "7",
+        "id": 20107
+      }
+    ],
+    "sort": 13,
+    "precondition": [
+      {
+        "param2": "20",
+        "param1": "7",
+        "id": 20107
+      },
+      {
+        "param2": "25",
+        "param1": "6",
+        "id": 20205
+      }
+    ],
+    "id": "7",
+    "displayName": "Squad 3"
+  },
+  "6": {
+    "troopIndex": 2,
+    "displayCondition": [
+      {
+        "param2": "13",
+        "param1": "7",
+        "id": 20107
+      }
+    ],
+    "sort": 8,
+    "precondition": [
+      {
+        "param2": "15",
+        "param1": "7",
+        "id": 20107
+      },
+      {
+        "param2": "25",
+        "param1": "5",
+        "id": 20205
+      }
+    ],
+    "id": "6",
+    "displayName": "Squad 2"
+  },
+  "5": {
     "troopIndex": 1,
     "displayCondition": [
       {
         "param2": "6",
-        "id": 20107,
-        "param1": "7"
+        "param1": "7",
+        "id": 20107
       }
     ],
     "sort": 7,
+    "precondition": [
+      {
+        "param2": "8",
+        "param1": "7",
+        "id": 20107
+      }
+    ],
     "id": "5",
     "displayName": "Squad 1"
+  },
+  "4": {
+    "displayCondition": [
+      {
+        "param2": "5",
+        "param1": "7",
+        "id": 20107
+      }
+    ],
+    "pic": "Icon_Science_soldier_A",
+    "sort": 4,
+    "precondition": [
+      {
+        "param2": "7",
+        "param1": "7",
+        "id": 20107
+      }
+    ],
+    "id": "4",
+    "displayName": "Soldier"
   },
   "12": {
     "sort": 14,
     "displayCondition": [
       {
         "param2": "19",
-        "id": 20107,
-        "param1": "7"
+        "param1": "7",
+        "id": 20107
       }
     ],
     "pic": "Icon_Science_SiegeTheCity_A",
     "id": "12",
     "displayName": "Offensive Tactics"
   },
-  "2": {
-    "precondition": [
+  "13": {
+    "sort": 15,
+    "displayCondition": [
       {
-        "param2": "1",
-        "id": 20107,
-        "param1": "7"
+        "param2": "19",
+        "param1": "7",
+        "id": 20107
       }
     ],
-    "sort": 2,
-    "id": "2",
-    "pic": "Icon_Science_resource_A",
-    "recommend": false,
-    "displayName": "Economy"
+    "pic": "Icon_Science_DefendAgainstSieges_A",
+    "id": "13",
+    "displayName": "Defensive Tactics"
   },
-  "6": {
+  "10": {
+    "displayCondition": [
+      {
+        "param2": "15",
+        "param1": "7",
+        "id": 20107
+      }
+    ],
+    "pic": "Icon_Science_IntercityTrains_A",
+    "recommend": false,
+    "sort": 11,
     "precondition": [
       {
         "param2": "15",
-        "id": 20107,
-        "param1": "7"
-      },
-      {
-        "param2": "25",
-        "id": 20205,
-        "param1": "5"
+        "param1": "7",
+        "id": 20107
       }
     ],
-    "troopIndex": 2,
+    "id": "10",
+    "displayName": "Caravan Transport"
+  },
+  "11": {
     "displayCondition": [
       {
-        "param2": "13",
-        "id": 20107,
-        "param1": "7"
+        "param2": "17",
+        "param1": "7",
+        "id": 20107
       }
     ],
-    "sort": 8,
-    "id": "6",
-    "displayName": "Squad 2"
-  },
-  "9": {
-    "sort": 10,
+    "pic": "Icon_Science_commando_A",
+    "sort": 12,
     "precondition": [
       {
-        "param2": "15",
-        "id": 20107,
-        "param1": "7"
+        "param2": "17",
+        "param1": "7",
+        "id": 20107
       }
     ],
-    "recommend": false,
-    "displayCondition": [
-      {
-        "param2": "13",
-        "id": 20107,
-        "param1": "7"
-      }
-    ],
-    "pic": "Icon_Science_AllianceShowdown_A",
-    "id": "9",
-    "displayName": "Alliance Duel"
-  },
-  "3": {
-    "precondition": [
-      {
-        "param2": "5",
-        "id": 20107,
-        "param1": "7"
-      }
-    ],
-    "sort": 3,
-    "displayCondition": [
-      {
-        "param2": "3",
-        "id": 20107,
-        "param1": "7"
-      }
-    ],
-    "pic": "Icon_Science_hero_A",
-    "id": "3",
-    "displayName": "Hero"
-  },
-  "7": {
-    "precondition": [
-      {
-        "param2": "20",
-        "id": 20107,
-        "param1": "7"
-      },
-      {
-        "param2": "25",
-        "id": 20205,
-        "param1": "6"
-      }
-    ],
-    "troopIndex": 3,
-    "displayCondition": [
-      {
-        "param2": "18",
-        "id": 20107,
-        "param1": "7"
-      }
-    ],
-    "sort": 13,
-    "id": "7",
-    "displayName": "Squad 3"
-  },
-  "8": {
-    "precondition": [
-      {
-        "param2": "8",
-        "id": 20107,
-        "param1": "7"
-      }
-    ],
-    "troopIndex": 4,
-    "displayCondition": [
-      {
-        "param2": "6",
-        "id": 20107,
-        "param1": "7"
-      }
-    ],
-    "sort": 9,
-    "id": "8",
-    "displayName": "Squad 4"
+    "id": "11",
+    "displayName": "Elite Troop"
   }
 }
