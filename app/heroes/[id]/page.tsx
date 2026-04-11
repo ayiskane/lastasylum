@@ -50,11 +50,12 @@ const RARITY_LABEL: Record<number, string> = {
 }
 
 // Card frame styles matching in-game hero cards
-const QUALITY_CARD: Record<number, { border: string; bg: string }> = {
-  2: { border: 'border-green-500', bg: 'bg-gradient-to-b from-[#1a4a2a] via-[#153820] to-[#0f2818]' },
-  3: { border: 'border-[#4a7ec2]', bg: 'bg-gradient-to-b from-[#2a4a7a] via-[#1e3560] to-[#162845]' },
-  4: { border: 'border-[#9855d4]', bg: 'bg-gradient-to-b from-[#6b2fa0] via-[#4e2280] to-[#351660]' },
-  5: { border: 'border-[#d4943a]', bg: 'bg-gradient-to-b from-[#c88520] via-[#a06818] to-[#704010]' },
+const QUALITY_CARD: Record<number, { border: string; bg: string; nameColor: string }> = {
+  0: { border: 'border-[#4a7ec2]', bg: 'bg-gradient-to-b from-[#2a4a7a] via-[#1e3560] to-[#162845]', nameColor: 'text-[#70b0e8]' },
+  2: { border: 'border-green-500', bg: 'bg-gradient-to-b from-[#1a4a2a] via-[#153820] to-[#0f2818]', nameColor: 'text-green-400' },
+  3: { border: 'border-[#4a7ec2]', bg: 'bg-gradient-to-b from-[#2a4a7a] via-[#1e3560] to-[#162845]', nameColor: 'text-[#70b0e8]' },
+  4: { border: 'border-[#9855d4]', bg: 'bg-gradient-to-b from-[#6b2fa0] via-[#4e2280] to-[#351660]', nameColor: 'text-[#c898f0]' },
+  5: { border: 'border-[#d4943a]', bg: 'bg-gradient-to-b from-[#c88520] via-[#a06818] to-[#704010]', nameColor: 'text-[#f0d078]' },
 }
 
 const ARMY_NAMES: Record<number, string> = {
@@ -151,7 +152,12 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
                 />
               </div>
             </div>
-            {/* Camp + Army icons centered on bottom edge, side by side */}
+            {/* Rarity label centered on top edge */}
+            {RARITY_LABEL[hero.quality] && (
+              <img src={RARITY_LABEL[hero.quality]} alt={hero.qualityName}
+                className="absolute left-1/2 -translate-x-1/2 -top-3 h-7 w-auto drop-shadow-lg" />
+            )}
+            {/* Camp + Army icons centered on bottom edge, side by side, same size */}
             <div className="absolute left-1/2 -translate-x-1/2 -bottom-4 flex items-center gap-0.5">
               {CAMP_ICON_SRC[hero.campType] && (
                 <img src={CAMP_ICON_SRC[hero.campType]} alt={CAMP_LABEL[hero.campType] || ''}
@@ -159,28 +165,19 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
               )}
               {ARMY_ICON_SRC[hero.armyType] && (
                 <img src={ARMY_ICON_SRC[hero.armyType]} alt={ARMY_LABEL[hero.armyType] || ''}
-                  className="h-9 w-auto drop-shadow-lg" />
+                  className="h-10 w-auto drop-shadow-lg" />
               )}
             </div>
           </div>
 
           <div className="max-lg:flex-1">
-            {/* Name + power */}
-            <h1 className="text-xl font-bold tracking-wide mb-0.5" style={{ fontFamily: "'Rajdhani', sans-serif" }}>{name}</h1>
-            <div className="text-base font-semibold text-asylum-accent flex items-center gap-1 mb-2">
+            {/* Name — centered, bigger, rarity colored */}
+            <h1 className={`text-2xl font-bold tracking-wider text-center mb-1 ${cardStyle.nameColor}`}
+              style={{ fontFamily: "'Rajdhani', sans-serif" }}>{name}</h1>
+            {/* Might — centered */}
+            <div className="flex items-center justify-center gap-1 mb-3">
               <img src="/images/icons/ico_zhanli_60.png" alt="Might" className="w-5 h-5" />
-              <span className="font-mono">{hero.maxAbility?.toLocaleString()}</span>
-            </div>
-
-            {/* Tags — rarity only */}
-            <div className="flex gap-1.5 flex-wrap items-center mb-2">
-              {RARITY_LABEL[hero.quality] ? (
-                <img src={RARITY_LABEL[hero.quality]} alt={hero.qualityName} className="h-5" />
-              ) : (
-                <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-asylum-accent/12 text-asylum-accent">
-                  {hero.qualityName}
-                </span>
-              )}
+              <span className="text-base font-semibold text-asylum-accent font-mono">{hero.maxAbility?.toLocaleString()}</span>
             </div>
 
             {/* Shards */}
