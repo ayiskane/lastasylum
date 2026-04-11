@@ -105,11 +105,11 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
     }
   })
 
-  // Best image: honor art (216×300) exists for all heroes, card (162×276) as backup
-  // Bust (750×1050) would be ideal but needs ripper extraction
-  const honorPath = heroImagePath(hero, 'honor')
-  const cardPath = heroImagePath(hero, 'thumbnail')
-  const heroImg = honorPath || cardPath
+  // Image priority: bust (750×1050) → honor art (216×300) → card (162×276)
+  const bustPath = heroImagePath(hero, 'bust')   // /images/busts/pic_card3_XX.png
+  const honorPath = heroImagePath(hero, 'honor')  // /images/heroes/pic_card5_XX.png
+  const cardPath = heroImagePath(hero, 'thumbnail') // /images/heroes/pic_card2_XX.png
+  const heroImg = honorPath || cardPath  // Use honor art as default (always exists)
 
   return (
     <div className="max-w-[960px] mx-auto min-h-screen lg:flex max-lg:block">
@@ -120,8 +120,9 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
           <div className={`max-lg:w-[120px] max-lg:shrink-0 rounded-xl border-[3px] ${cardStyle.border} overflow-hidden mb-3 max-lg:mb-0 ${cardStyle.bg} p-1`}>
             <div className="aspect-[216/300] rounded-lg overflow-hidden">
               <GameImage
-                src={heroImg}
+                src={bustPath || heroImg}
                 alt={name}
+                fallbackSrc={heroImg}
                 className="w-full h-full object-cover"
               />
             </div>

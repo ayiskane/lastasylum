@@ -1,16 +1,49 @@
 {
-  "5": {
-    "addition": [
-      5,
-      6,
-      7
-    ],
-    "id": 5,
+  "7": {
+    "type": 4,
+    "id": 7,
+    "triggerEvent": 8013,
     "tasks": [
-      22004001,
-      22004002,
-      22004003
+      23001001,
+      23001002,
+      23001003
     ]
+  },
+  "2": {
+    "id": 2,
+    "triggerEvent": 7011,
+    "tasks": [
+      22001001,
+      22001002,
+      22001003
+    ],
+    "rewards": [
+      {
+        "type": 99,
+        "id": "item_UseUp_recruitCoin",
+        "count": 5
+      },
+      {
+        "type": 99,
+        "id": "item_optionalBox_Resource",
+        "count": 20
+      },
+      {
+        "type": 11,
+        "count": 30
+      }
+    ],
+    "nextId": 3
+  },
+  "1": {
+    "type": 1,
+    "triggerEvent": 4005,
+    "addition": [
+      4010,
+      5007,
+      6008
+    ],
+    "duration": 28800000
   },
   "4": {
     "tasks": [
@@ -19,23 +52,23 @@
       22003003
     ],
     "id": 4,
-    "nextId": 5,
     "rewards": [
       {
-        "count": 5,
         "type": 99,
-        "id": "item_UseUp_recruitCoin"
+        "id": "item_UseUp_recruitCoin",
+        "count": 5
       },
       {
-        "count": 20,
         "type": 99,
-        "id": "item_optionalBox_Resource"
+        "id": "item_optionalBox_Resource",
+        "count": 20
       },
       {
         "type": 11,
         "count": 30
       }
-    ]
+    ],
+    "nextId": 5
   },
   "3": {
     "tasks": [
@@ -44,78 +77,45 @@
       22002003
     ],
     "id": 3,
-    "nextId": 4,
     "rewards": [
       {
-        "count": 5,
         "type": 99,
-        "id": "item_drone_part"
+        "id": "item_drone_part",
+        "count": 5
       },
       {
-        "count": 2,
         "type": 99,
-        "id": "item_drone_data_10k"
+        "id": "item_drone_data_10k",
+        "count": 2
       },
       {
         "type": 11,
         "count": 30
       }
-    ]
-  },
-  "2": {
-    "nextId": 3,
-    "triggerEvent": 7011,
-    "id": 2,
-    "tasks": [
-      22001001,
-      22001002,
-      22001003
     ],
-    "rewards": [
-      {
-        "count": 5,
-        "type": 99,
-        "id": "item_UseUp_recruitCoin"
-      },
-      {
-        "count": 20,
-        "type": 99,
-        "id": "item_optionalBox_Resource"
-      },
-      {
-        "type": 11,
-        "count": 30
-      }
-    ]
-  },
-  "1": {
-    "addition": [
-      4010,
-      5007,
-      6008
-    ],
-    "duration": 28800000,
-    "type": 1,
-    "triggerEvent": 4005
-  },
-  "7": {
-    "triggerEvent": 8013,
-    "id": 7,
-    "type": 4,
-    "tasks": [
-      23001001,
-      23001002,
-      23001003
-    ]
+    "nextId": 4
   },
   "6": {
-    "triggerEvent": 8013,
-    "id": 6,
     "type": 3,
+    "id": 6,
+    "triggerEvent": 8013,
     "tasks": [
       23000001,
       23000002,
       23000003
+    ]
+  },
+  "5": {
+    "id": 5,
+    "addition": [
+      5,
+      6,
+      7
+    ],
+    "tasks": [
+      22004001,
+      22004002,
+      22004003
     ]
   }
 }

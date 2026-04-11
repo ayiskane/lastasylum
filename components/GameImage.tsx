@@ -5,13 +5,24 @@ interface GameImageProps {
   src: string
   alt: string
   fallback?: string
+  fallbackSrc?: string
   className?: string
 }
 
-export default function GameImage({ src, alt, fallback = '⚔️', className = '' }: GameImageProps) {
-  const [failed, setFailed] = useState(false)
+export default function GameImage({ src, alt, fallback = '⚔️', fallbackSrc, className = '' }: GameImageProps) {
+  const [stage, setStage] = useState<'primary' | 'fallback' | 'emoji'>('primary')
 
-  if (failed || !src) {
+  if (stage === 'emoji' || (!src && !fallbackSrc)) {
+    return (
+      <div className={`flex items-center justify-center text-2xl ${className}`}>
+        {fallback}
+      </div>
+    )
+  }
+
+  const currentSrc = stage === 'primary' ? (src || fallbackSrc || '') : (fallbackSrc || '')
+
+  if (!currentSrc) {
     return (
       <div className={`flex items-center justify-center text-2xl ${className}`}>
         {fallback}
@@ -21,10 +32,16 @@ export default function GameImage({ src, alt, fallback = '⚔️', className = '
 
   return (
     <img
-      src={src}
+      src={currentSrc}
       alt={alt}
       className={`object-contain ${className}`}
-      onError={() => setFailed(true)}
+      onError={() => {
+        if (stage === 'primary' && fallbackSrc && fallbackSrc !== src) {
+          setStage('fallback')
+        } else {
+          setStage('emoji')
+        }
+      }}
       loading="lazy"
     />
   )
