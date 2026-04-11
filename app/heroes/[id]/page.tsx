@@ -97,6 +97,7 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
         unlockStar: lv.starCondition || 0,
         power: lv.power || '',
         param1: lv.param1 || '',
+        description: lv.description ? stripTags(lv.description) : '',
         params: lv.params || { param1: lv.param1 },
       })),
     }
