@@ -1,779 +1,58 @@
 {
-  "10001": {
-    "buildMenuIcon": "pic_zsw_04",
-    "cover": [
-      3,
-      3
-    ],
-    "buildClickSound": 1438,
-    "type": 3,
-    "id": "10001",
-    "maxLv": 7,
-    "displayName": "Twin Dragon Brooch",
-    "buildDes": "A brooch symbolizing power and authority, once exclusive to nobility, lost in war.",
-    "createDes": "A brooch symbolizing power and authority, once exclusive to nobility, lost in war.",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "10013": {
-    "buildMenuIcon": "pic_zsw_06",
-    "buildRepairedSound": 0,
-    "upgradeEffScale": [
-      1.5,
-      1.5
-    ],
-    "buildClickSound": 1023,
-    "buildFirstIcon": "10013",
-    "buildUpgradeInAnimScale": 0,
-    "maxLv": 7,
-    "buildUpgradeInAnim": "",
-    "buildUpgradeWorkAnim": "",
-    "upgradeAnimScale": 0,
-    "type": 3,
-    "id": "10013",
-    "displayName": "Warrior Epaulet",
-    "buildDes": "An emblem once sewn onto a soldier's shoulder, symbolizing their honor.",
-    "createDes": "An emblem once sewn onto a soldier's shoulder, symbolizing their honor.",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5046": {
-    "buildMenuIcon": "5046",
-    "classify": 83,
-    "abc_2_info_funtionKey": "lightHeroHpAddValue",
-    "buildClickSound": 1438,
-    "sort": 42000,
-    "buildFirstIcon": "5046",
-    "abc_3_info_funtionKey": "lightHeroAttackAddValue",
-    "id": "5046",
-    "abc_1_info_funtionKey": "lightHeroSoldierLoadAddValue",
-    "showInMail": 0,
-    "abc_4_info_funtionKey": "lightHeroDefendAddValue",
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 999
-      }
-    ],
-    "cover": [
-      3,
-      3
-    ],
-    "displayName": "Ranger Statue",
-    "buildDes": "Increases Ranger Hero's counter against Warrior Hero",
-    "createDes": "Increases Ranger Hero's counter against Warrior Hero",
-    "classifyName": "",
-    "abc_1_info_translate": "Ranger Hero CMD",
-    "abc_2_info_translate": "Ranger Hero HP",
-    "abc_3_info_translate": "Ranger Hero ATK",
-    "abc_4_info_translate": "Ranger Hero DEF"
-  },
-  "5034": {
-    "buildMenuIcon": "5034",
-    "classify": 71,
-    "abc_2_info_funtionKey": "productMaxTime",
-    "abc_1_info_funtionKey": "speed",
-    "upgradeOverScale": 1,
-    "type": 1,
-    "cover": [
-      3,
-      3
-    ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
-    "buildClickSound": 3013,
-    "sort": 36000,
-    "buildFirstIcon": "5034",
-    "upgradeEffScale": [
-      1,
-      1
-    ],
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 11
-      }
-    ],
+  "1016": {
     "buildCompleteModelScale": 1,
-    "showInMail": 0,
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
+    "recommendPosition": [
+      33,
+      15
+    ],
+    "abc_1_info_formatType": 1,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22.prefab",
+    "classify": 13,
+    "abc_2_info_funtionKey": "productMaxTime",
+    "buildFirstIcon": "1016",
+    "dispatchOrder": 9,
+    "abc_1_info_benefits": [
+      20001
+    ],
+    "id": "1016",
+    "upgradeOverScale": 1,
+    "workerPostNum": 4,
+    "type": 1,
+    "abc_1_info_funtionKey": "speed",
+    "sort": 3000,
+    "buildMenuIcon": "1016",
+    "lock_show_condition": [
+      {
+        "param1": "Ct3P1",
+        "id": 999001
+      }
+    ],
     "abc_2_info_formatType": 3,
-    "abc_1_info_formatType": 6,
-    "id": "5034",
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
-    "displayName": "Raven Workshop",
-    "buildDes": "Produces Lv.1 Raven Gear Chest",
-    "createDes": "Produces Lv.1 Raven Gear Chest",
+    "buildClickSound": 1405,
+    "displayName": "Farm",
+    "buildDes": "Supply Grain to the Territory",
+    "createDes": "Supply Grain to the Territory",
     "classifyName": "",
-    "abc_1_info_translate": "Part Output Time",
+    "abc_1_info_translate": "Output/Hour",
     "abc_2_info_translate": "Max Production Time",
     "abc_3_info_translate": "",
     "abc_4_info_translate": ""
   },
-  "5051": {
-    "buildMenuIcon": "5051",
-    "classify": 84,
-    "buildClickSound": 3055,
-    "sort": 39000,
-    "buildFirstIcon": "5051",
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 11
-      }
-    ],
-    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv1.prefab",
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv1.prefab",
-    "showInMail": 0,
-    "maxLv": 1,
-    "id": "5051",
-    "cover": [
-      5,
-      6
-    ],
-    "canMove": 0,
-    "displayName": "Private Stable",
-    "buildDes": "",
-    "createDes": "",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5040": {
-    "buildMenuIcon": "5040",
-    "buildRepairedSound": 0,
-    "upgradeEffScale": [
-      0.4,
-      0.4
-    ],
-    "sort": 22000,
-    "buildFirstIcon": "5040",
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 6
-      }
-    ],
-    "id": "5040",
-    "showInMail": 0,
-    "type": 1,
-    "maxLv": 1,
-    "recommendPosition": [
-      49,
-      29
-    ],
-    "cover": [
-      3,
-      3
-    ],
-    "classify": 77,
-    "displayName": "Nomad Trader",
-    "buildDes": "Exchange currency for various needed items",
-    "createDes": "Exchange currency for various needed items",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5008": {
-    "buildMenuIcon": "5008",
-    "classify": 27,
-    "abc_2_info_funtionKey": "workerFreeRecruitCD",
-    "abc_1_info_funtionKey": "heroFreeRecruitCD",
-    "abc_1_info_benefits": [
-      20037
-    ],
-    "workerPostNum": 4,
-    "recommendPosition": [
-      35,
-      -7
-    ],
-    "upgradeOverScale": 1,
-    "upgradeEffScale": [
-      1,
-      1
-    ],
-    "dispatchOrder": 12,
-    "cover": [
-      3,
-      3
-    ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squadDown.prefab",
-    "buildClickSound": 3025,
-    "sort": 9000,
-    "buildFirstIcon": "5008",
-    "showInMail": 0,
-    "abc_2_info_benefits": [
-      20038
-    ],
-    "buildCompleteModelScale": 1,
-    "lock_show_condition": [
-      {
-        "id": 80029,
-        "param1": "1002"
-      }
-    ],
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squad_building.prefab",
-    "abc_2_info_formatType": 3,
-    "abc_1_info_formatType": 5,
-    "id": "5008",
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squadUp.prefab",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squad.prefab",
-    "displayName": "Tavern",
-    "buildDes": "Recruit more Heroes",
-    "createDes": "Recruit more Heroes",
-    "classifyName": "",
-    "abc_1_info_translate": "Free Hero Recruit CD",
-    "abc_2_info_translate": "Free Survivor Recruit CD",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "10014": {
-    "buildMenuIcon": "pic_zsw_07",
-    "buildRepairedSound": 0,
-    "upgradeEffScale": [
-      1.125,
-      1.125
-    ],
-    "buildClickSound": 1023,
-    "buildFirstIcon": "10014",
-    "buildUpgradeInAnimScale": 0,
-    "maxLv": 7,
-    "buildUpgradeInAnim": "",
-    "buildUpgradeWorkAnim": "",
-    "upgradeAnimScale": 0,
-    "type": 3,
-    "id": "10014",
-    "displayName": "Ranger Epaulet",
-    "buildDes": "An emblem once sewn onto a soldier's shoulder, symbolizing their honor.",
-    "createDes": "An emblem once sewn onto a soldier's shoulder, symbolizing their honor.",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "10003": {
-    "buildMenuIcon": "pic_zsw_09",
-    "buildClickSound": 1438,
-    "type": 3,
-    "buildFirstIcon": "10003",
-    "id": "10003",
-    "maxLv": 7,
-    "displayName": "Red Amber Amulet",
-    "buildDes": "An amulet inlaid with red amber, said to contain the power of vitality.",
-    "createDes": "An amulet inlaid with red amber, said to contain the power of vitality.",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "1008": {
-    "buildMenuIcon": "1008",
-    "classify": 8,
-    "upgradeEffScale": [
-      1,
-      1
-    ],
-    "abc_1_info_benefits": [
-      20033
-    ],
-    "workerPostNum": 4,
-    "upgradeOverScale": 1,
-    "dispatchOrder": 13,
-    "cover": [
-      3,
-      3
-    ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
-    "buildClickSound": 830001,
-    "sort": 21000,
-    "buildFirstIcon": "1008",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
-    "abc_2_info_benefits": [
-      20034
-    ],
-    "buildCompleteModelScale": 1,
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 4
-      }
-    ],
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
-    "abc_2_info_formatType": 4,
-    "abc_1_info_formatType": 4,
-    "id": "1008",
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
-    "repairTipIconAndBg": "novice_icon_bubbleRepair,novice_icon_bubble_Red",
-    "displayName": "Gear Workshop",
-    "buildDes": "Craft Gear",
-    "createDes": "Craft Gear",
-    "classifyName": "",
-    "abc_1_info_translate": "Crafting Speed",
-    "abc_2_info_translate": "Reduces crafting Herb cost",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5016": {
-    "buildMenuIcon": "5016",
-    "classify": 55,
-    "abc_1_info_funtionKey": "commonMarchSpeedAdd",
-    "recommendPosition": [
-      12,
-      20
-    ],
-    "cover": [
-      4,
-      4
-    ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22Down.prefab",
-    "buildClickSound": 3027,
-    "sort": 16000,
-    "buildFirstIcon": "5016",
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 5
-      }
-    ],
-    "buildCompleteModelScale": 1,
-    "showInMail": 0,
-    "upgradeOverScale": 1,
-    "abc_1_info_formatType": 4,
-    "id": "5016",
-    "canMove": 0,
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22.prefab",
-    "displayName": "Squad 4",
-    "buildDes": "March Queue",
-    "createDes": "March Queue",
-    "classifyName": "March Queue",
-    "abc_1_info_translate": "Squad March Speed↑",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "1006": {
-    "buildMenuIcon": "1006",
-    "classify": 34,
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
-    "buildClickSound": 1023,
-    "sort": 26000,
-    "buildFirstIcon": "1006",
-    "upgradeOverScale": 1,
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 6
-      }
-    ],
-    "buildCompleteModelScale": 1,
-    "cover": [
-      3,
-      3
-    ],
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
-    "maxLv": 1,
-    "id": "1006",
-    "recommendPosition": [
-      48,
-      18
-    ],
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
-    "displayName": "Falcon Tower",
-    "buildDes": "Monitor Area, Earn Generous Rewards",
-    "createDes": "Monitor Area, Earn Generous Rewards",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "10017": {
-    "buildMenuIcon": "pic_zsw_15",
-    "buildRepairedSound": 0,
-    "upgradeEffScale": [
-      0.375,
-      0.375
-    ],
-    "buildFirstIcon": "10017",
-    "maxLv": 7,
-    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
-    "type": 3,
-    "id": "10017",
-    "displayName": "Ranger Seal",
-    "buildDes": "Often used on envelopes, symbolizing authority and trust.",
-    "createDes": "Often used on envelopes, symbolizing authority and trust.",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5031": {
-    "buildMenuIcon": "5031",
-    "classify": 68,
-    "upgradeEffScale": [
-      1,
-      1
-    ],
-    "abc_1_info_funtionKey": "freeTime",
-    "abc_1_info_benefits": [
-      20006
-    ],
-    "dispatchOrder": 5,
-    "cover": [
-      3,
-      3
-    ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
-    "buildClickSound": 3040,
-    "sort": 5000,
-    "buildFirstIcon": "5031",
-    "workerPostNum": 4,
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 3
-      }
-    ],
-    "buildCompleteModelScale": 1,
-    "upgradeOverScale": 1,
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
-    "showInMail": 0,
-    "abc_1_info_formatType": 3,
-    "id": "5031",
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
-    "displayName": "Builder's Hut",
-    "buildDes": "Extends free time",
-    "createDes": "Extends free time",
-    "classifyName": "",
-    "abc_1_info_translate": "Free Speedup Time",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5006": {
-    "buildMenuIcon": "5006",
-    "classify": 25,
-    "upgradeEffScale": [
-      1,
-      1
-    ],
-    "abc_1_info_funtionKey": "soldierCap",
-    "abc_1_info_benefits": [
-      20020
-    ],
-    "recommendPosition": [
-      31,
-      -7
-    ],
-    "dispatchOrder": 8,
-    "cover": [
-      6,
-      6
-    ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squadDown.prefab",
-    "buildClickSound": 3025,
-    "sort": 28000,
-    "buildFirstIcon": "5006",
-    "workerPostNum": 4,
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 6
-      }
-    ],
-    "buildCompleteModelScale": 1,
-    "upgradeOverScale": 1,
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squad_building.prefab",
-    "showInMail": 0,
-    "abc_1_info_formatType": 1,
-    "id": "5006",
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squadUp.prefab",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squad.prefab",
-    "displayName": "Barracks",
-    "buildDes": "Soldier Assembly Point",
-    "createDes": "Soldier Assembly Point",
-    "classifyName": "",
-    "abc_1_info_translate": "Troop Capacity",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5047": {
-    "buildMenuIcon": "5047",
-    "classify": 7,
-    "abc_1_info_funtionKey": "speedAddPercent",
-    "abc_1_info_benefits": [
-      20008
-    ],
-    "recommendPosition": [
-      23,
-      -1
-    ],
-    "dispatchOrder": 2,
-    "buildRepairedSound": 0,
-    "buildClickSound": 1438,
-    "sort": 34000,
-    "buildFirstIcon": "5047",
-    "abc_2_info_benefits": [
-      20010
-    ],
-    "id": "5047",
-    "workerPostNum": 4,
-    "abc_2_info_formatType": 2,
-    "abc_1_info_formatType": 4,
-    "cover": [
-      3,
-      3
-    ],
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 999
-      }
-    ],
-    "repairTipIconAndBg": "novice_icon_bubbleRepair,novice_icon_bubble_Red",
-    "displayName": "2nd Workbench",
-    "buildDes": "Research Technology, Enhance Territory Strength",
-    "createDes": "Research Technology, Enhance Territory Strength",
-    "classifyName": "Research Lab",
-    "abc_1_info_translate": "Research Speed",
-    "abc_2_info_translate": "Free Speedup Time",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "10999": {
-    "buildMenuIcon": "pic_zsw_24",
-    "buildRepairedSound": 0,
-    "upgradeEffScale": [
-      0.125,
-      0.125
-    ],
-    "buildClickSound": 1023,
-    "buildFirstIcon": "10999",
-    "buildUpgradeInAnimScale": 0,
-    "maxLv": 7,
-    "buildUpgradeInAnim": "",
-    "buildUpgradeWorkAnim": "",
-    "upgradeAnimScale": 0,
-    "type": 3,
-    "id": "10999",
-    "displayName": "Blue Nutcracker",
-    "buildDes": "Blue Nutcracker",
-    "createDes": "Blue Nutcracker",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5023": {
-    "buildMenuIcon": "5023",
-    "classify": 60,
-    "upgradeEffScale": [
-      1,
-      1
-    ],
-    "abc_1_info_funtionKey": "protectCapacity",
-    "abc_1_info_benefits": [
-      20024,
-      20027
-    ],
-    "dispatchOrder": 15,
-    "workerPostNum": 4,
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
-    "buildClickSound": 3033,
-    "sort": 7000,
-    "buildFirstIcon": "5023",
-    "upgradeOverScale": 1,
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 3
-      }
-    ],
-    "buildCompleteModelScale": 1,
-    "type": 1,
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
-    "showInMail": 0,
-    "abc_1_info_formatType": 8,
-    "id": "5023",
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
-    "displayName": "Granary",
-    "buildDes": "Protects a certain amount of Grain from plunder",
-    "createDes": "Protects a certain amount of Grain from plunder",
-    "classifyName": "",
-    "abc_1_info_translate": "Protected Resource",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "11001": {
-    "buildMenuIcon": "pic_zsw_26",
-    "buildRepairedSound": 0,
-    "upgradeEffScale": [
-      0.25,
-      0.25
-    ],
-    "buildFirstIcon": "11001",
-    "buildUpgradeInAnimScale": 0,
-    "maxLv": 7,
-    "buildUpgradeInAnim": "",
-    "buildUpgradeWorkAnim": "",
-    "upgradeAnimScale": 0,
-    "type": 3,
-    "id": "11001",
-    "displayName": "Yellow Nutcracker",
-    "buildDes": "Yellow Nutcracker",
-    "createDes": "Yellow Nutcracker",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5033": {
-    "buildMenuIcon": "5033",
-    "classify": 70,
-    "upgradeEffScale": [
-      1,
-      1
-    ],
-    "abc_1_info_funtionKey": "speedAddPercent",
-    "recommendPosition": [
-      51,
-      21
-    ],
-    "cover": [
-      3,
-      3
-    ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
-    "buildClickSound": 3042,
-    "sort": 23000,
-    "buildFirstIcon": "5033",
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 6
-      }
-    ],
-    "buildCompleteModelScale": 1,
-    "upgradeOverScale": 1,
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
-    "showInMail": 0,
-    "abc_1_info_formatType": 4,
-    "id": "5033",
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
-    "displayName": "Scout Squad",
-    "buildDes": "Increases scout speed",
-    "createDes": "Increases scout speed",
-    "classifyName": "",
-    "abc_1_info_translate": "Scout Squad Movement Speed",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5039": {
-    "buildMenuIcon": "5039",
-    "buildRepairedSound": 0,
-    "upgradeEffScale": [
-      0.4,
-      0.4
-    ],
-    "sort": 35000,
-    "buildFirstIcon": "5039",
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 9
-      }
-    ],
-    "id": "5039",
-    "showInMail": 0,
-    "type": 1,
-    "maxLv": 1,
-    "cover": [
-      3,
-      3
-    ],
-    "classify": 76,
-    "displayName": "Curio Hall",
-    "buildDes": "Check Curio collection progress",
-    "createDes": "Check Curio collection progress",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "10011": {
-    "buildMenuIcon": "pic_zsw_12",
-    "buildRepairedSound": 0,
-    "upgradeEffScale": [
-      0.375,
-      0.375
-    ],
-    "buildClickSound": 1023,
-    "buildFirstIcon": "10011",
-    "maxLv": 7,
-    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
-    "type": 3,
-    "id": "10011",
-    "displayName": "Ranger Stone",
-    "buildDes": "A mysterious stone engraved with the Ranger's mark, a relic of ancient prayers for strength.",
-    "createDes": "A mysterious stone engraved with the Ranger's mark, a relic of ancient prayers for strength.",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
   "10010": {
-    "buildMenuIcon": "pic_zsw_11",
+    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
     "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_11",
+    "id": "10010",
+    "buildClickSound": 1023,
+    "maxLv": 7,
     "upgradeEffScale": [
       0.375,
       0.375
     ],
-    "buildClickSound": 1023,
-    "buildFirstIcon": "10010",
-    "maxLv": 7,
-    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
     "type": 3,
-    "id": "10010",
+    "buildFirstIcon": "10010",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
     "displayName": "Warrior Stone",
     "buildDes": "A mysterious stone engraved with the Warrior's mark, a relic of ancient prayers for strength.",
     "createDes": "A mysterious stone engraved with the Warrior's mark, a relic of ancient prayers for strength.",
@@ -783,425 +62,86 @@
     "abc_3_info_translate": "",
     "abc_4_info_translate": ""
   },
-  "5002": {
-    "buildMenuIcon": "5002",
-    "classify": 22,
-    "upgradeEffScale": [
-      1,
-      1
-    ],
-    "workerPostNum": 4,
-    "abc_1_info_benefits": [
-      20036
-    ],
-    "upgradeOverScale": 1,
-    "recommendPosition": [
-      22,
-      42
-    ],
-    "maxLv": 1,
-    "showInMail": 0,
-    "dispatchOrder": 14,
-    "cover": [
-      3,
-      3
-    ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_66Down.prefab",
-    "buildClickSound": 3023,
-    "sort": 20000,
-    "buildFirstIcon": "5002",
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 3
-      }
-    ],
-    "abc_2_info_benefits": [
-      20035
-    ],
+  "1008": {
     "buildCompleteModelScale": 1,
-    "id": "5002",
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_66_building.prefab",
-    "abc_2_info_formatType": 4,
-    "abc_1_info_formatType": 3,
-    "canMove": 0,
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_66Up.prefab",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_66.prefab",
-    "displayName": "Explorer's Camp",
-    "buildDes": "Continuously gather resources",
-    "createDes": "Continuously gather resources",
-    "classifyName": "",
-    "abc_1_info_translate": "Accumulated Idle Time",
-    "abc_2_info_translate": "Loot Output",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "1004": {
-    "buildMenuIcon": "1004",
-    "classify": 4,
-    "upgradeEffScale": [
-      1,
-      1
-    ],
-    "abc_1_info_funtionKey": "cureCount",
-    "abc_1_info_benefits": [
-      20021,
-      20032
-    ],
-    "recommendPosition": [
-      23,
-      7
-    ],
-    "dispatchOrder": 7,
-    "cover": [
-      3,
-      3
-    ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22Down.prefab",
-    "buildClickSound": 3017,
-    "sort": 30000,
-    "buildFirstIcon": "1004",
-    "abc_2_info_benefits": [
-      20022
-    ],
-    "buildCompleteModelScale": 1,
-    "workerPostNum": 4,
-    "upgradeOverScale": 1,
-    "abc_2_info_formatType": 4,
-    "abc_1_info_formatType": 1,
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 7
-      }
-    ],
-    "id": "1004",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22.prefab",
-    "displayName": "Infirmary",
-    "buildDes": "Heal Severely Wounded Soldiers",
-    "createDes": "Heal Severely Wounded Soldiers",
-    "classifyName": "",
-    "abc_1_info_translate": "Infirmary Capacity",
-    "abc_2_info_translate": "Infirmary Healing Speed",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5024": {
-    "buildMenuIcon": "5024",
-    "classify": 61,
-    "upgradeEffScale": [
-      1,
-      1
-    ],
-    "abc_1_info_funtionKey": "protectCapacity",
-    "abc_1_info_benefits": [
-      20025,
-      20028
-    ],
-    "dispatchOrder": 16,
-    "workerPostNum": 4,
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_66Down.prefab",
-    "buildClickSound": 3034,
-    "sort": 6000,
-    "buildFirstIcon": "5024",
-    "upgradeOverScale": 1,
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 3
-      }
-    ],
-    "buildCompleteModelScale": 1,
-    "type": 1,
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_66_building.prefab",
-    "showInMail": 0,
-    "abc_1_info_formatType": 8,
-    "id": "5024",
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_66Up.prefab",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_66.prefab",
-    "displayName": "Lumber Depot",
-    "buildDes": "Protects a certain amount of Timber from plunder",
-    "createDes": "Protects a certain amount of Timber from plunder",
-    "classifyName": "",
-    "abc_1_info_translate": "Protected Resource",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "1020": {
-    "buildMenuIcon": "1020",
-    "classify": 16,
-    "abc_2_info_funtionKey": "soldierrank",
-    "abc_1_info_funtionKey": "upgradeCount",
-    "recommendPosition": [
-      47,
-      25
-    ],
-    "workerPostNum": 4,
-    "dispatchOrder": 6,
-    "cover": [
-      3,
-      3
-    ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
-    "buildClickSound": 3028,
-    "sort": 29000,
-    "buildFirstIcon": "1020",
-    "upgradeOverScale": 1,
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 6
-      }
-    ],
-    "buildCompleteModelScale": 1,
-    "upgradeEffScale": [
-      1,
-      1
-    ],
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
-    "abc_2_info_formatType": 1,
-    "abc_1_info_formatType": 1,
-    "id": "1020",
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
-    "displayName": "Training Grounds",
-    "buildDes": "Train Soldiers",
-    "createDes": "Train Soldiers",
-    "classifyName": "",
-    "abc_1_info_translate": "Training Capacity",
-    "abc_2_info_translate": "Soldier Training Level",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "1017": {
-    "buildMenuIcon": "1017",
-    "classify": 14,
-    "abc_2_info_funtionKey": "productMaxTime",
-    "abc_1_info_funtionKey": "speed",
-    "abc_1_info_benefits": [
-      20002
-    ],
-    "recommendPosition": [
-      30,
-      12
-    ],
-    "dispatchOrder": 10,
-    "buildEffect": [
-      9999983
-    ],
-    "buildClickSound": 1406,
-    "sort": 2000,
-    "buildFirstIcon": "1017",
-    "workerPostNum": 4,
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 1
-      }
-    ],
-    "buildCompleteModelScale": 1,
-    "upgradeOverScale": 1,
-    "type": 1,
-    "abc_2_info_formatType": 3,
-    "abc_1_info_formatType": 1,
-    "id": "1017",
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22Down.prefab",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22.prefab",
-    "displayName": "Lumberyard",
-    "buildDes": "Supply Timber to the Territory",
-    "createDes": "Supply Timber to the Territory",
-    "classifyName": "",
-    "abc_1_info_translate": "Output/Hour",
-    "abc_2_info_translate": "Max Production Time",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5043": {
-    "buildMenuIcon": "5043",
-    "classify": 80,
-    "abc_2_info_funtionKey": "productMaxTime",
-    "buildClickSound": 3055,
-    "sort": 24000,
-    "buildFirstIcon": "5043",
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 5
-      }
-    ],
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
-    "type": 1,
-    "abc_1_info_funtionKey": "speed",
-    "abc_2_info_formatType": 3,
-    "abc_1_info_formatType": 1,
-    "showInMail": 0,
-    "id": "5043",
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
-    "displayName": "Weaving Workshop",
-    "buildDes": "Produces gear crafting materials",
-    "createDes": "Produces gear crafting materials",
-    "classifyName": "",
-    "abc_1_info_translate": "Cloth Output/Hour",
-    "abc_2_info_translate": "Max Production Time",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5049": {
-    "buildMenuIcon": "5049",
-    "buildRepairedSound": 0,
-    "abc_2_info_funtionKey": "counterRecoHideCount",
-    "buildClickSound": 1438,
-    "sort": 38000,
-    "buildFirstIcon": "5049",
-    "abc_3_info_funtionKey": "recoLevel",
-    "id": "5049",
-    "abc_1_info_funtionKey": "counterRecoProb",
-    "showInMail": 0,
     "abc_1_info_formatType": 4,
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 8
-      }
-    ],
-    "cover": [
-      3,
-      3
-    ],
-    "classify": 6,
-    "displayName": "Watchtower",
-    "buildDes": "Survey the surrounding area, stay alert for incoming enemies.",
-    "createDes": "Survey the surrounding area, stay alert for incoming enemies.",
-    "classifyName": "",
-    "abc_1_info_translate": "Anti-Scout Chance",
-    "abc_2_info_translate": "Anti-Scout Hidden Intel",
-    "abc_3_info_translate": "Scout Level",
-    "abc_4_info_translate": ""
-  },
-  "10002": {
-    "buildMenuIcon": "pic_zsw_20",
-    "cover": [
-      3,
-      3
-    ],
-    "buildClickSound": 1438,
-    "type": 3,
-    "buildFirstIcon": "10002",
-    "id": "10002",
-    "maxLv": 7,
-    "displayName": "Golden Feather",
-    "buildDes": "Once a royal ornament embedded in the throne, lost in the flames of war.",
-    "createDes": "Once a royal ornament embedded in the throne, lost in the flames of war.",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "1019": {
-    "buildMenuIcon": "1019",
-    "classify": 15,
-    "abc_2_info_funtionKey": "productMaxTime",
-    "abc_1_info_funtionKey": "speed",
-    "abc_1_info_benefits": [
-      20003
-    ],
-    "recommendPosition": [
-      29,
-      19
-    ],
-    "dispatchOrder": 11,
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22Down.prefab",
-    "buildClickSound": 3019,
-    "sort": 4000,
-    "buildFirstIcon": "1019",
-    "lock_show_condition": [
-      {
-        "id": 999001,
-        "param1": "Ct6D2P1"
-      }
-    ],
-    "buildCompleteModelScale": 1,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
+    "classify": 8,
+    "buildFirstIcon": "1008",
     "workerPostNum": 4,
-    "upgradeOverScale": 1,
-    "abc_2_info_formatType": 3,
-    "abc_1_info_formatType": 1,
-    "type": 1,
-    "id": "1019",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22.prefab",
-    "displayName": "Herb Garden",
-    "buildDes": "Supply Herb to the Territory",
-    "createDes": "Supply Herb to the Territory",
-    "classifyName": "",
-    "abc_1_info_translate": "Output/Hour",
-    "abc_2_info_translate": "Max Production Time",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "11006": {
-    "buildMenuIcon": "pic_zsw_30",
-    "buildRepairedSound": 0,
-    "upgradeEffScale": [
-      0.25,
-      0.25
+    "repairTipIconAndBg": "novice_icon_bubbleRepair,novice_icon_bubble_Red",
+    "dispatchOrder": 13,
+    "abc_1_info_benefits": [
+      20033
     ],
-    "buildFirstIcon": "11006",
-    "buildUpgradeInAnimScale": 0,
-    "maxLv": 7,
-    "buildUpgradeInAnim": "",
-    "buildUpgradeWorkAnim": "",
-    "upgradeAnimScale": 0,
-    "type": 3,
-    "id": "11006",
-    "displayName": "Easter Egg Warrior",
-    "buildDes": "Little Easter Egg, Fearless Warrior",
-    "createDes": "Little Easter Egg, Fearless Warrior",
+    "upgradeEffScale": [
+      1,
+      1
+    ],
+    "id": "1008",
+    "sort": 21000,
+    "upgradeOverScale": 1,
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
+    "cover": [
+      3,
+      3
+    ],
+    "buildClickSound": 830001,
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
+    "abc_2_info_benefits": [
+      20034
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 4,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "abc_2_info_formatType": 4,
+    "buildMenuIcon": "1008",
+    "displayName": "Gear Workshop",
+    "buildDes": "Craft Gear",
+    "createDes": "Craft Gear",
     "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
+    "abc_1_info_translate": "Crafting Speed",
+    "abc_2_info_translate": "Reduces crafting Herb cost",
     "abc_3_info_translate": "",
     "abc_4_info_translate": ""
   },
   "1001": {
-    "classify": 1,
-    "abc_2_info_funtionKey": "heroLife",
-    "initLevel": 1,
-    "abc_1_info_funtionKey": "heroLvCap",
-    "abc_4_info_funtionKey": "heroDefend",
-    "workerPostNum": 2,
-    "upgradeOverScale": 1,
-    "dispatchOrder": 4,
-    "cover": [
-      4,
-      4
-    ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44Down.prefab",
-    "abc_3_info_formatType": 7,
-    "sort": 1000,
-    "buildFirstIcon": "1001",
-    "upgradeEffScale": [
-      0.7,
-      0.7
-    ],
-    "abc_3_info_funtionKey": "heroAttack",
     "buildCompleteModelScale": 1,
-    "type": 4,
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_building.prefab",
+    "abc_3_info_formatType": 7,
     "recommendPosition": [
       42,
       28
     ],
     "canMove": 0,
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44Up.prefab",
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44Down.prefab",
     "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44.prefab",
+    "initLevel": 1,
+    "abc_4_info_funtionKey": "heroDefend",
+    "abc_2_info_funtionKey": "heroLife",
+    "buildFirstIcon": "1001",
+    "dispatchOrder": 4,
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_building.prefab",
+    "type": 4,
+    "upgradeEffScale": [
+      0.7,
+      0.7
+    ],
+    "upgradeOverScale": 1,
+    "sort": 1000,
+    "abc_3_info_funtionKey": "heroAttack",
+    "abc_1_info_funtionKey": "heroLvCap",
+    "classify": 1,
+    "cover": [
+      4,
+      4
+    ],
+    "workerPostNum": 2,
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44Up.prefab",
     "buildClickSound": 3015,
     "id": "1001",
     "displayName": "Sanctuary",
@@ -1213,826 +153,32 @@
     "abc_3_info_translate": "Hero ATK",
     "abc_4_info_translate": "Hero DEF"
   },
-  "10020": {
-    "buildMenuIcon": "pic_zsw_21",
-    "buildRepairedSound": 0,
-    "upgradeEffScale": [
-      0.375,
-      0.375
-    ],
-    "buildFirstIcon": "10020",
-    "maxLv": 7,
-    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
-    "type": 3,
-    "id": "10020",
-    "cover": [
-      3,
-      3
-    ],
-    "displayName": "Lost Scroll",
-    "buildDes": "A legendary scroll that grants magic, but... does magic truly exist?",
-    "createDes": "A legendary scroll that grants magic, but... does magic truly exist?",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5053": {
-    "buildMenuIcon": "5053",
-    "classify": 93,
-    "buildClickSound": 1438,
-    "sort": 42000,
-    "buildFirstIcon": "5053",
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 7
-      }
-    ],
-    "id": "5053",
-    "showInMail": 0,
-    "maxLv": 1,
-    "cover": [
-      3,
-      3
-    ],
-    "displayName": "Temple",
-    "buildDes": "",
-    "createDes": "",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "10021": {
-    "buildMenuIcon": "pic_zsw_03",
-    "buildRepairedSound": 0,
-    "upgradeEffScale": [
-      0.375,
-      0.375
-    ],
-    "buildClickSound": 1053,
-    "buildFirstIcon": "10021",
-    "maxLv": 7,
-    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
-    "type": 3,
-    "id": "10021",
-    "displayName": "Sphinx",
-    "buildDes": "A peculiar small statue with certain artistic value.",
-    "createDes": "A peculiar small statue with certain artistic value.",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "10019": {
-    "buildMenuIcon": "pic_zsw_19",
-    "buildRepairedSound": 0,
-    "upgradeEffScale": [
-      0.375,
-      0.375
-    ],
-    "buildFirstIcon": "10019",
-    "maxLv": 7,
-    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
-    "type": 3,
-    "id": "10019",
-    "displayName": "Prophecy Card",
-    "buildDes": "Cards used by some wanderers to predict future events.",
-    "createDes": "Cards used by some wanderers to predict future events.",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "10005": {
-    "buildMenuIcon": "pic_zsw_01",
-    "buildClickSound": 3055,
-    "type": 3,
-    "buildFirstIcon": "10005",
-    "id": "10005",
-    "maxLv": 7,
-    "displayName": "Sacred Chalice",
-    "buildDes": "A silver goblet once used for blessings, now tarnished.",
-    "createDes": "A silver goblet once used for blessings, now tarnished.",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5025": {
-    "buildMenuIcon": "5025",
-    "classify": 62,
-    "upgradeEffScale": [
-      1,
-      1
-    ],
-    "abc_1_info_funtionKey": "protectCapacity",
-    "abc_1_info_benefits": [
-      20026,
-      20029
-    ],
-    "recommendPosition": [
-      38,
-      8
-    ],
-    "dispatchOrder": 17,
-    "workerPostNum": 4,
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
-    "buildClickSound": 3035,
-    "sort": 8000,
-    "buildFirstIcon": "5025",
-    "upgradeOverScale": 1,
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 3
-      }
-    ],
-    "buildCompleteModelScale": 1,
-    "type": 1,
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
-    "showInMail": 0,
-    "abc_1_info_formatType": 8,
-    "id": "5025",
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
-    "displayName": "Herb Storage",
-    "buildDes": "Protects a certain amount of Herb from plunder",
-    "createDes": "Protects a certain amount of Herb from plunder",
-    "classifyName": "",
-    "abc_1_info_translate": "Protected Resource",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5038": {
-    "buildMenuIcon": "5038",
-    "classify": 75,
-    "upgradeEffScale": [
-      1,
-      1
-    ],
-    "type": 1,
-    "cover": [
-      3,
-      3
-    ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_55Down.prefab",
-    "buildClickSound": 3045,
-    "sort": 41000,
-    "buildFirstIcon": "5038",
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 9
-      }
-    ],
-    "buildCompleteModelScale": 1,
-    "upgradeOverScale": 1,
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_55_building.prefab",
-    "showInMail": 0,
-    "maxLv": 1,
-    "id": "5038",
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_55Up.prefab",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_55.prefab",
-    "displayName": "Monument",
-    "buildDes": "In honor of all great contributions.",
-    "createDes": "In honor of all great contributions.",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5045": {
-    "buildMenuIcon": "5045",
-    "buildRepairedSound": 0,
-    "abc_2_info_funtionKey": "mediumHeroHpAddValue",
-    "buildClickSound": 1438,
-    "sort": 43000,
-    "buildFirstIcon": "5045",
-    "abc_3_info_funtionKey": "mediumHeroAttackAddValue",
-    "id": "5045",
-    "abc_1_info_funtionKey": "mediumHeroSoldierLoadAddValue",
-    "showInMail": 0,
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 999
-      }
-    ],
-    "abc_4_info_funtionKey": "mediumHeroDefendAddValue",
-    "cover": [
-      3,
-      3
-    ],
-    "classify": 82,
-    "displayName": "Warlock Statue",
-    "buildDes": "Increases Warlock Hero's counter against Ranger Hero",
-    "createDes": "Increases Warlock Hero's counter against Ranger Hero",
-    "classifyName": "",
-    "abc_1_info_translate": "Warlock Hero CMD",
-    "abc_2_info_translate": "Warlock Hero HP",
-    "abc_3_info_translate": "Warlock Hero ATK",
-    "abc_4_info_translate": "Warlock Hero DEF"
-  },
-  "11002": {
-    "buildMenuIcon": "pic_zsw_27",
-    "buildRepairedSound": 0,
-    "upgradeEffScale": [
-      0.25,
-      0.25
-    ],
-    "buildFirstIcon": "11002",
-    "buildUpgradeInAnimScale": 0,
-    "maxLv": 7,
-    "buildUpgradeInAnim": "",
-    "buildUpgradeWorkAnim": "",
-    "upgradeAnimScale": 0,
-    "type": 3,
-    "id": "11002",
-    "displayName": "Green Nutcracker",
-    "buildDes": "Green Nutcracker",
-    "createDes": "Green Nutcracker",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5010": {
-    "buildMenuIcon": "5010",
-    "classify": 29,
-    "upgradeEffScale": [
-      1,
-      1
-    ],
-    "recommendPosition": [
-      55,
-      23
-    ],
-    "cover": [
-      4,
-      4
-    ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squadDown.prefab",
-    "buildClickSound": 3025,
-    "sort": 31000,
-    "buildFirstIcon": "5010",
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 7
-      }
-    ],
-    "buildCompleteModelScale": 1,
-    "upgradeOverScale": 1,
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squad_building.prefab",
-    "showInMail": 0,
-    "maxLv": 1,
-    "id": "5010",
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squadUp.prefab",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squad.prefab",
-    "displayName": "Arena",
-    "buildDes": "Show your strength",
-    "createDes": "Show your strength",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5054": {
-    "buildMenuIcon": "5054",
-    "classify": 94,
-    "buildClickSound": 1438,
-    "sort": 43000,
-    "buildFirstIcon": "5054",
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 15
-      }
-    ],
-    "id": "5054",
-    "showInMail": 0,
-    "maxLv": 1,
-    "cover": [
-      3,
-      3
-    ],
-    "displayName": "Hall of Honor",
-    "buildDes": "",
-    "createDes": "",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5052": {
-    "buildMenuIcon": "5052",
-    "classify": 85,
-    "buildClickSound": 1438,
-    "sort": 40000,
-    "buildFirstIcon": "5052",
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 11
-      }
-    ],
-    "id": "5052",
-    "showInMail": 0,
-    "maxLv": 1,
-    "cover": [
-      7,
-      1
-    ],
+  "5051": {
+    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv1.prefab",
+    "sort": 39000,
+    "buildMenuIcon": "5051",
+    "id": "5051",
     "canMove": 0,
-    "displayName": "Alliance Stable",
-    "buildDes": "",
-    "createDes": "",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5044": {
-    "buildMenuIcon": "5044",
-    "classify": 81,
-    "abc_2_info_funtionKey": "heavyHeroHpAddValue",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv1.prefab",
+    "classify": 84,
     "buildClickSound": 3055,
-    "sort": 41000,
-    "buildFirstIcon": "5044",
-    "abc_3_info_funtionKey": "heavyHeroAttackAddValue",
-    "id": "5044",
-    "abc_1_info_funtionKey": "heavyHeroSoldierLoadAddValue",
-    "showInMail": 0,
-    "recommendPosition": [
-      43,
-      15
-    ],
-    "abc_4_info_funtionKey": "heavyHeroDefendAddValue",
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 999
-      }
-    ],
-    "cover": [
-      3,
-      3
-    ],
-    "displayName": "Warrior Statue",
-    "buildDes": "Increases Warrior Hero's counter against Warlock Hero",
-    "createDes": "Increases Warrior Hero's counter against Warlock Hero",
-    "classifyName": "",
-    "abc_1_info_translate": "Warrior Hero CMD",
-    "abc_2_info_translate": "Warrior Hero HP",
-    "abc_3_info_translate": "Warrior Hero ATK",
-    "abc_4_info_translate": "Warrior Hero DEF"
-  },
-  "5029": {
-    "buildMenuIcon": "5029",
-    "classify": 66,
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22Down.prefab",
-    "buildClickSound": 3038,
-    "sort": 37000,
-    "buildFirstIcon": "5029",
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 9
-      }
-    ],
-    "buildCompleteModelScale": 1,
-    "upgradeOverScale": 1,
-    "showInMail": 0,
     "maxLv": 1,
-    "id": "5029",
     "cover": [
       5,
       6
     ],
-    "canMove": 0,
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22.prefab",
-    "displayName": "Black Ops",
+    "lock_show_condition": [
+      {
+        "param2": 11,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildFirstIcon": "5051",
+    "showInMail": 0,
+    "displayName": "Private Stable",
     "buildDes": "",
     "createDes": "",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5036": {
-    "buildMenuIcon": "5036",
-    "classify": 73,
-    "upgradeEffScale": [
-      1,
-      1
-    ],
-    "cover": [
-      6,
-      6
-    ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
-    "buildClickSound": 1435,
-    "sort": 32000,
-    "buildFirstIcon": "5036",
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 7
-      }
-    ],
-    "buildCompleteModelScale": 1,
-    "upgradeOverScale": 1,
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
-    "showInMail": 0,
-    "maxLv": 1,
-    "id": "5036",
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
-    "displayName": "Raven Nest",
-    "buildDes": "Raven's Roost",
-    "createDes": "Raven's Roost",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5042": {
-    "buildMenuIcon": "5042",
-    "classify": 79,
-    "abc_2_info_funtionKey": "productMaxTime",
-    "buildClickSound": 3055,
-    "sort": 25000,
-    "buildFirstIcon": "5042",
-    "type": 1,
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 5
-      }
-    ],
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
-    "showInMail": 0,
-    "abc_1_info_funtionKey": "speed",
-    "abc_2_info_formatType": 3,
-    "abc_1_info_formatType": 1,
-    "recommendPosition": [
-      42,
-      22
-    ],
-    "id": "5042",
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
-    "displayName": "Smelting Workshop",
-    "buildDes": "Produces Gearstones",
-    "createDes": "Produces Gearstones",
-    "classifyName": "",
-    "abc_1_info_translate": "Gearstone Output/Hour",
-    "abc_2_info_translate": "Max Production Time",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5021": {
-    "buildMenuIcon": "5021",
-    "classify": 59,
-    "upgradeEffScale": [
-      1,
-      1
-    ],
-    "initLevel": 1,
-    "recommendPosition": [
-      35,
-      19
-    ],
-    "type": 1,
-    "cover": [
-      3,
-      3
-    ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
-    "buildClickSound": 3032,
-    "sort": 10000,
-    "buildFirstIcon": "5021",
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 9999
-      }
-    ],
-    "buildCompleteModelScale": 1,
-    "upgradeOverScale": 1,
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
-    "showInMail": 0,
-    "maxLv": 1,
-    "id": "5021",
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
-    "displayName": "Residence",
-    "buildDes": "Enhances survivor abilities",
-    "createDes": "Enhances survivor abilities",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "11004": {
-    "buildMenuIcon": "pic_zsw_29",
-    "buildRepairedSound": 0,
-    "upgradeEffScale": [
-      0.25,
-      0.25
-    ],
-    "buildFirstIcon": "11004",
-    "buildUpgradeInAnimScale": 0,
-    "maxLv": 7,
-    "buildUpgradeInAnim": "",
-    "buildUpgradeWorkAnim": "",
-    "upgradeAnimScale": 0,
-    "type": 3,
-    "id": "11004",
-    "displayName": "Dragon Blood",
-    "buildDes": "Dragon Blood",
-    "createDes": "Dragon Blood",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "10016": {
-    "buildMenuIcon": "pic_zsw_14",
-    "buildRepairedSound": 0,
-    "upgradeEffScale": [
-      0.375,
-      0.375
-    ],
-    "buildFirstIcon": "10016",
-    "maxLv": 7,
-    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
-    "type": 3,
-    "id": "10016",
-    "displayName": "Warrior Seal",
-    "buildDes": "Often used on envelopes, symbolizing authority and trust.",
-    "createDes": "Often used on envelopes, symbolizing authority and trust.",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "11000": {
-    "buildMenuIcon": "pic_zsw_25",
-    "buildRepairedSound": 0,
-    "upgradeEffScale": [
-      0.25,
-      0.25
-    ],
-    "buildFirstIcon": "11000",
-    "buildUpgradeInAnimScale": 0,
-    "maxLv": 7,
-    "buildUpgradeInAnim": "",
-    "buildUpgradeWorkAnim": "",
-    "upgradeAnimScale": 0,
-    "type": 3,
-    "id": "11000",
-    "displayName": "Red Nutcracker",
-    "buildDes": "Red Nutcracker",
-    "createDes": "Red Nutcracker",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5015": {
-    "buildMenuIcon": "5015",
-    "classify": 55,
-    "abc_1_info_funtionKey": "commonMarchSpeedAdd",
-    "recommendPosition": [
-      38,
-      46
-    ],
-    "cover": [
-      4,
-      4
-    ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22Down.prefab",
-    "buildClickSound": 3027,
-    "sort": 15000,
-    "buildFirstIcon": "5015",
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 11
-      }
-    ],
-    "buildCompleteModelScale": 1,
-    "showInMail": 0,
-    "upgradeOverScale": 1,
-    "abc_1_info_formatType": 4,
-    "id": "5015",
-    "canMove": 0,
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22.prefab",
-    "displayName": "Squad 3",
-    "buildDes": "March Queue",
-    "createDes": "March Queue",
-    "classifyName": "March Queue",
-    "abc_1_info_translate": "Squad March Speed↑",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "10009": {
-    "buildMenuIcon": "pic_zsw_18",
-    "buildRepairedSound": 0,
-    "buildClickSound": 1023,
-    "buildFirstIcon": "10009",
-    "maxLv": 7,
-    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv3.prefab",
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv3.prefab",
-    "type": 3,
-    "id": "10009",
-    "cover": [
-      3,
-      3
-    ],
-    "displayName": "Star Dice",
-    "buildDes": "Used in astrology, emits a peculiar glow.",
-    "createDes": "Used in astrology, emits a peculiar glow.",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "1007": {
-    "buildMenuIcon": "1007",
-    "classify": 7,
-    "abc_1_info_funtionKey": "speedAddPercent",
-    "abc_1_info_benefits": [
-      20008
-    ],
-    "recommendPosition": [
-      47,
-      3
-    ],
-    "workerPostNum": 4,
-    "upgradeOverScale": 1,
-    "dispatchOrder": 1,
-    "cover": [
-      3,
-      3
-    ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
-    "buildClickSound": 3013,
-    "sort": 33000,
-    "buildFirstIcon": "1007",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
-    "abc_2_info_benefits": [
-      20010
-    ],
-    "buildCompleteModelScale": 1,
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 8
-      }
-    ],
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
-    "abc_2_info_formatType": 3,
-    "abc_1_info_formatType": 4,
-    "id": "1007",
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
-    "repairTipIconAndBg": "novice_icon_bubbleRepair,novice_icon_bubble_Red",
-    "displayName": "Research Lab",
-    "buildDes": "Research Technology, Enhance Territory Strength",
-    "createDes": "Research Technology, Enhance Territory Strength",
-    "classifyName": "Research Lab",
-    "abc_1_info_translate": "Research Speed",
-    "abc_2_info_translate": "Free Speedup Time",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "5013": {
-    "buildMenuIcon": "5013",
-    "classify": 55,
-    "upgradeEffScale": [
-      1,
-      1
-    ],
-    "abc_1_info_funtionKey": "commonMarchSpeedAdd",
-    "recommendPosition": [
-      19,
-      27
-    ],
-    "upgradeOverScale": 1,
-    "cover": [
-      4,
-      4
-    ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
-    "buildClickSound": 1023,
-    "sort": 13000,
-    "buildFirstIcon": "5013",
-    "showInMail": 0,
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1002,
-        "param2": 5
-      }
-    ],
-    "buildCompleteModelScale": 1,
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
-    "id": "5013",
-    "abc_1_info_formatType": 4,
-    "canMove": 0,
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
-    "repairTipIconAndBg": "novice_icon_bubbleRepair,novice_icon_bubble_Red",
-    "displayName": "Squad 1",
-    "buildDes": "March Queue",
-    "createDes": "March Queue",
-    "classifyName": "March Queue",
-    "abc_1_info_translate": "Squad March Speed↑",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "11005": {
-    "buildMenuIcon": "pic_zsw_31",
-    "buildRepairedSound": 0,
-    "upgradeEffScale": [
-      0.25,
-      0.25
-    ],
-    "buildFirstIcon": "11005",
-    "buildUpgradeInAnimScale": 0,
-    "maxLv": 7,
-    "buildUpgradeInAnim": "",
-    "buildUpgradeWorkAnim": "",
-    "upgradeAnimScale": 0,
-    "type": 3,
-    "id": "11005",
-    "displayName": "Panacea",
-    "buildDes": "Panacea",
-    "createDes": "Panacea",
-    "classifyName": "",
-    "abc_1_info_translate": "",
-    "abc_2_info_translate": "",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "11003": {
-    "buildMenuIcon": "pic_zsw_28",
-    "buildRepairedSound": 0,
-    "upgradeEffScale": [
-      0.25,
-      0.25
-    ],
-    "buildFirstIcon": "11003",
-    "buildUpgradeInAnimScale": 0,
-    "maxLv": 7,
-    "buildUpgradeInAnim": "",
-    "buildUpgradeWorkAnim": "",
-    "upgradeAnimScale": 0,
-    "type": 3,
-    "id": "11003",
-    "displayName": "Demon's Eye",
-    "buildDes": "Demon's Eye",
-    "createDes": "Demon's Eye",
     "classifyName": "",
     "abc_1_info_translate": "",
     "abc_2_info_translate": "",
@@ -2040,24 +186,11 @@
     "abc_4_info_translate": ""
   },
   "1027": {
-    "buildMenuIcon": "1027",
-    "classify": 20,
-    "abc_2_info_funtionKey": "productMaxTime",
-    "buildClickSound": 3021,
-    "sort": 11000,
-    "buildFirstIcon": "1027",
-    "upgradeOverScale": 1,
-    "lock_show_condition": [
-      {
-        "id": 20103,
-        "param1": 1001,
-        "param2": 5
-      }
-    ],
     "buildCompleteModelScale": 1,
+    "upgradeOverScale": 1,
+    "sort": 11000,
+    "buildMenuIcon": "1027",
     "type": 1,
-    "abc_1_info_funtionKey": "speed",
-    "abc_2_info_formatType": 3,
     "id": "1027",
     "recommendPosition": [
       26,
@@ -2065,6 +198,19 @@
     ],
     "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22Down.prefab",
     "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22.prefab",
+    "buildFirstIcon": "1027",
+    "abc_1_info_funtionKey": "speed",
+    "abc_2_info_funtionKey": "productMaxTime",
+    "classify": 20,
+    "lock_show_condition": [
+      {
+        "param2": 5,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "abc_2_info_formatType": 3,
+    "buildClickSound": 3021,
     "displayName": "Antitoxin Workshop",
     "buildDes": "Produces Antitoxin",
     "createDes": "Produces Antitoxin",
@@ -2074,60 +220,20 @@
     "abc_3_info_translate": "",
     "abc_4_info_translate": ""
   },
-  "1016": {
-    "buildMenuIcon": "1016",
-    "classify": 13,
-    "abc_2_info_funtionKey": "productMaxTime",
-    "abc_1_info_funtionKey": "speed",
-    "abc_1_info_benefits": [
-      20001
-    ],
-    "recommendPosition": [
-      33,
-      15
-    ],
-    "dispatchOrder": 9,
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22Down.prefab",
-    "buildClickSound": 1405,
-    "sort": 3000,
-    "buildFirstIcon": "1016",
-    "lock_show_condition": [
-      {
-        "id": 999001,
-        "param1": "Ct3P1"
-      }
-    ],
-    "buildCompleteModelScale": 1,
-    "workerPostNum": 4,
-    "upgradeOverScale": 1,
-    "abc_2_info_formatType": 3,
-    "abc_1_info_formatType": 1,
-    "type": 1,
-    "id": "1016",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22.prefab",
-    "displayName": "Farm",
-    "buildDes": "Supply Grain to the Territory",
-    "createDes": "Supply Grain to the Territory",
-    "classifyName": "",
-    "abc_1_info_translate": "Output/Hour",
-    "abc_2_info_translate": "Max Production Time",
-    "abc_3_info_translate": "",
-    "abc_4_info_translate": ""
-  },
-  "10018": {
-    "buildMenuIcon": "pic_zsw_16",
+  "10017": {
+    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
     "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_15",
+    "id": "10017",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
+    "maxLv": 7,
     "upgradeEffScale": [
       0.375,
       0.375
     ],
-    "buildFirstIcon": "10018",
-    "maxLv": 7,
-    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
+    "buildFirstIcon": "10017",
     "type": 3,
-    "id": "10018",
-    "displayName": "Warlock Seal",
+    "displayName": "Ranger Seal",
     "buildDes": "Often used on envelopes, symbolizing authority and trust.",
     "createDes": "Often used on envelopes, symbolizing authority and trust.",
     "classifyName": "",
@@ -2136,68 +242,87 @@
     "abc_3_info_translate": "",
     "abc_4_info_translate": ""
   },
-  "5014": {
-    "buildMenuIcon": "5014",
-    "classify": 55,
+  "5036": {
+    "buildCompleteModelScale": 1,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
+    "classify": 73,
+    "maxLv": 1,
+    "buildFirstIcon": "5036",
+    "showInMail": 0,
+    "sort": 32000,
+    "buildMenuIcon": "5036",
+    "id": "5036",
+    "upgradeOverScale": 1,
+    "buildClickSound": 1435,
     "upgradeEffScale": [
       1,
       1
     ],
-    "abc_1_info_funtionKey": "commonMarchSpeedAdd",
-    "recommendPosition": [
-      31,
-      39
-    ],
     "cover": [
-      4,
-      4
+      6,
+      6
     ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
-    "buildClickSound": 3026,
-    "sort": 14000,
-    "buildFirstIcon": "5014",
-    "upgradeOverScale": 1,
     "lock_show_condition": [
       {
+        "param2": 7,
         "id": 20103,
-        "param1": 1001,
-        "param2": 8
+        "param1": 1001
       }
     ],
-    "buildCompleteModelScale": 1,
-    "showInMail": 0,
     "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
-    "id": "5014",
-    "abc_1_info_formatType": 4,
-    "canMove": 0,
     "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
-    "displayName": "Squad 2",
-    "buildDes": "March Queue",
-    "createDes": "March Queue",
-    "classifyName": "March Queue",
-    "abc_1_info_translate": "Squad March Speed↑",
+    "displayName": "Raven Nest",
+    "buildDes": "Raven's Roost",
+    "createDes": "Raven's Roost",
+    "classifyName": "",
+    "abc_1_info_translate": "",
     "abc_2_info_translate": "",
     "abc_3_info_translate": "",
     "abc_4_info_translate": ""
   },
-  "10024": {
-    "buildMenuIcon": "pic_zsw_23",
+  "10009": {
+    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv3.prefab",
     "buildRepairedSound": 0,
-    "upgradeEffScale": [
-      0.375,
-      0.375
-    ],
+    "buildMenuIcon": "pic_zsw_18",
+    "id": "10009",
     "buildClickSound": 1023,
-    "buildFirstIcon": "10024",
     "maxLv": 7,
-    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
+    "cover": [
+      3,
+      3
+    ],
     "type": 3,
-    "id": "10024",
-    "displayName": "Pocket Watch",
-    "buildDes": "Pocket Watch",
-    "createDes": "Pocket Watch",
+    "buildFirstIcon": "10009",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv3.prefab",
+    "displayName": "Star Dice",
+    "buildDes": "Used in astrology, emits a peculiar glow.",
+    "createDes": "Used in astrology, emits a peculiar glow.",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "10014": {
+    "buildUpgradeInAnim": "",
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_07",
+    "upgradeAnimScale": 0,
+    "id": "10014",
+    "buildUpgradeInAnimScale": 0,
+    "buildClickSound": 1023,
+    "maxLv": 7,
+    "upgradeEffScale": [
+      1.125,
+      1.125
+    ],
+    "type": 3,
+    "buildFirstIcon": "10014",
+    "buildUpgradeWorkAnim": "",
+    "displayName": "Ranger Epaulet",
+    "buildDes": "An emblem once sewn onto a soldier's shoulder, symbolizing their honor.",
+    "createDes": "An emblem once sewn onto a soldier's shoulder, symbolizing their honor.",
     "classifyName": "",
     "abc_1_info_translate": "",
     "abc_2_info_translate": "",
@@ -2205,19 +330,19 @@
     "abc_4_info_translate": ""
   },
   "10022": {
-    "buildMenuIcon": "pic_zsw_05",
+    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv1.prefab",
     "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_05",
+    "id": "10022",
+    "buildClickSound": 1023,
+    "maxLv": 7,
     "upgradeEffScale": [
       0.25,
       0.25
     ],
-    "buildClickSound": 1023,
-    "buildFirstIcon": "10022",
-    "maxLv": 7,
-    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv1.prefab",
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv1.prefab",
     "type": 3,
-    "id": "10022",
+    "buildFirstIcon": "10022",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv1.prefab",
     "displayName": "Beast Teeth",
     "buildDes": "Extremely rare beast teeth, with multiple teeth growing from a single root, seemingly cursed.",
     "createDes": "Extremely rare beast teeth, with multiple teeth growing from a single root, seemingly cursed.",
@@ -2227,22 +352,224 @@
     "abc_3_info_translate": "",
     "abc_4_info_translate": ""
   },
-  "10012": {
-    "buildMenuIcon": "pic_zsw_13",
+  "10011": {
+    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
     "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_12",
+    "id": "10011",
+    "buildClickSound": 1023,
+    "maxLv": 7,
+    "upgradeEffScale": [
+      0.375,
+      0.375
+    ],
+    "type": 3,
+    "buildFirstIcon": "10011",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
+    "displayName": "Ranger Stone",
+    "buildDes": "A mysterious stone engraved with the Ranger's mark, a relic of ancient prayers for strength.",
+    "createDes": "A mysterious stone engraved with the Ranger's mark, a relic of ancient prayers for strength.",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "1019": {
+    "buildCompleteModelScale": 1,
+    "recommendPosition": [
+      29,
+      19
+    ],
+    "abc_1_info_formatType": 1,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22.prefab",
+    "classify": 15,
+    "abc_2_info_funtionKey": "productMaxTime",
+    "buildFirstIcon": "1019",
+    "dispatchOrder": 11,
+    "abc_1_info_benefits": [
+      20003
+    ],
+    "id": "1019",
+    "upgradeOverScale": 1,
+    "workerPostNum": 4,
+    "type": 1,
+    "abc_1_info_funtionKey": "speed",
+    "sort": 4000,
+    "buildMenuIcon": "1019",
+    "lock_show_condition": [
+      {
+        "param1": "Ct6D2P1",
+        "id": 999001
+      }
+    ],
+    "abc_2_info_formatType": 3,
+    "buildClickSound": 3019,
+    "displayName": "Herb Garden",
+    "buildDes": "Supply Herb to the Territory",
+    "createDes": "Supply Herb to the Territory",
+    "classifyName": "",
+    "abc_1_info_translate": "Output/Hour",
+    "abc_2_info_translate": "Max Production Time",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "1010": {
+    "buildCompleteModelScale": 1,
+    "recommendPosition": [
+      56,
+      18
+    ],
+    "abc_1_info_formatType": 1,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
+    "classify": 10,
+    "abc_2_info_funtionKey": "helpTime",
+    "buildFirstIcon": "1010",
+    "workerPostNum": 4,
+    "dispatchOrder": 3,
+    "abc_1_info_benefits": [
+      20011
+    ],
+    "buildMenuIcon": "1010",
+    "id": "1010",
+    "sort": 27000,
+    "upgradeOverScale": 1,
+    "cover": [
+      3,
+      3
+    ],
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
+    "abc_1_info_funtionKey": "helpMaxCount",
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
+    "abc_2_info_benefits": [
+      20012
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 6,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "abc_2_info_formatType": 3,
+    "buildClickSound": 3018,
+    "displayName": "Alliance Hall",
+    "buildDes": "Alliance Help",
+    "createDes": "Alliance Help",
+    "classifyName": "",
+    "abc_1_info_translate": "Alliance Help Count",
+    "abc_2_info_translate": "Alliance Help Duration",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5016": {
+    "buildCompleteModelScale": 1,
+    "recommendPosition": [
+      12,
+      20
+    ],
+    "abc_1_info_formatType": 4,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22.prefab",
+    "classify": 55,
+    "buildFirstIcon": "5016",
+    "showInMail": 0,
+    "sort": 16000,
+    "buildMenuIcon": "5016",
+    "id": "5016",
+    "upgradeOverScale": 1,
+    "abc_1_info_funtionKey": "commonMarchSpeedAdd",
+    "cover": [
+      4,
+      4
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 5,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "canMove": 0,
+    "buildClickSound": 3027,
+    "displayName": "Squad 4",
+    "buildDes": "March Queue",
+    "createDes": "March Queue",
+    "classifyName": "March Queue",
+    "abc_1_info_translate": "Squad March Speed↑",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "10015": {
+    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_08",
+    "id": "10015",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
+    "maxLv": 7,
+    "upgradeEffScale": [
+      0.375,
+      0.375
+    ],
+    "buildFirstIcon": "10015",
+    "type": 3,
+    "displayName": "Warlock Epaulet",
+    "buildDes": "An emblem once sewn onto a soldier's shoulder, symbolizing their honor.",
+    "createDes": "An emblem once sewn onto a soldier's shoulder, symbolizing their honor.",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5054": {
+    "sort": 43000,
+    "buildMenuIcon": "5054",
+    "id": "5054",
+    "classify": 94,
+    "buildClickSound": 1438,
+    "maxLv": 1,
+    "cover": [
+      3,
+      3
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 15,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildFirstIcon": "5054",
+    "showInMail": 0,
+    "displayName": "Hall of Honor",
+    "buildDes": "",
+    "createDes": "",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "10012": {
+    "buildUpgradeInAnim": "",
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_13",
+    "upgradeAnimScale": 0,
+    "id": "10012",
+    "buildUpgradeInAnimScale": 0,
+    "buildClickSound": 1023,
+    "maxLv": 7,
     "upgradeEffScale": [
       0.625,
       0.625
     ],
-    "buildClickSound": 1023,
-    "buildFirstIcon": "10012",
-    "buildUpgradeInAnimScale": 0,
-    "maxLv": 7,
-    "buildUpgradeInAnim": "",
-    "buildUpgradeWorkAnim": "",
-    "upgradeAnimScale": 0,
     "type": 3,
-    "id": "10012",
+    "buildFirstIcon": "10012",
+    "buildUpgradeWorkAnim": "",
     "displayName": "Warlock Stone",
     "buildDes": "A mysterious stone engraved with the Warlock's mark, a relic of ancient prayers for strength.",
     "createDes": "A mysterious stone engraved with the Warlock's mark, a relic of ancient prayers for strength.",
@@ -2252,43 +579,343 @@
     "abc_3_info_translate": "",
     "abc_4_info_translate": ""
   },
-  "1002": {
-    "buildMenuIcon": "1002",
-    "classify": 2,
-    "abc_2_info_funtionKey": "repairSpeedSubPercent",
-    "abc_1_info_funtionKey": "defendValue",
-    "recommendPosition": [
-      7,
-      -3
+  "10999": {
+    "buildUpgradeInAnim": "",
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_24",
+    "upgradeAnimScale": 0,
+    "id": "10999",
+    "buildUpgradeInAnimScale": 0,
+    "buildClickSound": 1023,
+    "maxLv": 7,
+    "upgradeEffScale": [
+      0.125,
+      0.125
     ],
+    "type": 3,
+    "buildFirstIcon": "10999",
+    "buildUpgradeWorkAnim": "",
+    "displayName": "Blue Nutcracker",
+    "buildDes": "Blue Nutcracker",
+    "createDes": "Blue Nutcracker",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5040": {
+    "upgradeEffScale": [
+      0.4,
+      0.4
+    ],
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "5040",
+    "id": "5040",
+    "type": 1,
+    "sort": 22000,
+    "recommendPosition": [
+      49,
+      29
+    ],
+    "classify": 77,
+    "maxLv": 1,
+    "cover": [
+      3,
+      3
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 6,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildFirstIcon": "5040",
+    "showInMail": 0,
+    "displayName": "Nomad Trader",
+    "buildDes": "Exchange currency for various needed items",
+    "createDes": "Exchange currency for various needed items",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "10021": {
+    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_03",
+    "id": "10021",
+    "buildClickSound": 1053,
+    "maxLv": 7,
+    "upgradeEffScale": [
+      0.375,
+      0.375
+    ],
+    "type": 3,
+    "buildFirstIcon": "10021",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
+    "displayName": "Sphinx",
+    "buildDes": "A peculiar small statue with certain artistic value.",
+    "createDes": "A peculiar small statue with certain artistic value.",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5014": {
+    "buildCompleteModelScale": 1,
+    "recommendPosition": [
+      31,
+      39
+    ],
+    "abc_1_info_formatType": 4,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
+    "classify": 55,
+    "buildFirstIcon": "5014",
+    "showInMail": 0,
+    "sort": 14000,
+    "buildMenuIcon": "5014",
+    "id": "5014",
     "upgradeOverScale": 1,
     "upgradeEffScale": [
       1,
       1
     ],
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
+    "abc_1_info_funtionKey": "commonMarchSpeedAdd",
+    "canMove": 0,
+    "cover": [
+      4,
+      4
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 8,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
+    "buildClickSound": 3026,
+    "displayName": "Squad 2",
+    "buildDes": "March Queue",
+    "createDes": "March Queue",
+    "classifyName": "March Queue",
+    "abc_1_info_translate": "Squad March Speed↑",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "10018": {
+    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_16",
+    "id": "10018",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
+    "maxLv": 7,
+    "upgradeEffScale": [
+      0.375,
+      0.375
+    ],
+    "buildFirstIcon": "10018",
+    "type": 3,
+    "displayName": "Warlock Seal",
+    "buildDes": "Often used on envelopes, symbolizing authority and trust.",
+    "createDes": "Often used on envelopes, symbolizing authority and trust.",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5021": {
+    "buildCompleteModelScale": 1,
+    "recommendPosition": [
+      35,
+      19
+    ],
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
+    "initLevel": 1,
+    "classify": 59,
+    "maxLv": 1,
+    "buildFirstIcon": "5021",
+    "showInMail": 0,
+    "sort": 10000,
+    "buildMenuIcon": "5021",
+    "id": "5021",
+    "upgradeOverScale": 1,
+    "upgradeEffScale": [
+      1,
+      1
+    ],
+    "buildClickSound": 3032,
+    "type": 1,
+    "cover": [
+      3,
+      3
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 9999,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
+    "displayName": "Residence",
+    "buildDes": "Enhances survivor abilities",
+    "createDes": "Enhances survivor abilities",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5002": {
+    "buildCompleteModelScale": 1,
+    "recommendPosition": [
+      22,
+      42
+    ],
+    "abc_1_info_formatType": 3,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_66Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_66.prefab",
+    "classify": 22,
+    "maxLv": 1,
+    "buildFirstIcon": "5002",
+    "showInMail": 0,
+    "workerPostNum": 4,
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_66Up.prefab",
+    "dispatchOrder": 14,
+    "abc_1_info_benefits": [
+      20036
+    ],
+    "upgradeEffScale": [
+      1,
+      1
+    ],
+    "id": "5002",
+    "sort": 20000,
+    "upgradeOverScale": 1,
+    "cover": [
+      3,
+      3
+    ],
+    "canMove": 0,
+    "buildClickSound": 3023,
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_66_building.prefab",
+    "abc_2_info_benefits": [
+      20035
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 3,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "abc_2_info_formatType": 4,
+    "buildMenuIcon": "5002",
+    "displayName": "Explorer's Camp",
+    "buildDes": "Continuously gather resources",
+    "createDes": "Continuously gather resources",
+    "classifyName": "",
+    "abc_1_info_translate": "Accumulated Idle Time",
+    "abc_2_info_translate": "Loot Output",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "10016": {
+    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_14",
+    "id": "10016",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
+    "maxLv": 7,
+    "upgradeEffScale": [
+      0.375,
+      0.375
+    ],
+    "buildFirstIcon": "10016",
+    "type": 3,
+    "displayName": "Warrior Seal",
+    "buildDes": "Often used on envelopes, symbolizing authority and trust.",
+    "createDes": "Often used on envelopes, symbolizing authority and trust.",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "10020": {
+    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_21",
+    "id": "10020",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
+    "maxLv": 7,
+    "cover": [
+      3,
+      3
+    ],
+    "upgradeEffScale": [
+      0.375,
+      0.375
+    ],
+    "buildFirstIcon": "10020",
+    "type": 3,
+    "displayName": "Lost Scroll",
+    "buildDes": "A legendary scroll that grants magic, but... does magic truly exist?",
+    "createDes": "A legendary scroll that grants magic, but... does magic truly exist?",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "1002": {
+    "buildCompleteModelScale": 1,
+    "abc_3_info_formatType": 4,
+    "recommendPosition": [
+      7,
+      -3
+    ],
+    "canMove": 0,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_28Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_28.prefab",
+    "classify": 2,
+    "abc_2_info_funtionKey": "repairSpeedSubPercent",
+    "buildFirstIcon": "1002",
+    "sort": 12000,
+    "buildMenuIcon": "1002",
+    "id": "1002",
+    "upgradeEffScale": [
+      1,
+      1
+    ],
+    "upgradeOverScale": 1,
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_28Up.prefab",
+    "abc_3_info_funtionKey": "repairSpeedAddPercent",
+    "abc_1_info_funtionKey": "defendValue",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_28_building.prefab",
     "cover": [
       2,
       8
     ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_28Down.prefab",
-    "abc_3_info_formatType": 4,
-    "sort": 12000,
-    "buildFirstIcon": "1002",
     "lock_show_condition": [
       {
+        "param2": 4,
         "id": 20103,
-        "param1": 1001,
-        "param2": 4
+        "param1": 1001
       }
     ],
-    "abc_3_info_funtionKey": "repairSpeedAddPercent",
-    "buildCompleteModelScale": 1,
-    "id": "1002",
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_28_building.prefab",
     "abc_2_info_formatType": 4,
-    "canMove": 0,
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_28Up.prefab",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_28.prefab",
     "buildClickSound": 3016,
     "displayName": "Walls",
     "buildDes": "Set up Defense Troop",
@@ -2299,74 +926,1447 @@
     "abc_3_info_translate": "Wall DEF Recovery Speed↑",
     "abc_4_info_translate": ""
   },
-  "1010": {
-    "buildMenuIcon": "1010",
-    "classify": 10,
-    "abc_2_info_funtionKey": "helpTime",
-    "abc_1_info_funtionKey": "helpMaxCount",
-    "abc_1_info_benefits": [
-      20011
-    ],
+  "5042": {
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
+    "type": 1,
+    "sort": 25000,
+    "buildMenuIcon": "5042",
+    "buildClickSound": 3055,
+    "id": "5042",
+    "abc_1_info_formatType": 1,
     "recommendPosition": [
-      56,
-      18
+      42,
+      22
+    ],
+    "buildFirstIcon": "5042",
+    "classify": 79,
+    "abc_1_info_funtionKey": "speed",
+    "abc_2_info_funtionKey": "productMaxTime",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
+    "lock_show_condition": [
+      {
+        "param2": 5,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "abc_2_info_formatType": 3,
+    "showInMail": 0,
+    "displayName": "Smelting Workshop",
+    "buildDes": "Produces Gearstones",
+    "createDes": "Produces Gearstones",
+    "classifyName": "",
+    "abc_1_info_translate": "Gearstone Output/Hour",
+    "abc_2_info_translate": "Max Production Time",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5031": {
+    "buildCompleteModelScale": 1,
+    "abc_1_info_formatType": 3,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
+    "classify": 68,
+    "buildFirstIcon": "5031",
+    "showInMail": 0,
+    "dispatchOrder": 5,
+    "abc_1_info_benefits": [
+      20006
     ],
     "workerPostNum": 4,
-    "dispatchOrder": 3,
+    "id": "5031",
+    "upgradeEffScale": [
+      1,
+      1
+    ],
+    "upgradeOverScale": 1,
+    "sort": 5000,
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
+    "abc_1_info_funtionKey": "freeTime",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
     "cover": [
       3,
       3
     ],
-    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
-    "buildClickSound": 3018,
-    "sort": 27000,
-    "buildFirstIcon": "1010",
-    "upgradeOverScale": 1,
-    "abc_2_info_benefits": [
-      20012
-    ],
-    "buildCompleteModelScale": 1,
     "lock_show_condition": [
       {
+        "param2": 3,
         "id": 20103,
-        "param1": 1001,
-        "param2": 6
+        "param1": 1001
       }
     ],
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
-    "abc_2_info_formatType": 3,
-    "abc_1_info_formatType": 1,
-    "id": "1010",
-    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
-    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
-    "displayName": "Alliance Hall",
-    "buildDes": "Alliance Help",
-    "createDes": "Alliance Help",
+    "buildMenuIcon": "5031",
+    "buildClickSound": 3040,
+    "displayName": "Builder's Hut",
+    "buildDes": "Extends free time",
+    "createDes": "Extends free time",
     "classifyName": "",
-    "abc_1_info_translate": "Alliance Help Count",
-    "abc_2_info_translate": "Alliance Help Duration",
+    "abc_1_info_translate": "Free Speedup Time",
+    "abc_2_info_translate": "",
     "abc_3_info_translate": "",
     "abc_4_info_translate": ""
   },
-  "10015": {
-    "buildMenuIcon": "pic_zsw_08",
+  "5013": {
+    "buildCompleteModelScale": 1,
+    "recommendPosition": [
+      19,
+      27
+    ],
+    "abc_1_info_formatType": 4,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
+    "classify": 55,
+    "buildFirstIcon": "5013",
+    "showInMail": 0,
+    "sort": 13000,
+    "buildMenuIcon": "5013",
+    "id": "5013",
+    "upgradeEffScale": [
+      1,
+      1
+    ],
+    "upgradeOverScale": 1,
+    "repairTipIconAndBg": "novice_icon_bubbleRepair,novice_icon_bubble_Red",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
+    "abc_1_info_funtionKey": "commonMarchSpeedAdd",
+    "canMove": 0,
+    "cover": [
+      4,
+      4
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 5,
+        "id": 20103,
+        "param1": 1002
+      }
+    ],
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
+    "buildClickSound": 1023,
+    "displayName": "Squad 1",
+    "buildDes": "March Queue",
+    "createDes": "March Queue",
+    "classifyName": "March Queue",
+    "abc_1_info_translate": "Squad March Speed↑",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "11005": {
+    "buildUpgradeInAnim": "",
     "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_31",
+    "upgradeAnimScale": 0,
+    "id": "11005",
+    "buildUpgradeInAnimScale": 0,
+    "buildUpgradeWorkAnim": "",
+    "maxLv": 7,
+    "upgradeEffScale": [
+      0.25,
+      0.25
+    ],
+    "buildFirstIcon": "11005",
+    "type": 3,
+    "displayName": "Panacea",
+    "buildDes": "Panacea",
+    "createDes": "Panacea",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "10002": {
+    "type": 3,
+    "buildClickSound": 1438,
+    "buildMenuIcon": "pic_zsw_20",
+    "cover": [
+      3,
+      3
+    ],
+    "id": "10002",
+    "buildFirstIcon": "10002",
+    "maxLv": 7,
+    "displayName": "Golden Feather",
+    "buildDes": "Once a royal ornament embedded in the throne, lost in the flames of war.",
+    "createDes": "Once a royal ornament embedded in the throne, lost in the flames of war.",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "11000": {
+    "buildUpgradeInAnim": "",
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_25",
+    "upgradeAnimScale": 0,
+    "id": "11000",
+    "buildUpgradeInAnimScale": 0,
+    "buildUpgradeWorkAnim": "",
+    "maxLv": 7,
+    "upgradeEffScale": [
+      0.25,
+      0.25
+    ],
+    "buildFirstIcon": "11000",
+    "type": 3,
+    "displayName": "Red Nutcracker",
+    "buildDes": "Red Nutcracker",
+    "createDes": "Red Nutcracker",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "10003": {
+    "buildClickSound": 1438,
+    "buildMenuIcon": "pic_zsw_09",
+    "type": 3,
+    "id": "10003",
+    "buildFirstIcon": "10003",
+    "maxLv": 7,
+    "displayName": "Red Amber Amulet",
+    "buildDes": "An amulet inlaid with red amber, said to contain the power of vitality.",
+    "createDes": "An amulet inlaid with red amber, said to contain the power of vitality.",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5039": {
+    "upgradeEffScale": [
+      0.4,
+      0.4
+    ],
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "5039",
+    "id": "5039",
+    "type": 1,
+    "sort": 35000,
+    "classify": 76,
+    "maxLv": 1,
+    "cover": [
+      3,
+      3
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 9,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildFirstIcon": "5039",
+    "showInMail": 0,
+    "displayName": "Curio Hall",
+    "buildDes": "Check Curio collection progress",
+    "createDes": "Check Curio collection progress",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "11004": {
+    "buildUpgradeInAnim": "",
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_29",
+    "upgradeAnimScale": 0,
+    "id": "11004",
+    "buildUpgradeInAnimScale": 0,
+    "buildUpgradeWorkAnim": "",
+    "maxLv": 7,
+    "upgradeEffScale": [
+      0.25,
+      0.25
+    ],
+    "buildFirstIcon": "11004",
+    "type": 3,
+    "displayName": "Dragon Blood",
+    "buildDes": "Dragon Blood",
+    "createDes": "Dragon Blood",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5015": {
+    "buildCompleteModelScale": 1,
+    "recommendPosition": [
+      38,
+      46
+    ],
+    "abc_1_info_formatType": 4,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22.prefab",
+    "classify": 55,
+    "buildFirstIcon": "5015",
+    "showInMail": 0,
+    "sort": 15000,
+    "buildMenuIcon": "5015",
+    "id": "5015",
+    "upgradeOverScale": 1,
+    "abc_1_info_funtionKey": "commonMarchSpeedAdd",
+    "cover": [
+      4,
+      4
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 11,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "canMove": 0,
+    "buildClickSound": 3027,
+    "displayName": "Squad 3",
+    "buildDes": "March Queue",
+    "createDes": "March Queue",
+    "classifyName": "March Queue",
+    "abc_1_info_translate": "Squad March Speed↑",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "11001": {
+    "buildUpgradeInAnim": "",
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_26",
+    "upgradeAnimScale": 0,
+    "id": "11001",
+    "buildUpgradeInAnimScale": 0,
+    "buildUpgradeWorkAnim": "",
+    "maxLv": 7,
+    "upgradeEffScale": [
+      0.25,
+      0.25
+    ],
+    "buildFirstIcon": "11001",
+    "type": 3,
+    "displayName": "Yellow Nutcracker",
+    "buildDes": "Yellow Nutcracker",
+    "createDes": "Yellow Nutcracker",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5029": {
+    "buildCompleteModelScale": 1,
+    "sort": 37000,
+    "buildMenuIcon": "5029",
+    "upgradeOverScale": 1,
+    "id": "5029",
+    "canMove": 0,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22.prefab",
+    "classify": 66,
+    "buildClickSound": 3038,
+    "maxLv": 1,
+    "cover": [
+      5,
+      6
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 9,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildFirstIcon": "5029",
+    "showInMail": 0,
+    "displayName": "Black Ops",
+    "buildDes": "",
+    "createDes": "",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5047": {
+    "recommendPosition": [
+      23,
+      -1
+    ],
+    "abc_1_info_formatType": 4,
+    "classify": 7,
+    "buildFirstIcon": "5047",
+    "buildRepairedSound": 0,
+    "abc_1_info_benefits": [
+      20008
+    ],
+    "workerPostNum": 4,
+    "id": "5047",
+    "sort": 34000,
+    "repairTipIconAndBg": "novice_icon_bubbleRepair,novice_icon_bubble_Red",
+    "buildMenuIcon": "5047",
+    "dispatchOrder": 2,
+    "abc_1_info_funtionKey": "speedAddPercent",
+    "cover": [
+      3,
+      3
+    ],
+    "abc_2_info_benefits": [
+      20010
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 999,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "abc_2_info_formatType": 2,
+    "buildClickSound": 1438,
+    "displayName": "2nd Workbench",
+    "buildDes": "Research Technology, Enhance Territory Strength",
+    "createDes": "Research Technology, Enhance Territory Strength",
+    "classifyName": "Research Lab",
+    "abc_1_info_translate": "Research Speed",
+    "abc_2_info_translate": "Free Speedup Time",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "1007": {
+    "buildCompleteModelScale": 1,
+    "recommendPosition": [
+      47,
+      3
+    ],
+    "abc_1_info_formatType": 4,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
+    "classify": 7,
+    "buildFirstIcon": "1007",
+    "workerPostNum": 4,
+    "buildMenuIcon": "1007",
+    "dispatchOrder": 1,
+    "abc_1_info_benefits": [
+      20008
+    ],
+    "sort": 33000,
+    "id": "1007",
+    "repairTipIconAndBg": "novice_icon_bubbleRepair,novice_icon_bubble_Red",
+    "upgradeOverScale": 1,
+    "cover": [
+      3,
+      3
+    ],
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
+    "abc_1_info_funtionKey": "speedAddPercent",
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
+    "abc_2_info_benefits": [
+      20010
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 8,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "abc_2_info_formatType": 3,
+    "buildClickSound": 3013,
+    "displayName": "Research Lab",
+    "buildDes": "Research Technology, Enhance Territory Strength",
+    "createDes": "Research Technology, Enhance Territory Strength",
+    "classifyName": "Research Lab",
+    "abc_1_info_translate": "Research Speed",
+    "abc_2_info_translate": "Free Speedup Time",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5053": {
+    "sort": 42000,
+    "buildMenuIcon": "5053",
+    "id": "5053",
+    "classify": 93,
+    "buildClickSound": 1438,
+    "maxLv": 1,
+    "cover": [
+      3,
+      3
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 7,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildFirstIcon": "5053",
+    "showInMail": 0,
+    "displayName": "Temple",
+    "buildDes": "",
+    "createDes": "",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5052": {
+    "sort": 40000,
+    "buildMenuIcon": "5052",
+    "id": "5052",
+    "canMove": 0,
+    "classify": 85,
+    "buildClickSound": 1438,
+    "maxLv": 1,
+    "cover": [
+      7,
+      1
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 11,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildFirstIcon": "5052",
+    "showInMail": 0,
+    "displayName": "Alliance Stable",
+    "buildDes": "",
+    "createDes": "",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "10005": {
+    "buildClickSound": 3055,
+    "buildMenuIcon": "pic_zsw_01",
+    "type": 3,
+    "id": "10005",
+    "buildFirstIcon": "10005",
+    "maxLv": 7,
+    "displayName": "Sacred Chalice",
+    "buildDes": "A silver goblet once used for blessings, now tarnished.",
+    "createDes": "A silver goblet once used for blessings, now tarnished.",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5049": {
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "5049",
+    "sort": 38000,
+    "id": "5049",
+    "abc_1_info_formatType": 4,
+    "buildClickSound": 1438,
+    "classify": 6,
+    "abc_3_info_funtionKey": "recoLevel",
+    "abc_1_info_funtionKey": "counterRecoProb",
+    "abc_2_info_funtionKey": "counterRecoHideCount",
+    "cover": [
+      3,
+      3
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 8,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildFirstIcon": "5049",
+    "showInMail": 0,
+    "displayName": "Watchtower",
+    "buildDes": "Survey the surrounding area, stay alert for incoming enemies.",
+    "createDes": "Survey the surrounding area, stay alert for incoming enemies.",
+    "classifyName": "",
+    "abc_1_info_translate": "Anti-Scout Chance",
+    "abc_2_info_translate": "Anti-Scout Hidden Intel",
+    "abc_3_info_translate": "Scout Level",
+    "abc_4_info_translate": ""
+  },
+  "5008": {
+    "buildCompleteModelScale": 1,
+    "recommendPosition": [
+      35,
+      -7
+    ],
+    "abc_1_info_formatType": 5,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squadDown.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squad.prefab",
+    "classify": 27,
+    "abc_2_info_funtionKey": "workerFreeRecruitCD",
+    "buildFirstIcon": "5008",
+    "showInMail": 0,
+    "workerPostNum": 4,
+    "buildMenuIcon": "5008",
+    "dispatchOrder": 12,
+    "abc_1_info_benefits": [
+      20037
+    ],
+    "upgradeEffScale": [
+      1,
+      1
+    ],
+    "id": "5008",
+    "sort": 9000,
+    "upgradeOverScale": 1,
+    "cover": [
+      3,
+      3
+    ],
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squad_building.prefab",
+    "abc_1_info_funtionKey": "heroFreeRecruitCD",
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squadUp.prefab",
+    "abc_2_info_benefits": [
+      20038
+    ],
+    "lock_show_condition": [
+      {
+        "param1": "1002",
+        "id": 80029
+      }
+    ],
+    "abc_2_info_formatType": 3,
+    "buildClickSound": 3025,
+    "displayName": "Tavern",
+    "buildDes": "Recruit more Heroes",
+    "createDes": "Recruit more Heroes",
+    "classifyName": "",
+    "abc_1_info_translate": "Free Hero Recruit CD",
+    "abc_2_info_translate": "Free Survivor Recruit CD",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5045": {
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "5045",
+    "sort": 43000,
+    "id": "5045",
+    "abc_4_info_funtionKey": "mediumHeroDefendAddValue",
+    "buildClickSound": 1438,
+    "classify": 82,
+    "abc_3_info_funtionKey": "mediumHeroAttackAddValue",
+    "abc_1_info_funtionKey": "mediumHeroSoldierLoadAddValue",
+    "abc_2_info_funtionKey": "mediumHeroHpAddValue",
+    "cover": [
+      3,
+      3
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 999,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildFirstIcon": "5045",
+    "showInMail": 0,
+    "displayName": "Warlock Statue",
+    "buildDes": "Increases Warlock Hero's counter against Ranger Hero",
+    "createDes": "Increases Warlock Hero's counter against Ranger Hero",
+    "classifyName": "",
+    "abc_1_info_translate": "Warlock Hero CMD",
+    "abc_2_info_translate": "Warlock Hero HP",
+    "abc_3_info_translate": "Warlock Hero ATK",
+    "abc_4_info_translate": "Warlock Hero DEF"
+  },
+  "5044": {
+    "sort": 41000,
+    "buildMenuIcon": "5044",
+    "abc_4_info_funtionKey": "heavyHeroDefendAddValue",
+    "id": "5044",
+    "recommendPosition": [
+      43,
+      15
+    ],
+    "buildClickSound": 3055,
+    "classify": 81,
+    "abc_3_info_funtionKey": "heavyHeroAttackAddValue",
+    "abc_1_info_funtionKey": "heavyHeroSoldierLoadAddValue",
+    "abc_2_info_funtionKey": "heavyHeroHpAddValue",
+    "cover": [
+      3,
+      3
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 999,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildFirstIcon": "5044",
+    "showInMail": 0,
+    "displayName": "Warrior Statue",
+    "buildDes": "Increases Warrior Hero's counter against Warlock Hero",
+    "createDes": "Increases Warrior Hero's counter against Warlock Hero",
+    "classifyName": "",
+    "abc_1_info_translate": "Warrior Hero CMD",
+    "abc_2_info_translate": "Warrior Hero HP",
+    "abc_3_info_translate": "Warrior Hero ATK",
+    "abc_4_info_translate": "Warrior Hero DEF"
+  },
+  "5043": {
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
+    "sort": 24000,
+    "buildMenuIcon": "5043",
+    "type": 1,
+    "id": "5043",
+    "abc_1_info_formatType": 1,
+    "buildClickSound": 3055,
+    "buildFirstIcon": "5043",
+    "classify": 80,
+    "abc_1_info_funtionKey": "speed",
+    "abc_2_info_funtionKey": "productMaxTime",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
+    "lock_show_condition": [
+      {
+        "param2": 5,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "abc_2_info_formatType": 3,
+    "showInMail": 0,
+    "displayName": "Weaving Workshop",
+    "buildDes": "Produces gear crafting materials",
+    "createDes": "Produces gear crafting materials",
+    "classifyName": "",
+    "abc_1_info_translate": "Cloth Output/Hour",
+    "abc_2_info_translate": "Max Production Time",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5038": {
+    "buildCompleteModelScale": 1,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_55Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_55.prefab",
+    "classify": 75,
+    "maxLv": 1,
+    "buildFirstIcon": "5038",
+    "showInMail": 0,
+    "sort": 41000,
+    "buildMenuIcon": "5038",
+    "id": "5038",
+    "upgradeOverScale": 1,
+    "upgradeEffScale": [
+      1,
+      1
+    ],
+    "buildClickSound": 3045,
+    "type": 1,
+    "cover": [
+      3,
+      3
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 9,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_55_building.prefab",
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_55Up.prefab",
+    "displayName": "Monument",
+    "buildDes": "In honor of all great contributions.",
+    "createDes": "In honor of all great contributions.",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5034": {
+    "buildCompleteModelScale": 1,
+    "abc_1_info_formatType": 6,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
+    "classify": 71,
+    "abc_2_info_funtionKey": "productMaxTime",
+    "buildFirstIcon": "5034",
+    "showInMail": 0,
+    "sort": 36000,
+    "buildMenuIcon": "5034",
+    "id": "5034",
+    "upgradeEffScale": [
+      1,
+      1
+    ],
+    "upgradeOverScale": 1,
+    "type": 1,
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
+    "abc_1_info_funtionKey": "speed",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
+    "cover": [
+      3,
+      3
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 11,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "abc_2_info_formatType": 3,
+    "buildClickSound": 3013,
+    "displayName": "Raven Workshop",
+    "buildDes": "Produces Lv.1 Raven Gear Chest",
+    "createDes": "Produces Lv.1 Raven Gear Chest",
+    "classifyName": "",
+    "abc_1_info_translate": "Part Output Time",
+    "abc_2_info_translate": "Max Production Time",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "11003": {
+    "buildUpgradeInAnim": "",
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_28",
+    "upgradeAnimScale": 0,
+    "id": "11003",
+    "buildUpgradeInAnimScale": 0,
+    "buildUpgradeWorkAnim": "",
+    "maxLv": 7,
+    "upgradeEffScale": [
+      0.25,
+      0.25
+    ],
+    "buildFirstIcon": "11003",
+    "type": 3,
+    "displayName": "Demon's Eye",
+    "buildDes": "Demon's Eye",
+    "createDes": "Demon's Eye",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5025": {
+    "buildCompleteModelScale": 1,
+    "recommendPosition": [
+      38,
+      8
+    ],
+    "abc_1_info_formatType": 8,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
+    "classify": 62,
+    "type": 1,
+    "buildFirstIcon": "5025",
+    "showInMail": 0,
+    "dispatchOrder": 17,
+    "abc_1_info_benefits": [
+      20026,
+      20029
+    ],
+    "id": "5025",
+    "workerPostNum": 4,
+    "upgradeOverScale": 1,
+    "upgradeEffScale": [
+      1,
+      1
+    ],
+    "sort": 8000,
+    "abc_1_info_funtionKey": "protectCapacity",
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
+    "lock_show_condition": [
+      {
+        "param2": 3,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildMenuIcon": "5025",
+    "buildClickSound": 3035,
+    "displayName": "Herb Storage",
+    "buildDes": "Protects a certain amount of Herb from plunder",
+    "createDes": "Protects a certain amount of Herb from plunder",
+    "classifyName": "",
+    "abc_1_info_translate": "Protected Resource",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5033": {
+    "buildCompleteModelScale": 1,
+    "recommendPosition": [
+      51,
+      21
+    ],
+    "abc_1_info_formatType": 4,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
+    "classify": 70,
+    "buildFirstIcon": "5033",
+    "showInMail": 0,
+    "sort": 23000,
+    "buildMenuIcon": "5033",
+    "id": "5033",
+    "upgradeOverScale": 1,
+    "upgradeEffScale": [
+      1,
+      1
+    ],
+    "abc_1_info_funtionKey": "speedAddPercent",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
+    "cover": [
+      3,
+      3
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 6,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
+    "buildClickSound": 3042,
+    "displayName": "Scout Squad",
+    "buildDes": "Increases scout speed",
+    "createDes": "Increases scout speed",
+    "classifyName": "",
+    "abc_1_info_translate": "Scout Squad Movement Speed",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "1020": {
+    "buildCompleteModelScale": 1,
+    "recommendPosition": [
+      47,
+      25
+    ],
+    "abc_1_info_formatType": 1,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
+    "classify": 16,
+    "abc_2_info_funtionKey": "soldierrank",
+    "buildFirstIcon": "1020",
+    "dispatchOrder": 6,
+    "buildMenuIcon": "1020",
+    "workerPostNum": 4,
+    "id": "1020",
+    "upgradeEffScale": [
+      1,
+      1
+    ],
+    "upgradeOverScale": 1,
+    "sort": 29000,
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
+    "abc_1_info_funtionKey": "upgradeCount",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
+    "cover": [
+      3,
+      3
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 6,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "abc_2_info_formatType": 1,
+    "buildClickSound": 3028,
+    "displayName": "Training Grounds",
+    "buildDes": "Train Soldiers",
+    "createDes": "Train Soldiers",
+    "classifyName": "",
+    "abc_1_info_translate": "Training Capacity",
+    "abc_2_info_translate": "Soldier Training Level",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5024": {
+    "buildCompleteModelScale": 1,
+    "abc_1_info_formatType": 8,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_66Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_66.prefab",
+    "classify": 61,
+    "type": 1,
+    "buildFirstIcon": "5024",
+    "showInMail": 0,
+    "dispatchOrder": 16,
+    "abc_1_info_benefits": [
+      20025,
+      20028
+    ],
+    "id": "5024",
+    "workerPostNum": 4,
+    "upgradeOverScale": 1,
+    "upgradeEffScale": [
+      1,
+      1
+    ],
+    "sort": 6000,
+    "abc_1_info_funtionKey": "protectCapacity",
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_66Up.prefab",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_66_building.prefab",
+    "lock_show_condition": [
+      {
+        "param2": 3,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildMenuIcon": "5024",
+    "buildClickSound": 3034,
+    "displayName": "Lumber Depot",
+    "buildDes": "Protects a certain amount of Timber from plunder",
+    "createDes": "Protects a certain amount of Timber from plunder",
+    "classifyName": "",
+    "abc_1_info_translate": "Protected Resource",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5023": {
+    "buildCompleteModelScale": 1,
+    "abc_1_info_formatType": 8,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
+    "classify": 60,
+    "type": 1,
+    "buildFirstIcon": "5023",
+    "showInMail": 0,
+    "dispatchOrder": 15,
+    "abc_1_info_benefits": [
+      20024,
+      20027
+    ],
+    "id": "5023",
+    "workerPostNum": 4,
+    "upgradeOverScale": 1,
+    "upgradeEffScale": [
+      1,
+      1
+    ],
+    "sort": 7000,
+    "abc_1_info_funtionKey": "protectCapacity",
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
+    "lock_show_condition": [
+      {
+        "param2": 3,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildMenuIcon": "5023",
+    "buildClickSound": 3033,
+    "displayName": "Granary",
+    "buildDes": "Protects a certain amount of Grain from plunder",
+    "createDes": "Protects a certain amount of Grain from plunder",
+    "classifyName": "",
+    "abc_1_info_translate": "Protected Resource",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "10001": {
+    "buildClickSound": 1438,
+    "buildMenuIcon": "pic_zsw_04",
+    "cover": [
+      3,
+      3
+    ],
+    "id": "10001",
+    "type": 3,
+    "maxLv": 7,
+    "displayName": "Twin Dragon Brooch",
+    "buildDes": "A brooch symbolizing power and authority, once exclusive to nobility, lost in war.",
+    "createDes": "A brooch symbolizing power and authority, once exclusive to nobility, lost in war.",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5010": {
+    "buildCompleteModelScale": 1,
+    "recommendPosition": [
+      55,
+      23
+    ],
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squadDown.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squad.prefab",
+    "classify": 29,
+    "maxLv": 1,
+    "buildFirstIcon": "5010",
+    "showInMail": 0,
+    "sort": 31000,
+    "buildMenuIcon": "5010",
+    "id": "5010",
+    "upgradeOverScale": 1,
+    "buildClickSound": 3025,
+    "upgradeEffScale": [
+      1,
+      1
+    ],
+    "cover": [
+      4,
+      4
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 7,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squad_building.prefab",
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squadUp.prefab",
+    "displayName": "Arena",
+    "buildDes": "Show your strength",
+    "createDes": "Show your strength",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5046": {
+    "sort": 42000,
+    "buildMenuIcon": "5046",
+    "id": "5046",
+    "abc_4_info_funtionKey": "lightHeroDefendAddValue",
+    "buildClickSound": 1438,
+    "classify": 83,
+    "abc_3_info_funtionKey": "lightHeroAttackAddValue",
+    "abc_1_info_funtionKey": "lightHeroSoldierLoadAddValue",
+    "abc_2_info_funtionKey": "lightHeroHpAddValue",
+    "cover": [
+      3,
+      3
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 999,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildFirstIcon": "5046",
+    "showInMail": 0,
+    "displayName": "Ranger Statue",
+    "buildDes": "Increases Ranger Hero's counter against Warrior Hero",
+    "createDes": "Increases Ranger Hero's counter against Warrior Hero",
+    "classifyName": "",
+    "abc_1_info_translate": "Ranger Hero CMD",
+    "abc_2_info_translate": "Ranger Hero HP",
+    "abc_3_info_translate": "Ranger Hero ATK",
+    "abc_4_info_translate": "Ranger Hero DEF"
+  },
+  "11002": {
+    "buildUpgradeInAnim": "",
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_27",
+    "upgradeAnimScale": 0,
+    "id": "11002",
+    "buildUpgradeInAnimScale": 0,
+    "buildUpgradeWorkAnim": "",
+    "maxLv": 7,
+    "upgradeEffScale": [
+      0.25,
+      0.25
+    ],
+    "buildFirstIcon": "11002",
+    "type": 3,
+    "displayName": "Green Nutcracker",
+    "buildDes": "Green Nutcracker",
+    "createDes": "Green Nutcracker",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "1006": {
+    "buildCompleteModelScale": 1,
+    "upgradeOverScale": 1,
+    "sort": 26000,
+    "buildMenuIcon": "1006",
+    "recommendPosition": [
+      48,
+      18
+    ],
+    "id": "1006",
+    "classify": 34,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33.prefab",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33_building.prefab",
+    "buildClickSound": 1023,
+    "maxLv": 1,
+    "cover": [
+      3,
+      3
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 6,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildFirstIcon": "1006",
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_33Up.prefab",
+    "displayName": "Falcon Tower",
+    "buildDes": "Monitor Area, Earn Generous Rewards",
+    "createDes": "Monitor Area, Earn Generous Rewards",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "11006": {
+    "buildUpgradeInAnim": "",
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_30",
+    "upgradeAnimScale": 0,
+    "id": "11006",
+    "buildUpgradeInAnimScale": 0,
+    "buildUpgradeWorkAnim": "",
+    "maxLv": 7,
+    "upgradeEffScale": [
+      0.25,
+      0.25
+    ],
+    "buildFirstIcon": "11006",
+    "type": 3,
+    "displayName": "Easter Egg Warrior",
+    "buildDes": "Little Easter Egg, Fearless Warrior",
+    "createDes": "Little Easter Egg, Fearless Warrior",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "10024": {
+    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_23",
+    "id": "10024",
+    "buildClickSound": 1023,
+    "maxLv": 7,
     "upgradeEffScale": [
       0.375,
       0.375
     ],
-    "buildFirstIcon": "10015",
-    "maxLv": 7,
-    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
-    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
     "type": 3,
-    "id": "10015",
-    "displayName": "Warlock Epaulet",
+    "buildFirstIcon": "10024",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
+    "displayName": "Pocket Watch",
+    "buildDes": "Pocket Watch",
+    "createDes": "Pocket Watch",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "10019": {
+    "buildUpgradeInAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_in_lv2.prefab",
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_19",
+    "id": "10019",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/k3_jianzhugongdi/k3_jz_work_lv2.prefab",
+    "maxLv": 7,
+    "upgradeEffScale": [
+      0.375,
+      0.375
+    ],
+    "buildFirstIcon": "10019",
+    "type": 3,
+    "displayName": "Prophecy Card",
+    "buildDes": "Cards used by some wanderers to predict future events.",
+    "createDes": "Cards used by some wanderers to predict future events.",
+    "classifyName": "",
+    "abc_1_info_translate": "",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "5006": {
+    "buildCompleteModelScale": 1,
+    "recommendPosition": [
+      31,
+      -7
+    ],
+    "abc_1_info_formatType": 1,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squadDown.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squad.prefab",
+    "classify": 25,
+    "buildFirstIcon": "5006",
+    "showInMail": 0,
+    "dispatchOrder": 8,
+    "abc_1_info_benefits": [
+      20020
+    ],
+    "workerPostNum": 4,
+    "id": "5006",
+    "upgradeEffScale": [
+      1,
+      1
+    ],
+    "upgradeOverScale": 1,
+    "sort": 28000,
+    "buildUpgradeInAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squadUp.prefab",
+    "abc_1_info_funtionKey": "soldierCap",
+    "buildUpgradeWorkAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_44_squad_building.prefab",
+    "cover": [
+      6,
+      6
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 6,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "buildMenuIcon": "5006",
+    "buildClickSound": 3025,
+    "displayName": "Barracks",
+    "buildDes": "Soldier Assembly Point",
+    "createDes": "Soldier Assembly Point",
+    "classifyName": "",
+    "abc_1_info_translate": "Troop Capacity",
+    "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "10013": {
+    "buildUpgradeInAnim": "",
+    "buildRepairedSound": 0,
+    "buildMenuIcon": "pic_zsw_06",
+    "upgradeAnimScale": 0,
+    "id": "10013",
+    "buildUpgradeInAnimScale": 0,
+    "buildClickSound": 1023,
+    "maxLv": 7,
+    "upgradeEffScale": [
+      1.5,
+      1.5
+    ],
+    "type": 3,
+    "buildFirstIcon": "10013",
+    "buildUpgradeWorkAnim": "",
+    "displayName": "Warrior Epaulet",
     "buildDes": "An emblem once sewn onto a soldier's shoulder, symbolizing their honor.",
     "createDes": "An emblem once sewn onto a soldier's shoulder, symbolizing their honor.",
     "classifyName": "",
     "abc_1_info_translate": "",
     "abc_2_info_translate": "",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "1017": {
+    "buildCompleteModelScale": 1,
+    "recommendPosition": [
+      30,
+      12
+    ],
+    "abc_1_info_formatType": 1,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22.prefab",
+    "classify": 14,
+    "abc_2_info_funtionKey": "productMaxTime",
+    "buildFirstIcon": "1017",
+    "buildEffect": [
+      9999983
+    ],
+    "dispatchOrder": 10,
+    "abc_1_info_benefits": [
+      20002
+    ],
+    "id": "1017",
+    "upgradeOverScale": 1,
+    "workerPostNum": 4,
+    "type": 1,
+    "abc_1_info_funtionKey": "speed",
+    "sort": 2000,
+    "buildMenuIcon": "1017",
+    "lock_show_condition": [
+      {
+        "param2": 1,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "abc_2_info_formatType": 3,
+    "buildClickSound": 1406,
+    "displayName": "Lumberyard",
+    "buildDes": "Supply Timber to the Territory",
+    "createDes": "Supply Timber to the Territory",
+    "classifyName": "",
+    "abc_1_info_translate": "Output/Hour",
+    "abc_2_info_translate": "Max Production Time",
+    "abc_3_info_translate": "",
+    "abc_4_info_translate": ""
+  },
+  "1004": {
+    "buildCompleteModelScale": 1,
+    "recommendPosition": [
+      23,
+      7
+    ],
+    "abc_1_info_formatType": 1,
+    "buildUpgradeOverAnim": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22Down.prefab",
+    "buildCompleteModel": "CityMap/Prefab_new/K3_Scaffolding/K3_Scaffolding_22.prefab",
+    "classify": 4,
+    "buildFirstIcon": "1004",
+    "dispatchOrder": 7,
+    "abc_1_info_benefits": [
+      20021,
+      20032
+    ],
+    "workerPostNum": 4,
+    "id": "1004",
+    "upgradeEffScale": [
+      1,
+      1
+    ],
+    "upgradeOverScale": 1,
+    "sort": 30000,
+    "buildMenuIcon": "1004",
+    "abc_1_info_funtionKey": "cureCount",
+    "cover": [
+      3,
+      3
+    ],
+    "abc_2_info_benefits": [
+      20022
+    ],
+    "lock_show_condition": [
+      {
+        "param2": 7,
+        "id": 20103,
+        "param1": 1001
+      }
+    ],
+    "abc_2_info_formatType": 4,
+    "buildClickSound": 3017,
+    "displayName": "Infirmary",
+    "buildDes": "Heal Severely Wounded Soldiers",
+    "createDes": "Heal Severely Wounded Soldiers",
+    "classifyName": "",
+    "abc_1_info_translate": "Infirmary Capacity",
+    "abc_2_info_translate": "Infirmary Healing Speed",
     "abc_3_info_translate": "",
     "abc_4_info_translate": ""
   }

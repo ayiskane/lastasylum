@@ -19,8 +19,8 @@ interface SurvivorData {
 }
 
 const RARITY_COLORS: Record<string, string> = {
-  Legendary: 'text-yellow-400', UR: 'text-orange-400', SSR: 'text-purple-400',
-  SR: 'text-blue-400', R: 'text-green-400',
+  UR: 'text-orange-400', SSR: 'text-purple-400', SR: 'text-blue-400',
+  R: 'text-green-400', N: 'text-gray-400',
 }
 
 export default function SurvivorsPage() {

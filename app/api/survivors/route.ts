@@ -16,9 +16,9 @@ function loadJson(name: string): Record<string, any> {
 }
 
 const RARITY_MAP: Record<string, string> = {
-  poor: 'R', common: 'SR', premium: 'SSR', rare: 'UR', legendary: 'Legendary',
+  legendary: 'N', poor: 'R', common: 'SR', premium: 'SSR', rare: 'UR',
 }
-const RARITY_ORDER = ['Legendary', 'UR', 'SSR', 'SR', 'R']
+const RARITY_ORDER = ['UR', 'SSR', 'SR', 'R', 'N']
 
 interface EffectValue { label: string; value: string }
 
@@ -29,103 +29,103 @@ const ROLE_DATA: Record<string, {
   effectsByRarity: Record<string, EffectValue[]>
 }> = {
   'Farmer': { building: 'Farm', effectsByRarity: {
-    Legendary: [{label:'Food Output', value:'+10%'}, {label:'Production Time', value:'+4h'}],
+    N: [{label:'Food Output', value:'+10%'}, {label:'Production Time', value:'+4h'}],
     UR: [{label:'Food Output', value:'+8%'}, {label:'Production Time', value:'+3h'}],
     SSR: [{label:'Food Output', value:'+5%'}, {label:'Production Time', value:'+2h'}],
     SR: [{label:'Food Output', value:'+3%'}, {label:'Production Time', value:'+1h'}],
     R: [{label:'Food Output', value:'+1%'}],
   }},
   'Lumberjack': { building: 'Lumberyard', effectsByRarity: {
-    Legendary: [{label:'Timber Output', value:'+10%'}, {label:'Production Time', value:'+4h'}],
+    N: [{label:'Timber Output', value:'+10%'}, {label:'Production Time', value:'+4h'}],
     UR: [{label:'Timber Output', value:'+8%'}, {label:'Production Time', value:'+3h'}],
     SSR: [{label:'Timber Output', value:'+5%'}, {label:'Production Time', value:'+2h'}],
     SR: [{label:'Timber Output', value:'+3%'}, {label:'Production Time', value:'+1h'}],
     R: [{label:'Timber Output', value:'+1%'}],
   }},
   'Herbalist': { building: 'Herb Garden', effectsByRarity: {
-    Legendary: [{label:'Herb Output', value:'+10%'}, {label:'Production Time', value:'+4h'}],
+    N: [{label:'Herb Output', value:'+10%'}, {label:'Production Time', value:'+4h'}],
     UR: [{label:'Herb Output', value:'+8%'}, {label:'Production Time', value:'+3h'}],
     SSR: [{label:'Herb Output', value:'+5%'}, {label:'Production Time', value:'+2h'}],
     SR: [{label:'Herb Output', value:'+3%'}, {label:'Production Time', value:'+1h'}],
     R: [{label:'Herb Output', value:'+1%'}],
   }},
   'Nurse': { building: 'Infirmary', effectsByRarity: {
-    Legendary: [{label:'Healing Speed', value:'+10%'}, {label:'Capacity', value:'+500'}],
+    N: [{label:'Healing Speed', value:'+10%'}, {label:'Capacity', value:'+500'}],
     UR: [{label:'Healing Speed', value:'+8%'}, {label:'Capacity', value:'+350'}],
     SSR: [{label:'Healing Speed', value:'+5%'}, {label:'Capacity', value:'+200'}],
     SR: [{label:'Healing Speed', value:'+3%'}, {label:'Capacity', value:'+100'}],
     R: [{label:'Healing Speed', value:'+1%'}],
   }},
   'Officer': { building: 'Barracks', effectsByRarity: {
-    Legendary: [{label:'Troop Capacity', value:'+2,400'}],
+    N: [{label:'Troop Capacity', value:'+2,400'}],
     UR: [{label:'Troop Capacity', value:'+1,600'}],
     SSR: [{label:'Troop Capacity', value:'+1,000'}],
     SR: [{label:'Troop Capacity', value:'+500'}],
     R: [{label:'Troop Capacity', value:'+200'}],
   }},
   'Instructor': { building: 'Training Grounds', effectsByRarity: {
-    Legendary: [{label:'Training Cap', value:'+500'}, {label:'Soldier Lv', value:'+2'}],
+    N: [{label:'Training Cap', value:'+500'}, {label:'Soldier Lv', value:'+2'}],
     UR: [{label:'Training Cap', value:'+350'}],
     SSR: [{label:'Training Cap', value:'+200'}],
     SR: [{label:'Training Cap', value:'+100'}],
     R: [{label:'Training Cap', value:'+50'}],
   }},
   'Researcher': { building: 'Research Lab', effectsByRarity: {
-    Legendary: [{label:'Research Speed', value:'+10%'}, {label:'Free Speedup', value:'+30min'}],
+    N: [{label:'Research Speed', value:'+10%'}, {label:'Free Speedup', value:'+30min'}],
     UR: [{label:'Research Speed', value:'+8%'}, {label:'Free Speedup', value:'+15min'}],
     SSR: [{label:'Research Speed', value:'+5%'}],
     SR: [{label:'Research Speed', value:'+3%'}],
     R: [{label:'Research Speed', value:'+1%'}],
   }},
   'Builder': { building: "Builder's Hut", effectsByRarity: {
-    Legendary: [{label:'Free Speedup', value:'+30min'}],
+    N: [{label:'Free Speedup', value:'+30min'}],
     UR: [{label:'Free Speedup', value:'+15min'}],
     SSR: [{label:'Free Speedup', value:'+10min'}],
     SR: [{label:'Free Speedup', value:'+5min'}],
     R: [{label:'Free Speedup', value:'+2min'}],
   }},
   'Blacksmith': { building: 'Gear Workshop', effectsByRarity: {
-    Legendary: [{label:'Crafting Speed', value:'+10%'}],
+    N: [{label:'Crafting Speed', value:'+10%'}],
     UR: [{label:'Crafting Speed', value:'+8%'}],
     SSR: [{label:'Crafting Speed', value:'+5%'}],
     SR: [{label:'Crafting Speed', value:'+3%'}],
     R: [{label:'Crafting Speed', value:'+1%'}],
   }},
   'Explorer': { building: "Explorer's Camp", effectsByRarity: {
-    Legendary: [{label:'Loot Output', value:'+10%'}, {label:'Idle Time', value:'+4h'}],
+    N: [{label:'Loot Output', value:'+10%'}, {label:'Idle Time', value:'+4h'}],
     UR: [{label:'Loot Output', value:'+8%'}, {label:'Idle Time', value:'+3h'}],
     SSR: [{label:'Loot Output', value:'+5%'}],
     SR: [{label:'Loot Output', value:'+3%'}],
     R: [{label:'Loot Output', value:'+1%'}],
   }},
   'Attendant': { building: 'Tavern', effectsByRarity: {
-    Legendary: [{label:'Hero Recruit CD', value:'-10%'}, {label:'Survivor CD', value:'-10%'}],
+    N: [{label:'Hero Recruit CD', value:'-10%'}, {label:'Survivor CD', value:'-10%'}],
     UR: [{label:'Hero Recruit CD', value:'-8%'}],
     SSR: [{label:'Hero Recruit CD', value:'-5%'}],
     SR: [{label:'Hero Recruit CD', value:'-3%'}],
     R: [{label:'Hero Recruit CD', value:'-1%'}],
   }},
   'Liaison': { building: 'Alliance Hall', effectsByRarity: {
-    Legendary: [{label:'Help Count', value:'+5'}, {label:'Help Duration', value:'+30min'}],
+    N: [{label:'Help Count', value:'+5'}, {label:'Help Duration', value:'+30min'}],
     UR: [{label:'Help Count', value:'+3'}],
     SSR: [{label:'Help Count', value:'+2'}],
   }},
   'Grain Keeper': { building: 'Granary', effectsByRarity: {
-    Legendary: [{label:'Protected Grain', value:'+10%'}],
+    N: [{label:'Protected Grain', value:'+10%'}],
     UR: [{label:'Protected Grain', value:'+8%'}],
     SSR: [{label:'Protected Grain', value:'+5%'}],
     SR: [{label:'Protected Grain', value:'+3%'}],
     R: [{label:'Protected Grain', value:'+1%'}],
   }},
   'Timber Keeper': { building: 'Lumber Depot', effectsByRarity: {
-    Legendary: [{label:'Protected Timber', value:'+10%'}],
+    N: [{label:'Protected Timber', value:'+10%'}],
     UR: [{label:'Protected Timber', value:'+8%'}],
     SSR: [{label:'Protected Timber', value:'+5%'}],
     SR: [{label:'Protected Timber', value:'+3%'}],
     R: [{label:'Protected Timber', value:'+1%'}],
   }},
   'Herb Keeper': { building: 'Herb Storage', effectsByRarity: {
-    Legendary: [{label:'Protected Herb', value:'+10%'}],
+    N: [{label:'Protected Herb', value:'+10%'}],
     UR: [{label:'Protected Herb', value:'+8%'}],
     SSR: [{label:'Protected Herb', value:'+5%'}],
     SR: [{label:'Protected Herb', value:'+3%'}],
