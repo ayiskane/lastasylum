@@ -1,10 +1,10 @@
 {
-  "3": {
-    "animatorPath": "Tower/tower_leftup_animator.controller",
-    "id": 3,
-    "modelConfigId": 40003,
+  "5": {
+    "animatorPath": "Tower/tower_rightup_animator.overrideController",
+    "id": 5,
+    "modelConfigId": 40005,
     "coordinate": [
-      491,
+      509,
       509
     ]
   },
@@ -17,61 +17,13 @@
       491
     ]
   },
-  "5": {
-    "animatorPath": "Tower/tower_rightup_animator.overrideController",
-    "id": 5,
-    "modelConfigId": 40005,
+  "3": {
+    "animatorPath": "Tower/tower_leftup_animator.controller",
+    "id": 3,
+    "modelConfigId": 40003,
     "coordinate": [
-      509,
+      491,
       509
-    ]
-  },
-  "1": {
-    "reward": [
-      {
-        "type": 11,
-        "count": 3000
-      },
-      {
-        "type": 99,
-        "id": "item_UseUp_recruitCoin",
-        "count": 50
-      },
-      {
-        "type": 99,
-        "id": "item_food_50k",
-        "count": 180
-      },
-      {
-        "type": 99,
-        "id": "item_wood_50k",
-        "count": 180
-      },
-      {
-        "type": 99,
-        "id": "item_steel_30k",
-        "count": 180
-      },
-      {
-        "type": 99,
-        "id": "item_optionalBox_Resource",
-        "count": 300
-      }
-    ],
-    "cityBlockId": 9999,
-    "type": 1,
-    "area": 87,
-    "AdjacentCities": [
-      6001,
-      6002,
-      6003
-    ],
-    "benefit": [
-      {
-        "Type": 10101,
-        "Source": 905,
-        "Value": 0.1
-      }
     ]
   },
   "2": {
@@ -82,5 +34,53 @@
       509,
       491
     ]
+  },
+  "1": {
+    "benefit": [
+      {
+        "Value": 0.1,
+        "Source": 905,
+        "Type": 10101
+      }
+    ],
+    "AdjacentCities": [
+      6001,
+      6002,
+      6003
+    ],
+    "type": 1,
+    "reward": [
+      {
+        "type": 11,
+        "count": 3000
+      },
+      {
+        "count": 50,
+        "id": "item_UseUp_recruitCoin",
+        "type": 99
+      },
+      {
+        "count": 180,
+        "id": "item_food_50k",
+        "type": 99
+      },
+      {
+        "count": 180,
+        "id": "item_wood_50k",
+        "type": 99
+      },
+      {
+        "count": 180,
+        "id": "item_steel_30k",
+        "type": 99
+      },
+      {
+        "count": 300,
+        "id": "item_optionalBox_Resource",
+        "type": 99
+      }
+    ],
+    "area": 87,
+    "cityBlockId": 9999
   }
 }

@@ -2,25 +2,25 @@
   "1020101": {
     "needCondition": [
       {
-        "roomupgrade": 2010102,
-        "level": 99
+        "level": 99,
+        "roomupgrade": 2010102
       }
     ]
   },
   "1020102": {
-    "srcRoom": 20102,
     "id": 1020102,
+    "srcRoom": 20102,
     "prefabPath": "Scenes/Hotels/Prefab/Room_Bath_Right.prefab"
   },
   "1020103": {
+    "id": 1020103,
+    "srcRoom": 20103,
     "needCondition": [
       {
         "level": 99,
         "roomupgrade": 2010202,
         "rebuild": 20102
       }
-    ],
-    "id": 1020103,
-    "srcRoom": 20103
+    ]
   }
 }
