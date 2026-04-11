@@ -140,14 +140,27 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
       <aside className="w-[220px] max-lg:w-full shrink-0 lg:sticky lg:top-0 lg:self-start lg:h-screen bg-asylum-surface border-r border-asylum-border lg:overflow-y-auto">
         <div className="p-4 max-lg:flex max-lg:gap-4 max-lg:items-start">
           {/* Hero image with game-style rarity card frame */}
-          <div className={`max-lg:w-[120px] max-lg:shrink-0 rounded-xl border-[3px] ${cardStyle.border} overflow-hidden mb-3 max-lg:mb-0 ${cardStyle.bg} p-1`}>
-            <div className="aspect-[216/300] rounded-lg overflow-hidden">
-              <GameImage
-                src={bustPath || heroImg}
-                alt={name}
-                fallbackSrc={heroImg}
-                className="w-full h-full object-cover"
-              />
+          <div className="relative max-lg:w-[120px] max-lg:shrink-0 mb-5 max-lg:mb-0">
+            <div className={`rounded-xl border-[3px] ${cardStyle.border} overflow-hidden ${cardStyle.bg} p-1`}>
+              <div className="aspect-[216/300] rounded-lg overflow-hidden">
+                <GameImage
+                  src={bustPath || heroImg}
+                  alt={name}
+                  fallbackSrc={heroImg}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            {/* Camp + Army icons centered on bottom edge, side by side */}
+            <div className="absolute left-1/2 -translate-x-1/2 -bottom-4 flex items-center gap-0.5">
+              {CAMP_ICON_SRC[hero.campType] && (
+                <img src={CAMP_ICON_SRC[hero.campType]} alt={CAMP_LABEL[hero.campType] || ''}
+                  className="h-10 w-auto drop-shadow-lg" />
+              )}
+              {ARMY_ICON_SRC[hero.armyType] && (
+                <img src={ARMY_ICON_SRC[hero.armyType]} alt={ARMY_LABEL[hero.armyType] || ''}
+                  className="h-9 w-auto drop-shadow-lg" />
+              )}
             </div>
           </div>
 
@@ -159,7 +172,7 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
               <span className="font-mono">{hero.maxAbility?.toLocaleString()}</span>
             </div>
 
-            {/* Tags */}
+            {/* Tags — rarity only */}
             <div className="flex gap-1.5 flex-wrap items-center mb-2">
               {RARITY_LABEL[hero.quality] ? (
                 <img src={RARITY_LABEL[hero.quality]} alt={hero.qualityName} className="h-5" />
@@ -168,14 +181,6 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
                   {hero.qualityName}
                 </span>
               )}
-              <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-asylum-surface text-asylum-muted border border-asylum-border flex items-center gap-1">
-                {ARMY_ICON_SRC[hero.armyType] && <img src={ARMY_ICON_SRC[hero.armyType]} alt="" className="w-4 h-4" />}
-                {ARMY_LABEL[hero.armyType] || hero.armyName}
-              </span>
-              <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-asylum-surface text-asylum-muted border border-asylum-border flex items-center gap-1">
-                {CAMP_ICON_SRC[hero.campType] && <img src={CAMP_ICON_SRC[hero.campType]} alt="" className="w-4 h-4" />}
-                {CAMP_LABEL[hero.campType] || hero.campName}
-              </span>
             </div>
 
             {/* Shards */}
