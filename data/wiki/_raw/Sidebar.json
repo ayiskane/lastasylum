@@ -1,54 +1,4 @@
 {
-  "12": {
-    "icon": "icon_zjm_cbl_duanzao",
-    "type": 6,
-    "id": 12,
-    "precondition": [
-      {
-        "id": 20103,
-        "param1": "1008",
-        "param2": "1"
-      }
-    ]
-  },
-  "11": {
-    "icon": "icon_zjm_cbl_jiangli",
-    "id": 11,
-    "type": 5,
-    "subType": 2,
-    "precondition": [
-      {
-        "id": 20103,
-        "param1": "5002",
-        "param2": "1"
-      }
-    ]
-  },
-  "10": {
-    "icon": "icon_zjm_cbl_jiangli",
-    "type": 5,
-    "id": 10,
-    "precondition": [
-      {
-        "id": 20103,
-        "param1": "1001",
-        "param2": "4"
-      }
-    ]
-  },
-  "9": {
-    "icon": "icon_zjm_cbl_zhensuo",
-    "id": 9,
-    "type": 4,
-    "subType": 2,
-    "precondition": [
-      {
-        "id": 20103,
-        "param1": "1001",
-        "param2": "11"
-      }
-    ]
-  },
   "3": {
     "id": 3,
     "subType": 3
@@ -58,30 +8,18 @@
     "subType": 2
   },
   "1": {},
-  "8": {
-    "icon": "icon_zjm_cbl_zhaomulan",
-    "type": 4,
-    "id": 8,
-    "precondition": [
-      {
-        "id": 20103,
-        "param1": "1001",
-        "param2": "4"
-      }
-    ]
-  },
   "7": {
     "icon": "icon_zjm_cbl_xingcunzhe",
     "id": 7,
-    "type": 3,
-    "subType": 2,
     "precondition": [
       {
+        "param2": "1",
         "id": 20103,
-        "param1": "5008",
-        "param2": "1"
+        "param1": "5008"
       }
-    ]
+    ],
+    "type": 3,
+    "subType": 2
   },
   "6": {
     "icon": "icon_zjm_cbl_zhaomu",
@@ -89,9 +27,9 @@
     "id": 6,
     "precondition": [
       {
+        "param2": "1",
         "id": 20103,
-        "param1": "5008",
-        "param2": "1"
+        "param1": "5008"
       }
     ]
   },
@@ -101,14 +39,76 @@
     "id": 5,
     "precondition": [
       {
+        "param2": "1",
         "id": 20103,
-        "param1": "1010",
-        "param2": "1"
+        "param1": "1010"
       }
     ]
   },
   "4": {
     "id": 4,
     "subType": 4
+  },
+  "11": {
+    "icon": "icon_zjm_cbl_jiangli",
+    "id": 11,
+    "precondition": [
+      {
+        "param2": "1",
+        "id": 20103,
+        "param1": "5002"
+      }
+    ],
+    "type": 5,
+    "subType": 2
+  },
+  "10": {
+    "icon": "icon_zjm_cbl_jiangli",
+    "type": 5,
+    "id": 10,
+    "precondition": [
+      {
+        "param2": "4",
+        "id": 20103,
+        "param1": "1001"
+      }
+    ]
+  },
+  "9": {
+    "icon": "icon_zjm_cbl_zhensuo",
+    "id": 9,
+    "precondition": [
+      {
+        "param2": "11",
+        "id": 20103,
+        "param1": "1001"
+      }
+    ],
+    "type": 4,
+    "subType": 2
+  },
+  "12": {
+    "icon": "icon_zjm_cbl_duanzao",
+    "type": 6,
+    "id": 12,
+    "precondition": [
+      {
+        "param2": "1",
+        "id": 20103,
+        "param1": "1008"
+      }
+    ]
+  },
+  "8": {
+    "icon": "icon_zjm_cbl_zhaomulan",
+    "type": 4,
+    "id": 8,
+    "precondition": [
+      {
+        "param2": "4",
+        "id": 20103,
+        "param1": "1001"
+      }
+    ]
   }
 }

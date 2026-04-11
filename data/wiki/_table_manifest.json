@@ -4,65 +4,70 @@
     "fields": [
       "initScore",
       "defenderChallengeLowerRank",
-      "attackerChallengeLowerRank"
+      "attackerChallengeLowerRank",
+      "id"
     ]
   },
   "AEArenaAchievement": {
     "count": 91,
     "fields": [
-      "gear",
+      "rank",
       "item",
-      "id",
-      "rank"
+      "gear",
+      "id"
     ]
   },
   "AEArenaBattleCountReward": {
     "count": 12,
     "fields": [
-      "id",
-      "arenaId",
-      "count"
+      "rankGroup",
+      "item",
+      "id"
     ]
   },
   "AEArenaBattleReward": {
     "count": 2,
-    "fields": []
+    "fields": [
+      "arenaId",
+      "id"
+    ]
   },
   "AEArenaCost": {
     "count": 33,
     "fields": [
-      "arenaId",
       "maxCount",
       "minCount",
       "cost",
+      "costType",
       "id"
     ]
   },
   "AEArenaGroup": {
     "count": 46,
     "fields": [
-      "minRank",
       "group",
-      "id",
-      "maxRank"
+      "maxRank",
+      "minRank",
+      "id"
     ]
   },
   "AEArenaMatch": {
     "count": 48,
     "fields": [
       "max",
-      "id",
-      "min"
+      "min",
+      "id"
     ]
   },
   "AEArenaNpc": {
     "count": 380,
     "fields": [
-      "minRank",
-      "slgMonsterAttrId",
       "slgMonsterzhanli",
       "id",
-      "maxRank"
+      "slgMonsterAttrId",
+      "maxRank",
+      "minRank",
+      "activityId"
     ]
   },
   "AEArenaSeasonReward": {
@@ -70,99 +75,93 @@
     "fields": [
       "minRank",
       "item",
-      "id",
-      "maxRank"
+      "maxRank",
+      "id"
     ]
   },
   "AEArenaSeasonRewardDisplay": {
     "count": 5,
     "fields": [
-      "minRank",
-      "maxRank",
       "item",
-      "id",
-      "headFrameId"
+      "headFrameId",
+      "maxRank",
+      "minRank",
+      "id"
     ]
   },
   "AEArenaSeasonUnionReward": {
     "count": 12,
     "fields": [
-      "minRank",
-      "arenaId",
+      "rankGroup",
       "item",
-      "id",
-      "maxRank"
+      "id"
     ]
   },
   "AbyssBoss": {
     "count": 3,
     "fields": [
-      "monsterId",
-      "boardReward",
-      "WorldBossTalk",
-      "WorldBossMenuIcon",
       "damageReward",
-      "taskGroupID",
       "WorldBossBenefitIcon",
-      "activityId",
-      "id"
+      "monsterId",
+      "WorldBossMenuIcon",
+      "id",
+      "boardReward",
+      "taskGroupID",
+      "WorldBossTalk",
+      "activityId"
     ]
   },
   "AbyssBossDamageReward": {
     "count": 9,
     "fields": [
-      "rewardGroup",
       "reward",
-      "count",
-      "id"
+      "id",
+      "rewardGroup",
+      "count"
     ]
   },
   "AbyssBossTask": {
     "count": 36,
     "fields": [
-      "target",
       "reward",
-      "id",
-      "showSort"
+      "target",
+      "showSort",
+      "id"
     ]
   },
   "ActiveRewardPersonBox": {
     "count": 5,
     "fields": [
-      "id",
-      "score"
+      "reward",
+      "score",
+      "id"
     ]
   },
   "ActivityBase": {
     "count": 193,
     "fields": [
-      "configID",
+      "displayOrderDay",
       "id",
-      "type",
       "displayID",
+      "configID",
+      "type",
       "openingBaseLv"
     ]
   },
   "ActivityDisplay": {
     "count": 135,
     "fields": [
-      "icon",
+      "spine",
+      "banner3",
       "sort",
-      "iconSingleDisplayPriority",
-      "iconSingleDisplayPosition",
-      "iconSingleDisplay",
-      "showType",
-      "activityListType",
-      "noticeSort"
+      "banner2",
+      "id",
+      "heroId"
     ]
   },
   "ActivityGetItem": {
     "count": 5,
-    "fields": [
-      "gotoTarget",
-      "id",
-      "sort"
-    ]
+    "fields": []
   },
   "ActivityGetItemLimit": {
     "count": 1,
@@ -171,66 +170,66 @@
   "ActivityMagicBox": {
     "count": 3,
     "fields": [
-      "pointReward",
-      "launchTriggerPanelHeroSkillID",
-      "dailyGiftID",
-      "turntable",
-      "launchTriggerPanel",
-      "exchangeID",
-      "id",
-      "dailyMaxSpinTime"
+      "heroID",
+      "launchTriggerPanelStart",
+      "launchTriggerPanelEnd",
+      "launchTriggerPanelResource"
     ]
   },
   "ActivityMagicBoxPointReward": {
     "count": 18,
     "fields": [
       "pointReward",
-      "pointRewardId",
-      "id",
-      "point"
+      "point",
+      "id"
     ]
   },
   "ActivityMagicBoxTurntable": {
     "count": 36,
     "fields": [
+      "displayRank",
       "weight",
       "position",
-      "notice",
-      "reward",
-      "displayRank"
+      "id"
     ]
   },
   "ActivityMainlandCoordinate": {
     "count": 48,
     "fields": [
-      "id",
-      "y"
+      "y",
+      "x",
+      "id"
     ]
   },
   "ActivityMainlandDescription": {
     "count": 6,
     "fields": [
-      "id",
-      "type"
+      "type",
+      "id"
     ]
   },
   "ActivityMainlandFort": {
     "count": 11,
     "fields": [
-      "x",
+      "y",
+      "modelId",
       "id",
-      "y"
+      "type",
+      "mapIconMine",
+      "mapIcon",
+      "mapIconEnemy"
     ]
   },
   "ActivityMainlandFortPrototype": {
     "count": 7,
     "fields": [
-      "icon",
-      "skillIcon",
-      "unionIntegralCannotPlunder",
-      "miniIcon",
+      "skillIcondes",
+      "shieldTime",
       "id",
-      "unionIntegralCanPlunder"
+      "miniIcon",
+      "componentBenefit",
+      "icon",
+      "skillIcon"
     ]
   },
   "ActivityMainlandMessage": {
@@ -243,29 +242,29 @@
     "count": 50,
     "fields": [
       "x",
-      "id",
-      "y"
+      "id"
     ]
   },
   "ActivityMainlandParameter": {
     "count": 67,
     "fields": [
-      "id",
-      "value"
+      "value",
+      "id"
     ]
   },
   "ActivityMainlandPlayerReward": {
     "count": 8,
     "fields": [
+      "reward",
+      "minScore",
       "maxScore",
-      "reward"
+      "id"
     ]
   },
   "ActivityMainlandPointSource": {
     "count": 20,
     "fields": [
-      "id",
-      "type"
+      "id"
     ]
   },
   "ActivityMainlandStage": {
@@ -286,8 +285,8 @@
     "count": 6,
     "fields": [
       "reward",
-      "id",
-      "type"
+      "type",
+      "id"
     ]
   },
   "ActivityMonsterRefresh": {
@@ -296,13 +295,15 @@
   },
   "ActivityRally": {
     "count": 2,
-    "fields": []
+    "fields": [
+      "id",
+      "activityId"
+    ]
   },
   "ActivityRallyMonsterRefresh": {
     "count": 60,
     "fields": [
       "level",
-      "actId",
       "id"
     ]
   },
@@ -313,30 +314,20 @@
   "ActivitySummary": {
     "count": 8,
     "fields": [
-      "sort",
       "rewardPreview",
-      "type",
       "id",
+      "type",
+      "sort",
       "pic"
     ]
   },
   "ActivityTarget": {
     "count": 100,
     "fields": [
-      "crossPersonalRankingDisplayPoint",
-      "targetConfigID",
       "pointSourceIds",
-      "giftID",
-      "mail2",
-      "crossPersonalLeaderBoardMinPoint",
-      "personalRankingDisplayPoint4",
-      "personalLeaderBoardMinPoint",
-      "personalRankingDisplayPoint",
-      "personalLeaderBoardID",
-      "mail1",
-      "leaderBoardType",
-      "id",
-      "pointSourceGroupIds"
+      "targetType",
+      "pointSourceID",
+      "id"
     ]
   },
   "ActivityTempleBattleBase": {
@@ -352,109 +343,96 @@
   "ActivityTempleBattleBuild": {
     "count": 5,
     "fields": [
-      "id",
       "modelConfigId",
-      "coordinate",
-      "animatorPath"
+      "id",
+      "animatorPath",
+      "coordinate"
     ]
   },
   "ActivityTempleBattleGroup": {
     "count": 3,
     "fields": [
-      "groupType",
+      "highestTier",
       "id",
-      "highestTier"
+      "groupType"
     ]
   },
   "ActivityTempleBattleKingDecree": {
     "count": 8,
     "fields": [
-      "descParam",
-      "dayReset",
-      "count",
-      "lastTime",
       "image",
-      "type",
+      "lastTime",
+      "cost",
       "id",
-      "cdTime"
+      "cdTime",
+      "descParam"
     ]
   },
   "ActivityTempleBattleLeaderBoard": {
     "count": 9,
     "fields": [
-      "leaderBoardID",
-      "reward",
+      "minRanking",
       "maxRanking",
-      "id",
-      "minRanking"
+      "activityRewardEffect",
+      "reward",
+      "id"
     ]
   },
   "ActivityTempleBattleLv": {
     "count": 7,
     "fields": [
-      "icon",
+      "occupyadditional",
       "id",
-      "rank"
+      "occupy0",
+      "icon",
+      "point"
     ]
   },
   "ActivityTempleBattleParameter": {
     "count": 69,
     "fields": [
+      "value",
       "id"
     ]
   },
   "ActivityTempleBattleRule": {
     "count": 2,
     "fields": [
-      "targetConfigId",
-      "type",
-      "boardScore",
-      "victoryMinutes",
-      "personalLeaderBoard",
-      "kingdomLeaderBoard",
-      "stateRewardGroupId",
-      "openingBaseLv",
-      "taskGroupId",
-      "boardPara",
-      "localPushId"
+      "id"
     ]
   },
   "ActivityTempleBattleStateReward": {
     "count": 8,
     "fields": [
-      "icon",
-      "sendAmount",
-      "congressType",
-      "reward",
+      "stateRewardType",
       "id",
-      "stateRewardType"
+      "reward",
+      "icon",
+      "sendAmount"
     ]
   },
   "ActivityTempleBattleTargetReward": {
     "count": 5,
     "fields": [
-      "goal",
-      "reward",
-      "id",
-      "stage"
+      "reward"
     ]
   },
   "ActivityTempleBattleTitle": {
     "count": 10,
     "fields": [
-      "benefit",
       "titleIcon",
       "HqBenefitInfo",
-      "type",
       "id",
+      "benefit",
+      "appoint",
+      "icon",
       "sort"
     ]
   },
   "Activity_TotalRecharge": {
     "count": 2,
     "fields": [
-      "configID",
-      "prefab"
+      "id"
     ]
   },
   "AirDrop": {
@@ -464,73 +442,66 @@
   "AirDropBasic": {
     "count": 6,
     "fields": [
+      "random",
       "rewardItem",
-      "id",
-      "random"
+      "id"
     ]
   },
   "AirDropBouns": {
     "count": 4,
     "fields": [
-      "icon",
       "rebateRatio",
       "quality",
-      "id",
-      "random"
+      "icon",
+      "id"
     ]
   },
   "AirDropBox": {
     "count": 150,
     "fields": [
-      "rewardItem",
-      "rebateRatio",
-      "qudlity",
-      "icon",
-      "reward",
+      "pool",
       "id",
-      "quality",
-      "boxType",
-      "cost",
+      "qudlity",
+      "rewardItem",
       "random"
     ]
   },
   "AllianceBoss": {
     "count": 10,
     "fields": [
-      "nextLvNeedDamage",
-      "serverOpenDay",
-      "rewardTimesGroup",
-      "personalTargetGroup",
       "allianceTargetGroup",
-      "rallyId",
+      "lv",
       "id",
-      "lv"
+      "nextLvNeedDamage",
+      "rallyId",
+      "personalTargetGroup",
+      "rewardTimesGroup"
     ]
   },
   "AllianceBossDonate": {
     "count": 5,
     "fields": [
-      "id",
-      "benefitValue",
       "benefit",
-      "donateNum"
+      "benefitValue",
+      "donateNum",
+      "id"
     ]
   },
   "AllianceBossJobBenefit": {
     "count": 6,
     "fields": [
+      "rankJob",
       "icon",
-      "id",
-      "rankJob"
+      "id"
     ]
   },
   "AllianceBossRewardTimes": {
     "count": 100,
     "fields": [
-      "rewardTimesGroup",
+      "targetDmg",
       "rewardTimes",
-      "id",
-      "targetDmg"
+      "rewardTimesGroup",
+      "id"
     ]
   },
   "AllianceCompetitionParameters": {
@@ -542,70 +513,64 @@
   "AllianceCompetitionReward": {
     "count": 3,
     "fields": [
-      "score",
-      "reward"
+      "reward",
+      "score"
     ]
   },
   "AllianceCompetitionStage": {
     "count": 12,
     "fields": [
-      "stagePoints",
-      "icon4Goto",
-      "stageId",
+      "icon3",
       "id",
+      "icon1Goto",
       "icon1",
-      "rightEntryIcon",
-      "icon4",
-      "icon3"
+      "icon2Goto",
+      "stageId"
     ]
   },
   "AllianceTargetGroup": {
     "count": 50,
     "fields": [
       "stage",
-      "groupId",
-      "minnimumDmg",
-      "reward",
       "id",
-      "highestDmg"
+      "reward",
+      "minnimumDmg",
+      "highestDmg",
+      "groupId"
     ]
   },
   "ArenaActivityShop": {
     "count": 14,
     "fields": [
-      "display",
-      "iconFuncType",
-      "type",
+      "activitySortID",
       "sort",
-      "typeID",
+      "type",
+      "display",
+      "shopBannerPath",
+      "shopRefreshType",
       "coin",
       "id",
-      "shopRefreshType"
+      "typeID"
     ]
   },
   "ArmyRaceDailyReward": {
     "count": 3,
     "fields": [
       "stage",
-      "reward",
-      "id",
-      "dailyScore"
+      "dailyScore",
+      "id"
     ]
   },
   "ArmyTypeAttr": {
     "count": 2,
     "fields": [
-      "maxAttackDistance",
-      "trainSoundId",
-      "buildingId",
-      "attackType"
+      "id",
+      "attackCd"
     ]
   },
   "AssemblyInfo": {
     "count": 2,
-    "fields": [
-      "id"
-    ]
+    "fields": []
   },
   "AttackBoss": {
     "count": 1,
@@ -618,9 +583,8 @@
   "AttackBossBox": {
     "count": 8,
     "fields": [
-      "item",
-      "id",
-      "score"
+      "score",
+      "id"
     ]
   },
   "AttackBossMonster": {
@@ -630,31 +594,30 @@
   "BFAircraftCenter": {
     "count": 30,
     "fields": [
-      "lightHeroAttackAddValue",
       "lightHeroHpAddValue",
-      "lightHeroSoldierLoadAddValue",
       "id",
-      "lightHeroDefendAddValue"
+      "lightHeroDefendAddValue",
+      "lightHeroSoldierLoadAddValue",
+      "lightHeroAttackAddValue"
     ]
   },
   "BFBar": {
     "count": 30,
     "fields": [
+      "workerFreeRecruitCD",
       "heroFreeRecruitCD",
-      "id",
-      "workerFreeRecruitCD"
+      "id"
     ]
   },
   "BFCastleBase": {
     "count": 30,
     "fields": [
       "heroLife",
-      "modelId",
-      "heroAttack",
-      "unionRecommendationIntervals",
-      "heroDefend",
       "id",
-      "heroLvCap"
+      "unionRecommendationIntervals",
+      "heroAttack",
+      "modelId",
+      "heroDefend"
     ]
   },
   "BFCityWallInfo": {
@@ -668,134 +631,138 @@
   "BFCollegeTech": {
     "count": 30,
     "fields": [
-      "id",
-      "speedAddPercent"
+      "speedAddPercent",
+      "id"
     ]
   },
   "BFDroneCompFactory": {
     "count": 30,
     "fields": [
+      "speed",
       "minTime",
-      "id",
-      "speed"
+      "id"
     ]
   },
   "BFEmbassyBase": {
     "count": 30,
     "fields": [
       "helpMaxCount",
-      "id",
-      "helpTime"
+      "helpTime",
+      "id"
     ]
   },
   "BFEquipSmelter": {
     "count": 30,
     "fields": [
-      "speed",
       "productMaxTime",
-      "id",
-      "fillTime"
+      "speed",
+      "fillTime",
+      "id"
     ]
   },
   "BFFarm": {
     "count": 30,
     "fields": [
       "productMaxTime",
-      "id",
-      "speed"
+      "speed",
+      "minTime",
+      "id"
     ]
   },
   "BFGranary": {
     "count": 30,
     "fields": [
-      "id",
-      "protectCapacity"
+      "protectCapacity",
+      "id"
     ]
   },
   "BFHospitalBaseInfo": {
     "count": 30,
     "fields": [
-      "id",
-      "cureCount"
+      "cureCount",
+      "id"
     ]
   },
   "BFInfantryBattalion": {
     "count": 30,
     "fields": [
       "promotionNum",
-      "id",
-      "upgradeCount"
+      "soldierrank",
+      "upgradeCount",
+      "id"
     ]
   },
   "BFIronMine": {
     "count": 30,
     "fields": [
       "productMaxTime",
-      "id",
-      "speed"
+      "speed",
+      "minTime",
+      "id"
     ]
   },
   "BFMaterialWorkshop": {
     "count": 30,
     "fields": [
-      "speed",
       "productMaxTime",
-      "id",
-      "fillTime"
+      "speed",
+      "fillTime",
+      "id"
     ]
   },
   "BFMetalWareHouse": {
     "count": 30,
     "fields": [
-      "id",
-      "protectCapacity"
+      "protectCapacity",
+      "id"
     ]
   },
   "BFMissileCenter": {
     "count": 30,
     "fields": [
-      "mediumHeroAttackAddValue",
-      "mediumHeroDefendAddValue",
       "mediumHeroSoldierLoadAddValue",
       "id",
-      "mediumHeroHpAddValue"
+      "mediumHeroAttackAddValue",
+      "mediumHeroHpAddValue",
+      "mediumHeroDefendAddValue"
     ]
   },
   "BFParadeGround": {
     "count": 30,
     "fields": [
-      "id",
-      "soldierCap"
+      "soldierCap",
+      "id"
     ]
   },
   "BFPowerStorage": {
     "count": 30,
     "fields": [
-      "id",
-      "protectCapacity"
+      "protectCapacity",
+      "id"
     ]
   },
   "BFSawmill": {
     "count": 30,
     "fields": [
       "productMaxTime",
-      "id",
-      "speed"
+      "speed",
+      "minTime",
+      "id"
     ]
   },
   "BFScounts": {
     "count": 30,
     "fields": [
-      "id",
-      "speedAddPercent"
+      "speedAddPercent",
+      "id"
     ]
   },
   "BFSoulStoneFactory": {
     "count": 30,
     "fields": [
+      "speed",
       "productMaxTime",
-      "id",
-      "speed"
+      "id"
     ]
   },
   "BFSquad": {
@@ -808,99 +775,107 @@
   "BFTankCenter": {
     "count": 30,
     "fields": [
-      "heavyHeroDefendAddValue",
-      "heavyHeroHpAddValue",
       "heavyHeroSoldierLoadAddValue",
       "heavyHeroAttackAddValue",
+      "heavyHeroHpAddValue",
+      "heavyHeroDefendAddValue",
       "id"
     ]
   },
   "BFWatchTower": {
     "count": 31,
     "fields": [
+      "counterRecoHideCount",
+      "counterRecoProb",
       "id"
     ]
   },
   "BFWorkerCabin": {
     "count": 30,
     "fields": [
-      "freeTime",
-      "id"
+      "id",
+      "freeTime"
     ]
   },
   "Badge": {
     "count": 4,
     "fields": [
-      "obtainOrder",
       "iconName",
-      "id",
-      "itemid"
+      "itemid",
+      "obtainOrder",
+      "id"
     ]
   },
   "BattlePass": {
     "count": 32,
     "fields": [
-      "gift1",
-      "extraPoint",
-      "taskGroupID",
       "rewardGroupID",
+      "gift1",
       "id",
-      "unlockPoint"
+      "gift2",
+      "unlockPoint",
+      "taskGroupID",
+      "extraPoint"
     ]
   },
   "BattlePassCrit": {
     "count": 8,
     "fields": [
-      "multipleGroup",
-      "id",
-      "random"
+      "random",
+      "id"
     ]
   },
   "BattlePassReward": {
     "count": 709,
     "fields": [
-      "freeReward",
+      "charge1SpecialDisplay",
       "rewardGroupID",
-      "point",
-      "chargeReward1",
+      "lv",
+      "freeReward",
       "id",
-      "lv"
+      "point",
+      "chargeReward1"
     ]
   },
   "BattlePassTask": {
     "count": 523,
     "fields": [
-      "taskGroupID",
       "target",
-      "reward",
       "id",
+      "reward",
+      "functionId",
+      "taskGroupID",
       "showSort"
     ]
   },
   "BattlePosTemplate": {
     "count": 10,
     "fields": [
+      "posX",
       "posY",
       "pos",
-      "battleSide",
-      "id",
-      "posX"
+      "id"
     ]
   },
   "BattleSpeedStart": {
     "count": 2,
-    "fields": []
+    "fields": [
+      "serverId",
+      "id"
+    ]
   },
   "BenefitSource": {
     "count": 21,
     "fields": [
-      "id",
-      "sourceType"
+      "sourceType",
+      "id"
     ]
   },
   "BlackMineAreaRefresh": {
     "count": 5,
     "fields": [
+      "width",
+      "height",
       "id"
     ]
   },
@@ -911,24 +886,24 @@
   "BlackMineBurstVeinRefresh": {
     "count": 6,
     "fields": [
-      "id",
-      "delayTime"
+      "delayTime",
+      "id"
     ]
   },
   "BlackMineCollectReward": {
     "count": 32,
     "fields": [
-      "stageId",
+      "rewards",
       "id",
-      "rewards"
+      "count"
     ]
   },
   "BlackMineCollectZoneReward": {
     "count": 24,
     "fields": [
-      "zoneId",
+      "rewards",
       "id",
-      "rewards"
+      "count"
     ]
   },
   "BlackMineFort": {
@@ -939,52 +914,51 @@
     "count": 40,
     "fields": [
       "minRank",
-      "count",
-      "stageId",
+      "maxRank",
       "id",
-      "maxRank"
+      "count"
     ]
   },
   "BlackMineFortOccRankZoneReward": {
     "count": 30,
     "fields": [
       "minRank",
+      "maxRank",
       "id",
-      "count",
-      "maxRank"
+      "count"
     ]
   },
   "BlackMineHeapInfo": {
     "count": 9,
     "fields": [
+      "heapReserve",
       "id"
     ]
   },
   "BlackMineIntegralRankReward": {
     "count": 28,
     "fields": [
-      "minRank",
       "rewards",
-      "id",
-      "maxRank"
+      "maxRank",
+      "minRank",
+      "id"
     ]
   },
   "BlackMineIntegralRankZoneReward": {
     "count": 21,
     "fields": [
-      "minRank",
       "previewReward",
-      "zoneId",
-      "rewards",
       "id",
-      "maxRank"
+      "maxRank",
+      "minRank",
+      "rewards"
     ]
   },
   "BlackMineLeagueTime": {
     "count": 24,
     "fields": [
-      "id",
-      "startHour"
+      "startHour",
+      "id"
     ]
   },
   "BlackMineMoveCost": {
@@ -992,31 +966,31 @@
     "fields": [
       "costCount",
       "maxMoveCount",
-      "id",
-      "minMoveCount"
+      "minMoveCount",
+      "id"
     ]
   },
   "BlackMinePatrol": {
     "count": 2,
     "fields": [
-      "refreshRatio",
-      "initCount"
+      "npcId",
+      "id",
+      "blackExp"
     ]
   },
   "BlackMineRestrictBuff": {
     "count": 5,
     "fields": [
       "buffCount",
-      "id",
-      "failCount"
+      "failCount",
+      "id"
     ]
   },
   "BlackMineSkill": {
     "count": 10,
     "fields": [
-      "persistTime",
-      "id",
-      "cdTime"
+      "effect",
+      "id"
     ]
   },
   "BlackMineSkillLearn": {
@@ -1031,43 +1005,43 @@
     "count": 4,
     "fields": [
       "maxLevel",
-      "id",
-      "minLevel"
+      "minLevel",
+      "id"
     ]
   },
   "BlackMineVein": {
     "count": 6,
     "fields": [
-      "gatherHeapId",
-      "level",
       "refreshRate",
       "amount",
+      "areaId",
+      "mapIcon",
       "speed",
       "initCount",
-      "mapIcon",
-      "npcId",
-      "maxLossNum",
       "collectThreshold",
+      "npcId",
+      "id",
+      "maxLossNum",
+      "level",
       "guardHeapId",
-      "areaId"
+      "gatherHeapId"
     ]
   },
   "BlackMineZone": {
     "count": 3,
     "fields": [
-      "groupType",
+      "startRound",
       "previewReward",
       "endRound",
-      "id",
-      "startRound"
+      "id"
     ]
   },
   "BoxItemPreviewDesc": {
     "count": 6,
     "fields": [
-      "itemId",
-      "id",
-      "sort"
+      "rewardItemId",
+      "sort",
+      "id"
     ]
   },
   "BubbleLike": {
@@ -1078,43 +1052,43 @@
     "count": 70,
     "fields": [
       "buildRepairedSound",
-      "upgradeAnimScale",
-      "buildFirstIcon",
-      "buildClickSound",
-      "upgradeEffScale",
-      "buildUpgradeWorkAnim",
-      "type",
-      "maxLv",
       "buildMenuIcon",
+      "type",
+      "buildFirstIcon",
+      "upgradeEffScale",
+      "buildUpgradeInAnimScale",
       "buildUpgradeInAnim",
+      "buildUpgradeWorkAnim",
+      "upgradeAnimScale",
+      "maxLv",
       "id",
-      "buildUpgradeInAnimScale"
+      "buildClickSound"
     ]
   },
   "BuildingArea": {
     "count": 28,
     "fields": [
-      "preAreaId",
-      "chapterId",
+      "AreaReward",
+      "guideDialo",
+      "areaId",
       "sort",
       "id",
-      "AreaReward",
-      "areaId"
+      "chapterId"
     ]
   },
   "BuildingAreaReward": {
     "count": 24,
     "fields": [
       "pos",
-      "showReward",
-      "rotation",
+      "areaId",
       "reward",
-      "quality",
+      "rotation",
       "boxIcon",
       "id",
       "npcConfig",
-      "ShowEquipTipId",
-      "areaId"
+      "quality",
+      "rewardIcon",
+      "showReward"
     ]
   },
   "BuildingAreaSurvivor": {
@@ -1135,15 +1109,12 @@
   "BuildingLevel": {
     "count": 1179,
     "fields": [
-      "ability",
-      "level",
       "ability2",
       "precondition",
-      "buildingId",
-      "buildingIcon",
       "buildingIcon_UpgradeSucess",
+      "level",
       "id",
-      "buildingModel"
+      "buildingId"
     ]
   },
   "BuildingNpcDialog": {
@@ -1155,30 +1126,32 @@
   "BuildingPos": {
     "count": 109,
     "fields": [
+      "effect2",
       "areaId",
-      "rotation",
       "id",
-      "buildingId",
-      "effect2"
+      "rotation",
+      "buildingId"
     ]
   },
   "BuildingQueueGift": {
     "count": 3,
-    "fields": []
+    "fields": [
+      "queueNumber",
+      "id"
+    ]
   },
   "BuildingUpgrade": {
     "count": 1410,
     "fields": [
-      "cost",
-      "time",
       "reward",
+      "time",
+      "cost",
       "id"
     ]
   },
   "CGCaption": {
     "count": 6,
     "fields": [
-      "time",
       "id"
     ]
   },
@@ -1193,22 +1166,20 @@
   "CastleBox": {
     "count": 560,
     "fields": [
+      "languageParam",
+      "id",
       "itemId",
       "reward",
-      "languageParam",
       "preview",
-      "level",
-      "id"
+      "level"
     ]
   },
   "CastleRewards": {
     "count": 12,
     "fields": [
-      "displaySort",
-      "rewardIcon",
-      "item",
       "receiveLv",
-      "id"
+      "id",
+      "displaySort"
     ]
   },
   "ChapterInfo": {
@@ -1216,8 +1187,9 @@
     "fields": [
       "chapterId",
       "id",
-      "Pic",
-      "chapterEnterAnim"
+      "reward",
+      "chapterEnterAnim",
+      "Pic"
     ]
   },
   "ChargedShieldBase": {
@@ -1227,23 +1199,25 @@
   "ChatFunction": {
     "count": 5,
     "fields": [
-      "order",
-      "show",
+      "id",
       "type",
-      "id"
+      "order",
+      "icon",
+      "show"
     ]
   },
   "ChatParameter": {
     "count": 5,
     "fields": [
+      "value",
       "id"
     ]
   },
   "ChatSetting": {
     "count": 5,
     "fields": [
-      "order",
       "type",
+      "order",
       "icon",
       "id"
     ]
@@ -1251,20 +1225,26 @@
   "ChatTemplate": {
     "count": 108,
     "fields": [
-      "id",
-      "canExclude"
+      "priority",
+      "gotoId",
+      "id"
     ]
   },
   "ChatTrigger": {
     "count": 7,
     "fields": [
+      "background",
+      "iconAtlas",
       "id",
-      "iconAtlas"
+      "backgroundAtlas",
+      "icon"
     ]
   },
   "CityMapStaticDecoration": {
     "count": 26,
     "fields": [
+      "tileCountY",
+      "tileCountX",
       "prefabAssetName",
       "id"
     ]
@@ -1272,19 +1252,20 @@
   "CityTips": {
     "count": 22,
     "fields": [
-      "id",
-      "condition"
+      "id"
     ]
   },
   "CityTipsGroup": {
     "count": 3,
     "fields": [
+      "tips",
       "id"
     ]
   },
   "CityTipsObject": {
     "count": 3,
     "fields": [
+      "offsetY",
       "tipsGroup",
       "type",
       "id"
@@ -1293,16 +1274,16 @@
   "ClinicAction": {
     "count": 6,
     "fields": [
-      "actionType",
       "id",
+      "actionType",
       "actionConfig"
     ]
   },
   "ClinicArea": {
     "count": 8,
     "fields": [
-      "unlockSpend",
       "unlockCondition",
+      "unlockSpend",
       "id"
     ]
   },
@@ -1313,19 +1294,14 @@
   "ClinicDialogue": {
     "count": 140,
     "fields": [
-      "id",
-      "dialogueType"
+      "dialogueType",
+      "id"
     ]
   },
   "ClinicDialogueParameter": {
     "count": 17,
     "fields": [
-      "dialogueShowProbability",
-      "dialogueShowTime",
-      "dialogueShowTimeCd",
-      "openCondition",
-      "id",
-      "dialogueDeliver"
+      "id"
     ]
   },
   "ClinicEffect": {
@@ -1338,30 +1314,33 @@
   "ClinicEvent": {
     "count": 4,
     "fields": [
+      "triggerType",
+      "overParams",
       "id"
     ]
   },
   "ClinicItem": {
     "count": 6,
     "fields": [
+      "id",
+      "model",
       "transportNum",
-      "carrierModel",
       "icon",
-      "id"
+      "stackSpaced"
     ]
   },
   "ClinicNpcEvent": {
     "count": 22,
     "fields": [
-      "entityType",
-      "patientType",
+      "eventType",
+      "weighted",
       "id"
     ]
   },
   "ClinicParameter": {
     "count": 74,
     "fields": [
-      "value",
+      "stringValue",
       "id"
     ]
   },
@@ -1374,97 +1353,98 @@
   "ClinicRoom": {
     "count": 53,
     "fields": [
-      "areaId",
-      "upgradeDisposableReward",
-      "roomNumber",
-      "type",
-      "roomDirection",
-      "crownIcon",
       "id",
-      "copperShow"
+      "areaId",
+      "type",
+      "icon",
+      "produceItemType"
     ]
   },
   "ClinicRoomItem": {
     "count": 7,
     "fields": [
-      "rewards",
       "itemModel",
+      "rewards",
       "id"
     ]
   },
   "ClinicRoomUpgrade": {
     "count": 311,
     "fields": [
-      "upgradeSpend",
-      "level",
-      "upgradeCondition",
       "afkIncome",
-      "prefabPath",
+      "buffIcon",
+      "itemRewards",
       "stayFee",
+      "upgradeEffect",
+      "upgradeCondition",
       "id",
+      "prefabPath",
+      "maxNum",
+      "level",
       "entityId"
     ]
   },
   "ClinicSkill": {
     "count": 16,
     "fields": [
-      "skillEffect",
-      "skillType",
       "upgradeSpend",
+      "skillType",
       "id"
     ]
   },
   "ClinicSpecialEvent": {
     "count": 37,
     "fields": [
-      "weight",
+      "maxCastleLevel",
+      "id",
       "type",
-      "id"
+      "weight",
+      "minCastleLevel",
+      "rewards"
     ]
   },
   "ClinicStar": {
     "count": 66,
     "fields": [
-      "quality",
+      "benefit",
       "star",
-      "id",
       "icon",
-      "buffType",
-      "benefit"
+      "id"
     ]
   },
   "CollegeTech": {
     "count": 279,
     "fields": [
-      "pos",
-      "preLine",
-      "maxValue",
+      "id",
+      "maxLevel",
+      "techType",
       "icon",
-      "id"
+      "pos"
     ]
   },
   "CollegeTechType": {
     "count": 15,
     "fields": [
-      "sort",
       "precondition",
+      "id",
       "recommend",
-      "pic",
-      "id"
+      "sort",
+      "pic"
     ]
   },
   "ComprehensiveIconCfg": {
     "count": 15,
     "fields": [
-      "redDotType",
-      "icon",
+      "style",
+      "order",
+      "effectPath",
       "id"
     ]
   },
   "ConditionGift": {
     "count": 6,
     "fields": [
-      "rewards",
+      "conditions",
       "id"
     ]
   },
@@ -1477,21 +1457,27 @@
   },
   "ConstructionLevelReward": {
     "count": 10,
-    "fields": []
+    "fields": [
+      "point",
+      "pointClaim",
+      "lv",
+      "id"
+    ]
   },
   "CorpseTide": {
     "count": 2,
     "fields": [
-      "rewards",
-      "triggerEvent"
+      "iconPic",
+      "backGroundPic",
+      "id"
     ]
   },
   "CorpseTideTask": {
     "count": 6,
     "fields": [
-      "showSort",
-      "tideId",
       "target",
+      "functionId",
+      "showSort",
       "id"
     ]
   },
@@ -1502,18 +1488,19 @@
   "CrystalRiddleGrid": {
     "count": 23,
     "fields": [
-      "rewards",
-      "pointX",
-      "pointY",
-      "type",
       "sortKey",
-      "id"
+      "id",
+      "taskId",
+      "pointY",
+      "pointX",
+      "rewards"
     ]
   },
   "CrystalRiddleReward": {
     "count": 10,
     "fields": [
       "score",
+      "rewards",
       "id"
     ]
   },
@@ -1522,14 +1509,15 @@
     "fields": [
       "taskIcon",
       "targets",
+      "taskReward",
       "id"
     ]
   },
   "DailyBundle": {
     "count": 15,
     "fields": [
-      "id",
-      "giftGroupId"
+      "giftGroupId",
+      "id"
     ]
   },
   "DawnBreak": {
@@ -1544,8 +1532,7 @@
   "DawnBreakLevel": {
     "count": 15,
     "fields": [
-      "id",
-      "acitivityId"
+      "id"
     ]
   },
   "DecorateBuy": {
@@ -1559,7 +1546,6 @@
     "count": 4,
     "fields": [
       "icon",
-      "background",
       "id"
     ]
   },
@@ -1567,68 +1553,63 @@
     "count": 387,
     "fields": [
       "cost",
-      "level",
       "id",
-      "buildingId",
-      "benefit"
+      "benefit",
+      "level",
+      "buildingId"
     ]
   },
   "DefineBenefit": {
     "count": 296,
     "fields": [
-      "powerFactor",
-      "paramType",
-      "paramType1",
-      "icon",
+      "belong",
       "id"
     ]
   },
   "Dialog": {
     "count": 5,
     "fields": [
-      "id"
+      "id",
+      "groupId"
     ]
   },
   "DialogNpc": {
     "count": 244,
     "fields": [
-      "scale",
       "spine",
-      "position",
       "id"
     ]
   },
   "DropInfo": {
     "count": 1590,
     "fields": [
-      "rate",
       "reward",
       "dropNo",
+      "rate",
       "id"
     ]
   },
   "EffectConfig": {
     "count": 60,
     "fields": [
-      "name",
       "time",
+      "name",
       "id"
     ]
   },
   "EggClaimLimit": {
     "count": 3,
     "fields": [
-      "claimLimit",
-      "id",
-      "claimType"
+      "id"
     ]
   },
   "EightDaysActBoxShow": {
     "count": 6,
     "fields": [
+      "showType",
       "iconClose",
-      "id",
-      "iconOpen"
+      "iconOpen",
+      "id"
     ]
   },
   "EightDaysActGuideCfg": {
@@ -1636,66 +1617,62 @@
     "fields": [
       "target",
       "icon",
+      "gotoId",
       "id"
     ]
   },
   "EightDaysActTask": {
     "count": 75,
     "fields": [
-      "showSort",
-      "reward",
-      "target",
-      "descParams",
+      "day",
       "scheduleMaxValue",
-      "id"
+      "id",
+      "reward",
+      "functionId",
+      "target",
+      "showType"
     ]
   },
   "EmergencyDisplay": {
     "count": 3,
     "fields": [
-      "mainPic",
       "taskType",
-      "showMap",
+      "monsterArray",
       "id"
     ]
   },
   "EmergencyTaskGroup": {
     "count": 7,
     "fields": [
-      "emergencyId",
-      "groupId",
+      "id",
+      "reward",
       "taskArray",
-      "stagePic",
-      "id"
+      "stage",
+      "afkBornMonsterId"
     ]
   },
   "Emoji": {
     "count": 2,
-    "fields": [
-      "sort",
-      "type",
-      "spine",
-      "pic",
-      "id"
-    ]
+    "fields": []
   },
   "EnergyCost": {
     "count": 10,
     "fields": [
-      "cost",
-      "powerVal",
+      "maxCount",
       "minCount",
+      "cost",
       "id"
     ]
   },
   "EquipmentBase": {
     "count": 16,
     "fields": [
-      "cost",
-      "itemId",
-      "manufacturable",
       "tips_icon",
-      "slot",
+      "unlockBuildingLevel",
+      "cost",
+      "costTime",
+      "itemId",
+      "quality",
       "icon",
       "id"
     ]
@@ -1703,6 +1680,7 @@
   "EquipmentMaterialDecompose": {
     "count": 5,
     "fields": [
+      "itemId",
       "reward",
       "id"
     ]
@@ -1710,76 +1688,75 @@
   "EquipmentMaterialSynthesis": {
     "count": 5,
     "fields": [
-      "reward",
+      "itemId",
       "id"
     ]
   },
   "EquipmentPromotion": {
     "count": 104,
     "fields": [
-      "cost",
-      "equipAdditionalBenefit",
       "extraAbility",
-      "equipPromotionLv",
+      "id",
+      "cost",
       "ability",
       "reward",
+      "equipPromotionLv",
       "equipBenefit",
-      "id"
+      "equipAdditionalBenefit"
     ]
   },
   "EquipmentStrengthen": {
     "count": 356,
     "fields": [
-      "cost",
       "equipBaseId",
-      "reward",
+      "cost",
       "ability",
-      "equipBenefit",
+      "reward",
+      "id",
       "equipLv",
-      "id"
+      "equipBenefit"
     ]
   },
   "EscortCartDetails": {
     "count": 6,
     "fields": [
-      "unionCarriage",
+      "marchSkinID",
+      "personalMailBanner",
+      "personalLogBanner",
+      "id",
       "personalEscort",
       "quality",
-      "id"
+      "personalInfoBanner",
+      "time"
     ]
   },
   "EscortCartPersonal": {
     "count": 180,
     "fields": [
+      "id",
+      "maxLevel",
       "quality",
       "rewardGroup",
-      "maxLevel",
-      "minLevel",
-      "id"
+      "minLevel"
     ]
   },
   "EscortCartQuality": {
     "count": 24,
     "fields": [
-      "quality",
-      "maxNumber",
       "minNumber",
+      "maxNumber",
       "id"
     ]
   },
   "EscortCartUnion": {
     "count": 6,
     "fields": [
-      "rewardGroup2",
-      "goldenRewardGroup4",
-      "rewardGroup4",
-      "rewardGroup3",
-      "goldenRewardGroup2",
-      "quality",
       "rewardGroup1",
-      "goldenRewardGroup3",
-      "goldenRewardGroup1",
-      "id"
+      "rewardGroup4",
+      "id",
+      "quality",
+      "rewardGroup3",
+      "rewardGroup2"
     ]
   },
   "EscortConvoyDescription": {
@@ -1792,26 +1769,24 @@
   "EscortMarchModel": {
     "count": 12,
     "fields": [
+      "configid",
+      "sprite",
       "marchModel",
       "quality",
-      "configid",
-      "escortType",
       "id"
     ]
   },
   "EscortParameter": {
     "count": 79,
     "fields": [
-      "value",
-      "id"
+      "value"
     ]
   },
   "EscortReward": {
     "count": 409,
     "fields": [
-      "rewardGroup",
       "reward",
-      "quality",
+      "rewardGroup",
       "id"
     ]
   },
@@ -1825,14 +1800,14 @@
   "ExchangeShop": {
     "count": 198,
     "fields": [
-      "shopType",
-      "sort",
-      "price",
-      "limitCount",
-      "buyLimit",
-      "tag",
+      "special",
       "item",
-      "id"
+      "sort",
+      "id",
+      "buyLimit",
+      "shopType",
+      "limitCount",
+      "price"
     ]
   },
   "ExpeditionBenefit": {
@@ -1842,26 +1817,21 @@
   "ExpeditionDifficult": {
     "count": 150,
     "fields": [
-      "soldierIcon",
-      "levelPower",
-      "levelSoldier",
-      "soldierID",
-      "difficult",
-      "rewardPreview",
-      "id"
+      "id",
+      "difficult"
     ]
   },
   "ExpeditionLevel": {
     "count": 3000,
     "fields": [
-      "monsterId",
-      "enemyAbility",
-      "preLevelId",
-      "levelOrder",
-      "campType",
       "reward",
       "rewardPreview",
-      "id"
+      "preLevelId",
+      "difficultId",
+      "monsterId",
+      "id",
+      "levelOrder",
+      "enemyAbility"
     ]
   },
   "ExploreDungeonBasicConfig": {
@@ -1905,16 +1875,15 @@
     "count": 700,
     "fields": [
       "npcBaseId",
-      "level",
-      "reward",
       "preId",
-      "id"
+      "id",
+      "level",
+      "reward"
     ]
   },
   "ExploreDungeonStageReward": {
     "count": 100,
     "fields": [
-      "reward",
       "id"
     ]
   },
@@ -1931,49 +1900,48 @@
   "FAQInformationStep": {
     "count": 38,
     "fields": [
-      "guidePic",
       "iconAtlas",
+      "id",
       "type",
-      "icon",
-      "id"
+      "guidePic",
+      "icon"
     ]
   },
   "FacebookMission": {
     "count": 3,
     "fields": [
-      "followersCount",
-      "roleDays",
       "reward",
-      "id"
+      "roleDays",
+      "id",
+      "followersCount"
     ]
   },
   "FightSettle": {
     "count": 40,
     "fields": [
-      "attackerDeadRatio",
+      "attackerHurtRatio",
       "type",
+      "id",
       "defenderHurtRatio",
-      "defenderDeadRatio",
-      "id"
+      "attackerDeadRatio"
     ]
   },
   "FightSettleShow": {
     "count": 11,
     "fields": [
-      "DeadtRatio",
+      "HurtRatio",
+      "id",
       "order",
-      "id"
+      "DeadtRatio"
     ]
   },
   "FightUnitSpecial": {
     "count": 29,
     "fields": [
-      "effectCfg",
-      "hp",
-      "id",
       "playerExteriorId",
-      "effectType",
-      "deadEffectArt"
+      "deadEffectArt",
+      "defence",
+      "id"
     ]
   },
   "FirstCharge": {
@@ -1986,8 +1954,8 @@
   "FlipBasicRewards": {
     "count": 22,
     "fields": [
+      "weight",
       "rewardItem",
-      "pool",
       "id"
     ]
   },
@@ -2002,26 +1970,25 @@
   "FlipCardTask": {
     "count": 4,
     "fields": [
-      "target",
-      "id",
-      "functionId"
+      "functionId",
+      "showSort",
+      "id"
     ]
   },
   "FlipOptionalRewards": {
     "count": 4,
     "fields": [
-      "rewardItem",
       "id"
     ]
   },
   "Fog": {
     "count": 26,
     "fields": [
-      "pos",
-      "endPos",
       "precondition",
+      "id",
+      "endPos",
       "startPos",
-      "id"
+      "pos"
     ]
   },
   "Formula": {
@@ -2034,11 +2001,11 @@
   "FunctionUnlock": {
     "count": 169,
     "fields": [
-      "useType",
-      "unlockReactionType",
-      "mainUIPath",
+      "condition",
+      "guideTrigger",
       "id",
-      "condition"
+      "useType",
+      "unlockReactionType"
     ]
   },
   "GetSource": {
@@ -2051,21 +2018,18 @@
   "GiftBase": {
     "count": 771,
     "fields": [
-      "actualPriceID",
-      "picture2",
-      "heroId",
-      "giftBanner",
-      "Layout",
       "rebateRatio",
-      "enterIcon",
-      "popUpOrder",
-      "allianceGiftID",
-      "specialDisaplayNo",
-      "picture",
+      "giftIcon",
+      "giftType",
+      "shopLabel",
+      "perProgress",
       "item",
+      "preGiftID",
       "id",
-      "iconAtlas",
-      "comprehensiveIconId",
+      "giftSort",
+      "openLv",
+      "giftGroup",
+      "hot",
       "giftName",
       "text"
     ]
@@ -2073,108 +2037,102 @@
   "GiftBaseLimit": {
     "count": 66,
     "fields": [
-      "preGiftID",
-      "id"
+      "id",
+      "preGiftID"
     ]
   },
   "GiftLuckyDrawBase": {
     "count": 7,
-    "fields": []
+    "fields": [
+      "id",
+      "day"
+    ]
   },
   "GiftUltimatePrizeBase": {
     "count": 15,
     "fields": [
       "day",
-      "id",
-      "actId"
+      "actId",
+      "id"
     ]
   },
   "GoToTarget": {
     "count": 1150,
     "fields": [
-      "type",
-      "quality",
-      "icon",
-      "id"
+      "id",
+      "type"
     ]
   },
   "GoldenEgg": {
     "count": 9,
     "fields": [
-      "randomMin",
-      "reward",
-      "eggType",
-      "referenceID",
-      "randomMax",
-      "issueBanner",
-      "itemID",
       "id",
-      "eggClaimLimitId"
+      "target"
     ]
   },
   "GrabOtherCoef": {
     "count": 3,
     "fields": [
-      "times",
-      "id"
+      "id",
+      "times"
     ]
   },
   "GuideBuilding": {
     "count": 29,
     "fields": [
-      "posId",
       "buildingId",
-      "id"
+      "id",
+      "posId"
     ]
   },
   "GuideDialog": {
     "count": 353,
     "fields": [
+      "time_en",
       "id",
-      "guideDialogModleId"
+      "isLeft"
     ]
   },
   "GuideDialogModle": {
     "count": 31,
     "fields": [
-      "playerExterioricon",
-      "id"
+      "id",
+      "playerExterioricon"
     ]
   },
   "GuideFight": {
     "count": 7,
     "fields": [
-      "BattleEf",
-      "modelResourcePath",
+      "disCond",
+      "id",
+      "monsterNumber",
       "battleId",
-      "needWin",
-      "modelPosition",
-      "modelRotation",
-      "id"
+      "battleHero"
     ]
   },
   "GuideStep": {
     "count": 329,
     "fields": [
-      "keyStep",
-      "id",
+      "groupId",
+      "event",
+      "guideOrder",
       "nextGuideId",
-      "groupId"
+      "target",
+      "id"
     ]
   },
   "GuideTaskStep": {
     "count": 5,
     "fields": [
-      "checkInfo",
+      "id",
       "guideStep",
-      "id"
+      "checkInfo"
     ]
   },
   "GuideUIType": {
     "count": 4,
     "fields": [
-      "id",
-      "btnType"
+      "id"
     ]
   },
   "GuideVideoCaption": {
@@ -2183,19 +2141,13 @@
   },
   "GuideWar": {
     "count": 2,
-    "fields": [
-      "battleId",
-      "assistingHero",
-      "type",
-      "playStorys",
-      "id"
-    ]
+    "fields": []
   },
   "HangUpLevelReward": {
     "count": 600,
     "fields": [
-      "reward",
-      "id"
+      "id",
+      "reward"
     ]
   },
   "HeroBackgroundReward": {
@@ -2207,25 +2159,27 @@
   "HeroBenefitDisplay": {
     "count": 160,
     "fields": [
-      "attrGroup",
       "benefitSource",
-      "benefitType",
+      "id",
+      "attrGroup",
       "baseBenefits",
-      "id"
+      "benefitType"
     ]
   },
   "HeroCamp": {
     "count": 3,
     "fields": [
       "restrainType",
-      "type",
-      "id"
+      "id",
+      "type"
     ]
   },
   "HeroCampAttr": {
     "count": 5,
     "fields": [
+      "icon",
       "sameCampHeroCount",
+      "id",
       "attribute"
     ]
   },
@@ -2233,57 +2187,58 @@
     "count": 5,
     "fields": [
       "max",
-      "min",
-      "id"
+      "id",
+      "min"
     ]
   },
   "HeroGrowth": {
     "count": 15,
     "fields": [
-      "growthHero",
-      "TaskId",
+      "activityImage",
       "id",
-      "activityImage"
+      "TaskId",
+      "growthHero"
     ]
   },
   "HeroGrowthTask": {
     "count": 150,
     "fields": [
-      "nextTask",
-      "reward",
-      "taskGroup",
       "heroGrowthBean",
-      "id"
+      "id",
+      "reward",
+      "nextTask",
+      "taskGroup"
     ]
   },
   "HeroHelp": {
     "count": 5,
     "fields": [
+      "def",
       "id",
-      "level",
-      "quality",
-      "heroId"
+      "hp",
+      "heroId",
+      "atk"
     ]
   },
   "HeroInfo": {
     "count": 315,
     "fields": [
-      "moveSpeed",
-      "volumeRadius",
       "alertRadius",
       "playerExteriorId",
-      "heroIcon",
-      "id"
+      "moveSpeed",
+      "id",
+      "attackCd",
+      "heroIcon"
     ]
   },
   "HeroLevel": {
     "count": 300,
     "fields": [
-      "cost",
-      "level",
       "attr",
+      "cost",
+      "id",
       "type",
-      "id"
+      "level"
     ]
   },
   "HeroModel": {
@@ -2295,10 +2250,10 @@
   "HeroRoadBase": {
     "count": 9,
     "fields": [
-      "id",
+      "baseDifficulty",
       "recommandPower",
-      "image",
-      "baseDifficulty"
+      "id",
+      "image"
     ]
   },
   "HeroRoadConfig": {
@@ -2308,50 +2263,51 @@
   "HeroRoadHelpCost": {
     "count": 18,
     "fields": [
-      "maxTimes",
       "difficult",
-      "minTimes",
-      "id"
+      "id",
+      "costGem"
     ]
   },
   "HeroRoadPersonalDifficult": {
     "count": 270,
     "fields": [
-      "grade",
-      "summonGroup",
-      "difficult",
+      "id",
       "monster",
-      "id"
+      "difficult",
+      "summonGroup",
+      "grade"
     ]
   },
   "HeroRoadPersonalReward": {
     "count": 45,
     "fields": [
       "reward",
-      "activityRewardEffect"
+      "difficult",
+      "id",
+      "stage"
     ]
   },
   "HeroRoadUnionBoss": {
     "count": 9,
     "fields": [
-      "bossID",
+      "reward",
+      "id",
+      "bossHP",
       "level",
       "num",
-      "guardID",
-      "reward",
+      "bossID",
       "difficult",
-      "id",
-      "bossHP"
+      "guardID"
     ]
   },
   "HeroSkillBase": {
     "count": 2045,
     "fields": [
       "skillId",
-      "heroId",
-      "param2",
+      "id",
       "power",
-      "id"
+      "param2",
+      "heroId"
     ]
   },
   "HeroSkillShow": {
@@ -2362,45 +2318,41 @@
     "count": 212,
     "fields": [
       "cost",
-      "level",
-      "skillSlot",
       "heroStar",
-      "id"
+      "skillSlot",
+      "id",
+      "level"
     ]
   },
   "HeroStar": {
     "count": 51,
     "fields": [
-      "cost",
       "attr",
-      "wholeStar",
-      "star",
-      "id"
+      "id",
+      "star"
     ]
   },
   "HomeCircularMenuList": {
     "count": 46,
     "fields": [
-      "id",
-      "btnIcon"
+      "id"
     ]
   },
   "HonorWall": {
     "count": 600,
     "fields": [
-      "levelBenefit",
       "heroLevel",
-      "piece",
-      "id"
+      "id",
+      "levelBenefit"
     ]
   },
   "HonourExpedition": {
     "count": 3,
     "fields": [
-      "campType",
+      "bannerPath",
       "prevDifficult",
-      "id",
-      "bannerPath"
+      "campType",
+      "id"
     ]
   },
   "HqBenefitDefault": {
@@ -2411,66 +2363,87 @@
     "count": 17,
     "fields": [
       "icon",
-      "id"
+      "cardId",
+      "id",
+      "sort",
+      "showUI",
+      "type",
+      "showType"
     ]
   },
   "HuntWarBox": {
     "count": 45,
     "fields": [
+      "id",
+      "reward",
       "waveNo",
       "difficulty",
-      "showReward",
-      "reward",
-      "id"
+      "showReward"
     ]
   },
   "HuntWarMonster": {
     "count": 90,
     "fields": [
-      "npcBaseId",
-      "waveNo",
-      "difficulty",
-      "killDropId",
-      "type",
       "id",
-      "atkDamBase"
+      "waveNo",
+      "showReward",
+      "npcCount",
+      "difficulty",
+      "npcBaseId"
     ]
   },
   "Item": {
     "count": 1433,
     "fields": [
+      "icon",
+      "preview",
+      "isUse",
+      "batchDefault",
       "typeSub",
-      "autoUse",
+      "id",
+      "sort",
+      "reward",
       "quality",
       "type",
-      "reward",
-      "icon",
-      "id"
+      "batchUseLimit"
     ]
   },
   "ItemBenefit": {
     "count": 8,
-    "fields": []
+    "fields": [
+      "benefit",
+      "id"
+    ]
   },
   "ItemGetSource": {
     "count": 483,
     "fields": [
+      "getSourceId",
+      "displayGoto",
       "id"
     ]
   },
   "ItemIcon": {
     "count": 25,
     "fields": [
-      "frame",
-      "quality",
       "icon",
-      "id"
+      "backpackStatisticsTypeArray",
+      "sortType",
+      "frame",
+      "giftGroupId",
+      "selectableResourcelitems",
+      "typeArray",
+      "id",
+      "resourceitems",
+      "getSourceId",
+      "quality",
+      "iconAtlas",
+      "lastGiftId"
     ]
   },
   "ItemPackType": {
     "count": 82,
     "fields": [
-      "tag",
       "id"
     ]
   },
@@ -2485,58 +2458,66 @@
     "count": 16,
     "fields": [
       "sdkLocal",
+      "systemLanguageType",
+      "displayNameKey",
       "displayName",
       "translateType",
-      "displayNameKey",
       "translateTitleType",
-      "systemLanguageType",
       "id"
     ]
   },
   "LanguageDisplay": {
     "count": 20,
     "fields": [
-      "id",
-      "displayNameKey"
+      "displayNameKey",
+      "id"
     ]
   },
   "LeaderBoard": {
     "count": 166,
     "fields": [
-      "minRanking",
+      "leaderBoardID",
+      "id",
       "reward",
       "maxRanking",
-      "activityRewardEffect",
-      "leaderBoardID",
-      "id"
+      "minRanking"
     ]
   },
   "LeaderImpeachment": {
     "count": 35,
     "fields": [
-      "castleLevel",
-      "r2Auth",
-      "r1Auth",
-      "r4Auth",
       "r3Auth",
-      "id"
+      "r2Auth",
+      "id",
+      "r4Auth",
+      "castleLevel",
+      "r1Auth"
     ]
   },
   "LightHope": {
     "count": 30,
     "fields": [
-      "abilityRequire",
+      "abc_4_approach_method",
+      "abc_3_approach_ability",
+      "abc_3_approach_gotoId",
       "abc_4_approach_ability",
       "abc_1_approach_ability",
-      "abc_3_approach_ability",
+      "abc_3_approach_method",
+      "abc_5_approach_recommend",
+      "abc_4_approach_gotoId",
+      "id",
+      "abc_4_approach_recommend",
+      "abc_5_approach_method",
+      "abc_5_approach_gotoId",
       "abc_2_approach_ability",
-      "abc_5_approach_ability",
-      "id"
+      "abilityRequire"
     ]
   },
   "Like": {
     "count": 8,
-    "fields": []
+    "fields": [
+      "id"
+    ]
   },
   "LoadingTips": {
     "count": 16,
@@ -2557,33 +2538,39 @@
   "LuckyDrawReward": {
     "count": 7,
     "fields": [
-      "id"
+      "weight",
+      "id",
+      "rewards"
     ]
   },
   "MailTab": {
     "count": 36,
     "fields": [
+      "icon",
+      "id",
       "typeScan",
-      "mailType",
-      "id"
+      "count",
+      "mailType"
     ]
   },
   "MailTemplate": {
     "count": 541,
     "fields": [
-      "mailSubType",
-      "id",
-      "replay",
-      "share",
       "mailType",
-      "chatChannel"
+      "id",
+      "mailSubType",
+      "share",
+      "chatChannel",
+      "replay"
     ]
   },
   "MailTypeScan": {
     "count": 11,
     "fields": [
-      "isDisplay",
-      "id"
+      "icon",
+      "effectiveTime",
+      "id",
+      "sort"
     ]
   },
   "MainInterfaceRecommendPosition": {
@@ -2593,36 +2580,40 @@
   "MainLandDecoration": {
     "count": 43,
     "fields": [
-      "prefabAssetName",
+      "clickSound",
+      "id",
+      "tilt",
       "tileCountY",
       "tileCountX",
-      "id"
+      "prefabAssetName"
     ]
   },
   "MainLandLeagueDecoration": {
     "count": 19,
     "fields": [
-      "prefabAssetName",
-      "id"
+      "canBuild",
+      "id",
+      "tileCountY",
+      "tileCountX",
+      "prefabAssetName"
     ]
   },
   "MapEmoji": {
     "count": 12,
     "fields": [
-      "sort",
-      "MapSkinInfoId",
-      "spine",
-      "pic",
+      "condition",
       "animation",
-      "id"
+      "id",
+      "sort",
+      "pic"
     ]
   },
   "MapLimitLevel": {
     "count": 20,
     "fields": [
       "rallyLevel",
-      "monsterLevel",
-      "id"
+      "id",
+      "monsterLevel"
     ]
   },
   "MapRefreshDay": {
@@ -2634,79 +2625,82 @@
   "MapSkinInfo": {
     "count": 29,
     "fields": [
-      "order",
       "unlockItem",
+      "id",
       "type",
+      "pic",
       "model",
       "UIPicaAlas",
-      "pic",
-      "id"
+      "order"
     ]
   },
   "MarchCoefficient": {
     "count": 47,
     "fields": [
-      "type",
-      "id"
+      "id",
+      "type"
     ]
   },
   "MarchItem": {
     "count": 3,
     "fields": [
-      "itemId",
-      "id"
+      "id",
+      "itemId"
     ]
   },
   "MarchZoomAsset": {
     "count": 15,
     "fields": [
-      "marchAsset",
-      "sprite",
-      "id"
+      "id",
+      "marchAsset"
     ]
   },
   "MarchZoomSwitch": {
     "count": 36,
     "fields": [
-      "groupEffect",
-      "top",
       "relation",
-      "id"
+      "id",
+      "line"
     ]
   },
   "MarchZoomUILike": {
     "count": 6,
     "fields": [
-      "startScale",
-      "id"
+      "id",
+      "startScale"
     ]
   },
   "MarkType": {
     "count": 3,
     "fields": [
-      "img",
-      "id"
+      "id",
+      "img"
     ]
   },
   "MatchChapter": {
     "count": 40,
     "fields": [
-      "ChapterType",
-      "castleLevel",
-      "backGroundSoundId",
+      "preId",
       "chapterId",
-      "id"
+      "clickableArea",
+      "id",
+      "difficultType",
+      "nextId",
+      "chapterNo"
     ]
   },
   "MatchLevelData": {
     "count": 818,
     "fields": [
-      "firstReward",
-      "gameType",
+      "BubbleType",
       "sortId",
+      "GoToTargets",
+      "firstReward",
+      "recommendedPower",
       "hangUpLevelNumber",
-      "enemyId",
+      "unlockIds",
       "preId",
+      "maxExp",
       "id"
     ]
   },
@@ -2728,30 +2722,27 @@
     "count": 181,
     "fields": [
       "skillid",
-      "UnlockHeroRank",
-      "id"
+      "id",
+      "skillType"
     ]
   },
   "MatchSkillImpact": {
     "count": 674,
     "fields": [
-      "attrType",
-      "targetSide",
-      "effectTiming",
-      "persistRound",
-      "effectValuePctExpr",
-      "stateId",
+      "effectType",
       "skillId",
-      "targetParam",
-      "target",
-      "id"
+      "attrType",
+      "persistRound",
+      "id",
+      "effectValuePctExpr"
     ]
   },
   "MatchSkillState": {
     "count": 86,
     "fields": [
-      "attrType",
       "icon",
+      "debuffIcon",
+      "attrType",
       "id"
     ]
   },
@@ -2764,70 +2755,66 @@
   "MdMonopolyEvent": {
     "count": 291,
     "fields": [
-      "nextId",
-      "modelResourcePath",
-      "reward",
-      "versionType",
       "icon",
+      "switchTimelineIndex",
+      "versionType",
       "showReward",
+      "reward",
       "bubblePosition",
-      "type",
-      "bubbleResourcePath",
+      "param2",
+      "disCond",
       "disBubble",
+      "bubbleResourcePath",
+      "param1",
+      "modelResourcePath",
+      "modelRotation",
+      "nextId",
       "id"
     ]
   },
   "MechCity": {
     "count": 86,
     "fields": [
-      "rallyId",
-      "modelId",
-      "firstOccupyPartRewardId",
-      "maxMarchNum",
-      "maxNPCNum",
       "area",
-      "icon",
+      "AdjacentCities",
       "Y",
       "X",
-      "AdjacentCities",
-      "level",
-      "hp",
-      "firstOccupyRewardId",
       "id",
-      "image1",
       "benefit"
     ]
   },
   "MechCityLevel": {
     "count": 6,
     "fields": [
-      "recommendPower",
       "icon",
-      "declareNeedPower",
-      "id"
+      "recommendPower",
+      "id",
+      "declareNeedPower"
     ]
   },
   "MechCityReward": {
     "count": 13,
     "fields": [
+      "groupId",
       "id",
-      "reward",
-      "groupId"
+      "reward"
     ]
   },
   "MechCityServerLevel": {
     "count": 6,
     "fields": [
-      "totalMechCityNum",
-      "level",
-      "id"
+      "mechCityDeclareNumMax",
+      "id",
+      "level"
     ]
   },
   "MechCityWarTask": {
     "count": 14,
     "fields": [
+      "reward",
+      "target",
       "id",
-      "activityId"
+      "showSort"
     ]
   },
   "MileStone": {
@@ -2835,67 +2822,72 @@
     "fields": [
       "banner",
       "fri",
-      "sun",
-      "tue",
-      "sat",
       "wed",
-      "mon",
-      "thu",
+      "id",
+      "goType",
       "gotoId",
-      "id"
+      "sun",
+      "thu",
+      "tue"
     ]
   },
   "ModelConfigBase": {
     "count": 157,
     "fields": [
-      "uiIcon",
-      "cityModel",
-      "uiIconAtlas",
-      "modelIcon",
-      "id"
+      "lookAtFor3D",
+      "id",
+      "modelIconAtlas",
+      "multiSelectIcon",
+      "modelIcon"
     ]
   },
   "ModelConfigLv1": {
     "count": 143,
     "fields": [
+      "atlas",
+      "assetPath",
+      "bottomConstSize",
+      "bottomTS",
       "id",
-      "middleTS",
-      "assetPath"
+      "middleConstSize",
+      "topTS",
+      "modelTS",
+      "lookAtFor3D"
     ]
   },
   "ModelConfigLv2": {
     "count": 335,
     "fields": [
-      "id",
       "subId",
+      "id",
       "bottomTS"
     ]
   },
   "ModelConfigLv3": {
     "count": 326,
     "fields": [
-      "subId",
       "assetPath",
+      "id",
+      "subId",
       "modelTS",
-      "bottomTS",
-      "id"
+      "bottomTS"
     ]
   },
   "ModelConfigLv4": {
     "count": 285,
     "fields": [
-      "id",
-      "modelTS",
       "subId",
-      "assetPath"
+      "assetPath",
+      "id",
+      "modelTS"
     ]
   },
   "ModelConfigLv5": {
     "count": 241,
     "fields": [
+      "assetPath",
       "id",
-      "subId",
-      "assetPath"
+      "subId"
     ]
   },
   "ModelConfigLv6": {
@@ -2917,27 +2909,24 @@
   "MonopolyEvent": {
     "count": 286,
     "fields": [
-      "modelResourcePath",
-      "reward",
+      "modelRotation",
       "versionType",
+      "bubblePosition",
       "showReward",
       "disCond",
-      "bubblePosition",
+      "reward",
+      "bubbleResourcePath",
       "param1",
+      "modelResourcePath",
       "eventId",
       "param2",
-      "modelRotation",
-      "bubbleResourcePath",
       "id"
     ]
   },
   "MonopolySceneEffect": {
     "count": 88,
     "fields": [
-      "position",
       "assetPath",
-      "scale",
-      "type",
       "clearCondition",
       "id"
     ]
@@ -2945,18 +2934,17 @@
   "MonopolySceneEffectTips": {
     "count": 3,
     "fields": [
+      "title",
+      "id",
       "areaId",
-      "spine",
       "position",
       "type",
-      "title",
-      "id"
+      "spine"
     ]
   },
   "MonsterKillBurnRally": {
     "count": 54,
     "fields": [
-      "monsterId",
       "id"
     ]
   },
@@ -2964,8 +2952,8 @@
     "count": 49,
     "fields": [
       "model",
-      "pic",
-      "id"
+      "id",
+      "pic"
     ]
   },
   "MonsterRefresh": {
@@ -2977,8 +2965,8 @@
   "MonsterSpawnLogic": {
     "count": 20,
     "fields": [
-      "selfleve",
-      "id"
+      "id",
+      "selfleve"
     ]
   },
   "MonthCard": {
@@ -2988,107 +2976,88 @@
   "MultiSoundConfig": {
     "count": 5,
     "fields": [
-      "soundconfigid",
-      "id"
+      "soundconfigid"
     ]
   },
   "NewCardsDraw": {
     "count": 19,
     "fields": [
       "drawTimes",
-      "redirectPool",
       "poolNo",
-      "id"
+      "id",
+      "redirectPool"
     ]
   },
   "NewCardsPool": {
     "count": 4,
     "fields": [
-      "tabIcon",
-      "prefab",
-      "gotoDailyCount",
-      "giftId",
-      "pic",
-      "initialPool",
-      "rewardType",
-      "displaySpineId",
+      "recruitAnimation",
       "guaranteedDisplayPool",
-      "cost",
-      "giftGroupId",
-      "type",
-      "tagSelectIcon",
+      "id",
       "exhibitPool",
-      "drawCount",
-      "unlock100Draw",
-      "tagImage",
-      "unlockId",
-      "id"
+      "newHeroId",
+      "switchId",
+      "initialPool"
     ]
   },
   "NewCardsPoolInfo": {
     "count": 1010,
     "fields": [
       "rate",
-      "reward",
-      "id"
+      "id",
+      "reward"
     ]
   },
   "NpcAnimation": {
     "count": 121,
     "fields": [
-      "lieDown",
+      "id",
+      "treatBeforeWalk",
       "sitF",
+      "sitC",
+      "sitA",
+      "lineUp",
+      "treatAfterWalk",
+      "sitB",
+      "prefab",
+      "sitE",
       "goToBed",
+      "sitD",
+      "npcEffect",
       "leaveTheBed",
       "type",
-      "prefab",
-      "sitA",
-      "npcEffect",
-      "sitE",
-      "sitB",
-      "treatAfterWalk",
-      "sitD",
-      "lineUp",
-      "treatBeforeWalk",
-      "sitC",
-      "id"
+      "lieDown"
     ]
   },
   "OnlineReward": {
     "count": 6,
     "fields": [
-      "onlineTime",
-      "id"
+      "id",
+      "onlineTime"
     ]
   },
   "OnlineRewardTip": {
     "count": 2,
-    "fields": [
-      "id"
-    ]
+    "fields": []
   },
   "OptionalWeight": {
     "count": 4,
-    "fields": [
-      "weight",
-      "times",
-      "id"
-    ]
+    "fields": []
   },
   "OriginalBuilding": {
     "count": 77,
     "fields": [
-      "id",
       "area",
-      "buildingId",
-      "arrangePosition"
+      "id",
+      "arrangePosition",
+      "buildingId"
     ]
   },
   "Parameter": {
     "count": 798,
     "fields": [
-      "value",
-      "id"
+      "id",
+      "value"
     ]
   },
   "PatrolTextTips": {
@@ -3098,29 +3067,30 @@
   "PersonalTargetGroup": {
     "count": 50,
     "fields": [
-      "stage",
-      "reward",
-      "groupId",
-      "minnimumDmg",
       "highestDmg",
-      "id"
+      "id",
+      "reward",
+      "stage",
+      "minnimumDmg"
     ]
   },
   "PlayerBenefitDisplay": {
     "count": 158,
     "fields": [
-      "benefitType",
       "benefitSource",
       "baseBenefits",
-      "id"
+      "id",
+      "benefitType"
     ]
   },
   "PlayerExterior": {
     "count": 240,
     "fields": [
-      "modelIcon",
-      "isNotFlipX",
-      "id"
+      "viewPercent",
+      "id",
+      "headIcon",
+      "viewClass",
+      "model"
     ]
   },
   "PlayerOffLineGrabSupply": {
@@ -3132,30 +3102,28 @@
   "PlayerProfile": {
     "count": 10,
     "fields": [
+      "unlockType",
       "sort",
-      "unlockItem",
-      "goTo",
-      "id",
+      "picAtlas",
+      "timeType",
       "pic",
-      "benefit"
+      "initWear"
     ]
   },
   "PlayerProfileBenefit": {
     "count": 19,
     "fields": [
-      "benefitType",
-      "benefitValue",
       "id"
     ]
   },
   "PlunderCoefficient": {
     "count": 3,
     "fields": [
-      "buffIcon",
+      "id",
       "coefMin",
+      "buffIcon",
       "times",
-      "coefMax",
-      "id"
+      "coefMax"
     ]
   },
   "PointCoin": {
@@ -3169,10 +3137,10 @@
     "count": 435,
     "fields": [
       "groupId",
+      "id",
       "pointSourcePic",
       "pointValue",
-      "pointSourceBean",
-      "id"
+      "pointSourceBean"
     ]
   },
   "PopUp": {
@@ -3191,10 +3159,10 @@
   "PopUpList": {
     "count": 22,
     "fields": [
-      "id",
-      "group",
+      "isUpdatePopUp",
       "order",
-      "isUpdatePopUp"
+      "id",
+      "group"
     ]
   },
   "Present": {
@@ -3206,9 +3174,9 @@
   "Presenteffect": {
     "count": 5,
     "fields": [
-      "id",
+      "count",
       "animation",
-      "count"
+      "id"
     ]
   },
   "Presentlevel": {
@@ -3221,15 +3189,15 @@
   "Product": {
     "count": 33,
     "fields": [
-      "thirdpartyGear",
-      "iosGear",
-      "voucherNum",
-      "price",
       "diamond",
+      "iosGear",
+      "price",
+      "voucherNum",
       "id",
       "token",
-      "productID",
-      "androidGear"
+      "androidGear",
+      "thirdpartyGear",
+      "productID"
     ]
   },
   "ProgressGroup": {
@@ -3240,7 +3208,6 @@
     "count": 5,
     "fields": [
       "id",
-      "reward",
       "progress"
     ]
   },
@@ -3254,9 +3221,9 @@
   "PvpBattleTestBase": {
     "count": 12,
     "fields": [
-      "attackHero",
       "id",
-      "defendHero"
+      "defendHero",
+      "attackHero"
     ]
   },
   "PvpDroneTestBase": {
@@ -3268,22 +3235,22 @@
   "PvpHeroTestBase": {
     "count": 161,
     "fields": [
-      "attackRadius",
-      "attrInfo",
-      "profes",
-      "normalSkillStr",
+      "quality",
+      "camp",
       "id",
-      "mpSkillStr",
       "passiveSkillStr",
-      "camp"
+      "attrInfo",
+      "mpSkillStr",
+      "attackCd",
+      "normalSkillStr"
     ]
   },
   "QueueGift": {
     "count": 4,
     "fields": [
+      "lastGiftId",
       "id",
-      "giftGroupId",
-      "lastGiftId"
+      "giftGroupId"
     ]
   },
   "QuickAccount": {
@@ -3295,8 +3262,7 @@
   "QuickAccount_Equip": {
     "count": 12,
     "fields": [
-      "id",
-      "itemId"
+      "id"
     ]
   },
   "RPGSceneConfig": {
@@ -3317,20 +3283,21 @@
   "RadarDigSpeed": {
     "count": 101,
     "fields": [
-      "id",
       "pax",
+      "id",
       "speed"
     ]
   },
   "RadarLevel": {
     "count": 15,
     "fields": [
-      "basicResourceEff",
-      "assistNumber",
-      "upgradeAddTaskIds",
-      "storageLimit",
+      "assistLimit",
+      "taskMaxDistance",
+      "taskMinDistance",
+      "rateDig",
       "id",
-      "showTaskCount",
+      "poolA",
+      "upgradeAddTaskIds",
       "refreshTaskCount",
       "needTaskCount"
     ]
@@ -3345,18 +3312,15 @@
   "RadarTypeInfo": {
     "count": 14,
     "fields": [
+      "infoIcon",
       "id",
-      "dailyLimit",
-      "bubbleIcon",
-      "infoIcon"
+      "bubbleIcon"
     ]
   },
   "RadarWorker": {
     "count": 26,
     "fields": [
-      "id",
-      "NewworkerIcon",
-      "workerIcon"
+      "id"
     ]
   },
   "RallyRefresh": {
@@ -3374,29 +3338,31 @@
   "RankUnionGroup": {
     "count": 5,
     "fields": [
+      "rewardIcon",
       "minRanking",
       "id",
       "reward",
-      "maxRanking",
-      "rewardIcon"
+      "maxRanking"
     ]
   },
   "RegularBattlePassReward": {
     "count": 15,
     "fields": [
       "freeSpecialDisplay",
-      "lv",
-      "freeReward",
       "id",
+      "freeReward",
+      "point",
       "chargeReward1",
-      "point"
+      "lv"
     ]
   },
   "ReportCompare": {
     "count": 14,
     "fields": [
+      "repel",
+      "order",
       "id",
-      "order"
+      "type"
     ]
   },
   "ReportContent": {
@@ -3409,9 +3375,9 @@
   "ReportTarget": {
     "count": 8,
     "fields": [
+      "order",
       "id",
-      "Group",
-      "order"
+      "Group"
     ]
   },
   "RescueNpc": {
@@ -3424,18 +3390,17 @@
   "ResourceInfo": {
     "count": 167,
     "fields": [
-      "level",
       "amount",
+      "id",
       "speed",
-      "castleLevel",
-      "showEffect",
-      "modelId",
-      "id"
+      "type",
+      "level"
     ]
   },
   "ResourceLoad": {
     "count": 4,
     "fields": [
+      "load",
       "id",
       "modelIcon"
     ]
@@ -3443,22 +3408,23 @@
   "ResourceSearch": {
     "count": 11,
     "fields": [
-      "pointType",
-      "buildingPic",
-      "type",
-      "sort",
-      "rallyType",
-      "id",
       "levellist",
-      "isOpenServerMaxLv",
-      "activityId"
+      "buildingPicAtlas",
+      "type",
+      "maxLevel",
+      "resourceType",
+      "id",
+      "sort",
+      "buildingPic",
+      "pointType",
+      "pic",
+      "picAtlas"
     ]
   },
   "ScoutAuth": {
     "count": 21,
     "fields": [
       "id",
-      "techTypeId",
       "noHide"
     ]
   },
@@ -3472,44 +3438,45 @@
     "count": 5,
     "fields": [
       "aGroupRandomTask",
-      "starGroupRandomTask",
-      "id",
-      "aGroupRandomTasknumber",
-      "castleLevel",
       "bGroupRandomTask",
-      "dailyTaskCount"
+      "dailyTaskCount",
+      "aGroupRandomTasknumber",
+      "id",
+      "castleLevel",
+      "starGroupRandomTask"
     ]
   },
   "SecretTask": {
     "count": 70,
     "fields": [
-      "icon",
-      "dispatchTime",
-      "secretLevel",
       "grabReward",
-      "reward",
-      "assistReward",
-      "heroStarCount",
-      "id",
       "TreasureMapReward",
-      "heroStar"
+      "heroLevelCount",
+      "heroQualityCount",
+      "quality",
+      "secretLevel",
+      "heroLevel",
+      "dispatchTime",
+      "id",
+      "reward",
+      "heroQuality",
+      "icon",
+      "assistReward"
     ]
   },
   "SecretTaskShow": {
     "count": 4,
     "fields": [
-      "id",
-      "modelId2",
       "quality",
-      "modelId"
+      "modelId",
+      "id",
+      "modelId2"
     ]
   },
   "SelfWeekCard": {
     "count": 20,
     "fields": [
       "id",
-      "associatedGiftPackID",
-      "optionalQuantity",
       "item"
     ]
   },
@@ -3517,7 +3484,6 @@
     "count": 15,
     "fields": [
       "id",
-      "Group",
       "order"
     ]
   },
@@ -3536,68 +3502,61 @@
     "count": 7,
     "fields": [
       "day",
-      "id"
+      "id",
+      "rewards"
     ]
   },
   "SevenDayVipReward": {
     "count": 5,
     "fields": [
-      "id",
-      "vipLevel",
-      "reward"
+      "reward",
+      "vipLevel"
     ]
   },
   "ShopBase": {
     "count": 9,
     "fields": [
-      "welfare",
-      "shopLabel",
+      "openLevel",
       "id",
+      "switchTime",
+      "shopPrefab",
       "shopSort",
-      "redDotType",
-      "shopPrefab"
+      "shopLabel"
     ]
   },
   "Sidebar": {
     "count": 12,
     "fields": [
-      "icon",
-      "type",
       "id",
-      "precondition"
+      "subType"
     ]
   },
   "Skill": {
     "count": 893,
     "fields": [
-      "targetParam",
-      "id",
+      "timelineKey",
       "attackType",
       "skillType",
-      "damageFactorStar",
-      "target",
-      "nharm",
-      "damageType"
+      "damageFactorExpr",
+      "id"
     ]
   },
   "SkillEffect": {
     "count": 441,
     "fields": [
-      "stateId",
-      "triggerCd",
-      "skillId",
-      "persistTime",
-      "targetSide",
-      "id",
       "target",
+      "skillId",
+      "effectValueExpr",
+      "stateId",
+      "targetSide",
       "targetParam",
-      "effectValuePctExpr"
+      "id",
+      "persistTime"
     ]
   },
   "SkillState": {
     "count": 120,
     "fields": [
-      "attrType",
       "id"
     ]
   },
@@ -3605,58 +3564,47 @@
     "count": 1552,
     "fields": [
       "groupId",
-      "id"
+      "id",
+      "hero",
+      "soldier",
+      "recAbility"
     ]
   },
   "SlgMonsterInfo": {
     "count": 1320,
     "fields": [
-      "level",
-      "arrowHeight",
-      "strength",
-      "preview",
-      "clickSound",
+      "modelId",
       "attrId",
-      "monsterIcon",
-      "id",
-      "recAbility",
-      "modelId"
+      "id"
     ]
   },
   "SlgNpcHeroConfig": {
     "count": 26,
     "fields": [
-      "attrInfo",
-      "normalSkillStr",
-      "chaseRange",
-      "attackRadius",
-      "volumeRadius",
-      "star",
-      "alertRadius",
-      "camp",
       "id",
-      "moveSpeed"
+      "attackRadius",
+      "playerExteriorId",
+      "mpSkillStr",
+      "normalSkillStr"
     ]
   },
   "SlgRallyFindReward": {
     "count": 20,
     "fields": [
       "findReward",
-      "rallyId",
-      "id"
+      "id",
+      "rallyId"
     ]
   },
   "SlgRallyInfo": {
     "count": 451,
     "fields": [
-      "level",
-      "strength",
-      "reward",
-      "recAbility",
-      "id",
       "preview",
-      "npcGroupId",
-      "joinReward"
+      "id",
+      "recAbility",
+      "modelId",
+      "pic",
+      "npcGroupId"
     ]
   },
   "SmartContestBase": {
@@ -3666,8 +3614,8 @@
   "SmartContestQuestion": {
     "count": 89,
     "fields": [
-      "id",
-      "answer"
+      "answer",
+      "id"
     ]
   },
   "SmartContestReward": {
@@ -3675,35 +3623,39 @@
     "fields": [
       "icon",
       "id",
-      "quality",
+      "reward",
       "correctCount",
-      "reward"
+      "quality"
     ]
   },
   "SoldierAttr": {
     "count": 31,
     "fields": [
-      "icon",
-      "hpStar",
-      "cure",
-      "soldierCostTime",
-      "attackStar",
-      "morale",
-      "ability",
-      "id",
-      "bigCard",
-      "bust",
-      "unLockCampLevel",
-      "showModelPath",
-      "defenseStar",
-      "conquerHospitalCostTime",
-      "load",
-      "recruit",
-      "soldierOrder",
       "resourcePath",
-      "model",
       "level",
-      "hospitalCostTime"
+      "ability",
+      "unLockCampLevel",
+      "conquerHospitalCostTime",
+      "defenseStar",
+      "recruit",
+      "hospitalCostTime",
+      "bubbleIcon",
+      "icon",
+      "load",
+      "showModelPath",
+      "soldierBenefit",
+      "bust",
+      "model",
+      "attackStar",
+      "soldierCostTime",
+      "cure",
+      "morale",
+      "id",
+      "soldierOrder",
+      "hpStar",
+      "bubbleAtlas",
+      "type",
+      "bigCard"
     ]
   },
   "SoldierPvpShow": {
@@ -3717,8 +3669,7 @@
     "count": 6,
     "fields": [
       "id",
-      "factor",
-      "srcType"
+      "targetType"
     ]
   },
   "SoldierType": {
@@ -3730,10 +3681,10 @@
   "SoundConfig": {
     "count": 963,
     "fields": [
-      "id",
-      "soundType",
       "resourcePath",
-      "maxCount"
+      "maxCount",
+      "id",
+      "soundType"
     ]
   },
   "SpecialMissionChapter": {
@@ -3747,11 +3698,11 @@
   "SpecialMissionLevel": {
     "count": 32,
     "fields": [
-      "sortId",
-      "chapter",
       "limitBaseLevel",
       "id",
-      "entryPosition"
+      "entryPosition",
+      "chapter",
+      "sortId"
     ]
   },
   "SpecialMissionMiniGame": {
@@ -3761,18 +3712,18 @@
   "SpecificLikeTarget": {
     "count": 14,
     "fields": [
-      "id",
-      "type"
+      "id"
     ]
   },
   "SquadBattleDecoration": {
     "count": 43,
     "fields": [
-      "canBuild",
-      "canReplace",
+      "clickSound",
       "id",
-      "prefabAssetName",
-      "tileCountX"
+      "tilt",
+      "tileCountY",
+      "tileCountX",
+      "prefabAssetName"
     ]
   },
   "StoryChapter": {
@@ -3780,17 +3731,17 @@
     "fields": [
       "icon",
       "reward",
-      "id",
-      "chapterIcon"
+      "chapterIcon",
+      "id"
     ]
   },
   "StoryTask": {
     "count": 7,
     "fields": [
-      "id",
       "tasks",
-      "nextId",
-      "rewards"
+      "rewards",
+      "id",
+      "nextId"
     ]
   },
   "StringParameter": {
@@ -3819,43 +3770,47 @@
   "StrongerAbilitySource": {
     "count": 12,
     "fields": [
-      "unlockId",
-      "abilitySource",
-      "castle2MaxValue",
+      "icon",
+      "gotoId",
+      "id",
       "orderId",
-      "id"
+      "castle2MaxValue"
     ]
   },
   "TargetReward": {
     "count": 526,
     "fields": [
       "targetConfigID",
-      "stage",
       "baseMinLv",
+      "id",
       "goalvalue1",
       "reward",
-      "rewardWorth",
-      "id"
+      "baseMaxLv",
+      "stage",
+      "rewardWorth"
     ]
   },
   "TargetRewardGroup": {
     "count": 34,
     "fields": [
+      "openingTime",
       "id",
-      "reward",
-      "openingTime"
+      "reward"
     ]
   },
   "Task": {
     "count": 1691,
     "fields": [
-      "displayBuildingLevel",
-      "preTaskId",
-      "showSort",
       "functionId",
-      "desc",
+      "versionType",
+      "showSort",
       "target",
+      "desc",
+      "preTaskId",
+      "reward",
+      "isShowTarget",
       "id",
+      "displayBuildingLevel",
       "taskName",
       "taskDesc"
     ]
@@ -3869,16 +3824,16 @@
   "TeamWaiting": {
     "count": 5,
     "fields": [
+      "id",
       "castleLevel",
-      "waitingTime",
-      "id"
+      "waitingTime"
     ]
   },
   "TechBenefitDisplay": {
     "count": 19,
     "fields": [
-      "baseBenefits",
       "tech_power",
+      "baseBenefits",
       "id",
       "benefitType"
     ]
@@ -3893,9 +3848,9 @@
   "TreasureBoxPoint": {
     "count": 7,
     "fields": [
-      "id",
-      "maxPoint",
       "number1",
+      "maxPoint",
+      "id",
       "miniPoint"
     ]
   },
@@ -3910,14 +3865,11 @@
   "TriggerGift": {
     "count": 204,
     "fields": [
-      "giftBaseID",
-      "cycle",
-      "id",
-      "popup",
-      "duration",
       "target",
-      "displayOrderOfSecondVerticalColumn",
-      "enterType"
+      "enterType",
+      "id",
+      "giftBaseID",
+      "displayOrderOfSecondVerticalColumn"
     ]
   },
   "UavActive": {
@@ -3929,90 +3881,91 @@
   "UavAdvance": {
     "count": 900,
     "fields": [
-      "increaseLevel",
-      "planUnlock",
+      "Benefit",
       "id",
       "power",
-      "progressTotal",
-      "Benefit"
+      "increaseLevel",
+      "progressTotal"
     ]
   },
   "UavAdvanceIncreaseSkill": {
     "count": 152,
     "fields": [
-      "increaseLevel",
-      "combat_power",
+      "increaseSkillid",
       "id",
-      "moduleId",
-      "increaseSkillid"
+      "combat_power",
+      "increaseLevel",
+      "moduleId"
     ]
   },
   "UavComponent": {
     "count": 2448,
     "fields": [
       "icon",
-      "exp",
-      "UavTypeId",
+      "componentBenefit",
       "slot",
-      "level",
-      "maxExp",
-      "itemId",
-      "expPercentage",
       "power",
+      "exp",
+      "level",
+      "itemId",
       "id",
-      "componentBenefit"
+      "UavTypeId",
+      "maxExp",
+      "expPercentage"
     ]
   },
   "UavComponentSuit": {
     "count": 24,
     "fields": [
-      "level",
-      "quality",
-      "id",
-      "power",
       "UavSuitId",
-      "componentBenefit"
+      "id",
+      "componentBenefit",
+      "power",
+      "quality",
+      "level"
     ]
   },
   "UavLevel": {
     "count": 766,
     "fields": [
-      "level",
-      "progressAdd",
-      "progressTotal",
+      "phase",
       "convertBenefit",
-      "uavConv",
-      "id",
+      "cost",
       "power",
-      "levelBenefit",
-      "cost"
+      "level",
+      "id",
+      "skinId",
+      "uavConv",
+      "progressTotal",
+      "progressAdd",
+      "levelBenefit"
     ]
   },
   "UavModuleStar": {
     "count": 272,
     "fields": [
       "startUpSkills",
-      "starLevel",
-      "starNumber",
-      "keyStarRating",
+      "itemExp",
       "id",
       "resetRefund",
       "moduleId",
-      "combatPower"
+      "starNumber",
+      "combatPower",
+      "starLevel"
     ]
   },
   "UavModuleSynthesis": {
     "count": 32,
     "fields": [
-      "Model",
-      "Synthesis",
-      "campType",
       "cost",
+      "Synthesis",
+      "Model",
       "buidingLV",
       "id",
       "quality",
-      "moduleType",
-      "medalId"
+      "medalId",
+      "campType",
+      "moduleType"
     ]
   },
   "UavPreview": {
@@ -4025,19 +3978,19 @@
   "UavSkillDes": {
     "count": 5,
     "fields": [
+      "uavLevel",
       "id",
-      "skillStar",
-      "uavLevel"
+      "skillStar"
     ]
   },
   "UavSkin": {
     "count": 3,
     "fields": [
       "clinicModelPath",
-      "cityModelPath",
       "slgScale",
-      "id",
-      "modelPath"
+      "cityModelPath",
+      "modelPath",
+      "id"
     ]
   },
   "UltimatePrizeAct": {
@@ -4049,15 +4002,14 @@
   "UltimatePrizeFreeReward": {
     "count": 21,
     "fields": [
-      "day",
-      "id"
+      "id",
+      "day"
     ]
   },
   "UltimatePrizeReward": {
     "count": 5,
     "fields": [
       "id",
-      "prizeOrder",
       "rewards"
     ]
   },
@@ -4082,9 +4034,7 @@
   "UnionCityColor": {
     "count": 16,
     "fields": [
-      "id",
-      "texture",
-      "color"
+      "id"
     ]
   },
   "UnionConst": {
@@ -4103,26 +4053,26 @@
   "UnionContributeRankReward": {
     "count": 4,
     "fields": [
-      "id",
       "minRank",
+      "id",
       "maxRank"
     ]
   },
   "UnionDelate": {
     "count": 40,
     "fields": [
+      "serverTime",
       "id",
-      "delateTime",
-      "serverTime"
+      "delateTime"
     ]
   },
   "UnionDiamondContribute": {
     "count": 25,
     "fields": [
-      "id",
-      "minTimes",
       "maxTimes",
-      "cost"
+      "minTimes",
+      "cost",
+      "id"
     ]
   },
   "UnionExpeditionAct": {
@@ -4132,29 +4082,29 @@
   "UnionExpeditionHurtBonus": {
     "count": 5,
     "fields": [
-      "id",
-      "maxDamg",
+      "minDamg",
       "extraBenefit",
-      "minDamg"
+      "id",
+      "maxDamg"
     ]
   },
   "UnionExpeditionTriple": {
     "count": 6,
     "fields": [
-      "level",
       "slgMonsterId",
       "id",
       "monsterCount",
-      "reward"
+      "reward",
+      "level"
     ]
   },
   "UnionGiftCfg": {
     "count": 14,
     "fields": [
-      "id",
       "pic",
+      "quailty",
       "exp",
-      "quailty"
+      "id"
     ]
   },
   "UnionGiftLevelCfg": {
@@ -4168,9 +4118,10 @@
     "count": 814,
     "fields": [
       "id",
+      "giftLevel",
+      "rate",
       "giftId",
-      "reward",
-      "rate"
+      "reward"
     ]
   },
   "UnionHelp": {
@@ -4189,9 +4140,9 @@
   "UnionLanguage": {
     "count": 16,
     "fields": [
+      "systemLanguageType",
       "id",
-      "sort",
-      "systemLanguageType"
+      "sort"
     ]
   },
   "UnionMark": {
@@ -4199,19 +4150,20 @@
     "fields": [
       "icon",
       "assetPath",
-      "descType",
-      "markType",
-      "id"
+      "id",
+      "markType"
     ]
   },
   "UnionMilestoneTaskCfg": {
     "count": 11,
     "fields": [
       "icon",
-      "startHour",
-      "id",
       "gotoId",
-      "milestoneTask"
+      "id",
+      "memberRewards",
+      "endHour",
+      "milestoneTask",
+      "leaderRewards"
     ]
   },
   "UnionQuit": {
@@ -4224,21 +4176,19 @@
   "UnionRankJob": {
     "count": 9,
     "fields": [
-      "icon",
-      "proportion",
+      "UnionJobPic1",
       "id",
-      "type",
       "auth",
-      "UnionJobPic1"
+      "icon"
     ]
   },
   "UnionRankReward": {
     "count": 8,
     "fields": [
-      "id",
       "minRank",
-      "maxRank",
-      "reward"
+      "reward",
+      "id",
+      "maxRank"
     ]
   },
   "UnionRecommendArea": {
@@ -4261,9 +4211,11 @@
     "count": 30,
     "fields": [
       "icon",
-      "maxLevel",
+      "id",
       "preLine",
-      "row"
+      "order",
+      "row",
+      "pos"
     ]
   },
   "UnionTechType": {
@@ -4275,30 +4227,29 @@
   "UnionTechUpgrade": {
     "count": 291,
     "fields": [
-      "upgradeTime",
-      "techLevel",
-      "techId",
-      "recommend",
-      "id",
+      "benefit",
+      "upgradeValue",
       "cost",
+      "upgradeTime",
+      "id",
+      "techId",
       "exp",
-      "benefit"
+      "techLevel"
     ]
   },
   "UnionUpgrade": {
     "count": 10,
     "fields": [
-      "exp",
-      "id"
+      "id",
+      "exp"
     ]
   },
   "UnlockSystem": {
     "count": 8,
     "fields": [
       "Icon",
-      "id",
-      "animShow",
-      "UnlockId"
+      "UnlockId",
+      "id"
     ]
   },
   "ViewPermissions": {
@@ -4311,10 +4262,10 @@
   "VipInfo": {
     "count": 20,
     "fields": [
+      "exp",
+      "vipGiftId",
       "icon",
       "id",
-      "vipGiftId",
-      "exp",
       "reward"
     ]
   },
@@ -4329,25 +4280,28 @@
     "count": 18,
     "fields": [
       "vip13",
-      "vip19",
-      "vip12",
-      "vip20",
-      "vip17",
-      "vip18",
-      "vip16",
-      "vip10",
       "vip14",
-      "id",
+      "vip19",
+      "vip20",
+      "vip8",
+      "vip7",
+      "vip9",
+      "vip17",
       "vip11",
+      "vip16",
+      "vip18",
+      "vip15",
       "sort",
-      "vip15"
+      "vip12",
+      "id",
+      "vip10"
     ]
   },
   "VipRadarWorkerInfo": {
     "count": 6,
     "fields": [
-      "id",
       "star",
+      "id",
       "count"
     ]
   },
@@ -4358,11 +4312,11 @@
   "WanderBossTask": {
     "count": 28,
     "fields": [
-      "showSort",
-      "id",
       "target",
       "show_goto",
-      "reward"
+      "reward",
+      "id",
+      "showSort"
     ]
   },
   "WanderMarchModel": {
@@ -4374,9 +4328,9 @@
   "WarZoneConf": {
     "count": 7,
     "fields": [
+      "largeGroupNum",
       "id",
-      "serverOpenDays",
-      "largeGroupNum"
+      "serverOpenDays"
     ]
   },
   "Warfrenzy": {
@@ -4386,32 +4340,31 @@
   "WeekCard": {
     "count": 6,
     "fields": [
-      "giftBaseId",
-      "reward",
-      "id"
+      "id",
+      "giftBaseId"
     ]
   },
   "WeekendBoss": {
     "count": 30,
     "fields": [
-      "benefitType",
-      "monsterPic",
-      "TombstonemonsterId",
-      "monsterId",
-      "lv",
       "monsterTagPath",
-      "id",
       "taskGroupID",
-      "monsterIconPath"
+      "TombstonemonsterId",
+      "benefitType",
+      "monsterIconPath",
+      "monsterId",
+      "monsterPic",
+      "id",
+      "lv"
     ]
   },
   "WeekendBossLeaderBoard": {
     "count": 7,
     "fields": [
-      "id",
-      "reward",
+      "minRanking",
       "maxRanking",
-      "minRanking"
+      "id",
+      "reward"
     ]
   },
   "WeekendBossTalk": {
@@ -4423,9 +4376,11 @@
   "WeekendBossTask": {
     "count": 120,
     "fields": [
-      "id",
       "taskGroupID",
-      "reward"
+      "reward",
+      "value",
+      "id",
+      "showSort"
     ]
   },
   "WeeklyShow": {
@@ -4435,27 +4390,27 @@
   "WelfareCenter": {
     "count": 10,
     "fields": [
-      "mainIconDisplayPriority",
-      "subscriptIcon",
+      "mainIconDisplayTime",
       "giftBaseID",
       "mainDisplayCondition",
+      "topIcon",
+      "mainIconDisplayPriority",
       "mainIcon",
       "id",
-      "welfareType",
-      "topIcon",
-      "mainIconDisplayTime"
+      "subscriptIcon"
     ]
   },
   "Worker": {
     "count": 383,
     "fields": [
-      "workerBust",
-      "TransformItem",
-      "workerSex",
-      "workerIcon",
-      "id",
       "medalId",
+      "TransformNum",
+      "workerIcon",
+      "workerBust",
       "sort",
+      "classify",
+      "quality",
+      "id",
       "group"
     ]
   },
@@ -4468,8 +4423,8 @@
   "WorldBattleDistance": {
     "count": 11,
     "fields": [
-      "id",
-      "distance"
+      "distance",
+      "id"
     ]
   },
   "WorldBossTalk": {
@@ -4492,60 +4447,64 @@
   "WorldMapDecoration": {
     "count": 16,
     "fields": [
-      "decorationLevel",
-      "id",
-      "tileCountY",
       "prefabAssetName",
-      "tileCountX"
+      "is3DModel",
+      "tileCountX",
+      "tileCountY",
+      "id",
+      "serverPointType"
     ]
   },
   "WorldMapDecorationZoomLevels": {
     "count": 14,
     "fields": [
+      "maxSize",
       "id",
-      "minSize",
-      "maxSize"
+      "minSize"
     ]
   },
   "WorldMapLegend": {
     "count": 17,
     "fields": [
       "icon",
-      "worldUnitType",
-      "id"
+      "id",
+      "worldUnitType"
     ]
   },
   "WorldMapUIFilter": {
     "count": 4,
     "fields": [
       "id",
-      "string",
-      "legendIds"
+      "string"
     ]
   },
   "WorldMapZoomLevels": {
     "count": 6,
     "fields": [
+      "maxSize",
       "id",
-      "minSize",
-      "maxSize"
+      "minSize"
     ]
   },
   "WorldObjects": {
     "count": 63,
     "fields": [
-      "clickFocusCameraScale",
+      "cover",
+      "clickFocusOffsetY",
       "zoomLevels",
-      "isClickFocus",
+      "clickInfoOffsetY",
       "id"
     ]
   },
   "WorldPlayerBirth": {
     "count": 100,
     "fields": [
-      "id",
+      "level",
+      "playerNumber",
+      "isInitBirthZone",
       "allianceBirth",
-      "block"
+      "block",
+      "id"
     ]
   },
   "WorldRandomBox": {
@@ -4557,48 +4516,54 @@
   "WorldWanderBoss": {
     "count": 20,
     "fields": [
+      "marchModelId",
       "id",
-      "rallyId",
-      "marchModelId"
+      "rallyId"
     ]
   },
   "WorldWanderBossRefresh": {
     "count": 2,
-    "fields": []
+    "fields": [
+      "wanderingMonsterSpawnLimit",
+      "refreshGroup",
+      "firstKillRewardTimes",
+      "activityId",
+      "attackLimit",
+      "id",
+      "taskGroup"
+    ]
   },
   "ZoneContestReward": {
     "count": 14,
     "fields": [
-      "id",
       "reward",
+      "id",
       "rank"
     ]
   },
   "ZoneContestScore": {
     "count": 7,
     "fields": [
-      "icon1",
-      "buttonShow",
-      "type",
-      "score",
-      "id",
       "defaultScore",
+      "type",
+      "buttonShow",
+      "icon1",
       "sort",
+      "id",
       "icon2"
     ]
   },
   "ZoneContestTask": {
     "count": 3,
     "fields": [
-      "id",
-      "target"
+      "reward"
     ]
   },
   "chatUI": {
     "count": 2,
     "fields": [
-      "order",
       "type",
+      "order",
       "icon",
       "id"
     ]

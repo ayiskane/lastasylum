@@ -1,32 +1,57 @@
 {
-  "5": {
-    "id": 5,
-    "modelConfigId": 40005,
+  "2": {
+    "modelConfigId": 40002,
+    "id": 2,
+    "animatorPath": "Tower/tower_rightdown_animator.overrideController",
     "coordinate": [
       509,
-      509
-    ],
-    "animatorPath": "Tower/tower_rightup_animator.overrideController"
+      491
+    ]
   },
   "3": {
-    "id": 3,
     "modelConfigId": 40003,
+    "id": 3,
+    "animatorPath": "Tower/tower_leftup_animator.controller",
     "coordinate": [
       491,
       509
-    ],
-    "animatorPath": "Tower/tower_leftup_animator.controller"
-  },
-  "4": {
-    "id": 4,
-    "modelConfigId": 40004,
-    "coordinate": [
-      491,
-      491
-    ],
-    "animatorPath": "Tower/tower_leftdown_animator.overrideController"
+    ]
   },
   "1": {
+    "type": 1,
+    "cityBlockId": 9999,
+    "area": 87,
+    "reward": [
+      {
+        "type": 11,
+        "count": 3000
+      },
+      {
+        "type": 99,
+        "id": "item_UseUp_recruitCoin",
+        "count": 50
+      },
+      {
+        "type": 99,
+        "id": "item_food_50k",
+        "count": 180
+      },
+      {
+        "type": 99,
+        "id": "item_wood_50k",
+        "count": 180
+      },
+      {
+        "type": 99,
+        "id": "item_steel_30k",
+        "count": 180
+      },
+      {
+        "type": 99,
+        "id": "item_optionalBox_Resource",
+        "count": 300
+      }
+    ],
     "AdjacentCities": [
       6001,
       6002,
@@ -38,49 +63,24 @@
         "Source": 905,
         "Value": 0.1
       }
-    ],
-    "cityBlockId": 9999,
-    "reward": [
-      {
-        "count": 3000,
-        "type": 11
-      },
-      {
-        "type": 99,
-        "count": 50,
-        "id": "item_UseUp_recruitCoin"
-      },
-      {
-        "type": 99,
-        "count": 180,
-        "id": "item_food_50k"
-      },
-      {
-        "type": 99,
-        "count": 180,
-        "id": "item_wood_50k"
-      },
-      {
-        "type": 99,
-        "count": 180,
-        "id": "item_steel_30k"
-      },
-      {
-        "type": 99,
-        "count": 300,
-        "id": "item_optionalBox_Resource"
-      }
-    ],
-    "type": 1,
-    "area": 87
+    ]
   },
-  "2": {
-    "id": 2,
-    "modelConfigId": 40002,
+  "4": {
+    "modelConfigId": 40004,
+    "id": 4,
+    "animatorPath": "Tower/tower_leftdown_animator.overrideController",
+    "coordinate": [
+      491,
+      491
+    ]
+  },
+  "5": {
+    "modelConfigId": 40005,
+    "id": 5,
+    "animatorPath": "Tower/tower_rightup_animator.overrideController",
     "coordinate": [
       509,
-      491
-    ],
-    "animatorPath": "Tower/tower_rightdown_animator.overrideController"
+      509
+    ]
   }
 }
