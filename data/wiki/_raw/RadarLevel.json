@@ -1,72 +1,99 @@
 {
-  "12": {
-    "assistNumber": 15,
-    "basicResourceEff": 1.15,
-    "showTaskCount": 10,
-    "id": 12,
-    "needTaskCount": 2500,
-    "refreshTaskCount": 12,
-    "storageLimit": 40,
+  "4": {
+    "assistLimit": 25,
     "upgradeAddTaskIds": [
-      500222,
-      500329,
-      300200,
-      300199,
-      100395
+      200508,
+      500186,
+      600325,
+      600324
+    ],
+    "id": 4,
+    "taskMaxDistance": 25,
+    "needTaskCount": 40,
+    "rateDig": 0,
+    "refreshTaskCount": 8,
+    "poolA": [
+      {
+        "id": 2,
+        "weight": 1000
+      },
+      {
+        "id": 4,
+        "weight": 0
+      },
+      {
+        "id": 11,
+        "weight": 0
+      },
+      {
+        "id": 14,
+        "weight": 0
+      }
     ]
   },
-  "13": {
-    "assistNumber": 20,
-    "basicResourceEff": 1.2,
-    "showTaskCount": 11,
-    "id": 13,
-    "needTaskCount": 3000,
-    "refreshTaskCount": 12,
-    "storageLimit": 40,
+  "3": {
+    "poolA": [
+      {
+        "id": 2,
+        "weight": 0
+      },
+      {
+        "id": 4,
+        "weight": 0
+      },
+      {
+        "id": 11,
+        "weight": 0
+      },
+      {
+        "id": 14,
+        "weight": 0
+      }
+    ],
+    "id": 3,
+    "taskMinDistance": 7,
+    "refreshTaskCount": 7,
+    "assistLimit": 25,
+    "needTaskCount": 30,
+    "rateDig": 0,
     "upgradeAddTaskIds": [
-      500222,
-      500329,
-      300205,
-      300204,
-      100400
-    ]
+      600305,
+      600309,
+      500162
+    ],
+    "taskMaxDistance": 25
   },
-  "10": {
-    "assistNumber": 15,
-    "basicResourceEff": 1.15,
-    "showTaskCount": 9,
-    "id": 10,
-    "needTaskCount": 1500,
-    "refreshTaskCount": 11,
-    "storageLimit": 40,
+  "6": {
+    "assistLimit": 25,
+    "showTaskCount": 7,
+    "id": 6,
+    "needTaskCount": 60,
     "upgradeAddTaskIds": [
-      500222,
-      500281,
-      300190,
-      300189,
-      100385
-    ]
+      600319,
+      600325,
+      500210,
+      500205
+    ],
+    "taskMaxDistance": 28
   },
-  "11": {
-    "assistNumber": 15,
-    "basicResourceEff": 1.15,
-    "showTaskCount": 10,
-    "id": 11,
-    "needTaskCount": 2000,
-    "refreshTaskCount": 11,
-    "storageLimit": 40,
+  "5": {
+    "assistLimit": 25,
+    "showTaskCount": 7,
+    "id": 5,
     "upgradeAddTaskIds": [
-      500222,
-      500305,
-      300195,
-      300194,
-      100390
-    ]
+      400143,
+      500210,
+      300145,
+      300144
+    ],
+    "needTaskCount": 50,
+    "rateDig": 0,
+    "refreshTaskCount": 9,
+    "taskMaxDistance": 28
   },
   "9": {
-    "showTaskCount": 9,
-    "id": 9,
-    "storageLimit": 35,
+    "basicResourceEff": 1.1,
+    "assistNumber": 10,
     "upgradeAddTaskIds": [
       500222,
       500257,
@@ -74,144 +101,67 @@
       300184,
       100380
     ],
-    "assistNumber": 10,
-    "needTaskCount": 1000,
-    "assistLimit": 35,
     "refreshTaskCount": 11,
-    "basicResourceEff": 1.1
-  },
-  "8": {
-    "assistNumber": 10,
-    "basicResourceEff": 1.1,
-    "showTaskCount": 8,
-    "id": 8,
-    "needTaskCount": 500,
     "assistLimit": 35,
+    "showTaskCount": 9,
+    "needTaskCount": 1000,
     "storageLimit": 35,
+    "id": 9
+  },
+  "2": {
+    "basicResourceEff": 1,
+    "id": 2,
+    "poolB": [
+      {
+        "id": 1,
+        "weight": 6000
+      },
+      {
+        "id": 3,
+        "weight": 4000
+      },
+      {
+        "id": 5,
+        "weight": 0
+      },
+      {
+        "id": 6,
+        "weight": 0
+      }
+    ],
+    "refreshTaskCount": 6,
+    "assistLimit": 0,
     "upgradeAddTaskIds": [
-      500222,
-      500233,
-      300180,
-      300179,
-      100375
-    ]
-  },
-  "15": {
-    "assistNumber": 20,
-    "basicResourceEff": 1.2,
-    "showTaskCount": 12,
-    "id": 15,
-    "needTaskCount": 5000,
-    "refreshTaskCount": 13,
-    "storageLimit": 40,
-    "upgradeAddTaskIds": [
-      500222,
-      500329,
-      300215,
-      300214,
-      100410
-    ]
-  },
-  "14": {
-    "assistNumber": 20,
-    "basicResourceEff": 1.2,
-    "showTaskCount": 12,
-    "id": 14,
-    "needTaskCount": 4000,
-    "refreshTaskCount": 12,
-    "storageLimit": 40,
-    "upgradeAddTaskIds": [
-      500222,
-      500329,
-      300210,
-      300209,
-      100405
-    ]
-  },
-  "7": {
-    "assistNumber": 10,
-    "taskMaxDistance": 28,
-    "showTaskCount": 8,
-    "id": 7,
-    "needTaskCount": 250,
-    "assistLimit": 30,
-    "storageLimit": 30,
-    "basicResourceEff": 1.1
-  },
-  "6": {
-    "showTaskCount": 7,
-    "id": 6,
-    "needTaskCount": 60,
-    "assistLimit": 25,
-    "taskMaxDistance": 28,
-    "upgradeAddTaskIds": [
-      600319,
-      600325,
-      500210,
-      500205
-    ]
-  },
-  "5": {
+      101001,
+      101002,
+      101003
+    ],
+    "taskMinDistance": 8,
+    "needTaskCount": 5,
     "rateDig": 0,
-    "taskMaxDistance": 28,
-    "showTaskCount": 7,
-    "id": 5,
-    "needTaskCount": 50,
-    "assistLimit": 25,
-    "refreshTaskCount": 9,
-    "upgradeAddTaskIds": [
-      400143,
-      500210,
-      300145,
-      300144
+    "taskMaxDistance": 13,
+    "poolA": [
+      {
+        "id": 2,
+        "weight": 0
+      },
+      {
+        "id": 4,
+        "weight": 0
+      },
+      {
+        "id": 11,
+        "weight": 0
+      },
+      {
+        "id": 14,
+        "weight": 0
+      }
     ]
   },
   "1": {
-    "poolA": [
-      {
-        "weight": 0,
-        "id": 2
-      },
-      {
-        "weight": 0,
-        "id": 4
-      },
-      {
-        "weight": 0,
-        "id": 11
-      },
-      {
-        "weight": 0,
-        "id": 14
-      }
-    ],
-    "poolB": [
-      {
-        "weight": 0,
-        "id": 1
-      },
-      {
-        "weight": 10000,
-        "id": 3
-      },
-      {
-        "weight": 0,
-        "id": 5
-      },
-      {
-        "weight": 0,
-        "id": 6
-      }
-    ],
-    "rateDig": 0,
-    "refreshTaskCount": 6,
-    "upgradeAddTaskIds": {},
     "basicResourceEff": 1,
-    "showTaskCount": 5,
-    "taskMinDistance": 8,
     "taskMaxDistance": 13,
-    "radarAddTaskIdsIconIconAtlas": "",
-    "assistLimit": 0,
     "initTaskIds": [
       1400185,
       301001,
@@ -219,121 +169,171 @@
       301003,
       301004
     ],
-    "radarAddTaskIdsIcon": ""
-  },
-  "4": {
-    "poolA": [
-      {
-        "weight": 1000,
-        "id": 2
-      },
-      {
-        "weight": 0,
-        "id": 4
-      },
-      {
-        "weight": 0,
-        "id": 11
-      },
-      {
-        "weight": 0,
-        "id": 14
-      }
-    ],
-    "rateDig": 0,
-    "taskMaxDistance": 25,
-    "id": 4,
-    "needTaskCount": 40,
-    "assistLimit": 25,
-    "refreshTaskCount": 8,
-    "upgradeAddTaskIds": [
-      200508,
-      500186,
-      600325,
-      600324
-    ]
-  },
-  "3": {
-    "poolA": [
-      {
-        "weight": 0,
-        "id": 2
-      },
-      {
-        "weight": 0,
-        "id": 4
-      },
-      {
-        "weight": 0,
-        "id": 11
-      },
-      {
-        "weight": 0,
-        "id": 14
-      }
-    ],
-    "id": 3,
-    "upgradeAddTaskIds": [
-      600305,
-      600309,
-      500162
-    ],
-    "taskMinDistance": 7,
-    "taskMaxDistance": 25,
-    "needTaskCount": 30,
-    "assistLimit": 25,
-    "refreshTaskCount": 7,
-    "rateDig": 0
-  },
-  "2": {
-    "poolA": [
-      {
-        "weight": 0,
-        "id": 2
-      },
-      {
-        "weight": 0,
-        "id": 4
-      },
-      {
-        "weight": 0,
-        "id": 11
-      },
-      {
-        "weight": 0,
-        "id": 14
-      }
-    ],
     "poolB": [
       {
-        "weight": 6000,
-        "id": 1
+        "id": 1,
+        "weight": 0
       },
       {
-        "weight": 4000,
-        "id": 3
+        "id": 3,
+        "weight": 10000
       },
       {
-        "weight": 0,
-        "id": 5
+        "id": 5,
+        "weight": 0
       },
       {
-        "weight": 0,
-        "id": 6
+        "id": 6,
+        "weight": 0
       }
     ],
-    "id": 2,
-    "upgradeAddTaskIds": [
-      101001,
-      101002,
-      101003
-    ],
-    "basicResourceEff": 1,
-    "taskMinDistance": 8,
-    "taskMaxDistance": 13,
-    "needTaskCount": 5,
-    "assistLimit": 0,
     "refreshTaskCount": 6,
-    "rateDig": 0
+    "assistLimit": 0,
+    "showTaskCount": 5,
+    "radarAddTaskIdsIcon": "",
+    "upgradeAddTaskIds": {},
+    "taskMinDistance": 8,
+    "rateDig": 0,
+    "radarAddTaskIdsIconIconAtlas": "",
+    "poolA": [
+      {
+        "id": 2,
+        "weight": 0
+      },
+      {
+        "id": 4,
+        "weight": 0
+      },
+      {
+        "id": 11,
+        "weight": 0
+      },
+      {
+        "id": 14,
+        "weight": 0
+      }
+    ]
+  },
+  "7": {
+    "assistLimit": 30,
+    "showTaskCount": 8,
+    "assistNumber": 10,
+    "taskMaxDistance": 28,
+    "needTaskCount": 250,
+    "id": 7,
+    "storageLimit": 30,
+    "basicResourceEff": 1.1
+  },
+  "10": {
+    "basicResourceEff": 1.15,
+    "showTaskCount": 9,
+    "assistNumber": 15,
+    "storageLimit": 40,
+    "needTaskCount": 1500,
+    "upgradeAddTaskIds": [
+      500222,
+      500281,
+      300190,
+      300189,
+      100385
+    ],
+    "refreshTaskCount": 11,
+    "id": 10
+  },
+  "11": {
+    "basicResourceEff": 1.15,
+    "showTaskCount": 10,
+    "assistNumber": 15,
+    "storageLimit": 40,
+    "needTaskCount": 2000,
+    "upgradeAddTaskIds": [
+      500222,
+      500305,
+      300195,
+      300194,
+      100390
+    ],
+    "refreshTaskCount": 11,
+    "id": 11
+  },
+  "12": {
+    "basicResourceEff": 1.15,
+    "showTaskCount": 10,
+    "assistNumber": 15,
+    "storageLimit": 40,
+    "needTaskCount": 2500,
+    "upgradeAddTaskIds": [
+      500222,
+      500329,
+      300200,
+      300199,
+      100395
+    ],
+    "refreshTaskCount": 12,
+    "id": 12
+  },
+  "8": {
+    "assistLimit": 35,
+    "showTaskCount": 8,
+    "assistNumber": 10,
+    "id": 8,
+    "needTaskCount": 500,
+    "upgradeAddTaskIds": [
+      500222,
+      500233,
+      300180,
+      300179,
+      100375
+    ],
+    "storageLimit": 35,
+    "basicResourceEff": 1.1
+  },
+  "15": {
+    "basicResourceEff": 1.2,
+    "showTaskCount": 12,
+    "assistNumber": 20,
+    "storageLimit": 40,
+    "needTaskCount": 5000,
+    "upgradeAddTaskIds": [
+      500222,
+      500329,
+      300215,
+      300214,
+      100410
+    ],
+    "refreshTaskCount": 13,
+    "id": 15
+  },
+  "14": {
+    "basicResourceEff": 1.2,
+    "showTaskCount": 12,
+    "assistNumber": 20,
+    "storageLimit": 40,
+    "needTaskCount": 4000,
+    "upgradeAddTaskIds": [
+      500222,
+      500329,
+      300210,
+      300209,
+      100405
+    ],
+    "refreshTaskCount": 12,
+    "id": 14
+  },
+  "13": {
+    "basicResourceEff": 1.2,
+    "showTaskCount": 11,
+    "assistNumber": 20,
+    "storageLimit": 40,
+    "needTaskCount": 3000,
+    "upgradeAddTaskIds": [
+      500222,
+      500329,
+      300205,
+      300204,
+      100400
+    ],
+    "refreshTaskCount": 12,
+    "id": 13
   }
 }

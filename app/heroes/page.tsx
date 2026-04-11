@@ -12,26 +12,40 @@ interface HeroEntry {
 
 // Camp/class: 0=Warrior, 1=Ranger, 2=Warlock
 const CAMP_ICON: Record<number, string> = {
-  0: '/images/icons/pic_sjboss_zy1.png', // Warrior (red)
-  1: '/images/icons/pic_sjboss_zy2.png', // Ranger (blue)
-  2: '/images/icons/pic_sjboss_zy3.png', // Warlock (green)
+  0: '/images/icons/pic_sjboss_zy1.png',
+  1: '/images/icons/pic_sjboss_zy2.png',
+  2: '/images/icons/pic_sjboss_zy3.png',
 }
 const CAMP_NAMES: Record<number, string> = {
   0: 'Warrior', 1: 'Ranger', 2: 'Warlock',
 }
 
-// Army type
+// Army type: 0=Support, 1=Tank, 3=Damage
 const ARMY_ICON: Record<number, string> = {
+  0: '/images/icons/ico_yx_dw3.png',
   1: '/images/icons/ico_yx_dw1.png',
   3: '/images/icons/ico_yx_dw2.png',
 }
+const ARMY_NAMES: Record<number, string> = {
+  0: 'Support', 1: 'Tank', 3: 'Damage',
+}
 
-// Rarity labels
+// Rarity label images
 const RARITY_LABEL: Record<number, string> = {
   2: '/images/icons/font_pz_2.png',
   3: '/images/icons/font_pz_3.png',
   4: '/images/icons/font_pz_4.png',
   5: '/images/icons/font_pz_5.png',
+}
+
+// Quality frame backgrounds (from Zombie_CommonForK3_RGB)
+const QUALITY_FRAME: Record<number, string> = {
+  1: '/images/items/Icon_item_white.png',
+  2: '/images/items/Icon_item_green.png',
+  3: '/images/items/Icon_item_blue.png',
+  4: '/images/items/Icon_item_purple.png',
+  5: '/images/items/Icon_item_yellow.png',
+  6: '/images/items/Icon_item_red.png',
 }
 
 export default function HeroesPage() {
@@ -52,12 +66,8 @@ export default function HeroesPage() {
     )
   }
 
-  const armyTypes = [...new Set(heroes.map(h => h.armyType))].filter(t => t > 0).sort()
-  const campTypes = [0, 1, 2] // All three roles: Warrior, Ranger, Warlock
-  const armyNames: Record<number, string> = {}
-  heroes.forEach(h => {
-    if (h.armyType > 0) armyNames[h.armyType] = h.armyName
-  })
+  const armyTypes = [1, 3, 0]
+  const campTypes = [0, 1, 2]
 
   const filtered = heroes.filter(h =>
     (filterArmy === null || h.armyType === filterArmy) &&
@@ -78,7 +88,7 @@ export default function HeroesPage() {
       {/* Filters */}
       <div className="flex flex-wrap gap-4 mb-6">
         <div className="flex items-center gap-1.5">
-          <span className="text-[10px] text-asylum-hint uppercase tracking-wider mr-1">Class</span>
+          <span className="text-[10px] text-asylum-hint uppercase tracking-wider mr-1">Type</span>
           <button onClick={() => setFilterArmy(null)}
             className={`text-[11px] px-2.5 py-1 rounded-lg transition-colors ${
               filterArmy === null ? 'bg-asylum-accent/15 text-asylum-accent border border-asylum-accent/30'
@@ -89,7 +99,7 @@ export default function HeroesPage() {
                 filterArmy === t ? 'bg-asylum-accent/15 text-asylum-accent border border-asylum-accent/30'
                   : 'bg-asylum-surface border border-asylum-border text-asylum-muted hover:text-asylum-text'}`}>
               {ARMY_ICON[t] && <img src={ARMY_ICON[t]} alt="" className="w-5 h-5" />}
-              {armyNames[t]}
+              {ARMY_NAMES[t]}
             </button>
           ))}
         </div>
@@ -145,26 +155,32 @@ export default function HeroesPage() {
 }
 
 function HeroCard({ hero }: { hero: HeroEntry }) {
+  const frameSrc = QUALITY_FRAME[hero.quality] || QUALITY_FRAME[3]
+
   return (
     <Link href={`/heroes/${hero.id}`}
       className="group flex flex-col items-center gap-1.5 transition-transform hover:scale-105">
-      {/* Outer wrapper with padding for badges to overflow into */}
+      {/* Outer wrapper with padding for badges */}
       <div className="relative w-[88px] h-[88px]">
-        {/* Hero icon — plain square with subtle border, no gradient bg */}
-        <div className="absolute inset-[8px] rounded-xl overflow-hidden bg-asylum-surface border border-asylum-border/60 group-hover:border-asylum-accent/50 transition-colors">
-          <GameImage
-            src={hero.heroIcon ? `/images/heroes/${hero.heroIcon}.png` : ''}
-            alt={hero.name}
-            fallback="⚔️"
-            className="w-full h-full object-cover"
-          />
+        {/* Quality frame background — the game's actual item frame image */}
+        <div className="absolute inset-[6px] rounded-xl overflow-hidden">
+          <img src={frameSrc} alt="" className="absolute inset-0 w-full h-full" />
+          {/* Hero icon on top of frame */}
+          <div className="absolute inset-[4px] rounded-lg overflow-hidden">
+            <GameImage
+              src={hero.heroIcon ? `/images/heroes/${hero.heroIcon}.png` : ''}
+              alt={hero.name}
+              fallback="⚔️"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
         {/* Army type badge — top right */}
-        {hero.armyType > 0 && ARMY_ICON[hero.armyType] && (
-          <img src={ARMY_ICON[hero.armyType]} alt={hero.armyName}
+        {ARMY_ICON[hero.armyType] && (
+          <img src={ARMY_ICON[hero.armyType]} alt={ARMY_NAMES[hero.armyType]}
             className="absolute top-0 right-0 w-[28px] h-[28px] drop-shadow-lg" />
         )}
-        {/* Camp/role badge — bottom left (all heroes have one now) */}
+        {/* Camp/role badge — bottom left */}
         {CAMP_ICON[hero.campType] && (
           <img src={CAMP_ICON[hero.campType]} alt={CAMP_NAMES[hero.campType]}
             className="absolute bottom-0 left-0 w-[30px] h-[30px] drop-shadow-lg" />

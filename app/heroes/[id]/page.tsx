@@ -32,10 +32,14 @@ const CAMP_LABEL: Record<number, string> = {
   0: 'Warrior', 1: 'Ranger', 2: 'Warlock',
 }
 
-// Army type icons from game
+// Army type icons: 0=Support, 1=Tank, 3=Damage
 const ARMY_ICON_SRC: Record<number, string> = {
-  1: '/images/icons/ico_yx_dw1.png', // Infantry
-  3: '/images/icons/ico_yx_dw2.png', // Aircraft
+  0: '/images/icons/ico_yx_dw3.png', // Support (flask)
+  1: '/images/icons/ico_yx_dw1.png', // Tank (shield)
+  3: '/images/icons/ico_yx_dw2.png', // Damage (wing)
+}
+const ARMY_LABEL: Record<number, string> = {
+  0: 'Support', 1: 'Tank', 3: 'Damage',
 }
 
 // Rarity label images
@@ -165,7 +169,7 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
               )}
               <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-asylum-surface text-asylum-muted border border-asylum-border flex items-center gap-1">
                 {ARMY_ICON_SRC[hero.armyType] && <img src={ARMY_ICON_SRC[hero.armyType]} alt="" className="w-4 h-4" />}
-                {hero.armyName}
+                {ARMY_LABEL[hero.armyType] || hero.armyName}
               </span>
               <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-asylum-surface text-asylum-muted border border-asylum-border flex items-center gap-1">
                 {CAMP_ICON_SRC[hero.campType] && <img src={CAMP_ICON_SRC[hero.campType]} alt="" className="w-4 h-4" />}
