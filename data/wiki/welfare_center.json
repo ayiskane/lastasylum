@@ -1,175 +1,175 @@
 {
-  "5010": {
-    "mainIcon": "Icon_UI_Main_SecondQueue",
-    "id": 5010,
-    "topIcon": "Icon_Welfare_SecondQueue",
-    "welfareType": 5,
-    "subscriptIcon": "common_img_bannerCorner1",
-    "giftBaseID": 300000003,
-    "mainIconDisplayTime": 3600,
-    "mainIconDisplayPriority": 1000,
-    "mainDisplayCondition": [
-      {
-        "param2": 1,
-        "id": 110004,
-        "param1": 300000021
-      }
-    ]
-  },
-  "10050": {
-    "mainIcon": "Icon_UI_Main_Week",
-    "bigPic": "UI_Sprite/Banner/K3Banner/Banner_shop_daily.png",
-    "welfareConfig": 5000,
-    "displaySort": 3000,
-    "topIcon": "Icon_Activity_SilverCard",
-    "welfareType": 52,
-    "id": 10050,
-    "giftBaseID": 300000012,
-    "openFrequency": -1,
-    "mainIconDisplayTime": 3600,
-    "mainIconDisplayPriority": 999,
-    "mainDisplayCondition": [
-      {
-        "param2": 1,
-        "id": 110004,
-        "param1": 300000021
-      }
-    ],
-    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_weekCard.png"
-  },
-  "10040": {
-    "bigPic": "",
-    "displaySort": 0,
-    "openCondition": {},
-    "welfareType": 51,
-    "haveMainIconDisplayIcon": false,
-    "openFrequency": -1,
-    "welfareConfig": 4000,
-    "id": 10040,
-    "welfareBanner": ""
-  },
-  "8010": {
-    "welfareType": 8,
-    "haveMainIconDisplayIcon": 0,
-    "openFrequency": -1,
-    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_reconnoitre.png",
-    "bigPic": "UI_Sprite/Banner/K3Banner/Banner_reconnoitre.png",
-    "id": 8010,
-    "displaySort": 1,
-    "openCondition": [
-      {
-        "param2": 6,
-        "id": 20103,
-        "param1": 1001
-      }
-    ]
-  },
-  "1020": {
-    "mainIcon": "icon_Hero_09",
-    "bigPic": "UI/Models/SpineAssets_F/RechargeSpine/Shouchong_Yase/Shouchong_Yase.prefab",
-    "welfareType": 1,
-    "displaySort": 8000,
-    "openCondition": [
-      {
-        "param2": 300000021,
-        "id": 10003001,
-        "param1": 5
-      }
-    ],
-    "comprehensiveIconId": 1006,
-    "haveMainIconDisplayIcon": false,
-    "giftBaseID": 901500001,
-    "heroId": 10007,
-    "spine": 3001,
-    "subscriptIcon": "common_img_bannerCorner1",
-    "id": 1020,
-    "welfareBanner": ""
-  },
   "5011": {
-    "mainDisplayCondition": [
-      {
-        "param2": 1,
-        "id": 110004,
-        "param1": 300000021
-      }
-    ],
+    "id": 5011,
+    "mainIconDisplayTime": 3600,
+    "topIcon": "Icon_Welfare_SecondQueue",
     "subscriptIcon": "common_img_bannerCorner1",
     "giftBaseID": 300000006,
-    "mainIconDisplayTime": 3600,
-    "mainIconDisplayPriority": 1000,
-    "mainIcon": "Icon_UI_Main_SecondQueue",
-    "id": 5011,
-    "topIcon": "Icon_Welfare_SecondQueue"
-  },
-  "10060": {
-    "mainIcon": "Icon_UI_Main_Month",
-    "bigPic": "UI_Sprite/Banner/K3Banner/Banner_shop_limit.png",
-    "displaySort": 4000,
-    "topIcon": "Icon_Activity_GoldCard",
-    "welfareType": 53,
-    "haveMainIconDisplayIcon": 0,
-    "giftBaseID": 300000011,
-    "welfareConfig": 6000,
-    "id": 10060,
-    "openFrequency": -1,
-    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_monthCard.png"
-  },
-  "5012": {
     "mainDisplayCondition": [
       {
-        "param2": 1,
         "id": 110004,
-        "param1": 300000021
+        "param1": 300000021,
+        "param2": 1
       }
     ],
+    "mainIcon": "Icon_UI_Main_SecondQueue",
+    "mainIconDisplayPriority": 1000
+  },
+  "1010": {
+    "openCondition": [
+      {
+        "id": 20103,
+        "param1": 1001,
+        "param2": 2
+      }
+    ],
+    "bigPic": "UI/Models/SpineAssets_F/RechargeSpine/Shouchong_Marlena_Tag/Shouchong_Marlena_Tag.prefab",
+    "welfareType": 60,
+    "triggerBigPic": "Pic_UI_FirstCharge",
+    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_firstPay.png",
+    "heroId": 30006,
+    "mainIcon": "Icon_UI_Main_FirstPay",
+    "topIcon": "Pic_Activity_Notice_FirstCharge",
     "subscriptIcon": "common_img_bannerCorner1",
-    "giftBaseID": 300000007,
+    "spine": 3001,
+    "giftBaseID": 300000021,
+    "displaySort": 7000,
+    "mainIconDisplayPriority": 1002,
+    "comprehensiveIconId": 2001
+  },
+  "10060": {
+    "id": 10060,
+    "bigPic": "UI_Sprite/Banner/K3Banner/Banner_shop_limit.png",
+    "openFrequency": -1,
+    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_monthCard.png",
+    "welfareType": 53,
+    "mainIcon": "Icon_UI_Main_Month",
+    "welfareConfig": 6000,
+    "giftBaseID": 300000011,
+    "displaySort": 4000,
+    "haveMainIconDisplayIcon": 0,
+    "topIcon": "Icon_Activity_GoldCard"
+  },
+  "5010": {
+    "id": 5010,
     "mainIconDisplayTime": 3600,
     "mainIconDisplayPriority": 1000,
     "mainIcon": "Icon_UI_Main_SecondQueue",
-    "id": 5012,
+    "welfareType": 5,
+    "giftBaseID": 300000003,
+    "mainDisplayCondition": [
+      {
+        "id": 110004,
+        "param1": 300000021,
+        "param2": 1
+      }
+    ],
+    "subscriptIcon": "common_img_bannerCorner1",
     "topIcon": "Icon_Welfare_SecondQueue"
   },
-  "1010": {
-    "mainIcon": "Icon_UI_Main_FirstPay",
-    "welfareType": 60,
-    "bigPic": "UI/Models/SpineAssets_F/RechargeSpine/Shouchong_Marlena_Tag/Shouchong_Marlena_Tag.prefab",
-    "mainIconDisplayPriority": 1002,
-    "displaySort": 7000,
-    "openCondition": [
-      {
-        "param2": 2,
-        "id": 20103,
-        "param1": 1001
-      }
-    ],
-    "comprehensiveIconId": 2001,
-    "heroId": 30006,
-    "giftBaseID": 300000021,
-    "triggerBigPic": "Pic_UI_FirstCharge",
-    "spine": 3001,
-    "topIcon": "Pic_Activity_Notice_FirstCharge",
-    "subscriptIcon": "common_img_bannerCorner1",
-    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_firstPay.png"
+  "10040": {
+    "id": 10040,
+    "bigPic": "",
+    "openFrequency": -1,
+    "welfareBanner": "",
+    "welfareType": 51,
+    "welfareConfig": 4000,
+    "displaySort": 0,
+    "haveMainIconDisplayIcon": false,
+    "openCondition": {}
   },
   "10070": {
+    "id": 10070,
     "bigPic": "UI_Sprite/Banner/K3Banner/Banner_shop_daily.png",
+    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_shop_daily.png",
+    "welfareType": 31,
     "welfareConfig": 10070,
-    "displaySort": 5000,
     "openCondition": [
       {
-        "param2": 4,
         "id": 20103,
-        "param1": 1001
+        "param1": 1001,
+        "param2": 4
       }
     ],
-    "welfareType": 31,
-    "haveMainIconDisplayIcon": 0,
-    "giftBaseID": 300000004,
-    "id": 10070,
-    "topIcon": "Icon_Welfare_Fund",
-    "showDiamond": 50000,
     "mail": 8734,
-    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_shop_daily.png"
+    "showDiamond": 50000,
+    "giftBaseID": 300000004,
+    "displaySort": 5000,
+    "haveMainIconDisplayIcon": 0,
+    "topIcon": "Icon_Welfare_Fund"
+  },
+  "8010": {
+    "id": 8010,
+    "openCondition": [
+      {
+        "id": 20103,
+        "param1": 1001,
+        "param2": 6
+      }
+    ],
+    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_reconnoitre.png",
+    "bigPic": "UI_Sprite/Banner/K3Banner/Banner_reconnoitre.png",
+    "openFrequency": -1,
+    "displaySort": 1,
+    "haveMainIconDisplayIcon": 0,
+    "welfareType": 8
+  },
+  "5012": {
+    "id": 5012,
+    "mainIconDisplayTime": 3600,
+    "topIcon": "Icon_Welfare_SecondQueue",
+    "subscriptIcon": "common_img_bannerCorner1",
+    "giftBaseID": 300000007,
+    "mainDisplayCondition": [
+      {
+        "id": 110004,
+        "param1": 300000021,
+        "param2": 1
+      }
+    ],
+    "mainIcon": "Icon_UI_Main_SecondQueue",
+    "mainIconDisplayPriority": 1000
+  },
+  "1020": {
+    "id": 1020,
+    "bigPic": "UI/Models/SpineAssets_F/RechargeSpine/Shouchong_Yase/Shouchong_Yase.prefab",
+    "welfareType": 1,
+    "welfareBanner": "",
+    "heroId": 10007,
+    "mainIcon": "icon_Hero_09",
+    "subscriptIcon": "common_img_bannerCorner1",
+    "openCondition": [
+      {
+        "id": 10003001,
+        "param1": 5,
+        "param2": 300000021
+      }
+    ],
+    "spine": 3001,
+    "giftBaseID": 901500001,
+    "displaySort": 8000,
+    "haveMainIconDisplayIcon": false,
+    "comprehensiveIconId": 1006
+  },
+  "10050": {
+    "id": 10050,
+    "mainIconDisplayTime": 3600,
+    "bigPic": "UI_Sprite/Banner/K3Banner/Banner_shop_daily.png",
+    "openFrequency": -1,
+    "welfareBanner": "UI_Sprite/Banner/K3Banner/Banner_weekCard.png",
+    "mainIconDisplayPriority": 999,
+    "mainIcon": "Icon_UI_Main_Week",
+    "welfareType": 52,
+    "welfareConfig": 5000,
+    "giftBaseID": 300000012,
+    "displaySort": 3000,
+    "mainDisplayCondition": [
+      {
+        "id": 110004,
+        "param1": 300000021,
+        "param2": 1
+      }
+    ],
+    "topIcon": "Icon_Activity_SilverCard"
   }
 }

@@ -2,131 +2,131 @@
   "1": {
     "target": [
       {
-        "param1": 1001,
         "id": 20103,
+        "param1": 1001,
         "param2": 8
       }
     ]
   },
   "2": {
+    "id": 2,
     "target": [
       {
-        "param1": 1001,
         "id": 20103,
+        "param1": 1001,
         "param2": 12
       }
-    ],
-    "id": 2
+    ]
   },
   "3": {
+    "id": 3,
     "target": [
       {
-        "param1": 1001,
         "id": 20103,
+        "param1": 1001,
         "param2": 16
       }
-    ],
-    "id": 3
+    ]
   },
   "4": {
-    "reward": [
-      {
-        "type": 11,
-        "count": 500
-      }
-    ],
     "id": 4,
     "randomMin": 10,
-    "randomMax": 30
-  },
-  "9": {
-    "referenceID": 8,
-    "id": 9,
-    "randomMin": 168,
-    "eggClaimLimitId": 3,
-    "randomMax": 1088,
+    "randomMax": 30,
     "reward": [
       {
-        "type": 11,
-        "count": 8000
+        "count": 500,
+        "type": 11
       }
-    ],
-    "eggType": 2,
-    "itemID": "item_itemegg_newyear",
-    "issueBanner": "img_lt_jd_banner_01"
+    ]
   },
   "5": {
+    "id": 5,
+    "randomMax": 30,
+    "reward": [
+      {
+        "count": 500,
+        "type": 11
+      }
+    ],
+    "randomMin": 10,
     "target": [
       {
-        "param1": 1001,
         "id": 20103,
+        "param1": 1001,
         "param2": 24
       }
-    ],
-    "randomMax": 30,
-    "reward": [
-      {
-        "type": 11,
-        "count": 500
-      }
-    ],
-    "id": 5,
-    "randomMin": 10
+    ]
   },
   "6": {
-    "target": [
-      {
-        "param1": 1001,
-        "id": 20103,
-        "param2": 27
-      }
-    ],
+    "id": 6,
     "randomMax": 30,
     "reward": [
       {
-        "type": 11,
-        "count": 500
+        "count": 500,
+        "type": 11
       }
     ],
-    "id": 6,
-    "randomMin": 10
-  },
-  "7": {
+    "randomMin": 10,
     "target": [
       {
-        "param1": 1001,
         "id": 20103,
-        "param2": 30
+        "param1": 1001,
+        "param2": 27
       }
-    ],
+    ]
+  },
+  "7": {
+    "id": 7,
     "randomMax": 75,
     "reward": [
       {
-        "type": 11,
-        "count": 1000
+        "count": 1000,
+        "type": 11
       }
     ],
-    "id": 7,
-    "randomMin": 25
+    "randomMin": 25,
+    "target": [
+      {
+        "id": 20103,
+        "param1": 1001,
+        "param2": 30
+      }
+    ]
   },
   "8": {
     "eggClaimLimitId": 2,
+    "eggType": 1,
+    "reward": [
+      {
+        "count": 8000,
+        "type": 11
+      }
+    ],
     "target": [
       {
-        "param1": 1001,
         "id": 20103,
+        "param1": 1001,
         "param2": 999
       }
     ],
     "randomMax": 1088,
-    "reward": [
-      {
-        "type": 11,
-        "count": 8000
-      }
-    ],
-    "eggType": 1,
     "randomMin": 168,
     "id": 8
+  },
+  "9": {
+    "eggClaimLimitId": 3,
+    "eggType": 2,
+    "reward": [
+      {
+        "count": 8000,
+        "type": 11
+      }
+    ],
+    "randomMax": 1088,
+    "referenceID": 8,
+    "randomMin": 168,
+    "issueBanner": "img_lt_jd_banner_01",
+    "itemID": "item_itemegg_newyear",
+    "id": 9
   }
 }

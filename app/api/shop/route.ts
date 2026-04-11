@@ -71,9 +71,9 @@ export async function GET() {
   function getItemGemValue(iid: string): number | null {
     if (diamondPrices[iid]) return diamondPrices[iid]
     const item = allItems[iid] || {} as any
-    const val = item.value
-    if (val && iid.includes('SpeedUp')) return val * SPEEDUP_RATE
-    if (val && iid.includes('vipPoint')) return val * 1.0
+    const val = Number(item.value) || 0
+    if (val > 0 && iid.includes('SpeedUp')) return val * SPEEDUP_RATE
+    if (val > 0 && iid.includes('vipPoint')) return val * 1.0
     return null
   }
 
