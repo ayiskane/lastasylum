@@ -1,24 +1,4 @@
 {
-  "4": {
-    "minRank": 4,
-    "maxRank": 10,
-    "reward": [
-      {
-        "count": 1,
-        "type": 99,
-        "id": "item_SpeedUp_general_60m"
-      },
-      {
-        "count": 100000,
-        "type": 1
-      },
-      {
-        "count": 100000,
-        "type": 2
-      }
-    ],
-    "id": 4
-  },
   "1": {
     "reward": [
       {
@@ -27,17 +7,43 @@
         "id": "item_SpeedUp_general_3h"
       },
       {
-        "count": 500000,
-        "type": 1
+        "type": 1,
+        "count": 500000
       },
       {
-        "count": 500000,
-        "type": 2
+        "type": 2,
+        "count": 500000
       }
     ]
   },
+  "4": {
+    "minRank": 4,
+    "id": 4,
+    "maxRank": 10,
+    "reward": [
+      {
+        "count": 1,
+        "type": 99,
+        "id": "item_SpeedUp_general_60m"
+      },
+      {
+        "type": 1,
+        "count": 100000
+      },
+      {
+        "type": 2,
+        "count": 100000
+      }
+    ]
+  },
+  "3": {
+    "id": 3,
+    "maxRank": 3,
+    "minRank": 3
+  },
   "2": {
     "minRank": 2,
+    "id": 2,
     "maxRank": 2,
     "reward": [
       {
@@ -46,19 +52,13 @@
         "id": "item_SpeedUp_general_3h"
       },
       {
-        "count": 300000,
-        "type": 1
+        "type": 1,
+        "count": 300000
       },
       {
-        "count": 300000,
-        "type": 2
+        "type": 2,
+        "count": 300000
       }
-    ],
-    "id": 2
-  },
-  "3": {
-    "minRank": 3,
-    "maxRank": 3,
-    "id": 3
+    ]
   }
 }

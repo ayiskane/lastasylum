@@ -26,10 +26,12 @@ const CAMP_ICONS: Record<number, string> = {
   1: '🏹', 2: '🔮', 3: '⚔️',
 }
 
-const QUALITY_BORDERS: Record<number, string> = {
-  3: 'border-blue-500/40',
-  4: 'border-purple-500/40',
-  5: 'border-amber-500/40',
+// Card frame styles matching in-game hero cards
+const QUALITY_CARD: Record<number, { border: string; bg: string }> = {
+  2: { border: 'border-green-500', bg: 'bg-gradient-to-b from-[#1a4a2a] via-[#153820] to-[#0f2818]' },
+  3: { border: 'border-[#4a7ec2]', bg: 'bg-gradient-to-b from-[#2a4a7a] via-[#1e3560] to-[#162845]' },
+  4: { border: 'border-[#9855d4]', bg: 'bg-gradient-to-b from-[#6b2fa0] via-[#4e2280] to-[#351660]' },
+  5: { border: 'border-[#d4943a]', bg: 'bg-gradient-to-b from-[#c88520] via-[#a06818] to-[#704010]' },
 }
 
 const ARMY_NAMES: Record<number, string> = {
@@ -45,7 +47,7 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
   const heroStars = getHeroStars()
   const honorWall = getHonorWall()
   const name = heroDisplayName(hero)
-  const accentBorder = QUALITY_BORDERS[hero.quality] || 'border-asylum-accent/40'
+  const cardStyle = QUALITY_CARD[hero.quality] || QUALITY_CARD[5]
 
   // Shard items
   const shardItem = hero.fragmentItemId ? items[hero.fragmentItemId] : null
@@ -114,9 +116,9 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
       {/* ─── Sticky sidebar ─── */}
       <aside className="w-[220px] max-lg:w-full shrink-0 lg:sticky lg:top-0 lg:self-start lg:h-screen bg-asylum-surface border-r border-asylum-border lg:overflow-y-auto">
         <div className="p-4 max-lg:flex max-lg:gap-4 max-lg:items-start">
-          {/* Hero image */}
-          <div className={`max-lg:w-[120px] max-lg:shrink-0 rounded-xl border-2 ${accentBorder} overflow-hidden bg-asylum-bg mb-3 max-lg:mb-0`}>
-            <div className="aspect-[216/300]">
+          {/* Hero image with game-style rarity card frame */}
+          <div className={`max-lg:w-[120px] max-lg:shrink-0 rounded-xl border-[3px] ${cardStyle.border} overflow-hidden mb-3 max-lg:mb-0 ${cardStyle.bg} p-1`}>
+            <div className="aspect-[216/300] rounded-lg overflow-hidden">
               <GameImage
                 src={heroImg}
                 alt={name}

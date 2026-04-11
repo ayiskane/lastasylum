@@ -1,150 +1,175 @@
 {
-  "survivorAnimationCheckInterval": {
-    "id": "survivorAnimationCheckInterval",
-    "value": 12
+  "PlayerRotationSpeed": {
+    "id": "PlayerRotationSpeed",
+    "value": 10
   },
-  "consultationFees": {
-    "id": "consultationFees",
-    "stringValue": "[10,30,40,50,60,65,70,75,80,85]"
-  },
-  "afkMaxTime": {
-    "id": "afkMaxTime",
-    "value": 28800000,
-    "stringValue": "[18000,18000,18000,18000,18000,18000,18000,18000,18000,18000,21600,21600,21600,21600,21600,25200,25200,25200,25200,25200,25200,25200,25200,25200,25200,28800,28800,28800,28800,28800,28800,28800,28800,28800,28800]"
-  },
-  "investResourcesCommonSpeed": {
-    "id": "investResourcesCommonSpeed",
-    "value": 60
-  },
-  "survivorFlushedOpenCondition": {
-    "id": "survivorFlushedOpenCondition",
-    "value": 4
-  },
-  "survivorMaxNumber": {
-    "id": "survivorMaxNumber",
-    "value": 30,
-    "stringValue": "[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20]"
-  },
-  "investResourcesIntegerNode": {
-    "id": "investResourcesIntegerNode",
-    "value": 180
+  "specificItemCutTime": {
+    "id": "specificItemCutTime",
+    "stringValue": "[5,5,5,5,18,18,18,18,18,18,16,16,16,16,16,14,14,14,14,14,12,12,12,12,12,12,12,12,12,12,8,8,8,8,8]",
+    "value": 20
   },
   "afkItemClaimInterval": {
     "id": "afkItemClaimInterval",
     "value": 10
   },
-  "aiPickupMoneySequence": {
-    "id": "aiPickupMoneySequence",
-    "stringValue": "[10001,20101,20102,20103,30101,20104,20105,20106,160401,20107,20108,20109,20110,20111,20112,20113,20114,10002,20115,20116,20117,20118,20119,20120,20121,20122]"
+  "fastHarvestCondition": {
+    "id": "fastHarvestCondition",
+    "stringValue": "{\"level\":30}"
   },
-  "roomButtonOpenCondition": {
-    "id": "roomButtonOpenCondition",
-    "stringValue": "{\"level\":3}"
+  "afkRewardCondition": {
+    "id": "afkRewardCondition",
+    "stringValue": "{\"level\":4}"
   },
-  "requestItemOpen": {
-    "id": "requestItemOpen",
-    "stringValue": "{\"level\":99}"
-  },
-  "aiPickupItemOpenCondition": {
-    "id": "aiPickupItemOpenCondition",
-    "stringValue": "[{\"id\":20103,\"param1\":\"1001\",\"param2\":\"7\"}]"
-  },
-  "roomItemShowTime": {
-    "id": "roomItemShowTime",
-    "value": 2
-  },
-  "LimitCash": {
-    "id": "LimitCash",
-    "value": 100000
-  },
-  "survivorButtonOpenCondition": {
-    "id": "survivorButtonOpenCondition",
-    "stringValue": "{\"level\":99}"
-  },
-  "BuyUpdateRadius": {
-    "id": "BuyUpdateRadius",
-    "value": 1
-  },
-  "PlayerColliderSize": {
-    "id": "PlayerColliderSize",
-    "value": 1
-  },
-  "rewardTimeStage": {
-    "id": "rewardTimeStage",
-    "stringValue": "[60,180,300,420,540,660,780,900,1020,1140,1260,1380]"
-  },
-  "ItemFlyToBuildTime": {
-    "id": "ItemFlyToBuildTime",
-    "value": 0.38
-  },
-  "specificShowTime": {
-    "id": "specificShowTime",
-    "value": 2
-  },
-  "aiPickupMoneyOpenCondition": {
-    "id": "aiPickupMoneyOpenCondition",
-    "stringValue": "[{\"id\":80029,\"param1\":\"4010\"}]"
-  },
-  "roomFullTips": {
-    "id": "roomFullTips",
-    "stringValue": "{\"roomupgrade\":2010301}"
+  "roomBuffOpenCondition": {
+    "id": "roomBuffOpenCondition",
+    "stringValue": "[{\"id\":20103,\"param1\":\"1001\",\"param2\":\"99\"}]"
   },
   "convenientButtonOpenCondition": {
     "id": "convenientButtonOpenCondition",
     "stringValue": "{\"level\":4}"
   },
-  "emergencyPatientsCondition": {
-    "id": "emergencyPatientsCondition",
-    "value": 11
+  "receptionMoneyShow": {
+    "id": "receptionMoneyShow",
+    "value": 10
   },
-  "PlayerWalkSpeed": {
-    "id": "PlayerWalkSpeed",
-    "value": 3.8
+  "roomMoneyShow": {
+    "id": "roomMoneyShow",
+    "value": 2
   },
-  "ItemFlyToPlayerTime": {
-    "id": "ItemFlyToPlayerTime",
-    "value": 0.38
+  "survivorAnimationCheckInterval": {
+    "id": "survivorAnimationCheckInterval",
+    "value": 12
   },
-  "playerSkillRange": {
-    "id": "playerSkillRange",
+  "survivorButtonOpenCondition": {
+    "id": "survivorButtonOpenCondition",
+    "stringValue": "{\"level\":99}"
+  },
+  "maxMouseRewardTimes": {
+    "id": "maxMouseRewardTimes",
+    "stringValue": "[20,20,20,20,20,25,25,25,25,25,30,30,30,30,30,30,30,30,30,30,40,40,40,40,40,50,50,50,50,50,50,50,50,50,50]",
+    "value": 50
+  },
+  "specificShowTime": {
+    "id": "specificShowTime",
+    "value": 2
+  },
+  "cityTreatTime": {
+    "id": "cityTreatTime",
+    "stringValue": "[100,100,100,100,180,180,180,180,180,180,160,160,160,160,160,140,140,140,140,140,120,120,120,120,120,120,120,120,120,120,80,80,80,80,80]"
+  },
+  "DefaultHotel": {
+    "id": "DefaultHotel",
     "value": 1
   },
   "CustomerWalkSpeed": {
     "id": "CustomerWalkSpeed",
     "value": 3
   },
-  "PlayerRotationSpeed": {
-    "id": "PlayerRotationSpeed",
-    "value": 10
-  },
-  "specialItemFlyToPlayerTime": {
-    "id": "specialItemFlyToPlayerTime",
+  "specialItemFlyToBuildTime": {
+    "id": "specialItemFlyToBuildTime",
     "value": 0.15
   },
-  "mouseHpRecoverSpeed": {
-    "id": "mouseHpRecoverSpeed",
-    "value": 50
+  "playerSkillRange": {
+    "id": "playerSkillRange",
+    "value": 1
   },
-  "afkRewardCondition": {
-    "id": "afkRewardCondition",
+  "maxSpecialEventSize": {
+    "id": "maxSpecialEventSize",
+    "value": 99
+  },
+  "cityNpcQueueOpenCondition": {
+    "id": "cityNpcQueueOpenCondition",
+    "stringValue": "{\"level\":99}"
+  },
+  "ItemFlyToBuildTime": {
+    "id": "ItemFlyToBuildTime",
+    "value": 0.38
+  },
+  "investResourcesmaxTime": {
+    "id": "investResourcesmaxTime",
+    "value": 3
+  },
+  "BuyUpdateRadius": {
+    "id": "BuyUpdateRadius",
+    "value": 1
+  },
+  "lineOpenCondition": {
+    "id": "lineOpenCondition",
     "stringValue": "{\"level\":4}"
   },
-  "attackMouse": {
-    "id": "attackMouse",
-    "value": 100
+  "mouseHp": {
+    "id": "mouseHp",
+    "value": 300
   },
-  "produceMouseCount": {
-    "id": "produceMouseCount",
-    "value": 2
+  "PlayerWalkSpeed": {
+    "id": "PlayerWalkSpeed",
+    "value": 3.8
+  },
+  "consultationFees": {
+    "id": "consultationFees",
+    "stringValue": "[10,30,40,50,60,65,70,75,80,85]"
+  },
+  "AfkItemCreateInterval": {
+    "value": 10
+  },
+  "aiPickupItemOpenCondition": {
+    "id": "aiPickupItemOpenCondition",
+    "stringValue": "[{\"id\":20103,\"param1\":\"1001\",\"param2\":\"7\"}]"
   },
   "mouseRewards": {
     "id": "mouseRewards",
     "stringValue": "{\"1\":[{\"type\":1043,\"count\":50}],\"3\":[{\"type\":1043,\"count\":200}],\"10\":[{\"type\":1043,\"count\":800}]}"
   },
-  "stageItemOpenCondition": {
-    "id": "stageItemOpenCondition",
-    "value": 4,
-    "stringValue": "[{\"id\":20103,\"param1\":\"1001\",\"param2\":\"4\"}]"
+  "LimitCashClient": {
+    "id": "LimitCashClient",
+    "value": 90
+  },
+  "refreshInterval": {
+    "id": "refreshInterval",
+    "stringValue": "[7200,7200,7200,7200,7200,7200,7200,7200,5400,5400,5400,5400,5400,5400,5400,3600,3600,3600,3600,3600,3600,3600,3600,3600,3600,2400,2400,2400,2400,2400,2400,2400,2400,2400,2400]",
+    "value": 3600000
+  },
+  "aiPickupMoneySequence": {
+    "id": "aiPickupMoneySequence",
+    "stringValue": "[10001,20101,20102,20103,30101,20104,20105,20106,160401,20107,20108,20109,20110,20111,20112,20113,20114,10002,20115,20116,20117,20118,20119,20120,20121,20122]"
+  },
+  "PlayerColliderSize": {
+    "id": "PlayerColliderSize",
+    "value": 1
+  },
+  "mouseHpRecoverSpeed": {
+    "id": "mouseHpRecoverSpeed",
+    "value": 50
+  },
+  "pantientDialogue": {
+    "id": "pantientDialogue",
+    "value": 7000
+  },
+  "emergencyPatientsCondition": {
+    "id": "emergencyPatientsCondition",
+    "value": 11
+  },
+  "rewardTimeStage": {
+    "id": "rewardTimeStage",
+    "stringValue": "[60,180,300,420,540,660,780,900,1020,1140,1260,1380]"
+  },
+  "survivorMaxNumber": {
+    "id": "survivorMaxNumber",
+    "stringValue": "[15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20,20]",
+    "value": 30
+  },
+  "mouseRunRange": {
+    "id": "mouseRunRange",
+    "stringValue": "[5,10]"
+  },
+  "afkMaxTime": {
+    "id": "afkMaxTime",
+    "stringValue": "[18000,18000,18000,18000,18000,18000,18000,18000,18000,18000,21600,21600,21600,21600,21600,25200,25200,25200,25200,25200,25200,25200,25200,25200,25200,28800,28800,28800,28800,28800,28800,28800,28800,28800,28800]",
+    "value": 28800000
+  },
+  "afkMinTimeShowWindows": {
+    "id": "afkMinTimeShowWindows",
+    "value": 300000
   },
   "survivorRewardDrop": {
     "id": "survivorRewardDrop",
@@ -154,151 +179,126 @@
     "id": "survivorFlushedTimeInterval",
     "stringValue": "[10800,10800,10800,10800,10800,10600,10600,10600,10400,10400,10400,10200,10200,10200,10000,10000,9800,9800,9600,9600,9400,9400,9200,9200,9000,9000,8800,8800,8600,8600,8600,8600,8600,8600,8600]"
   },
-  "survivorAnimationSwitchProbability": {
-    "id": "survivorAnimationSwitchProbability",
-    "value": 10
-  },
-  "DefaultHotel": {
-    "id": "DefaultHotel",
-    "value": 1
-  },
-  "stageItemUiShowCondition": {
-    "id": "stageItemUiShowCondition",
-    "stringValue": "[{\"id\":20103,\"param1\":\"1001\",\"param2\":\"6\"}]"
-  },
-  "LimitCashClient": {
-    "id": "LimitCashClient",
-    "value": 90
-  },
-  "cityTreatTime": {
-    "id": "cityTreatTime",
-    "stringValue": "[100,100,100,100,180,180,180,180,180,180,160,160,160,160,160,140,140,140,140,140,120,120,120,120,120,120,120,120,120,120,80,80,80,80,80]"
-  },
-  "AfkItemCreateInterval": {
-    "value": 10
-  },
-  "maxMouseRewardTimes": {
-    "id": "maxMouseRewardTimes",
-    "value": 50,
-    "stringValue": "[20,20,20,20,20,25,25,25,25,25,30,30,30,30,30,30,30,30,30,30,40,40,40,40,40,50,50,50,50,50,50,50,50,50,50]"
-  },
-  "specificItemCutTime": {
-    "id": "specificItemCutTime",
-    "value": 20,
-    "stringValue": "[5,5,5,5,18,18,18,18,18,18,16,16,16,16,16,14,14,14,14,14,12,12,12,12,12,12,12,12,12,12,8,8,8,8,8]"
-  },
-  "InventoryMax": {
-    "id": "InventoryMax",
-    "value": 3
-  },
-  "minRewardTime": {
-    "id": "minRewardTime",
-    "value": 2000
-  },
-  "specialItemFlyToBuildTime": {
-    "id": "specialItemFlyToBuildTime",
+  "specialItemFlyToPlayerTime": {
+    "id": "specialItemFlyToPlayerTime",
     "value": 0.15
   },
-  "roomMoneyShow": {
-    "id": "roomMoneyShow",
-    "value": 2
-  },
-  "investResourcesmaxTime": {
-    "id": "investResourcesmaxTime",
-    "value": 3
-  },
-  "roomBuffOpenCondition": {
-    "id": "roomBuffOpenCondition",
-    "stringValue": "[{\"id\":20103,\"param1\":\"1001\",\"param2\":\"99\"}]"
-  },
-  "refreshInterval": {
-    "id": "refreshInterval",
-    "value": 3600000,
-    "stringValue": "[7200,7200,7200,7200,7200,7200,7200,7200,5400,5400,5400,5400,5400,5400,5400,3600,3600,3600,3600,3600,3600,3600,3600,3600,3600,2400,2400,2400,2400,2400,2400,2400,2400,2400,2400]"
-  },
-  "receptionMoneyShow": {
-    "id": "receptionMoneyShow",
-    "value": 10
-  },
-  "produceMouseInterval": {
-    "id": "produceMouseInterval",
-    "value": 180
-  },
-  "CashPileRadius": {
-    "id": "CashPileRadius",
-    "value": 3
-  },
-  "playerCleanRatio": {
-    "id": "playerCleanRatio",
-    "value": 2
-  },
-  "pantientDialogue": {
-    "id": "pantientDialogue",
-    "value": 7000
-  },
-  "killMouseOpen": {
-    "id": "killMouseOpen",
-    "stringValue": "{\"level\":99}"
-  },
-  "mouseSpeed": {
-    "id": "mouseSpeed",
-    "value": 2.5
-  },
-  "mouseRunRange": {
-    "id": "mouseRunRange",
-    "stringValue": "[5,10]"
-  },
-  "autoCureOpenCondition": {
-    "id": "autoCureOpenCondition",
-    "stringValue": "{\"level\":11}"
-  },
-  "ItemRadius": {
-    "id": "ItemRadius",
-    "value": 0.75
-  },
-  "mouseHp": {
-    "id": "mouseHp",
-    "value": 300
-  },
-  "maxSpecialEventSize": {
-    "id": "maxSpecialEventSize",
-    "value": 99
-  },
-  "lineOpenCondition": {
-    "id": "lineOpenCondition",
-    "stringValue": "{\"level\":4}"
+  "survivorFlushedOpenCondition": {
+    "id": "survivorFlushedOpenCondition",
+    "value": 4
   },
   "floatingWordsShow": {
     "id": "floatingWordsShow",
     "stringValue": "{\"level\":2}"
   },
-  "afkMinTimeShowWindows": {
-    "id": "afkMinTimeShowWindows",
-    "value": 300000
+  "stageItemUiShowCondition": {
+    "id": "stageItemUiShowCondition",
+    "stringValue": "[{\"id\":20103,\"param1\":\"1001\",\"param2\":\"6\"}]"
   },
-  "ToiletVisitsCountMax": {
-    "id": "ToiletVisitsCountMax",
+  "attackMouse": {
+    "id": "attackMouse",
+    "value": 100
+  },
+  "InventoryMax": {
+    "id": "InventoryMax",
     "value": 3
   },
-  "fastHarvestCondition": {
-    "id": "fastHarvestCondition",
-    "stringValue": "{\"level\":30}"
+  "stageItemOpenCondition": {
+    "id": "stageItemOpenCondition",
+    "stringValue": "[{\"id\":20103,\"param1\":\"1001\",\"param2\":\"4\"}]",
+    "value": 4
+  },
+  "roomItemShowTime": {
+    "id": "roomItemShowTime",
+    "value": 2
+  },
+  "killMouseOpen": {
+    "id": "killMouseOpen",
+    "stringValue": "{\"level\":99}"
+  },
+  "roomFullTips": {
+    "id": "roomFullTips",
+    "stringValue": "{\"roomupgrade\":2010301}"
+  },
+  "afkItemMaxCumulativeTime": {
+    "id": "afkItemMaxCumulativeTime",
+    "stringValue": "{\"1\":480,\"5\":480,\"10\":540,\"15\":560,\"20\":600,\"24\":640,\"28\":680,\"30\":720}"
+  },
+  "roomButtonOpenCondition": {
+    "id": "roomButtonOpenCondition",
+    "stringValue": "{\"level\":3}"
+  },
+  "requestItemOpen": {
+    "id": "requestItemOpen",
+    "stringValue": "{\"level\":99}"
+  },
+  "investResourcesCommonSpeed": {
+    "id": "investResourcesCommonSpeed",
+    "value": 60
+  },
+  "produceMouseInterval": {
+    "id": "produceMouseInterval",
+    "value": 180
+  },
+  "produceMouseCount": {
+    "id": "produceMouseCount",
+    "value": 2
+  },
+  "ItemFlyToPlayerTime": {
+    "id": "ItemFlyToPlayerTime",
+    "value": 0.38
+  },
+  "playerCleanRatio": {
+    "id": "playerCleanRatio",
+    "value": 2
+  },
+  "aiPickupMoneyOpenCondition": {
+    "id": "aiPickupMoneyOpenCondition",
+    "stringValue": "[{\"id\":80029,\"param1\":\"4010\"}]"
+  },
+  "minRewardTime": {
+    "id": "minRewardTime",
+    "value": 2000
+  },
+  "mouseSpeed": {
+    "id": "mouseSpeed",
+    "value": 2.5
+  },
+  "investResourcesIntegerNode": {
+    "id": "investResourcesIntegerNode",
+    "value": 180
+  },
+  "survivorAnimationSwitchProbability": {
+    "id": "survivorAnimationSwitchProbability",
+    "value": 10
   },
   "eventButtonOpenCondition": {
     "id": "eventButtonOpenCondition",
     "stringValue": "{\"level\":3}"
   },
-  "cityNpcQueueOpenCondition": {
-    "id": "cityNpcQueueOpenCondition",
-    "stringValue": "{\"level\":99}"
+  "CashPileRadius": {
+    "id": "CashPileRadius",
+    "value": 3
+  },
+  "LimitCash": {
+    "id": "LimitCash",
+    "value": 100000
+  },
+  "autoCureOpenCondition": {
+    "id": "autoCureOpenCondition",
+    "stringValue": "{\"level\":11}"
+  },
+  "ToiletVisitsCountMax": {
+    "id": "ToiletVisitsCountMax",
+    "value": 3
   },
   "afkItemOpenCondition": {
     "id": "afkItemOpenCondition",
-    "value": 99,
-    "stringValue": "[{\"id\":20103,\"param1\":\"1001\",\"param2\":\"99\"}]"
+    "stringValue": "[{\"id\":20103,\"param1\":\"1001\",\"param2\":\"99\"}]",
+    "value": 99
   },
-  "afkItemMaxCumulativeTime": {
-    "id": "afkItemMaxCumulativeTime",
-    "stringValue": "{\"1\":480,\"5\":480,\"10\":540,\"15\":560,\"20\":600,\"24\":640,\"28\":680,\"30\":720}"
+  "ItemRadius": {
+    "id": "ItemRadius",
+    "value": 0.75
   }
 }
