@@ -122,7 +122,6 @@ export default function HeroPage({ params }: { params: { id: string } }) {
             src={heroImagePath(hero, 'thumbnail')}
             alt={name}
             className="w-full h-full object-cover"
-            style={{ imageRendering: 'auto' }}
           />
         </div>
 
