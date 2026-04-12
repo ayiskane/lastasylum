@@ -10,13 +10,51 @@ function load(name: string) {
   } catch { return {} }
 }
 
+// Group flat HeroSkillBase rows into {slot, name, levels[]} shape.
+// Each row in heroes.json is one (slot, star) entry with formulas in `power`/`param1`.
+// Rows sharing the same skillSlot form one skill with multiple star tiers.
+// skillSlot is inherited forward: if a row omits it, use the previous row's value
+// (base/star=0 rows in HeroSkillBase.lua sometimes drop the field).
+function groupSkills(flat: any[]) {
+  const bySlot: Record<number, any[]> = {}
+  let lastSlot = 1
+  for (const row of flat) {
+    const slot = row.skillSlot ?? lastSlot
+    lastSlot = slot
+    ;(bySlot[slot] ??= []).push(row)
+  }
+  const stripTags = (s: string) => String(s || '').replace(/\[[^\]]*\]/g, '')
+  return Object.keys(bySlot)
+    .map(Number)
+    .sort((a, b) => a - b)
+    .map(slot => {
+      const rows = bySlot[slot]
+      const first = rows.find(r => r.displayName) || rows[0]
+      return {
+        slot,
+        name: first.displayName || `Skill ${slot}`,
+        icon: first.icon || '',
+        typeLabel: stripTags(first.typeDesc || ''),
+        levels: rows
+          .map(r => ({
+            star: r.skillStar ?? 0,
+            unlockStar: r.unlockStar ?? 0,
+            power: r.power || '',
+            param1: r.param1 || '',
+            param2: r.param2 || '',
+            param3: r.param3 || '',
+          }))
+          .sort((a, b) => a.star - b.star),
+      }
+    })
+}
+
 export async function GET() {
   const heroes = load('heroes.json')
   const equipment = load('equipment.json')
   const heroLevels = load('heroLevels.json')
   const heroStars = load('hero_stars.json')
 
-  // Build hero list for selector (minimal data)
   const heroList = Object.values(heroes).map((h: any) => ({
     id: h.id,
     name: h.displayName || h.name,
@@ -33,30 +71,15 @@ export async function GET() {
     levelRatio: h.levelRatio || [],
     starRatio: h.starRatio || [],
     levelBenefit: h.levelBenefit || [],
-    skills: (h.skills || []).map((s: any) => ({
-      slot: s.slot,
-      name: s.name || s.skillName || '',
-      icon: s.icon || s.skillIcon || '',
-      typeLabel: s.typeLabel || '',
-      levels: (s.levels || []).map((lv: any) => ({
-        star: lv.star,
-        unlockStar: lv.unlockStar,
-        power: lv.power,
-        param1: lv.param1,
-        param2: lv.param2,
-        param3: lv.param3,
-      }))
-    }))
+    skills: groupSkills(h.skills || []),
   }))
 
-  // Build camp synergy data
   const campSynergy = [
     { count: 2, bonus: 0.10, label: '2 same class' },
     { count: 4, bonus: 0.15, label: '4 same class' },
     { count: 5, bonus: 0.20, label: '5 same class' },
   ]
 
-  // Stat names
   const statNames: Record<string, string> = {
     '10001': 'CMD', '10002': 'HP', '10003': 'ATK', '10004': 'DEF',
     '10005': 'HP%', '10006': 'Crit Rate', '10007': 'Crit DMG',
