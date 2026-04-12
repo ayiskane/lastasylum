@@ -1,8 +1,9 @@
-import { getHeroes, getHeroList, getItems, getHeroStars, getHonorWall, heroDisplayName, heroImagePath, skillImagePath, benefitTypeName, itemImagePath } from '@/lib/gamedata'
+import { getHeroes, getHeroList, getItems, getHeroStars, getHonorWall, heroDisplayName, heroImagePath, skillImagePath, benefitTypeName, itemImagePath, STAT_NAMES, getMaxLevel, getMaxStar } from '@/lib/gamedata'
 import GameImage from '@/components/GameImage'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import HeroSkillPanel from '@/components/HeroSkillPanel'
+import HeroStatsPanel from '@/components/HeroStatsPanel'
 
 export async function generateStaticParams() {
   return getHeroList().map(h => ({ id: h.id }))
@@ -84,6 +85,60 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
   // Scaling ratios
   const levelRatios = (hero.levelRatio || []) as { Type: number; Value: number }[]
   const starRatios = (hero.starRatio || []) as { Type: number; Value: number }[]
+
+  // Build stats data for interactive panel
+  const maxLevel = getMaxLevel(hero)
+  const maxStar = getMaxStar(hero)
+
+  // Get ratio multipliers
+  const lrMap: Record<number, number> = {}
+  for (const r of hero.levelRatio || []) lrMap[r.Type] = r.Value
+  const srMap: Record<number, number> = {}
+  for (const r of hero.starRatio || []) srMap[r.Type] = r.Value
+
+  // Load raw level/star tables
+  let heroLevelsRaw: Record<string, { level: number; type: number; attrs: Record<string, number> }> = {}
+  let heroStarsRaw: Record<string, { star: number; attrs: Record<string, number> }> = {}
+  try {
+    const fs = require('fs')
+    const path = require('path')
+    heroLevelsRaw = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', 'wiki', 'heroLevels.json'), 'utf-8'))
+    heroStarsRaw = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', 'wiki', 'heroStars.json'), 'utf-8'))
+  } catch {}
+
+  const template = hero.levelTemplate || 1
+  const levelEntries = Object.values(heroLevelsRaw)
+    .filter(e => e.type === template)
+    .sort((a, b) => a.level - b.level)
+    .map(e => ({
+      level: e.level,
+      hp: e.attrs['10002'] || 0,
+      atk: e.attrs['10003'] || 0,
+      def: e.attrs['10004'] || 0,
+      cmd: e.attrs['10001'] || 0,
+    }))
+
+  const starEntries = Object.values(heroStarsRaw)
+    .sort((a, b) => a.star - b.star)
+    .map(e => ({
+      star: e.star,
+      hp: e.attrs['10002'] || 0,
+      atk: e.attrs['10003'] || 0,
+      def: e.attrs['10004'] || 0,
+    }))
+
+  const lb = (hero.levelBenefit || [])[0] as { Type: number; Value: number } | undefined
+  const statsData = {
+    maxLevel,
+    maxStar,
+    levelBenefitName: lb ? (STAT_NAMES[lb.Type] || `Stat #${lb.Type}`) : '',
+    levelEntries,
+    starEntries,
+    levelRatios: { hp: lrMap[10201] || 1, atk: lrMap[10202] || 1, def: lrMap[10203] || 1 },
+    starRatios: { hp: srMap[10201] || 1, atk: srMap[10202] || 1, def: srMap[10203] || 1 },
+    levelBenefitPerLevel: lb?.Value || 0,
+    levelBenefitType: lb?.Type || null,
+  }
 
   // Build honor milestones
   const honorMilestones = (hero.honorLevelUnlockEffect || []).map((lvl: number) => {
@@ -214,7 +269,7 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
 
             {/* TOC */}
             <div className="border-t border-asylum-border mt-3 pt-2 space-y-0.5 max-lg:hidden">
-              {['Scaling', 'Honor milestones', 'Skills'].map(s => (
+              {['Base Stats', 'Honor milestones', 'Skills'].map(s => (
                 <a key={s} href={`#${s.toLowerCase().replace(/ /g, '-')}`}
                   className="block text-[10px] text-asylum-hint hover:text-asylum-accent transition-colors">
                   {s}
@@ -235,40 +290,11 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
           <p className="text-sm text-asylum-muted italic mb-2">{hero.descRecruitPreview}</p>
         )}
 
-        {/* ─── Scaling ─── */}
+        {/* ─── Base Stats ─── */}
         <h2 id="scaling" className="text-xs font-semibold text-asylum-accent uppercase tracking-[2px] mt-6 mb-3 pb-1.5 border-b border-asylum-accent/15">
-          Scaling
+          Base Stats
         </h2>
-        <table className="w-full text-xs mb-4">
-          <thead>
-            <tr className="border-b border-asylum-border">
-              <th className="text-left text-[9px] text-asylum-hint uppercase tracking-wider py-1.5 px-2 font-semibold">Stat</th>
-              <th className="text-left text-[9px] text-asylum-hint uppercase tracking-wider py-1.5 px-2 font-semibold">Per level</th>
-              <th className="text-left text-[9px] text-asylum-hint uppercase tracking-wider py-1.5 px-2 font-semibold">Per star</th>
-            </tr>
-          </thead>
-          <tbody>
-            {levelRatios.map((lr, i) => {
-              const sr = starRatios[i]
-              const statName = benefitTypeName(lr.Type)
-              return (
-                <tr key={i} className="border-b border-white/[0.03] hover:bg-asylum-surface">
-                  <td className="py-1.5 px-2 text-asylum-muted">{statName}</td>
-                  <td className="py-1.5 px-2 font-mono text-[11px]">{typeof lr.Value === 'number' ? `${(lr.Value * 100).toFixed(1)}%` : String(lr.Value)}</td>
-                  <td className="py-1.5 px-2 font-mono text-[11px]">{sr ? `${(Number(sr.Value) * 100).toFixed(1)}%/★` : '—'}</td>
-                </tr>
-              )
-            })}
-            {(hero.levelBenefit || []).map((b: any, i: number) => (
-              <tr key={`b${i}`} className="border-b border-white/[0.03] hover:bg-asylum-surface">
-                <td className="py-1.5 px-2 text-asylum-muted">{benefitTypeName(b.Type)}</td>
-                <td className="py-1.5 px-2 font-mono text-[11px]" colSpan={2}>
-                  +{typeof b.Value === 'number' && b.Value < 1 ? `${(b.Value * 100).toFixed(2)}%` : b.Value}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <HeroStatsPanel data={statsData} />
 
         {/* ─── Honor milestones ─── */}
         <h2 id="honor-milestones" className="text-xs font-semibold text-asylum-accent uppercase tracking-[2px] mt-6 mb-3 pb-1.5 border-b border-asylum-accent/15">

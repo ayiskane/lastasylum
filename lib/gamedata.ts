@@ -39,6 +39,7 @@ export interface Hero {
   selectIcon: string
   levelBenefit: BenefitEntry[]
   levelRatio: BenefitEntry[]
+  levelTemplate: number
   starRatio: BenefitEntry[]
   honorLevelUnlockEffect: number[]
   medalId: string
@@ -281,4 +282,141 @@ export function skillImagePath(icon: string): string {
 export function researchImagePath(icon: string): string {
   if (!icon) return ''
   return `/images/research/${icon}.png`
+}
+
+// ── Hero Stat Computation ──────────────────────────────────────────
+
+interface LevelEntry {
+  level: number
+  type: number
+  attrs: Record<string, number>
+}
+
+interface StarEntry {
+  star: number
+  attrs: Record<string, number>
+}
+
+let _heroLevels: Record<string, LevelEntry> | null = null
+let _heroStars: Record<string, StarEntry> | null = null
+
+function getHeroLevels(): Record<string, LevelEntry> {
+  if (!_heroLevels) {
+    try { _heroLevels = loadJson<Record<string, LevelEntry>>('heroLevels.json') }
+    catch { _heroLevels = {} }
+  }
+  return _heroLevels
+}
+
+function getHeroStars(): Record<string, StarEntry> {
+  if (!_heroStars) {
+    try { _heroStars = loadJson<Record<string, StarEntry>>('heroStars.json') }
+    catch { _heroStars = {} }
+  }
+  return _heroStars
+}
+
+// Stat type IDs
+export const STAT = {
+  CMD: 10001, HP: 10002, ATK: 10003, DEF: 10004,
+  HP_RATIO: 10201, ATK_RATIO: 10202, DEF_RATIO: 10203,
+} as const
+
+// Stat type names
+export const STAT_NAMES: Record<number, string> = {
+  10001: 'CMD', 10002: 'HP', 10003: 'ATK', 10004: 'DEF',
+  10005: 'Hero HP↑', 10006: 'Hero ATK↑', 10007: 'Hero DEF↑',
+  10008: 'Ranger Hero HP↑', 10009: 'Ranger Hero ATK↑', 10010: 'Ranger Hero DEF↑',
+  10011: 'Warlock Hero HP↑', 10012: 'Warlock Hero ATK↑', 10013: 'Warlock Hero DEF↑',
+  10014: 'Warrior Hero HP↑', 10015: 'Warrior Hero ATK↑', 10016: 'Warrior Hero DEF↑',
+  10017: 'Hero DMG↑', 10018: 'Physical DMG↑', 10019: 'Energy DMG↑',
+  10020: 'Ranger Hero DMG↑', 10021: 'Warlock Hero DMG↑', 10022: 'Warrior Hero DMG↑',
+  10023: 'Hero DMG Taken↓', 10026: 'DMG to Monsters↑', 10027: 'Monster DMG Taken↓',
+  10028: 'DMG When Countering↑', 10029: 'DMG When Countered↓',
+  10030: 'Crit Rate↑', 10031: 'Crit Rate Taken↓',
+  10032: 'Crit DMG↑', 10033: 'Crit DMG Taken↓',
+  10034: 'Skill CD Speed', 10035: 'Physical DMG RES', 10036: 'Energy DMG RES',
+  10037: 'DMG RES', 10040: 'DMG↓', 10106: 'Soldier Load↑',
+  10201: 'HP Growth', 10202: 'ATK Growth', 10203: 'DEF Growth',
+}
+
+export interface HeroStats {
+  hp: number
+  atk: number
+  def: number
+  cmd: number
+  levelBenefitType: number | null
+  levelBenefitValue: number  // total % at this level
+  levelBenefitName: string
+}
+
+export function computeHeroStats(hero: Hero, level: number, star: number): HeroStats {
+  const levels = getHeroLevels()
+  const stars = getHeroStars()
+  const template = hero.levelTemplate || 1
+
+  // Get level ratios
+  const levelRatios: Record<number, number> = {}
+  for (const r of hero.levelRatio || []) {
+    levelRatios[r.Type] = r.Value
+  }
+  const starRatios: Record<number, number> = {}
+  for (const r of hero.starRatio || []) {
+    starRatios[r.Type] = r.Value
+  }
+
+  // Find level entry matching template and level
+  let levelAttrs: Record<string, number> = {}
+  for (const entry of Object.values(levels)) {
+    if (entry.type === template && entry.level === level) {
+      levelAttrs = entry.attrs
+      break
+    }
+  }
+
+  // Find star entry
+  let starAttrs: Record<string, number> = {}
+  const starKey = String(star + 1) // key 1 = star 0, key 51 = star 50
+  if (stars[starKey]) {
+    starAttrs = stars[starKey].attrs
+  }
+
+  // Compute: base × ratio (level) + base × ratio (star)
+  const hpBase = (levelAttrs['10002'] || 0) * (levelRatios[STAT.HP_RATIO] || 1)
+  const atkBase = (levelAttrs['10003'] || 0) * (levelRatios[STAT.ATK_RATIO] || 1)
+  const defBase = (levelAttrs['10004'] || 0) * (levelRatios[STAT.DEF_RATIO] || 1)
+  const cmd = levelAttrs['10001'] || 0
+
+  const hpStar = (starAttrs['10002'] || 0) * (starRatios[STAT.HP_RATIO] || 1)
+  const atkStar = (starAttrs['10003'] || 0) * (starRatios[STAT.ATK_RATIO] || 1)
+  const defStar = (starAttrs['10004'] || 0) * (starRatios[STAT.DEF_RATIO] || 1)
+
+  // Level benefit (per-level % bonus)
+  const lb = hero.levelBenefit?.[0]
+  const lbType = lb?.Type || null
+  const lbValue = (lb?.Value || 0) * level  // total % at this level
+
+  return {
+    hp: Math.round(hpBase + hpStar),
+    atk: Math.round(atkBase + atkStar),
+    def: Math.round(defBase + defStar),
+    cmd: Math.round(cmd),
+    levelBenefitType: lbType,
+    levelBenefitValue: lbValue,
+    levelBenefitName: lbType ? (STAT_NAMES[lbType] || `Stat #${lbType}`) : '',
+  }
+}
+
+export function getMaxLevel(hero: Hero): number {
+  const template = hero.levelTemplate || 1
+  const levels = getHeroLevels()
+  let max = 1
+  for (const entry of Object.values(levels)) {
+    if (entry.type === template && entry.level > max) max = entry.level
+  }
+  return max
+}
+
+export function getMaxStar(hero: Hero): number {
+  return hero.heroStarRating || 50
 }
