@@ -61,8 +61,11 @@ const BENEFIT: Record<number, string> = {
 // Power weights from Parameter.lua (fighter_ability_*):
 //   health=0.15, attack=12.5, defense=7, crt=15680, crt_dmg=7840
 //   CMD (Type 10001) has no power weight — not counted in ability score.
-// Skill power back-solved from Arthur's maxAbility 920570: ~0.38x raw formula sum.
-const PW = { hp: 0.15, atk: 12.5, def: 7, cmd: 0, critRate: 15680, critDmg: 7840, skill: 0.38 }
+// Max skill level is 30 (HeroSkillUpgrade.lua caps at level 30 per slot).
+// Skill power contributes 1:1 to ability (back-solved from Arthur's
+// maxAbility 1,052,453 @ lv150 + 10★ + max lv30 skills → stat=730.6k, skill≈322k,
+// raw skill formula sum ≈ 302k → multiplier ≈ 1.07, rounded to 1.0).
+const PW = { hp: 0.15, atk: 12.5, def: 7, cmd: 0, critRate: 15680, critDmg: 7840, skill: 1.0 }
 
 function compute(hero: HeroData, cfg: OwnedHero, hl: any, hs: any, eq: any, hw?: any): ComputedHero['stats'] {
   const t = hero.levelTemplate || 1
@@ -143,7 +146,7 @@ function compute(hero: HeroData, cfg: OwnedHero, hl: any, hs: any, eq: any, hw?:
   // Passive skills (single tier) still require their unlockStar threshold to be met.
   let skP=0
   for (const sk of (hero.skills||[])) {
-    const n1=cfg.skillLevels?.[sk.slot]??1
+    const n1 = Math.min(30, Math.max(1, cfg.skillLevels?.[sk.slot] ?? 1))
     let active:any=null
     for (const slv of (sk.levels||[])) {
       const us=slv.unlockStar||0
@@ -236,7 +239,7 @@ export default function SquadPage() {
       const n=new Set(prev)
       if(n.has(id)){n.delete(id)}else{
         n.add(id)
-        if(!cfgs[id])setCfgs(c=>({...c,[id]:{id,level:150,stars:10,equipment:Array.from({length:4},()=>({quality:5,strengthenLv:40})),skillLevels:{0:50,1:50,2:50,3:50,4:50,5:50}}}))
+        if(!cfgs[id])setCfgs(c=>({...c,[id]:{id,level:150,stars:10,equipment:Array.from({length:4},()=>({quality:5,strengthenLv:40})),skillLevels:{0:30,1:30,2:30,3:30,4:30,5:30}}}))
       }
       return n
     })
@@ -247,7 +250,7 @@ export default function SquadPage() {
     setCfgs(c=>{const h=c[hid];if(!h)return c;const eq=[...h.equipment];eq[si]={...eq[si],...p};return{...c,[hid]:{...h,equipment:eq}}})
   },[])
   const updSkill=useCallback((hid:number,slot:number,lv:number)=>{
-    setCfgs(c=>{const h=c[hid];if(!h)return c;const sl={...(h.skillLevels||{}),[slot]:Math.min(50,Math.max(1,lv||1))};return{...c,[hid]:{...h,skillLevels:sl}}})
+    setCfgs(c=>{const h=c[hid];if(!h)return c;const sl={...(h.skillLevels||{}),[slot]:Math.min(30,Math.max(1,lv||1))};return{...c,[hid]:{...h,skillLevels:sl}}})
   },[])
 
   const computed=useMemo<ComputedHero[]>(()=>{
@@ -348,7 +351,7 @@ export default function SquadPage() {
             className="text-xs px-3 py-1 rounded-lg bg-zinc-800 text-zinc-400 hover:text-zinc-200 hover:bg-zinc-700 border border-zinc-700/30">{p.l}</button>
         ))}
         <span className="text-xs text-zinc-600 py-1 ml-2">Skills:</span>
-        {[{l:'Max (50)',v:50},{l:'Lv25',v:25},{l:'Lv1',v:1}].map(p=>(
+        {[{l:'Max (30)',v:30},{l:'Lv15',v:15},{l:'Lv1',v:1}].map(p=>(
           <button key={p.l} onClick={()=>setCfgs(c=>{const n={...c};for(const id of owned)if(n[id])n[id]={...n[id],skillLevels:{0:p.v,1:p.v,2:p.v,3:p.v,4:p.v,5:p.v}};return n})}
             className="text-xs px-3 py-1 rounded-lg bg-zinc-800 text-zinc-400 hover:text-zinc-200 hover:bg-zinc-700 border border-zinc-700/30">{p.l}</button>
         ))}
@@ -441,9 +444,21 @@ export default function SquadPage() {
                 {(hero.skills as any[]).map((sk:any)=>{
                   const cur=cfg.skillLevels?.[sk.slot]??1
                   const lbl=sk.typeLabel||sk.name||`Skill ${sk.slot+1}`
+                  // Passive skills have a single tier (no level progression);
+                  // show unlock status instead of a level input.
+                  const unlockStar = sk.levels?.[0]?.unlockStar ?? 0
+                  const internalStars = Math.min(10,Math.max(0,cfg.stars)) * 5
+                  const unlocked = sk.isPassive ? internalStars >= unlockStar : true
                   return <div key={sk.slot} className="flex items-center gap-2 bg-zinc-900/60 rounded-lg px-2 py-1.5">
                     <div className="min-w-0 flex-1"><div className="text-[10px] text-zinc-500 uppercase truncate">{sk.typeLabel||'Skill'}</div><div className="text-[11px] text-zinc-300 truncate">{sk.name||lbl}</div></div>
-                    <input type="number" min={1} max={50} value={cur} onChange={e=>updSkill(hero.id,sk.slot,Number(e.target.value)||1)} className="w-12 bg-zinc-900 border border-zinc-700/50 rounded px-1 py-0.5 text-xs text-zinc-200 text-center focus:outline-none focus:border-amber-600/50 shrink-0"/>
+                    {sk.isPassive ? (
+                      <div className={`text-[10px] font-medium px-1.5 py-0.5 rounded shrink-0 ${unlocked?'bg-amber-500/20 text-amber-400':'bg-zinc-800 text-zinc-500'}`}
+                        title={unlocked?'Unlocked':`Unlocks at ${Math.ceil(unlockStar/5)}★`}>
+                        {unlocked ? '✓' : `${Math.ceil(unlockStar/5)}★`}
+                      </div>
+                    ) : (
+                      <input type="number" min={1} max={30} value={cur} onChange={e=>updSkill(hero.id,sk.slot,Number(e.target.value)||1)} className="w-12 bg-zinc-900 border border-zinc-700/50 rounded px-1 py-0.5 text-xs text-zinc-200 text-center focus:outline-none focus:border-amber-600/50 shrink-0"/>
+                    )}
                   </div>
                 })}
               </div>

@@ -77,7 +77,7 @@ export async function GET() {
   const powerWeights = {
     hp: 0.15, atk: 12.5, def: 7, cmd: 0,
     critRate: 15680, critDmg: 7840,
-    skillMultiplier: 0.38,
+    skillMultiplier: 1.0,
   }
 
   const campSynergy = [
@@ -89,7 +89,7 @@ export async function GET() {
   const gameLimits = {
     maxLevel: 150,         // HeroLevel has 150 distinct entries (key "300" aliases "150")
     maxWholeStar: 10,      // max user-facing stars; internal key goes to 51
-    maxSkillLevel: 50,
+    maxSkillLevel: 30,
     maxHonorLevel: 600,    // HonorWall goes 1..600
   }
 
