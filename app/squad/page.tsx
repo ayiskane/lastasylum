@@ -16,6 +16,7 @@ interface OwnedHero {
   id: number; level: number; stars: number
   equipment: { quality: number; strengthenLv: number }[]
   skillLevels?: Record<number, number>
+  inHonor?: boolean; honorLevel?: number
 }
 interface ComputedHero {
   hero: HeroData; config: OwnedHero
@@ -57,22 +58,45 @@ const BENEFIT: Record<number, string> = {
 }
 
 // ── Stat computation ───────────────────────────────────────
-function compute(hero: HeroData, cfg: OwnedHero, hl: any, hs: any, eq: any): ComputedHero['stats'] {
+// Power weights from Parameter.lua (fighter_ability_*):
+//   health=0.15, attack=12.5, defense=7, crt=15680, crt_dmg=7840
+//   CMD (Type 10001) has no power weight — not counted in ability score.
+// Skill power back-solved from Arthur's maxAbility 920570: ~0.38x raw formula sum.
+const PW = { hp: 0.15, atk: 12.5, def: 7, cmd: 0, critRate: 15680, critDmg: 7840, skill: 0.38 }
+
+function compute(hero: HeroData, cfg: OwnedHero, hl: any, hs: any, eq: any, hw?: any): ComputedHero['stats'] {
   const t = hero.levelTemplate || 1
   const gr = (ty: number) => hero.levelRatio?.find((r: any) => r.Type === ty)?.Value || 1
   const hR = gr(10201), aR = gr(10202), dR = gr(10203)
+  // Clamp level to 150 (HeroLevel max)
+  const lvl = Math.min(150, Math.max(1, cfg.level))
   let bH=0,bA=0,bD=0,bC=0
   if (hl) {
     let best: any=null, bd=Infinity
     for (const e of Object.values(hl) as any[]) {
-      if (e.type===t && Math.abs(e.level-cfg.level)<bd) { bd=Math.abs(e.level-cfg.level); best=e }
+      if (e.type===t && Math.abs(e.level-lvl)<bd) { bd=Math.abs(e.level-lvl); best=e }
     }
     if (best) { bH=(best.attrs?.['10002']||0)*hR; bA=(best.attrs?.['10003']||0)*aR; bD=(best.attrs?.['10004']||0)*dR; bC=best.attrs?.['10001']||0 }
   }
   let sH=0,sA=0,sD=0
+  // Clamp stars to 10 (max wholeStar)
+  const stars = Math.min(10, Math.max(0, cfg.stars))
+  const internalStars = stars * 5
   if (hs) for (const e of Object.values(hs) as any[]) {
     const s=e.star??e.level??0
-    if (s<=cfg.stars*5) { sH+=(e.attrs?.['10002']||0)*hR; sA+=(e.attrs?.['10003']||0)*aR; sD+=(e.attrs?.['10004']||0)*dR }
+    if (s<=internalStars) { sH+=(e.attrs?.['10002']||0)*hR; sA+=(e.attrs?.['10003']||0)*aR; sD+=(e.attrs?.['10004']||0)*dR }
+  }
+  // Honor Hall bonuses: flat HP/ATK/DEF from honorWall[honorLevel].levelBenefit
+  let honH=0, honA=0, honD=0
+  if (cfg.inHonor && hw && cfg.honorLevel && cfg.honorLevel > 0) {
+    const hon = hw[String(cfg.honorLevel)]
+    if (hon?.levelBenefit) {
+      for (const b of hon.levelBenefit) {
+        if (b.Type===10002) honH+=b.Value
+        else if (b.Type===10003) honA+=b.Value
+        else if (b.Type===10004) honD+=b.Value
+      }
+    }
   }
   let eH=0,eA=0,eD=0,eHP=0,eC=0,eCD=0,eDR=0,eDRS=0,eMD=0,eP=0
   for (let s=0;s<4;s++) {
@@ -87,11 +111,11 @@ function compute(hero: HeroData, cfg: OwnedHero, hl: any, hs: any, eq: any): Com
     }
   }
   let lbl='',lv=0
-  if (hero.levelBenefit?.[0]) { const lb=hero.levelBenefit[0]; lv=lb.Value*cfg.level; lbl=BENEFIT[lb.Type]||'' }
-  const hp=Math.round((bH+sH+eH)*(1+eHP)),atk=Math.round(bA+sA+eA),def=Math.round(bD+sD+eD),cmd=Math.round(bC)
-  // Skill power: sum each skill's active-tier power formula evaluated at user-input level
+  if (hero.levelBenefit?.[0]) { const lb=hero.levelBenefit[0]; lv=lb.Value*lvl; lbl=BENEFIT[lb.Type]||'' }
+  const hp=Math.round((bH+sH+eH+honH)*(1+eHP)),atk=Math.round(bA+sA+eA+honA),def=Math.round(bD+sD+eD+honD),cmd=Math.round(bC)
+  // Skill power: sum each skill's active-tier power formula evaluated at user-input level.
+  // Passive skills (single tier) still require their unlockStar threshold to be met.
   let skP=0
-  const internalStars=cfg.stars*5
   for (const sk of (hero.skills||[])) {
     const n1=cfg.skillLevels?.[sk.slot]??1
     let active:any=null
@@ -107,8 +131,10 @@ function compute(hero: HeroData, cfg: OwnedHero, hl: any, hs: any, eq: any): Com
       } catch {}
     }
   }
+  // Corrected ability formula from Parameter.lua weights
+  const power = Math.round(hp*PW.hp + atk*PW.atk + def*PW.def + cmd*PW.cmd + eC*PW.critRate + eCD*PW.critDmg + eP + skP*PW.skill)
   return { hp,atk,def,cmd,critRate:eC,critDmg:eCD,dmgRate:eDR,dmgRes:eDRS,monsterDmg:eMD,
-    power:Math.round(hp+atk*5+def*3+cmd*2+eP+skP),equipPower:Math.round(eP),skillPower:Math.round(skP),levelBenefitLabel:lbl,levelBenefitValue:lv }
+    power,equipPower:Math.round(eP),skillPower:Math.round(skP*PW.skill),levelBenefitLabel:lbl,levelBenefitValue:lv }
 }
 
 // ── Squad optimizer ────────────────────────────────────────
@@ -204,7 +230,7 @@ export default function SquadPage() {
       const hero=data.heroes.find((h:HeroData)=>h.id===id)
       const cfg=cfgs[id]
       if(!hero||!cfg)return null
-      return{hero,config:cfg,stats:compute(hero,cfg,data.heroLevels,data.heroStars,data.equipment)}as ComputedHero
+      return{hero,config:cfg,stats:compute(hero,cfg,data.heroLevels,data.heroStars,data.equipment,data.honorWall)}as ComputedHero
     }).filter(Boolean) as ComputedHero[]
   },[data,owned,cfgs])
 
@@ -306,7 +332,7 @@ export default function SquadPage() {
         .filter((x:any)=>x.h&&x.c).sort((a:any,b:any)=>b.h.quality-a.h.quality||a.h.name.localeCompare(b.h.name))
         .map(({h:hero,c:cfg}:any)=>{
         const qc=Q_STYLES[hero.quality]||Q_STYLES[0],ex=expanded===hero.id
-        const st=compute(hero,cfg,data.heroLevels,data.heroStars,data.equipment)
+        const st=compute(hero,cfg,data.heroLevels,data.heroStars,data.equipment,data.honorWall)
         return(
         <div key={hero.id} className={`rounded-xl border ${qc.border} ${qc.bg} overflow-hidden`}>
           <div className="flex items-center gap-3 p-3 cursor-pointer hover:bg-white/5" onClick={()=>setExpanded(ex?null:hero.id)}>
@@ -364,6 +390,24 @@ export default function SquadPage() {
                   </div>}
                 </div>
               })}
+            </div>
+            {/* Honor Hall */}
+            <div className="flex items-center gap-3 mb-4 p-2 bg-zinc-900/40 rounded border border-zinc-700/30">
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input type="checkbox" checked={!!cfg.inHonor}
+                  onChange={e=>updCfg(hero.id,{inHonor:e.target.checked, honorLevel: cfg.honorLevel||100})}
+                  className="accent-amber-500"/>
+                <span className="text-xs text-zinc-300">🏛️ In Honor Hall</span>
+              </label>
+              {cfg.inHonor && (
+                <div className="flex items-center gap-1.5 ml-auto">
+                  <label className="text-[10px] text-zinc-500 uppercase tracking-wider">Honor Lv</label>
+                  <input type="number" min={1} max={600} value={cfg.honorLevel||100}
+                    onChange={e=>updCfg(hero.id,{honorLevel:Math.min(600,Math.max(1,Number(e.target.value)||1))})}
+                    className="w-16 bg-zinc-900 border border-zinc-700/50 rounded px-1.5 py-0.5 text-xs text-zinc-200 text-center focus:outline-none focus:border-amber-600/50"/>
+                  <span className="text-[10px] text-zinc-600">/600</span>
+                </div>
+              )}
             </div>
             {hero.skills&&hero.skills.length>0&&(<div className="mb-4">
               <div className="text-xs text-zinc-500 uppercase tracking-wider mb-2">Skill Levels</div>
