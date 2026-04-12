@@ -1,86 +1,86 @@
 {
-  "2": {
-    "animatorPath": "Tower/tower_rightdown_animator.overrideController",
+  "5": {
+    "animatorPath": "Tower/tower_rightup_animator.overrideController",
+    "id": 5,
+    "modelConfigId": 40005,
     "coordinate": [
       509,
-      491
-    ],
-    "id": 2,
-    "modelConfigId": 40002
-  },
-  "3": {
-    "animatorPath": "Tower/tower_leftup_animator.controller",
-    "coordinate": [
-      491,
       509
-    ],
-    "id": 3,
-    "modelConfigId": 40003
+    ]
   },
   "4": {
     "animatorPath": "Tower/tower_leftdown_animator.overrideController",
+    "id": 4,
+    "modelConfigId": 40004,
     "coordinate": [
       491,
       491
-    ],
-    "id": 4,
-    "modelConfigId": 40004
+    ]
   },
-  "5": {
-    "animatorPath": "Tower/tower_rightup_animator.overrideController",
+  "3": {
+    "animatorPath": "Tower/tower_leftup_animator.controller",
+    "id": 3,
+    "modelConfigId": 40003,
+    "coordinate": [
+      491,
+      509
+    ]
+  },
+  "2": {
+    "animatorPath": "Tower/tower_rightdown_animator.overrideController",
+    "id": 2,
+    "modelConfigId": 40002,
     "coordinate": [
       509,
-      509
-    ],
-    "id": 5,
-    "modelConfigId": 40005
+      491
+    ]
   },
   "1": {
-    "area": 87,
     "benefit": [
       {
-        "Source": 905,
         "Value": 0.1,
-        "Type": 10101
+        "Type": 10101,
+        "Source": 905
       }
     ],
-    "type": 1,
-    "cityBlockId": 9999,
+    "area": 87,
     "AdjacentCities": [
       6001,
       6002,
       6003
     ],
+    "cityBlockId": 9999,
     "reward": [
       {
-        "type": 11,
-        "count": 3000
+        "count": 3000,
+        "type": 11
       },
       {
-        "count": 50,
         "id": "item_UseUp_recruitCoin",
+        "count": 50,
         "type": 99
       },
       {
-        "count": 180,
         "id": "item_food_50k",
+        "count": 180,
         "type": 99
       },
       {
-        "count": 180,
         "id": "item_wood_50k",
-        "type": 99
-      },
-      {
         "count": 180,
-        "id": "item_steel_30k",
         "type": 99
       },
       {
-        "count": 300,
+        "id": "item_steel_30k",
+        "count": 180,
+        "type": 99
+      },
+      {
         "id": "item_optionalBox_Resource",
+        "count": 300,
         "type": 99
       }
-    ]
+    ],
+    "type": 1
   }
 }

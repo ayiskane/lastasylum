@@ -176,14 +176,23 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
       typeLabel: first.typeDesc ? extractTypeLabel(first.typeDesc) : (SLOT_LABELS[slot] || 'Skill'),
       icon: first.icon || first.skillIcon || '',
       iconSrc: skillImagePath(first.icon || first.skillIcon || ''),
-      levels: levels.map((lv: any) => ({
-        star: lv.star || 0,
-        unlockStar: lv.starCondition || 0,
-        power: lv.power || '',
-        param1: lv.param1 || '',
-        description: lv.description ? stripTags(lv.description) : '',
-        params: lv.params || { param1: lv.param1 },
-      })),
+      levels: levels.map((lv: any) => {
+        // Collect all param fields (param1, param2, param3, etc.)
+        const params: Record<string, string> = {}
+        for (const key of Object.keys(lv)) {
+          if (key.startsWith('param') && typeof lv[key] === 'string') {
+            params[key] = lv[key]
+          }
+        }
+        return {
+          star: lv.skillStar || lv.star || 0,
+          unlockStar: lv.unlockStar || lv.starCondition || 0,
+          power: lv.power || '',
+          param1: lv.param1 || '',
+          description: lv.description ? stripTags(lv.description) : '',
+          params,
+        }
+      }),
     }
   })
 

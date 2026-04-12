@@ -1,107 +1,46 @@
 {
-  "1": {
-    "target": [
-      {
-        "param2": 8,
-        "id": 20103,
-        "param1": 1001
-      }
-    ]
-  },
-  "5": {
-    "randomMax": 30,
-    "id": 5,
-    "randomMin": 10,
-    "target": [
-      {
-        "param2": 24,
-        "id": 20103,
-        "param1": 1001
-      }
-    ],
-    "reward": [
-      {
-        "count": 500,
-        "type": 11
-      }
-    ]
-  },
-  "4": {
-    "randomMax": 30,
-    "id": 4,
-    "randomMin": 10,
-    "reward": [
-      {
-        "count": 500,
-        "type": 11
-      }
-    ]
-  },
-  "3": {
-    "target": [
-      {
-        "param2": 16,
-        "id": 20103,
-        "param1": 1001
-      }
-    ],
-    "id": 3
-  },
-  "2": {
-    "target": [
-      {
-        "param2": 12,
-        "id": 20103,
-        "param1": 1001
-      }
-    ],
-    "id": 2
-  },
   "9": {
-    "eggClaimLimitId": 3,
+    "eggType": 2,
     "itemID": "item_itemegg_newyear",
+    "issueBanner": "img_lt_jd_banner_01",
     "reward": [
       {
         "count": 8000,
         "type": 11
       }
     ],
+    "eggClaimLimitId": 3,
+    "referenceID": 8,
     "randomMax": 1088,
     "id": 9,
-    "referenceID": 8,
-    "issueBanner": "img_lt_jd_banner_01",
-    "randomMin": 168,
-    "eggType": 2
+    "randomMin": 168
   },
   "8": {
-    "randomMax": 1088,
-    "eggClaimLimitId": 2,
     "target": [
       {
+        "param1": 1001,
         "param2": 999,
-        "id": 20103,
-        "param1": 1001
+        "id": 20103
       }
     ],
     "eggType": 1,
-    "randomMin": 168,
-    "id": 8,
+    "eggClaimLimitId": 2,
     "reward": [
       {
         "count": 8000,
         "type": 11
       }
-    ]
+    ],
+    "randomMax": 1088,
+    "id": 8,
+    "randomMin": 168
   },
   "7": {
-    "randomMax": 75,
-    "id": 7,
-    "randomMin": 25,
     "target": [
       {
+        "param1": 1001,
         "param2": 30,
-        "id": 20103,
-        "param1": 1001
+        "id": 20103
       }
     ],
     "reward": [
@@ -109,23 +48,84 @@
         "count": 1000,
         "type": 11
       }
-    ]
+    ],
+    "randomMax": 75,
+    "id": 7,
+    "randomMin": 25
   },
   "6": {
-    "randomMax": 30,
-    "id": 6,
-    "randomMin": 10,
     "target": [
       {
+        "param1": 1001,
         "param2": 27,
-        "id": 20103,
-        "param1": 1001
+        "id": 20103
       }
     ],
     "reward": [
       {
         "count": 500,
         "type": 11
+      }
+    ],
+    "randomMax": 30,
+    "id": 6,
+    "randomMin": 10
+  },
+  "1": {
+    "target": [
+      {
+        "param1": 1001,
+        "param2": 8,
+        "id": 20103
+      }
+    ]
+  },
+  "5": {
+    "target": [
+      {
+        "param1": 1001,
+        "param2": 24,
+        "id": 20103
+      }
+    ],
+    "reward": [
+      {
+        "count": 500,
+        "type": 11
+      }
+    ],
+    "randomMax": 30,
+    "id": 5,
+    "randomMin": 10
+  },
+  "4": {
+    "reward": [
+      {
+        "count": 500,
+        "type": 11
+      }
+    ],
+    "randomMax": 30,
+    "id": 4,
+    "randomMin": 10
+  },
+  "3": {
+    "id": 3,
+    "target": [
+      {
+        "param1": 1001,
+        "param2": 16,
+        "id": 20103
+      }
+    ]
+  },
+  "2": {
+    "id": 2,
+    "target": [
+      {
+        "param1": 1001,
+        "param2": 12,
+        "id": 20103
       }
     ]
   }

@@ -32,12 +32,17 @@ function evalParam(expr: string, n1: number): number | null {
   }
 }
 
-function formatValue(val: number): string {
-  // If value > 10, it's likely a percentage (multiplied by 100 in the formula)
+function formatValue(val: number, expr?: string): string {
+  // If the formula multiplies by 100, it's already a percentage
+  if (expr && /\*\s*100/.test(expr)) {
+    return `${val.toFixed(1)}%`
+  }
+  // If value >= 1 and looks like a percentage
   if (Math.abs(val) >= 10) {
     return `${val.toFixed(1)}%`
   }
-  return val.toFixed(2)
+  // Small values — likely a % that wasn't multiplied by 100
+  return `${val.toFixed(1)}%`
 }
 
 function insertParams(desc: string, params: Record<string, string>, n1: number): string {
@@ -49,7 +54,7 @@ function insertParams(desc: string, params: Record<string, string>, n1: number):
     if (expr) {
       const val = evalParam(expr, n1)
       if (val !== null) {
-        result = result.replace(`{${i}}`, formatValue(val))
+        result = result.replace(`{${i}}`, formatValue(val, expr))
       }
     }
   }
@@ -58,7 +63,7 @@ function insertParams(desc: string, params: Record<string, string>, n1: number):
   if (param1) {
     const val = evalParam(param1, n1)
     if (val !== null) {
-      result = result.replace(/\bX\b/, formatValue(val))
+      result = result.replace(/\bX\b/, formatValue(val, param1))
     }
   }
   return result
@@ -80,11 +85,17 @@ export default function HeroSkillPanel({ skills }: { skills: SkillGroupData[] })
   const active = skills[selected] || skills[0]
 
   // Compute the description with current skill level
-  const activeParams = active.levels[0]?.params || { param1: active.levels[0]?.param1 || '' }
+  // Use params from the first level that has a description, merged with level 0
+  const descLevel = active.levels.find((l: any) => l.description) || active.levels[0]
+  const baseParams = descLevel?.params || { param1: descLevel?.param1 || '' }
+  // Override with params from the currently selected skill level tier if available
+  const activeParams = active.levels[0]?.params 
+    ? { ...baseParams, ...active.levels[0].params }
+    : baseParams
   const computedDesc = useMemo(() => {
     if (!active.description) return ''
     return insertParams(active.description, activeParams, skillLevel)
-  }, [active.description, activeParams, skillLevel])
+  }, [active.description, JSON.stringify(activeParams), skillLevel])
 
   // Check if this skill has any computable params
   const hasFormula = Object.values(activeParams).some(v => v && v.includes('n1'))
