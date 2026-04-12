@@ -41,28 +41,33 @@ function formatValue(val: number, expr?: string): string {
 
 function insertParams(desc: string, params: Record<string, string>, n1: number): string {
   let result = desc
-  // Replace {0}, {1}, {2} etc with computed values
+  // Replace {0}, {1}, {2} etc with computed values wrapped in markers
   for (let i = 0; i <= 5; i++) {
     const paramKey = i === 0 ? 'param1' : `param${i + 1}`
     const expr = params[paramKey]
     if (expr) {
       const val = evalParam(expr, n1)
       if (val !== null) {
-        result = result.replace(`{${i}}`, formatValue(val, expr))
+        result = result.replace(`{${i}}`, `<<${formatValue(val, expr)}>>`)
       }
     }
   }
-  // Also replace standalone X
+  // Also replace standalone X with param1
   const param1 = params['param1']
   if (param1) {
     const val = evalParam(param1, n1)
     if (val !== null) {
-      result = result.replace(/\bX\b/, formatValue(val, param1))
+      result = result.replace(/\bX\b/, `<<${formatValue(val, param1)}>>`)
     }
   }
   // Clean up any remaining unreplaced {N} placeholders
   result = result.replace(/\{\d+\}/g, 'X')
   return result
+}
+
+function highlightValues(text: string): string {
+  // Convert <<value>> markers to colored spans
+  return text.replace(/<<([^>]+)>>/g, '<span style="color:#c9a44e;font-weight:600;font-family:monospace">$1</span>')
 }
 
 export default function HeroSkillPanel({ skills }: { skills: SkillGroupData[] }) {
@@ -92,9 +97,6 @@ export default function HeroSkillPanel({ skills }: { skills: SkillGroupData[] })
     if (!active.description) return ''
     return insertParams(active.description, activeParams, skillLevel)
   }, [active.description, JSON.stringify(activeParams), skillLevel])
-
-  // Check if this skill has any computable params
-  const hasFormula = Object.values(activeParams).some(v => v && v.includes('n1'))
 
   return (
     <section className="bg-asylum-surface border border-asylum-border rounded-xl overflow-hidden">
@@ -157,31 +159,11 @@ export default function HeroSkillPanel({ skills }: { skills: SkillGroupData[] })
             </span>
           </div>
 
-          {/* Description with computed values */}
+          {/* Description box with highlighted computed values */}
           {(computedDesc || active.description) && (
-            <p className="text-sm text-asylum-muted leading-relaxed mb-4">{computedDesc || active.description}</p>
-          )}
-
-          {/* Live computed param values */}
-          {hasFormula && (
             <div className="bg-asylum-bg/60 border border-asylum-accent/20 rounded-lg px-4 py-3 mb-4">
-              <div className="text-[10px] uppercase tracking-wider text-asylum-accent font-semibold mb-2">
-                Values at skill level {skillLevel}
-              </div>
-              <div className="flex flex-wrap gap-x-6 gap-y-1">
-                {Object.entries(activeParams).map(([key, expr]) => {
-                  if (!expr || !expr.includes('n1')) return null
-                  const val = evalParam(expr, skillLevel)
-                  if (val === null) return null
-                  const label = key === 'param1' ? 'DMG / Effect' : key.replace('param', 'Param ')
-                  return (
-                    <div key={key} className="text-xs">
-                      <span className="text-asylum-muted">{label}: </span>
-                      <span className="text-asylum-text font-mono font-semibold">{formatValue(val)}</span>
-                    </div>
-                  )
-                })}
-              </div>
+              <p className="text-sm text-asylum-muted leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: highlightValues(computedDesc || active.description) }} />
             </div>
           )}
 

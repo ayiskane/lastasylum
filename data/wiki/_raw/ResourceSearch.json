@@ -1,30 +1,10 @@
 {
-  "15": {
-    "pic": "",
-    "buildingPicAtlas": "",
-    "isShow": false,
-    "rallyType": 8,
-    "maxLevel": 0,
-    "id": 15,
-    "activityId": 450010601,
-    "type": 3,
-    "pointType": 6,
-    "picAtlas": "",
-    "isOpenServerMaxLv": 1,
-    "levellist": [
-      5
-    ]
-  },
   "16": {
     "pic": "",
-    "buildingPicAtlas": "",
     "isShow": false,
-    "rallyType": 10,
     "maxLevel": 0,
+    "rallyType": 10,
     "id": 16,
-    "activityId": 450010601,
-    "picAtlas": "",
-    "isOpenServerMaxLv": 1,
     "levellist": [
       5,
       10,
@@ -46,17 +26,46 @@
       90,
       95,
       100
-    ]
+    ],
+    "activityId": 450010601,
+    "picAtlas": "",
+    "buildingPicAtlas": "",
+    "isOpenServerMaxLv": 1
+  },
+  "15": {
+    "type": 3,
+    "pic": "",
+    "levellist": [
+      5
+    ],
+    "isShow": false,
+    "maxLevel": 0,
+    "rallyType": 8,
+    "id": 15,
+    "pointType": 6,
+    "activityId": 450010601,
+    "picAtlas": "",
+    "buildingPicAtlas": "",
+    "isOpenServerMaxLv": 1
+  },
+  "14": {
+    "buildingPic": "pic_lmjj_boss48",
+    "rallyType": 2,
+    "id": 14,
+    "pointType": 9914,
+    "activityId": 560010102,
+    "type": 3,
+    "sort": 970,
+    "isOpenServerMaxLv": 1
   },
   "13": {
+    "buildingPic": "pic_lmjj_boss48",
     "sort": 975,
     "rallyType": 2,
     "id": 13,
+    "pointType": 9914,
     "activityId": 560010101,
     "type": 3,
-    "pointType": 9914,
-    "buildingPic": "pic_lmjj_boss48",
-    "isOpenServerMaxLv": 1,
     "levellist": [
       70001,
       70002,
@@ -88,112 +97,15 @@
       70028,
       70029,
       70030
-    ]
-  },
-  "1": {
-    "pic": "Icon_Item_Food",
-    "buildingPicAtlas": "SpriteAtlas/UI_BuildingIcon.spriteatlas",
-    "sort": 6,
-    "maxLevel": 10,
-    "buildingPic": "pic_sjss_cj1",
-    "type": 1,
-    "resourceType": 1,
-    "pointType": 3,
-    "picAtlas": "SpriteAtlas/UI_Icon.spriteatlas",
-    "levellist": [
-      101,
-      102,
-      103,
-      104,
-      105,
-      106,
-      107,
-      108,
-      109,
-      110
-    ]
-  },
-  "7": {
-    "sort": 980,
-    "buildingPic": "pic_lmjj_mrjy1",
-    "type": 3,
-    "huntable": true,
-    "rallyType": 1,
-    "pointType": 6,
-    "id": 7
-  },
-  "2": {
-    "pic": "Icon_Item_Wood",
-    "buildingPicAtlas": "SpriteAtlas/UI_BuildingIcon.spriteatlas",
-    "sort": 5,
-    "maxLevel": 10,
-    "id": 2,
-    "buildingPic": "pic_sjss_cj2",
-    "type": 1,
-    "resourceType": 2,
-    "pointType": 3,
-    "picAtlas": "SpriteAtlas/UI_Icon.spriteatlas",
-    "levellist": [
-      201,
-      202,
-      203,
-      204,
-      205,
-      206,
-      207,
-      208,
-      209,
-      210
-    ]
-  },
-  "14": {
-    "pointType": 9914,
-    "sort": 970,
-    "activityId": 560010102,
-    "type": 3,
-    "rallyType": 2,
-    "isOpenServerMaxLv": 1,
-    "buildingPic": "pic_lmjj_boss48",
-    "id": 14
-  },
-  "4": {
-    "pic": "Map_Btn_Attack",
-    "buildingPic": "pic_lmjj_dy1",
-    "huntable": true,
-    "sort": 3,
-    "resourceType": 1,
-    "id": 4
-  },
-  "3": {
-    "pic": "Icon_Item_Stone",
-    "buildingPicAtlas": "SpriteAtlas/UI_BuildingIcon.spriteatlas",
-    "sort": 4,
-    "maxLevel": 10,
-    "id": 3,
-    "buildingPic": "pic_sjss_cj3",
-    "type": 1,
-    "resourceType": 3,
-    "pointType": 3,
-    "picAtlas": "SpriteAtlas/UI_Icon.spriteatlas",
-    "levellist": [
-      301,
-      302,
-      303,
-      304,
-      305,
-      306,
-      307,
-      308,
-      309,
-      310
-    ]
+    ],
+    "isOpenServerMaxLv": 1
   },
   "6": {
-    "pic": "Map_Btn_Attack",
     "buildingPic": "pic_lmjj_dy3",
+    "id": 6,
+    "resourceType": 3,
     "sort": 1,
     "huntable": true,
-    "resourceType": 3,
     "levellist": [
       61,
       62,
@@ -226,14 +138,14 @@
       89,
       90
     ],
-    "id": 6
+    "pic": "Map_Btn_Attack"
   },
   "5": {
-    "pic": "Map_Btn_Attack",
     "buildingPic": "pic_lmjj_dy2",
+    "id": 5,
+    "resourceType": 2,
     "sort": 2,
     "huntable": true,
-    "resourceType": 2,
     "levellist": [
       31,
       32,
@@ -266,6 +178,94 @@
       59,
       60
     ],
-    "id": 5
+    "pic": "Map_Btn_Attack"
+  },
+  "4": {
+    "buildingPic": "pic_lmjj_dy1",
+    "id": 4,
+    "resourceType": 1,
+    "sort": 3,
+    "huntable": true,
+    "pic": "Map_Btn_Attack"
+  },
+  "3": {
+    "buildingPic": "pic_sjss_cj3",
+    "sort": 4,
+    "pic": "Icon_Item_Stone",
+    "maxLevel": 10,
+    "resourceType": 3,
+    "id": 3,
+    "pointType": 3,
+    "type": 1,
+    "picAtlas": "SpriteAtlas/UI_Icon.spriteatlas",
+    "buildingPicAtlas": "SpriteAtlas/UI_BuildingIcon.spriteatlas",
+    "levellist": [
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310
+    ]
+  },
+  "2": {
+    "buildingPic": "pic_sjss_cj2",
+    "sort": 5,
+    "pic": "Icon_Item_Wood",
+    "maxLevel": 10,
+    "resourceType": 2,
+    "id": 2,
+    "pointType": 3,
+    "type": 1,
+    "picAtlas": "SpriteAtlas/UI_Icon.spriteatlas",
+    "buildingPicAtlas": "SpriteAtlas/UI_BuildingIcon.spriteatlas",
+    "levellist": [
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210
+    ]
+  },
+  "1": {
+    "buildingPic": "pic_sjss_cj1",
+    "sort": 6,
+    "maxLevel": 10,
+    "pic": "Icon_Item_Food",
+    "resourceType": 1,
+    "pointType": 3,
+    "type": 1,
+    "picAtlas": "SpriteAtlas/UI_Icon.spriteatlas",
+    "buildingPicAtlas": "SpriteAtlas/UI_BuildingIcon.spriteatlas",
+    "levellist": [
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ]
+  },
+  "7": {
+    "buildingPic": "pic_lmjj_mrjy1",
+    "rallyType": 1,
+    "id": 7,
+    "pointType": 6,
+    "sort": 980,
+    "huntable": true,
+    "type": 3
   }
 }
