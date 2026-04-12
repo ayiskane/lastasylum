@@ -1,30 +1,41 @@
 {
   "1002": {
+    "id": 1002,
     "initScore": 0,
     "defenderChallengeLowerRank": 50,
-    "id": 1002,
     "attackerChallengeLowerRank": 10
   },
   "4001": {
-    "maxRefreshCount": 0,
-    "freeRefreshCount": 0,
     "opponentSize": 0,
+    "maxChallengeCount": 30,
+    "multiTeam": true,
+    "id": 4001,
+    "freeChallengeCount": 30,
     "item": [
       {
         "type": 11,
         "count": 30
       }
     ],
-    "freeChallengeCount": 30,
-    "enterRank": 200,
-    "maxChallengeCount": 30,
+    "freeRefreshCount": 0,
     "arenaType": 4,
-    "id": 4001,
-    "multiTeam": true
+    "enterRank": 200,
+    "maxRefreshCount": 0
+  },
+  "1001": {
+    "initScore": 0,
+    "defenderChallengeLowerRank": 50,
+    "attackerChallengeLowerRank": 10
+  },
+  "2001": {
+    "opponentSize": 0,
+    "arenaType": 2,
+    "id": 2001,
+    "freeChallengeCount": 10,
+    "enterRank": 10000,
+    "zoneRuleId": 1001
   },
   "3001": {
-    "maxRefreshCount": 5,
-    "enterRank": 1200,
     "item": [
       {
         "type": 11,
@@ -33,19 +44,8 @@
     ],
     "arenaType": 3,
     "id": 3001,
-    "freeChallengeCount": 10
-  },
-  "2001": {
-    "enterRank": 10000,
-    "opponentSize": 0,
-    "zoneRuleId": 1001,
-    "arenaType": 2,
-    "id": 2001,
-    "freeChallengeCount": 10
-  },
-  "1001": {
-    "defenderChallengeLowerRank": 50,
-    "initScore": 0,
-    "attackerChallengeLowerRank": 10
+    "freeChallengeCount": 10,
+    "enterRank": 1200,
+    "maxRefreshCount": 5
   }
 }

@@ -60,6 +60,8 @@ function insertParams(desc: string, params: Record<string, string>, n1: number):
       result = result.replace(/\bX\b/, formatValue(val, param1))
     }
   }
+  // Clean up any remaining unreplaced {N} placeholders
+  result = result.replace(/\{\d+\}/g, 'X')
   return result
 }
 

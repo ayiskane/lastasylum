@@ -1,60 +1,60 @@
 {
-  "1": {
-    "tabIcon": "pic_jg_zhaomu_hero",
-    "switchId": "HeroRecruit_Once_1",
-    "fresherURTips": "recruit_guaranteed_function_tips"
-  },
-  "2": {
-    "switchId": "HeroRecruit_Once_2",
-    "guaranteedDisplayPool": 202,
-    "exhibitPool": 201,
-    "newHeroId": [
-      50002
+  "9": {
+    "drawCount": [
+      1,
+      10
     ],
-    "initialPool": 200,
-    "recruitAnimation": "Prefab/Timeline/ChoukaTimeLine.prefab",
-    "id": 2
+    "initialPool": 901,
+    "prefab": "UI_Panel/Pub/PubWorkerPoolSub.prefab",
+    "guaranteedDisplayPool": 902,
+    "id": 9,
+    "cost": [
+      {
+        "type": 99,
+        "id": "item_UseUp_workerRecruitCoin",
+        "count": -1
+      }
+    ],
+    "giftId": 900901035,
+    "pic": "pic_jg_zm_xcz",
+    "displaySpineId": 0,
+    "tabIcon": "pic_jg_zhaomu_xingcunzhe",
+    "unlockId": 214,
+    "gotoDailyCount": 0,
+    "unlock100Draw": -1,
+    "type": 4,
+    "giftGroupId": {},
+    "rewardType": 2,
+    "exhibitPool": 901,
+    "tagImage": "pic_jg_zhaomu_xingcunzhe",
+    "tagSelectIcon": "pic_jg_zhaomudi3"
   },
   "3": {
+    "recruitAnimation": "Prefab/Timeline/ChoukaTimeLine.prefab",
     "switchId": "HeroRecruit_Once_3",
+    "initialPool": 300,
     "guaranteedDisplayPool": 302,
     "exhibitPool": 301,
     "newHeroId": [
       50004,
       50006
     ],
-    "initialPool": 300,
-    "recruitAnimation": "Prefab/Timeline/ChoukaTimeLine.prefab",
     "id": 3
   },
-  "9": {
-    "displaySpineId": 0,
-    "giftId": 900901035,
-    "guaranteedDisplayPool": 902,
-    "exhibitPool": 901,
-    "unlockId": 214,
-    "prefab": "UI_Panel/Pub/PubWorkerPoolSub.prefab",
-    "tagImage": "pic_jg_zhaomu_xingcunzhe",
-    "cost": [
-      {
-        "count": -1,
-        "type": 99,
-        "id": "item_UseUp_workerRecruitCoin"
-      }
+  "2": {
+    "recruitAnimation": "Prefab/Timeline/ChoukaTimeLine.prefab",
+    "switchId": "HeroRecruit_Once_2",
+    "initialPool": 200,
+    "guaranteedDisplayPool": 202,
+    "exhibitPool": 201,
+    "newHeroId": [
+      50002
     ],
-    "rewardType": 2,
-    "tagSelectIcon": "pic_jg_zhaomudi3",
-    "unlock100Draw": -1,
-    "type": 4,
-    "drawCount": [
-      1,
-      10
-    ],
-    "giftGroupId": {},
-    "gotoDailyCount": 0,
-    "tabIcon": "pic_jg_zhaomu_xingcunzhe",
-    "initialPool": 901,
-    "pic": "pic_jg_zm_xcz",
-    "id": 9
+    "id": 2
+  },
+  "1": {
+    "tabIcon": "pic_jg_zhaomu_hero",
+    "switchId": "HeroRecruit_Once_1",
+    "fresherURTips": "recruit_guaranteed_function_tips"
   }
 }

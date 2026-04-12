@@ -10,7 +10,7 @@ export async function generateStaticParams() {
 }
 
 function stripTags(s: string): string {
-  return s.replace(/\[c\]\[[^\]]*\]/g, '').replace(/\[-\]\[\/c\]/g, '').replace(/\[\/c\]/g, '').replace(/\{(\d+)\}/g, 'X')
+  return s.replace(/\[c\]\[[^\]]*\]/g, '').replace(/\[-\]\[\/c\]/g, '').replace(/\[\/c\]/g, '')
 }
 
 const SLOT_LABELS: Record<number, string> = {

@@ -1,21 +1,72 @@
 {
-  "6": {
+  "1": {
+    "unlockReward": 0,
+    "unlockCondition": {},
+    "unlockSpend": {}
+  },
+  "2": {
+    "id": 2,
+    "unlockCondition": [
+      {
+        "level": 2,
+        "roomupgrade": 2010302
+      }
+    ],
+    "unlockSpend": [
+      {
+        "type": 2,
+        "count": 100
+      }
+    ]
+  },
+  "7": {
+    "id": 7,
+    "unlockCondition": [
+      {
+        "level": 8,
+        "roomupgrade": 2011602
+      }
+    ],
     "unlockSpend": [
       {
         "type": 1043,
-        "count": 1500
+        "count": 3000
       },
       {
         "type": 2,
-        "count": 1500
+        "count": 3000
       }
-    ],
+    ]
+  },
+  "8": {
+    "id": 8,
     "unlockCondition": [
       {
-        "roomupgrade": 2011302,
-        "level": 7
+        "level": 9,
+        "roomupgrade": 2012002
       }
     ],
+    "unlockSpend": [
+      {
+        "type": 1043,
+        "count": 5000
+      },
+      {
+        "type": 2,
+        "count": 3000
+      }
+    ]
+  },
+  "5": {
+    "id": 5,
+    "unlockCondition": [
+      {
+        "level": 6,
+        "roomupgrade": 2011002
+      }
+    ]
+  },
+  "6": {
     "changeQueue": [
       {},
       {},
@@ -25,14 +76,47 @@
         "roomType": 64
       }
     ],
-    "id": 6
-  },
-  "5": {
-    "id": 5,
+    "id": 6,
     "unlockCondition": [
       {
-        "roomupgrade": 2011002,
-        "level": 6
+        "level": 7,
+        "roomupgrade": 2011302
+      }
+    ],
+    "unlockSpend": [
+      {
+        "type": 1043,
+        "count": 1500
+      },
+      {
+        "type": 2,
+        "count": 1500
+      }
+    ]
+  },
+  "3": {
+    "id": 3,
+    "unlockSpend": [
+      {
+        "type": 1043,
+        "count": 500
+      },
+      {
+        "type": 2,
+        "count": 500
+      }
+    ],
+    "unlockCondition": [
+      {
+        "level": 4,
+        "roomupgrade": 2010602
+      }
+    ],
+    "additionRewards": [
+      {
+        "id": "16040101",
+        "count": 1,
+        "type": 1100003
       }
     ]
   },
@@ -46,90 +130,6 @@
       {
         "type": 2,
         "count": 800
-      }
-    ]
-  },
-  "3": {
-    "unlockSpend": [
-      {
-        "type": 1043,
-        "count": 500
-      },
-      {
-        "type": 2,
-        "count": 500
-      }
-    ],
-    "unlockCondition": [
-      {
-        "roomupgrade": 2010602,
-        "level": 4
-      }
-    ],
-    "additionRewards": [
-      {
-        "type": 1100003,
-        "count": 1,
-        "id": "16040101"
-      }
-    ],
-    "id": 3
-  },
-  "2": {
-    "unlockCondition": [
-      {
-        "roomupgrade": 2010302,
-        "level": 2
-      }
-    ],
-    "id": 2,
-    "unlockSpend": [
-      {
-        "type": 2,
-        "count": 100
-      }
-    ]
-  },
-  "1": {
-    "unlockCondition": {},
-    "unlockSpend": {},
-    "unlockReward": 0
-  },
-  "8": {
-    "unlockCondition": [
-      {
-        "roomupgrade": 2012002,
-        "level": 9
-      }
-    ],
-    "id": 8,
-    "unlockSpend": [
-      {
-        "type": 1043,
-        "count": 5000
-      },
-      {
-        "type": 2,
-        "count": 3000
-      }
-    ]
-  },
-  "7": {
-    "unlockCondition": [
-      {
-        "roomupgrade": 2011602,
-        "level": 8
-      }
-    ],
-    "id": 7,
-    "unlockSpend": [
-      {
-        "type": 1043,
-        "count": 3000
-      },
-      {
-        "type": 2,
-        "count": 3000
       }
     ]
   }
