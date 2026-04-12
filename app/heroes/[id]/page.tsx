@@ -131,6 +131,7 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
   const statsData = {
     maxLevel,
     maxStar,
+    attackCd: hero.attackCd || 0,
     levelBenefitName: lb ? (STAT_NAMES[lb.Type] || `Stat #${lb.Type}`) : '',
     levelEntries,
     starEntries,
@@ -227,8 +228,12 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
 
           <div className="max-lg:flex-1">
             {/* Name — centered, bigger, rarity colored */}
-            <h1 className={`text-2xl font-bold tracking-wider text-center mb-1 ${cardStyle.nameColor}`}
+            <h1 className={`text-2xl font-bold tracking-wider text-center mb-0.5 ${cardStyle.nameColor}`}
               style={{ fontFamily: "'Rajdhani', sans-serif" }}>{name}</h1>
+            {/* Tagline */}
+            {hero.descRecruitPreview && (
+              <p className="text-[11px] text-asylum-muted italic text-center mb-2 leading-snug">{hero.descRecruitPreview}</p>
+            )}
             {/* Might — centered */}
             <div className="flex items-center justify-center gap-1 mb-3">
               <img src="/images/icons/ico_zhanli_60.png" alt="Might" className="w-5 h-5" />
@@ -236,7 +241,7 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
             </div>
 
             {/* Shards */}
-            <div className="flex gap-1.5 mb-3">
+            <div className="flex justify-center gap-1.5 mb-3">
               {shardItem && (
                 <div className="flex items-center gap-1 bg-asylum-bg border border-asylum-border rounded px-1.5 py-0.5">
                   <GameImage src={itemImagePath(shardItem.icon)} alt="Shard" className="w-3 h-3" />
@@ -249,22 +254,6 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
                   <span className="text-[10px] text-asylum-muted">×1</span>
                 </div>
               )}
-            </div>
-
-            {/* Quick stats */}
-            <div className="border-t border-asylum-border pt-2 space-y-0.5">
-              {[
-                ['Atk speed', `${hero.attackCd}ms`],
-                ['Max honor', String(hero.maxHonorLevel)],
-                ['Star cap', String(hero.heroStarRating)],
-                ['Skills', String(skillSlots.length)],
-                ['Unlock', hero.buildingLevel ? `Bldg Lv.${hero.buildingLevel}` : '—'],
-              ].map(([l, v]) => (
-                <div key={l} className="flex justify-between text-[11px]">
-                  <span className="text-asylum-hint">{l}</span>
-                  <span className="font-mono text-[10px] text-asylum-muted">{v}</span>
-                </div>
-              ))}
             </div>
 
             {/* TOC */}
@@ -285,10 +274,6 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
         <Link href="/heroes" className="text-xs text-asylum-muted hover:text-asylum-accent mb-4 inline-block">
           ← Back to Heroes
         </Link>
-
-        {hero.descRecruitPreview && (
-          <p className="text-sm text-asylum-muted italic mb-2">{hero.descRecruitPreview}</p>
-        )}
 
         {/* ─── Base Stats ─── */}
         <h2 id="scaling" className="text-xs font-semibold text-asylum-accent uppercase tracking-[2px] mt-6 mb-3 pb-1.5 border-b border-asylum-accent/15">

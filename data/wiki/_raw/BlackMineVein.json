@@ -1,18 +1,4 @@
 {
-  "1003": {
-    "gatherHeapId": "9",
-    "mapIcon": "pic_blackmine_kuangmai_3",
-    "refreshRate": 0.7,
-    "maxLossNum": 6000,
-    "collectThreshold": 10006,
-    "amount": 34560,
-    "id": 1003,
-    "speed": 1800,
-    "npcId": 30,
-    "initCount": 150,
-    "guardHeapId": "4|5|6",
-    "level": 3
-  },
   "2003": {
     "id": 2003,
     "type": 1
@@ -23,37 +9,51 @@
     "type": 1
   },
   "1002": {
+    "id": 1002,
+    "collectThreshold": 5003,
     "gatherHeapId": "8",
+    "npcId": 29,
+    "amount": 17280,
+    "speed": 1200,
+    "guardHeapId": "3|4|5",
+    "refreshRate": 2,
     "maxLossNum": 5000,
     "mapIcon": "pic_blackmine_kuangmai_2",
-    "refreshRate": 2,
-    "level": 2,
-    "collectThreshold": 5003,
-    "amount": 17280,
     "areaId": 3,
-    "speed": 1200,
-    "npcId": 29,
-    "initCount": 300,
-    "guardHeapId": "3|4|5",
-    "id": 1002
+    "level": 2,
+    "initCount": 300
   },
   "1001": {
-    "gatherHeapId": "7",
-    "mapIcon": "pic_blackmine_kuangmai_1",
-    "refreshRate": 3,
-    "maxLossNum": 4000,
-    "collectThreshold": 3500,
-    "amount": 8640,
-    "areaId": 4,
-    "speed": 600,
-    "npcId": 28,
     "initCount": 600,
+    "collectThreshold": 3500,
+    "gatherHeapId": "7",
+    "npcId": 28,
+    "amount": 8640,
     "guardHeapId": "1|2|3",
+    "speed": 600,
+    "maxLossNum": 4000,
+    "refreshRate": 3,
+    "areaId": 4,
+    "mapIcon": "pic_blackmine_kuangmai_1",
     "level": 1
   },
   "2001": {
     "id": 2001,
     "areaId": 4,
     "type": 1
+  },
+  "1003": {
+    "id": 1003,
+    "collectThreshold": 10006,
+    "gatherHeapId": "9",
+    "npcId": 30,
+    "amount": 34560,
+    "guardHeapId": "4|5|6",
+    "mapIcon": "pic_blackmine_kuangmai_3",
+    "maxLossNum": 6000,
+    "refreshRate": 0.7,
+    "speed": 1800,
+    "level": 3,
+    "initCount": 150
   }
 }

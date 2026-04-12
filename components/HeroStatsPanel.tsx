@@ -5,6 +5,7 @@ import { useState } from 'react'
 interface StatsData {
   maxLevel: number
   maxStar: number
+  attackCd: number
   levelBenefitName: string
   // Pre-computed stats for every level/star combo would be too large.
   // Instead pass the formulas and compute client-side.
@@ -59,11 +60,12 @@ export default function HeroStatsPanel({ data }: { data: StatsData }) {
       </div>
 
       {/* Stats grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
-        <StatCard label="ATK" value={atk} icon="/images/icons/ico_zhanli_60.png" />
+      <div className="grid grid-cols-2 sm:grid-cols-5 gap-2 mb-4">
+        <StatCard label="ATK" value={atk} />
         <StatCard label="HP" value={hp} />
         <StatCard label="DEF" value={def} />
         <StatCard label="CMD" value={cmd} />
+        <StatCard label="ATK SPD" value={data.attackCd} suffix="ms" />
       </div>
 
       {/* Level benefit */}
@@ -98,15 +100,14 @@ export default function HeroStatsPanel({ data }: { data: StatsData }) {
   )
 }
 
-function StatCard({ label, value, icon }: { label: string; value: number; icon?: string }) {
+function StatCard({ label, value, suffix }: { label: string; value: number; suffix?: string }) {
   return (
     <div className="bg-[#0e1018] border border-[#1a1c22] rounded-lg px-3 py-2.5 text-center">
       <div className="flex items-center justify-center gap-1 mb-1">
-        {icon && <img src={icon} alt="" className="w-3.5 h-3.5" />}
         <span className="text-[9px] text-[#6a6858] uppercase tracking-wider font-semibold">{label}</span>
       </div>
       <div className="text-base font-bold text-[#e8e4d8] font-mono tabular-nums">
-        {value.toLocaleString()}
+        {value.toLocaleString()}{suffix && <span className="text-[10px] text-[#6a6858] ml-0.5">{suffix}</span>}
       </div>
     </div>
   )
