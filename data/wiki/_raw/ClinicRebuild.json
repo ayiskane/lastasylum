@@ -1,19 +1,8 @@
 {
   "1020102": {
-    "id": 1020102,
     "srcRoom": 20102,
+    "id": 1020102,
     "prefabPath": "Scenes/Hotels/Prefab/Room_Bath_Right.prefab"
-  },
-  "1020103": {
-    "id": 1020103,
-    "needCondition": [
-      {
-        "rebuild": 20102,
-        "level": 99,
-        "roomupgrade": 2010202
-      }
-    ],
-    "srcRoom": 20103
   },
   "1020101": {
     "needCondition": [
@@ -22,5 +11,16 @@
         "level": 99
       }
     ]
+  },
+  "1020103": {
+    "needCondition": [
+      {
+        "level": 99,
+        "rebuild": 20102,
+        "roomupgrade": 2010202
+      }
+    ],
+    "srcRoom": 20103,
+    "id": 1020103
   }
 }

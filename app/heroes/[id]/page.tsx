@@ -172,8 +172,8 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
       name: first.displayName || `Skill ${slot}`,
       description: first.description ? stripTags(first.description) : '',
       typeLabel: first.typeDesc ? extractTypeLabel(first.typeDesc) : (SLOT_LABELS[slot] || 'Skill'),
-      icon: first.skillIcon || '',
-      iconSrc: skillImagePath(first.skillIcon || ''),
+      icon: first.icon || first.skillIcon || '',
+      iconSrc: skillImagePath(first.icon || first.skillIcon || ''),
       levels: levels.map((lv: any) => ({
         star: lv.star || 0,
         unlockStar: lv.starCondition || 0,

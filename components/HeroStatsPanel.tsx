@@ -18,18 +18,26 @@ interface StatsData {
 }
 
 export default function HeroStatsPanel({ data }: { data: StatsData }) {
-  const [level, setLevel] = useState(data.maxLevel)
+  const minLevel = data.levelEntries.length > 0 ? data.levelEntries[0].level : 1
+  const maxLevel = data.levelEntries.length > 0 ? data.levelEntries[data.levelEntries.length - 1].level : data.maxLevel
+  const [level, setLevel] = useState(maxLevel)
   const [star, setStar] = useState(data.maxStar)
 
-  // Find the level entry
-  const le = data.levelEntries.find(e => e.level === level) || data.levelEntries[data.levelEntries.length - 1]
+  // Find the closest level entry
+  const le = data.levelEntries.find(e => e.level === level)
+    || data.levelEntries.reduce((prev, curr) =>
+      Math.abs(curr.level - level) < Math.abs(prev.level - level) ? curr : prev,
+      data.levelEntries[0] || { level: 1, hp: 0, atk: 0, def: 0, cmd: 0 })
   // Find the star entry
-  const se = data.starEntries.find(e => e.star === star) || { star: 0, hp: 0, atk: 0, def: 0 }
+  const se = data.starEntries.find(e => e.star === star)
+    || data.starEntries.reduce((prev, curr) =>
+      Math.abs(curr.star - star) < Math.abs(prev.star - star) ? curr : prev,
+      data.starEntries[0] || { star: 0, hp: 0, atk: 0, def: 0 })
 
   // Compute stats: base × ratio (level) + base × ratio (star)
-  const hp = Math.round((le?.hp || 0) * data.levelRatios.hp + (se?.hp || 0) * data.starRatios.hp)
-  const atk = Math.round((le?.atk || 0) * data.levelRatios.atk + (se?.atk || 0) * data.starRatios.atk)
-  const def = Math.round((le?.def || 0) * data.levelRatios.def + (se?.def || 0) * data.starRatios.def)
+  const hp = le && se ? Math.round((le.hp || 0) * data.levelRatios.hp + (se.hp || 0) * data.starRatios.hp) : 0
+  const atk = le && se ? Math.round((le.atk || 0) * data.levelRatios.atk + (se.atk || 0) * data.starRatios.atk) : 0
+  const def = le && se ? Math.round((le.def || 0) * data.levelRatios.def + (se.def || 0) * data.starRatios.def) : 0
   const cmd = le?.cmd || 0
 
   // Level benefit
@@ -44,7 +52,7 @@ export default function HeroStatsPanel({ data }: { data: StatsData }) {
             <label className="text-[10px] text-[#6a6858] uppercase tracking-wider font-semibold">Level</label>
             <span className="text-sm font-bold text-[#e8e4d8] font-mono">{level}</span>
           </div>
-          <input type="range" min={1} max={data.maxLevel} value={level}
+          <input type="range" min={minLevel} max={maxLevel} value={level}
             onChange={e => setLevel(Number(e.target.value))}
             className="w-full h-1.5 bg-[#1a1c22] rounded-lg appearance-none cursor-pointer accent-[#c9a44e]" />
         </div>
