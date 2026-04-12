@@ -72,19 +72,45 @@ function compute(hero: HeroData, cfg: OwnedHero, hl: any, hs: any, eq: any, hw?:
   const lvl = Math.min(150, Math.max(1, cfg.level))
   let bH=0,bA=0,bD=0,bC=0
   if (hl) {
+    // Each hero level entry has: {level, type, attr: [{Type, Value, Source}, ...]}
+    // Find the entry matching this hero's template + level; if no type match, use any at that level.
     let best: any=null, bd=Infinity
     for (const e of Object.values(hl) as any[]) {
-      if (e.type===t && Math.abs(e.level-lvl)<bd) { bd=Math.abs(e.level-lvl); best=e }
+      if (!e || typeof e.level !== 'number') continue
+      const typeMatch = e.type === t || e.type == null
+      if (!typeMatch) continue
+      const d = Math.abs(e.level - lvl)
+      if (d < bd) { bd = d; best = e }
     }
-    if (best) { bH=(best.attrs?.['10002']||0)*hR; bA=(best.attrs?.['10003']||0)*aR; bD=(best.attrs?.['10004']||0)*dR; bC=best.attrs?.['10001']||0 }
+    if (best?.attr) {
+      for (const a of best.attr) {
+        if (a.Type === 10002) bH = (a.Value || 0) * hR
+        else if (a.Type === 10003) bA = (a.Value || 0) * aR
+        else if (a.Type === 10004) bD = (a.Value || 0) * dR
+        else if (a.Type === 10001) bC = a.Value || 0
+      }
+    }
   }
   let sH=0,sA=0,sD=0
   // Clamp stars to 10 (max wholeStar)
   const stars = Math.min(10, Math.max(0, cfg.stars))
   const internalStars = stars * 5
-  if (hs) for (const e of Object.values(hs) as any[]) {
-    const s=e.star??e.level??0
-    if (s<=internalStars) { sH+=(e.attrs?.['10002']||0)*hR; sA+=(e.attrs?.['10003']||0)*aR; sD+=(e.attrs?.['10004']||0)*dR }
+  if (hs) {
+    // Star entries are CUMULATIVE snapshots, not increments. Pick the single highest
+    // entry whose star index ≤ internalStars; its attr values are the total bonus.
+    let bestStar: any = null, bestStarIdx = -1
+    for (const e of Object.values(hs) as any[]) {
+      if (!e) continue
+      const s = e.star ?? e.level ?? 0
+      if (s <= internalStars && s > bestStarIdx) { bestStarIdx = s; bestStar = e }
+    }
+    if (bestStar?.attr) {
+      for (const a of bestStar.attr) {
+        if (a.Type === 10002) sH = (a.Value || 0) * hR
+        else if (a.Type === 10003) sA = (a.Value || 0) * aR
+        else if (a.Type === 10004) sD = (a.Value || 0) * dR
+      }
+    }
   }
   // Honor Hall bonuses: flat HP/ATK/DEF from honorWall[honorLevel].levelBenefit
   let honH=0, honA=0, honD=0
