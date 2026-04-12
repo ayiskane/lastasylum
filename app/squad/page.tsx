@@ -10,14 +10,16 @@ interface HeroData {
   levelRatio: { Type: number; Value: number }[]
   starRatio: { Type: number; Value: number }[]
   levelBenefit: { Type: number; Value: number }[]
+  skills?: any[]
 }
 interface OwnedHero {
   id: number; level: number; stars: number
   equipment: { quality: number; strengthenLv: number }[]
+  skillLevels?: Record<number, number>
 }
 interface ComputedHero {
   hero: HeroData; config: OwnedHero
-  stats: { hp: number; atk: number; def: number; cmd: number; critRate: number; critDmg: number; dmgRate: number; dmgRes: number; monsterDmg: number; power: number; equipPower: number; levelBenefitLabel: string; levelBenefitValue: number }
+  stats: { hp: number; atk: number; def: number; cmd: number; critRate: number; critDmg: number; dmgRate: number; dmgRes: number; monsterDmg: number; power: number; equipPower: number; skillPower: number; levelBenefitLabel: string; levelBenefitValue: number }
 }
 interface SquadResult {
   heroes: ComputedHero[]; totalPower: number
@@ -87,8 +89,26 @@ function compute(hero: HeroData, cfg: OwnedHero, hl: any, hs: any, eq: any): Com
   let lbl='',lv=0
   if (hero.levelBenefit?.[0]) { const lb=hero.levelBenefit[0]; lv=lb.Value*cfg.level; lbl=BENEFIT[lb.Type]||'' }
   const hp=Math.round((bH+sH+eH)*(1+eHP)),atk=Math.round(bA+sA+eA),def=Math.round(bD+sD+eD),cmd=Math.round(bC)
+  // Skill power: sum each skill's active-tier power formula evaluated at user-input level
+  let skP=0
+  const internalStars=cfg.stars*5
+  for (const sk of (hero.skills||[])) {
+    const n1=cfg.skillLevels?.[sk.slot]??1
+    let active:any=null
+    for (const slv of (sk.levels||[])) {
+      const us=slv.unlockStar||0
+      if (us<=internalStars && (!active||(slv.star||0)>(active.star||0))) active=slv
+    }
+    if (active?.power) {
+      try {
+        const expr=String(active.power).replace(/n1/g,String(n1))
+        const val=Function('"use strict";return('+expr+')')()
+        if (typeof val==='number'&&isFinite(val)) skP+=val
+      } catch {}
+    }
+  }
   return { hp,atk,def,cmd,critRate:eC,critDmg:eCD,dmgRate:eDR,dmgRes:eDRS,monsterDmg:eMD,
-    power:Math.round(hp+atk*5+def*3+cmd*2+eP),equipPower:Math.round(eP),levelBenefitLabel:lbl,levelBenefitValue:lv }
+    power:Math.round(hp+atk*5+def*3+cmd*2+eP+skP),equipPower:Math.round(eP),skillPower:Math.round(skP),levelBenefitLabel:lbl,levelBenefitValue:lv }
 }
 
 // ── Squad optimizer ────────────────────────────────────────
@@ -164,7 +184,7 @@ export default function SquadPage() {
       const n=new Set(prev)
       if(n.has(id)){n.delete(id)}else{
         n.add(id)
-        if(!cfgs[id])setCfgs(c=>({...c,[id]:{id,level:150,stars:10,equipment:Array.from({length:4},()=>({quality:5,strengthenLv:40}))}}))
+        if(!cfgs[id])setCfgs(c=>({...c,[id]:{id,level:150,stars:10,equipment:Array.from({length:4},()=>({quality:5,strengthenLv:40})),skillLevels:{0:50,1:50,2:50,3:50,4:50,5:50}}}))
       }
       return n
     })
@@ -173,6 +193,9 @@ export default function SquadPage() {
   const updCfg=useCallback((id:number,p:Partial<OwnedHero>)=>{setCfgs(c=>({...c,[id]:{...c[id],...p}}))},[])
   const updEq=useCallback((hid:number,si:number,p:any)=>{
     setCfgs(c=>{const h=c[hid];if(!h)return c;const eq=[...h.equipment];eq[si]={...eq[si],...p};return{...c,[hid]:{...h,equipment:eq}}})
+  },[])
+  const updSkill=useCallback((hid:number,slot:number,lv:number)=>{
+    setCfgs(c=>{const h=c[hid];if(!h)return c;const sl={...(h.skillLevels||{}),[slot]:Math.min(50,Math.max(1,lv||1))};return{...c,[hid]:{...h,skillLevels:sl}}})
   },[])
 
   const computed=useMemo<ComputedHero[]>(()=>{
@@ -272,6 +295,11 @@ export default function SquadPage() {
           <button key={p.l} onClick={()=>setCfgs(c=>{const n={...c};for(const id of owned)if(n[id])n[id]={...n[id],equipment:Array.from({length:4},()=>({quality:p.q,strengthenLv:p.v}))};return n})}
             className="text-xs px-3 py-1 rounded-lg bg-zinc-800 text-zinc-400 hover:text-zinc-200 hover:bg-zinc-700 border border-zinc-700/30">{p.l}</button>
         ))}
+        <span className="text-xs text-zinc-600 py-1 ml-2">Skills:</span>
+        {[{l:'Max (50)',v:50},{l:'Lv25',v:25},{l:'Lv1',v:1}].map(p=>(
+          <button key={p.l} onClick={()=>setCfgs(c=>{const n={...c};for(const id of owned)if(n[id])n[id]={...n[id],skillLevels:{0:p.v,1:p.v,2:p.v,3:p.v,4:p.v,5:p.v}};return n})}
+            className="text-xs px-3 py-1 rounded-lg bg-zinc-800 text-zinc-400 hover:text-zinc-200 hover:bg-zinc-700 border border-zinc-700/30">{p.l}</button>
+        ))}
       </div>
 
       {Array.from(owned).map(id=>({h:data.heroes.find((h:HeroData)=>h.id===id),c:cfgs[id]}))
@@ -337,9 +365,22 @@ export default function SquadPage() {
                 </div>
               })}
             </div>
+            {hero.skills&&hero.skills.length>0&&(<div className="mb-4">
+              <div className="text-xs text-zinc-500 uppercase tracking-wider mb-2">Skill Levels</div>
+              <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
+                {(hero.skills as any[]).map((sk:any)=>{
+                  const cur=cfg.skillLevels?.[sk.slot]??1
+                  const lbl=sk.typeLabel||sk.name||`Skill ${sk.slot+1}`
+                  return <div key={sk.slot} className="flex items-center gap-2 bg-zinc-900/60 rounded-lg px-2 py-1.5">
+                    <div className="min-w-0 flex-1"><div className="text-[10px] text-zinc-500 uppercase truncate">{sk.typeLabel||'Skill'}</div><div className="text-[11px] text-zinc-300 truncate">{sk.name||lbl}</div></div>
+                    <input type="number" min={1} max={50} value={cur} onChange={e=>updSkill(hero.id,sk.slot,Number(e.target.value)||1)} className="w-12 bg-zinc-900 border border-zinc-700/50 rounded px-1 py-0.5 text-xs text-zinc-200 text-center focus:outline-none focus:border-amber-600/50 shrink-0"/>
+                  </div>
+                })}
+              </div>
+            </div>)}
             <div className="grid grid-cols-4 sm:grid-cols-8 gap-2 text-center">
               {[{l:'ATK',v:fmt(st.atk),c:'text-red-400'},{l:'HP',v:fmt(st.hp),c:'text-green-400'},{l:'DEF',v:fmt(st.def),c:'text-blue-400'},{l:'CMD',v:fmt(st.cmd),c:'text-yellow-400'},
-                {l:'Crit%',v:pct(st.critRate),c:'text-orange-400'},{l:'DMG Rate',v:pct(st.dmgRate),c:'text-rose-400'},{l:'DMG RES',v:pct(st.dmgRes),c:'text-cyan-400'},{l:'Power',v:fmt(st.power),c:'text-amber-400'}
+                {l:'Crit%',v:pct(st.critRate),c:'text-orange-400'},{l:'DMG Rate',v:pct(st.dmgRate),c:'text-rose-400'},{l:'SKL Pwr',v:fmt(st.skillPower),c:'text-cyan-400'},{l:'Power',v:fmt(st.power),c:'text-amber-400'}
               ].map(s=><div key={s.l} className="bg-zinc-900/60 rounded-lg py-1.5 px-1"><div className={`text-xs font-mono font-bold ${s.c}`}>{s.v}</div><div className="text-[9px] text-zinc-600">{s.l}</div></div>)}
             </div>
           </div>)}
@@ -358,7 +399,7 @@ export default function SquadPage() {
         <button onClick={()=>setStep('configure')} className="text-xs text-zinc-500 hover:text-zinc-300 px-3 py-1.5 rounded-lg bg-zinc-800">← Edit Stats</button>
       </div>
       {squads.length===0?<div className="bg-zinc-900/60 rounded-xl border border-zinc-700/30 p-12 text-center"><div className="text-4xl mb-3">⚠️</div><div className="text-zinc-400">Need at least 5 heroes</div></div>
-      :squads.map((sq,rank) =>(
+      :squads.map((sq,rank)=>(
       <div key={rank} className={`rounded-xl border overflow-hidden ${rank===0?'border-amber-600/50 bg-amber-950/10':'border-zinc-700/30 bg-zinc-900/60'}`}>
         <div className="flex items-center justify-between px-4 py-3 border-b border-zinc-700/20">
           <div className="flex items-center gap-3">
