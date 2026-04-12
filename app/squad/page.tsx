@@ -24,7 +24,7 @@ interface SquadResult {
   synergy: { bonus: number; label: string }; score: number; reason: string
 }
 
-// ── Constants ──────────────────────────────────────────────
+// ── Constants ───────────────────────────────────────────
 const CAMP_NAMES: Record<number, string> = { 0: 'Warrior', 1: 'Ranger', 2: 'Warlock' }
 const CAMP_ICONS: Record<number, string> = { 0: '⚔️', 1: '🏹', 2: '🔮' }
 const ARMY_NAMES: Record<number, string> = { 0: 'Support', 1: 'Tank', 3: 'Damage' }
@@ -70,7 +70,7 @@ function compute(hero: HeroData, cfg: OwnedHero, hl: any, hs: any, eq: any): Com
   let sH=0,sA=0,sD=0
   if (hs) for (const e of Object.values(hs) as any[]) {
     const s=e.star??e.level??0
-    if (s<=cfg.stars*5)  // display 1-10 → internal 5-50 { sH+=(e.attrs?.['10002']||0)*hR; sA+=(e.attrs?.['10003']||0)*aR; sD+=(e.attrs?.['10004']||0)*dR }
+    if (s<=cfg.stars*5) { sH+=(e.attrs?.['10002']||0)*hR; sA+=(e.attrs?.['10003']||0)*aR; sD+=(e.attrs?.['10004']||0)*dR }
   }
   let eH=0,eA=0,eD=0,eHP=0,eC=0,eCD=0,eDR=0,eDRS=0,eMD=0,eP=0
   for (let s=0;s<4;s++) {
@@ -148,7 +148,7 @@ function optimize(pool: ComputedHero[]): SquadResult[] {
 const fmt=(n:number)=>n>=1e6?(n/1e6).toFixed(1)+'M':n>=1e3?(n/1e3).toFixed(1)+'K':n.toLocaleString()
 const pct=(n:number)=>(n*100).toFixed(1)+'%'
 
-// ── Main Page ──────────────────────────────────────────────
+// ── Main Page ─────────────────────────────────────────────
 export default function SquadPage() {
   const [data,setData]=useState<any>(null)
   const [loading,setLoading]=useState(true)
@@ -358,7 +358,7 @@ export default function SquadPage() {
         <button onClick={()=>setStep('configure')} className="text-xs text-zinc-500 hover:text-zinc-300 px-3 py-1.5 rounded-lg bg-zinc-800">← Edit Stats</button>
       </div>
       {squads.length===0?<div className="bg-zinc-900/60 rounded-xl border border-zinc-700/30 p-12 text-center"><div className="text-4xl mb-3">⚠️</div><div className="text-zinc-400">Need at least 5 heroes</div></div>
-      :squads.map((sq,rank)=>(
+      :squads.map((sq,rank) =>(
       <div key={rank} className={`rounded-xl border overflow-hidden ${rank===0?'border-amber-600/50 bg-amber-950/10':'border-zinc-700/30 bg-zinc-900/60'}`}>
         <div className="flex items-center justify-between px-4 py-3 border-b border-zinc-700/20">
           <div className="flex items-center gap-3">
