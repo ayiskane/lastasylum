@@ -76,21 +76,8 @@ export default function HeroStatsPanel({ data }: { data: StatsData }) {
         <StatCard label="ATK SPD" value={data.attackCd} suffix="ms" />
       </div>
 
-      {/* Level benefit */}
-      {data.levelBenefitName && (
-        <div className="bg-[#0e1018] border border-[#1a1c22] rounded-lg px-3 py-2 mb-4">
-          <div className="flex items-center justify-between">
-            <span className="text-[11px] text-[#8a8878]">{data.levelBenefitName}</span>
-            <span className="text-sm font-bold text-[#70d890] font-mono">+{(lbTotal * 100).toFixed(1)}%</span>
-          </div>
-          <div className="text-[9px] text-[#4a4838] mt-0.5">
-            {(data.levelBenefitPerLevel * 100).toFixed(2)}% per level × {level} levels
-          </div>
-        </div>
-      )}
-
-      {/* Growth coefficients */}
-      <div className="grid grid-cols-3 gap-2">
+      {/* Growth coefficients + level benefit */}
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
         <div className="bg-[#0e1018] border border-[#1a1c22] rounded-lg px-3 py-2 text-center">
           <div className="text-[9px] text-[#4a4838] uppercase tracking-wider mb-0.5">HP Growth</div>
           <div className="text-sm font-bold text-[#e8e4d8] font-mono">×{data.levelRatios.hp.toFixed(2)}</div>
@@ -103,6 +90,12 @@ export default function HeroStatsPanel({ data }: { data: StatsData }) {
           <div className="text-[9px] text-[#4a4838] uppercase tracking-wider mb-0.5">DEF Growth</div>
           <div className="text-sm font-bold text-[#e8e4d8] font-mono">×{data.levelRatios.def.toFixed(2)}</div>
         </div>
+        {data.levelBenefitName && (
+          <div className="bg-[#0e1018] border border-[#1a1c22] rounded-lg px-3 py-2 text-center">
+            <div className="text-[9px] text-[#4a4838] uppercase tracking-wider mb-0.5">{data.levelBenefitName}</div>
+            <div className="text-sm font-bold text-[#70d890] font-mono">+{(lbTotal * 100).toFixed(1)}%</div>
+          </div>
+        )}
       </div>
     </div>
   )

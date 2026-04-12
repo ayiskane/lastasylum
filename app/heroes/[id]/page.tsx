@@ -167,10 +167,12 @@ export default function HeroDetailPage({ params }: { params: { id: string } }) {
   const skillData = skillSlots.map(slot => {
     const levels = skillsBySlot[slot]
     const first = levels[0]
+    // Find the first level that has a description
+    const withDesc = levels.find((lv: any) => lv.description) || first
     return {
       slot,
       name: first.displayName || `Skill ${slot}`,
-      description: first.description ? stripTags(first.description) : '',
+      description: withDesc.description ? stripTags(withDesc.description) : '',
       typeLabel: first.typeDesc ? extractTypeLabel(first.typeDesc) : (SLOT_LABELS[slot] || 'Skill'),
       icon: first.icon || first.skillIcon || '',
       iconSrc: skillImagePath(first.icon || first.skillIcon || ''),
