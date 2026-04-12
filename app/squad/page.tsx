@@ -70,7 +70,7 @@ function compute(hero: HeroData, cfg: OwnedHero, hl: any, hs: any, eq: any): Com
   let sH=0,sA=0,sD=0
   if (hs) for (const e of Object.values(hs) as any[]) {
     const s=e.star??e.level??0
-    if (s<=cfg.stars) { sH+=(e.attrs?.['10002']||0)*hR; sA+=(e.attrs?.['10003']||0)*aR; sD+=(e.attrs?.['10004']||0)*dR }
+    if (s<=cfg.stars*5)  // display 1-10 → internal 5-50 { sH+=(e.attrs?.['10002']||0)*hR; sA+=(e.attrs?.['10003']||0)*aR; sD+=(e.attrs?.['10004']||0)*dR }
   }
   let eH=0,eA=0,eD=0,eHP=0,eC=0,eCD=0,eDR=0,eDRS=0,eMD=0,eP=0
   for (let s=0;s<4;s++) {
@@ -164,7 +164,7 @@ export default function SquadPage() {
       const n=new Set(prev)
       if(n.has(id)){n.delete(id)}else{
         n.add(id)
-        if(!cfgs[id])setCfgs(c=>({...c,[id]:{id,level:150,stars:50,equipment:Array.from({length:4},()=>({quality:5,strengthenLv:40}))}}))
+        if(!cfgs[id])setCfgs(c=>({...c,[id]:{id,level:150,stars:10,equipment:Array.from({length:4},()=>({quality:5,strengthenLv:40}))}}))
       }
       return n
     })
@@ -298,8 +298,8 @@ export default function SquadPage() {
               </div>
               <div className="flex items-center gap-1">
                 <label className="text-[10px] text-zinc-600">★</label>
-                <input type="number" min={0} max={50} value={cfg.stars} onClick={e=>e.stopPropagation()}
-                  onChange={e=>updCfg(hero.id,{stars:Math.min(50,Math.max(0,Number(e.target.value)||0))})}
+                <input type="number" min={0} max={10} value={cfg.stars} onClick={e=>e.stopPropagation()}
+                  onChange={e=>updCfg(hero.id,{stars:Math.min(10,Math.max(0,Number(e.target.value)||0))})}
                   className="w-14 bg-zinc-900/80 border border-zinc-700/50 rounded px-1.5 py-0.5 text-xs text-zinc-200 text-center focus:outline-none focus:border-amber-600/50"/>
               </div>
               <div className="flex gap-1 ml-2">
@@ -379,7 +379,7 @@ export default function SquadPage() {
                 <img src={`/images/heroes/${ch.hero.heroIcon}.png`} alt={ch.hero.name} className="w-full h-full object-cover" onError={e=>{(e.target as HTMLImageElement).style.display='none'}}/>
               </div>
               <div className={`text-xs font-bold truncate ${qc.text}`}>{ch.hero.name}</div>
-              <div className="text-[10px] text-zinc-600">Lv{ch.config.level} ★{ch.config.stars}</div>
+              <div className="text-[10px] text-zinc-600">Lv{ch.config.level} {ch.config.stars}★</div>
               <div className="mt-1 space-y-0.5 text-[10px]">
                 <div><span className="text-zinc-600">ATK</span> <span className="text-red-400 font-mono">{fmt(ch.stats.atk)}</span></div>
                 <div><span className="text-zinc-600">HP</span> <span className="text-green-400 font-mono">{fmt(ch.stats.hp)}</span></div>
