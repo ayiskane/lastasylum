@@ -1,22 +1,55 @@
 {
-  "16": {
-    "patientType": 8,
+  "10": {
+    "eventType": [
+      12,
+      6
+    ],
+    "patientType": 3,
+    "id": 10
+  },
+  "20": {
+    "id": 20,
+    "patientType": 11,
+    "entityType": 101
+  },
+  "9": {
     "eventType": [
       111,
       112
     ],
-    "id": 16
+    "patientType": 2,
+    "id": 9
   },
-  "15": {
-    "patientType": 7,
+  "11": {
     "eventType": [
-      114,
+      8,
+      17,
       6
     ],
-    "id": 15
+    "patientType": 4,
+    "id": 11
+  },
+  "12": {
+    "eventType": [
+      111,
+      112
+    ],
+    "patientType": 5,
+    "id": 12
+  },
+  "13": {
+    "eventType": [
+      11,
+      4,
+      7,
+      10,
+      16,
+      120
+    ],
+    "patientType": 6,
+    "id": 13
   },
   "14": {
-    "weighted": 3000,
     "eventType": [
       1,
       2,
@@ -30,161 +63,10 @@
       114,
       6
     ],
+    "weighted": 3000,
     "id": 14
   },
-  "13": {
-    "patientType": 6,
-    "eventType": [
-      11,
-      4,
-      7,
-      10,
-      16,
-      120
-    ],
-    "id": 13
-  },
-  "9": {
-    "patientType": 2,
-    "eventType": [
-      111,
-      112
-    ],
-    "id": 9
-  },
-  "8": {
-    "weighted": 0,
-    "eventType": [
-      1,
-      2,
-      3,
-      11,
-      4,
-      7,
-      10,
-      16,
-      12,
-      8,
-      17,
-      6
-    ],
-    "id": 8
-  },
-  "7": {
-    "weighted": 0,
-    "eventType": [
-      1,
-      2,
-      3,
-      11,
-      4,
-      7,
-      10,
-      16,
-      8,
-      17,
-      6
-    ],
-    "id": 7
-  },
-  "22": {
-    "patientType": 13,
-    "eventType": [
-      1,
-      2,
-      11,
-      4,
-      7,
-      10,
-      16,
-      6
-    ],
-    "entityType": 64,
-    "id": 22
-  },
-  "21": {
-    "patientType": 12,
-    "entityType": 58,
-    "id": 21
-  },
-  "20": {
-    "patientType": 11,
-    "entityType": 101,
-    "id": 20
-  },
-  "19": {
-    "patientType": 10,
-    "entityType": 60,
-    "id": 19
-  },
-  "10": {
-    "patientType": 3,
-    "eventType": [
-      12,
-      6
-    ],
-    "id": 10
-  },
-  "17": {
-    "entityType": 100,
-    "id": 17
-  },
-  "18": {
-    "patientType": 9,
-    "entityType": 55,
-    "id": 18
-  },
-  "6": {
-    "weighted": 500,
-    "eventType": [
-      1,
-      2,
-      11,
-      4,
-      7,
-      10,
-      16,
-      12,
-      8,
-      17,
-      6
-    ],
-    "id": 6
-  },
-  "5": {
-    "weighted": 2500,
-    "eventType": [
-      1,
-      2,
-      11,
-      4,
-      7,
-      10,
-      16,
-      8,
-      17,
-      6
-    ],
-    "id": 5
-  },
-  "4": {
-    "weighted": 0,
-    "eventType": [
-      1,
-      2,
-      3,
-      11,
-      4,
-      7,
-      10,
-      16,
-      12,
-      6
-    ],
-    "id": 4
-  },
   "3": {
-    "weighted": 2500,
     "eventType": [
       1,
       2,
@@ -196,10 +78,10 @@
       12,
       6
     ],
+    "weighted": 2500,
     "id": 3
   },
-  "2": {
-    "weighted": 200,
+  "4": {
     "eventType": [
       1,
       2,
@@ -209,9 +91,11 @@
       7,
       10,
       16,
+      12,
       6
     ],
-    "id": 2
+    "weighted": 0,
+    "id": 4
   },
   "1": {
     "weighted": 4300,
@@ -226,21 +110,137 @@
       6
     ]
   },
-  "11": {
-    "patientType": 4,
+  "2": {
     "eventType": [
+      1,
+      2,
+      3,
+      11,
+      4,
+      7,
+      10,
+      16,
+      6
+    ],
+    "weighted": 200,
+    "id": 2
+  },
+  "8": {
+    "eventType": [
+      1,
+      2,
+      3,
+      11,
+      4,
+      7,
+      10,
+      16,
+      12,
       8,
       17,
       6
     ],
-    "id": 11
+    "weighted": 0,
+    "id": 8
   },
-  "12": {
-    "patientType": 5,
+  "7": {
+    "eventType": [
+      1,
+      2,
+      3,
+      11,
+      4,
+      7,
+      10,
+      16,
+      8,
+      17,
+      6
+    ],
+    "weighted": 0,
+    "id": 7
+  },
+  "6": {
+    "eventType": [
+      1,
+      2,
+      11,
+      4,
+      7,
+      10,
+      16,
+      12,
+      8,
+      17,
+      6
+    ],
+    "weighted": 500,
+    "id": 6
+  },
+  "16": {
     "eventType": [
       111,
       112
     ],
-    "id": 12
+    "patientType": 8,
+    "id": 16
+  },
+  "15": {
+    "eventType": [
+      114,
+      6
+    ],
+    "patientType": 7,
+    "id": 15
+  },
+  "18": {
+    "id": 18,
+    "patientType": 9,
+    "entityType": 55
+  },
+  "17": {
+    "id": 17,
+    "entityType": 100
+  },
+  "5": {
+    "eventType": [
+      1,
+      2,
+      11,
+      4,
+      7,
+      10,
+      16,
+      8,
+      17,
+      6
+    ],
+    "weighted": 2500,
+    "id": 5
+  },
+  "22": {
+    "id": 22,
+    "eventType": [
+      1,
+      2,
+      11,
+      4,
+      7,
+      10,
+      16,
+      6
+    ],
+    "patientType": 13,
+    "entityType": 64
+  },
+  "21": {
+    "id": 21,
+    "patientType": 12,
+    "entityType": 58
+  },
+  "19": {
+    "id": 19,
+    "patientType": 10,
+    "entityType": 60
   }
 }
