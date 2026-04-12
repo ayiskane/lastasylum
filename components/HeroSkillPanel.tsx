@@ -33,15 +33,9 @@ function evalParam(expr: string, n1: number): number | null {
 }
 
 function formatValue(val: number, expr?: string): string {
-  // If the formula multiplies by 100, it's already a percentage
-  if (expr && /\*\s*100/.test(expr)) {
-    return `${val.toFixed(1)}%`
-  }
-  // If value >= 1 and looks like a percentage
-  if (Math.abs(val) >= 10) {
-    return `${val.toFixed(1)}%`
-  }
-  // Small values — likely a % that wasn't multiplied by 100
+  // All skill values in this game are percentages
+  // Formulas with *100 are pre-multiplied (e.g. 0.83*100 = 83%)
+  // Formulas without *100 are already the % value (e.g. 8 = 8%)
   return `${val.toFixed(1)}%`
 }
 
