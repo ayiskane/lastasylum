@@ -414,7 +414,7 @@ export function getMaxLevel(hero: Hero): number {
   for (const entry of Object.values(levels)) {
     if (entry.type === template && entry.level > max) max = entry.level
   }
-  return max
+  return Math.min(max, 150) // Game caps at 150
 }
 
 export function getMaxStar(hero: Hero): number {

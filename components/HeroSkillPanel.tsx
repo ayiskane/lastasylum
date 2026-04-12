@@ -190,36 +190,37 @@ export default function HeroSkillPanel({ skills }: { skills: SkillGroupData[] })
                 {active.levels.length > 1 ? 'Star upgrades' : 'Details'}
               </div>
               <div className="space-y-1.5">
-                {active.levels.map((lv, i) => {
-                  // Compute param values for this star level's formula
+                {[...active.levels].sort((a, b) => (a.star || 0) - (b.star || 0)).map((lv, i) => {
                   const lvParams = lv.params || { param1: lv.param1 }
                   const lvParam1Val = lvParams.param1 ? evalParam(lvParams.param1, skillLevel) : null
 
                   return (
-                    <div key={i} className="bg-asylum-bg/50 rounded-lg px-3 py-2.5 flex items-start gap-3 text-xs">
-                      <div className="shrink-0 w-16 pt-0.5">
-                        {lv.star > 0 ? (
-                          <span className="text-asylum-accent">{'★'.repeat(Math.min(lv.star, 5))}</span>
-                        ) : (
-                          <span className="text-asylum-muted font-semibold bg-asylum-surface px-2 py-0.5 rounded text-[10px]">BASE</span>
-                        )}
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <div className="flex flex-wrap gap-x-4 gap-y-0.5">
-                          {lv.unlockStar > 0 && (
-                            <span className="text-asylum-muted">Unlock at <span className="text-asylum-text font-semibold">{lv.unlockStar}★</span></span>
-                          )}
-                          {lv.power && (
-                            <span className="text-asylum-muted">Power: <span className="text-asylum-text font-mono">{
-                              lv.power.includes('n1')
-                                ? (() => { const v = evalParam(lv.power, skillLevel); return v !== null ? Math.round(v).toLocaleString() : lv.power })()
-                                : lv.power
-                            }</span></span>
-                          )}
-                          {lvParam1Val !== null && (
-                            <span className="text-asylum-muted">Effect: <span className="text-asylum-accent font-mono font-semibold">{formatValue(lvParam1Val)}</span></span>
+                    <div key={i} className="bg-asylum-bg/50 rounded-lg px-3 py-2 text-xs">
+                      {/* Row 1: Stars + Effect */}
+                      <div className="flex items-center justify-between mb-0.5">
+                        <div className="shrink-0">
+                          {lv.star > 0 ? (
+                            <span className="text-asylum-accent">{'★'.repeat(Math.min(lv.star, 5))}</span>
+                          ) : (
+                            <span className="text-asylum-muted font-semibold bg-asylum-surface px-2 py-0.5 rounded text-[10px]">BASE</span>
                           )}
                         </div>
+                        {lvParam1Val !== null && (
+                          <span className="text-asylum-muted">Effect: <span className="text-asylum-accent font-mono font-semibold">{formatValue(lvParam1Val, lvParams.param1)}</span></span>
+                        )}
+                      </div>
+                      {/* Row 2: Unlock + Power */}
+                      <div className="flex items-center justify-between text-[11px]">
+                        {lv.unlockStar > 0 ? (
+                          <span className="text-asylum-hint">Unlock at <span className="text-asylum-muted font-semibold">{lv.unlockStar}★</span></span>
+                        ) : <span />}
+                        {lv.power ? (
+                          <span className="text-asylum-hint">Power: <span className="text-asylum-muted font-mono">{
+                            lv.power.includes('n1')
+                              ? (() => { const v = evalParam(lv.power, skillLevel); return v !== null ? Math.round(v).toLocaleString() : lv.power })()
+                              : lv.power
+                          }</span></span>
+                        ) : <span />}
                       </div>
                     </div>
                   )
