@@ -297,23 +297,23 @@ interface StarEntry {
   attrs: Record<string, number>
 }
 
-let _heroLevels: Record<string, LevelEntry> | null = null
-let _heroStars: Record<string, StarEntry> | null = null
+let _heroLevelData: Record<string, LevelEntry> | null = null
+let _heroStarData: Record<string, StarEntry> | null = null
 
-function getHeroLevels(): Record<string, LevelEntry> {
-  if (!_heroLevels) {
-    try { _heroLevels = loadJson<Record<string, LevelEntry>>('heroLevels.json') }
-    catch { _heroLevels = {} }
+function loadHeroLevelData(): Record<string, LevelEntry> {
+  if (!_heroLevelData) {
+    try { _heroLevelData = loadJson<Record<string, LevelEntry>>('heroLevels.json') }
+    catch { _heroLevelData = {} }
   }
-  return _heroLevels
+  return _heroLevelData
 }
 
-function getHeroStars(): Record<string, StarEntry> {
-  if (!_heroStars) {
-    try { _heroStars = loadJson<Record<string, StarEntry>>('heroStars.json') }
-    catch { _heroStars = {} }
+function loadHeroStarData(): Record<string, StarEntry> {
+  if (!_heroStarData) {
+    try { _heroStarData = loadJson<Record<string, StarEntry>>('heroStars.json') }
+    catch { _heroStarData = {} }
   }
-  return _heroStars
+  return _heroStarData
 }
 
 // Stat type IDs
@@ -351,8 +351,8 @@ export interface HeroStats {
 }
 
 export function computeHeroStats(hero: Hero, level: number, star: number): HeroStats {
-  const levels = getHeroLevels()
-  const stars = getHeroStars()
+  const levels = loadHeroLevelData()
+  const stars = loadHeroStarData()
   const template = hero.levelTemplate || 1
 
   // Get level ratios
@@ -409,7 +409,7 @@ export function computeHeroStats(hero: Hero, level: number, star: number): HeroS
 
 export function getMaxLevel(hero: Hero): number {
   const template = hero.levelTemplate || 1
-  const levels = getHeroLevels()
+  const levels = loadHeroLevelData()
   let max = 1
   for (const entry of Object.values(levels)) {
     if (entry.type === template && entry.level > max) max = entry.level
